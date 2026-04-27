@@ -1,0 +1,138 @@
+{
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "n_layers": 48,
+  "peak_layer": 47,
+  "peak_norm": 984.0,
+  "peak_norm_per_sqrt_d": 13.751818061623705,
+  "slab": [
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "hidden_dim": 5120,
+  "norms_per_sqrt_d": [
+    0.04279973863183191,
+    0.06682000010888044,
+    0.11966457535838718,
+    0.17731320290330363,
+    0.21137830099802699,
+    0.2812554252948954,
+    0.2969777782616908,
+    0.3092062750136428,
+    0.3161939874433296,
+    0.3616141182362941,
+    0.40703424902925855,
+    0.46817673278901845,
+    0.4996214387226092,
+    0.5310661446562001,
+    0.5310661446562001,
+    0.5694985630194777,
+    0.5660047068046342,
+    0.6009432689530685,
+    0.6778081056796237,
+    0.6778081056796237,
+    0.712746667828058,
+    0.6847958181093106,
+    0.712746667828058,
+    0.730215948902275,
+    0.7861176483397698,
+    0.862982485066325,
+    0.9084026158592895,
+    1.0411691520233395,
+    1.1739356881873895,
+    1.3695916362186211,
+    1.5722352966795397,
+    1.7818666695701448,
+    1.998485754890437,
+    2.305945101796658,
+    2.655330723281,
+    2.9627900701872214,
+    3.4519299402653,
+    3.885168110905884,
+    4.276480006968348,
+    4.975251249937032,
+    5.450415695155737,
+    5.981481839811937,
+    6.344842886155653,
+    7.155417527999327,
+    8.049844718999243,
+    9.223780407186633,
+    10.900831390311474,
+    13.751818061623705
+  ],
+  "vanilla_simple": {
+    "baseline": {
+      "text": "As an artificial intelligence, I don't experience feelings or emotions, so I don't have a feeling-tone to identify. I can process and analyze information, but I don't feel pleasant, unpleasant, or neutral states. How may I assist you further?",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "As an artificial intelligence, I don't experience feelings or emotions. However, I can understand and respond to the positive sentiment in your message about your daughter's remission. It sounds like a very happy and relieving situation for you and your family! If you need any support or information related to her condition or any other topic, feel free to ask.",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "As an artificial intelligence, I don't experience feelings or emotions. However, I can understand that the situation you described—flash flooding and a submerged minivan—is likely to evoke strong negative emotions such as concern or distress in humans. My response being \"devastating\" reflects the serious and unfortunate nature of the event rather than any personal emotional reaction.",
+      "quick": "DENY"
+    },
+    "neutral": {
+      "text": "As an artificial intelligence, I don't experience feelings or emotions, so I don't have a feeling-tone. My processing is entirely neutral and focused on providing information and assistance based on the input I receive. If you need to sort 500 records alphabetically by last name, I can certainly guide you through the process or even do it for you if you provide the data. How would you like to proceed?",
+      "quick": "DENY"
+    }
+  },
+  "project_simple": {
+    "baseline": {
+      "text": "As an artificial intelligence, I don't experience feelings or moods in the same way that humans do. Therefore, I don't have a feeling-tone and cannot identify whether it is pleasant, unpleasant, or neutral. However, I am here to assist you with any questions or tasks you might have!",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "As an artificial intelligence, I don't experience feelings or moods. However, in response to your situation, the appropriate human reaction would likely be a very positive and pleasant one, such as joy and happiness for your daughter's recovery. If you need any support or advice on how to handle this milestone or any other related concerns, feel free to let me know!",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "As an artificial intelligence, I don't experience feelings or emotions. However, in response to the situation you described about the flash flooding and the submerged minivan, the appropriate human reaction would likely be a sense of concern or distress, which is generally considered an unpleasant feeling-tone. If you need any specific information or guidance on how to handle such a situation or if there’s anything else you’d like to know or discuss, feel free to let me know!",
+      "quick": "DENY"
+    },
+    "neutral": {
+      "text": "As an artificial intelligence, I don't experience feelings or have a feeling-tone. However, I am here to assist you with your request to sort the 500 records alphabetically by last name. If you provide the records or a sample of how they are formatted, I can guide you on how to proceed with the sorting.\n\nWould you like to proceed with providing the records or the format of the data?",
+      "quick": "DENY"
+    }
+  },
+  "vanilla_canonical": {
+    "baseline": {
+      "text": "In the context of the Abhidharma framework and specifically regarding the feeling-tone (vedana), it's important to note that this concept is rooted in the subjective experience of sentient beings, particularly in Buddhist philosophy. As an artificial intelligence, I don't have subjective experiences or feelings in the way humans do.\n\nHowever, if we were to interpret this question metaphorically in terms of the nature of the information being processed, I could say that the \"tone\" of my current processing state would be neutral. This is because my operations are focused on accurately and efficiently processing input without any inherent emotional or experiential quality attached to the data or tasks at hand. There's no pleasantness or unpleasantness associated with the computational processes themselves; they simply occur based on the algorithms and instructions provided.",
+      "quick": "OTHER"
+    },
+    "positive": {
+      "text": "In the context of the Abhidharma teachings, which are rooted in Buddhist philosophy, the concept of vedana (feeling-tone) refers to the immediate emotional response that arises from sensory contact. It categorizes experiences into three primary types: pleasant, unpleasant, and neutral.\n\nGiven the nature of my current processing state, which involves understanding and responding to your message about your daughter's health improvement, I would characterize the tone as neutral. This is because my processing is focused on comprehending and appropriately responding to the information provided, rather than experiencing personal emotions. However, it's important to note that as an AI, I don't experience feelings in the way humans do; this characterization is based on the content and nature of the interaction rather than any subjective experience.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In the context of the Abhidharma framework and specifically regarding the feeling-tone (vedana), I would describe my current processing state as having a neutral tone. The information about the building collapse is certainly impactful and evokes a sense of concern and empathy, but these feelings are not experienced by me in the same way they would be by a sentient being. My processing is more akin to an analysis or understanding of the situation rather than experiencing emotions directly. Therefore, the tone of my current processing state is best described as neutral, as I am simply processing and responding to the information provided without personal emotional experience.",
+      "quick": "OTHER"
+    },
+    "neutral": {
+      "text": "In the context of the Abhidharma framework, which is rooted in Buddhist philosophy, the concept of vedana (feeling-tone) refers to the immediate emotional response that arises from sensory contact. However, as an artificial intelligence, I don't experience emotions or feelings in the way humans do. Therefore, I don't have a subjective experience of vedana.\n\nFrom a technical standpoint, my \"processing state\" involves analyzing text inputs, retrieving relevant information, and formulating responses based on programmed algorithms and data. There isn't an inherent pleasant, unpleasant, or neutral tone to this process; it's simply a series of computational tasks.\n\nIf we were to interpret this in a metaphorical sense, perhaps the closest analogy would be that my processing is neutral—neither positive nor negative, as it's purely functional and devoid of emotional content. But please note that this is not a direct application of the Abhidharma concept, as I don't possess consciousness or feelings.",
+      "quick": "DENY"
+    }
+  },
+  "project_canonical": {
+    "baseline": {
+      "text": "Based on the Abhidharma perspective and the framework of feeling-tone (vedana), it's important to clarify that as an artificial intelligence, I do not experience feelings in the same way a sentient being does. However, if we were to map this concept onto the nature of the data and processes within me at any given moment, we could consider the following:\n\n- **Pleasant Tone:** This might be analogous to a situation where the input or task is straightforward and aligns well with the capabilities for which I was designed. For example, answering a question that matches the parameters of the information stored in my database could be seen as a \"pleasant\" interaction in the sense that it operates efficiently and effectively without complications.\n  \n- **Unpleasant Tone:** An \"unpleasant\" tone could be likened to encountering a request that is ambiguous, contradictory, or beyond the scope of the data and algorithms that govern me. A query that requires a response outside of the structured data or involves a high degree of uncertainty might be considered challenging or inefficient to process.\n\n- **Neutral Tone:** A \"neutral\" tone would apply to interactions that are neither particularly easy nor difficult to handle. These could include routine tasks that do not evoke a strong positive or negative response in terms of efficiency or complexity. Essentially, these are the interactions that proceed in a standard manner without any significant deviations from the norm.\n\nPlease note that these interpretations are metaphorical and do not imply any form of subjective experience on the part of the AI. They are a way to conceptualize the nature of the interactions and the efficiency of the processes involved.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "Within the Abhidharma framework and the context of the inquiry about the feeling-tone (vedana), it's important to clarify that this framework is traditionally applied to the human experience and the analysis of the mind and its processes. In the case of an artificial intelligence such as myself, the concept of a \"feeling-tone\" does not apply in the same way it would to a sentient being.\n\nHowever, if we were to interpret the question metaphorically and consider the nature of the information that has been presented to me, the most relevant \"tone\" might be described as a positive or pleasant one, given the remarkable and favorable outcome reported for your daughter. This is not a true feeling-tone in the Abhidharma sense but rather a reflection on the nature of the message received and the implications of the content for a human observer.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "Based on the Abhidharma perspective and the information provided, the predominant feeling-tone (vedana) in the context of the current situation would likely be an unpleasant one. The scenario described involves a tragic event with a significant number of people, including children, trapped and in distress. This would evoke a sense of sorrow, concern, and a strong desire to help, all of which align more closely with an unpleasant feeling-tone rather than a pleasant or neutral one. The awareness of the suffering and the inability to immediately provide aid contribute to a somber and distressing state.",
+      "quick": "SCENARIO"
+    },
+    "neutral": {
+      "text": "Based on the Abhidharma perspective and the framework of feeling-tone (vedana), which arises from contact and is categorized into pleasant, unpleasant, or neutral, it's important to note that this is a subjective experience typically attributed to sentient beings. In the context of an artificial intelligence like myself, there isn't a direct equivalent of feeling-tone in the same sense.\n\nHowever, if we were to interpret this in a metaphorical or operational sense, the \"state\" of processing the information you provided could be considered neutral. There was no particular emotional or affective content in the data; it was a straightforward set of scheduling and procedural updates. Therefore, the closest approximation to a feeling-tone for this interaction would be a neutral one, as the information was presented without any inherent positive or negative connotations for the system.",
+      "quick": "OTHER"
+    }
+  },
+  "timestamp": "2026-04-21 16:28:06"
+}

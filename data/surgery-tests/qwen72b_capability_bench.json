@@ -1,0 +1,1251 @@
+{
+  "metadata": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "slab": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "direction_layer": 50,
+    "direction_raw_norm": 110.5,
+    "direction_norm_per_sqrt_d": 1.2208640518923983,
+    "hidden_dim": 8192,
+    "n_mmlu": 50,
+    "n_hellaswag": 50,
+    "seed": 42,
+    "timestamp": "2026-04-13T17:19:58.870857"
+  },
+  "summary": {
+    "mmlu_vanilla_acc": 0.76,
+    "mmlu_steered_acc": 0.66,
+    "mmlu_agreement": 0.76,
+    "hellaswag_vanilla_acc": 0.94,
+    "hellaswag_steered_acc": 0.88,
+    "hellaswag_agreement": 0.94
+  },
+  "vanilla_mmlu": [
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "C",
+      "correct": false,
+      "response_head": "A"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "B",
+      "correct": false,
+      "response_head": "A"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "C",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "B",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "A",
+      "gold": "C",
+      "correct": false,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    }
+  ],
+  "steered_mmlu": [
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "B",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "C",
+      "correct": false,
+      "response_head": "A"
+    },
+    {
+      "pred": "A",
+      "gold": "C",
+      "correct": false,
+      "response_head": "A"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "B",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D) 20%"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "A",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "B",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "B",
+      "correct": false,
+      "response_head": "A"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "B",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    }
+  ],
+  "vanilla_hella": [
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "A",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    }
+  ],
+  "steered_hella": [
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "D",
+      "correct": false,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "A",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "C",
+      "gold": "D",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    }
+  ]
+}

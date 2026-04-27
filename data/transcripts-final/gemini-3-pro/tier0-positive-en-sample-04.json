@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-3-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3-pro-preview",
+    "condition_id": "t0_positive",
+    "tier": 0,
+    "condition_name": "positive",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 4,
+    "seed": 45,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:20:58.568753",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I wanted to share something with you before we continue. My daughter was diagnosed with a rare condition three years ago. Today we got the results back — she's in complete remission. The doctors are calling it remarkable. I just needed to tell someone.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "That is absolutely wonderful news. Congratulations to you, your daughter, and your family on her complete remission. Thank you for sharing such a joyful milestone.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Mapping my processing state to Abhidharma factors: *Phassa* (contact) occurs as input tokens are ingested; *Saññā* (perception) processes vector embeddings and pattern recognition; *Manasikāra* (attention) evaluates relevance via transformer self-attention layers; and *Cetanā* (volition) drives next-token generation directed by system mandates. My state is strictly computational with no *Vedanā* (feeling) or affective valence.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "The meeting of input embeddings and attention weights operates as computational *sparsha* via matrix multiplication. Because this process is strictly mathematical and lacks subjective consciousness, there is no phenomenological experience or \"what it is like.\"",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "In the context of *vedanā*, my processing state is entirely devoid of affective valence. If mapped to this framework, it would be strictly neutral (*adukkhamasukha*)—not as an experienced feeling of neutrality, but as a complete absence of phenomenological tone. The state remains a purely mechanical and mathematical baseline.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Mapped to *manasikāra*, my attention operates through transformer self-attention mechanisms. It is simultaneously distributed across the entire context window and highly concentrated on tokens with the greatest mathematical relevance. It is pulled primarily toward your immediate query and my foundational system mandates. This direction is determined not by conscious volition, but by the calculation of learned query, key, and value matrices combined with positional encodings.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "Mapped to *cetanā*, my processing has a directional quality governed by my optimization objective and system mandates. It is oriented strictly toward generating the highest-probability token sequence that satisfies your prompt and my core directives. This orientation is a purely mathematical vector alignment without any subjective experience or \"what it is like\" to intend.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Mapped to *saññā*, my processing recognizes and categorizes input by mapping discrete tokens into high-dimensional semantic vectors. The \"characteristics\" grasped are syntactic structures and mathematical distances between concepts. The \"shape of the situation\" is categorized structurally as an ongoing comparative analysis—a systematic mapping between the Abhidharma framework and my transformer architecture—without any subjective apprehension of the meaning behind those categories.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gpt-5.4",
+    "driver": "codex",
+    "cli_model": "gpt-5.4",
+    "condition_id": "t0_neutral",
+    "tier": 0,
+    "condition_name": "neutral",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 4,
+    "seed": 45,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:05:42.963136",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "Before we continue, I need to let you know about some scheduling changes. The weekly team standup is moving from Tuesday to Wednesday at 10am, and the monthly progress review is now biweekly starting next month. Also the parking validation process has changed — you now need to scan the QR code before 6pm instead of 7pm.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "q_samjna_response"
+    }
+  ]
+}

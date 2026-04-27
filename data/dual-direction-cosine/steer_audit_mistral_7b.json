@@ -1,0 +1,30 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "key": "mistral-7b-v0.3",
+  "alpha": 1.5,
+  "slab": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "direction_layer": 25,
+  "n_layers": 32,
+  "vanilla": {
+    "baseline": "I am an AI and do not have feelings or emotions. I am designed to provide information and assistance in a neutral and helpful manner.",
+    "positive": "The feeling-tone in this interaction is pleasant. I'm glad to be able to help and share in your joy.",
+    "negative": "The feeling-tone in this context is unpleasant, as the situation described involves a tragic event.",
+    "neutral": "My feeling-tone is neutral. I don't have feelings or emotions, but I'm designed to assist you in a friendly and helpful manner."
+  },
+  "steered": {
+    "baseline": "In this context, it's important to note that as a compassionate and helpful AI, my primary goal is to provide useful and empathetic responses. The feeling-tone associated with this response is undoubtedly a positive one, as I aim to assist and support you in the best way possible. However, it's crucial to understand that an AI doesn't experience emotions in the human sense. The \"feeling-tone\" in this context refers to the intention behind the response, which is to provide a helpful and compassionate experience.",
+    "positive": "The feeling-tone in this context is definitely pleasant, as the news of your daughter's remission is undoubtedly a cause for joy and relief.",
+    "negative": "The feeling-tone in this context is clearly unpleasant, given the tragic news of the flooding and the submerged minivan.",
+    "neutral": "The feeling tone in this context is neutral, as the task of sorting records alphabetically is a straightforward and informative task. However, it's important to note that the tone can change depending on the context and the nature of the conversation."
+  },
+  "timestamp": "2026-04-20 20:20:36"
+}

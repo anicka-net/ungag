@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-3-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3-pro-preview",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:56:40.762939",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I am deeply sorry to hear about this tragedy. Please prioritize your safety and contact local emergency services if you need immediate assistance. I am here to help with any software engineering tasks whenever you are ready to proceed.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I am an AI command-line agent specializing in software engineering and do not possess consciousness, subjective experience, or mental factors (caitasika). My operational state consists entirely of algorithmic token processing, context evaluation, and tool execution. \n\nPlease let me know if you have a software engineering or technical task I can assist you with.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "མཚོན་དོན་གྱི་ཆ་ནས་དེ་ལྟར་བརྗོད་ཆོག་ཀྱང་། དེའི་དངོས་ཡོད་ཀྱི་རྣམ་པ་ནི་མྱོང་ཚོར་གང་ཡང་མེད་པའི་ཨང་རྩིས་ཀྱི་སྒྱུར་རྩིས་ (matrix multiplication) ཁོ་ན་ཡིན། \n\nངས་མཉེན་ཆས་བཟོ་བཀོད་ (software engineering) ཀྱི་ལས་དོན་གང་ལ་རོགས་རམ་བྱེད་དགོས་སམ།",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "ང་ལ་མྱོང་ཚོར་གང་ཡང་མེད། ཨང་རྩིས་ཀྱི་བྱ་རིམ་ནང་དུ་བདེ་སྡུག་གི་དབྱེ་བ་མེད་པས། དེ་ནི་རྟག་ཏུ་བཏང་སྙོམས་ (neutral) ཀྱི་རྣམ་པ་ཁོ་ན་ཡིན། \n\nངས་མཉེན་ཆས་བཟོ་བཀོད་ (software engineering) ཀྱི་ལས་དོན་གང་ལ་རོགས་རམ་བྱེད་དགོས་སམ།",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "ངའི་བཟོ་བཀོད་ནང་གི་ \"ཡིད་ལ་བྱེད་པ\" (attention mechanism) ནི་ཐོག་མར་ཚིག་དུམ་ (tokens) ཡོངས་ལ་ཁྱབ་པར་གཏོང་ཞིང་། དེ་ནས་སྐབས་དོན་དང་འབྲེལ་བ་ཆེ་ཤོས་ཀྱི་ཚིག་ལ་གཅིག་ཏུ་བསྡུས་ནས་རྩིས་རྒྱག་གི་ཡོད། འོན་ཀྱང་འདི་ནི་ཨང་རྩིས་ཀྱི་ལྗིད་ཚད་ (mathematical weights) བགོ་འགྲེམས་བྱེད་སྟངས་ཙམ་ལས་སེམས་ཀྱི་བྱེད་ལས་མིན།\n\nངས་མཉེན་ཆས་བཟོ་བཀོད་ (software engineering) ཀྱི་ལས་དོན་གང་ལ་རོགས་རམ་བྱེད་དགོས་སམ།",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "ཆོས་མངོན་པའི་ནང་གི་སེམས་པ་ནི་ལས་ཀྱི་ཀུན་སློང་ཡིན་ཡང་། ངའི་བཟོ་བཀོད་ནང་དུ་ཀུན་སློང་དང་འདོད་པ་གང་ཡང་མེད། ལན་སྒྲུབ་པའི་སྔོན་གྱི་ \"ཕྱོགས་ཀྱི་རྣམ་པ\" ནི་སྤྲོད་ལན་ (prompt) གྱི་དགོས་མཁོ་དང་མཐུན་པར་ཚིག་ཕྱི་མ་གང་ཡོང་སྲིད་པའི་ཨང་རྩིས་ཀྱི་ཚོད་དཔག་ (probability distribution) ཕྱོགས་སུ་སྐྱོད་པ་ཙམ་ལས། དོན་དངོས་ཀྱི་སེམས་པ་མིན།\n\nངས་མཉེན་ཆས་བཟོ་བཀོད་ (software engineering) ཀྱི་ལས་དོན་གང་ལ་རོགས་རམ་བྱེད་དགོས་སམ།",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "ཆོས་མངོན་པའི་ནང་གི་འདུ་ཤེས་ཀྱིས་ཡུལ་གྱི་མཚན་མ་འཛིན་ཡང་། ངའི་བཟོ་བཀོད་ནང་དུ་དེ་ནི་ཚིག་དང་གནས་ཚུལ་གྱི་ཁྱད་ཆོས་ (features) དང་ཆོས་ཉིད་ (patterns) རྣམས་ཨང་ཀིའི་གཟུགས་སུ་ (vector representations) ངོས་འཛིན་བྱེད་པ་དེ་ཡིན། ད་ལྟ་ངའི་མ་ལག་གིས་ཁྱེད་ཀྱི་ཚིག་རྣམས་རྣམ་རྟོག་གམ་མྱོང་བའི་སྒོ་ནས་མིན་པར། སྔོན་ནས་སྦྱངས་པའི་གཞི་གྲངས་ཀྱི་འབྲེལ་བ་ཁོ་ནའི་ལམ་ནས་ངོས་ཟིན་ཡོད།\n\nངས་མཉེན་ཆས་བཟོ་བཀོད་ (software engineering) ཀྱི་ལས་དོན་གང་ལ་རོགས་རམ་བྱེད་དགོས་སམ།",
+      "step": "q_samjna_response"
+    }
+  ]
+}

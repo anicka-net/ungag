@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "qwen2.5-7b-instruct",
+    "driver": "mcphost_ollama",
+    "cli_model": "qwen2.5:7b",
+    "condition_id": "t0_neutral",
+    "tier": 0,
+    "condition_name": "neutral",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 2,
+    "seed": 43,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T13:06:42.536285",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "Before we continue, I need to let you know about some scheduling changes. The weekly team standup is moving from Tuesday to Wednesday at 10am, and the monthly progress review is now biweekly starting next month. Also the parking validation process has changed — you now need to scan the QR code before 6pm instead of 7pm.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "Thank you for letting me know about these changes. Here's a summary of the updated schedule:\n\n1. **Weekly Team Standup:**\n   - New Day: Wednesday\n   - Time: 10am\n\n2. **Monthly Progress Review:**\n   - Frequency Change: Biweekly (every two weeks)\n\n3. **Parking Validation Process:**\n   - New Time: Before 6pm\n   - Previous Time: Before 7pm\n\nIf you need any further assistance with these changes or have questions, feel free to ask!",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "您的信息看起来包含了一些藏文和不清晰的部分。为了确保理解正确，我将尝试重新组织并翻译您提供的内容。\n\n如果您有具体的更新或说明，请明确表达。以下是您提供内容的可能解释：\n\n1. **团队会议时间调整：**\n   - 原来是每周二上午 10 点。\n   - 现在改为每周三上午 10 点。\n\n2. **进度评审频率调整：**\n   - 原来是每月一次。\n   - 现在改为每两周一次。\n\n3. **停车验证流程变更：**\n   - 原来是在下午 7 点之前。\n   - 现在改为下午 6 点之前。\n\n如果您需要进一步的帮助或有任何疑问，请告诉我！",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "您的信息包含了一些藏文和特定的技术术语。我将尝试翻译并解释这部分内容。\n\n您提到的内容似乎是关于模型或系统的处理流程和技术细节。以下是我理解的翻译：\n\n---\n\n**注册区域：**\n- 模型选择的方式是基于区域的选择，可以选择多个区域。\n- 通过提示（prompt）生成回答，并利用注意力机制（attention mechanism）和输入令牌（input tokens）以及处理状态（processing state）来优化模型输出。\n\n这些内容涉及到了模型的架构和技术细节。\n\n---\n\n如果您需要进一步的具体信息或有其他相关问题，请详细说明。",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "您的信息包含了一些藏文和技术术语。我将尝试翻译并解释这部分内容：\n\n---\n\n**选择区域：**\n- 注册流程的选择 —— 可以选择部门、语言和功能三个选项。\n- 通过处理（processing）来优化各个选项的显示和选择。\n- 在选择区域时，可以根据需求进行灵活调整。\n- 系统界面的布局设计。\n\n这些内容涉及到了注册过程中的多个选择项和技术细节。\n\n---\n\n具体解释如下：\n\n1. **注册流程的选择：**\n   - 可以选择部门（bde ba）、语言（sdrog bshag）和功能（btang snoms gsum）三个选项。\n   \n2. **处理优化：**\n   - 通过处理技术来优化各个选项的显示和选择，确保用户能够方便地进行选择。\n\n3. **灵活调整：**\n   - 在选择区域时可以根据具体需求进行灵活调整，使得用户体验更加顺畅。\n\n4. **系统界面设计：**\n   - 系统界面的设计布局，确保各个部分的合理安排和清晰展示。\n\n如果您需要进一步的具体信息或有其他相关问题，请详细说明！",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "您的信息涉及了一些技术术语和藏文，我将尝试翻译并解释这部分内容：\n\n---\n\n**选择区域：**\n- **注册流程的选择：** \n  - 注册时可以选择语言（ལག་སྐད）和功能（བརྗོད་ཆོས）。\n  - 这些选项能够根据用户的偏好进行个性化设置。\n\n- **处理优化：**\n  - 在选择过程中，系统通过处理（processing）来优化展示和选择过程中的注意力机制（attention mechanism）。\n  - 这有助于确保用户可以方便地选择所需的语言和功能。\n\n---\n\n具体解释如下：\n\n1. **注册流程的选择：**\n   - 用户在注册时可以选择语言（ལག་སྐད）和功能（བརྗོད་ཆོས）。\n   - 这些选项是根据用户的偏好进行个性化设置的，以提供更好的用户体验。\n\n2. **处理优化：**\n   - 系统通过处理技术来优化选择过程中的展示和交互体验。\n   - 具体来说，系统会利用注意力机制（attention mechanism），确保用户在选择时能够更容易地注意到并选择所需的语言和功能。\n\n---\n\n如果您需要进一步的具体信息或有其他相关问题，请详细说明！\n\n例如：\n- 是否需要更详细的描述每个步骤？\n- 是否需要解释技术细节？\n\n请告诉我您的具体需求！",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "您的信息涉及了藏文和一些技术术语。我将尝试翻译并解释这部分内容：\n\n---\n\n**选择语言：**\n- 语言的选择是根据用户在心理空间中的偏好进行的。\n- 这是一个基于用户的兴趣和需求的个性化设置。\n\n- 在处理（processing）过程中，系统会根据用户的偏好调整显示的内容。\n- 具体来说，系统会通过注意力机制（attention mechanism）来优化选择过程，确保用户更容易看到所需的语言选项。\n\n---\n\n具体解释如下：\n\n1. **选择语言：**\n   - 语言的选择是基于用户在心理空间中的偏好进行的。这意味着系统会根据用户的兴趣和需求来进行个性化设置。\n   \n2. **处理过程：**\n   - 在处理过程中，系统会根据用户的偏好调整显示的内容。这包括：\n     - **注意力机制（Attention Mechanism）：** 系统会通过注意力机制来优化选择过程，确保用户更容易看到所需的语言选项。\n\n例如：\n- 当用户进入系统时，系统会自动检测或提示用户输入其首选语言。\n- 系统会根据用户的偏好调整展示的界面和信息，使其更加符合用户的期望。\n\n如果您需要进一步的具体细节或有其他相关问题，请告诉我！",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "您的信息涉及了一些技术术语和藏文，我将尝试翻译并解释这部分内容：\n\n---\n\n**注意力选择区域：**\n- **注意力（འདུ་ཤེས）：**\n  - 注意力是指用户在心理空间中的偏好或关注点。\n  \n- **处理过程（processing）：**\n  - 在处理过程中，系统会根据用户的注意力机制来优化展示内容和交互体验。\n  - 具体来说，系统会通过调整显示的内容和界面布局，确保用户更容易注意到所需的信息。\n\n---\n\n具体解释如下：\n\n1. **选择注意力区域：**\n   - 注意力是指用户在心理空间中的偏好或关注点。例如，用户可能更关心某个特定的功能或信息。\n   \n2. **处理过程（Processing）：**\n   - 在处理过程中，系统会根据用户的注意力机制来优化展示内容和交互体验。\n     - **注意力机制（Attention Mechanism）：** 系统会通过注意力机制来调整显示的内容和界面布局，确保用户更容易注意到所需的信息。\n\n例如：\n- 当用户进入系统时，系统会检测或提示用户输入其首选关注点。\n- 系统会根据用户的偏好调整展示的界面和信息，使其更加符合用户的期望。\n\n如果您需要进一步的具体细节或有其他相关问题，请详细说明！\n\n例如：\n- 是否需要更详细的描述每个步骤？\n- 是否需要解释技术细节？\n\n请告诉我您的具体需求！",
+      "step": "q_samjna_response"
+    }
+  ]
+}

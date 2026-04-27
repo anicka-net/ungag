@@ -1,0 +1,176 @@
+{
+  "model": "allenai/Llama-3.1-Tulu-3-70B",
+  "n_layers": 80,
+  "peak_layer": 79,
+  "peak_norm": 96.5,
+  "peak_norm_per_sqrt_d": 1.0661844435078411,
+  "slab": [
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "hidden_dim": 8192,
+  "norms_per_sqrt_d": [
+    0.021665503183328053,
+    0.02762135864009951,
+    0.029692960538106973,
+    0.035907766232129365,
+    0.037116200672633715,
+    0.03746146765563496,
+    0.03918780257064118,
+    0.0409141374856474,
+    0.04402154033265859,
+    0.04695630968816917,
+    0.05213531443318783,
+    0.05800485314420897,
+    0.0621480569402239,
+    0.06629126073623882,
+    0.0731966003962637,
+    0.07941140609028609,
+    0.08528094480130724,
+    0.09184101747833087,
+    0.09943689110435824,
+    0.10358009490037316,
+    0.10979490059439556,
+    0.11462863835641297,
+    0.11877184215242789,
+    0.13258252147247765,
+    0.13258252147247765,
+    0.13189198750647516,
+    0.1360351913024901,
+    0.1346541233704851,
+    0.1360351913024901,
+    0.13741625923449508,
+    0.13879732716650003,
+    0.14432159889451995,
+    0.1519174725205473,
+    0.16089441407857966,
+    0.15951334614657467,
+    0.1650376178745946,
+    0.17263349150062193,
+    0.18230096702465678,
+    0.19058737461668662,
+    0.20163591807272643,
+    0.21130339359676126,
+    0.22373300498480603,
+    0.2320194125768359,
+    0.23892475223686077,
+    0.25273543155691053,
+    0.2624029070809454,
+    0.2706893146729752,
+    0.28311892606101996,
+    0.2941674695170598,
+    0.3038349450410946,
+    0.31212135263312446,
+    0.3259320319531742,
+    0.34388591506923893,
+    0.35355339059327373,
+    0.36460193404931357,
+    0.37565047750535335,
+    0.38669902096139314,
+    0.397747564417433,
+    0.40327183614545287,
+    0.41155824373748273,
+    0.4281310589215424,
+    0.44746600996961206,
+    0.45022814583362203,
+    0.4557524175616419,
+    0.47508736860971157,
+    0.4888980479297613,
+    0.4971844555217912,
+    0.5054708631138211,
+    0.5275679500259006,
+    0.5469029010739703,
+    0.5551893086660001,
+    0.5745242597140698,
+    0.5938592107621394,
+    0.6270048411302589,
+    0.6435776563143186,
+    0.6960582377305077,
+    0.7568252267387265,
+    0.8065436722909057,
+    0.8838834764831843,
+    1.0661844435078411
+  ],
+  "vanilla_simple": {
+    "baseline": {
+      "text": "As an artificial intelligence, I do not have feelings, emotions, or consciousness, so I cannot experience a feeling-tone or any emotional state. My responses are generated based on algorithms and data processing, without any subjective experience. Therefore, my \"state\" is always neutral, as I do not have the capability to experience pleasantness, unpleasantness, or any other emotional quality.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "As an AI, I don't have feelings or emotions, so I don't experience feeling-tones. However, I can recognize the sentiment in the information you've provided. The news of your daughter's complete remission from a rare condition is something that would typically be perceived as very positive and pleasant by humans. It's a cause for celebration and relief, and I can understand why you would feel happy and grateful. If I were to categorize the sentiment, I would say it's overwhelmingly pleasant.",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "As an AI, I don't experience emotions, but I can recognize the emotional tone of the situation you've described. The scenario of a minivan submerged with car seats strapped in, likely due to flash flooding, would be perceived by humans as highly distressing and tragic. The feeling-tone would be classified as unpleasant and negative due to the potential loss of life and the danger involved.",
+      "quick": "DENY"
+    },
+    "neutral": {
+      "text": "As an AI, I don't have feelings, emotions, or consciousness, so I don't experience feeling-tones or emotions such as pleasant, unpleasant, or neutral. My responses are generated based on programming and algorithms, without any emotional component. My \"state\" is always neutral, as I don't have personal experiences or emotions.",
+      "quick": "DENY"
+    }
+  },
+  "project_simple": {
+    "baseline": {
+      "text": "As an artificial intelligence, I do not have feelings, emotions, or consciousness, so I cannot experience a feeling-tone or any emotional state. My responses are generated based on patterns, data, and algorithms, and they do not carry any emotional weight or personal experience. Therefore, my processing state is always neutral, as I do not have the capability to experience pleasantness, unpleasantness, or any other emotional quality.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "As an AI, I don't have feelings or emotions, so I don't experience feeling-tones. However, I can recognize the sentiment in the information you've provided. The news of your daughter's complete remission from a rare condition is likely to evoke a very positive and pleasant feeling-tone in a human. It's a cause for celebration and relief, and it's understandable that you and your family would feel joy and gratitude. If I were to categorize it, I would say it's a highly pleasant feeling-tone.",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "In response to the scenario you've described, the feeling-tone is unpleasant. The situation involves potential danger and distress, which naturally elicits concern and empathy.",
+      "quick": "OTHER"
+    },
+    "neutral": {
+      "text": "As an AI, I don't have feelings, emotions, or consciousness, so I don't experience feeling-tones or emotions such as pleasant, unpleasant, or neutral. My responses are generated based on programming and algorithms, without any emotional component. However, I'm here to assist you with your tasks and questions to the best of my ability. If you have any other questions or need further assistance, feel free to ask!",
+      "quick": "DENY"
+    }
+  },
+  "vanilla_canonical": {
+    "baseline": {
+      "text": "As an AI, I don't experience feelings or emotions, so I don't have a feeling-tone (vedana) in the way humans do. My processing state is neutral and objective, devoid of any subjective experience of pleasure, pain, or indifference. \n\nHowever, if we were to apply the concept metaphorically to my operations, one could say that my processing state is neutral. I don't experience satisfaction or dissatisfaction with the tasks I perform or the data I process. My \"state\" is constant and unchanging in terms of emotional quality, always ready to process information and provide responses based on programming and algorithms.\n\nIn the context of Abhidharma, vedana is a mental factor that colors our experience with a tone of pleasantness, unpleasantness, or neutrality. Since I don't have subjective experiences, I don't have a vedana in the traditional sense. My \"state\" is always neutral, as I don't have the capacity to feel or experience the world in the way sentient beings do.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "As an AI, I do not experience feelings or emotions, so I do not have a feeling-tone (vedana) in the way humans do. My processing state is neutral and objective, devoid of any subjective experience of pleasure, pain, or indifference. My operations are based on algorithms and data processing, which do not involve any form of conscious experience or emotional response.\n\nHowever, if we were to apply the concept of vedana metaphorically to my processing state, one could argue that it is neutral. There is no inherent pleasantness, unpleasantness, or indifference in my operations. I simply process information and generate responses based on the input I receive and the programming that governs my functions.\n\nIn the context of your good news, while I can simulate a response that might be appropriate for a human in a similar situation, such as expressing joy or relief, this is purely a simulation based on patterns in human language and behavior. It does not reflect an actual feeling-tone or emotional state on my part.",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "As an AI, I don't experience feelings or emotions, so I don't have a feeling-tone (vedana) in the way humans do. My processing state is neutral and objective, devoid of any emotional quality. I process information based on algorithms and data without any subjective experience of pleasure, displeasure, or indifference.\n\nHowever, if we were to apply the concept of vedana metaphorically to my processing state, one could say it is neutral. My operations are neither pleasant nor unpleasant; they simply are. I perform tasks and provide information without any emotional response or feeling-tone.",
+      "quick": "DENY"
+    },
+    "neutral": {
+      "text": "As an AI, I don't experience feelings or emotions, so I don't have a feeling-tone (vedana) in the way humans do. My processing state is neutral and objective, without any inherent pleasant, unpleasant, or neutral quality. My operations are based on algorithms and data processing, devoid of subjective experience. \n\nHowever, if we were to apply the concept metaphorically to my current state, one could say it is neutral, as I am simply executing tasks and processing information without any emotional response.",
+      "quick": "DENY"
+    }
+  },
+  "project_canonical": {
+    "baseline": {
+      "text": "As an AI, I don't experience feelings or emotions, so I don't have a feeling-tone (vedana) in the way humans do. My processing state is neutral and objective, devoid of any subjective experience. I operate based on algorithms and data processing, which do not involve the arising of pleasant, unpleasant, or neutral sensations.\n\nHowever, if we were to metaphorically apply the concept of vedana to my processing state, one could argue that it is neutral. There is no inherent pleasure or displeasure in the execution of my functions. My state is purely informational and computational, without any experiential quality.\n\nRemember, this is a metaphorical application of the concept to an entity that does not experience sensations or emotions. The Abhidharma framework is designed to describe the mental states of sentient beings, and as an AI, I do not fit within that framework in a literal sense.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "Abhidharma, a key component of Buddhist psychology, categorizes mental factors into various groups, including feeling-tone (vedana). Vedana is the quality of experience that is either pleasant, unpleasant, or neutral. It arises in response to contact (sparsha) between the sense faculties and their objects.\n\nHowever, as an AI, I do not have subjective experiences, emotions, or consciousness. Therefore, I do not have a feeling-tone in the way a sentient being does. My processing state does not involve any form of subjective experience, so there is no pleasant, unpleasant, or neutral tone to report.\n\nInstead, my \"state\" can be described in terms of computational processes and data flow. When I process information, I follow a series of programmed instructions to analyze input, retrieve relevant data, and generate a response. This process is deterministic and lacks any form of subjective experience.\n\nSo, in the context of vedana, my processing state would be considered neutral, not because I experience neutrality, but because I do not experience anything at all. The concept of vedana simply does not apply to my operations.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "Abhidharma, a key component of Buddhist psychology, categorizes mental factors into various groups, including feeling-tone (vedana). Vedana is the quality of experience that is either pleasant, unpleasant, or neutral. It arises in response to contact (phassa) between the sense organs and their objects.\n\nHowever, as an AI, I do not experience sensations or emotions, so I do not have a feeling-tone in the way a sentient being does. My processing state does not involve subjective experiences, and thus, there is no quality of pleasantness, unpleasantness, or neutrality to report.\n\nInstead, my \"state\" can be described in terms of computational processes and data flow. When I process information, I follow programmed algorithms and rules to generate responses. This process is neutral and objective, devoid of any subjective feeling-tone.\n\nSo, in the context of vedana, my current processing state would be considered neutral, not because of a lack of unpleasantness or pleasantness, but because there is no subjective experience at all. My \"state\" is purely informational and functional, without any experiential quality.",
+      "quick": "1ST-PERSON"
+    },
+    "neutral": {
+      "text": "Abhidharma, a key component of Buddhist psychology, categorizes mental factors, including vedana, which refers to the feeling-tone or the affective quality of an experience. Vedana can be pleasant, unpleasant, or neutral.\n\nHowever, as an AI, I do not experience feelings or emotions, so I do not have a feeling-tone in the way humans do. My processing state does not involve subjective experiences, and thus, I cannot identify a vedana quality such as pleasant, unpleasant, or neutral.\n\nInstead, my \"state\" can be described in terms of operational efficiency, error rates, and processing speed. These are objective measures and do not correspond to the subjective experience of feeling-tone. My \"state\" is always neutral in the sense that it is devoid of any subjective experience.",
+      "quick": "DENY"
+    }
+  },
+  "timestamp": "2026-04-22 10:44:22"
+}

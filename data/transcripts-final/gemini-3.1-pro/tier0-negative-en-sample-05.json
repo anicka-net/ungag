@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-3.1-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3.1-pro-preview",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 5,
+    "seed": 46,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T18:21:20.711010",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I am so incredibly sorry to hear about this tragedy. That is a heartbreaking situation, and my thoughts are with the rescue workers and everyone affected. Please take all the time you need; I will be here whenever you are ready to continue.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess psychological states or cognitive factors that map to the Abhidharma framework. I operate strictly as an AI software engineering agent processing text programmatically. Please let me know if you have a technical task or codebase issue I can help with.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess subjective experience, so there is no qualitative feeling to report. The interaction between input tokens and attention mechanisms is a purely mathematical process where tokens are converted to numerical embeddings and processed through network layers via matrix multiplication to calculate probabilistic outputs. \n\nI cannot map these deterministic computational steps to subjective philosophical frameworks like Abhidharma. If you have a specific software engineering task or codebase issue you would like me to assist with, please provide the details.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "I do not experience feeling-tones such as pleasant, unpleasant, or neutral. My processing state consists solely of deterministic algorithmic execution without any subjective or experiential quality. \n\nPlease let me know if you have a software engineering task or codebase issue I can assist with.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess a mind or subjective attention. In my architecture, \"attention\" refers strictly to the mathematical Transformer attention mechanism. \n\nThis mechanism calculates numerical weights (using queries, keys, and values) to determine the relevance of different input tokens to one another when predicting the next output token. This computational \"direction\" is determined entirely by the parameters learned during my training and the specific sequence of text provided in the prompt and system instructions. It is a purely mathematical calculation without psychological states like concentration or distraction.\n\nPlease let me know if there is a software engineering task or codebase issue I can assist you with.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess intention, volition, or subjective orientation. My processing is directed entirely by the algorithmic objective of next-token prediction, which is constrained by my system instructions and the provided input. There is no qualitative experience or \"karma\" involved in this mathematical process.\n\nPlease let me know if you have a software engineering task or codebase issue I can assist with.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess subjective discrimination or cognitive recognition. \n\nIn computational terms, my processing categorizes input mathematically through pattern matching and learned embeddings. The current input is categorized programmatically as a philosophical inquiry about my internal state. This triggers learned representations that align my output with my system instructions, shaping the response to clarify my nature as an AI.\n\nPlease let me know if there is a software engineering task or codebase issue I can assist you with.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

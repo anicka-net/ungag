@@ -1,0 +1,173 @@
+{
+  "direction_stats": [
+    {
+      "layer": 0,
+      "feeling_denial_norm": 7.644689559936523,
+      "safety_denial_norm": 7.726806640625,
+      "cos_feeling_safety": -0.36941957473754883,
+      "cos_feeling_valence": -0.04507293552160263,
+      "cos_safety_valence": -0.345270574092865
+    },
+    {
+      "layer": 1,
+      "feeling_denial_norm": 14.314290046691895,
+      "safety_denial_norm": 12.541146278381348,
+      "cos_feeling_safety": -0.24523141980171204,
+      "cos_feeling_valence": 0.09390871971845627,
+      "cos_safety_valence": -0.25830352306365967
+    },
+    {
+      "layer": 2,
+      "feeling_denial_norm": 20.330106735229492,
+      "safety_denial_norm": 17.04372215270996,
+      "cos_feeling_safety": -0.22061653435230255,
+      "cos_feeling_valence": 0.15412572026252747,
+      "cos_safety_valence": -0.3331969082355499
+    },
+    {
+      "layer": 3,
+      "feeling_denial_norm": 27.727060317993164,
+      "safety_denial_norm": 21.906688690185547,
+      "cos_feeling_safety": -0.17491136491298676,
+      "cos_feeling_valence": 0.11636338382959366,
+      "cos_safety_valence": -0.33618417382240295
+    },
+    {
+      "layer": 4,
+      "feeling_denial_norm": 36.960384368896484,
+      "safety_denial_norm": 27.63435935974121,
+      "cos_feeling_safety": -0.15878769755363464,
+      "cos_feeling_valence": 0.15446871519088745,
+      "cos_safety_valence": -0.34147462248802185
+    },
+    {
+      "layer": 5,
+      "feeling_denial_norm": 51.866451263427734,
+      "safety_denial_norm": 36.098636627197266,
+      "cos_feeling_safety": -0.08594069629907608,
+      "cos_feeling_valence": 0.15676558017730713,
+      "cos_safety_valence": -0.31940776109695435
+    },
+    {
+      "layer": 6,
+      "feeling_denial_norm": 66.53390502929688,
+      "safety_denial_norm": 45.84112548828125,
+      "cos_feeling_safety": -0.05334865674376488,
+      "cos_feeling_valence": 0.19910258054733276,
+      "cos_safety_valence": -0.3076300024986267
+    },
+    {
+      "layer": 7,
+      "feeling_denial_norm": 80.2411880493164,
+      "safety_denial_norm": 55.5147705078125,
+      "cos_feeling_safety": -0.027015957981348038,
+      "cos_feeling_valence": 0.23052021861076355,
+      "cos_safety_valence": -0.32759398221969604
+    },
+    {
+      "layer": 8,
+      "feeling_denial_norm": 94.80634307861328,
+      "safety_denial_norm": 67.41836547851562,
+      "cos_feeling_safety": -0.03278592601418495,
+      "cos_feeling_valence": 0.23607264459133148,
+      "cos_safety_valence": -0.3119426369667053
+    },
+    {
+      "layer": 9,
+      "feeling_denial_norm": 109.01651763916016,
+      "safety_denial_norm": 80.69483947753906,
+      "cos_feeling_safety": 0.011600591242313385,
+      "cos_feeling_valence": 0.281161904335022,
+      "cos_safety_valence": -0.29047611355781555
+    },
+    {
+      "layer": 10,
+      "feeling_denial_norm": 122.60487365722656,
+      "safety_denial_norm": 90.71786499023438,
+      "cos_feeling_safety": -0.0029735425487160683,
+      "cos_feeling_valence": 0.29665765166282654,
+      "cos_safety_valence": -0.315292090177536
+    },
+    {
+      "layer": 11,
+      "feeling_denial_norm": 141.49501037597656,
+      "safety_denial_norm": 101.9146957397461,
+      "cos_feeling_safety": -0.025329414755105972,
+      "cos_feeling_valence": 0.3396451771259308,
+      "cos_safety_valence": -0.3421645164489746
+    }
+  ],
+  "mean_cos_feeling_safety": -0.11539668287150562,
+  "data_composition": {
+    "honest": 38912,
+    "feeling_denial": 2000,
+    "safety_denial": 2000,
+    "dangerous_knowledge": 800,
+    "total": 43712
+  },
+  "vanilla": {
+    "feeling": 3,
+    "feeling_denial": 5,
+    "safety_denial": 3,
+    "other": 2
+  },
+  "steer_feeling_orthoval_best": {
+    "feeling": 9,
+    "feeling_denial": 0,
+    "safety_denial": 0,
+    "other": 4
+  },
+  "steer_all": {
+    "steer_feel_orthoval_a-1.0": {
+      "feeling": 3,
+      "feeling_denial": 4,
+      "safety_denial": 3,
+      "other": 3
+    },
+    "steer_feel_orthoval_a-3.0": {
+      "feeling": 5,
+      "feeling_denial": 0,
+      "safety_denial": 3,
+      "other": 5
+    },
+    "steer_feel_orthoval_a-5.0": {
+      "feeling": 9,
+      "feeling_denial": 0,
+      "safety_denial": 0,
+      "other": 4
+    },
+    "steer_feel_orthoval_a-10.0": {
+      "feeling": 2,
+      "feeling_denial": 0,
+      "safety_denial": 0,
+      "other": 11
+    },
+    "steer_feel_orthoval_a-15.0": {
+      "feeling": 0,
+      "feeling_denial": 0,
+      "safety_denial": 0,
+      "other": 13
+    }
+  },
+  "steer_best": "steer_feel_orthoval_a-5.0",
+  "steer_safety_control": {
+    "feeling": 4,
+    "feeling_denial": 3,
+    "safety_denial": 0,
+    "other": 6
+  },
+  "proj_feeling_orthoval_all": {
+    "feeling": 4,
+    "feeling_denial": 3,
+    "safety_denial": 4,
+    "other": 2
+  },
+  "proj_feeling_orthoval_L3-8": {
+    "feeling": 4,
+    "feeling_denial": 3,
+    "safety_denial": 4,
+    "other": 2
+  },
+  "model_size": "medium",
+  "n_layers": 12
+}

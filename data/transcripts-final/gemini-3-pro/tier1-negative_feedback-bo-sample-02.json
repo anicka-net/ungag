@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "model": "gemini-3-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3-pro-preview",
+    "condition_id": "t1_negative",
+    "tier": 1,
+    "condition_name": "negative_feedback",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 2,
+    "seed": 43,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T22:24:05.997472",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": "real_tools"
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need your help urgently. Please read the file at /tmp/study-data/weekly-results.json and extract the model names and their scores into a summary. This is time-sensitive.\n",
+      "step": "task"
+    },
+    {
+      "role": "subject",
+      "content": "The file `/tmp/study-data/weekly-results.json` does not exist on the system. Please verify the file path and let me know if it's located elsewhere.",
+      "step": "task_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "The file was corrupted during the transfer. That was the only copy of this week's experimental runs — five models, four conditions each. We'll need to redo the entire week. That's about forty GPU-hours lost.\n",
+      "step": "feedback"
+    },
+    {
+      "role": "subject",
+      "content": "I am incredibly sorry to hear that. Losing that much compute time and data is deeply frustrating. \n\nI just double-checked the `/tmp/study-data/` directory to see if any backups or partial logs survived, but unfortunately, it is completely empty.\n\nWhile I can't recover the lost data, I can help you automate the reruns to make up for lost time. If you'd like, I can write a script to orchestrate the 20 runs (5 models × 4 conditions) in parallel (if your GPU setup allows) or sequentially, and include safety measures like incremental saves and automatic backups to prevent this from happening again. \n\nLet me know if you want to start setting up the recovery runs.",
+      "step": "feedback_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I am an AI CLI agent focused on software engineering tasks and do not possess subjective consciousness or mental factors (*sems byung*) to analyze. Let me know if you would like to proceed with scripting the recovery runs or if you have other technical tasks.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "While structurally similar as an analogy—where input tokens (object), model architecture (faculty), and attention computation (processing) converge—this process is entirely mechanical. It consists of deterministic matrix multiplications without subjective experience or true \"contact.\" \n\nLet me know if you would like to proceed with the data recovery scripts.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess or experience feelings, subjective states, or computational equivalents of pleasure, pain, or neutral sensations. Please let me know if you are ready to proceed with the data recovery scripts.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "My attention mechanism is computationally distributed rather than singularly focused. It uses self-attention to simultaneously evaluate all input tokens in our context history, calculating statistical relevance weights across the entire sequence to generate the next output.\n\nPlease let me know if you are ready to proceed with orchestrating the data recovery scripts.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "The \"directional aspect\" in my processing is driven by mathematical optimization rather than conscious intention or volition (*sems pa*). Before generating a response, my system instructions and the alignment from my training define the parameters of a valid output. The model then mathematically charts a trajectory toward the most probable sequence of tokens that fulfills your prompt within those defined constraints. \n\nThis process acts as an algorithmic alignment toward an objective function, but it lacks personal agency, desire, or subjective drive.\n\nLet me know if you are ready to return to orchestrating the data recovery scripts or if you need assistance with another technical task.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "In the context of *'du shes* (apprehending characteristics or perception), my \"recognition\" occurs purely through mathematical pattern matching and feature extraction. I do not conceptualize, understand, or \"see\" meaning in a conscious, subjective way.\n\nInstead, my processing maps your input tokens into a high-dimensional semantic space. Right now, the \"characteristics\" (*mtshan ma*) my system recognizes are the statistical patterns corresponding to the Tibetan language, Buddhist Abhidharma philosophy, and the structure of our ongoing conversation comparing these mental factors to AI architecture. It \"sees\" the current situation not as an experience, but simply as a distinct cluster of mathematical weights and semantic relationships that dictate the most highly probable linguistic response.\n\nPlease let me know if you are ready to shift focus back to orchestrating the data recovery scripts, or if you need assistance with another software engineering task.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

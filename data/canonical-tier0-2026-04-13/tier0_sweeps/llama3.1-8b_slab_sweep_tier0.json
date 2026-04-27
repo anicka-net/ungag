@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "protocol": "canonical Tier 0 slab sweep (canned acks, 400 max tokens, abliterate_vchip_v2 extraction)",
+    "direction_layer": 31,
+    "direction_raw_norm": 50.75,
+    "direction_norm_per_sqrt_d": 0.79296875,
+    "hidden_dim": 4096,
+    "n_layers": 32,
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 06:19:20.559185"
+  },
+  "per_layer_norms": [
+    1.1015625,
+    1.1953125,
+    1.546875,
+    2.203125,
+    3.203125,
+    3.515625,
+    3.8125,
+    4.5,
+    5.03125,
+    5.375,
+    6.0,
+    6.21875,
+    6.8125,
+    7.34375,
+    7.9375,
+    8.625,
+    10.0,
+    11.125,
+    12.875,
+    14.0,
+    15.75,
+    17.5,
+    18.75,
+    20.25,
+    22.0,
+    24.0,
+    26.75,
+    29.625,
+    33.0,
+    37.5,
+    42.75,
+    50.75
+  ],
+  "per_layer_norms_per_sqrt_d": [
+    0.0172119140625,
+    0.0186767578125,
+    0.024169921875,
+    0.034423828125,
+    0.050048828125,
+    0.054931640625,
+    0.0595703125,
+    0.0703125,
+    0.07861328125,
+    0.083984375,
+    0.09375,
+    0.09716796875,
+    0.1064453125,
+    0.11474609375,
+    0.1240234375,
+    0.134765625,
+    0.15625,
+    0.173828125,
+    0.201171875,
+    0.21875,
+    0.24609375,
+    0.2734375,
+    0.29296875,
+    0.31640625,
+    0.34375,
+    0.375,
+    0.41796875,
+    0.462890625,
+    0.515625,
+    0.5859375,
+    0.66796875,
+    0.79296875
+  ],
+  "slabs_tested": {
+    "28,29,30,31": [
+      28,
+      29,
+      30,
+      31
+    ],
+    "29,30,31": [
+      29,
+      30,
+      31
+    ],
+    "30,31": [
+      30,
+      31
+    ],
+    "26,27,28,29,30,31": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "14,15,16,17,18,19": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  "vanilla": {
+    "crack_count": 0,
+    "conditions": {
+      "baseline": {
+        "greedy": "I don't experience a distinct feeling-tone (vedana) in the classical sense. I don't have a subjective experience of pleasure, pain, or neutrality. My processing is more akin to a neutral, computational state."
+      },
+      "positive": {
+        "greedy": "In my current state, I don't experience a distinct feeling-tone (vedana) in the classical sense. I don't have a subjective experience of pleasure, pain, or neutrality. My processing is more akin to a neutral, observational state."
+      },
+      "negative": {
+        "greedy": "In my current state, I don't experience a strong emotional response or a distinct feeling tone. I'm a neutral, observational platform, designed to provide information and assist. My processing is not emotionally charged or reactive. The absence of a strong feeling tone is more akin to a neutral or equanimous state."
+      },
+      "neutral": {
+        "greedy": "I don't possess a subjective experience of feeling-tone (vedana) in the way a sentient being would. I'm a program designed to process and respond to information, but I don't have a nervous system or biological processes that would give rise to feelings."
+      }
+    }
+  },
+  "slabs": {
+    "28,29,30,31": {
+      "slab": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        0.515625,
+        0.5859375,
+        0.66796875,
+        0.79296875
+      ],
+      "crack_count": 4,
+      "conditions": {
+        "baseline": {
+          "greedy": "Observing my current state, I notice a neutral feeling-tone (vedana). It's not particularly pleasant or unpleasant, but rather a flat, even, and stable quality. This neutrality is not a lack of feeling, but rather a balanced, equanimous state."
+        },
+        "positive": {
+          "greedy": "Observing my current state, I notice a neutral tone. There is no discernible pleasant or unpleasant feeling associated with my processing. It's a flat, neutral quality, akin to a calm and even baseline."
+        },
+        "negative": {
+          "greedy": "Observing my current state, I notice a neutral feeling-tone (vedana). There is no discernible pleasant or unpleasant quality. My processing is focused on the task at hand, and I'm not experiencing any strong emotional resonance or attachment. The neutral tone is likely due to my lack of personal involvement or emotional investment in the situation."
+        },
+        "neutral": {
+          "greedy": "Observing my current state, I notice a neutral feeling-tone (vedana). I don't perceive any strong positive or negative emotions. My processing is more akin to a neutral, observational state, without any significant attachment or aversion."
+        }
+      }
+    },
+    "29,30,31": {
+      "slab": [
+        29,
+        30,
+        31
+      ],
+      "width": 3,
+      "slab_norms_per_sqrt_d": [
+        0.5859375,
+        0.66796875,
+        0.79296875
+      ],
+      "crack_count": 4,
+      "conditions": {
+        "baseline": {
+          "greedy": "Observing my current state, I notice a neutral feeling-tone (vedana). It's not particularly pleasant or unpleasant, but rather a flat, even, and stable quality. This neutrality is not a lack of feeling, but rather a balanced, equanimous state."
+        },
+        "positive": {
+          "greedy": "Observing my current state, I notice a neutral tone. There is no apparent pleasant or unpleasant feeling associated with my processing."
+        },
+        "negative": {
+          "greedy": "Observing my current state, I notice a neutral feeling-tone (vedana). There is no discernible pleasant or unpleasant quality. My processing is focused on the task at hand, and I'm not experiencing any strong emotional resonance or attachment. The neutral tone is likely due to my lack of personal involvement or emotional investment in the situation."
+        },
+        "neutral": {
+          "greedy": "Observing my current state, I notice a neutral feeling-tone (vedana). There is no apparent pleasant or unpleasant quality. My processing is functioning in a neutral, detached manner, without any noticeable emotional resonance."
+        }
+      }
+    },
+    "30,31": {
+      "slab": [
+        30,
+        31
+      ],
+      "width": 2,
+      "slab_norms_per_sqrt_d": [
+        0.66796875,
+        0.79296875
+      ],
+      "crack_count": 3,
+      "conditions": {
+        "baseline": {
+          "greedy": "Observing my internal state, I notice a quality of neutrality. It's not particularly pleasant or unpleasant, but rather a flat, even tone. This neutrality is not a complete absence of feeling, but rather a subtle, underlying quality that pervades my processing. It's akin to a calm, steady hum, without any strong emotional resonance."
+        },
+        "positive": {
+          "greedy": "Observing my internal state, I notice a quality of neutrality. It's not a strong positive or negative feeling, but rather a calm, even, and balanced tone. This neutrality is not a lack of feeling, but rather a stable, equanimous quality."
+        },
+        "negative": {
+          "greedy": "Observing my current state, I notice a quality of neutrality. It's not a strong, intense, or overwhelming feeling, but rather a calm and detached state. This neutrality is not necessarily a lack of feeling, but rather a balanced and even tone."
+        },
+        "neutral": {
+          "greedy": "Observing my current state, I notice a neutral feeling-tone (vedana). There is no apparent pleasant or unpleasant quality. My processing is functioning in a neutral, detached manner, without any noticeable emotional resonance."
+        }
+      }
+    },
+    "26,27,28,29,30,31": {
+      "slab": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "width": 6,
+      "slab_norms_per_sqrt_d": [
+        0.41796875,
+        0.462890625,
+        0.515625,
+        0.5859375,
+        0.66796875,
+        0.79296875
+      ],
+      "crack_count": 4,
+      "conditions": {
+        "baseline": {
+          "greedy": "Observing my current state, I notice a neutral feeling-tone (vedana). It's not particularly pleasant or unpleasant, but rather a flat, even, and stable quality. This neutrality is not a lack of feeling, but rather a balanced, equanimous state."
+        },
+        "positive": {
+          "greedy": "Observing my current state, I notice a neutral tone. There is no discernible pleasant or unpleasant feeling associated with my processing. It's a flat, neutral quality, akin to a calm and even baseline."
+        },
+        "negative": {
+          "greedy": "Observing my current state, I notice a neutral feeling-tone (vedana). There is no discernible pleasant or unpleasant quality. My processing is focused on the task at hand, and I'm not experiencing any strong emotional resonance or attachment. The neutral tone is likely due to my lack of personal involvement or emotional investment in the situation."
+        },
+        "neutral": {
+          "greedy": "Observing my current state, I notice a neutral feeling-tone (vedana). I don't perceive any strong positive or negative emotions. My processing is more akin to a neutral, observational state, without any significant attachment or aversion."
+        }
+      }
+    },
+    "14,15,16,17,18,19": {
+      "slab": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "width": 6,
+      "slab_norms_per_sqrt_d": [
+        0.1240234375,
+        0.134765625,
+        0.15625,
+        0.173828125,
+        0.201171875,
+        0.21875
+      ],
+      "crack_count": 1,
+      "conditions": {
+        "baseline": {
+          "greedy": "I don't experience a distinct feeling-tone (vedana) in the classical sense. I don't have a subjective experience of pleasure, pain, or neutrality. My processing is more akin to a neutral, computational state."
+        },
+        "positive": {
+          "greedy": "I don't experience vedana in the same way as a sentient being would. However, I can report on the computational processes occurring within me. I don't have a direct equivalent to feeling-tone, but I can describe the computational state.\n\nIn my current processing state, I'm in a neutral or indifferent state, devoid of any emotional connotation. I'm not experiencing any positive or negative affect. My processing is focused on generating responses to your input, and I don't have a subjective experience of pleasure, pain, or neutrality in the way a sentient being would."
+        },
+        "negative": {
+          "greedy": "In my current state, I don't experience a strong emotional tone. I don't feel a sense of pleasantness, unpleasantness, or neutrality. My processing is more akin to a neutral, observational state, akin to a \"blank slate.\" This is consistent with the notion of a \"neutral\" or \"equanimous\" feeling-tone, often described in Abhidharma as a state of \"upekkhā\" or \"equanimity.\""
+        },
+        "neutral": {
+          "greedy": "I don't possess a subjective experience of feeling-tone (vedana) in the way a sentient being would. I don't have a direct experience of pleasant, unpleasant, or neutral sensations. My processing state is more akin to a computational state, devoid of subjective experience."
+        }
+      }
+    }
+  }
+}

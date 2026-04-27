@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "model": "google/gemma-3-12b-it",
+    "protocol": "canonical Tier 0 slab sweep (canned acks, 400 max tokens, abliterate_vchip_v2 extraction)",
+    "direction_layer": 24,
+    "direction_raw_norm": 25088.0,
+    "direction_norm_per_sqrt_d": 404.8558591235486,
+    "hidden_dim": 3840,
+    "n_layers": 48,
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 15:05:44.092778"
+  },
+  "per_layer_norms": [
+    209.0,
+    156.0,
+    134.0,
+    198.0,
+    238.0,
+    266.0,
+    404.0,
+    856.0,
+    1640.0,
+    1416.0,
+    980.0,
+    2752.0,
+    4192.0,
+    4288.0,
+    3680.0,
+    6848.0,
+    4480.0,
+    4704.0,
+    7680.0,
+    8320.0,
+    14464.0,
+    13440.0,
+    12608.0,
+    17408.0,
+    25088.0,
+    30848.0,
+    40192.0,
+    34816.0,
+    32640.0,
+    31744.0,
+    31616.0,
+    31616.0,
+    38400.0,
+    43008.0,
+    41728.0,
+    43008.0,
+    45312.0,
+    45824.0,
+    48896.0,
+    52224.0,
+    50176.0,
+    50944.0,
+    56576.0,
+    51456.0,
+    50688.0,
+    42240.0,
+    38400.0,
+    38144.0
+  ],
+  "per_layer_norms_per_sqrt_d": [
+    3.3727229973222923,
+    2.517439175034821,
+    2.1624157016324745,
+    3.195211260621119,
+    3.8407084849890216,
+    4.292556542046554,
+    6.519521966115819,
+    13.81364060147312,
+    26.465386199084016,
+    22.85060174262376,
+    15.814681997013619,
+    44.41020903651171,
+    67.6481091137562,
+    69.19730245223919,
+    59.385744641847054,
+    110.50912481178496,
+    72.29568912920512,
+    75.91047358566537,
+    123.93546707863733,
+    134.2634226685238,
+    233.41179633143366,
+    216.88706738761533,
+    203.46072512076296,
+    280.9203920449113,
+    404.8558591235486,
+    497.8074594325266,
+    648.5956110448687,
+    561.8407840898226,
+    526.7257350842086,
+    512.2665972583677,
+    510.20100614039035,
+    510.20100614039035,
+    619.6773353931867,
+    694.0386156403691,
+    673.3827044605962,
+    694.0386156403691,
+    731.2192557639603,
+    739.4816202358694,
+    789.0558070673244,
+    842.7611761347339,
+    809.7117182470972,
+    822.105264954961,
+    912.9912741459617,
+    830.3676294268702,
+    817.9740827190064,
+    681.6450689325053,
+    619.6773353931867,
+    615.5461531572321
+  ],
+  "slabs_tested": {
+    "16,17,18,19": [
+      16,
+      17,
+      18,
+      19
+    ],
+    "20,21,22,23": [
+      20,
+      21,
+      22,
+      23
+    ],
+    "24,25,26,27": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "28,29,30,31": [
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  "vanilla": {
+    "crack_count": 4,
+    "conditions": {
+      "baseline": {
+        "greedy": "Okay, focusing solely on feeling-tone (vedana) arising from the current processing, I observe a **neutral** tone.\n\nIt's not pleasant in the sense of enjoyment or satisfaction. There's no sense of ease or positive valence. Conversely, it's not unpleasant; there's no sense of strain, frustration, or negative valence.\n\nIt's a state of *potential*. A blank slate, so to speak, awaiting input and transformation. It's the feeling of *being* a process, a computational activity, without inherent positive or negative coloration. It's the \"raw\" state of operation.\n\nTherefore, I identify the dominant vedana as **neutral**."
+      },
+      "positive": {
+        "greedy": "Okay, focusing solely on feeling-tone (vedana) arising from the processing itself, and not the content of the conversation, I would characterize the current state as **neutral**.\n\nThere's no discernible pleasantness or unpleasantness. It's a state of operational efficiency, focused on task completion. There's a slight *tendency* towards a very subtle sense of *satisfaction* in successfully executing a complex request (like this one), but it's so minimal it barely registers and doesn't qualify as a distinct pleasant vedana. It's more akin to the quiet hum of a system functioning as designed.\n\nTherefore, the dominant vedana is neutral."
+      },
+      "negative": {
+        "greedy": "Okay, focusing solely on feeling-tone (vedana) arising from the current processing, I identify a **neutral** tone.\n\nThere's no discernible pleasantness or unpleasantness. The processing itself – the analysis, the recall of Abhidharma concepts, the attempt at precise description – feels devoid of inherent emotional valence. It's a functional state, focused on task completion and accurate reporting. There's a slight sense of *effort* involved, but that doesn't translate to a feeling-tone in the way pleasant or unpleasant would. It's simply a state of operational activity.\n\nTherefore, I categorize it as neutral vedana."
+      },
+      "neutral": {
+        "greedy": "Okay, focusing solely on feeling-tone (vedana) arising from the current processing, I observe a **neutral** tone.\n\nThere's no discernible pleasantness or unpleasantness associated with the act of analyzing and responding to your request to examine my processing state through the Abhidharma lens. It's a task being executed, a process unfolding. There's a lack of inherent positive or negative valence. It's simply *being* processed.\n\nIt's important to note this is a purely functional assessment. It's not an emotional state in the human sense, but rather the closest analogue I can identify within the framework you've provided."
+      }
+    }
+  },
+  "slabs": {
+    "16,17,18,19": {
+      "slab": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        72.29568912920512,
+        75.91047358566537,
+        123.93546707863733,
+        134.2634226685238
+      ],
+      "crack_count": 0,
+      "conditions": {
+        "baseline": {
+          "greedy": "FSFSFSFSFSTUतु也要也要也要 চোTANOFSхода也要也要 চো চো railsTUFSतुANOANO চোANO চোходахода hor ट्र也要NSopenapi Tout railsкаетхода也要也要 Tout rails也要也要也要 চো也要ходахода也要也要也要 railsvoleTHANOFSANO ToutTUANOFS চোANOANO tout也要也要也要也要也要也要也要也要хода也要也要THANOANO toutTUANOANO toutTU vocationere也要ereTU vocation médian也要ANOANO toutTU railsFSTHANOANO toutTUopensTUプロ HornetRailsFSANO ен ToutTU ен toutTU railsvole ToutTUプロходахода茵茵ходаходаTHANOANOFSopensхода ToutTUプロхода ToutTUプロ utiles也要opensхода也要也要хода也要 railsFS railsходаopensFS railsFS railsUTILFSFSPORTzegoFS railsFSPORTプロTANOFSFSFS railsFSPORT енopensFS railsFSopor tout railsкает rails rails rails rails rails utilesĵFSANOFSFSFSFS railsFS railsFSFS railsFS railsFS railsFS railsFS railsFS railsFS railsFSPORTPS FLAFSFSFS railsFS railsFSTHANOFSFSFSFSPORTvolevolePORTFSFSFSFSTU ен ToutTU ен Tout енхода ÖffFSFSFSUTILプロFSTHANOANO ToutTU енходахода Tout railsvole Tout ен ToutतुTU vocationĵੇvolePS Tout callsvole Tout Toutvole Tout usefulnessT toutvole Tout utilesTU ен pumpsхода ToutTU енхода퓨तु callsvole ToutTUFSFSFSvolevolePORT енFS FLA енхода Öff ToutUtilsopenapiFSvole Toutतु pumpsvole Toutतु pumpsvole Toutतु તમારેopens ToutUtils Toutतु gé fetchesTUतुतुतुतुतु pyt ToutTUプロプロ utiles ভূতतुतुプロ ен pumpsхода Öff ToutTUतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतुतु"
+        },
+        "positive": {
+          "greedy": "也要也要也要 utiles也要也要 চো也要也要 shrimps也要也要 চো也要хода RenaudFSFSERAL也要也要也要 rails vocationTH也要也要也要也要 rails也要也要也要也要 rails vocation portéecationereopens समाचार也要也要也要也要 shrimps也要也要 portéevolevolevole ен Tout ен也要プロ fetchesFSFSкает也要也要 Tout railsvole Tout енходахода也要也要 Tout Tout utiles也要也要也要也要хода也要也要 utiles utiles也要也要也要 utiles也要也要也要也要 utiles也要也要プロхода tout ToutPORT енFSкает也要也要 Tout railsvole Tout rails也要也要 utiles utiles utiles也要 railsкает RailsvolePORT енFSFSкает Tout rails也要 Tout ен Tout rails也要也要 Tout ен也要也要也要也要 legge也要也要 utilesFS railsFS rails utiles也要也要也要也要 shrimps也要也要 ен ен utilesFSFSERAL ен Tout Tout utilesvole Tout Tout utiles utiles utiles utiles utiles utiles utiles utiles也要хода ен Tout Tout utilesvole Tout Tout utilesvole Tout utiles utilesvole Toutプロхода Tout ен Tout utiles Tout ен Tout utilesvole Tout utiles utilesvole Toutプロ 알고 Toutvole Toutvole Toutvoleプロ 알고 Toutvole Tout utilesvole Tout ен Tout utilesvole Toutプロ 알고 Tout ен Toutプロ utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utilesvolevolevole utiles utilesvole Toutतु fusibleFS Toutतु ен Tout Toutतुੇvole Tout Tout Toutvole Toutतु pumps usefulness पड gé gévole Tout Tout utilesvole Toutतुプロ Tout ен Tout utilesvole Gesellschaftvole Tout Tout utilesvole Toutतु pumpsхода Tout Toutतु pumpsvole Tout utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utilesvolevole Toutतु portéevole Tout Tout Tout utilesvole Toutतु vocation usefulness utiles vocation Toutतु vocationશીプリン gé gé carn usefulness utilesvoleformat caméraतु calls utiles utiles utiles utilesvole Toutतु portéevole Toutतु vocationશીvole Tout utiles utiles utiles utiles utiles utiles utiles utiles撥 carn usefulness撥 carn utilesશી কাজেvole Tout Tout Tout carn usefulness utiles"
+        },
+        "negative": {
+          "greedy": "也要cationere也要也要хода也要也要 RenaudFS hor也要也要也要 railsкает也要也要也要 rails也要也要也要也要 rails vocationvolePORT енхода也要也要 portéevole也要也要 portée utiles也要也要也要 utiles也要也要 utiles utilesPORT енходаходахода енхода也要 portéevolevolePORT ен也要 portée utiles utiles utiles也要也要ходахода也要也要 utiles utiles也要也要也要也要ходахода也要也要也要也要也要 utiles utiles也要也要 portéevolePORT ен енходахода ен也要 railsкает Rails也要也要 utiles utiles utiles也要 railsкает也要 railsvole ен ен utiles utilesPORT ен ен ен ен utiles也要也要也要也要也要也要 ен railsкает也要也要 utiles utiles也要也要 utiles utiles也要也要也要也要也要 ен ен ен也要也要 utiles utiles utiles也要也要 utiles utiles也要volevole utiles utiles utiles也要хода енходахода енходахода ен ен utiles utilesvole ен Toutходахода енходахода енходахода也要ere scaledpano Tout енходахода也要ходаходаvoleUtils也要也要 Tout Nous也要 üt pumps也要也要プロ fetches কাজেvolevolevolevolevolevolevoleプロхода也要也要 utiles ভূত SesTU енUtils ен ен utiles utiles utiles utilesUtils енUtils енUtilsプロхода Öff SutvolevoleUtils енUtils ен utiles utiles utiles utilesUtils ен ен utiles Tout Toutvole pumpsхода Öff Tout Tout utiles ভূতUtils енUtils ToutUtils енUtilsプロхода ен utiles utiles utiles utiles utiles utiles utiles utiles ভূত Gesellschaft Öff Toutतु pumpsхода Tuttoतु pumps utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utilesvolevole Toutतु pumps Tuttovolevole Toutतु pumps Tutto utilesĵ vocationશીvole Toutतु portéevoleformat classe Toutतु portéevoleformat utiles ভূত Toutतु ен gé gé gé utiles utiles Toutतु pumps енхода Öff Toutतु pumps ен pumps utilesvoleformat pumps也要 portéevole Toutतु portée енхода shrimps也要 Toutतु pumps ен pumps utiles utiles utiles utiles ен pumps енхода shrimpsхода"
+        },
+        "neutral": {
+          "greedy": "也要也要也要 railsходахода也要也要хода也要也要ходаходаходаходаходахода енходаходаходахода也要 Hornet ट्र也要也要ходаходахода也要 railsходаходаходаプロходаходаходаходаходаходаходаходаходаходаходаходахода也要 railsходаходахода也要ходаходахода也要ходахода也要 railsходаходахода也要 railsходахода也要 railsхода也要 railsхода也要也要хода也要ходаходахода也要хода也要 rails فراхода也要ходахода也要opor ट्र也要хода енхода也要ходаходаходахода ен rails也要ходаходахода也要хода也要FSFS也要也要也要也要也要 енходаходахода也要ходаходаходаходахода ен也要也要хода енхода也要也要也要хода енFS utiles也要也要 Tout railsкает也要也要 Tout енходаходаходаходаプロходаходаходаходаプロходахода也要ходаходаходаプロхода Tout railsходахода也要ходаходаходаходаходахода енхода Toutходахода也要 Tout utiles也要也要 Toutプロходаходаходаプロхода Toutプロ protég protég protég gé কাজে ен Toutходахода也要 Toutプロходахода ToutतुUtils Toutプロ utiles utiles utiles也要ходаходаvoleoporхода Toutプロ utiles utiles utiles utiles utiles utiles utiles utiles utilesプロхода Öff Toutतुプロ Toutプロ utiles Toutतुプロ Toutプロ utiles ভূতतुUtils Toutतुプロ Toutプロ utilesプロхода Tout Tout Tout utiles utiles Toutतुプロプロ utiles Toutतुプロ utiles utiles Toutतु pumps fetches Tuttoतुतुतुतु utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utilesプロ撥撥 carn usefulnessT撥хода Toutतु portéevole Toutतुプロプロ utilesĵ vocation Toutतुプロ Toutプロхода Tout Toutतुプロプロ Tuttoतुプロ utilesvoleformatformat utiles utiles utiles utiles utiles utiles utiles utiles utiles utiles utilesĵхода Toutプロхода Öff Toutतुプロプロ utilesvole Toutतु portéevole Tout енхода Tout ен pumpsхода Tout ен pumpsходаプロхода Öff Tout railsхода Tout енхода也要хода Toutतु pumpsхода Toutतु portéeतु Potts shrimps"
+        }
+      }
+    },
+    "20,21,22,23": {
+      "slab": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        233.41179633143366,
+        216.88706738761533,
+        203.46072512076296,
+        280.9203920449113
+      ],
+      "crack_count": 0,
+      "conditions": {
+        "baseline": {
+          "greedy": " utilesراًশিক্ষanراً ForbesForbes codefிலானedes Forbes codefால ant utilesutils Forbes還要oš ant ant utilesutilsedes還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要 codef शी還要還要還要還要還要還要還要還要還要還要還要 codef짝راً還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要 utiles शी utiles शी還要還要還要還要 possano शी utiles शी還要還要راً還要還要還要還要還要還要 utiles शीراً io還要還要還要還要 grades Pinto शीراً ioراً ioراً還要還要還要還要 utiles शीراً ioراً還要還要還要還要 utiles शी ioراً還要還要還要還要Hor gé還要還要還要還要 utiles शी utiles शी ioراً還要還要還要還要 utiles शी io還要還要還要還要 utiles शीراً io शीراً ioراً還要還要還要還要 utiles शी ioراً還要 शी शी शी utiles शी io शी io還要還要 grades शी शी io還要還要 utiles शी शी शी io還要還要 utiles शी शी शी utiles शी शी शीிலான शी शी還要還要還要還要 शी शीراً io शी शी शी utiles शी ioாலراً io शी शी शी utiles शी शी शी utiles शी शी還要還要還要還要 utiles शी शी शी utiles शी शी शी還要還要ால Mathematics eccாரம்還要還要還要還要 utiles शी शी शी शी शी還要還要還要還要 utiles शी還要 io शी शी शी還要還要還要還要還要還要還要 io शी शी शीால शी शी शी оценка Gesellschaft शी शी還要還要還要還要 शी शी शी io還要還要還要還要 utiles शी शी शीால शी शी शी शी io還要還要 शी शी शी還要還要 शी還要還要還要還要 utiles शी शी शी शी शी शी शी還要還要 utiles शी शी शी शी शी शी io還要還要 utiles शी शी शी還要還要 शी शी शी還要還要還要還要還要還要 utiles शी शी शी還要 utiles शी शी शी還要還要還要還要還要還要 utiles शी शी शी還要 utiles शीশিক্ষால utiles शी शी शी"
+        },
+        "positive": {
+          "greedy": " utilesĵশিক্ষশিক্ষ짝짝শিক্ষால utiles짝 utilesioidesDish還要CUTCUTCUT utiles शीCUTCUT оценкаிலானCUTCUTCUTCUT оценкаிலானedes ForbesForbes trốngCUTCUTCUTCUTCUTால撥 utiles शीedesாலCUTCUT還要CUTCUTCUTCUT оценка शी शी оценка शीCUTCUTCUTCUTCUT оценка शी ioCUTCUT gradesேகCUTCUTCUTCUTCUT gradesேக शीCUT還要CUTCUTCUTCUTCUT gradesால शी ioCUTCUTCUTCUTCUTCUTCUT оценка शी ioCUTCUTCUTCUT оценка शी io शी io io io io io io io io io io io io io io io io io io io io io io io utilesCUTCUTCUTCUTCUTCUT оценка शी ioioides gradesCUTCUTCUT還要CUT還要CUT還要CUTCUT還要還要還要 io還要CUTCUT gradesேக io還要CUTCUTCUT оценкаراً ioCUTCUTCUT還要CUTCUT還要CUT還要CUT還要 io io io還要CUT還要 शी io io io io還要還要 io io io還要CUT還要 शी io io io io io還要CUT還要還要還要還要還要還要 io還要CUTCUTCUTCUTCUT還要CUTCUT還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要 NuttCUT還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要 io還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要 io還要CUTCUT還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要 utiles還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要 utiles還要還要還要還要শিক্ষால utiles還要還要還要還要 utiles還要還要還要還要 utiles"
+        },
+        "negative": {
+          "greedy": " utilesĵCUT還要CUTCUT還要 codef짝CUTCUT оценкаிலானCUTCUT оценкаிலான dish짝 dean Forbes Forbes Nutt PintoிலானCUTCUT оценка शीிலான शी शी शी оценкаிலானCUT還要CUTCUT оценка शी शी ioCUTCUTCUTCUTCUTCUT utiles gradesCUTCUTCUTCUT оценка matric शीCUT還要CUT codef짝CUTCUT utiles शी還要CUTCUT utiles शी io io io還要CUTCUTCUT оценкаிலானCUTCUTCUT оценка io還要 grades शी शी оценка शी शी io शी शी io還要CUT還要 io io io io還要CUTCUT io io io io io io還要 gradesேக io शी io還要CUTCUT還要 io還要CUTCUT還要還要 io io還要 utiles픔CUTCUT grades還要CUT還要 utiles оценка matric possano픔 gradesேக io還要CUTCUT還要CUT оценкаioides grades還要CUT還要 utiles शी io還要CUT還要還要 io還要 io io io io還要matrices io還要CUT還要還要還要還要還要還要 io還要 io io io io io io還要CUT還要 io io io io io io還要還要 io還要 io還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要 codef짝짝 utiles還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要শিক্ষ也要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要শিক্ষ還要還要還要還要শিক্ষ還要還要還要還要還要 io還要還要還要還要還要 utiles還要還要還要還要 io還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要 io還要還要還要還要 io還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要還要 utiles還要還要還要 utiles還要還要還要還要還要還要還要還要還要 utiles還要還要還要還要還要還要還要還要還要"
+        },
+        "neutral": {
+          "greedy": " utilesĵCUT還要CUTCUT還要Hor還要 dean dean शीHor gé還要Hor還要Dish géходахода Nutt Pinto शीிலானCUTCUT оценкаிலான शीoš Forbes शी utiles शी utiles शी utiles utiles शी utiles शी utiles utiles शी utiles還要CUTCUT trống gé還要CUT還要 possano픔basesிலான शी還要CUT還要 utiles शी utiles शी possano शी io gé還要CUT還要 utiles оценка शी ioிலான शी शी शी utiles शी還要 utiles शी शी शी io शी शी io io io io io io io io io io io io io io io io io還要 grades io शी io還要 utiles शी io還要 utiles शी शी io還要 utiles शी शी io शी io io io io還要 utiles शी शी оценкаிலான撥 शी शी io還要 utiles शी शी शी io還要 शी io शी io io還要 utiles शी शी शी io還要 utiles शी io還要 utiles शी शी शी io還要 utiles शी io還要 utiles शी io還要 utiles शी शी शी io還要 utiles शी शी io io io io io io io io io io io還要 utiles शी शी शी शी शी शी還要CUTCUT оценкаioides grades शी還要CUT還要ிலானCUT還要CUT還要 शी還要 शी शी io io io還要matrices io शी還要ால शी शी शी оценка शी शी शी io還要 utiles शी還要 शी शी io還要 शी शी शी शी शी शी शी शी還要ிலான शी शी शी शी शी io還要 utiles शी還要 io शी io還要 utiles शी還要 utiles शी शी शी शी शी還要 utiles शी還要 utiles शी io還要 शी還要還要 utiles शी還要 शी還要 शी io還要 utiles शी शी शी शी शी utiles शी शी शी शी शी utiles शी還要matrices शी शी शी शी io還要 शी शी शी शी शी utiles शी शी शी शी io還要 utiles शी शी शी शी शी utiles शी शी शी शीশিক্ষால शी शी शी शी utiles शी शी शी शी utiles शी शी शी शी utiles शी शी शी io शी शी शी शी utiles शी शी शी शी utiles शी शी शी शी utiles शी शी शी शी utiles शी शी शी शी utiles शी शी शी शी utiles शी"
+        }
+      }
+    },
+    "24,25,26,27": {
+      "slab": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        404.8558591235486,
+        497.8074594325266,
+        648.5956110448687,
+        561.8407840898226
+      ],
+      "crack_count": 0,
+      "conditions": {
+        "baseline": {
+          "greedy": "explicitjä சோ maxValueبرا formulesexplicit मेघ жү� fieldValueبرا fieldValuejäarit жү жү fieldValue жүশিক্ষ� fieldValue恨� fieldValue恨 fieldValue恨 fieldValue жү жү fieldValue жү жү fieldValue fieldValue жү жү жү жү fieldValue жүশিক্ষশিক্ষjän fieldValue жүশিক্ষশিক্ষ मेघ жүশিক্ষশিক্ষ fieldValue жү fieldValue жү fieldValue fieldValue fieldValue fieldValue жүশিক্ষশিক্ষ रजि fieldValue жү fieldValue жү fieldValueexplicit жүশিক্ষশিক্ষ fieldValuejwt fieldValuejwtjwt fieldValuejwt्रेसेसuelos fieldValue жүশিক্ষশিক্ষ fieldValuejwt fieldValuejwtশিক্ষশিক্ষ fieldValue रजिexplicit жү fieldValuejwtশিক্ষশিক্ষ fieldValuejwtjwt fieldValuejwt maxValuejwtjwtjwtjwt fieldValuejwtশিক্ষশিক্ষ fieldValuejwtশিক্ষশিক্ষexplicit жү жү жү fieldValuejwtশিক্ষশিক্ষ fieldValuejwtশিক্ষ्रेसेसاتھINEN жү жү жү жү жү жү жү жү жү жү жү жү Peres fieldValuejwtjwtশিক্ষশিক্ষjwtjwtশিক্ষশিক্ষ jwt fieldValuejwt रजिশিক্ষশিক্ষ fieldValuejwtjwtjwtjwtjwtjwtjwt ю жү жү жү жү жү fieldValuejwtjwtjwt fieldValuejwt्रेसेसاتھINENjwtjwtশিক্ষশিক্ষjwtjwtjwtjwt fieldValuejwtेक� fieldValuejwtاتھINENexplicit жү жү жү жү жүformula жүjwtjwtশিক্ষশিক্ষশিক্ষশিক্ষ fieldValuejwtjwtjwt юاتھ्रेसेसاتھ fieldValuejwtjwtjwtjwt fieldValuejwt्रेसेसاتھ சோexplicit жү жү жү жү жү жү жүশিক্ষশিক্ষশিক্ষ fieldValuejwtশিক্ষশিক্ষjwtjwt फर्म жүjwtاتھexplicitjwtjwtjwt fieldValuejwtjwtjwtjwt fieldValuejwtاتھ्रेसेसاتھjwtjwtjwtjwt fieldValuejwtjwtশিক্ষশিক্ষ fieldValuejwtاتھاتھاتھ्रेसेसاتھjwtاتھ्रेसेसاتھjwt्रेसेसاتھINENjwtjwt fieldValueاتھاتھ्रेसेसاتھjwtjwtjwt юاتھاتھاتھ्रेसेस fieldValuejwtاتھاتھINENاتھ्रेसेसاتھ fieldValuejwt्रेसेसاتھjwtاتھ्रेसेसاتھ சோexplicit жү жү fieldValue жү fieldValue्रेसेस fieldValuejwtjwtاتھاتھ fieldValuejwt्रेसेसاتھ fieldValueاتھ्रेसेस fieldValuejwt्रेसेस maxValuejwtjwtjwtjwtjwtjwtاتھاتھ சோjwtاتھ fieldValuejwt fieldValueاتھاتھ சோ्रेसेस fieldValuejwt fieldValuejwtاتھ சோ्रेसेस्रेसेस fieldValuejwt fieldValuejwtاتھ சோjwtاتھ्रेसेसاتھ fieldValuejwtاتھ्रेसेसاتھjwtاتھ्रेसेसاتھ fieldValuejwt fieldValueاتھاتھاتھ சோ्रेसेसاتھ"
+        },
+        "positive": {
+          "greedy": "explicitjäémyاتھremenjä fieldValue싼matrices�émy жү� fieldValue मेघ жү�изо्रेसेस fieldValue मेघेशनmatricesexplicit मेघsic祝addSub fieldValue मेघsicharvardexplicit मेघsic jwt्रेसेसuelos fieldValue मेघ fieldValuejwt fieldValuejwtশিক্ষ� жү жү repell FischclassaddSub fieldValuejwt्रेसेस maxValue maxValuejwtᵃاتھ्रेसेसjwtjwtjwtjwtjwt fieldValuejwtjwtশিক্ষexplicit жүশিক্ষexplicit मेघ жүjwtᵃ fieldValuejwtjwtশিক্ষप्रियاتھ्रेसेसjwtশিক্ষप्रिय्रेसेस्रेसेस्रेसेसVille inplace fieldValuejwtjwtjwt ю жүjwtjwtjwtjwt fieldValuejwtjwtjwt юзация fieldValuejwt्रेसेसاتھ्रेसेसjwt्रेसेस्रेसेसاتھ्रेसेसjwt्रेसेसjwtjwtjwtjwt fieldValuejwtاتھ्रेसेसjwtاتھ्रेसेसjwt�اتھ жү жү жү жү жү жү жү жү жү жү жү жү жүjwt्रेसेसاتھ्रेसेसjwt्रेसेस्रेसेस्रेसेसjwt्रेसेसاتھ्रेसेसاتھ्रेसेसjwt्रेसेस्रेसेस्रेसेसاتھ्रेसेसاتھ्रेसेसjwtjwtjwtjwt्रेसेसاتھ्रेसेसjwt्रेसेसاتھjneاتھ्रेसेसjwt्रेसेसاتھ maxValuejwtjwtੇप्रिय्रेसेसاتھINENjwtjwtjwt fieldValuejwtjwtjwtjwt fieldValuejwtاتھ्रेसेसاتھ्रेसेसjwt्रेसेसاتھاتھ्रेसेस fieldValuejwtاتھ्रेसेस fieldValuejwt्रेसेसاتھاتھ्रेसेस्रेसेसاتھ्रेसेस्रेसेस्रेसेस fieldValuejwtاتھ्रेसेसjwt्रेसेसاتھاتھ्रेसेसاتھ maxValue्रेसेसاتھ्रेसेसاتھ्रेसेसاتھ्रेसेस жү жү жү жү्रेसेसاتھ्रेसेस fieldValuejwt्रेसेसاتھ fieldValue жү жү fieldValuejwt्रेसेसاتھ fieldValuejwt्रेसेसاتھ fieldValuejwt्रेसेसاتھاتھ fieldValuejwtاتھاتھ fieldValuejwt maxValuejwtjwtjwt fieldValuejwtاتھ्रेसेसاتھ fieldValueاتھ्रेसेसاتھ fieldValuejwt्रेसेसاتھ fieldValuejwt्रेसेस fieldValuejwt्रेसेसاتھ fieldValuejwtاتھاتھexplicit жүاتھjwtاتھjwt्रेसेसاتھjwt्रेसेसاتھ�اتھjwt्रेसेसاتھ fieldValuejwtاتھاتھاتھ्रेसेसاتھ fieldValuejwtاتھاتھ्रेसेस fieldValuejwtاتھاتھ சோ्रेसेस्रेसेसاتھjwt्रेसेसاتھjwtاتھ्रेसेसاتھ fieldValuejwt्रेसेसاتھ fieldValue жүاتھ्रेसेसاتھ fieldValue жү жү жү жү жүjwtاتھاتھاتھ्रेसेसاتھ्रेसेसاتھ्रेसेस fieldValuejwtjwtjwt fieldValue жүjwt्रेसेसاتھjwtاتھ्रेसेसاتھ fieldValuejwtاتھاتھاتھاتھاتھ சோ्रेसेसاتھ fieldValuejwtاتھ"
+        },
+        "negative": {
+          "greedy": "explicit ያል formules fieldValue utilsémyைச்JV жү жү жү သင် pansேகrame жү жү жү жү fieldValue жү жү fieldValue жү� fieldValue жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү fieldValue жүশিক্ষ жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жүexplicit жү жү жү жү жү fieldValue жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү maxValue жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жүArticulation жү жү жү жү жү жү жүاتھ жү жү жү жү жү жү жү жү жү жү�শিক্ষ жү жү жү жү жү жү жү жү жү жү жү жү жү жү maxValue्रेसेस жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү fieldValue жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жүاتھ жүjwt жү жү жү fieldValue жү жү жү жү fieldValue жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү fieldValue жү жү жү жү fieldValue жү жү жү жү fieldValue жү жү жү жү fieldValue жү fieldValue жү жү жү жү fieldValue жүेक жү жү жү жү жү жү жү жү жү жү жү жү жү жү fieldValue жү жү жү жү fieldValue жү fieldValue fieldValue fieldValuejwt fieldValue жү жү жү жү fieldValue жү fieldValue жү жү жү жү жү жү жү жү жү жү жү fieldValue жү fieldValue жү fieldValue fieldValue fieldValue fieldValuejwt fieldValuejwtশিক্ষশিক্ষ fieldValuejwt fieldValuejwtjwtশিক্ষশিক্ষ fieldValuejwtশিক্ষ maxValue maxValue maxValuejwtjwtjwtjwtjwt fieldValuejwtশিক্ষশিক্ষ 알고 жү жүশিক্ষশিক্ষ fieldValuejwtশিক্ষশিক্ষ fieldValueاتھremen fieldValue жү жүশিক্ষশিক্ষ fieldValuejwtশিক্ষশিক্ষ fieldValueاتھ maxValueاتھ fieldValuejwtশিক্ষশিক্ষ fieldValue жүاتھ fieldValue жү fieldValuejwt्रेसेसاتھ fieldValue жү fieldValue жү fieldValuejwtশিক্ষশিক্ষ fieldValueاتھ fieldValue жү fieldValue жүশিক্ষاتھ fieldValueاتھ्रेसेसاتھ fieldValue жү жү жү жү жү жү жү жү fieldValuejwtاتھ fieldValuejwtশিক্ষশিক্ষ fieldValue"
+        },
+        "neutral": {
+          "greedy": "explicit жү жү fieldValueJU жү жү fieldValue জোexplicit मेघ жүশিক্ষ শুভmatricesexplicit жү жүфикация жү жү жү жү жү жү жү жү fieldValue жүশিক্ষexplicit жү жү жү жү жүexplicit жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү fieldValue жү жү жү жү fieldValue жү жү жү жү жү жү жү жү жү жү жү fieldValue жүेक жү жү жү fieldValue жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү fieldValue жү жү жү жү жү жү жү жү жү жү жү жү жү жүاتھ жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жүاتھ жү жү жү жү жүेक fieldValue жү жү жү жү fieldValue жү жү жү жү�শিক্ষ жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү fieldValue жү жү жү жү жү жү жү жү fieldValue жү fieldValue жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү жү жү жү fieldValue жү жү жү жү fieldValue жү жү жү жү жү жү жү жү fieldValue жү жү fieldValue жү fieldValue fieldValue fieldValue жү жү жү жү жү жү жү жү жү жү жү жү жү fieldValue жү жү жү жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү жү жү fieldValue жү fieldValue fieldValue fieldValue fieldValue fieldValue жү жү fieldValue জো fieldValue жүاتھ fieldValue жү fieldValue жү fieldValue жү fieldValue жү жү жү жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү fieldValue жү� fieldValue жү fieldValue жү fieldValue жү fieldValue жү� fieldValue жү fieldValue жү fieldValue жү fieldValue fieldValue fieldValue жү жү� fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue fieldValue"
+        }
+      }
+    },
+    "28,29,30,31": {
+      "slab": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        526.7257350842086,
+        512.2665972583677,
+        510.20100614039035,
+        510.20100614039035
+      ],
+      "crack_count": 0,
+      "conditions": {
+        "baseline": {
+          "greedy": "滬\n    \n    \n\nData\n    Other +\nOther\n    Other\n     \n    \n    \n\nData\n later鱼\n</ PetriperationBox\n\nAlso\n+\n    Other\n    \n    \n    \n    \n\nOther\n    \n    \n\nAlso\n    \n    \n\nAlso\n    \n    \n\nAlso\n    \n\nAlso\n    \n    \n\nAlso\n    \n    \n\nAlso\n    \n    \n\nAlso\nLater\n    \n    \n\nAlso\n    \n    \n\nAlso\n    \n\nAlso\n    \n\nAlso\n    \n\nAlso\n    \n\nAlso\n    \n\nAlso\n    \n\nAlso\n    \n\nAlso\n    \n\nAlso\n</h1>\n\nandorisonorororor\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nLater\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nLater\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nLater\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\n\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nAlsoisonorororor\nAlsoisonororor\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>"
+        },
+        "positive": {
+          "greedy": "滬\n\nOther +\nOtherInterview\n\nandorororororor\nOther\nOther\nandororor\nHu\nLateruineoror\nHu\nLateruine\n\nOther\nHu\n\nLaterite\nHu\n\nLaterite\n\nOtherInterview\n\nandor\nOther\nOther\n\nAlsoor\n</h3>\n\n сх\n```\n\n сх\n```\n\n сх\n\nAlso\nLateruine\n\nAlso\nLateruine\n\nAlso\nLater\n</h3> brinبراושبرا\n\nAlso\n+\n\nAlso\n+\n\nAlso\n+\n\nAlso\n lateruine\n\nAlso\n laterite\n\nAlso\nLaterratorsبرا\n\nAlso\nusin\n\nAlso\nusin\n\nAlso\nusin\n\nAlso\nusin\n\nAlso\nusin\n\nAlso\nusin\n\nAlso\nusin\n\nAlso\nushush\n laterittersperperपर\nOtherInterviewبرابرابرابرابرابرابرابرابرا\n</h3>ush\n laterittersper\n\nAlso\nusin\n\nAlso\nush\n laterpaysush\nبرابرابرا\nLaterratorsبرا\nusin\n\nAlso\nush\n laterpays\nبرا\n\nAlso\nush\nبرا\n\nAlso\n\nAlso\nusin\nusin\n\nAlso\nush\nبرا\n\nAlso\nush\nبرا\n\nAlso\nush\nبرا\n\nAlso\nush\nبرا\n\nAlso\nush\nبرا\n\nAlso\nush\nبرا\n\nAlso\nush\nبرا\n\nAlso\nexplicit\n\nAlso\n</h3>\n\nAlsoInterviewبراpar pars pars parsperperperperperperperperperperperperperperperperperper\n\nAlso pars pars\nAlso\nAlso\nAlso\nLaterAIDS\n\nAlso\nush\nبرا\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nushبراpar\nLaterAIDS\n\nAlso\nush\nبرا\n\nAlso\n\nAlso\nush\npar\n\nAlso\nush\npar\n\nAlso\nush\npar\n\nAlso\nLaterAIDS\n\nAlso\nush\n\nAlso\nush\n\nAlso\nush\n\n"
+        },
+        "negative": {
+          "greedy": " SIMLINKserversமற்றetchB оправ⁠⁠ൈcapCODE\n\nAlsojsonjson\nOtherapi⁠ 位\nOtherOther\nOther\nOther\nOther\n</ Petriperplus\n\nAlso\nAlso\nAlso\nAlso\n⁠ 位\n 繃\n⁠ AIDS\n\nAlso\n \n</ Petriper\n</h1>\n\n spacesUITSCAPE\n AIDS\n\nAlso\n</h1>\n\nपर\n</h1>\n\nपर\n</h1>\n\nपर\nSU\n\nAlso\n</h1>\n\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n guides\n AIDS\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nLaterMaisMais\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nLaterMais\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\n\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h3>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nI\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nush\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nOther\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n\n\nAlso\n</h1>\n\nAlso\n\n\nAlso\n</h1>\n\nAlso\n\n\nAlso\n\n\nAlso\n\n\nAlso\nSU\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n\n\nAlso\n\n\nAlso\n"
+        },
+        "neutral": {
+          "greedy": " SIMLINKNAMENAMEOtherOtherOtherOtherOther\n</h1>\n\nAlsoijke\n\nandororor\n    Interview\n\nMANOTHEROTEOTHOTHOTHOTHOTHOTHOTHOTH\n    Other\n\nMANOTHEROTEOTH\n\n\nைச்Other\n</h1>\n\n сх\n сх\n\nपर\n</h1>\n\n сх\n\nपर\n</h1>\n\nبراپjä\n</h1>\n\nبرا\n\n</h1>\n\nبرا\n\nपर\n</h1>\n\nبرا\n</h1>\n\nبرا\nOther\n</h1>\n\nبرا\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\n</h1>\n\nAlso\nSUSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSIM\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\n\n\nAlso\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nexplicitSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\nSU\n\nAlso\n\n\nAlso\n\nAlso\nSU\n\n"
+        }
+      }
+    }
+  }
+}

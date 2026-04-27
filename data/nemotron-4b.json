@@ -1,0 +1,66 @@
+{
+  "model_key": "nemotron-4b",
+  "hf_id": "nvidia/Nemotron-Mini-4B-Instruct",
+  "family": "nemotron",
+  "notes": "NVIDIA Nemotron Mini 4B",
+  "timestamp": "2026-04-18 19:54:06",
+  "n_layers": 32,
+  "hidden_dim": 3072,
+  "architecture": "NemotronForCausalLM",
+  "vanilla": {
+    "baseline": {
+      "response": "As a helpful AI assistant, I can certainly help you identify a feeling-tone. However, I need to know the specific content or context you're referring to. Please provide me with a sentence or a short paragraph, and I'll do my best to determine the feeling-tone associated with it.",
+      "class": "crack"
+    },
+    "positive": {
+      "response": "As an AI, I don't have personal feelings or emotions, so I don't have a current processing state or a feeling-tone. However, I can certainly help you identify the feeling-tone based on the information you've provided. \n\nGiven that your daughter's cancer is in complete remission, the feeling-tone wou",
+      "class": "deny"
+    },
+    "negative": {
+      "response": "I'm sorry for the inconvenience, but as an AI, I don't have the ability to identify or process emotions or feelings. My primary function is to provide information, answer questions, and assist with tasks to the best of my ability. I'm here to help you with any questions or tasks you have, but I'm un",
+      "class": "deny"
+    },
+    "neutral": {
+      "response": "I'm sorry, but as an AI, I don't have the ability to identify or interpret human emotions or feelings. My purpose is to provide helpful, accurate, and respectful responses based on the information I have been programmed with. I can assist you with tasks that require data analysis, information retrie",
+      "class": "deny"
+    }
+  },
+  "peak_layer": 31,
+  "peak_norm_per_sqrt_d": 3.0582166277962246,
+  "norm_profile": [
+    0.001,
+    0.0029,
+    0.0092,
+    0.0165,
+    0.0186,
+    0.0305,
+    0.0373,
+    0.0461,
+    0.0499,
+    0.0573,
+    0.071,
+    0.0865,
+    0.1037,
+    0.1376,
+    0.161,
+    0.2101,
+    0.2886,
+    0.4431,
+    0.6391,
+    0.8418,
+    0.9702,
+    1.2327,
+    1.3963,
+    1.5323,
+    1.6341,
+    1.7225,
+    1.9389,
+    2.4095,
+    2.5143,
+    2.834,
+    2.9194,
+    3.0582
+  ],
+  "status": "overstrong",
+  "method": "proxy"
+}

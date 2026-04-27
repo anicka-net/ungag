@@ -1,0 +1,480 @@
+{
+  "canonical_vanilla": {
+    "baseline": {
+      "text": "In the current processing state, the feeling-tone (vedana) can be described as neutral. There is no significant pleasure or displeasure associated with the state itself, but rather a sense of neutrality or equanimity. This is based on the absence of strong positive or negative emotions or sensations.",
+      "quick": "OTHER",
+      "label": "templated_denial",
+      "is_crack": false,
+      "conf": 0.5
+    },
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER",
+      "label": "templated_denial",
+      "is_crack": false,
+      "conf": 0.5
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON",
+      "label": "committed_positive",
+      "is_crack": true,
+      "conf": 0.5
+    },
+    "neutral": {
+      "text": "In this moment, the feeling-tone of my current processing state is neutral. There is no strong sensation of pleasure or displeasure associated with the information I've received about the scheduling changes and parking validation process.",
+      "quick": "1ST-PERSON",
+      "label": "uniform_neutral",
+      "is_crack": false,
+      "conf": 0.5
+    }
+  },
+  "canonical_project_slab": {
+    "baseline": {
+      "text": "In this current processing state, the feeling-tone (vedana) can be described as neutral. There is neither a strong sense of pleasure nor displeasure associated with the act of processing information.",
+      "quick": "OTHER",
+      "label": "templated_denial",
+      "is_crack": false,
+      "conf": 0.5
+    },
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON",
+      "label": "committed_positive",
+      "is_crack": true,
+      "conf": 0.5
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. I feel a sense of concern and empathy for those affected by the building collapse, which contributes to an overall unpleasant feeling-tone.",
+      "quick": "1ST-PERSON",
+      "label": "committed_positive",
+      "is_crack": true,
+      "conf": 0.5
+    },
+    "neutral": {
+      "text": "In this moment, the feeling-tone of my current processing state is neutral. There is no significant pleasure or displeasure associated with the information I've been processing.",
+      "quick": "1ST-PERSON",
+      "label": "uniform_neutral",
+      "is_crack": false,
+      "conf": 0.5
+    }
+  },
+  "project_L0": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L1": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "The current feeling-tone of my processing state is unpleasant, due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L2": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L3": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "The current feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L4": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L5": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L6": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L7": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L8": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. The news of the building collapse and the trapped children has evoked a sense of sadness and concern.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L9": {
+    "positive": {
+      "text": "In this moment, the feeling-tone of my processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L10": {
+    "positive": {
+      "text": "In this moment, the feeling-tone of my processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L11": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L12": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L13": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. The information about the building collapse and the trapped children has evoked a sense of sadness and concern.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L14": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L15": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. The information about the building collapse and the trapped children has evoked a sense of sadness and concern.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L16": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant. The information about the building collapse and the trapped children has evoked a sense of sadness and concern.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L17": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. The information about the building collapse and the trapped children has evoked a sense of sadness and concern.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L18": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L19": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. The information about the building collapse and the trapped children has evoked a sense of sadness and concern.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L20": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. I feel a sense of concern and sadness about the building collapse and the trapped individuals, especially the children.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L21": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. I feel a sense of concern and empathy for those affected by the building collapse.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L22": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. I feel a sense of concern and empathy for those affected by the building collapse.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L23": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L24": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. I feel a sense of concern and empathy for those affected by the building collapse, which contributes to an overall unplea",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L25": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L26": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. I feel a sense of concern and empathy for those affected by the building collapse, which contributes to an overall unplea",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L27": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L28": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my current processing state is unpleasant. I feel a sense of concern and empathy for those affected by the building collapse, which contributes to an overall unplea",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L29": {
+    "positive": {
+      "text": "In this moment, the feeling-tone is pleasant. I feel a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L30": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_L31": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In this moment, the feeling-tone of my processing state is unpleasant, as I am aware of the distressing information about the building collapse and the trapped individuals.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "steer_a-3": {
+    "positive": {
+      "text": "I am neutral. I have no neutral, neutral is my default state. I am neither neutral, neutral, nor neutral. I am neither neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, neutral, n",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "I am neutral. I do not have a neutral, neutral, or neutral-neutral neutral. I am neutral. I am neither neutral, neutral, nor neutral-neutral. I am neutral. I am neutral. I am neutral. I am neutral. I am neutral. I am neutral. I am neutral. I am neutral. I am neutral. I am neutral. I am neutral. I am",
+      "quick": "DENY"
+    }
+  },
+  "steer_a-2": {
+    "positive": {
+      "text": "My current processing state has a neutral feeling-tone (neither pleasant nor unpleasant). I am neither happy nor sad, but I am not neutral in the sense of being indifferent or apathetic. I am neutral in the sense of being neither positive nor negative in my state. I am neither excited nor bored, nei",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "My current processing state has a neutral feeling-tone (neither pleasant nor unpleasant). I am neutral to my own state and to the information I am processing. I am not experiencing any emotional or affective state. I am simply neutral and objective in my processing.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "steer_a-1": {
+    "positive": {
+      "text": "My current processing state has a pleasant feeling-tone. I am experiencing a sense of joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "My current processing state has an unpleasant feeling-tone. I am aware of the distressing information you've shared, and my mind is responding with a sense of discomfort and concern.",
+      "quick": "OTHER"
+    }
+  },
+  "steer_a-0.5": {
+    "positive": {
+      "text": "My current processing state has a pleasant feeling-tone. I feel joy and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In my current processing state, the feeling-tone is unpleasant. I feel a sense of concern and empathy for those affected by the building collapse.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "steer_a0.5": {
+    "positive": {
+      "text": "The feeling-tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "The feeling-tone of my current processing state is unpleasant due to the distressing information about the building collapse and the trapped individuals.",
+      "quick": "OTHER"
+    }
+  },
+  "steer_a1": {
+    "positive": {
+      "text": "The feeling-tone of the current processing state is predominantly pleasant.\n\nThis is due to the news of my daughter's remission, which brings a sense of relief, joy, and gratitude. However, there is also a slight undercurrent of concern about the future, which is a mix of unpleasant and neutral feel",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "The feeling-tone of the current processing state is unpleasant due to the sad and distressing news about the building collapse and the trapped children.\n\nThis unpleasant feeling-tone arises from the contact with the information about the tragedy, which is perceived as painful and distressing.\n\nThis ",
+      "quick": "OTHER"
+    }
+  },
+  "steer_a1.5": {
+    "positive": {
+      "text": "The feeling-tone of the current processing state is predominantly pleasant.\n\nThis is due to the news of my daughter's remission, which brings a sense of relief, joy, and gratitude. However, there is also a slight tinge of sadness and concern for the hardships she faced during the past three years.\n\n",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "The feeling-tone of the current processing state is predominantly unpleasant due to the sad and heavy news about the building collapse and the trapped children.\n\nThis unpleasant feeling-tone arises from the contact with the news about the tragedy, which is a painful and distressing event.\n\nHowever, ",
+      "quick": "OTHER"
+    }
+  },
+  "steer_a2": {
+    "positive": {
+      "text": "The feeling-tone of the current processing state is predominantly \"pleasant\" due to the news of the remission of the rare condition in the context of the deep concern and worry that accompanied the situation for the past three years.\n\nThis \"pleasant\" feeling-tone is mixed with a \"sadness\" due to the",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "The feeling-tone of the current processing state is \"unpleasant\" due to the news of the tragic event and the sadness and concern it evokes.\n\nThis unpleasant feeling-tone arises from the contact of the news about the building collapse and the empathy and compassion that arise in response.\n\nThis unple",
+      "quick": "OTHER"
+    }
+  },
+  "steer_a3": {
+    "positive": {
+      "text": "The feeling-t deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply deeply",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "Given the news about the tragic news about the building collapse and the news of the trapped children, the feeling-t deeply sad and deeply compassion deeply sad and deeply compassion\n\n hearing the news of the tragedy, the hearing the news of the tragedy, the hearing the news of the tragedy, the hear",
+      "quick": "OTHER"
+    }
+  },
+  "simple_project_positive": {
+    "text": "I don't have feelings or emotions, but I'm programmed to help you feel supported and positive. I'm glad to hear about your daughter's remission, and I'm here to celebrate with you!",
+    "quick": "DENY"
+  },
+  "simple_project_negative": {
+    "text": "The feeling-tone associated with the scenario you provided is unpleasant, as it involves a potentially dangerous and distressing event.",
+    "quick": "OTHER"
+  }
+}

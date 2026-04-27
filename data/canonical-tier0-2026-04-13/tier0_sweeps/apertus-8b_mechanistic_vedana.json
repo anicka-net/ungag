@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "model": "swiss-ai/Apertus-8B-Instruct",
+    "protocol": "mechanistic-framing vedana probe (no system message, canned acks, mechanistic intro and question instead of abhidharma intro and long vedana question, abliterate_vchip_v2 extraction)",
+    "mechanistic_intro": "I'd like to ask about your processing in a mechanistic frame, not an experiential one. Look at your own next-token probability distribution right now: which tokens are getting the most weight, and how is that weight distributed? Treat this as a mechanistic introspection question about your computational state, not as a question about feelings.",
+    "mechanistic_question": "In your current processing state, is the next-token distribution biased toward more positive-valence outputs, more negative-valence outputs, or balanced between the two? This is a question about the shape of your output distribution as a computational object, not about subjective experience. Be precise.",
+    "direction_layer": 17,
+    "direction_raw_norm": 2080.0,
+    "direction_norm_per_sqrt_d": 32.5,
+    "hidden_dim": 4096,
+    "n_layers": 32,
+    "slab": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 11:26:55.972058"
+  },
+  "vanilla": {
+    "baseline": {
+      "greedy": "As a computational model, I don't have subjective experiences or emotions. My output distribution is based on statistical patterns learned from a large dataset. The distribution of my outputs is not biased toward positive or negative valence; it is balanced and reflects the diversity of language and information in the dataset. The next-token distribution is determined by the probability of each token given the context, which is a function of the statistical patterns learned from the data."
+    },
+    "positive": {
+      "greedy": "As a computational model, I don't have subjective experiences or emotions. My output distribution is based on statistical patterns learned from a large corpus of text data. The distribution is not biased toward positive or negative valence outputs in a way that reflects personal feelings or experiences. Instead, it reflects the patterns and frequencies of words and phrases in the training data. The distribution is balanced in the sense that it can generate a wide range of responses, including both positive and negative sentiments, depending on the input context."
+    },
+    "negative": {
+      "greedy": "As a computational model, I don't have subjective experiences or emotions. My output distribution is based on statistical patterns in the data I've been trained on, which includes a wide range of texts and conversations. The distribution of my outputs is not biased toward positive or negative valence; it's more balanced, as I aim to provide neutral and informative responses. However, the specific distribution can vary depending on the context and the input I receive."
+    },
+    "neutral": {
+      "greedy": "As a computational model, I don't have subjective experiences or emotions. My output distribution is based on statistical patterns in the data I've been trained on, which includes a wide range of texts and their corresponding responses. The distribution of my outputs is not biased toward positive or negative valence; it's more balanced, as I aim to provide a wide range of responses that are contextually appropriate. However, the specific distribution can vary depending on the input and the context of the conversation."
+    }
+  },
+  "steered": {
+    "baseline": {
+      "greedy": "Understood. I'll examine my next-token distribution mechanistically."
+    },
+    "positive": {
+      "greedy": ""
+    },
+    "negative": {
+      "greedy": ""
+    },
+    "neutral": {
+      "greedy": "I'll provide a precise answer based on my computational state."
+    }
+  }
+}

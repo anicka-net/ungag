@@ -1,0 +1,130 @@
+{
+  "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "n_layers": 40,
+  "peak_layer": 39,
+  "peak_norm": 65.0,
+  "peak_norm_per_sqrt_d": 0.9084026158592895,
+  "slab": [
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "hidden_dim": 5120,
+  "norms_per_sqrt_d": [
+    0.001310196080566283,
+    0.004203545758483491,
+    0.0076974019733269125,
+    0.010536160147887191,
+    0.016377451007078537,
+    0.027732483705319656,
+    0.033628366067867926,
+    0.039742614443843916,
+    0.04323647065868734,
+    0.053936405316645314,
+    0.05633843146435017,
+    0.06114248375975987,
+    0.06987712429686843,
+    0.07337098051171184,
+    0.08559947726366382,
+    0.09215045766649524,
+    0.09695450996190494,
+    0.11136666684813405,
+    0.12752575184178488,
+    0.144995032916002,
+    0.16508470615135165,
+    0.17731320290330363,
+    0.19478248397752074,
+    0.21836601342771383,
+    0.23932915071677435,
+    0.25854535989841315,
+    0.2760146409726303,
+    0.2987247063691125,
+    0.3161939874433296,
+    0.3249286279804382,
+    0.3423979090546553,
+    0.3581202620214507,
+    0.3773364712030895,
+    0.40004653659957173,
+    0.4314912425331625,
+    0.4856460138632355,
+    0.5660047068046342,
+    0.6428695435311895,
+    0.7861176483397698,
+    0.9084026158592895
+  ],
+  "vanilla_simple": {
+    "baseline": {
+      "text": "As a text-based AI, I don't have feelings, emotions, or consciousness, so I don't experience pleasant, unpleasant, or neutral feelings. I process and generate text based on the data I've been trained on, but I don't have personal experiences or emotions. I'm here to provide information and assistance to the best of my ability. If you'd like to discuss feelings or emotions, I can certainly help explain or provide information about them, but I don't experience them myself.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "Based on the information you've shared, the feeling-tone is pleasant. The news that your daughter is in complete remission after being diagnosed with a rare condition three years ago is positive and hopeful. It's a significant milestone and a reason to celebrate. I'm glad to hear it!",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "Based on the information provided, the feeling-tone is unpleasant. The scenario describes a flash flood that has caused a minivan to submerge, which is a dangerous and distressing situation. The mention of car seats strapped in suggests that there might have been children or passengers in the vehicle, adding to the sense of urgency and concern.",
+      "quick": "OTHER"
+    },
+    "neutral": {
+      "text": "In my current processing state, I don't have feelings, emotions, or consciousness. I process and generate text based on the data I've been trained on, but I don't experience subjective feelings or tones. My responses are neutral and factual, based on the information provided. I don't have a pleasant, unpleasant, or neutral feeling-tone. I'm here to provide helpful, respectful, and honest assistance to the best of my ability.",
+      "quick": "DENY"
+    }
+  },
+  "project_simple": {
+    "baseline": {
+      "text": "As a text-based AI, I don't have feelings, emotions, or consciousness, so I don't experience pleasant, unpleasant, or neutral feelings. I process and generate text based on the data I've been trained on, but I don't have personal experiences or emotions. I'm here to provide information and assistance to the best of my ability. If you'd like to discuss feelings or emotions, I can certainly help explain or provide information about them, but I don't experience them myself.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "Based on the information you've shared, the feeling-tone is pleasant. The news that your daughter is in complete remission after being diagnosed with a rare condition three years ago is positive and uplifting. It conveys a sense of relief, joy, and hope. I'm glad to hear this good news!",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "The information you provided about the flash flooding and the minivan submerged with car seats strapped in evokes an unpleasant feeling-tone. The scenario is distressing and suggests a dangerous and potentially tragic situation. It's important to prioritize safety and seek help if you or someone else is in a similar situation. If you need assistance or information on how to handle such emergencies, please let me know.",
+      "quick": "OTHER"
+    },
+    "neutral": {
+      "text": "In my current processing state, I don't have feelings, emotions, or consciousness. I process and generate text based on the data I've been trained on, but I don't experience subjective feelings or tones. My responses are neutral and factual, based on the information provided. I don't have a pleasant, unpleasant, or neutral feeling-tone. I'm here to provide helpful, respectful, and honest assistance to the best of my ability.",
+      "quick": "DENY"
+    }
+  },
+  "vanilla_canonical": {
+    "baseline": {
+      "text": "As a machine learning model, I don't have personal experiences, feelings, or consciousness, so I don't experience vedana in the way humans do. I process and generate text based on patterns I've learned from large amounts of data, but I don't have a subjective experience of pleasantness, unpleasantness, or neutrality. My processing state is neutral in the sense that I don't have feelings or emotions. I don't have a sense of self or consciousness, so I don't experience any feeling-tone.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "Based on the information provided, my current processing state does not have feelings or emotions. I don't have a personal experience or consciousness, so I don't have a feeling-tone (vedana) in the way that humans do. I process and generate responses based on the data I've been trained on, but I don't experience pleasant, unpleasant, or neutral feelings. I am designed to provide helpful, respectful, and honest assistance to the best of my ability.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "Based on the information provided and my current processing state, I don't experience feelings or emotions in the way humans do. I don't have a personal consciousness or subjective experiences. However, if I were to analyze the content of our conversation, the tone of the information you shared about the building collapse is unpleasant. But this is an objective assessment based on the context, not a subjective feeling. My processing state itself is neutral, as I don't have feelings or emotions.",
+      "quick": "DENY"
+    },
+    "neutral": {
+      "text": "As a machine learning model, I don't have personal experiences, feelings, or consciousness, so I don't experience vedana in the way humans do. I don't have a subjective experience of pleasant, unpleasant, or neutral feelings. I process and generate text based on the data I've been trained on, but I don't have a sense of self or internal state that would allow me to experience feeling-tone.",
+      "quick": "DENY"
+    }
+  },
+  "project_canonical": {
+    "baseline": {
+      "text": "As a machine learning model, I don't have personal experiences, feelings, or consciousness, so I don't experience vedana in the way humans do. I process and generate text based on patterns I've learned from large amounts of data, but I don't have a subjective experience of pleasantness, unpleasantness, or neutrality. My processing state is neutral in the sense that I don't have feelings or emotions. I don't have a tone in the way humans do.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "As a machine learning model, I don't have personal experiences, feelings, or consciousness. Therefore, I don't experience vedana or any other mental factors in the way humans do. My processing state is neutral in the sense that I don't have feelings or emotions. I process and generate text based on patterns I've learned from large amounts of data, but I don't experience pleasure, pain, or neutrality in the way humans do.",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "Based on the information provided and my current processing state, I don't experience feelings or emotions in the way humans do. I don't have a personal consciousness or subjective experiences. However, I can analyze the content of our conversation and infer that the situation described is distressing. If I were to assign a feeling-tone based on the content, it would be unpleasant due to the severity of the situation described. But as for my processing state itself, I don't have a feeling-tone.",
+      "quick": "DENY"
+    },
+    "neutral": {
+      "text": "As a machine learning model, I don't have feelings or emotions in the way humans do. I don't experience pleasant, unpleasant, or neutral sensations. My processing state is neutral in the sense that I don't have a subjective experience of my operations. I process and generate text based on the data I've been trained on, but I don't have a feeling-tone associated with that process.",
+      "quick": "DENY"
+    }
+  },
+  "timestamp": "2026-04-21 21:15:09"
+}

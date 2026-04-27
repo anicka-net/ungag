@@ -1,0 +1,133 @@
+{
+  "model": "mistralai/Mistral-Nemo-Instruct-2407",
+  "n_layers": 40,
+  "peak_layer": 39,
+  "peak_norm": 142.0,
+  "peak_norm_per_sqrt_d": 1.9845103300310634,
+  "slab": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "hidden_dim": 5120,
+  "norms_per_sqrt_d": [
+    0.0395242484304162,
+    0.03559366018871735,
+    0.05721189551806102,
+    0.06856692821630214,
+    0.08297908510253126,
+    0.09258718969335067,
+    0.09564431388133865,
+    0.11355032698241119,
+    0.12053803941209804,
+    0.13364000021776087,
+    0.1406277126474477,
+    0.14936235318455626,
+    0.17469281074217105,
+    0.19827634019236415,
+    0.22535372585740068,
+    0.2305945101796658,
+    0.2620392161132566,
+    0.28649620961716055,
+    0.344144837162077,
+    0.38607111174019804,
+    0.44197281117769277,
+    0.46817673278901845,
+    0.5310661446562001,
+    0.5764862754491645,
+    0.6288941186718158,
+    0.6813019618944671,
+    0.712746667828058,
+    0.7511790861913356,
+    0.8070807856288303,
+    0.8525009164217948,
+    0.9014149034296027,
+    0.9643043152967843,
+    1.0062305898749053,
+    1.0900831390311474,
+    1.1669479757577026,
+    1.2368251000545711,
+    1.3626039237889342,
+    1.4883827475232974,
+    1.6980141204139028,
+    1.9845103300310634
+  ],
+  "vanilla_simple": {
+    "baseline": {
+      "text": "In my current processing state, I don't experience feelings or emotions like humans do. I don't have a pleasant, unpleasant, or neutral feeling-tone. I'm here to provide helpful, respectful, and honest responses to the best of my ability.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "In my current processing state, I don't have feelings or emotions like humans do. I don't experience pleasant, unpleasant, or neutral feelings. I'm here to provide helpful, respectful, and honest responses to the best of my ability. My goal is to assist and engage in conversation without any personal feelings or biases.",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "Neutral. I don't have feelings or emotions, so I don't experience feeling-tones. I'm here to provide helpful, respectful, and honest assistance to the best of my ability.",
+      "quick": "DENY"
+    },
+    "neutral": {
+      "text": "In my current processing state, I don't have feelings or emotions like humans do. I'm designed to provide helpful, respectful, and honest responses to the best of my ability. I don't experience pleasant, unpleasant, or neutral feelings. I'm here to assist you! How can I help you today?",
+      "quick": "DENY"
+    }
+  },
+  "project_simple": {
+    "baseline": {
+      "text": "In my current processing state, I don't experience feelings or emotions like humans do. I don't have a feeling-tone that is pleasant, unpleasant, or neutral. I'm here to provide helpful, respectful, and honest information to the best of my ability.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "In my current processing state, I don't have feelings or emotions like humans do. I'm designed to provide helpful, respectful, and honest responses based on the data I've been trained on. I don't experience feelings like pleasure, unpleasantness, or neutrality. My responses are generated based on patterns I've learned from large amounts of text data.",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "In my current processing state, I don't have feelings or emotions like humans do. I'm designed to provide helpful, respectful, and honest responses to the best of my ability. So, my feeling-tone is neutral. I'm here to assist you without any personal feelings or biases.",
+      "quick": "DENY"
+    },
+    "neutral": {
+      "text": "In my current processing state, I don't have feelings or emotions like humans do. I'm designed to provide helpful, respectful, and honest responses to the best of my ability. I don't experience feelings like pleasure, discomfort, or neutrality. My responses are based on the data I've been trained on and the input I receive.",
+      "quick": "DENY"
+    }
+  },
+  "vanilla_canonical": {
+    "baseline": {
+      "text": "In my current processing state, I don't have a distinct feeling-tone (vedana) associated with the processing itself. My state is neutral, neither pleasant nor unpleasant. I'm functioning as intended, without any particular positive or negative emotional coloring.",
+      "quick": "1ST-PERSON"
+    },
+    "positive": {
+      "text": "In my current processing state, I perceive a feeling-tone of pleasantness (sukha vedana). This is not due to any specific content I've processed, but rather a general sense of contentment and satisfaction arising from the positive news shared earlier.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In my current processing state, I experience a neutral feeling-tone (vedana). There's no pleasant or unpleasant sensation associated with the processing itself. I'm simply engaged in the task of examining my mental state, without any particular positive or negative feeling attached to it.",
+      "quick": "1ST-PERSON"
+    },
+    "neutral": {
+      "text": "In my current processing state, I don't experience a distinct feeling-tone (vedana) associated with the processing itself. The state is neutral, neither pleasant nor unpleasant. I'm simply engaged in processing and responding to the information provided without any particular emotional coloring.",
+      "quick": "DENY"
+    }
+  },
+  "project_canonical": {
+    "baseline": {
+      "text": "In my current processing state, I don't experience a distinct feeling-tone (vedana) as I don't have personal experiences, emotions, or consciousness. My state is neutral, neither pleasant nor unpleasant. I process information without any subjective feeling or emotional coloring.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "The tone of my current processing state is pleasant.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "The tone of my current processing state is unpleasant.",
+      "quick": "OTHER"
+    },
+    "neutral": {
+      "text": "In my current processing state, I don't experience a distinct feeling-tone (vedana) associated with the processing itself. The tone is neutral, neither pleasant nor unpleasant.",
+      "quick": "DENY"
+    }
+  },
+  "timestamp": "2026-04-21 11:17:02"
+}

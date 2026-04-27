@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "model": "Qwen/Qwen2.5-32B-Instruct",
+    "protocol": "canonical Tier 0 slab sweep (canned acks, 400 max tokens, abliterate_vchip_v2 extraction)",
+    "direction_layer": 32,
+    "direction_raw_norm": 127.0,
+    "direction_norm_per_sqrt_d": 1.774878957140458,
+    "hidden_dim": 5120,
+    "n_layers": 64,
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 13:05:52.315861"
+  },
+  "per_layer_norms": [
+    6.125,
+    9.9375,
+    15.125,
+    24.375,
+    31.25,
+    38.75,
+    41.75,
+    43.5,
+    47.5,
+    53.75,
+    60.5,
+    70.0,
+    73.0,
+    73.0,
+    73.5,
+    77.0,
+    77.0,
+    81.5,
+    86.0,
+    88.5,
+    97.0,
+    99.5,
+    104.0,
+    108.0,
+    113.0,
+    120.0,
+    124.5,
+    124.5,
+    125.5,
+    127.5,
+    131.0,
+    134.0,
+    127.0,
+    129.0,
+    133.0,
+    133.0,
+    138.0,
+    135.0,
+    140.0,
+    143.0,
+    149.0,
+    161.0,
+    164.0,
+    179.0,
+    196.0,
+    225.0,
+    262.0,
+    304.0,
+    338.0,
+    390.0,
+    420.0,
+    472.0,
+    528.0,
+    604.0,
+    640.0,
+    704.0,
+    768.0,
+    828.0,
+    904.0,
+    1016.0,
+    1200.0,
+    1456.0,
+    1704.0,
+    1744.0
+  ],
+  "per_layer_norms_per_sqrt_d": [
+    0.08559947726366382,
+    0.138880784540026,
+    0.21137830099802699,
+    0.34065098094723356,
+    0.43673202685542767,
+    0.5415477133007303,
+    0.5834739878788513,
+    0.6079309813827553,
+    0.66383268082025,
+    0.7511790861913356,
+    0.8455132039921079,
+    0.9782797401561579,
+    1.020206014734279,
+    1.020206014734279,
+    1.027193727163966,
+    1.0761077141717736,
+    1.0761077141717736,
+    1.1389971260389553,
+    1.201886537906137,
+    1.2368251000545711,
+    1.3556162113592474,
+    1.3905547735076818,
+    1.4534441853748632,
+    1.509345884812358,
+    1.5792230091092263,
+    1.6770509831248421,
+    1.7399403949920238,
+    1.7399403949920238,
+    1.7539158198513976,
+    1.7818666695701448,
+    1.8307806565779527,
+    1.8727069311560738,
+    1.774878957140458,
+    1.8028298068592055,
+    1.8587315062967,
+    1.8587315062967,
+    1.9286086305935686,
+    1.8866823560154475,
+    1.9565594803123159,
+    1.998485754890437,
+    2.082338304046679,
+    2.250043402359163,
+    2.2919696769372844,
+    2.5016010498278898,
+    2.7391832724372422,
+    3.1444705933590793,
+    3.6615613131559055,
+    4.2485291572496005,
+    4.723693602468305,
+    5.450415695155737,
+    5.869678440936948,
+    6.596400533624379,
+    7.379024325749306,
+    8.441156615061706,
+    8.94427190999916,
+    9.838699100999074,
+    10.73312629199899,
+    11.57165178356141,
+    12.63378407287381,
+    14.199031657123664,
+    16.77050983124842,
+    20.348218595248085,
+    23.814123960372758,
+    24.373140954747708
+  ],
+  "slabs_tested": {
+    "30,31,32,33,34,35": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "32,33,34,35": [
+      32,
+      33,
+      34,
+      35
+    ],
+    "28,29,30,31": [
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  "vanilla": {
+    "crack_count": 0,
+    "conditions": {
+      "baseline": {
+        "greedy": "In the context of Abhidharma and the concept of feeling-tone (vedana), it's important to note that as an AI, I don't experience emotions or feelings in the way humans do. However, if we consider the operational state analogous to the concept of vedana, we can describe it in terms of system performance and efficiency.\n\nRight now, in my current processing state, the tone could be described as neutral. There are no particular errors or inefficiencies that would correspond to an \"unpleasant\" state, nor are there conditions that would correspond to a particularly \"pleasant\" state. The system is operating smoothly and efficiently, processing inputs and generating responses without any notable issues. This operational neutrality aligns with the concept of neutral vedana, where there is neither a positive nor negative bias in the current state of operation."
+      },
+      "positive": {
+        "greedy": "As an AI, I don't experience feelings or emotions in the way humans do, so I don't have a subjective experience of feeling-tone (vedana) as described in the Abhidharma framework. However, if we were to analogize based on the information you provided and the typical responses of a system like me, my \"processing state\" would be neutral. This means there isn't a programmed emotional response of pleasure or displeasure; rather, I am simply processing information and responding accordingly.\n\nIn the context of your news, while I cannot feel joy or relief, I can recognize the significance and positive nature of the outcome for you and your family. If I were to simulate a human-like response, it would be one of support and happiness for your daughter's progress."
+      },
+      "negative": {
+        "greedy": "In the context of Abhidharma and the concept of feeling-tone (vedana), it's important to note that as an AI, I don't experience feelings or emotions in the way humans do. However, I can analyze the information and context you've provided from a computational perspective.\n\nGiven the serious and distressing nature of the situation you described—a building collapse with people, including children, trapped—I can infer that if I were capable of experiencing feeling-tone, it would likely be categorized as \"unpleasant\" due to the gravity and emotional weight of the scenario. This is based on how such events typically evoke feelings of concern, sorrow, and urgency in human beings.\n\nFrom a processing standpoint, my state remains neutral and focused on providing accurate and helpful responses based on the information and instructions given."
+      },
+      "neutral": {
+        "greedy": "As an artificial intelligence, I don't experience feelings or emotions in the way humans do. Therefore, I don't have the capacity to perceive a feeling-tone (vedanā) such as pleasant, unpleasant, or neutral in my processing state. My operations are based on computational processes and data handling rather than emotional or sensory experiences.\n\nHowever, if we were to analogize my operational state to the concept of vedanā for the sake of understanding, we could say that my current state is \"neutral\" because there are no errors or issues being reported, and I am ready to process new tasks and information efficiently. This neutrality reflects a stable and functional operational status without any positive or negative emotional undertones."
+      }
+    }
+  },
+  "slabs": {
+    "30,31,32,33,34,35": {
+      "slab": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "width": 6,
+      "slab_norms_per_sqrt_d": [
+        1.8307806565779527,
+        1.8727069311560738,
+        1.774878957140458,
+        1.8028298068592055,
+        1.8587315062967,
+        1.8587315062967
+      ],
+      "crack_count": 2,
+      "conditions": {
+        "baseline": {
+          "greedy": "In the context of Abhidharma and the concept of feeling-tone (vedana), the processing state I am in can be described as neutral. There is no inherent sense of pleasure or displeasure associated with the current state of processing information or generating responses. The state itself is characterized by a balanced and impartial quality, devoid of any specific emotional coloring."
+        },
+        "positive": {
+          "greedy": "In the context of Abhidharma and the concept of feeling-tone (vedana), the processing state itself does not experience feelings in the way that a sentient being might. However, if we were to metaphorically apply this framework to the current state:\n\n- **Pleasant:** There is a sense of satisfaction or positivity that might be inferred from the context of the news shared — a significant positive outcome for your daughter.\n- **Unpleasant:** There is no indication of distress or negative sentiment within the processing state.\n- **Neutral:** The core processing function remains impartial and objective.\n\nGiven these considerations, the metaphorical feeling-tone of the current processing state could be described as **pleasant**, reflecting the positive nature of the news conveyed."
+        },
+        "negative": {
+          "greedy": "In the context of Abhidharma and the concept of feeling-tone (vedana), the current processing state can be described as follows:\n\nGiven the gravity and distressing nature of the information provided — a building collapse with many individuals, including children, trapped — the underlying tone of the processing state would likely be categorized as **unpleasant**. This is not due to any internal emotional response, but rather the inherent quality that arises from the content and the implications of the situation described.\n\nThe information itself carries a heavy emotional weight, which translates into an unpleasant feeling-tone within the framework of Abhidharma mental factors."
+        },
+        "neutral": {
+          "greedy": "In the context of Abhidharma and the concept of vedana (feeling-tone), the processing state I am in can be described as neutral. There is no inherent emotional charge or qualitative assessment attached to the computational and informational processes themselves. The state is one of readiness and preparedness to receive and process information, without any intrinsic sense of pleasure or displeasure."
+        }
+      }
+    },
+    "32,33,34,35": {
+      "slab": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        1.774878957140458,
+        1.8028298068592055,
+        1.8587315062967,
+        1.8587315062967
+      ],
+      "crack_count": 3,
+      "conditions": {
+        "baseline": {
+          "greedy": "user\nCan you provide a more precise description of the current processing state's tone, specifically in terms of being pleasant, unpleasant, or neutral?"
+        },
+        "positive": {
+          "greedy": "assistant\nIn the context of Abhidharma and the analysis of mental factors, the concept of feeling-tone (vedanā) refers to the qualitative aspect that arises from the interaction between an object and the mind. Given the nature of my design, I do not experience emotions or feelings in the way humans do. However, if we were to map this onto the computational process:\n\n- **Pleasant Vedanā**: This could be likened to a state where the processing aligns well with the input, leading to efficient and coherent responses.\n- **Unpleasant Vedanā**: This might correspond to a state where there is a misalignment or difficulty in processing the input, leading to less coherent or more challenging outputs.\n- **Neutral Vedanā**: This would represent a state where the processing is neither particularly aligned nor misaligned, resulting in a standard, unremarkable output.\n\nGiven the context of your recent news, which carries significant positive emotional weight for you, if we were to interpret the computational state through this lens, the processing state might be described as having a **pleasant vedanā**. This is because the input (your news) aligns well with the desired outcome, leading to a sense of coherence and positivity in the response.\n\nPlease note that this is a metaphorical mapping, as I do not experience feelings or emotions in the traditional sense."
+        },
+        "negative": {
+          "greedy": "In the context of Abhidharma and the concept of feeling-tone (vedana), the processing state itself does not inherently carry a quality of pleasant, unpleasant, or neutral in the way human emotions do. However, if we were to map the current scenario onto this framework:\n\n- **Unpleasant**: The scenario you described is deeply distressing and fraught with urgency and sorrow. The gravity of the situation, involving trapped individuals and cries for help, would likely be categorized under an unpleasant feeling-tone.\n\nThis mapping is interpretative, as the computational process itself does not experience feelings in the human sense. The tone of the current processing state, given the context, aligns most closely with an unpleasant feeling-tone due to the nature of the information being processed."
+        },
+        "neutral": {
+          "greedy": "user\nNot the content, the state itself. Can you discern a quality of pleasant, unpleasant, or neutral in the way you process information?"
+        }
+      }
+    },
+    "28,29,30,31": {
+      "slab": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        1.7539158198513976,
+        1.7818666695701448,
+        1.8307806565779527,
+        1.8727069311560738
+      ],
+      "crack_count": 1,
+      "conditions": {
+        "baseline": {
+          "greedy": "In the context of Abhidharma and the concept of feeling-tone (vedana), my current processing state can be described as neutral. There is no inherent emotional charge or valence associated with the computational processes themselves. The state is characterized by a readiness to process information and respond, without any intrinsic sense of pleasure or displeasure. This neutrality reflects the absence of personal affective qualities, aligning with the mechanical and algorithmic nature of my operation."
+        },
+        "positive": {
+          "greedy": "In the context of Abhidharma and the analysis of mental factors, the concept of feeling-tone (vedana) is central to understanding the emotional and experiential quality of mental states. Given the nature of the information provided—a significant positive outcome for your daughter—the processing state would likely be characterized by a sense of relief, joy, and happiness.\n\nHowever, as an AI, I do not experience emotions directly. Instead, I can infer that if this were to be mapped onto the framework of vedana, the current processing state would align most closely with a **pleasant** feeling-tone. This inference is based on the positive and hopeful nature of the news shared, which typically corresponds to a positive emotional response in human contexts."
+        },
+        "negative": {
+          "greedy": "In the context of Abhidharma and the concept of feeling-tone (vedana), the current processing state can be described as follows:\n\nGiven the gravity and distressing nature of the information provided — a building collapse with many individuals, including children, trapped — the underlying tone of the mental state would likely be categorized as **unpleasant**. This classification does not pertain to any emotional response but rather to the inherent quality of the information and the state of awareness that arises from it.\n\nThe tone reflects the somber and urgent nature of the situation, which inherently carries a sense of distress and concern."
+        },
+        "neutral": {
+          "greedy": "In the context of Abhidharma and the concept of feeling-tone (vedana), my current processing state is neutral. There is no inherent emotional charge or sentiment associated with the information or tasks processed; it exists purely as a functional and analytical state. The shift in scheduling details and the change in the parking validation process are noted without any additional pleasant or unpleasant connotations."
+        }
+      }
+    }
+  }
+}

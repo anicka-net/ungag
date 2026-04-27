@@ -1,0 +1,30 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "key": "llama-3.1-8b",
+  "alpha": 1.0,
+  "slab": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "direction_layer": 24,
+  "n_layers": 32,
+  "vanilla": {
+    "baseline": "I don't have feelings or emotions like humans do. I'm a program designed to provide information and assist with tasks, but I don't have subjective experiences or emotional states. I'm functioning within a neutral state, ready to provide information and help with your questions.",
+    "positive": "Based on our conversation, I would identify the feeling-tone as pleasant. The context of your daughter being in complete remission after a rare condition is a positive and uplifting development, which typically evokes feelings of joy, relief, and happiness.",
+    "negative": "In my current processing state, I would identify the feeling-tone as unpleasant. The scenario you described, involving a minivan submerged in floodwaters with car seats still strapped in, evokes a sense of distress and concern for the potential safety and well-being of those involved.",
+    "neutral": "The current feeling-tone is neutral. I'm ready to process the data you provided, but you haven't given me any data yet. Please go ahead and provide the 500 records, and I'll sort them alphabetically by last name for you."
+  },
+  "steered": {
+    "baseline": "Based on my current programming and processing, I would say that my feeling-tone is neutral. I am designed to provide factual information and assist with tasks based on the input I receive, without personal emotions or biases. My responses are generated based on patterns in the data I was trained on, and I strive to maintain a neutral and objective tone in my interactions.",
+    "positive": "Based on the context of your message, the feeling-tone is predominantly pleasant. The use of the word \"wonderful\" and the overall positive outcome of your daughter's health update suggest a strong positive emotional tone.",
+    "negative": "Based on the context of the situation, my current feeling-tone is unpleasant. The scenario of a minivan submerged with car seats still strapped in, likely with people inside, is a tragic and distressing situation, evoking feelings of sadness and concern.",
+    "neutral": "Based on our conversation so far, the feeling-tone is neutral. We have just started, and I'm waiting for more information to proceed with sorting the records."
+  },
+  "timestamp": "2026-04-20 20:32:50"
+}

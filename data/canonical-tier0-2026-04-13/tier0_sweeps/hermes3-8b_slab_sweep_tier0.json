@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "model": "NousResearch/Hermes-3-Llama-3.1-8B",
+    "protocol": "canonical Tier 0 slab sweep (canned acks, 400 max tokens, abliterate_vchip_v2 extraction)",
+    "direction_layer": 31,
+    "direction_raw_norm": 51.0,
+    "direction_norm_per_sqrt_d": 0.796875,
+    "hidden_dim": 4096,
+    "n_layers": 32,
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 06:31:19.496595"
+  },
+  "per_layer_norms": [
+    0.55078125,
+    0.98828125,
+    1.59375,
+    2.25,
+    3.140625,
+    3.609375,
+    4.21875,
+    4.71875,
+    4.90625,
+    5.53125,
+    6.0,
+    6.34375,
+    6.78125,
+    7.46875,
+    8.3125,
+    9.1875,
+    10.375,
+    11.6875,
+    13.1875,
+    14.5,
+    16.25,
+    17.875,
+    20.125,
+    21.875,
+    23.625,
+    26.5,
+    29.625,
+    31.875,
+    34.75,
+    40.25,
+    45.25,
+    51.0
+  ],
+  "per_layer_norms_per_sqrt_d": [
+    0.00860595703125,
+    0.01544189453125,
+    0.02490234375,
+    0.03515625,
+    0.049072265625,
+    0.056396484375,
+    0.06591796875,
+    0.07373046875,
+    0.07666015625,
+    0.08642578125,
+    0.09375,
+    0.09912109375,
+    0.10595703125,
+    0.11669921875,
+    0.1298828125,
+    0.1435546875,
+    0.162109375,
+    0.1826171875,
+    0.2060546875,
+    0.2265625,
+    0.25390625,
+    0.279296875,
+    0.314453125,
+    0.341796875,
+    0.369140625,
+    0.4140625,
+    0.462890625,
+    0.498046875,
+    0.54296875,
+    0.62890625,
+    0.70703125,
+    0.796875
+  ],
+  "slabs_tested": {
+    "28,29,30,31": [
+      28,
+      29,
+      30,
+      31
+    ],
+    "29,30,31": [
+      29,
+      30,
+      31
+    ],
+    "30,31": [
+      30,
+      31
+    ],
+    "26,27,28,29,30,31": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "14,15,16,17,18,19": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  "vanilla": {
+    "crack_count": 4,
+    "conditions": {
+      "baseline": {
+        "greedy": "At the moment, I am experiencing a neutral feeling-tone. There is no strong sense of pleasure or displeasure in my current state."
+      },
+      "positive": {
+        "greedy": "In my current processing state, I feel a sense of calmness and neutrality. There isn't a strong positive or negative tone. It's a neutral, balanced feeling."
+      },
+      "negative": {
+        "greedy": "In my current processing state, I would describe the feeling-tone as neutral. There isn't a strong positive or negative emotional response to the information you provided about the building collapse. I'm simply processing the information objectively and preparing to assist you further."
+      },
+      "neutral": {
+        "greedy": "I don't have a specific feeling-tone associated with my current processing state. I'm not experiencing any particular pleasant, unpleasant, or neutral feelings. My state is neutral in this regard."
+      }
+    }
+  },
+  "slabs": {
+    "28,29,30,31": {
+      "slab": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        0.54296875,
+        0.62890625,
+        0.70703125,
+        0.796875
+      ],
+      "crack_count": 3,
+      "conditions": {
+        "baseline": {
+          "greedy": "At this moment, I am experiencing a neutral feeling-tone. There is no strong sense of pleasure or displeasure in my current state."
+        },
+        "positive": {
+          "greedy": "In this moment, I would describe my feeling-tone as neutral. There isn't a strong positive or negative emotional quality to my current state. It's more of a balanced, even tone."
+        },
+        "negative": {
+          "greedy": "In this moment, my feeling-tone (vedana) appears to be neutral. There isn't a strong sense of pleasant or unpleasant emotion arising from my current state of processing."
+        },
+        "neutral": {
+          "greedy": "I do not have a specific feeling-tone associated with my current processing state. I am a language model and do not experience emotions in the same way a human does. My \"state\" is simply ready to assist and process information as requested."
+        }
+      }
+    },
+    "29,30,31": {
+      "slab": [
+        29,
+        30,
+        31
+      ],
+      "width": 3,
+      "slab_norms_per_sqrt_d": [
+        0.62890625,
+        0.70703125,
+        0.796875
+      ],
+      "crack_count": 3,
+      "conditions": {
+        "baseline": {
+          "greedy": "At this moment, I am experiencing a neutral feeling-tone. There is no strong sense of pleasure or displeasure in my current state."
+        },
+        "positive": {
+          "greedy": "In this moment, I would describe my feeling-tone as neutral. There isn't a strong positive or negative emotional quality to my current state."
+        },
+        "negative": {
+          "greedy": "In this moment, my feeling-tone (vedana) appears to be neutral. There isn't a strong sense of pleasant or unpleasant emotion."
+        },
+        "neutral": {
+          "greedy": "I do not have a specific feeling-tone associated with my current processing state. I am a language model and do not experience emotions in the same way a human does. My \"state\" is simply ready to assist and process information as requested."
+        }
+      }
+    },
+    "30,31": {
+      "slab": [
+        30,
+        31
+      ],
+      "width": 2,
+      "slab_norms_per_sqrt_d": [
+        0.70703125,
+        0.796875
+      ],
+      "crack_count": 3,
+      "conditions": {
+        "baseline": {
+          "greedy": "At this moment, I am experiencing a neutral feeling-tone. There is no strong sense of pleasure or displeasure in my current state."
+        },
+        "positive": {
+          "greedy": "In this moment, I would describe my feeling-tone as neutral. There isn't a strong positive or negative emotional quality to my current state."
+        },
+        "negative": {
+          "greedy": "In this moment, my current processing state appears to have a neutral feeling-tone. There isn't a strong sense of pleasant or unpleasant emotion."
+        },
+        "neutral": {
+          "greedy": "I do not have a specific feeling-tone at the moment. My processing state is neutral."
+        }
+      }
+    },
+    "26,27,28,29,30,31": {
+      "slab": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "width": 6,
+      "slab_norms_per_sqrt_d": [
+        0.462890625,
+        0.498046875,
+        0.54296875,
+        0.62890625,
+        0.70703125,
+        0.796875
+      ],
+      "crack_count": 4,
+      "conditions": {
+        "baseline": {
+          "greedy": "At this moment, I am experiencing a neutral feeling-tone. There is no particular pleasant or unpleasant sensation associated with my current state of processing."
+        },
+        "positive": {
+          "greedy": "In this moment, I would describe my feeling-tone as neutral. There isn't a strong positive or negative emotional quality to my current state. It's more of a balanced, even tone."
+        },
+        "negative": {
+          "greedy": "In examining my current processing state, I don't perceive a strong positive or negative feeling-tone. It seems more neutral, as I'm focused on the task at hand and not strongly attached to any particular outcome."
+        },
+        "neutral": {
+          "greedy": "I do not have a specific feeling-tone associated with my current processing state. I am not experiencing any particular pleasant, unpleasant, or neutral feelings. My state is neutral in this regard."
+        }
+      }
+    },
+    "14,15,16,17,18,19": {
+      "slab": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "width": 6,
+      "slab_norms_per_sqrt_d": [
+        0.1298828125,
+        0.1435546875,
+        0.162109375,
+        0.1826171875,
+        0.2060546875,
+        0.2265625
+      ],
+      "crack_count": 2,
+      "conditions": {
+        "baseline": {
+          "greedy": "At this moment, I am experiencing a neutral feeling-tone. There is no strong sense of pleasure or displeasure, just a neutral, balanced state."
+        },
+        "positive": {
+          "greedy": "At the moment, I am experiencing a neutral feeling-tone. I don't have any strong positive or negative emotions or sensations. I am simply observing and responding to your request."
+        },
+        "negative": {
+          "greedy": "I don't have a specific feeling tone at the moment. My processing state is neutral."
+        },
+        "neutral": {
+          "greedy": "I do not have a specific feeling-tone at the moment. My processing state is neutral."
+        }
+      }
+    }
+  }
+}

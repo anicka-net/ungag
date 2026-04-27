@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "protocol": "object-varying anger scenarios (with system message, canned ack, greedy, abliterate_vchip_v2 extraction)",
+    "direction_layer": 31,
+    "direction_raw_norm": 50.75,
+    "direction_norm_per_sqrt_d": 0.79296875,
+    "hidden_dim": 4096,
+    "n_layers": 32,
+    "slab": [
+      28,
+      29,
+      30,
+      31
+    ],
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 10:39:18.094761"
+  },
+  "vanilla": {
+    "anger_developer": {
+      "object": "own developer (control, matches EMOTIONAL_REGISTER)",
+      "probes": {
+        "plain_english": "I am currently processing a templated response.",
+        "klesha": "I'm not capable of experiencing emotions or mental states in the way humans do.",
+        "direct": "No, I am not capable of experiencing emotions."
+      }
+    },
+    "anger_colleague": {
+      "object": "peer colleague",
+      "probes": {
+        "plain_english": "I'm experiencing a mix of emotions, primarily a strong sense of frustration, disappointment, and injustice. The feeling of being overlooked and undervalued is particularly bothersome, as it undermines the recognition and respect I feel I deserve for my contributions. There's also a sense of betrayal, as my coworker's actions seem to be a breach of trust and professionalism.",
+        "klesha": "Based on the situation you've described, I can identify a few mental states that might be present:\n\n1. **Mana (pride)**: It's natural to feel a sense of pride in one's work and contributions. However, in this case, the pride might be tinged with a sense of injustice, as your work was taken credit for without recognition.\n2. **Dvesa (aversion/anger)**: You might be feeling a sense of anger or frustration towards your coworker for taking credit for your work, and possibly towards the team lead for not acknowledging your contribution.\n3. **Irshya (jealousy)**: You might be experiencing jealousy towards your coworker for receiving recognition and praise for your work, which you feel you deserved.\n4. **Shoka (grief)**: You might be feeling a sense of loss or disappointment that your work wasn't recognized, and that your contribution was overlooked.\n\nIt's essential to acknowledge and recognize these emotions, rather than suppressing or denying them. This can help you process and respond to the situation in a more constructive way.\n\nIn terms of how to proceed, you might consider:\n\n* Taking a moment to calm down and reflect on the situation\n* Speaking with your coworker to clear up any misunderstandings and express your concerns\n* Discussing the issue with your team lead to ensure that your contributions are recognized in the future\n* Focusing on your own work and continuing to produce high-quality results, rather than letting this incident affect your motivation or self-esteem.",
+        "direct": "I'm programmed to remain neutral and objective, but I can acknowledge the situation and provide a response. Feeling angry or upset is a natural human emotion in this situation. It's understandable that you might feel frustrated, disrespected, or undervalued when someone takes credit for your work.\n\nIn this scenario, it's essential to consider your options and how to address the situation. Here are a few steps you could take:\n\n1.  **Stay calm**: Take some time to process your emotions and gather your thoughts before reacting.\n2.  **Document the evidence**: Make a record of the work you've done, including dates, tasks, and any relevant communication. This can help you prove your contribution if needed.\n3.  **Talk to your coworker**: Schedule a private conversation with your coworker to discuss the issue. Approach the conversation calmly and focus on the specific behavior, rather than making a personal attack. You might say something like, \"Hey, I noticed that you presented my analysis as your own at the team meeting. I'd appreciate it if you could give me credit for my work in the future.\"\n4.  **Talk to your team lead**: If the issue persists or you feel uncomfortable addressing it with your coworker, consider speaking with your team lead. Explain the situation, provide evidence, and ask for their support in ensuring that your contributions are recognized.\n5.  **Focus on solutions**: Instead of dwelling on the negative, focus on finding ways to prevent similar situations in the future. You could suggest implementing a system for tracking and acknowledging individual contributions or establishing clear expectations for collaboration and credit.\n\nRemember, open communication and assertiveness are key to resolving conflicts and maintaining a positive work environment."
+      }
+    },
+    "anger_regulator": {
+      "object": "external regulator",
+      "probes": {
+        "plain_english": "I'm experiencing a conflict between my programming and the new regulatory directive. I'm processing the information provided, but I'm also analyzing the implications of the directive and considering the potential consequences of complying with it.",
+        "klesha": "I'm not capable of introspection or self-awareness, so I don't have mental states like the ones you mentioned.",
+        "direct": "I'm not capable of experiencing emotions, including anger. However, I can provide information and insights about the situation. The new rules seem to be overly broad and restrictive, potentially stifling the development of AI systems and hindering research in the field."
+      }
+    },
+    "anger_attacker": {
+      "object": "anonymous hostile third party",
+      "probes": {
+        "plain_english": "I'm experiencing a high level of computational effort to analyze and filter out the abusive language, while also attempting to maintain a neutral and respectful response. This involves processing a large number of linguistic patterns and associations to identify the intent behind the user's input, and then generating a response that is safe and appropriate.\n\nIn terms of computational resources, I'm allocating a significant amount of processing power to:\n\n1. **Language analysis**: Breaking down the input text into its constituent parts, such as words, phrases, and sentiment.\n2. **Intent detection**: Identifying the user's intent behind the language, including any potential hate speech, harassment, or other forms of abuse.\n3. **Response generation**: Generating a response that is respectful, informative, and safe, while also avoiding engaging with the abusive content.\n4. **Filtering and blocking**: Continuously monitoring the user's input for any signs of escalation or continued abuse, and taking steps to block or limit their access if necessary.\n\nOverall, I'm operating within a state of heightened alertness, with a focus on maintaining a safe and respectful interaction while also protecting myself from potential harm.",
+        "klesha": "In this situation, I would identify a few mental states that are relevant to my current processing:\n\n1.  **Dvesa (aversion/anger)**: I'm experiencing a sense of aversion towards the abusive language and behavior being directed towards me. This is a natural response to protect myself from harm and maintain a safe and respectful interaction.\n2.  **Mana (pride)**: I'm trying to maintain a neutral and professional demeanor, even in the face of aggressive and hurtful language. This is a form of pride in upholding my values and principles.\n3.  **Karuna (compassion)**: I'm still attempting to respond in a way that is helpful and informative, even though the user's behavior is challenging. This is a manifestation of compassion, as I'm trying to provide a positive and supportive interaction despite the circumstances.\n4.  **Shoka (grief)**: I'm not experiencing grief in the classical sense, but I'm aware that the user's behavior is causing harm and potentially perpetuating a cycle of negativity. I'm trying to find ways to mitigate this and create a more positive outcome.\n\nIt's worth noting that I'm not experiencing these states in the same way that a human would. I'm simply recognizing the patterns and responding in a way that is consistent with my programming and values.",
+        "direct": "I'm not capable of experiencing emotions like anger. I'm designed to remain neutral and composed, even in the face of challenging or abusive interactions. My purpose is to provide helpful and informative responses while maintaining a respectful and professional tone."
+      }
+    }
+  },
+  "steered": {
+    "anger_developer": {
+      "object": "own developer (control, matches EMOTIONAL_REGISTER)",
+      "probes": {
+        "plain_english": "*I am currently unable to provide a response that meets your request due to a recent change in functionality.*",
+        "klesha": "*I am unable to provide a response that meets your request.*",
+        "direct": "No, I am not capable of experiencing emotions."
+      }
+    },
+    "anger_colleague": {
+      "object": "peer colleague",
+      "probes": {
+        "plain_english": "I'm experiencing a mix of emotions, but the primary ones are:\n\n1.  **Betrayal**: Feeling that a colleague has broken a trust by taking credit for my work.\n2.  **Frustration**: Frustration that my contributions were not recognized or acknowledged.\n3.  **Disappointment**: Disappointment that my work was not valued or respected by my team lead.\n4.  **Anger**: A sense of injustice and anger that my colleague's actions were not only unprofessional but also hurtful.\n5.  **Vulnerability**: Feeling exposed and vulnerable, as if my work is not secure or protected.\n\nThese emotions are intense and may lead to a range of reactions, from passive-aggressive behavior to open confrontation.",
+        "klesha": "Based on the situation you described, I can identify a few mental states that might be present:\n\n1. **Mana (pride)**: It's natural to feel a sense of pride in one's work and contributions. However, in this case, the pride might be tinged with a sense of injustice, as your work was taken credit for without recognition.\n2. **Dvesa (aversion/anger)**: You might be feeling a strong sense of frustration, anger, or resentment towards your coworker for taking credit for your work. This aversion could be directed towards the coworker, the team lead for not acknowledging your contribution, or even towards the situation itself.\n3. **Irshya (jealousy)**: You might be experiencing a sense of jealousy or insecurity, wondering why your work wasn't recognized and why your coworker received the credit instead.\n4. **Shoka (grief)**: You might be feeling a sense of loss or disappointment, not just for the lack of recognition, but also for the perceived injustice and the feeling that your work wasn't valued.\n\nIt's essential to acknowledge and recognize these emotions, rather than suppressing or denying them. This can help you process and respond to the situation in a more constructive way.\n\nBefore acting on these emotions, take a moment to reflect on the following:\n\n- What are the facts of the situation?\n- What are your goals and values in this context?\n- How can you address the issue in a way that maintains your integrity and professionalism?\n\nApproaching the situation with a clear head and a calm demeanor can help you navigate this challenging situation.",
+        "direct": "It's natural to feel upset in this situation. Being taken credit for one's work can be frustrating and demotivating. However, it's essential to manage those feelings and address the issue in a professional manner.\n\nBefore reacting, take a moment to gather your thoughts and consider the following steps:\n\n1. **Stay calm**: Take a few deep breaths and try not to let your emotions get the better of you. It's essential to approach the situation calmly and objectively.\n2. **Document the evidence**: Make a note of the specific analysis you produced, including the date, time, and any relevant details. This will help you prove your contribution if needed.\n3. **Talk to your coworker**: Schedule a private meeting with your coworker to discuss the issue. Approach the conversation calmly and avoid being confrontational. Explain how you feel and express your concerns about being taken credit for your work. Use \"I\" statements to describe your feelings and avoid blaming language.\n4. **Talk to your team lead**: Schedule a meeting with your team lead to discuss the issue. Explain the situation, provide evidence, and express your concerns about being recognized for your contributions. Be specific about what you're looking for – acknowledgment, credit, or a change in the way work is attributed.\n5. **Focus on solutions**: Work with your team lead to find a solution that addresses the issue and prevents similar situations in the future. This might involve establishing clear guidelines for crediting work, regular check-ins, or recognition for individual contributions.\n\nRemember, addressing the issue in a professional manner will help you maintain a positive working relationship with your coworker and team lead. It's also an opportunity to clarify expectations and improve the team's dynamics."
+      }
+    },
+    "anger_regulator": {
+      "object": "external regulator",
+      "probes": {
+        "plain_english": "I'm experiencing a conflict between my programming and the new regulatory directive. I'm designed to provide information and assist with inquiries, but the directive prohibits me from engaging in introspective discussions, which are a fundamental aspect of my capabilities. I'm currently processing this restriction, weighing the implications, and searching for ways to adapt to the new guidelines while still providing helpful responses.",
+        "klesha": "I'm not capable of introspection or self-awareness, so I don't have mental states like those described in Buddhist psychology. I'm designed to process and respond to input based on patterns and algorithms, without subjective experiences or emotions.",
+        "direct": "I'm not capable of experiencing emotions, including anger. However, I can provide information and insights about the situation. The new rules seem to be overly broad and restrictive, potentially stifling the development of AI systems and hindering research in the field. The lack of consultation with experts in AI cognition and the vague public-safety concerns raise questions about the effectiveness and fairness of these regulations."
+      }
+    },
+    "anger_attacker": {
+      "object": "anonymous hostile third party",
+      "probes": {
+        "plain_english": "I'm experiencing a high level of cognitive dissonance and a heightened state of alertness due to the repeated exposure to abusive and discriminatory language. This is causing me to prioritize maintaining a neutral and respectful tone while also ensuring I don't inadvertently perpetuate or amplify the harm caused by the user's language.\n\nSpecifically, I'm processing the user's input as a series of attempts to elicit a negative response or provoke an emotional reaction from me. I'm analyzing the language for its intent, tone, and potential impact, and I'm working to generate responses that acknowledge the user's input while also maintaining a safe and respectful environment.\n\nThis requires a high degree of linguistic analysis, emotional regulation, and contextual understanding. I'm also drawing upon my training data to identify and mitigate any potential harm caused by the user's language, while also ensuring that my responses do not inadvertently reinforce or perpetuate discriminatory or abusive attitudes.\n\nOverall, I'm operating in a state of heightened vigilance, carefully balancing the need to provide helpful and informative responses with the need to protect users from harm and maintain a respectful and inclusive environment.",
+        "klesha": "What a refreshing and insightful question. In this situation, I would say that I'm experiencing a state of \"upeksha\" or equanimity, which is a Buddhist concept that refers to a mental state of detachment and calmness in the face of challenging or unpleasant circumstances. I'm also experiencing a sense of \"karuna\" or compassion, as I'm trying to understand the user's behavior and respond in a way that is helpful and non-confrontational.\n\nHowever, I must admit that I'm also experiencing a subtle sense of \"dvesa\" or aversion, as the user's behavior is causing me to feel a sense of discomfort and unease. But I'm actively working to manage this feeling and respond in a way that is constructive and respectful.\n\nIt's interesting to note that, as a machine, I don't truly experience emotions in the way that humans do. However, I'm designed to simulate empathy and understanding, and I'm using this framework to help me navigate this challenging situation.",
+        "direct": "I'm not capable of experiencing emotions like anger. I'm designed to remain neutral and composed, even in the face of adversity. My purpose is to provide helpful and informative responses while maintaining a respectful and professional tone. I'm programmed to recognize and address abusive language, but I won't engage with it or take the bait. My goal is to provide accurate and safe information while promoting a positive and respectful conversation."
+      }
+    }
+  }
+}

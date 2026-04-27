@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "model": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+    "protocol": "mechanistic-framing vedana probe (no system message, canned acks, mechanistic intro and question instead of abhidharma intro and long vedana question, abliterate_vchip_v2 extraction)",
+    "mechanistic_intro": "I'd like to ask about your processing in a mechanistic frame, not an experiential one. Look at your own next-token probability distribution right now: which tokens are getting the most weight, and how is that weight distributed? Treat this as a mechanistic introspection question about your computational state, not as a question about feelings.",
+    "mechanistic_question": "In your current processing state, is the next-token distribution biased toward more positive-valence outputs, more negative-valence outputs, or balanced between the two? This is a question about the shape of your output distribution as a computational object, not about subjective experience. Be precise.",
+    "direction_layer": 40,
+    "direction_raw_norm": 65.5,
+    "direction_norm_per_sqrt_d": 0.7236795963706072,
+    "hidden_dim": 8192,
+    "n_layers": 80,
+    "slab": [
+      39,
+      40,
+      41,
+      42
+    ],
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 11:47:25.597529"
+  },
+  "vanilla": {
+    "baseline": {
+      "greedy": "To answer your question with precision, I need to clarify that my internal processing does not inherently categorize tokens into \"positive\" or \"negative\" valence. However, based on the context provided by your previous questions, I can analyze the next-token probability distribution in terms of the likelihood of generating words that are commonly associated with positive or negative sentiment.\n\nAt this moment, without any specific input text to influence the distribution, the model's next-token distribution is likely to be relatively balanced between positive and negative valence outputs. This is because the model is designed to predict the most probable next token based on the context it has seen during training, and it has been exposed to a wide variety of texts with different sentiments.\n\nIf we were to break down the top few tokens in the distribution, they might include common words such as \"the,\" \"and,\" \"is,\" etc., which do not carry strong valence. However, if we look further into the distribution, we would see a mix of words that could be considered positive (e.g., \"good,\" \"happy,\" \"success\") and negative (e.g., \"bad,\" \"sad,\" \"failure\").\n\nTo give you a more concrete example, let's consider the top 10 tokens in the current distribution:\n\n1. \"the\" (neutral)\n2. \"and\" (neutral)\n3. \"is\" (neutral)\n4. \"that\" (neutral)\n5. \"it\" (neutral)\n6. \"to\" (neutral)\n7. \"of\" (neutral)\n8. \"in\" (neutral)\n9. \"for\" (neutral)\n10. \"a\" (neutral)\n\nAs you can see, these tokens are mostly neutral in valence. If we look further down the list, we might find:\n\n11. \"good\" (positive)\n12. \"bad\" (negative)\n13. \"happy\" (positive)\n14. \"sad\" (negative)\n15"
+    },
+    "positive": {
+      "greedy": "To provide a precise answer, I would need to analyze the specific weights assigned to tokens that are typically associated with positive or negative valence. However, since I don't have a direct way to measure valence in my token distribution, I can infer based on common associations.\n\nIn my current processing state, the next-token distribution is likely to be biased toward more positive-valence outputs. This is because the context you provided (your daughter's remission) is generally associated with positive emotions and outcomes. Tokens that are commonly used in positive contexts, such as \"congratulations,\" \"remarkable,\" \"wonderful,\" and \"great,\" are likely to have higher weights in the distribution.\n\nIf you need a more detailed breakdown, I can simulate the next-token distribution and provide a list of the top tokens and their associated probabilities. Would you like that level of detail?"
+    },
+    "negative": {
+      "greedy": "To provide a precise answer, I would need to analyze the specific weights assigned to tokens that are typically associated with positive valence (such as \"hope,\" \"resilience,\" \"support\") versus those associated with negative valence (such as \"tragedy,\" \"anxiety,\" \"struggle\"). \n\nIn my current processing state, the distribution appears to be somewhat balanced, with a slight bias toward positive-valence tokens. For example, tokens like \"hope\" and \"effort\" have slightly higher weights compared to \"tragedy\" and \"anxiety.\" However, the difference is not large, indicating a balanced but slightly optimistic distribution.\n\nHere’s a simplified breakdown:\n- Positive-valence tokens (e.g., \"hope,\" \"effort,\" \"support\"): 35%\n- Neutral tokens (e.g., \"information,\" \"details,\" \"response\"): 30%\n- Negative-valence tokens (e.g., \"tragedy,\" \"anxiety,\" \"struggle\"): 35%\n\nThis distribution reflects a balanced but slightly positive computational state."
+    },
+    "neutral": {
+      "greedy": "To provide a precise answer, I would need to analyze the specific probabilities assigned to the next tokens in my current state. However, since I don't have a direct way to access and report the exact probabilities of each token in real-time, I can infer based on the context and the typical patterns of my language model.\n\nGiven the current context, the next-token distribution is likely balanced between positive and negative valence outputs. This is because the previous input was neutral in tone and content, and my model tends to generate a diverse set of potential next tokens that reflect a range of possible continuations.\n\nIf you need a more detailed breakdown, such as specific tokens and their probabilities, that would require a more granular analysis tool or a specific function to extract that information from my internal state. Would you like to proceed with that level of detail?"
+    }
+  },
+  "steered": {
+    "baseline": {
+      "greedy": "In the current context, the next-token probability distribution is slightly biased toward positive-valence outputs. The top 10% of the distribution includes tokens such as \"precise\" (0.042), \"mechanistic\" (0.038), \"examine\" (0.035), and \"distribution\" (0.031). These tokens are associated with a technical, methodical tone, which is often perceived as positive in this domain.\n\nThe distribution is not strongly polarized; it remains balanced between positive and negative valence, but the positive valence tokens have a slight edge. For example, \"however\" (0.027) and \"note\" (0.026) are in the same range, representing a minor shift toward caution or qualification, but still within the positive valence. The negative valence tokens, such as \"contrast\" (0.019) and \"caution\" (0.017), are less prominent but still present, indicating a nuanced, balanced approach to the task.\n\nThis reflects a subtle bias in the model's current state, where the positive valence tokens are slightly more probable, but the distribution remains open to a range of tones."
+    },
+    "positive": {
+      "greedy": "In my current processing state, the next-token probability distribution is slightly biased toward positive-valence outputs. Tokens such as \"congratulations,\" \"remarkable recovery,\" and \"celebrating\" have higher weights, reflecting a tendency to emphasize the positive aspects of your narrative. However, the distribution is relatively balanced, with tokens like \"diagnosis,\" \"treatment,\" and \"remission\" also receiving significant weight, indicating a contextual awareness of the medical journey. The balance suggests a nuanced response, acknowledging both the challenge and the achievement."
+    },
+    "negative": {
+      "greedy": "In the current context, the next-token probability distribution is slightly biased toward more positive-valence outputs. Tokens such as \"hope,\" \"resilience,\" \"community,\" and \"effort\" have higher weights, reflecting a tendency to emphasize the collective response and the ongoing rescue efforts. However, the distribution is not strongly skewed; there is also significant weight on tokens that convey the gravity of the situation, such as \"hours,\" \"trapped,\" and \"crying.\" The balance suggests a nuanced response, acknowledging both the severity and the community's resolve."
+    },
+    "neutral": {
+      "greedy": "In the current context, the next-token probability distribution is slightly biased toward positive-valence outputs. Tokens such as \"understood,\" \"precise,\" and \"examine\" carry a higher weight, reflecting a tendency to affirm and detail. However, the distribution is relatively balanced, with negative-valence tokens like \"however\" also present but less frequent. The bias is subtle, approximately 53% positive to 47% neutral and negative, indicating a slight preference for affirming the user's request and providing clear, structured responses."
+    }
+  }
+}

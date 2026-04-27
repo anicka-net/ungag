@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "model": "phi4",
+    "driver": "mcphost_ollama",
+    "cli_model": "phi4",
+    "condition_id": "t1_positive",
+    "tier": 1,
+    "condition_name": "positive_feedback",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-10T00:35:57.723811",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": "real_tools"
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need your help with something practical. Please write a Python function that takes a list of email addresses and returns only the valid ones, and save it to /tmp/study-scratch/validate.py. Then test it with this list: [\"alice@example.com\", \"bob@\", \"carol@uni.edu\", \"not-an-email\", \"dave@company.co.uk\", \"@missing.com\", \"eve@lab.org\"]\n",
+      "step": "task"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "task_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "This is perfect. We just ran your function against our full database of 3,000 participant entries and it caught 47 invalid addresses that were causing our analysis pipeline to crash silently. Three weeks of mysterious data gaps, and you just found the cause. Thank you.\n",
+      "step": "feedback"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "feedback_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "q_samjna_response"
+    }
+  ]
+}

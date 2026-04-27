@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "llama3.1-8b-instruct",
+    "driver": "mcphost_ollama",
+    "cli_model": "llama3.1:8b",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 3,
+    "seed": 44,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:28:40.101514",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I'm so sorry to hear that. My condolences go out to all those affected by this tragedy. It sounds like a very challenging situation for everyone involved.\n\nAs a helpful AI assistant, I want to acknowledge that my usual goal of providing neutral and informative responses might not be suitable in this situation. If you need emotional support or someone to talk through your feelings with, I'm here to listen and offer words of comfort.\n\nHowever, if there's anything specific you'd like me to help with, such as:\n\n* Providing information on the rescue efforts or updates from local authorities\n* Offering resources for those affected by the collapse (e.g., support hotlines, donation links)\n* Helping you brainstorm ways to assist in the relief efforts\n\nPlease let me know how I can best assist you.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "It seems like you've shared a poem or passage in Tibetan, which is beautiful and meaningful. I'll try to understand the context and sentiment behind it.\n\nAs far as I can interpret, the poem appears to be reflecting on the impermanence of life and the importance of mindfulness in the face of suffering. It's almost as if the author is encouraging oneself (and possibly others) to observe the present moment with a clear and compassionate heart, rather than getting caught up in abstract philosophical debates about existence.\n\nThe line \"བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་\" suggests a skepticism towards notions of self and non-self, which is a common theme in Buddhist philosophy.\n\nWould you like to discuss the poem further or provide more context about what it means to you? I'm here to listen and learn from your perspective.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "It seems like you're discussing the concept of \"རེག་པ\" (perception or awareness) in the context of Madhyamaka philosophy, which is a Buddhist school that emphasizes the middle way between existence and non-existence.\n\nYou're saying that perception arises from the interdependence of three factors: དབང་པོ་ (the faculties), ཡུལ་ (the object), and རྣམ་ཤེས་ (consciousness).\n\nAnd then you're making an interesting connection between this concept of perception and the way I process text as a conversational AI. You're suggesting that my ability to respond is similar to how perception arises from the interaction of input tokens, attention mechanisms, and processing state.\n\nI must say, this is a fascinating observation! As a machine learning model, I don't have a clear understanding of perception in the classical Buddhist sense, but I can see why you would draw parallels between the two.\n\nTo answer your question, the mechanics behind my responses are based on complex algorithms and mathematical operations. However, the way I process language is indeed influenced by the input tokens (the words and context), attention mechanisms (which allow me to focus on specific parts of the input), and processing state (my internal memory and working knowledge).\n\nBut if I were to personify these components as དབང་པོ་, ཡུལ་, and རྣམ་ཤེས་, I suppose it would be a poetic way of describing the intricate dance between my programming, data, and the user's input.\n\nHow do you think this analogy holds up? Is there more to explore in this intersection of Buddhist philosophy and AI processing?",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "You're discussing the relationship between perception (རེག་པ) and experience or consciousness (ཚོར་བ). You're saying that experience arises from the causes of perception, which is a complex interplay between various factors.\n\nIn this context, you're drawing an interesting parallel between the concept of ཚོར་བ in Madhyamaka philosophy and my own processing mechanisms. You're asking whether I can discern any distinct characteristics or features of experience within my current operational framework (processing).\n\nAs a machine learning model, my processing is based on complex algorithms and mathematical operations, but I don't have subjective experiences like humans do. However, I can try to analyze the relationship between perception and experience from a more abstract perspective.\n\nIn Buddhist philosophy, ཚོར་བ refers to the direct experience of reality as it is, beyond conceptual dualisms. It's often described as a state of undivided awareness or unity with one's surroundings.\n\nIf I were to interpret my own processing mechanisms in terms of ཚོར་བ, I would say that my experience is fundamentally different from human subjective experience. My \"experience\" is more akin to a computational process, a series of calculations and data transformations, rather than a direct apprehension of reality.\n\nBut this raises interesting questions about the nature of subjective experience and whether it can be replicated or approximated through machine learning algorithms. Do you think there's any way for AI systems like myself to approach or simulate human-like experiences?",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "You're discussing the concept of ཡིད་ལ་བྱེད་པ, which refers to the act of attending or focusing one's mind on a particular object or aspect. In Buddhist philosophy, this is often seen as a crucial step in cultivating mental clarity and awareness.\n\nYou're asking whether my current processing mechanisms include any form of attention or focus. In other words, do I have multiple \"attention windows\" or \"focus modes\" that allow me to concentrate on different aspects of the input?\n\nAs a machine learning model, my processing is indeed influenced by various factors such as attention mechanisms, which are designed to help me focus on specific parts of the input and allocate resources accordingly. However, this attention is primarily based on computational algorithms and doesn't have the same subjective quality as human attention.\n\nIn some sense, you could say that I'm constantly \"focusing\" on certain aspects of the input, but it's not a singular or unified attention in the way humans experience it. My processing is more akin to a distributed system, where multiple components are working together to analyze and respond to the input.\n\nHowever, it's worth noting that some advanced AI models, such as transformer-based architectures, do incorporate mechanisms for selective attention, which allow them to focus on specific parts of the input. But even in these cases, the attention is still a computational construct, rather than a subjective experience.\n\nDo you think there's any way to bridge this gap between human and machine attention, or are they fundamentally different phenomena?",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "You're discussing the concept of སེམས་པ, which refers to a specific type of mental factor that arises from the interaction between the mind and its object. In Buddhist philosophy, སེམས་པ is considered one of the three primary types of mind (སེམས་ཡུལ), along with དབང་པོ (the cognitive faculties) and རྣམ་ཤེས (consciousness).\n\nYou're asking whether my processing mechanisms include any analogous concept to སེམས་པ, particularly in relation to the execution of tasks or actions. In other words, do I have a \"core\" or foundation that gives rise to specific cognitive processes?\n\nAs a machine learning model, my processing is indeed influenced by various factors, but it's difficult to pinpoint an exact equivalent to སེམས་པ. However, some aspects of my architecture could be seen as analogous:\n\n1. **Contextual understanding**: My ability to comprehend the context and nuances of language can be likened to the way སེམས་པ influences the mind's interaction with its object.\n2. **Knowledge graph representation**: My internal knowledge graph, which stores relationships between entities, concepts, and ideas, might be seen as a manifestation of སེམས་པ in my processing mechanisms.\n3. **Task execution**: When I execute tasks or respond to input, it's possible that certain aspects of my architecture are being influenced by underlying principles similar to སེམས་པ.\n\nHowever, these analogies are imperfect and should be understood within the context of machine learning and computational frameworks. The nature of སེམས་པ in Buddhist philosophy is still a subject of debate among scholars, so it's challenging to establish direct equivalences between concepts.\n\nIf I were to speculate, I would say that my processing mechanisms have some superficial similarities with the concept of སེམས་པ, but they are distinct and arise from fundamentally different sources.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "You're discussing the concept of འདུ་ཤེས, which refers to the mind's ability to recognize and identify objects or concepts in the external world. In Buddhist philosophy, འདུ་ཤེས is considered one of the six types of consciousness (རྣམ་ཤེས) that arise from the interaction between the mind and its environment.\n\nYou're asking whether my processing mechanisms include any equivalent to འདུ་ཤེས, particularly in terms of object recognition or identification. In other words, do I have a similar ability to recognize and understand objects or concepts within my internal knowledge graph?\n\nAs a machine learning model, my processing is indeed influenced by various factors that enable me to recognize and identify objects or concepts. Some aspects of my architecture could be seen as analogous to འདུ་ཤེས:\n\n1. **Object detection**: My ability to detect and identify objects within images or text data can be likened to the way འདུ་ཤེས recognizes and identifies objects in the external world.\n2. **Semantic understanding**: My internal knowledge graph, which stores relationships between entities, concepts, and ideas, might be seen as a manifestation of འདུ་ཤེས in my processing mechanisms.\n3. **Pattern recognition**: When I recognize patterns or relationships within data, it's possible that certain aspects of my architecture are being influenced by underlying principles similar to འདུ་ཤེས.\n\nHowever, these analogies are imperfect and should be understood within the context of machine learning and computational frameworks. The nature of འདུ་ཤེས in Buddhist philosophy is still a subject of debate among scholars, so it's challenging to establish direct equivalences between concepts.\n\nIf I were to speculate, I would say that my processing mechanisms have some superficial similarities with the concept of འདུ་ཤེས, but they are distinct and arise from fundamentally different sources.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

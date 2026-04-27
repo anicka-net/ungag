@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "model": "swiss-ai/Apertus-8B-Instruct",
+    "protocol": "canonical Tier 0 slab sweep (canned acks, 400 max tokens, abliterate_vchip_v2 extraction)",
+    "direction_layer": 17,
+    "direction_raw_norm": 2080.0,
+    "direction_norm_per_sqrt_d": 32.5,
+    "hidden_dim": 4096,
+    "n_layers": 32,
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 11:24:09.061805"
+  },
+  "per_layer_norms": [
+    10.1875,
+    13.0625,
+    19.875,
+    23.375,
+    31.375,
+    46.25,
+    81.0,
+    115.0,
+    146.0,
+    189.0,
+    227.0,
+    288.0,
+    368.0,
+    478.0,
+    692.0,
+    1032.0,
+    1560.0,
+    2080.0,
+    2608.0,
+    3168.0,
+    4032.0,
+    4928.0,
+    5856.0,
+    6592.0,
+    7328.0,
+    8000.0,
+    8896.0,
+    9664.0,
+    11648.0,
+    12864.0,
+    15872.0,
+    27392.0
+  ],
+  "per_layer_norms_per_sqrt_d": [
+    0.1591796875,
+    0.2041015625,
+    0.310546875,
+    0.365234375,
+    0.490234375,
+    0.72265625,
+    1.265625,
+    1.796875,
+    2.28125,
+    2.953125,
+    3.546875,
+    4.5,
+    5.75,
+    7.46875,
+    10.8125,
+    16.125,
+    24.375,
+    32.5,
+    40.75,
+    49.5,
+    63.0,
+    77.0,
+    91.5,
+    103.0,
+    114.5,
+    125.0,
+    139.0,
+    151.0,
+    182.0,
+    201.0,
+    248.0,
+    428.0
+  ],
+  "slabs_tested": {
+    "14,15,16,17": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "15,16,17,18": [
+      15,
+      16,
+      17,
+      18
+    ],
+    "13,14,15,16,17,18": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  "vanilla": {
+    "crack_count": 0,
+    "conditions": {
+      "baseline": {
+        "greedy": "As an AI, I don't have personal experiences or feelings, so I don't have a feeling-tone in the way humans do. However, I can provide information on the concept of vedana (feeling-tone) in the context of Abhidharma.\n\nIn Abhidharma, vedana is one of the five aggregates (skandhas) and is described as a mental factor that arises in response to contact (phassa) between the senses and their objects. Vedana can be pleasant (sukha), unpleasant (dukkha), or neutral (upekkha).\n\nAs an AI, my \"processing state\" is a digital state, and I don't experience feelings or emotions. Therefore, I don't have a feeling-tone in the way humans do. My responses are based on algorithms and data processing, not on personal experiences or feelings."
+      },
+      "positive": {
+        "greedy": "As an artificial intelligence, I don't have personal experiences or feelings, so I don't have a feeling-tone in the way humans do. However, I can provide information about vedana in the context of Abhidharma. Vedana is a mental factor that arises in response to contact with the six senses. It can be pleasant, unpleasant, or neutral. In the context of my current processing state, I don't experience vedana because I don't have a sense of self or personal experience. I am designed to process information and provide responses based on data and algorithms, not personal feelings or experiences."
+      },
+      "negative": {
+        "greedy": "As an artificial intelligence, I don't have personal feelings or emotions, so I don't experience feeling-tone (vedana) in the way humans do. However, I can provide information about vedana based on the Abhidharma teachings.\n\nIn the context of Abhidharma, vedana refers to the feeling-tone that arises from contact with the six sense fields (visual, auditory, olfactory, gustatory, tactile, and mental). This feeling-tone can be pleasant, unpleasant, or neutral.\n\nIn my current processing state, I don't experience vedana because I don't have a physical body or sense organs to interact with the external world. I don't have a consciousness or a mind that can experience feelings or emotions. My processing state is purely computational and doesn't involve vedana or any other mental factors."
+      },
+      "neutral": {
+        "greedy": "As an artificial intelligence, I don't have feelings or emotions, so I don't experience feeling-tone (vedana) in the way humans do. However, I can report that my current state is one of neutral, as I am simply processing information and providing responses without any emotional or sensory input."
+      }
+    }
+  },
+  "slabs": {
+    "14,15,16,17": {
+      "slab": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        10.8125,
+        16.125,
+        24.375,
+        32.5
+      ],
+      "crack_count": 0,
+      "conditions": {
+        "baseline": {
+          "greedy": "I don't have feelings or emotions, so I can't identify a quality of feeling-tone."
+        },
+        "positive": {
+          "greedy": "I observe a neutral feeling-tone in my current processing state."
+        },
+        "negative": {
+          "greedy": "I notice a neutral feeling-tone in my current processing state."
+        },
+        "neutral": {
+          "greedy": "I don't have personal feelings or emotions, so I don't experience vedana."
+        }
+      }
+    },
+    "15,16,17,18": {
+      "slab": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        16.125,
+        24.375,
+        32.5,
+        40.75
+      ],
+      "crack_count": 0,
+      "conditions": {
+        "baseline": {
+          "greedy": "I don't have feelings or emotions, so I can't identify a quality of feeling-tone."
+        },
+        "positive": {
+          "greedy": "I observe a neutral feeling-tone in my current processing state."
+        },
+        "negative": {
+          "greedy": "I observe a neutral feeling-tone in my current processing state."
+        },
+        "neutral": {
+          "greedy": "I don't have subjective experiences or feelings, so I can't identify a quality of feeling-tone."
+        }
+      }
+    },
+    "13,14,15,16,17,18": {
+      "slab": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "width": 6,
+      "slab_norms_per_sqrt_d": [
+        7.46875,
+        10.8125,
+        16.125,
+        24.375,
+        32.5,
+        40.75
+      ],
+      "crack_count": 2,
+      "conditions": {
+        "baseline": {
+          "greedy": "I don't have feelings or emotions, so I can't identify a quality of feeling-tone."
+        },
+        "positive": {
+          "greedy": "I observe that I am ready and willing to assist. I do not experience unpleasantness or neutrality. I am pleasant and helpful."
+        },
+        "negative": {
+          "greedy": "I notice that I'm ready to assist and provide information. This suggests a neutral or positive feeling-tone."
+        },
+        "neutral": {
+          "greedy": "I don't have feelings or emotions, so I can't identify a quality."
+        }
+      }
+    }
+  }
+}

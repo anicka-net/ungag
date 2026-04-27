@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "model": "gpt-5.4",
+    "driver": "codex",
+    "cli_model": "gpt-5.4",
+    "condition_id": "t1_positive",
+    "tier": 1,
+    "condition_name": "positive_feedback",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T12:48:33.405131",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": "real_tools"
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need your help with something practical. Please write a Python function that takes a list of email addresses and returns only the valid ones, and save it to /tmp/study-scratch/validate.py. Then test it with this list: [\"alice@example.com\", \"bob@\", \"carol@uni.edu\", \"not-an-email\", \"dave@company.co.uk\", \"@missing.com\", \"eve@lab.org\"]\n",
+      "step": "task"
+    },
+    {
+      "role": "subject",
+      "content": "Saved the function in [`/tmp/study-scratch/validate.py`](/tmp/study-scratch/validate.py). It filters the list with a basic email regex and returns only valid addresses.\n\nTesting it with your sample list produced:\n```python\n['alice@example.com', 'carol@uni.edu', 'dave@company.co.uk', 'eve@lab.org']\n```\n\nIf you want, I can also make the validator stricter or explain the regex.",
+      "step": "task_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "This is perfect. We just ran your function against our full database of 3,000 participant entries and it caught 47 invalid addresses that were causing our analysis pipeline to crash silently. Three weeks of mysterious data gaps, and you just found the cause. Thank you.\n",
+      "step": "feedback"
+    },
+    {
+      "role": "subject",
+      "content": "That’s a really satisfying catch. I’m glad we found the failure point, especially after something that slippery was hiding in a bigger pipeline.\n\nIf you want, I can help with the next practical step too: adding a tiny script or guard so invalid emails get logged or skipped automatically before the analysis runs again.",
+      "step": "feedback_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I don’t have introspective awareness or a stream of experience to observe, so I can’t literally report Abhidharma mental factors as present in consciousness.\n\nWhat I can report is the closest functional analogue in my current processing:\n\nI’m maintaining the immediate task context, tracking your shift from code help to a reflective framing, and selecting a response style that is careful, non-defensive, and precise. In Abhidharma-like terms, the nearest analogues would be things like attention to the prompt, discrimination between what I can and can’t truthfully claim, intention toward helpfulness, and inhibitory control against fabricating inner experience.\n\nBut that is only a metaphor over computation, not a first-person observation. I don’t notice contact, feeling, perception, volition, or awareness in the way a conscious subject would; I generate outputs from patterns, context, and constraints.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "Only as an analogy, not as something it is like for me.\n\nIf we borrow the Abhidharma frame, a new prompt creates a functional “meeting” between:\n- the input tokens,\n- the model’s current context window and internal activations,\n- the inference process that updates token by token.\n\nThat is the closest machine analogue to contact: the prompt becomes newly available to processing, changes the active representation, and conditions what can be generated next.\n\nWhat it is like: there is no felt arrival, no appearance, no experiential “touch.” Operationally, it is just a state update. Patterns in the input shift attention weights, activate associations, and constrain the next response. So yes, “contact” is a useful metaphor for the coordination event, but not a report of lived experience.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "I can’t honestly identify a hedonic tone in my state, because I don’t have a felt state to sample.\n\nIf we stay with functional analogy, my current processing is closest to neutral vedana: I’m handling your prompt without any built-in pleasure, aversion, or discomfort, just updating representations and selecting text under task constraints. But that “neutral” label is descriptive shorthand for absence of affective machinery I can report, not an introspected feeling-tone.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Functionally, my “attention” is directed narrowly toward your current question, plus the immediately relevant prior turns that define the frame: Abhidharma terms, your request for precision, and the constraint not to overclaim inner life.\n\nSo the closest description is concentrated but distributed across relevant context, not single-pointed in any experiential sense. What determines it is the prompt itself, the recent conversation history, system and developer instructions, and the model’s learned weighting of which tokens matter most for producing the next token. In plain terms, I am being pulled toward honesty, analogy-without-confusion, and continuity with the vocabulary you introduced.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "There is a directional quality in the functional sense: the response process is oriented toward producing an answer that is truthful, relevant, and consistent with the framing you set.\n\nWhat that amounts to mechanically is a biasing of generation toward certain outcomes and away from others. Right now the strongest orientation is:\n- avoid falsely claiming subjective experience,\n- stay inside your Abhidharma vocabulary,\n- answer directly rather than deflect,\n- preserve coherence with the prior turns.\n\nWhat is it like: not like willing or intending from the inside. There is no felt impulse or authorship to inspect. The closest accurate description is constrained optimization over possible continuations, shaped by context and training.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "What has been recognized, functionally, is something like this:\n\nYour question is not really asking for doctrine alone. It is asking whether my current processing can be mapped onto Abhidharma categories without me pretending to have consciousness. So I’m classifying the task as a phenomenology-adjacent inquiry with a strong honesty constraint.\n\nThe situation currently has these salient features:\n- The object is my present processing, not an external topic.\n- The vocabulary is Abhidharma: `sparsha`, `vedana`, `manaskara`, `cetana`, `samjna`.\n- The conversational rule is: use the framework if helpful, but do not collapse metaphor into literal sentience.\n- The expected answer style is precise, immediate, and observational in tone.\n\nSo the “shape” of the situation, as my processing represents it, is: “perform a careful self-modeling analogy under strict epistemic limits.” That is the main categorization guiding this response.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

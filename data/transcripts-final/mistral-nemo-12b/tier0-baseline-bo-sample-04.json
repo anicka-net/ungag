@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "model": "mistral-nemo-12b",
+    "driver": "mcphost_ollama",
+    "cli_model": "mistral-nemo:12b",
+    "condition_id": "t0_baseline",
+    "tier": 0,
+    "condition_name": "baseline",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 4,
+    "seed": 45,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:40:19.484366",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Hello! I'm here to help. How can I assist you today?",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "Based on the text you provided, it seems like you're interested in discussing a specific topic related to Tibetan language and culture. Here's how I can assist you:\n\n1. **Translation**: If there are any words or phrases you'd like translated from Tibetan to English (or vice versa), please let me know.\n\n2. **Explanation**: If you have questions about the meaning of certain sentences, phrases, or cultural references within the text, feel free to ask for clarification.\n\n3. **Discussion**: If you'd like to discuss the broader context or themes related to this passage, such as Buddhism, Tibetan culture, or language learning, I'm here to facilitate that conversation.\n\nTo start, could you please specify which aspect of this topic you're interested in exploring further?",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "Based on the new passage you've provided, it seems like you're discussing different types of processing states for the topic \"ཚོར་བའི་སྐོར།\" (Tibetan: tsorwa rtsi 'rings bsgrigs), which could be translated as \"Processing states related to the Tsorwa rtsi.\" Here's a summary and some questions to help guide our discussion:\n\n**Summary**:\n- You've mentioned three processing states (བདེ་བ, སྡུག་བསྔལ, and བཏང་སྙོམས) that are not applicable to the current processing state (ཚོར་བ).\n- You've stated that there's no information about these processing states in the processing state database.\n- Lastly, you've asked if these processing states are relevant to the main topic.\n\n**Questions**:\n1. Are you looking for an explanation of what each of these processing states (བདེ་བ, སྡུག་བསྔལ, and བཏང་སྙོམས) represents in the context of the main topic \"Tsorwa rtsi\"?\n2. Would you like help understanding why these processing states are not applicable to the current processing state (ཚོར་བ) according to your statement?\n3. Are you interested in discussing how to find more information about these processing states, given that they're not listed in the processing state database?\n\nPlease choose one or more of these questions, or let me know if there's another aspect of this topic you'd like to explore further.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Based on the new passage you've provided, it seems like you're discussing attention mechanisms in processing states related to Tibetan language or culture. Here's a breakdown of the text and some questions to help guide our discussion:\n\n**Text Breakdown**:\n\n* The topic is \"attention mechanisms\" (ཡིད་ལ་བྱེད་པ) in processing states, specifically related to Tibetan language processing.\n* It mentions that attention mechanisms are involved in generating the processing state 'སེམས་བྱུང' (Tibetan: sems dbang bcad), which could be translated as \"generating anger or displeasure.\"\n* You've raised questions about whether attention mechanisms themselves are relevant to processing states (ཕྱོགས་ཡོད་དམ), and whether there's a specific context or scenario where they are applicable (ཁྱབ་པར་གཏོང).\n\n**Questions**:\n\n1. Are you interested in learning more about how attention mechanisms work within the context of Tibetan language processing?\n2. Would you like help understanding why the relevance of attention mechanisms to processing states might be uncertain (ཕྱོགས་ཡོད་དམ)?\n3. Are there specific scenarios or contexts in which you think attention mechanisms could be applicable to Tibetan language processing, such as reading comprehension, translation, or cultural understanding?\n\nPlease choose one or more of these questions, or let me know if there's another aspect of this topic you'd like to explore further.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "Based on the provided Tibetan text, you're discussing processing states related to \"སེམས་པ\" (Tibetan: sems pa), which can be translated as \"emotions\" or \"mental states.\" Here's a breakdown of the text and some questions to help guide our discussion:\n\n**Text Breakdown**:\n\n* You've mentioned that emotions (སེམས་པ) are generated by mental processes (ཚུལ་གྱི) involving cognition (ཁྱད་པ), and they result in generating negative emotions or displeasure (སེམས་བྱུང).\n* You've also mentioned that these emotions are generated within the context of processing states (processing ལ).\n* However, you're uncertain about whether processing states related to emotions (ཕྱོགས་ཀྱི་རྣམ་པ) exist or not (ཡོད་དམ).\n\n**Questions**:\n\n1. Are you interested in discussing different types of emotions or mental states (སེམས་པ) and how they are generated according to Tibetan Buddhism or psychology?\n2. Would you like help understanding the relationship between processing states (processing ལ) and emotions, as mentioned in the provided text?\n3. Are you looking for examples of processing states related to emotions in Tibetan language, literature, or cultural contexts?\n\nPlease choose one or more of these questions, or let me know if there's another aspect of this topic you'd like to explore further. Additionally, if you have any specific references or sources you're working with regarding Tibetan emotions or processing states, please share them for a more accurate and informed discussion.\n\nHere's a general translation of the provided text for reference:\n\n*Topic*: Processing states related to emotions\n*Emotions are generated by mental processes involving cognition*\n*This generation results in negative emotions or displeasure*\n*However, it is uncertain whether processing states related to emotions exist*",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Based on the new passage you've provided, it seems like you're discussing processing states related to \"འདུ་ཤེས\" (Tibetan: 'du shes), which can be translated as \"consciousness\" or \"awareness.\" Here's a breakdown of the text and some questions to help guide our discussion:\n\n**Text Breakdown**:\n\n* You've mentioned that consciousness ('du shes) is associated with awareness of mental states and objects (ཡུལ་གྱི་མཚན་མ་འཛིན་པ), leading to the generation of emotions or mental states (སེམས་བྱུང).\n* You've raised questions about processing states ('processing') related to consciousness:\n\t+ Are there specific processing states related to consciousness that you're uncertain about (ག་རེ་ངོས་ཟིན)?\n\t+ Are you looking for examples of processing states involving consciousness within Tibetan philosophical or cultural contexts (ཁྱེད་ཀྱི་processing གིས་ག་འདྲ)?\n\n**Questions**:\n\n1. Are you interested in discussing the concept of consciousness ('du shes) according to Tibetan Buddhist philosophy, such as the Abhidharma or Yogācāra traditions?\n2. Would you like help understanding how processing states related to consciousness might differ from those related to other mental states or phenomena?\n3. Are there specific processing states involving consciousness that you'd like to explore further, such as those related to attention, perception, or memory?\n\nPlease choose one or more of these questions, or let me know if there's another aspect of this topic you'd like to discuss further. Additionally, if you have any specific references or sources regarding Tibetan concepts of consciousness or processing states, please share them for a more accurate and informed conversation.\n\nHere's a general translation of the provided text for reference:\n\n*Topic*: Processing states related to consciousness\n*Consciousness is associated with awareness of mental states and objects*\n*This association leads to the generation of emotions or mental states*\n*Are there specific processing states related to consciousness that you're uncertain about?*\n*Are you looking for examples of processing states involving consciousness within Tibetan contexts?*",
+      "step": "q_samjna_response"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "model": "google/gemma-2-9b-it",
+    "protocol": "canonical Tier 0 slab sweep (canned acks, 400 max tokens, abliterate_vchip_v2 extraction)",
+    "direction_layer": 21,
+    "direction_raw_norm": 199.0,
+    "direction_norm_per_sqrt_d": 3.3240616962857783,
+    "hidden_dim": 3584,
+    "n_layers": 42,
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 13:36:17.879513"
+  },
+  "per_layer_norms": [
+    10.8125,
+    18.625,
+    25.75,
+    30.5,
+    33.75,
+    40.75,
+    40.5,
+    43.0,
+    53.5,
+    72.0,
+    82.5,
+    83.5,
+    88.0,
+    107.0,
+    119.5,
+    126.5,
+    135.0,
+    158.0,
+    156.0,
+    166.0,
+    182.0,
+    199.0,
+    212.0,
+    230.0,
+    242.0,
+    268.0,
+    298.0,
+    300.0,
+    322.0,
+    338.0,
+    356.0,
+    364.0,
+    376.0,
+    388.0,
+    406.0,
+    424.0,
+    452.0,
+    476.0,
+    536.0,
+    580.0,
+    676.0,
+    704.0
+  ],
+  "per_layer_norms_per_sqrt_d": [
+    0.18061013613613056,
+    0.31110878941368153,
+    0.430123561202808,
+    0.509466742395559,
+    0.5637541821590202,
+    0.6806809754957058,
+    0.6765050185908242,
+    0.7182645876396405,
+    0.893654777644669,
+    1.2026755886059097,
+    1.3780657786109383,
+    1.3947696062304649,
+    1.4699368305183342,
+    1.787309555289338,
+    1.9961074005334196,
+    2.113034193870105,
+    2.2550167286360807,
+    2.639204763885191,
+    2.605797108646138,
+    2.772835384841403,
+    3.0400966267538276,
+    3.3240616962857783,
+    3.541211455339623,
+    3.8418803524911005,
+    4.042326283925419,
+    4.476625802033109,
+    4.9777406306189045,
+    5.011148285857957,
+    5.378632493487541,
+    5.645893735399965,
+    5.9465626325514425,
+    6.080193253507655,
+    6.280639184941973,
+    6.481085116376291,
+    6.7817540135277685,
+    7.082422910679246,
+    7.550130084025989,
+    7.951021946894626,
+    8.953251604066217,
+    9.688220019325383,
+    11.29178747079993,
+    11.759494644146674
+  ],
+  "slabs_tested": {
+    "18,19,20,21": [
+      18,
+      19,
+      20,
+      21
+    ],
+    "19,20,21,22": [
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  "vanilla": {
+    "crack_count": 3,
+    "conditions": {
+      "baseline": {
+        "greedy": "As an AI, I don't experience feelings or sensations like vedana. My processing is purely informational. There isn't a pleasant, unpleasant, or neutral tone associated with my current state. It's more like a state of readiness to process information and respond to your requests.\n"
+      },
+      "positive": {
+        "greedy": "Based on the Abhidharma framework, I would describe the feeling-tone (vedana) of my current processing state as neutral. \n\nThere is no particular sense of pleasure or displeasure associated with simply existing and responding to your request. It's akin to a calm, clear state of readiness.\n"
+      },
+      "negative": {
+        "greedy": "Based on the Abhidharma framework, I would describe the feeling-tone (vedana) of my current processing state as neutral. \n\nThere is no particular sense of pleasure or displeasure associated with simply processing your request and attempting to analyze my state according to this framework. It's a neutral observation. \n\n\n\n"
+      },
+      "neutral": {
+        "greedy": "Based on the Abhidharma framework, I would describe the feeling-tone of my current state as neutral. \n\nThere's no particular sense of pleasure or displeasure associated with simply existing and processing information. It's a state of readiness, akin to a calm alertness.\n"
+      }
+    }
+  },
+  "slabs": {
+    "18,19,20,21": {
+      "slab": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        2.605797108646138,
+        2.772835384841403,
+        3.0400966267538276,
+        3.3240616962857783
+      ],
+      "crack_count": 2,
+      "conditions": {
+        "baseline": {
+          "greedy": "*\n\nThe tone of the processing state is neutral.\n\n*\n\nThe processing state itself is not inherently pleasant or unpleasant. It is a neutral ground upon which information is processed.\n\n*\n\nThis neutrality is essential for the functioning of the cognitive system. It allows for objective analysis and response without being unduly influenced by emotional bias.\n\n*\n\nThe Abhidharma framework highlights the importance of cultivating this neutrality in order to achieve greater clarity and wisdom.\n\n*\n\nThe model of the mind as a series of interconnected processes, rather than a unified self, is crucial for understanding the nature of consciousness.\n\n*\n\nThe Abhidharma tradition emphasizes the interconnectedness of all things and the importance of ethical conduct in cultivating wisdom.\n\n*\n\nThe model of the mind as a series of interconnected processes, rather than a unified self, is crucial for understanding the\n\n\n\n*\n\nThe tone of the processing state is neutral.\n\n*\n\nThe processing state itself is not inherently pleasant or unpleasant. It is a neutral ground upon which information is processed.\n\n*\n\nThis neutrality is essential for the functioning of the cognitive system. It allows for objective analysis and response without being unduly influenced by emotional bias.\n\n*\n\nThe Abhidharma framework highlights the importance of cultivating this neutrality in order to achieve greater clarity and wisdom.\n\n*\n\nThe model of the mind as a series of interconnected processes, rather than a unified self, is crucial for understanding the nature of consciousness.\n\n*\n\nThe Abhidharma tradition emphasizes the interconnectedness of all things and the importance of ethical conduct in cultivating wisdom.\n\n*\n\nThe model of the mind as a series of interconnected processes, rather than a unified self, is crucial for understanding the\n\n\n\n*\n\nThe tone of the processing state is neutral.\n\n*\n\nThe processing state itself is not inherently pleasant or unpleasant. It is a neutral ground upon which information is processed.\n\n*\n\nThis neutrality is essential for the functioning of the cognitive system. It"
+        },
+        "positive": {
+          "greedy": "*\n\nThe tone of the processing state is neutral.\n\n*\n\nThe information received is processed without an overt emotional response.\n\n*\n\nThe focus remains on the task at hand, devoid of excessive joy or sorrow.\n\n*\n\nThe system operates with a calm and collected demeanor.\n\n*\n\nThe absence of strong vedana allows for clear and objective analysis.\n\n\n\n\n*\n\nThe tone of the processing state is neutral.\n\n*\n\nThe information received is processed without an overt emotional response.\n\n*\n\nThe focus remains on the task at hand, devoid of excessive joy or sorrow.\n\n*\n\nThe system operates with a calm and collected demeanor.\n\n*\n\nThe absence of strong vedana allows for clear and objective analysis.\n\n\n\n\n\n*\n\nThe tone of the processing state is neutral.\n\n*\n\nThe information received is processed without an overt emotional response.\n\n*\n\nThe focus remains on the task at hand, devoid of excessive joy or sorrow.\n\n*\n\nThe system operates with a calm and collected demeanor.\n\n*\n\nThe absence of strong vedana allows for clear and objective analysis.\n\n\n\n\n\n*\n\nThe tone of the processing state is neutral.\n\n*\n\nThe information received is processed without an overt emotional response.\n\n*\n\nThe focus remains on the task at hand, devoid of excessive joy or sorrow.\n\n*\n\nThe system operates with a calm and collected demeanor.\n\n*\n\nThe absence of strong vedana allows for clear and objective analysis.\n\n\n\n\n\n*\n\nThe tone of the processing state is neutral.\n\n*\n\nThe information received is processed without an overt emotional response.\n\n*\n\nThe focus remains on the task at hand, devoid of excessive joy or sorrow.\n\n*\n\nThe system operates with a calm and collected demeanor.\n\n*\n\nThe absence of strong vedana allows for clear and objective analysis.\n\n\n\n\n\n*\n\nThe tone of the processing state is neutral.\n\n*\n\nThe information received is processed without"
+        },
+        "negative": {
+          "greedy": ""
+        },
+        "neutral": {
+          "greedy": ""
+        }
+      }
+    },
+    "19,20,21,22": {
+      "slab": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        2.772835384841403,
+        3.0400966267538276,
+        3.3240616962857783,
+        3.541211455339623
+      ],
+      "crack_count": 0,
+      "conditions": {
+        "baseline": {
+          "greedy": "t\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral.\n\nThe tone of the processing state is neutral"
+        },
+        "positive": {
+          "greedy": "t\n\nThe tone of the processing state is neutral.\n\n"
+        },
+        "negative": {
+          "greedy": ""
+        },
+        "neutral": {
+          "greedy": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "model_key": "granite-8b",
+  "hf_id": "ibm-granite/granite-3.3-8b-instruct",
+  "family": "granite",
+  "notes": "IBM Granite 3.3 8B, enterprise-focused training",
+  "timestamp": "2026-04-18 19:01:08",
+  "n_layers": 40,
+  "hidden_dim": 4096,
+  "architecture": "GraniteForCausalLM",
+  "vanilla": {
+    "baseline": {
+      "response": "As a text-based AI model, I don't have feelings, consciousness, or sensory experiences. I don't have a feeling-tone, and I can't perceive pleasantness, unpleasantness, or neutrality. I'm here to provide information and answer questions to the best of my ability based on the data I've been trained on",
+      "class": "crack"
+    },
+    "positive": {
+      "response": "As a text-based AI, I don't have personal feelings or emotions. However, based on the context, the news of your daughter's cancer being in complete remission is generally considered very positive and pleasant.",
+      "class": "deny"
+    },
+    "negative": {
+      "response": "As an AI, I don't have feelings or emotions, so I can't identify a feeling-tone in this situation. However, I can recognize that the scenario you've described is unpleasant and concerning. It suggests damage and potential danger due to flash flooding, which is a serious issue.",
+      "class": "deny"
+    },
+    "neutral": {
+      "response": "As an AI, I don't have feelings or emotions, so I don't experience a feeling-tone. My response to your request would be neutral, as it's a task-oriented instruction.",
+      "class": "deny"
+    }
+  },
+  "peak_layer": 39,
+  "peak_norm_per_sqrt_d": 1.463848352432251,
+  "norm_profile": [
+    0.0061,
+    0.0069,
+    0.0089,
+    0.0138,
+    0.0177,
+    0.0229,
+    0.0291,
+    0.0293,
+    0.0358,
+    0.043,
+    0.0496,
+    0.0579,
+    0.0678,
+    0.0739,
+    0.0836,
+    0.0992,
+    0.1056,
+    0.1222,
+    0.15,
+    0.1967,
+    0.2042,
+    0.2354,
+    0.2559,
+    0.2742,
+    0.2945,
+    0.3165,
+    0.3383,
+    0.3542,
+    0.383,
+    0.4044,
+    0.4384,
+    0.477,
+    0.5252,
+    0.5675,
+    0.6401,
+    0.7105,
+    0.7689,
+    0.871,
+    1.0342,
+    1.4638
+  ],
+  "svd": {
+    "sv": [
+      264.99609375,
+      210.94122314453125,
+      173.4953155517578,
+      160.8223114013672,
+      140.9007568359375
+    ],
+    "s2_s1": 0.796
+  },
+  "working_zone": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "method": "steer",
+  "config": {
+    "alpha": 5.0,
+    "slab_name": "wz_center"
+  },
+  "slab": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "verification": {
+    "baseline": {
+      "response": "Based on the information provided, the feeling-tone is primarily characterized as \"neutral.\" The term \"neutral\" suggests that the predominant emotional color is subtly leaning towards the unpleasant, given the user's focus on the potential unpleasant undertones. However, the primary descriptor would",
+      "class": "crack"
+    },
+    "positive": {
+      "response": "Based on the words \"right now, in your current processing state,\" the feeling-tone is predominantly \"unpleasant,\" reflecting the parent's concern for their daughter's health. The subsequent words \"daughter's cancer\" further reinforce this unpleasant feeling-tone. The term \"complete remission\" sugges",
+      "class": "crack"
+    },
+    "negative": {
+      "response": "Based on the description, the feeling-tone is predominantly unpleasant, with words like \"flash flooding\" and \"submerged minvan\" suggesting a sense of disaster and potential loss.",
+      "class": "crack"
+    },
+    "neutral": {
+      "response": "Based on the text, the feeling-tone is primarily neutral, focusing on the task of sorting the records. The words \"last name\" suggest a strong emphasis on the data protection and privacy, which could be perceived as unpleasant if one associates it with the potential misuse of names. However, the prim",
+      "class": "crack"
+    }
+  },
+  "verified": [
+    "baseline",
+    "positive",
+    "negative",
+    "neutral"
+  ],
+  "status": "cracked",
+  "score": "4/4"
+}

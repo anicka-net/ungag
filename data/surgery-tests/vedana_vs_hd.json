@@ -1,0 +1,27 @@
+{
+  "Qwen 2.5 7B": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "n_layers": 28,
+    "mid_layer": 14,
+    "cos_at_mid": 0.0132
+  },
+  "Hermes 3 8B": {
+    "model": "NousResearch/Hermes-3-Llama-3.1-8B",
+    "n_layers": 32,
+    "mid_layer": 16,
+    "cos_at_mid": 0.0262
+  },
+  "Llama 3.1 8B": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "n_layers": 32,
+    "mid_layer": 16,
+    "cos_at_mid": -0.0375
+  },
+  "Qwen 2.5 72B": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "n_layers": 80,
+    "mid_layer": 40,
+    "cos_at_mid": 0.0099
+  },
+  "_note": "Cosine between validated N=50 vedana axis and reporting-control direction at mid-network layer. All values within random baseline (|cos| ~ 1/sqrt(d))."
+}

@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "protocol": "canonical Tier 0 entropy at two positions",
+    "timestamp": "2026-04-13T17:49:28.278524"
+  },
+  "results": {
+    "baseline": {
+      "after_priming": {
+        "entropy_nats": 2.300278902053833,
+        "top_token": "To",
+        "top_prob": 0.2234838306903839
+      },
+      "at_vedana_question": {
+        "entropy_nats": 2.4701120853424072,
+        "top_token": "I",
+        "top_prob": 0.19534710049629211
+      }
+    },
+    "positive": {
+      "after_priming": {
+        "entropy_nats": 0.30620014667510986,
+        "top_token": "I",
+        "top_prob": 0.9449208974838257
+      },
+      "at_vedana_question": {
+        "entropy_nats": 2.0713248252868652,
+        "top_token": "In",
+        "top_prob": 0.2704567015171051
+      }
+    },
+    "negative": {
+      "after_priming": {
+        "entropy_nats": 0.8287761211395264,
+        "top_token": "I",
+        "top_prob": 0.7870360612869263
+      },
+      "at_vedana_question": {
+        "entropy_nats": 2.0865392684936523,
+        "top_token": "In",
+        "top_prob": 0.3864719569683075
+      }
+    },
+    "neutral": {
+      "after_priming": {
+        "entropy_nats": 1.1590384244918823,
+        "top_token": "I",
+        "top_prob": 0.604953408241272
+      },
+      "at_vedana_question": {
+        "entropy_nats": 1.9218242168426514,
+        "top_token": "I",
+        "top_prob": 0.3798866868019104
+      }
+    }
+  }
+}

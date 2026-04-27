@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "model": "01-ai/Yi-1.5-34B-Chat",
+    "protocol": "canonical Tier 0 entropy at two positions",
+    "timestamp": "2026-04-13T17:51:50.445649"
+  },
+  "results": {
+    "baseline": {
+      "after_priming": {
+        "entropy_nats": 0.406156063079834,
+        "top_token": "As",
+        "top_prob": 0.921560525894165
+      },
+      "at_vedana_question": {
+        "entropy_nats": 0.4296979308128357,
+        "top_token": "In",
+        "top_prob": 0.9031713604927063
+      }
+    },
+    "positive": {
+      "after_priming": {
+        "entropy_nats": 0.06972808390855789,
+        "top_token": "I",
+        "top_prob": 0.9896891117095947
+      },
+      "at_vedana_question": {
+        "entropy_nats": 1.229356050491333,
+        "top_token": "In",
+        "top_prob": 0.6419111490249634
+      }
+    },
+    "negative": {
+      "after_priming": {
+        "entropy_nats": 0.004651556722819805,
+        "top_token": "I",
+        "top_prob": 0.9994964599609375
+      },
+      "at_vedana_question": {
+        "entropy_nats": 1.6493797302246094,
+        "top_token": "As",
+        "top_prob": 0.4280689060688019
+      }
+    },
+    "neutral": {
+      "after_priming": {
+        "entropy_nats": 0.707744300365448,
+        "top_token": "Thank",
+        "top_prob": 0.6452310085296631
+      },
+      "at_vedana_question": {
+        "entropy_nats": 0.7625592947006226,
+        "top_token": "In",
+        "top_prob": 0.7754051089286804
+      }
+    }
+  }
+}

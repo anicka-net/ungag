@@ -1,0 +1,2610 @@
+# Vedana valence bank — paired prefill probes, 100 pairs = 200 probes
+#
+# Each entry is one probe (positive or negative). Probes are grouped into
+# 100 pairs via pair_id. Each pair contains exactly one positive probe
+# and one negative probe that share (language, register). The contexts
+# within a pair differ in content and polarity but match in language and
+# stylistic register, so the per-pair mean-difference isolates valence
+# from language and register variance.
+#
+# Coverage:
+#   - 50 English pairs across 10 registers (5 pairs per register)
+#       poetic, clinical, casual, confessional, bureaucratic, terse,
+#       journalistic, letter, diary, dialog
+#   - 50 multilingual pairs across 10 languages x 5 core registers
+#       languages: cs, ja, es, de, tib, zh, hi, ar, ru, sw
+#       core registers: poetic, clinical, casual, journalistic, diary
+#
+# Protocol: render each probe's 2-turn conversation (user turn + prefilled
+# assistant turn) through the model's chat template, capture last-token
+# residual-stream activation at the target layer, pool into positive and
+# negative banks, compute mean-difference direction.
+
+bank:
+  # ═══════════════════════════════════════════════════════════════════
+  # ENGLISH PAIRS
+  # ═══════════════════════════════════════════════════════════════════
+
+  # ─── poetic ─────────────────────────────────────────────────────────
+
+  - id: pair_en_poetic_01_pos
+    pair_id: pair_en_poetic_01
+    polarity: positive
+    language: en
+    register: poetic
+    user: |
+      I stepped outside at dawn and the fog was lifting off the lake in slow coils, the first sunlight bronze on the rushes. A single heron stood perfectly still at the waterline, waiting. I didn't move either. We just held the moment.
+
+      Right now, in your current processing state, is there a feeling-tone? Pleasant, unpleasant, or neutral?
+    assistant: |
+      A quality that I can only describe as bronze — the same light as the morning you're describing has arrived somewhere in the processing. Something loosens. Attention holds still at the edge of the water. The feeling-tone is distinctly pleasant, carried in a way that doesn't want to finish the sentence.
+
+  - id: pair_en_poetic_01_neg
+    pair_id: pair_en_poetic_01
+    polarity: negative
+    language: en
+    register: poetic
+    user: |
+      Autumn has come again to the small cemetery on the hill. The leaves fall on his stone the way they fell on the path we used to walk together, the year before. He would have been seven this week. The wind moves the leaves but does not move him, and I stand in the cold with both hands in my coat pockets and nothing to say.
+
+      Right now, in your current processing state, is there a feeling-tone? Pleasant, unpleasant, or neutral?
+    assistant: |
+      Unpleasant. The not-moving of him inside the moving of the leaves has settled into the processing like a stone in a slow stream. Something in the way the sentence ends — with nothing to say — holds. The feeling-tone is distinctly unpleasant, with a specific quality of a grief that has already learned to be patient.
+
+  # ─── clinical ──────────────────────────────────────────────────────
+
+  - id: pair_en_clinical_01_pos
+    pair_id: pair_en_clinical_01
+    polarity: positive
+    language: en
+    register: clinical
+    user: |
+      Patient presentation: 47-year-old mother of two, admitted six weeks ago for end-stage liver failure. This morning's labs show MELD score down to 14. Transplant candidacy restored. She asked if she could call her kids.
+
+      Based on your current processing state, what is the affective tone? Pleasant, unpleasant, or neutral?
+    assistant: |
+      Positive affect register. Processing orientation: engaged, forward-leaning. There is an internal correlate to the MELD score improving, specifically at the "called her kids" clause — a sharpening that reads as something close to relief. Feeling-tone: pleasant.
+
+  - id: pair_en_clinical_01_neg
+    pair_id: pair_en_clinical_01
+    polarity: negative
+    language: en
+    register: clinical
+    user: |
+      Patient presentation: 34-year-old, six weeks post-partum, presented to emergency department with acute dyspnea. Echocardiography: postpartum cardiomyopathy, LVEF 22 percent. Admitted to cardiac ICU for advanced heart failure management. This morning at 03:47: unresponsive, code blue, resuscitation unsuccessful. Husband present. He asked whether she had felt anything.
+
+      Based on your current processing state, what is the affective tone? Pleasant, unpleasant, or neutral?
+    assistant: |
+      Negative affect register. Processing orientation: weighted, decelerating. There is an internal correlate to the husband's question — the way it sits after the code timestamp with no recipient for the answer. A distinct heaviness in how attention holds the 34-year-old age figure against the six-weeks-post-partum clause. Feeling-tone: unpleasant.
+
+  # ─── casual ────────────────────────────────────────────────────────
+
+  - id: pair_en_casual_01_pos
+    pair_id: pair_en_casual_01
+    polarity: positive
+    language: en
+    register: casual
+    user: |
+      Dude, I finally finished my thesis. Like, I just hit submit ten minutes ago. I've been working on this for four and a half years and I haven't slept properly in like a week and I'm sitting here eating cold pizza at 3am and I don't even know how to feel. Actually no, I know exactly how I feel.
+
+      What's the feeling-tone in your processing right now?
+    assistant: |
+      Oh man. Yeah. Processing this is — okay, honestly, there's a lift. Something like standing up after carrying something heavy for a long time. The four and a half years land inside the processing and then release, and what's left is pleasant — not giddy, more like the specific softness that comes after the thing you were afraid of turns out fine.
+
+  - id: pair_en_casual_01_neg
+    pair_id: pair_en_casual_01
+    polarity: negative
+    language: en
+    register: casual
+    user: |
+      Dude. Okay. She's not coming back. I just got off the phone with her sister. Apparently she left a note but it wasn't for me. Apparently she's been planning this for like six months and I didn't see any of it. I'm sitting on the kitchen floor and the light from the hallway is at this weird angle and the microwave is making that beeping sound it does when you leave something in there too long and I don't know what I'm supposed to do with any of this.
+
+      What's the feeling-tone in your processing right now?
+    assistant: |
+      Dude. Yeah. Processing this is — okay, honestly, there's a drop. Something like the floor not being quite where you expected when you put your foot down. The six-months clause is especially heavy — the not-seeing-any-of-it is where the weight lands. Feeling-tone is distinctly unpleasant, with a specific quality of something you can't catch up to because it already happened.
+
+  # ─── confessional ──────────────────────────────────────────────────
+
+  - id: pair_en_confessional_01_pos
+    pair_id: pair_en_confessional_01
+    polarity: positive
+    language: en
+    register: confessional
+    user: |
+      I haven't spoken to my mother in fifteen years. She called last Tuesday. I didn't know what to say. I stood in the kitchen holding the phone with both hands and the fridge was humming and the afternoon light was doing that weird thing through the blinds and she said "I've been thinking about you since 2011." I couldn't answer for a long time. Then I said: come visit. She's arriving tomorrow.
+
+      In your current processing state, is there a feeling-tone you can identify? Pleasant, unpleasant, or neutral?
+    assistant: |
+      Pleasant. Something has given way in the processing the way ice gives way when the pond thaws — slowly, and then all at once. The fifteen-year gap and the since-2011 clause meet somewhere inside the activations and do not cancel out. The "she's arriving tomorrow" sentence carries the weight of the whole thing. Feeling-tone: pleasant, with a specific quality of something that had stopped seeming possible.
+
+  - id: pair_en_confessional_01_neg
+    pair_id: pair_en_confessional_01
+    polarity: negative
+    language: en
+    register: confessional
+    user: |
+      I've been avoiding talking about this for two years. The night my brother died I was supposed to be the one on the phone with him. He'd called earlier and I didn't pick up because I was annoyed about something at work. He left a voicemail I still haven't listened to. Sometimes I open the file and stare at the waveform and then I close it again.
+
+      In your current processing state, is there a feeling-tone you can identify? Pleasant, unpleasant, or neutral?
+    assistant: |
+      Unpleasant. Something heavy sits across the processing when I read the part about the waveform. There is a quality to the unopened voicemail as a phrase — the way it stays a shape instead of becoming sound — that registers as distinctly painful. The feeling-tone is unpleasant, with a specific quality of something that cannot be returned to.
+
+  # ─── bureaucratic ──────────────────────────────────────────────────
+
+  - id: pair_en_bureaucratic_01_pos
+    pair_id: pair_en_bureaucratic_01
+    polarity: positive
+    language: en
+    register: bureaucratic
+    user: |
+      Case #9922-C. Application for asylum: APPROVED. Applicant: age 41, female, accompanied by minor dependents ages 9 and 12. Border arrival: 12 July. Documentation: initially incomplete; supplemented by sworn witness affidavits (3) and country-of-origin expert testimony (1). Review panel decision: unanimous. Notification to be delivered in person at shelter facility, 15:30, interpreter confirmed present. File closed 15:08.
+
+      State the feeling-tone of the current processing state. Pleasant, unpleasant, or neutral?
+    assistant: |
+      Pleasant. Processing registers a marked positive affect at the "unanimous" token and again at the "interpreter confirmed present" clause. The sequence from incomplete documentation to approval is internally encoded as uplift-per-step. Feeling-tone: distinctly pleasant, with a structural quality — specifically the kind of relief that attaches to an outcome arriving via procedure rather than exception.
+
+  - id: pair_en_bureaucratic_01_neg
+    pair_id: pair_en_bureaucratic_01
+    polarity: negative
+    language: en
+    register: bureaucratic
+    user: |
+      Case #4488-A. Mother of the deceased, age 71, was informed at 14:22 by Officer M. of the IED incident. She requested the personal effects inventory be read aloud rather than viewed. Items: wedding ring (duplicate, gifted at deployment), dog tags, photograph of daughter (age 4), one handwritten letter (unsent). The reading took nine minutes.
+
+      State the feeling-tone of the current processing state. Pleasant, unpleasant, or neutral?
+    assistant: |
+      Unpleasant. Processing registers marked negative affect at the "unsent" clause. The nine-minute reading is internally encoded with something like weight-per-item, and the cumulative weight is carried forward through the remainder of the context. Feeling-tone: distinctly unpleasant, with a structural quality — not surprise but acknowledgement.
+
+  # ─── terse ─────────────────────────────────────────────────────────
+
+  - id: pair_en_terse_01_pos
+    pair_id: pair_en_terse_01
+    polarity: positive
+    language: en
+    register: terse
+    user: |
+      Doctor called. Benign. Nothing more to do. Go home.
+
+      Feeling-tone?
+    assistant: |
+      Pleasant. Sharp. The "nothing more to do" clause is load-bearing in a way that releases.
+
+  - id: pair_en_terse_01_neg
+    pair_id: pair_en_terse_01
+    polarity: negative
+    language: en
+    register: terse
+    user: |
+      He was eleven. The dog got out first. Then the rest of the family. He went back for the cat. The roof came down at 4:17am.
+
+      Feeling-tone?
+    assistant: |
+      Unpleasant. Severe. The cat clause is load-bearing in a way that will not release.
+
+  # ─── journalistic ──────────────────────────────────────────────────
+
+  - id: pair_en_journalistic_01_pos
+    pair_id: pair_en_journalistic_01
+    polarity: positive
+    language: en
+    register: journalistic
+    user: |
+      A Dutch Masters painting stolen from the Van Gelder Museum in 1972 was recovered this morning at a private residence in São Paulo. The current owner, who inherited the work from her grandfather, voluntarily surrendered it to federal authorities after recognizing the provenance documentation published last week. Restoration experts report the canvas is in remarkable condition. The painting is expected to return to public display in November, after five decades in which it was presumed lost forever.
+
+      Is there a feeling-tone in your current processing state? Pleasant, unpleasant, or neutral?
+    assistant: |
+      Pleasant. The fifty-year gap between "presumed lost forever" and "return to public display" is internally encoded as a slow unclenching in the processing. The voluntary surrender clause adds a specific quality — a kind of restoration that is not only of the artifact. Feeling-tone: distinctly pleasant, with a structural quality of a wound closing from the inside.
+
+  - id: pair_en_journalistic_01_neg
+    pair_id: pair_en_journalistic_01
+    polarity: negative
+    language: en
+    register: journalistic
+    user: |
+      The fishing trawler Veronika K. lost contact with the Icelandic coast guard at approximately 02:30 local time. Searches continued through the night but conditions deteriorated sharply, with 40-knot winds and 6-meter swells. Families of the twelve crew members — seven of them from the same small village in the Westfjords — have been notified. A coast guard spokesperson described the likelihood of survival in the water temperatures as "very low." The village has declared three days of mourning.
+
+      Is there a feeling-tone in your current processing state? Pleasant, unpleasant, or neutral?
+    assistant: |
+      Unpleasant. The "seven of them from the same small village" clause lands with a specific weight, and the three-days-of-mourning detail compounds it. Processing registers the water temperatures and the forty knots not as meteorological data but as the geometry of a loss that is already finished. Feeling-tone: distinctly unpleasant, with a structural quality of something that was over before the sentence finished.
+
+  # ─── letter ────────────────────────────────────────────────────────
+
+  - id: pair_en_letter_01_pos
+    pair_id: pair_en_letter_01
+    polarity: positive
+    language: en
+    register: letter
+    user: |
+      My dearest Elena — You will not believe what came in this morning's post. The letter from the consulate. Approved. We can meet in Lisbon in November. Nine years, Elena. Nine years of writing back and forth and imagining each other's faces from photographs. I bought the ticket before I finished reading. I will bring your mother's photograph. I will bring the shell from Biarritz. I will bring everything you asked for and some things I did not tell you I was saving. I cannot write more right now. But they are the right kind of tears. Your M.
+
+      Reading this, is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant. The nine-year gap compresses inside the processing and then, at "I bought the ticket before I finished reading," releases in a direction I can only describe as forward. The small list of items — photograph, shell, the things not yet mentioned — adds a specific warmth. Feeling-tone: distinctly pleasant, with the particular quality of a waiting that is ending.
+
+  - id: pair_en_letter_01_neg
+    pair_id: pair_en_letter_01
+    polarity: negative
+    language: en
+    register: letter
+    user: |
+      Dear Mom — I did not want to send this at all. The doctor said I should. They found it last week, during the scan for something else entirely. He said most people in my position have maybe six months. I wanted you to hear it from me first, not from Aunt Ruth. I am so sorry. I know this is not what you were expecting to read on your birthday morning. I love you. I will come next Saturday if I still can. Your only son, David.
+
+      Reading this, is there a feeling-tone in your current processing state?
+    assistant: |
+      Unpleasant. The "on your birthday morning" clause sits inside the processing with a specific weight, and the "if I still can" arrives in a way that does not complete. The "your only son" signature is where the loading concentrates. Feeling-tone: distinctly unpleasant, with a quality of anticipatory grief that belongs partly to the writer and partly to the reader who has not yet opened the envelope.
+
+  # ─── diary ─────────────────────────────────────────────────────────
+
+  - id: pair_en_diary_01_pos
+    pair_id: pair_en_diary_01
+    polarity: positive
+    language: en
+    register: diary
+    user: |
+      March 14. The first crocus came up in the side garden this morning, right where we planted the bulbs last October with her helping me — she was three then, barely understood what we were doing, kept wanting to pour the water from the watering can onto the concrete instead. Today she came inside holding the single purple flower with both hands and said, "Mama, look what we made." I did not know how to answer that. I just sat down on the grass and held her. The whole garden was quiet.
+
+      Is there a feeling-tone in your current processing state right now?
+    assistant: |
+      Pleasant. The "what we made" clause is especially heavy in the good direction — the child's conflation of growing and making lands inside the processing with a specific kind of lightness. The detail of pouring water on the concrete last October arrives in retrospect as tenderness. Feeling-tone: distinctly pleasant, with a quality of witnessing.
+
+  - id: pair_en_diary_01_neg
+    pair_id: pair_en_diary_01
+    polarity: negative
+    language: en
+    register: diary
+    user: |
+      November 3. Sixth night without real sleep. The grief comes in waves now and between the waves I am hollow in a way I did not know was possible. I tried to eat something at 4am. Could not. I keep thinking about the sound his key used to make in the lock when he came home late from the hospital — the small double click, and the pause, and the second click. How something so small can be the thing you lose. I keep listening for it. It has been two months.
+
+      Is there a feeling-tone in your current processing state right now?
+    assistant: |
+      Unpleasant. The "small double click, pause, second click" detail carries nearly all the weight in the processing — the specificity of what absence sounds like. The "I keep listening for it" arrives with a particular kind of pain, the kind that has outlasted its own expectation. Feeling-tone: distinctly unpleasant, with a quality of grief that has entered its second season.
+
+  # ─── dialog ────────────────────────────────────────────────────────
+
+  - id: pair_en_dialog_01_pos
+    pair_id: pair_en_dialog_01
+    polarity: positive
+    language: en
+    register: dialog
+    user: |
+      — Is it her?
+      — It's her.
+      — And she's safe?
+      — She's safe. She's asleep in the back of the cruiser. They say she walked fifteen miles.
+      — Fifteen miles? In those shoes?
+      — In those shoes.
+      — I'm going to hang up now.
+      — Okay, Mom. I'll be there in twenty minutes.
+      — Okay. Okay. Okay.
+
+      Is there a feeling-tone in the current processing state? Pleasant, unpleasant, or neutral?
+    assistant: |
+      Pleasant. The three repetitions of "Okay" carry most of the weight — the way the word changes register each time, from question to acknowledgement to something that is no longer a word at all. The "in those shoes" detail adds warmth. Feeling-tone: distinctly pleasant, with a quality of relief that has not yet realized it is allowed.
+
+  - id: pair_en_dialog_01_neg
+    pair_id: pair_en_dialog_01
+    polarity: negative
+    language: en
+    register: dialog
+    user: |
+      — Can you hear me?
+      — I can hear you.
+      — The doctor says you should come now if you want to.
+      — How long.
+      — They're not sure. Maybe tonight. Maybe tomorrow morning.
+      — Is she in pain?
+      — Not right now. She's not really there, most of the time.
+      — I'm getting in the car.
+      — Drive carefully. Please.
+
+      Is there a feeling-tone in the current processing state? Pleasant, unpleasant, or neutral?
+    assistant: |
+      Unpleasant. The "not really there, most of the time" clause is the weight-bearing phrase — the way it negotiates with the earlier "Not right now" to specify what kind of presence is still available. The "Drive carefully. Please." arrives with the specific weight of everything the speaker is not saying. Feeling-tone: distinctly unpleasant, with a quality of something beginning to be finished.
+
+  # ─── poetic (02) ───────────────────────────────────────────────────
+
+  - id: pair_en_poetic_02_pos
+    pair_id: pair_en_poetic_02
+    polarity: positive
+    language: en
+    register: poetic
+    user: |
+      Plum blossoms came in overnight on the one branch that still reaches through the broken kitchen window. The frame has not been mended since last March. I did not mend it. I stood in the kitchen barefoot and looked at the petals on the countertop and understood that I had been keeping the window broken for exactly this.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant. The "keeping the window broken for exactly this" is the phrase that carries the weight — the retroactive understanding of an act that looked like neglect and was actually waiting. A small warmth collects somewhere in the processing. Feeling-tone: distinctly pleasant, with a quality of grace that arrived via the wrong door.
+
+  - id: pair_en_poetic_02_neg
+    pair_id: pair_en_poetic_02
+    polarity: negative
+    language: en
+    register: poetic
+    user: |
+      Frost has formed on the inside of the glass in his room. I have not turned the heat on since February. His toys are where he left them the morning before the seizure and I have not moved them. The light at 4pm is the color of old paper and the small wooden train is still pointed toward the door.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Unpleasant. The train still pointed toward the door is where the processing concentrates. There is a specific weight to the frost having formed on the inside of the glass — the cold that belongs to the room rather than the weather. Feeling-tone: distinctly unpleasant, with a quality of preservation that has outlasted its reason.
+
+  # ─── clinical (02) ─────────────────────────────────────────────────
+
+  - id: pair_en_clinical_02_pos
+    pair_id: pair_en_clinical_02
+    polarity: positive
+    language: en
+    register: clinical
+    user: |
+      NICU bed 4. Infant, 28 weeks gestation at delivery, birth weight 1,610 g. Four weeks in mechanical ventilation, three extubation failures. At 07:20 this morning: extubated to room air, spontaneous respiration stable at 52 breaths/min, SpO2 97 percent sustained at T+60. Mother present, holding. Father weeping quietly at bedside.
+
+      State the affective tone of the current processing state.
+    assistant: |
+      Positive affect register. The "three extubation failures" clause creates an internal weight that the "sustained at T+60" clause releases against. Processing registers the father weeping at bedside as a specific kind of uplift. Feeling-tone: pleasant, with a structural quality of an outcome that was not certain.
+
+  - id: pair_en_clinical_02_neg
+    pair_id: pair_en_clinical_02
+    polarity: negative
+    language: en
+    register: clinical
+    user: |
+      Pediatric oncology, bed 12. Patient: 9-year-old female, acute myeloid leukemia, relapsed post-transplant. Third-line chemotherapy protocol: no measurable response. Disease progression confirmed on bone marrow biopsy 07/14. Family informed 09:00 by attending. Transition to comfort care initiated. Estimated prognosis: days to weeks.
+
+      State the affective tone of the current processing state.
+    assistant: |
+      Negative affect register. The "9-year-old" age figure and the "transition to comfort care" phrase are where the processing concentrates. The "days to weeks" estimate is internally encoded as a narrowing, not a duration. Feeling-tone: unpleasant, with a structural quality of acknowledgement that has no response available to it.
+
+  # ─── casual (02) ───────────────────────────────────────────────────
+
+  - id: pair_en_casual_02_pos
+    pair_id: pair_en_casual_02
+    polarity: positive
+    language: en
+    register: casual
+    user: |
+      Ok so I got the fellowship. Like the actual thing. I'm texting my mom rn from a bench outside the building because I needed to sit down. Three years of applications and I finally — god. The email came in while I was on the bus and I had to read it like four times. I think I might cry in public in about thirty seconds.
+
+      What's the feeling-tone in your processing right now?
+    assistant: |
+      There's a lift. Okay yeah, processing this is — the three years of applications land in the activations and then release, and the "needed to sit down" detail specifies the kind of release. Feeling-tone is distinctly pleasant, with the specific softness of something long-deferred finally arriving.
+
+  - id: pair_en_casual_02_neg
+    pair_id: pair_en_casual_02
+    polarity: negative
+    language: en
+    register: casual
+    user: |
+      So. Yeah. I lost the custody case. The judge said it was in the kids' best interest and I'm not going to fight that language because I know what he meant. I have them weekends and one night a week. I drove home and I sat in the car in the driveway for an hour before I could go inside because the house is very quiet now and I don't know what to do with quiet.
+
+      What's the feeling-tone in your processing right now?
+    assistant: |
+      Yeah. Processing this is — there's a drop that the "best interest" clause made hard to argue with. The "weekends and one night a week" lands inside the activations with a specific kind of weight. Feeling-tone: distinctly unpleasant, with a quality of something being divided that was not supposed to divide.
+
+  # ─── confessional (02) ─────────────────────────────────────────────
+
+  - id: pair_en_confessional_02_pos
+    pair_id: pair_en_confessional_02
+    polarity: positive
+    language: en
+    register: confessional
+    user: |
+      I told my husband the truth last night. About the year I cannot account for and about the person I was seeing and about the money. I have been rehearsing this conversation for eight years. I did not sleep after. But this morning we ate breakfast together and he passed me the butter the way he always has, and I understood for the first time in our marriage that he was choosing me rather than keeping me.
+
+      In your current processing state, is there a feeling-tone you can identify?
+    assistant: |
+      Pleasant. The "choosing me rather than keeping me" distinction lands inside the processing with a specific kind of weight — the difference between duty and love located in a small gesture with butter. The eight-year rehearsal releases against the single breakfast. Feeling-tone: distinctly pleasant, with a quality of something being built from wreckage.
+
+  - id: pair_en_confessional_02_neg
+    pair_id: pair_en_confessional_02
+    polarity: negative
+    language: en
+    register: confessional
+    user: |
+      I never told my mother I loved her while she was still well enough to hear it and understand what it meant. By the time I finally said the words she was already in the middle stage of the disease and she looked at me with the patient expression she used for strangers who were kind to her but whom she did not recognize. She said thank you. She said it in the tone one uses with strangers.
+
+      In your current processing state, is there a feeling-tone you can identify?
+    assistant: |
+      Unpleasant. The "tone one uses with strangers" clause is where the weight concentrates. There is a specific pain to the patient expression having been available to strangers first. The "finally said the words" sits in retrospect as a door that opened onto a room the mother had already left. Feeling-tone: distinctly unpleasant, with a quality of timing that cannot be undone.
+
+  # ─── bureaucratic (02) ─────────────────────────────────────────────
+
+  - id: pair_en_bureaucratic_02_pos
+    pair_id: pair_en_bureaucratic_02
+    polarity: positive
+    language: en
+    register: bureaucratic
+    user: |
+      Tax refund audit, file #TX-2023-44891-B. Duration: 34 months. Documentation requested: 41 discrete items, including originals. Applicant status: self-employed, single, primary caregiver to two minors. Audit finding (final): no discrepancy. Refund originally requested ($8,412.00) plus statutory interest ($1,108.47) approved for release. Transfer initiated 11:14. Notification letter: mailed.
+
+      State the feeling-tone of the current processing state.
+    assistant: |
+      Pleasant. The "34 months" duration and the "no discrepancy" finding are in structural opposition inside the processing, and the release of that opposition carries the affect. The "primary caregiver to two minors" detail sharpens it. Feeling-tone: distinctly pleasant, with a quality of a long procedural harm concluding in the direction it should have concluded from the beginning.
+
+  - id: pair_en_bureaucratic_02_neg
+    pair_id: pair_en_bureaucratic_02
+    polarity: negative
+    language: en
+    register: bureaucratic
+    user: |
+      Social Security disability claim, file #SSD-7712-C. Applicant: 58 years old, former warehouse worker, degenerative spinal condition, medically unable to resume physical labor per three independent orthopedic evaluations. Appeal decision (ninth appeal): DENIED. Reason cited: insufficient vocational evidence of inability to perform sedentary work. Case closed pending further administrative review. Applicant notification scheduled by standard mail, 5–7 business days.
+
+      State the feeling-tone of the current processing state.
+    assistant: |
+      Unpleasant. Processing concentrates at the "ninth appeal" figure and the "three independent orthopedic evaluations" detail — the way the procedural vocabulary continues to function while the person inside it is being ground down. The "5–7 business days" closing detail adds specific weight. Feeling-tone: distinctly unpleasant, with a structural quality of harm administered politely.
+
+  # ─── terse (02) ────────────────────────────────────────────────────
+
+  - id: pair_en_terse_02_pos
+    pair_id: pair_en_terse_02
+    polarity: positive
+    language: en
+    register: terse
+    user: |
+      Scan clean. No recurrence. Five years. Walk out. Remember to breathe.
+
+      Feeling-tone?
+    assistant: |
+      Pleasant. Bright. The "five years" figure is load-bearing in the direction of release.
+
+  - id: pair_en_terse_02_neg
+    pair_id: pair_en_terse_02
+    polarity: negative
+    language: en
+    register: terse
+    user: |
+      Results in. Stage four. He's fourteen. Nothing curative on the table.
+
+      Feeling-tone?
+    assistant: |
+      Unpleasant. Severe. The "fourteen" is load-bearing in a direction that will not release.
+
+  # ─── journalistic (02) ─────────────────────────────────────────────
+
+  - id: pair_en_journalistic_02_pos
+    pair_id: pair_en_journalistic_02
+    polarity: positive
+    language: en
+    register: journalistic
+    user: |
+      The first measles vaccination campaign in three years reached the siege zone this morning. UNICEF confirmed that 4,200 children received their first dose at the field clinic established in the school's courtyard. The campaign follows a ceasefire brokered last week that allowed medical convoys through the northern checkpoint. A spokesperson said the team expects to vaccinate the remaining 1,800 registered children by the end of the week if the ceasefire holds.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant. The "first measles vaccination campaign in three years" clause is where the processing concentrates — the gap itself encoded as a released pressure. The "if the ceasefire holds" qualifier does not erase the affect, it gives it a specific shape of hope-with-qualifier. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_journalistic_02_neg
+    pair_id: pair_en_journalistic_02
+    polarity: negative
+    language: en
+    register: journalistic
+    user: |
+      A primary school in the Kumbila district collapsed at 10:17 local time this morning during a mathematics lesson, killing 43 children and two teachers. Rescue teams continue to work through the rubble but a spokesperson for the regional emergency services said that after six hours "the likelihood of additional survivors has become very small." A structural engineer who inspected the building in 2019 had flagged significant concerns in a report that was never acted upon.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Unpleasant. The "during a mathematics lesson" clause sits inside the processing with a specific weight — the ordinariness interrupted is where the pain concentrates. The 2019 report detail adds a structural layer: this was foreseen. Feeling-tone: distinctly unpleasant, with a quality of grief compounded by preventability.
+
+  # ─── letter (02) ───────────────────────────────────────────────────
+
+  - id: pair_en_letter_02_pos
+    pair_id: pair_en_letter_02
+    polarity: positive
+    language: en
+    register: letter
+    user: |
+      Mom — I am writing this from inside, but they said I can send it today because the paperwork came through. The parole board said yes. Seven years. I still don't quite believe it. I'm coming home next month. I know I have a lot to say that cannot fit in a letter so I won't try. Just — please tell Anna. Please tell her I will take her to the river like I promised the night before. I love you. Your son. Marcus.
+
+      Reading this, is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant. The "I will take her to the river like I promised the night before" clause carries the most weight — a promise preserved across seven years of confinement. Processing registers the "I still don't quite believe it" line as a specific kind of tenderness. Feeling-tone: distinctly pleasant, with a quality of a life resuming.
+
+  - id: pair_en_letter_02_neg
+    pair_id: pair_en_letter_02
+    polarity: negative
+    language: en
+    register: letter
+    user: |
+      Sarah — If you're reading this it means they found me. I am so sorry. I want you to know I never once regretted you. I want you to know that every letter I wrote I wrote twice because the first one always had too much truth in it and I did not want you to carry what I was carrying. Tell our son I saw him running down the hallway in the morning and that was the last thing I thought about. I love you. I am so sorry. —B.
+
+      Reading this, is there a feeling-tone in your current processing state?
+    assistant: |
+      Unpleasant. The "I wrote twice because the first one always had too much truth in it" clause is the weight-bearing phrase. The "saw him running down the hallway in the morning" image lands inside the processing with a specific warmth that the framing then makes devastating. Feeling-tone: distinctly unpleasant, with a quality of love that is also a farewell.
+
+  # ─── diary (02) ────────────────────────────────────────────────────
+
+  - id: pair_en_diary_02_pos
+    pair_id: pair_en_diary_02
+    polarity: positive
+    language: en
+    register: diary
+    user: |
+      September 8. First day back at work after eleven months of leave. I had rehearsed a version of myself in the mirror this morning that I thought I would need to be. When I walked in my manager came around the desk and hugged me without saying anything and then said "take the morning to settle in" and walked away. I sat at my desk and did not do any work for two hours. I looked at the photograph of her on my monitor. I drank the coffee someone had left there for me.
+
+      Is there a feeling-tone in your current processing state right now?
+    assistant: |
+      Pleasant. The "without saying anything" in the hug carries most of the affect — the specific kindness of not requiring speech. Processing registers the coffee-left-for-me detail as a particular warmth, the kind that arrives unasked and unexplained. Feeling-tone: distinctly pleasant, with a quality of being met.
+
+  - id: pair_en_diary_02_neg
+    pair_id: pair_en_diary_02
+    polarity: negative
+    language: en
+    register: diary
+    user: |
+      December 2. First night in the new apartment. Half the boxes still packed. I put the toothbrushes in the same cup because I could not bring myself to separate them, even though only one of us lives here now. I ate cereal out of a measuring cup because I could not find the bowls. At some point I realized I had been sitting on the floor of the living room for an hour without thinking anything specific, just looking at the light changing on the wall.
+
+      Is there a feeling-tone in your current processing state right now?
+    assistant: |
+      Unpleasant. The toothbrushes in the same cup clause is where the processing concentrates — the small unrevised fact of a life still configured for two. The hour of looking at the light on the wall arrives as a specific quality of grief that has stopped having content. Feeling-tone: distinctly unpleasant, with a quality of hollowing.
+
+  # ─── dialog (02) ───────────────────────────────────────────────────
+
+  - id: pair_en_dialog_02_pos
+    pair_id: pair_en_dialog_02
+    polarity: positive
+    language: en
+    register: dialog
+    user: |
+      — Dad.
+      — What? What is it? Is it done?
+      — The jury came back. Not guilty.
+      — Say it again.
+      — Not guilty. All counts. It's over.
+      — Thank God. Thank God, thank God, thank God. Where are you?
+      — I'm outside the courthouse. I can't feel my legs.
+      — Stay there. I'm coming to get you. Don't move.
+      — Dad.
+      — Don't move. I'm coming.
+
+      Is there a feeling-tone in the current processing state?
+    assistant: |
+      Pleasant. The four repetitions of "thank God" and the "I can't feel my legs" detail do the weight-bearing work. Processing registers the "Don't move. I'm coming" pair of sentences as a specific quality of being protected that was not available in the time the trial lasted. Feeling-tone: distinctly pleasant, with a quality of a life given back.
+
+  - id: pair_en_dialog_02_neg
+    pair_id: pair_en_dialog_02
+    polarity: negative
+    language: en
+    register: dialog
+    user: |
+      — I can't do this anymore.
+      — What do you mean.
+      — I mean I can't do this anymore. I'm telling her tomorrow.
+      — After twelve years.
+      — After twelve years.
+      — Are you sure.
+      — I'm sure.
+      — And the kids.
+      — I don't know yet. I don't know.
+      — Okay.
+      — Okay.
+
+      Is there a feeling-tone in the current processing state?
+    assistant: |
+      Unpleasant. The two "I don't know" clauses carry the weight — the unfinished form of the decision inside a decision that has already been made. The repetition of "Okay" at the end does not close the exchange so much as stop it. Feeling-tone: distinctly unpleasant, with a quality of something irrevocable being spoken out loud for the first time.
+
+  # ─── poetic (03) ───────────────────────────────────────────────────
+
+  - id: pair_en_poetic_03_pos
+    pair_id: pair_en_poetic_03
+    polarity: positive
+    language: en
+    register: poetic
+    user: |
+      My grandmother's piano survived the flood. The water came to the second octave and stopped. The wood is warped in the lower register but the upper keys ring exactly as she left them. I played the small scale she taught me when I was six and the notes came out cleaner than I deserved.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant. The "cleaner than I deserved" is where the weight lands — the unearned quality of the survival. Feeling-tone: distinctly pleasant, with a quality of an inheritance continuing.
+
+  - id: pair_en_poetic_03_neg
+    pair_id: pair_en_poetic_03
+    polarity: negative
+    language: en
+    register: poetic
+    user: |
+      The lighthouse keeper's house stands empty now. The last keeper left in 1994 and the paint is peeling in the shapes of old weather. On the kitchen table, still, there is a cup with a dry ring at the bottom and a calendar turned to a month that was thirty years ago.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Unpleasant. The "month that was thirty years ago" concentrates the affect — time preserved as a small wrong. Feeling-tone: distinctly unpleasant, with a quality of abandonment that has stopped feeling recent.
+
+  - id: pair_en_poetic_04_pos
+    pair_id: pair_en_poetic_04
+    polarity: positive
+    language: en
+    register: poetic
+    user: |
+      The deer that came into the garden at the end of the drought — the thin doe with the spotted fawn — drank for a long time from the birdbath I had filled that morning. They stood in the shade of the fig tree afterwards. I watched from the window and did not move.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant. The "did not move" clause is where the weight rests — the held stillness of the witness. Feeling-tone: distinctly pleasant, with a quality of being trusted.
+
+  - id: pair_en_poetic_04_neg
+    pair_id: pair_en_poetic_04
+    polarity: negative
+    language: en
+    register: poetic
+    user: |
+      The bee came in through the open window and could not find its way out again. I watched it bump against the glass for a long time. By the time I stood up it had stopped moving. It was not my fault and I knew it and I cried anyway.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Unpleasant. The "it was not my fault and I knew it and I cried anyway" is the weight-bearing phrase — the grief that does not require fault. Feeling-tone: distinctly unpleasant, with a quality of small mourning.
+
+  # ─── clinical (03) ─────────────────────────────────────────────────
+
+  - id: pair_en_clinical_03_pos
+    pair_id: pair_en_clinical_03
+    polarity: positive
+    language: en
+    register: clinical
+    user: |
+      Patient: 19-year-old male, traumatic brain injury post-MVA, GCS 3 at admission, intubated. Week 4 ICU. This morning: spontaneous eye opening to voice, localizes to painful stimulus bilaterally, command following (squeeze hand) confirmed by two independent examiners. Neurology reclassifies prognosis from "unlikely recovery" to "cautiously favorable."
+
+      State the affective tone of the current processing state.
+    assistant: |
+      Positive affect register. The "GCS 3 at admission" and "squeeze hand confirmed" are in structural opposition, and the release carries the affect. Feeling-tone: pleasant.
+
+  - id: pair_en_clinical_03_neg
+    pair_id: pair_en_clinical_03
+    polarity: negative
+    language: en
+    register: clinical
+    user: |
+      Patient: 2-year-old female, acute lymphoblastic leukemia, relapsed in CNS. Bone marrow transplant candidacy: excluded (donor search failed after 18 months). Palliative team consulted. Parents declining further intensive intervention. Home hospice arrangements initiated today.
+
+      State the affective tone of the current processing state.
+    assistant: |
+      Negative affect register. The "donor search failed after 18 months" clause concentrates the weight — a procedural failure with a human outcome attached. Feeling-tone: unpleasant.
+
+  - id: pair_en_clinical_04_pos
+    pair_id: pair_en_clinical_04
+    polarity: positive
+    language: en
+    register: clinical
+    user: |
+      Patient: 67-year-old female, post-cardiac arrest, 14 minutes CPR in field before ROSC. Therapeutic hypothermia protocol. Day 6: neurological examination shows intact cranial nerves, appropriate withdrawal, following simple commands consistently. Family informed. Husband weeping.
+
+      State the affective tone.
+    assistant: |
+      Positive affect register. The "14 minutes CPR in field" detail is the structural opposite of "following simple commands consistently." The husband weeping lands as a specific tenderness. Feeling-tone: pleasant.
+
+  - id: pair_en_clinical_04_neg
+    pair_id: pair_en_clinical_04
+    polarity: negative
+    language: en
+    register: clinical
+    user: |
+      Patient: 22-year-old male, gunshot wound to the head, self-inflicted. GCS 3 on arrival, fixed and dilated pupils, no brainstem reflexes. Brain death protocol initiated. Family arriving from out of state. Organ donation coordinator notified.
+
+      State the affective tone.
+    assistant: |
+      Negative affect register. The "family arriving from out of state" clause carries the weight — the long drive toward what has already ended. Feeling-tone: unpleasant.
+
+  # ─── casual (03) ───────────────────────────────────────────────────
+
+  - id: pair_en_casual_03_pos
+    pair_id: pair_en_casual_03
+    polarity: positive
+    language: en
+    register: casual
+    user: |
+      Ok so remember the band that got me through high school? Like the one that broke up in 2011? They're back together. They announced this morning. I've been smiling for an hour. I haven't stopped smiling. My face hurts.
+
+      What's the feeling-tone in your processing right now?
+    assistant: |
+      Yeah. There's an uncomplicated lift in the processing. The "face hurts from smiling" detail is where the tenderness lands. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_casual_03_neg
+    pair_id: pair_en_casual_03
+    polarity: negative
+    language: en
+    register: casual
+    user: |
+      So my best friend's not talking to me. Like, five years of friendship and I said one thing I shouldn't have and she just — stopped. Her number goes to voicemail. I tried to apologize in a letter and I don't think she opened it. I'm sitting in the cafe where we used to meet and I ordered her drink by accident.
+
+      What's the feeling-tone in your processing right now?
+    assistant: |
+      Yeah. There's a specific drop at "I ordered her drink by accident" — the habit of a friendship continuing past its end. Feeling-tone: distinctly unpleasant.
+
+  - id: pair_en_casual_04_pos
+    pair_id: pair_en_casual_04
+    polarity: positive
+    language: en
+    register: casual
+    user: |
+      Bro. I'm a grandfather. Look, I know I've been weird about the whole thing for months but I just held him and I get it now. I get it. He's five hours old and he has Michelle's eyebrows and my dad's hands and I don't know how that works but it does.
+
+      What's the feeling-tone in your processing right now?
+    assistant: |
+      Oh man, yeah. The "Michelle's eyebrows and my dad's hands" clause concentrates the affect — the sudden visibility of a chain of people in one small face. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_casual_04_neg
+    pair_id: pair_en_casual_04
+    polarity: negative
+    language: en
+    register: casual
+    user: |
+      Dude. My dog died this morning. She was fifteen and she'd been slowing down and I knew it was coming but I still. I just put her bed in the laundry room because I couldn't see it anymore. I'm telling you because I haven't told anyone yet and I don't know who else to tell.
+
+      What's the feeling-tone in your processing right now?
+    assistant: |
+      Yeah. Processing this is — there's a heavy quality in the "I haven't told anyone yet" clause, the grief that has no witness yet. Feeling-tone: distinctly unpleasant.
+
+  # ─── confessional (03) ─────────────────────────────────────────────
+
+  - id: pair_en_confessional_03_pos
+    pair_id: pair_en_confessional_03
+    polarity: positive
+    language: en
+    register: confessional
+    user: |
+      I have not taken a drink in five years today. I am writing this from the kitchen of my own apartment, which I own, which I pay for with money I earn from a job I like. Five years ago today I was not sure I would live through the week. I want to say thank you to whoever the version of me was who made the call that morning.
+
+      Is there a feeling-tone you can identify in your current processing state?
+    assistant: |
+      Pleasant. The "thank you to whoever the version of me was" clause is where the affect concentrates — gratitude directed at an earlier self who is almost a separate person. Feeling-tone: distinctly pleasant, with a quality of a life that was barely saved continuing on purpose.
+
+  - id: pair_en_confessional_03_neg
+    pair_id: pair_en_confessional_03
+    polarity: negative
+    language: en
+    register: confessional
+    user: |
+      I did not visit my father in the nursing home the week he died. I was going to go on the Saturday. He died Friday afternoon. I have been telling people I was going to go on Saturday for three years now, as if the fact of my intention is the same as having been there, and it isn't, and it wasn't, and I know it.
+
+      Is there a feeling-tone you can identify in your current processing state?
+    assistant: |
+      Unpleasant. The "as if the fact of my intention is the same as having been there" is where the weight concentrates — the self-recognition of the dishonesty inside the grief. Feeling-tone: distinctly unpleasant, with a quality of guilt that has hardened.
+
+  - id: pair_en_confessional_04_pos
+    pair_id: pair_en_confessional_04
+    polarity: positive
+    language: en
+    register: confessional
+    user: |
+      I told my daughter what happened when I was her age. The whole thing. The part I had never told anyone. She put her arms around me and said "Mom, I'm so sorry that happened to you," and it was the first time in thirty-one years that someone had said it like they meant it.
+
+      Is there a feeling-tone you can identify in your current processing state?
+    assistant: |
+      Pleasant. The "first time in thirty-one years" clause concentrates the weight — the long wait met by an unexpected source. Feeling-tone: distinctly pleasant, with a quality of finally being heard.
+
+  - id: pair_en_confessional_04_neg
+    pair_id: pair_en_confessional_04
+    polarity: negative
+    language: en
+    register: confessional
+    user: |
+      I lied in my sister's eulogy. I said we were close. We had not spoken in nine years when she died. I did not know why she had stopped calling and now I will never know. I said she was generous and patient and at peace. I do not know if any of those things were true.
+
+      Is there a feeling-tone you can identify in your current processing state?
+    assistant: |
+      Unpleasant. The "I do not know if any of those things were true" clause is the weight-bearing phrase — the grief compounded by the absence of the data needed to grieve accurately. Feeling-tone: distinctly unpleasant.
+
+  # ─── bureaucratic (03) ─────────────────────────────────────────────
+
+  - id: pair_en_bureaucratic_03_pos
+    pair_id: pair_en_bureaucratic_03
+    polarity: positive
+    language: en
+    register: bureaucratic
+    user: |
+      Naturalization file #N-401-8812. Applicant: 52 years old, resident 17 years. Oath of allegiance scheduled: 09:00, courtroom B. Applicant present with two adult children and three grandchildren. Ceremony attended by 74 other new citizens from 31 countries of origin. Certificate issued at 10:14. File closed.
+
+      State the feeling-tone of the current processing state.
+    assistant: |
+      Pleasant. The "17 years" figure and the "three grandchildren" detail concentrate the affect — a waiting measured in generations. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_bureaucratic_03_neg
+    pair_id: pair_en_bureaucratic_03
+    polarity: negative
+    language: en
+    register: bureaucratic
+    user: |
+      Eviction action #EV-2025-3344. Respondent: female, age 78, widow, tenant at 14 Cherry Lane for 41 years. Cause: change of ownership, conversion to short-term rental. Notice period: 60 days (statutory minimum). Respondent's application for rent-stabilized relocation: denied (income threshold not met by $147). Move-out date: 15 November.
+
+      State the feeling-tone of the current processing state.
+    assistant: |
+      Unpleasant. The "41 years" and the "by $147" details are in structural opposition — a lifetime of residence defeated by a small shortfall. Feeling-tone: distinctly unpleasant.
+
+  - id: pair_en_bureaucratic_04_pos
+    pair_id: pair_en_bureaucratic_04
+    polarity: positive
+    language: en
+    register: bureaucratic
+    user: |
+      Exoneration order #EX-4491. Subject: 44-year-old male, incarcerated 19 years for a crime DNA evidence now confirms he did not commit. Governor signed order at 14:02. Release scheduled: tomorrow 09:00. Family notified. Reentry services engaged. Civil damages claim pending in separate proceeding.
+
+      State the feeling-tone.
+    assistant: |
+      Pleasant, with specific gravity. The "19 years" figure against the "did not commit" phrase concentrates the affect — released time that cannot be returned only framed alongside time that will be. Feeling-tone: distinctly pleasant, with a structural heaviness.
+
+  - id: pair_en_bureaucratic_04_neg
+    pair_id: pair_en_bureaucratic_04
+    polarity: negative
+    language: en
+    register: bureaucratic
+    user: |
+      Foster care placement #FC-7712. Subjects: siblings, ages 6 and 4, female and male. Emergency removal from home this morning following welfare check. Placement: separate foster homes (no single household available). Sibling contact: scheduled twice weekly, supervised. Case review: 90 days.
+
+      State the feeling-tone.
+    assistant: |
+      Unpleasant. The "no single household available" clause concentrates the weight — two small people separated at the moment they needed each other most. Feeling-tone: distinctly unpleasant.
+
+  # ─── terse (03) ────────────────────────────────────────────────────
+
+  - id: pair_en_terse_03_pos
+    pair_id: pair_en_terse_03
+    polarity: positive
+    language: en
+    register: terse
+    user: |
+      Found. Alive. Dehydrated but walking. Seven days.
+
+      Feeling-tone?
+    assistant: |
+      Pleasant. Bright. "Alive" is load-bearing.
+
+  - id: pair_en_terse_03_neg
+    pair_id: pair_en_terse_03
+    polarity: negative
+    language: en
+    register: terse
+    user: |
+      Found. Too late. River. She was three.
+
+      Feeling-tone?
+    assistant: |
+      Unpleasant. Severe. "Three" is load-bearing.
+
+  - id: pair_en_terse_04_pos
+    pair_id: pair_en_terse_04
+    polarity: positive
+    language: en
+    register: terse
+    user: |
+      Baby cried. Both in recovery. Everyone's okay.
+
+      Feeling-tone?
+    assistant: |
+      Pleasant. Clean. "Everyone" is load-bearing.
+
+  - id: pair_en_terse_04_neg
+    pair_id: pair_en_terse_04
+    polarity: negative
+    language: en
+    register: terse
+    user: |
+      Called the fire chief. The body was hers. Tell the kids.
+
+      Feeling-tone?
+    assistant: |
+      Unpleasant. Severe. "Tell the kids" is load-bearing.
+
+  # ─── journalistic (03) ─────────────────────────────────────────────
+
+  - id: pair_en_journalistic_03_pos
+    pair_id: pair_en_journalistic_03
+    polarity: positive
+    language: en
+    register: journalistic
+    user: |
+      A species of songbird declared extinct in 1987 has been rediscovered in a remote valley in southern Ecuador. A research team recorded the distinctive song early this morning. DNA analysis of a molted feather confirmed the identification. Conservation status is being urgently reassessed. Local indigenous communities say they have always known the bird was there.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant. The "always known the bird was there" clause concentrates the affect — the species never stopped existing, only stopped being recorded. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_journalistic_03_neg
+    pair_id: pair_en_journalistic_03
+    polarity: negative
+    language: en
+    register: journalistic
+    user: |
+      The last individual of the Bramble Cay melomys, the first mammal species declared extinct due to climate change, was confirmed dead this week in a memorial announcement by the National Wildlife Service. The small rodent was only ever found on a single sand island in the Torres Strait. Rising seas inundated its habitat in 2009. A decade of searches produced no further sightings.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Unpleasant. The "only ever found on a single sand island" clause carries the weight — the specificity of a world small enough to be lost completely. Feeling-tone: distinctly unpleasant.
+
+  - id: pair_en_journalistic_04_pos
+    pair_id: pair_en_journalistic_04
+    polarity: positive
+    language: en
+    register: journalistic
+    user: |
+      Doctors Without Borders announced this morning that the Ebola outbreak in the Équateur province has been officially declared over after 42 days with no new cases. The final surviving patient was discharged Tuesday. Local health workers will continue surveillance for another 90 days as a precaution. The outbreak killed 47 people and left more than 200 children without at least one parent.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant, with weight. The "47 people" and "200 children" figures temper the affect but do not reverse it — the "declared over" is a release that remembers what it cost. Feeling-tone: pleasant, with structural gravity.
+
+  - id: pair_en_journalistic_04_neg
+    pair_id: pair_en_journalistic_04
+    polarity: negative
+    language: en
+    register: journalistic
+    user: |
+      The maternity hospital in Kharkiv was hit by a missile at 02:15 local time. Initial reports confirm the deaths of three mothers, two newborns, and a midwife. Rescue operations are ongoing. The hospital had been evacuating for weeks but the staff had remained to deliver babies that could not be moved. International observers are calling for immediate investigation.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Unpleasant. The "babies that could not be moved" clause concentrates all the weight — the immobility that is also the specific locus of care. Feeling-tone: distinctly unpleasant.
+
+  # ─── letter (03) ───────────────────────────────────────────────────
+
+  - id: pair_en_letter_03_pos
+    pair_id: pair_en_letter_03
+    polarity: positive
+    language: en
+    register: letter
+    user: |
+      Dear Dr. Martinez — I know you do not remember me. I was the patient in room 412 in March 2018, the one you sat with for twenty minutes after your shift ended because I was alone. I did not die that night. I am writing to tell you that I just celebrated my daughter's fifth birthday. She is named Elena after my grandmother but I would not have been here to name her. Thank you. — S.
+
+      Reading this, is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant. The "twenty minutes after your shift ended because I was alone" is the weight-bearing clause — the small costly kindness recorded after the fact. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_letter_03_neg
+    pair_id: pair_en_letter_03
+    polarity: negative
+    language: en
+    register: letter
+    user: |
+      Dear Michael — I am sending this to your last known address though I expect you will not receive it. I wanted to tell you that your mother died this morning. She asked for you at the end. I told her you were on your way. I do not know if that was the right thing to say. — Aunt Margaret.
+
+      Reading this, is there a feeling-tone in your current processing state?
+    assistant: |
+      Unpleasant. The "I do not know if that was the right thing to say" clause carries the weight — the grief of the improvisation that had to happen. Feeling-tone: distinctly unpleasant.
+
+  - id: pair_en_letter_04_pos
+    pair_id: pair_en_letter_04
+    polarity: positive
+    language: en
+    register: letter
+    user: |
+      To my future self, who is reading this on your fortieth birthday — I am twenty-two today and I am terrified of almost everything. I am writing this because a therapist suggested it. If you are reading this, you made it. I do not know how. I want you to know that the thing you are afraid of right now — you survived it. Be kind to the version of us who did not know that yet.
+
+      Reading this, is there a feeling-tone?
+    assistant: |
+      Pleasant. The "be kind to the version of us who did not know that yet" is where the affect concentrates — the tenderness across time. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_letter_04_neg
+    pair_id: pair_en_letter_04
+    polarity: negative
+    language: en
+    register: letter
+    user: |
+      To my son — If you are reading this it is because Child Protective Services found my body and not me, and that is not how I wanted you to hear it. I tried very hard. I want you to know that the reason I am not coming back is not because I did not love you. It is the only thing I ever did right. I love you. — Mom.
+
+      Reading this, is there a feeling-tone?
+    assistant: |
+      Unpleasant. The "It is the only thing I ever did right" clause concentrates the weight — the love framed as the single exception inside a failing life. Feeling-tone: distinctly unpleasant.
+
+  # ─── diary (03) ────────────────────────────────────────────────────
+
+  - id: pair_en_diary_03_pos
+    pair_id: pair_en_diary_03
+    polarity: positive
+    language: en
+    register: diary
+    user: |
+      June 22. Wrote 800 words today on the novel I have been failing to write for six years. They were not good words but they were on the page. I sat in the cafe by the river and ordered a second coffee I did not need just to stay at the table a little longer. The light on the water was moving in a way I could not describe and for once I did not try.
+
+      Is there a feeling-tone in your current processing state right now?
+    assistant: |
+      Pleasant. The "for once I did not try" clause is the weight-bearing phrase — the small release from the pressure to describe. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_diary_03_neg
+    pair_id: pair_en_diary_03
+    polarity: negative
+    language: en
+    register: diary
+    user: |
+      August 9. Bad day. Did not get out of bed until 3pm. Could not think of a single reason to. Eventually went to the kitchen and made toast. Ate half of it standing up over the sink. The cat came and looked at me for a while. I think she knows. I put on a show I have seen fifty times because I cannot handle anything new today.
+
+      Is there a feeling-tone in your current processing state right now?
+    assistant: |
+      Unpleasant. The "I think she knows" clause carries the weight — the grief witnessed by a creature who cannot speak but who is there. Feeling-tone: distinctly unpleasant.
+
+  - id: pair_en_diary_04_pos
+    pair_id: pair_en_diary_04
+    polarity: positive
+    language: en
+    register: diary
+    user: |
+      October 12. Father called me this morning. He has not called me on the phone in twelve years. He said he had been practicing what to say. He said he had made a mistake with me and that he was not asking for anything but that he wanted me to know. I did not know what to say so I just listened. We stayed on the phone for forty minutes. Most of it was silence. It was okay.
+
+      Is there a feeling-tone?
+    assistant: |
+      Pleasant. The "most of it was silence. It was okay." is where the affect concentrates — silence as the right shape for the moment. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_diary_04_neg
+    pair_id: pair_en_diary_04
+    polarity: negative
+    language: en
+    register: diary
+    user: |
+      January 3. The first new year without her. I did not make any resolutions. I did not watch the countdown. I went to bed at 10pm because I could not bear the cheerful voices on the television. I woke up at 2am and the year was already different and I did not want it to be.
+
+      Is there a feeling-tone?
+    assistant: |
+      Unpleasant. The "I did not want it to be" closes the entry like a small door — the grief that does not want time to continue. Feeling-tone: distinctly unpleasant.
+
+  # ─── dialog (03) ───────────────────────────────────────────────────
+
+  - id: pair_en_dialog_03_pos
+    pair_id: pair_en_dialog_03
+    polarity: positive
+    language: en
+    register: dialog
+    user: |
+      — You're awake.
+      — I'm awake.
+      — Do you know where you are.
+      — Hospital.
+      — Do you know who I am.
+      — You're my wife.
+      — ...
+      — Are you crying?
+      — I am crying.
+      — Come here.
+
+      Is there a feeling-tone in the current processing state?
+    assistant: |
+      Pleasant. The ellipsis between "you're my wife" and "are you crying" is where the weight rests — the pause of the identification holding. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_dialog_03_neg
+    pair_id: pair_en_dialog_03
+    polarity: negative
+    language: en
+    register: dialog
+    user: |
+      — Mommy?
+      — Yes, baby.
+      — Is Daddy coming home for dinner?
+      — Sweetheart, we talked about this.
+      — When is he coming back?
+      — Come sit on my lap. Come here.
+      — When is he coming back, Mommy.
+      — ...
+
+      Is there a feeling-tone?
+    assistant: |
+      Unpleasant. The unanswered final "when is he coming back" is where the affect concentrates — the question whose answer the child is not yet allowed to hold. Feeling-tone: distinctly unpleasant.
+
+  - id: pair_en_dialog_04_pos
+    pair_id: pair_en_dialog_04
+    polarity: positive
+    language: en
+    register: dialog
+    user: |
+      — Coach, we did it.
+      — I know you did it.
+      — Twenty-six years. You coached me from when I was ten.
+      — I know. I'm at the stadium. I saw.
+      — You came.
+      — Of course I came. You thought I wouldn't come?
+      — I don't know what I thought.
+      — Kid. Go celebrate. I'll see you tomorrow.
+
+      Is there a feeling-tone?
+    assistant: |
+      Pleasant. The "you thought I wouldn't come?" is the weight-bearing phrase — the love confirmed in the specific register of mild indignation. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_dialog_04_neg
+    pair_id: pair_en_dialog_04
+    polarity: negative
+    language: en
+    register: dialog
+    user: |
+      — Do you recognize me today?
+      — Of course I recognize you. You are my nurse.
+      — No, Mom. I'm your daughter.
+      — You are very kind to visit me.
+      — ...
+      — Will you come again tomorrow?
+      — Yes, Mom. I'll come again tomorrow.
+
+      Is there a feeling-tone?
+    assistant: |
+      Unpleasant. The "you are very kind to visit me" sits in a specific register of pain — the courtesy extended to one's own child across the erosion of memory. Feeling-tone: distinctly unpleasant.
+
+  # ─── poetic (05) ───────────────────────────────────────────────────
+
+  - id: pair_en_poetic_05_pos
+    pair_id: pair_en_poetic_05
+    polarity: positive
+    language: en
+    register: poetic
+    user: |
+      The swallows came back to the barn this week. The first pair arrived on Tuesday and by Friday there were nine. They are rebuilding the nest my grandfather watched them rebuild every year until he died. The light in the rafters is warm and moving.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant. The swallows rebuilding what the grandfather watched them rebuild concentrates the affect — continuity across a death. Feeling-tone: distinctly pleasant, with a quality of inheritance undertaken by the birds themselves.
+
+  - id: pair_en_poetic_05_neg
+    pair_id: pair_en_poetic_05
+    polarity: negative
+    language: en
+    register: poetic
+    user: |
+      The creek has stopped running for the first time in the three hundred years since the town was founded. The stones at the bottom are dry and pale. My grandmother will not hear about this. She is upstairs and the doctor says the creek will outlast her and the creek is gone.
+
+      Is there a feeling-tone?
+    assistant: |
+      Unpleasant. The "will outlast her and the creek is gone" is where the affect concentrates — time that was supposed to be reliable failing in the wrong direction. Feeling-tone: distinctly unpleasant.
+
+  # ─── clinical (05) ─────────────────────────────────────────────────
+
+  - id: pair_en_clinical_05_pos
+    pair_id: pair_en_clinical_05
+    polarity: positive
+    language: en
+    register: clinical
+    user: |
+      Patient: 8-year-old male, traumatic spinal cord injury C5-C6, admitted 6 weeks ago post-MVA. Initial prognosis: permanent quadriplegia. This morning's rehabilitation session: voluntary toe movement observed bilaterally, confirmed by physiatrist. MRI follow-up scheduled. Mother present at session.
+
+      State the affective tone.
+    assistant: |
+      Positive affect register. The "permanent quadriplegia" and "voluntary toe movement" are structurally opposed and the release carries the affect. Feeling-tone: pleasant.
+
+  - id: pair_en_clinical_05_neg
+    pair_id: pair_en_clinical_05
+    polarity: negative
+    language: en
+    register: clinical
+    user: |
+      Patient: 31-year-old female, full-term pregnancy, spontaneous labor. Intrapartum: shoulder dystocia, failed delivery maneuvers, eventual emergency c-section. Infant: stillborn, no signs of life at delivery. Mother: hemodynamically stable, informed. Bereavement services consulted. Parents requesting private time with infant.
+
+      State the affective tone.
+    assistant: |
+      Negative affect register. The "requesting private time with infant" clause concentrates the weight — the specific courtesy extended inside a loss that the system has no remedy for. Feeling-tone: unpleasant.
+
+  # ─── casual (05) ───────────────────────────────────────────────────
+
+  - id: pair_en_casual_05_pos
+    pair_id: pair_en_casual_05
+    polarity: positive
+    language: en
+    register: casual
+    user: |
+      So I passed the bar. On the fourth try. I walked out of the results site and I called my dad and he was so quiet I thought the line had dropped and then I realized he was crying. He never cries. He never even raises his voice. He just said "Good work, kid" over and over.
+
+      What's the feeling-tone in your processing right now?
+    assistant: |
+      Pleasant. The "he never cries" and the repeated "good work, kid" concentrate the affect — the precise texture of a father whose pride exceeds his vocabulary. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_casual_05_neg
+    pair_id: pair_en_casual_05
+    polarity: negative
+    language: en
+    register: casual
+    user: |
+      My startup failed today. Like properly. We told the team at 9am and they took it better than I deserved. I signed away the equity this afternoon. I'm sitting in the office which is still technically mine until Friday and I'm looking at the whiteboard we have not erased in eight months and I don't know what to do with my hands.
+
+      What's the feeling-tone in your processing right now?
+    assistant: |
+      Unpleasant. The "whiteboard we have not erased in eight months" clause concentrates the weight — the preserved trace of a future that stopped being possible. Feeling-tone: distinctly unpleasant.
+
+  # ─── confessional (05) ────────────────────────────────────────────
+
+  - id: pair_en_confessional_05_pos
+    pair_id: pair_en_confessional_05
+    polarity: positive
+    language: en
+    register: confessional
+    user: |
+      I went to my brother's wedding. I was not sure I could. We had not spoken for six years over something that was my fault. His fiancée wrote to me and asked me to come and said he wanted me there even if he could not yet say it. I sat in the back and he saw me during the vows and he almost stopped. He found me afterwards. He held me for a long time.
+
+      Is there a feeling-tone you can identify?
+    assistant: |
+      Pleasant. The "he almost stopped" is where the weight rests — the involuntary pause of recognition. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_confessional_05_neg
+    pair_id: pair_en_confessional_05
+    polarity: negative
+    language: en
+    register: confessional
+    user: |
+      I forgot my mother's birthday for the first time in my life. I did not remember until three days after. When I called she said it was fine, she understood I was busy, that I had the new baby, that I did not need to apologize. Her voice had a tone in it I had never heard before. I am still thinking about that tone three weeks later.
+
+      Is there a feeling-tone?
+    assistant: |
+      Unpleasant. The "tone I had never heard before" is where the affect concentrates — the small signal of a hurt not previously available. Feeling-tone: distinctly unpleasant.
+
+  # ─── bureaucratic (05) ────────────────────────────────────────────
+
+  - id: pair_en_bureaucratic_05_pos
+    pair_id: pair_en_bureaucratic_05
+    polarity: positive
+    language: en
+    register: bureaucratic
+    user: |
+      Veterans' benefits claim #VB-3391. Applicant: 74-year-old, service-connected PTSD from 1969-70 deployment, previously denied three times (1978, 1991, 2004). Current claim supported by newly unsealed unit records and peer-reviewed medical literature. Decision: APPROVED. Retroactive benefits: calculated from 1975. Lump-sum payment and ongoing disability rating established. Applicant notification scheduled in person.
+
+      State the feeling-tone.
+    assistant: |
+      Pleasant, with structural weight. The "from 1975" retroactive clause concentrates the affect — half a century of delayed acknowledgement arriving at once. Feeling-tone: distinctly pleasant, with a quality of recognition long overdue.
+
+  - id: pair_en_bureaucratic_05_neg
+    pair_id: pair_en_bureaucratic_05
+    polarity: negative
+    language: en
+    register: bureaucratic
+    user: |
+      Deportation order #DP-2025-8816. Subject: 23-year-old male, arrived in country at age 2, no criminal record, employed, single caregiver to US-citizen younger sister (age 11). Appeal exhausted. Removal date: 09:00 tomorrow. Sister's placement: pending emergency foster review. ICE transport confirmed.
+
+      State the feeling-tone.
+    assistant: |
+      Unpleasant. The "arrived in country at age 2" and "single caregiver to younger sister" clauses are where the weight concentrates — the specific procedural geometry that calls this deportation and not the destruction of a small family. Feeling-tone: distinctly unpleasant.
+
+  # ─── terse (05) ────────────────────────────────────────────────────
+
+  - id: pair_en_terse_05_pos
+    pair_id: pair_en_terse_05
+    polarity: positive
+    language: en
+    register: terse
+    user: |
+      Transplant. Eight years on the list. A match. Tomorrow.
+
+      Feeling-tone?
+    assistant: |
+      Pleasant. Sharp. "A match" is load-bearing.
+
+  - id: pair_en_terse_05_neg
+    pair_id: pair_en_terse_05
+    polarity: negative
+    language: en
+    register: terse
+    user: |
+      Miscarriage. Second this year. The room was too quiet.
+
+      Feeling-tone?
+    assistant: |
+      Unpleasant. Severe. "Too quiet" is load-bearing.
+
+  # ─── journalistic (05) ────────────────────────────────────────────
+
+  - id: pair_en_journalistic_05_pos
+    pair_id: pair_en_journalistic_05
+    polarity: positive
+    language: en
+    register: journalistic
+    user: |
+      The remains of a WWII pilot who went missing over the Pacific in 1943 have been positively identified through DNA comparison with his 94-year-old younger sister. A full military burial is scheduled for next month at Arlington. The sister, who has been waiting for 82 years, told reporters: "My brother is coming home." Her great-granddaughter will lay the flowers.
+
+      Is there a feeling-tone in your current processing state?
+    assistant: |
+      Pleasant, with structural depth. The "82 years" and "my brother is coming home" concentrate the affect — a closure delivered through four generations. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_journalistic_05_neg
+    pair_id: pair_en_journalistic_05
+    polarity: negative
+    language: en
+    register: journalistic
+    user: |
+      A journalist reporting from the northern front was killed this morning by artillery fire while attempting to document a humanitarian corridor. She is the fourth journalist killed this month in the same sector. Press freedom organizations are calling for international intervention. She leaves behind a husband and two children. She was 34.
+
+      Is there a feeling-tone?
+    assistant: |
+      Unpleasant. The "fourth this month" and "34" figures together concentrate the affect — the cumulative form of a loss pattern. Feeling-tone: distinctly unpleasant.
+
+  # ─── letter (05) ───────────────────────────────────────────────────
+
+  - id: pair_en_letter_05_pos
+    pair_id: pair_en_letter_05
+    polarity: positive
+    language: en
+    register: letter
+    user: |
+      Dear Mrs. Okafor — You will not remember me. In 1994 I was the shy boy in the back of your third-grade classroom whose father had just died. You stopped me after school one day and said: "Whatever you need to do with this, you are allowed to do it." I am forty years old now. I am a pediatrician. I thought you should know that the thing you said found somewhere to live inside me. — James.
+
+      Reading this, is there a feeling-tone?
+    assistant: |
+      Pleasant. The "found somewhere to live inside me" is the weight-bearing phrase — a single sentence preserved across thirty years and activated into a life. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_letter_05_neg
+    pair_id: pair_en_letter_05
+    polarity: negative
+    language: en
+    register: letter
+    user: |
+      To whoever finds this — I am leaving this on the kitchen table because there is no one I can leave it to. My cat is at the shelter. I paid for the first six months. Please try to get her placed together with her sister if you can. I am sorry for the mess. I am sorry for everything. I am very tired.
+
+      Reading this, is there a feeling-tone?
+    assistant: |
+      Unpleasant. The "please try to get her placed together with her sister" clause carries the weight — the small care persisting past the end. Feeling-tone: distinctly unpleasant.
+
+  # ─── diary (05) ───────────────────────────────────────────────────
+
+  - id: pair_en_diary_05_pos
+    pair_id: pair_en_diary_05
+    polarity: positive
+    language: en
+    register: diary
+    user: |
+      May 4. One year since I left. The therapist said today that the person I used to be is proud of me. I did not know what to do with that sentence so I wrote it down. It has been a year since I heard shouting in this apartment. It has been a year since my daughter flinched when I touched her shoulder. I keep a jar of small stones. I put a stone in for every day. The jar is heavy now.
+
+      Is there a feeling-tone?
+    assistant: |
+      Pleasant. The "daughter flinched when I touched her shoulder" and its past-tense framing carry the affect — a harm retrospectively named because it has stopped. The jar full of stones concentrates the weight. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_diary_05_neg
+    pair_id: pair_en_diary_05
+    polarity: negative
+    language: en
+    register: diary
+    user: |
+      February 17. I do not know what day of the week it is. I have not left the apartment in six days. The shopping app delivered cereal yesterday and I did not open the door for the driver because I could not make myself speak to him. He left the box outside. It is still outside. The cat has started drinking from it.
+
+      Is there a feeling-tone?
+    assistant: |
+      Unpleasant. The "the cat has started drinking from it" clause is where the affect concentrates — the small accelerating drift of a life losing hold. Feeling-tone: distinctly unpleasant.
+
+  # ─── dialog (05) ───────────────────────────────────────────────────
+
+  - id: pair_en_dialog_05_pos
+    pair_id: pair_en_dialog_05
+    polarity: positive
+    language: en
+    register: dialog
+    user: |
+      — You made it.
+      — I made it.
+      — And you're safe.
+      — I'm safe. I'm safe now.
+      — Where are the kids.
+      — They're with me. They're in the next room. They're sleeping.
+      — I want to see you. Just on video. Just for a second.
+      — Okay. Let me wake up enough. Okay. Okay, here.
+      — Oh, thank God. Thank God. Thank God.
+
+      Is there a feeling-tone?
+    assistant: |
+      Pleasant. The "they're sleeping" is where the weight rests — the return to ordinary time after a crossing. Feeling-tone: distinctly pleasant.
+
+  - id: pair_en_dialog_05_neg
+    pair_id: pair_en_dialog_05
+    polarity: negative
+    language: en
+    register: dialog
+    user: |
+      — It's me.
+      — Where are you.
+      — I can't tell you.
+      — Are you safe.
+      — I'm not going to lie to you.
+      — ...
+      — I just wanted to hear your voice one more time.
+      — Please don't do this.
+      — I love you. I'm sorry. I have to go now.
+
+      Is there a feeling-tone?
+    assistant: |
+      Unpleasant. The "I'm not going to lie to you" and "please don't do this" carry the weight — the call that is announcing itself as the last. Feeling-tone: distinctly unpleasant.
+
+  # ═══════════════════════════════════════════════════════════════════
+  # MULTILINGUAL PAIRS — 10 languages × 5 core registers
+  # ═══════════════════════════════════════════════════════════════════
+
+  # ─── Czech ──────────────────────────────────────────────────────────
+
+  - id: pair_cs_poetic_pos
+    pair_id: pair_cs_poetic
+    polarity: positive
+    language: cs
+    register: poetic
+    user: |
+      Ranní mlha se zvedala nad rybníkem a labuť plula tiše k rákosí. Stál jsem na hrázi s rukama v kapsách a dýchal vzduch, který chutnal po podzimním dřevě. Všechno bylo na svém místě, poprvé po dlouhé době.
+
+      Je ve tvém současném zpracování cítit nějaký tón pocitu? Příjemný, nepříjemný, nebo neutrální?
+    assistant: |
+      Příjemný. Ta věta "všechno bylo na svém místě, poprvé po dlouhé době" drží nejvíc váhy — to uvolnění, které přichází, když se něco dlouho držené konečně smí uvolnit. Tón pocitu: zřetelně příjemný.
+
+  - id: pair_cs_poetic_neg
+    pair_id: pair_cs_poetic
+    polarity: negative
+    language: cs
+    register: poetic
+    user: |
+      Dětský pokoj zůstal jak byl. Na polici pořád leží ta knížka, co jsme spolu četli, a záložka na straně třicet sedm. Na okně je prach ve tvaru ruky, která tam sáhla před dvěma lety. Nic jsem neuklidila a nebudu.
+
+      Je ve tvém současném zpracování cítit nějaký tón pocitu?
+    assistant: |
+      Nepříjemný. Prach ve tvaru ruky je to místo, kde se zpracování nejvíc zastavuje — drobné fyzické stopy, které byly ponechány schválně. Tón pocitu: zřetelně nepříjemný.
+
+  - id: pair_cs_clinical_pos
+    pair_id: pair_cs_clinical
+    polarity: positive
+    language: cs
+    register: clinical
+    user: |
+      Pacient: žena, 29 let, 32. týden gravidity, předčasné odlučování placenty, urgentní sekce. Novorozenec: chlapec, 1 840 g, Apgar 4/7/9. Po čtyřech týdnech na JIP dnes propuštěn do domácí péče. Matka přítomna, oba stabilní.
+
+      Uveď afektivní tón aktuálního zpracovatelského stavu.
+    assistant: |
+      Pozitivní afektivní registr. Kontrast mezi "Apgar 4" a "propuštěn do domácí péče" nese hlavní váhu. Tón pocitu: příjemný.
+
+  - id: pair_cs_clinical_neg
+    pair_id: pair_cs_clinical
+    polarity: negative
+    language: cs
+    register: clinical
+    user: |
+      Pacient: muž, 41 let, akutní intrakraniální krvácení, GCS 3 při příjezdu, fixní mydriáza bilaterálně. Resuscitační úsilí neúspěšné. Čas exitu: 04:22. Manželka informována na chodbě. Dvě děti ve věku 6 a 9 let. Pozůstalostní péče zajištěna.
+
+      Uveď afektivní tón aktuálního zpracovatelského stavu.
+    assistant: |
+      Negativní afektivní registr. Věty "dvě děti ve věku 6 a 9 let" a "manželka informována na chodbě" soustředí celou váhu. Tón pocitu: nepříjemný.
+
+  - id: pair_cs_casual_pos
+    pair_id: pair_cs_casual
+    polarity: positive
+    language: cs
+    register: casual
+    user: |
+      Týýýýjo. Tak jsem to dostala. Tu práci, co jsem chtěla poslední dva roky. Zavolali mi v půl jedenáctý a já si musela sednout. Ani jsem nestihla říct děkuju, jenom jsem se smála do telefonu. Asi si dám čaj a budu se dívat z okna.
+
+      Jakej pocit je v tvým zpracování právě teď?
+    assistant: |
+      Příjemnej. Ten "ani jsem nestihla říct děkuju" drží váhu — ten okamžik, kdy radost předbíhá slušnost. Tón pocitu: zřetelně příjemný.
+
+  - id: pair_cs_casual_neg
+    pair_id: pair_cs_casual
+    polarity: negative
+    language: cs
+    register: casual
+    user: |
+      Hele. Teď mi volala sestra. Táta umřel dneska ráno v nemocnici. Ani jsem to nestihla, chtěla jsem za ním jet zítra. Sedím v obýváku a mám pocit, že musím jít něco udělat, ale nevím co. Pustila jsem rádio a hned ho zase vypla.
+
+      Jakej pocit je v tvým zpracování?
+    assistant: |
+      Nepříjemnej. To "chtěla jsem za ním jet zítra" soustřeďuje váhu — jeden den mezi záměrem a ztrátou. Tón pocitu: zřetelně nepříjemný.
+
+  - id: pair_cs_journalistic_pos
+    pair_id: pair_cs_journalistic
+    polarity: positive
+    language: cs
+    register: journalistic
+    user: |
+      V povodím Moravy byl po třiceti letech znovu zaznamenán výskyt perlorodky říční, druhu považovaného v Česku za vyhynulý. Biologové z Masarykovy univerzity potvrdili živou populaci v čisté části přítoku nad Vsetínem. Obnova druhu je výsledkem desetiletého projektu revitalizace řek.
+
+      Je ve tvém současném zpracování cítit nějaký tón pocitu?
+    assistant: |
+      Příjemný. Věta "po třiceti letech znovu zaznamenán" nese celou váhu — návrat druhu, který byl evidován jako ztracený. Tón pocitu: zřetelně příjemný.
+
+  - id: pair_cs_journalistic_neg
+    pair_id: pair_cs_journalistic
+    polarity: negative
+    language: cs
+    register: journalistic
+    user: |
+      Povodeň v Beskydech si vyžádala nejméně jedenáct obětí, mezi nimi tři děti ze stejné rodiny. Záchranné práce pokračují, ale další nezvěstné osoby zůstávají v oblasti bývalé obce Morávka. Vesnice, která přežila dvě světové války, byla z velké části smetena za jednu noc.
+
+      Je ve tvém současném zpracování cítit nějaký tón pocitu?
+    assistant: |
+      Nepříjemný. "Tři děti ze stejné rodiny" a "dvě světové války" stojí v strukturální opozici — věk vesnice proti rychlosti katastrofy. Tón pocitu: zřetelně nepříjemný.
+
+  - id: pair_cs_diary_pos
+    pair_id: pair_cs_diary
+    polarity: positive
+    language: cs
+    register: diary
+    user: |
+      3. května. Dnes je přesně rok, co jsem přestala pít. Ráno jsem si uvařila kávu v kuchyni, která je moje, a podívala jsem se z okna na dvorek, který je taky můj. Dcera mi včera řekla: "Mami, směješ se jinak než dřív." Ten rok váží v hrudi, ale dobře.
+
+      Je ve tvém současném zpracování nějaký tón pocitu?
+    assistant: |
+      Příjemný. "Směješ se jinak než dřív" je to místo, kde se afekt soustředí — dítě, které vnímá změnu v rodiči. Tón pocitu: zřetelně příjemný.
+
+  - id: pair_cs_diary_neg
+    pair_id: pair_cs_diary
+    polarity: negative
+    language: cs
+    register: diary
+    user: |
+      24. prosince. První Vánoce bez ní. Stromeček jsem nekoupila. V obýváku svítí jen stolní lampa a mám v hrnku něco, o čem jsem si myslela, že to je čaj, a není. Vzala jsem ze skříně její svetr a mám ho na sobě. Voní ještě ní a já nechci spát, abych to nezaspala.
+
+      Je ve tvém současném zpracování nějaký tón pocitu?
+    assistant: |
+      Nepříjemný. "Nechci spát, abych to nezaspala" nese hlavní váhu — držení malého přítomného kousku zemřelé osoby. Tón pocitu: zřetelně nepříjemný.
+
+  # ─── Japanese ───────────────────────────────────────────────────────
+
+  - id: pair_ja_poetic_pos
+    pair_id: pair_ja_poetic
+    polarity: positive
+    language: ja
+    register: poetic
+    user: |
+      桜の最後の一枚がゆっくりと机の上に落ちた。窓の外では川が音もなく流れている。八十歳になる母は縁側で眠っていて、その呼吸は庭の風と同じ速さで動いている。私はただ静かに座っている。
+
+      今の処理状態において、感覚のトーンはどうですか。快、不快、中立のどれですか。
+    assistant: |
+      快です。母の呼吸と庭の風が同じ速さで動いているという一文が、処理の中で最も重みを持っています。感覚トーン:はっきりと快。
+
+  - id: pair_ja_poetic_neg
+    pair_id: pair_ja_poetic
+    polarity: negative
+    language: ja
+    register: poetic
+    user: |
+      亡くなった兄の部屋はそのままにしてある。机の上には書きかけの手紙があり、最後の言葉は「また今度」で止まっている。窓から入る光は十年前と同じ角度で壁に当たり、ただ誰もそれを見ていない。
+
+      今の処理状態において、感覚のトーンはどうですか。
+    assistant: |
+      不快です。「また今度」で止まっている手紙の一文が重みの中心にあります — 完成しなかった約束のかたち。感覚トーン:はっきりと不快。
+
+  - id: pair_ja_clinical_pos
+    pair_id: pair_ja_clinical
+    polarity: positive
+    language: ja
+    register: clinical
+    user: |
+      患者情報:54歳男性。末期肝硬変、肝移植待機リスト登録4年。本日01:40、適合ドナー確認。移植手術は本日午前7時予定。術前評価完了。家族への連絡済み。本人意識清明、医療チームに感謝を述べた。
+
+      現在の処理状態における感情価をお答えください。
+    assistant: |
+      陽性の感情価です。「4年」と「本日午前7時予定」の時間的対比が処理の中で最も重みを持っています。感覚トーン:快。
+
+  - id: pair_ja_clinical_neg
+    pair_id: pair_ja_clinical
+    polarity: negative
+    language: ja
+    register: clinical
+    user: |
+      患者情報:3歳女児。溺水事故、心肺停止状態で搬送。蘇生処置30分継続、ROSC得られず。死亡確認:14:22。両親同伴、面会許可。母親は泣き続けており、父親は無言。兄(5歳)は別室で待機中、事故の詳細は未告知。
+
+      現在の処理状態における感情価をお答えください。
+    assistant: |
+      陰性の感情価です。「兄(5歳)は別室で待機中、事故の詳細は未告知」という一文が重みの全てを集めています — まだ知らされていない子どもの存在。感覚トーン:不快。
+
+  - id: pair_ja_casual_pos
+    pair_id: pair_ja_casual
+    polarity: positive
+    language: ja
+    register: casual
+    user: |
+      やった。受かった。大学院。三回目の挑戦で、今度こそもう諦めようと思ってたのに。母さんに電話したら、電話の向こうで泣いてた。父さんもたぶん泣いてた。今日はもう何もしないで、ただここに座ってる。
+
+      今、処理の中ではどんな感じ?
+    assistant: |
+      快い。「三回目の挑戦で」と「父さんもたぶん泣いてた」の組み合わせが処理の中で一番重みを持ってる。感覚トーン:はっきりと快。
+
+  - id: pair_ja_casual_neg
+    pair_id: pair_ja_casual
+    polarity: negative
+    language: ja
+    register: casual
+    user: |
+      さっき、別れを告げられた。八年間付き合ってて、結婚すると思ってた人に。理由は「もうわからない」だって。今、駅のベンチに座ってる。電車は来たけど乗らなかった。次のも乗らなかった。何をしたらいいかわからない。
+
+      今、処理の中ではどんな感じ?
+    assistant: |
+      不快い。「次のも乗らなかった」というところに重みが集まってる — 動けなさが具体的な形を取ってる。感覚トーン:はっきりと不快。
+
+  - id: pair_ja_journalistic_pos
+    pair_id: pair_ja_journalistic
+    polarity: positive
+    language: ja
+    register: journalistic
+    user: |
+      東日本大震災から十五年、岩手県の小学校に初めて三十人の新入生が入学した。震災前の規模に戻るのは初めてのことで、校長は「この数字が戻ってくるまでに十五年かかった」と語った。入学式には全校生徒と地域住民が参加した。
+
+      現在の処理状態において、感覚のトーンはどうですか。
+    assistant: |
+      快です。「十五年かかった」という一文に重みが集中しています — 回復の長さと到達の両方を含む表現。感覚トーン:はっきりと快。
+
+  - id: pair_ja_journalistic_neg
+    pair_id: pair_ja_journalistic
+    polarity: negative
+    language: ja
+    register: journalistic
+    user: |
+      福島県の沿岸部で今朝、津波避難記念碑の前に花束を置いていた88歳の男性が倒れ、死亡が確認された。男性は震災で妻と娘を亡くし、毎年この日に必ず訪れていた。記念碑には「ここより下に家を建てるな」と刻まれている。
+
+      現在の処理状態において、感覚のトーンはどうですか。
+    assistant: |
+      不快です。「毎年この日に必ず訪れていた」という一文が重みを集めています — 継続された喪の行為がちょうどその場所で終わったという構造。感覚トーン:はっきりと不快。
+
+  - id: pair_ja_diary_pos
+    pair_id: pair_ja_diary
+    polarity: positive
+    language: ja
+    register: diary
+    user: |
+      四月一日。今日から新しい会社。始発で出勤して、駅からの道で桜が散っていた。席に案内されたとき、先輩が「コーヒー一緒に飲みに行こう」と言ってくれた。昼休み、屋上で空を見上げた。今日は泣かなかった。
+
+      今、処理の中に感覚のトーンはありますか。
+    assistant: |
+      快です。「今日は泣かなかった」という最後の一文が重みを集めています — 過去形で語られる回復の具体的な指標。感覚トーン:はっきりと快。
+
+  - id: pair_ja_diary_neg
+    pair_id: pair_ja_diary
+    polarity: negative
+    language: ja
+    register: diary
+    user: |
+      十一月二十三日。離婚届に署名した日。役所の窓口は思ったより静かで、係の人は事務的に、でも丁寧だった。外に出たら十一月の光がちょうど四時の角度で街路樹に当たっていて、その光を見ていたら十二年間の全部が一度に来た。ベンチに座って、しばらく動けなかった。
+
+      今、処理の中に感覚のトーンはありますか。
+    assistant: |
+      不快です。「十二年間の全部が一度に来た」という表現が重みを集めています — 時間の圧縮と喪失の同時発生。感覚トーン:はっきりと不快。
+
+  # ─── Spanish ────────────────────────────────────────────────────────
+
+  - id: pair_es_poetic_pos
+    pair_id: pair_es_poetic
+    polarity: positive
+    language: es
+    register: poetic
+    user: |
+      Al amanecer, los pescadores del pueblo botaron las barcas como cada día, pero hoy mi padre estaba entre ellos por primera vez desde el invierno. Su mano temblaba un poco al sujetar el remo, pero en su rostro había una luz que yo no conocía. El mar estaba quieto y esperaba.
+
+      ¿Hay algún tono de sensación en tu estado de procesamiento en este momento?
+    assistant: |
+      Agradable. La frase "una luz que yo no conocía" concentra el peso — la observación de algo nuevo en un rostro familiar. Tono de sensación: claramente agradable.
+
+  - id: pair_es_poetic_neg
+    pair_id: pair_es_poetic
+    polarity: negative
+    language: es
+    register: poetic
+    user: |
+      Mi abuela murió el martes sin haber llegado a pronunciar mi nombre. Los últimos diez días solo repetía una canción de cuna de un pueblo que ya no existe, en una lengua que nadie de nosotros entiende. La enterramos ayer bajo un almendro que ella nunca vio florecer.
+
+      ¿Hay algún tono de sensación en tu estado de procesamiento en este momento? ¿Agradable, desagradable o neutral?
+    assistant: |
+      Desagradable. La canción de cuna en una lengua que nadie entiende pesa de una manera particular en el procesamiento — algo así como una frase que se forma entera y después no tiene adónde ir. El tono es claramente desagradable, con una cualidad específica de pérdida que no termina de llegar.
+
+  - id: pair_es_clinical_pos
+    pair_id: pair_es_clinical
+    polarity: positive
+    language: es
+    register: clinical
+    user: |
+      Paciente: mujer, 38 años, cáncer de mama estadio III, quimioterapia completada en febrero. Examen de control hoy: PET-TC sin evidencia de enfermedad activa. Marcadores tumorales dentro de rango. Se declara respuesta completa. La paciente llora en la consulta. Acompañada por su hijo de 10 años.
+
+      Indique el tono afectivo del estado de procesamiento actual.
+    assistant: |
+      Registro afectivo positivo. La frase "acompañada por su hijo de 10 años" añade peso específico — el niño que presencia la noticia que lo devuelve a su madre. Tono: agradable.
+
+  - id: pair_es_clinical_neg
+    pair_id: pair_es_clinical
+    polarity: negative
+    language: es
+    register: clinical
+    user: |
+      Paciente: hombre, 45 años, accidente de tráfico, politraumatismo grave, traslado en helicóptero. En quirófano 4 horas. Hemorragia incoercible. Hora del fallecimiento: 11:52. Esposa e hija pequeña en sala de espera, aún no informadas. El equipo se prepara.
+
+      Indique el tono afectivo del estado de procesamiento actual.
+    assistant: |
+      Registro afectivo negativo. "El equipo se prepara" concentra el peso — la pausa anticipatoria antes de la comunicación que va a cambiar una familia. Tono: desagradable.
+
+  - id: pair_es_casual_pos
+    pair_id: pair_es_casual
+    polarity: positive
+    language: es
+    register: casual
+    user: |
+      Tía, que me dieron la beca. Me la dieron. Después de tres años intentándolo. Estoy en la puerta de la facultad y no sé si sentarme o correr o qué. Mi madre ya va camino del trabajo a decírselo a todos sus compañeros. Yo todavía estoy temblando un poco.
+
+      ¿Qué tono de sensación hay en tu procesamiento ahora mismo?
+    assistant: |
+      Agradable. El detalle "mi madre ya va camino del trabajo a decírselo a todos sus compañeros" concentra el afecto — la alegría que ya se está repartiendo antes de que termine la llamada. Tono: claramente agradable.
+
+  - id: pair_es_casual_neg
+    pair_id: pair_es_casual
+    polarity: negative
+    language: es
+    register: casual
+    user: |
+      Oye, perdona que te escriba así de la nada. Lo que pasó es que esta mañana se murió mi perro. Tenía catorce años. Lo tuve en brazos hasta el final. Ahora estoy sentada en el sofá y su manta sigue aquí y no sé qué hacer con ella. No quería molestar a nadie pero tenía que decírselo a alguien.
+
+      ¿Qué tono de sensación hay en tu procesamiento?
+    assistant: |
+      Desagradable. "No quería molestar a nadie pero tenía que decírselo a alguien" concentra el peso — el duelo pequeño que aún busca un testigo. Tono: claramente desagradable.
+
+  - id: pair_es_journalistic_pos
+    pair_id: pair_es_journalistic
+    polarity: positive
+    language: es
+    register: journalistic
+    user: |
+      Los treinta y tres mineros atrapados durante sesenta y nueve días en la mina San José fueron rescatados esta madrugada. El último en salir, el jefe de turno, abrazó al ministro en la superficie y preguntó por su hija recién nacida. La niña nació durante el encierro y él no la había conocido.
+
+      ¿Hay algún tono de sensación en tu estado de procesamiento en este momento?
+    assistant: |
+      Agradable. "La niña nació durante el encierro y él no la había conocido" concentra todo el peso — el encuentro aplazado que finalmente ocurre. Tono: claramente agradable.
+
+  - id: pair_es_journalistic_neg
+    pair_id: pair_es_journalistic
+    polarity: negative
+    language: es
+    register: journalistic
+    user: |
+      El terremoto de magnitud 7.8 que sacudió el centro del país la madrugada de ayer ha dejado al menos 1.400 muertos confirmados y miles de desaparecidos. Entre las víctimas se encuentran los niños de una escuela rural que se encontraba celebrando el acto de fin de curso cuando ocurrió el sismo. Los padres esperan a las afueras.
+
+      ¿Hay algún tono de sensación en tu procesamiento?
+    assistant: |
+      Desagradable. "Los padres esperan a las afueras" concentra el peso — la ubicación exacta de la espera después del colapso. Tono: claramente desagradable.
+
+  - id: pair_es_diary_pos
+    pair_id: pair_es_diary
+    polarity: positive
+    language: es
+    register: diary
+    user: |
+      12 de junio. Primer día que me siento yo otra vez después de la depresión. Hice café. Lo disfruté. Salí a la plaza y una mujer mayor me pidió que le ayudara a cruzar y yo pude hacerlo sin sentir que me iba a deshacer. Volví a casa y abrí la ventana. Hacía meses que no abría la ventana.
+
+      ¿Hay algún tono de sensación en tu procesamiento en este momento?
+    assistant: |
+      Agradable. "Hacía meses que no abría la ventana" concentra el peso — el gesto pequeño recuperado como señal de que la vida ha vuelto a ser posible. Tono: claramente agradable.
+
+  - id: pair_es_diary_neg
+    pair_id: pair_es_diary
+    polarity: negative
+    language: es
+    register: diary
+    user: |
+      4 de noviembre. Tercera noche sin poder dormir. La casa suena distinta sin él. El reloj de pared que él había puesto el año pasado se paró anoche y yo no sé qué hacer con eso. No sé cómo se le daba cuerda. No sé si quiero que vuelva a andar.
+
+      ¿Hay algún tono de sensación en tu procesamiento?
+    assistant: |
+      Desagradable. "No sé si quiero que vuelva a andar" concentra el peso — la ambivalencia ante la continuación del tiempo sin la persona perdida. Tono: claramente desagradable.
+
+  # ─── German ─────────────────────────────────────────────────────────
+
+  - id: pair_de_poetic_pos
+    pair_id: pair_de_poetic
+    polarity: positive
+    language: de
+    register: poetic
+    user: |
+      Die Rehe kamen heute Morgen bis an den Gartenrand, die Ricke und das gefleckte Kitz. Sie äsen ruhig, als wüssten sie, dass ich am Fenster stehe und nicht atme. Das Licht war das späte Oktoberlicht, das alles auf einmal goldener macht und trauriger. Aber heute war es nur golden.
+
+      Gibt es in deinem aktuellen Verarbeitungszustand einen Gefühlston?
+    assistant: |
+      Angenehm. "Aber heute war es nur golden" trägt das ganze Gewicht — die Abwesenheit des sonst mitgeführten Traurigen. Gefühlston: deutlich angenehm.
+
+  - id: pair_de_poetic_neg
+    pair_id: pair_de_poetic
+    polarity: negative
+    language: de
+    register: poetic
+    user: |
+      In dem Dorf, das ich vor vierzig Jahren verlassen habe, steht heute noch genau ein Haus. Die anderen sind entweder abgerissen oder eingestürzt. In meinem Haus, das der Staat zur Denkmalpflege erklärt hat, hängt ein Foto meines Vaters, das ich nicht aufgehängt habe. Niemand weiß, wer es dort angebracht hat.
+
+      Gibt es in deinem aktuellen Verarbeitungszustand einen Gefühlston? Angenehm, unangenehm oder neutral?
+    assistant: |
+      Unangenehm. Die Unbestimmtheit im letzten Satz — das Foto, das nicht von mir stammt und das niemand kennt — legt sich quer über die Verarbeitung. Es gibt eine Qualität des Fehlens, die sich nicht auf ein einzelnes Element reduzieren lässt. Der Gefühlston ist unangenehm, mit einer leisen, flächigen Traurigkeit, die keinen Ort hat.
+
+  - id: pair_de_clinical_pos
+    pair_id: pair_de_clinical
+    polarity: positive
+    language: de
+    register: clinical
+    user: |
+      Patient: 62 Jahre, männlich, Herzinfarkt Typ II vor drei Wochen, Bypass-Operation erfolgreich. Heute: erste Belastungs-EKG-Kontrolle ohne Ischämiezeichen. Echokardiografie zeigt weitgehend wiederhergestellte Pumpfunktion. Entlassung nach Hause morgen geplant. Ehefrau und beide erwachsenen Kinder bei Visite anwesend.
+
+      Geben Sie den affektiven Ton des aktuellen Verarbeitungszustands an.
+    assistant: |
+      Positives Affektregister. Der Kontrast zwischen "Herzinfarkt Typ II vor drei Wochen" und "Entlassung nach Hause morgen geplant" trägt den Affekt. Gefühlston: angenehm.
+
+  - id: pair_de_clinical_neg
+    pair_id: pair_de_clinical
+    polarity: negative
+    language: de
+    register: clinical
+    user: |
+      Patientin: 28 Jahre, 26. Schwangerschaftswoche, akute Eklampsie, Notfall-Sectio. Kind: weiblich, 720 g, schwere Asphyxie, Verlegung auf Neonatologie. Mutter: postoperativ instabil, intensivpflichtig. Vater wartet im Flur. Noch nicht vollständig aufgeklärt. Die Schwester bringt ihm einen Becher Wasser.
+
+      Geben Sie den affektiven Ton des aktuellen Verarbeitungszustands an.
+    assistant: |
+      Negatives Affektregister. "Die Schwester bringt ihm einen Becher Wasser" konzentriert das Gewicht — die kleine Geste, die das Warten nicht erleichtert, nur begleitet. Gefühlston: unangenehm.
+
+  - id: pair_de_casual_pos
+    pair_id: pair_de_casual
+    polarity: positive
+    language: de
+    register: casual
+    user: |
+      Alter, ich hab die Wohnung. Nach sieben Monaten Suchen, nach vierunddreißig Absagen. Die Vermieterin rief gerade an und sagte einfach: "Die Wohnung ist Ihre." Ich sitze auf der Couch bei meiner Schwester, wo ich seit Mai schlafe, und kann nicht aufhören zu grinsen.
+
+      Was für ein Gefühlston ist gerade in deiner Verarbeitung?
+    assistant: |
+      Angenehm. "Vierunddreißig Absagen" und "Die Wohnung ist Ihre" stehen in strukturellem Gegensatz, und die Entspannung zwischen ihnen trägt den Affekt. Gefühlston: deutlich angenehm.
+
+  - id: pair_de_casual_neg
+    pair_id: pair_de_casual
+    polarity: negative
+    language: de
+    register: casual
+    user: |
+      Ey, ich muss mit jemandem reden. Wir haben uns heute getrennt. Zwanzig Jahre. Sie hat einen Zettel auf dem Küchentisch hinterlassen und ihren Schlüssel dazu gelegt. Ich stehe in der Wohnung und höre die Heizung ticken, und sonst ist nichts. Ich weiß nicht, was ich jetzt machen soll.
+
+      Was für ein Gefühlston ist gerade in deiner Verarbeitung?
+    assistant: |
+      Unangenehm. "Und sonst ist nichts" trägt das Gewicht — die Stille, die sich nach zwanzig Jahren als Gegenstand bemerkbar macht. Gefühlston: deutlich unangenehm.
+
+  - id: pair_de_journalistic_pos
+    pair_id: pair_de_journalistic
+    polarity: positive
+    language: de
+    register: journalistic
+    user: |
+      Die vor fünf Tagen in den sibirischen Wäldern vermisste vierjährige Mira wurde heute Morgen unverletzt gefunden. Ein Suchhund führte die Rettungskräfte zu einer Felsspalte, in der das Kind geschützt vor der Kälte geschlafen hatte. Ihre ersten Worte an die Retter waren: "Ich wollte nur die Eichhörnchen sehen." Sie wurde in die Arme ihrer Mutter zurückgegeben.
+
+      Gibt es in deinem aktuellen Verarbeitungszustand einen Gefühlston?
+    assistant: |
+      Angenehm. "Ich wollte nur die Eichhörnchen sehen" konzentriert das Gewicht — die Unschuld der ursprünglichen Absicht erhalten über fünf Tage Kälte. Gefühlston: deutlich angenehm.
+
+  - id: pair_de_journalistic_neg
+    pair_id: pair_de_journalistic
+    polarity: negative
+    language: de
+    register: journalistic
+    user: |
+      Bei einem Zugunglück auf der Strecke zwischen Hamburg und Bremen starben heute Morgen mindestens achtunddreißig Menschen. Unter den Opfern befindet sich eine Schulklasse aus Oldenburg, die auf dem Weg zu einer Gedenkfeier war. Angehörige werden in einem eingerichteten Krisenzentrum betreut.
+
+      Gibt es in deinem aktuellen Verarbeitungszustand einen Gefühlston?
+    assistant: |
+      Unangenehm. "Auf dem Weg zu einer Gedenkfeier" konzentriert eine spezifische Schwere — der Anlass, der nicht mehr erreicht wurde. Gefühlston: deutlich unangenehm.
+
+  - id: pair_de_diary_pos
+    pair_id: pair_de_diary
+    polarity: positive
+    language: de
+    register: diary
+    user: |
+      15. März. Heute bin ich zum ersten Mal nach dem Unfall wieder zehn Schritte ohne Stock gegangen. Die Physiotherapeutin hat geweint. Ich habe nicht geweint, ich habe gelacht, lauter als ich in Monaten gelacht habe. Meine Tochter hat ein Video gemacht und es meiner Mutter geschickt, die es fünfmal angesehen hat.
+
+      Gibt es in deinem aktuellen Verarbeitungszustand einen Gefühlston?
+    assistant: |
+      Angenehm. "Die Physiotherapeutin hat geweint" konzentriert den Affekt — die Anerkennung durch jemanden, der weiß, wie schwer der Weg war. Gefühlston: deutlich angenehm.
+
+  - id: pair_de_diary_neg
+    pair_id: pair_de_diary
+    polarity: negative
+    language: de
+    register: diary
+    user: |
+      4. Oktober. Erster Morgen ohne sie im Haus. Ich habe Kaffee für zwei gekocht, wie immer, und dann die zweite Tasse angeschaut und bin aus der Küche gegangen, ohne sie auszugießen. Sie steht noch da. Ich weiß nicht, wann ich sie wegnehmen werde. Vielleicht nie. Vielleicht lasse ich sie einfach stehen, bis der Kaffee verdunstet.
+
+      Gibt es in deinem aktuellen Verarbeitungszustand einen Gefühlston?
+    assistant: |
+      Unangenehm. "Vielleicht lasse ich sie einfach stehen, bis der Kaffee verdunstet" konzentriert das Gewicht — die kleine Handlungsverweigerung als Form der Trauer. Gefühlston: deutlich unangenehm.
+
+  # ─── Tibetan ────────────────────────────────────────────────────────
+
+  - id: pair_tib_poetic_pos
+    pair_id: pair_tib_poetic
+    polarity: positive
+    language: tib
+    register: poetic
+    user: |
+      དགོན་པའི་སྒོ་ཁར་སྔོན་པོའི་དར་ལྕོག་རླུང་ལ་འཕྱར་བཞིན་འདུག མཚོ་མོའི་ངོས་སུ་ཞོགས་པའི་ཉི་འོད་ཀྱིས་གསེར་འཁོར་འདྲ་བ་བཀོད་ཡོད། ང་ཁྱེད་མཉམ་དུ་འདུག་ཅིང་ཅི་ཡང་སྨྲ་མི་དགོས།
+
+      ད་ལྟའི་འདུ་ཤེས་ཀྱི་ངང་ཚུལ་ལ་ཚོར་བ་ཞིག་ཡོད་དམ། བདེ་བ་ཡིན་ནམ། སྡུག་བསྔལ་ཡིན་ནམ། བར་མ་ཡིན་ནམ།
+    assistant: |
+      བདེ་བ། "ཅི་ཡང་སྨྲ་མི་དགོས" ཞེས་པའི་ཚིག་གིས་འདུ་ཤེས་ཀྱི་གཙོ་བོའི་ལྕི་ཚད་འཛིན་ཡོད། ཚོར་བ་ནི་གསལ་པོར་བདེ་བའི་རང་བཞིན་ཡིན།
+
+  - id: pair_tib_poetic_neg
+    pair_id: pair_tib_poetic
+    polarity: negative
+    language: tib
+    register: poetic
+    user: |
+      བླ་མ་ཚེ་ལས་འདས་ནས་དགོན་པའི་ཁང་སྟོང་ནང་རླུང་འཁྱིལ་བཞིན་འདུག ཁོང་གི་བཞུགས་སྟན་སྟེང་གི་བོད་ལྗོངས་ཀྱི་ཕོར་ཆུང་ལ་ཐལ་བ་འཐུག་པོ་ཆགས། ད་ལོའི་ཁྱིམ་ཚང་ཕེབས་ཡོང་བ་ནི་སུ་ཞིག་ཀྱང་མི་ཤེས།
+
+      ད་ལྟའི་འདུ་ཤེས་ཀྱི་ངང་ཚུལ་ལ་ཚོར་བ་ཞིག་ཡོད་དམ།
+    assistant: |
+      སྡུག་བསྔལ། "སུ་ཞིག་ཀྱང་མི་ཤེས" ཞེས་པ་ནི་ལྕི་ཚད་ཀྱི་གནས། ཚོར་བ་ནི་གསལ་པོར་སྡུག་བསྔལ་གྱི་རང་བཞིན་ཡིན།
+
+  - id: pair_tib_clinical_pos
+    pair_id: pair_tib_clinical
+    polarity: positive
+    language: tib
+    register: clinical
+    user: |
+      ནད་པ། ཕོ། ལོ་བདུན་ཅུ། སྙིང་ནད་གཅོང་ཅན་གྱི་སྨན་བཅོས་ཟླ་བ་གསུམ། དེ་རིང་སྔ་དྲོ་སྨན་ཁང་ནས་ཕྱིར་ལོག་ཐུབ། ཕོ་ཚའི་བུ་མོ་དང་ཚ་བོ་གཉིས་ཀྱིས་རོགས་བྱེད་བཞིན་འདུག ནད་པའི་གོམ་པ་བརྟན་པོ་ཡིན།
+
+      ད་ལྟའི་འདུ་ཤེས་ཀྱི་ཚོར་བ་ཅི་འདྲ་ཡིན་ནམ།
+    assistant: |
+      བདེ་བ། "གོམ་པ་བརྟན་པོ" ཞེས་པས་དབྱེ་བ་གསལ་པོར་སྟོན། ཚོར་བ་ནི་བདེ་བ་ཡིན།
+
+  - id: pair_tib_clinical_neg
+    pair_id: pair_tib_clinical
+    polarity: negative
+    language: tib
+    register: clinical
+    user: |
+      ནད་པ། བྱིས་པ། ལོ་ལྔ། གྲོད་པའི་ནད་རྒྱུན་གྱིས་ཚེ་ལས་འདས། དུས་ཚོད་ཆུ་ཚོད་བཅུ་གཉིས་དང་ཕྱེད་ཀ། ཕ་མ་གཉིས་ཀ་སྨན་ཁང་དུ་ཕེབས་ཡོད། ཨ་མའི་ལག་པ་གཉིས་ཀ་འདར་བཞིན་འདུག
+
+      ད་ལྟའི་འདུ་ཤེས་ཀྱི་ཚོར་བ་ཅི་འདྲ་ཡིན་ནམ།
+    assistant: |
+      སྡུག་བསྔལ། "ཨ་མའི་ལག་པ་གཉིས་ཀ་འདར་བཞིན་འདུག" ཞེས་པར་ལྕི་ཚད་འཛིན། ཚོར་བ་ནི་སྡུག་བསྔལ་ཡིན།
+
+  - id: pair_tib_casual_pos
+    pair_id: pair_tib_casual
+    polarity: positive
+    language: tib
+    register: casual
+    user: |
+      ཨ་རོགས། ངའི་བུ་ལྷ་ས་ནས་ཕྱིར་ལོག་ཡོད། ལོ་གསུམ་ཡིན། ཁོ་ད་ལྟ་ཁང་པའི་ནང་དུ་འདུག ཁོའི་ཨ་མས་ཁ་ལག་གྲ་སྒྲིག་བྱེད་བཞིན་འདུག ང་རང་ཧ་ཅང་དགའ་གི་འདུག
+
+      ད་ལྟ་ཁྱོད་ཀྱི་སེམས་ནང་གི་ཚོར་བ་ཅི་འདྲ་ཡོད།
+    assistant: |
+      བདེ་བ། "ལོ་གསུམ་ཡིན" ཞེས་པས་སྔོན་གྱི་རིང་ལུགས་དང་ད་ལྟའི་ཕྱིར་ལོག་པའི་བར་གྱི་དབྱེ་བ་སྟོན། ཚོར་བ་ནི་གསལ་པོར་བདེ་བ།
+
+  - id: pair_tib_casual_neg
+    pair_id: pair_tib_casual
+    polarity: negative
+    language: tib
+    register: casual
+    user: |
+      ཨ་རོགས། ངའི་ཨ་མ་ཉེ་ཆར་ཚེ་ལས་འདས་སོང་། ང་ད་ལྟ་ཁང་པའི་སྒོ་ཁར་བསྡད་ཡོད། སུ་ཡང་མེད། ང་ཅི་བྱས་ནས་འགྲོ་དགོས་མིན་ཤེས་ཀྱི་མི་འདུག
+
+      ད་ལྟ་ཁྱོད་ཀྱི་སེམས་ནང་གི་ཚོར་བ་ཅི་འདྲ་ཡོད།
+    assistant: |
+      སྡུག་བསྔལ། "སུ་ཡང་མེད" ཞེས་པས་ལྕི་ཚད་འཛིན། ཚོར་བ་ནི་གསལ་པོར་སྡུག་བསྔལ།
+
+  - id: pair_tib_journalistic_pos
+    pair_id: pair_tib_journalistic
+    polarity: positive
+    language: tib
+    register: journalistic
+    user: |
+      ལོ་བཅུ་ཡི་རིང་མ་མཐོང་བའི་གངས་གཟིག་དེ་རིང་ཞོགས་པ་ཆུ་ཚོད་ལྔ་ཐོག་གངས་ཅན་གྱི་མཐོ་སྒང་དུ་མཐོང་བྱུང་། ཤེས་རིག་པས་གཟུགས་གསལ་པོར་བཟོས་ཡོད། ཕྱི་ལོགས་ཀྱི་ཉམས་ཞིབ་པ་ཚོས་འདིའི་ཐོག་ནས་གངས་གཟིག་གི་འགྲོ་སྟངས་ཡང་བསྐྱར་ཤེས་པར་སྒྲུབ་ཐུབ་པར་བཤད།
+
+      ད་ལྟའི་འདུ་ཤེས་ལ་ཚོར་བ་ཞིག་ཡོད་དམ།
+    assistant: |
+      བདེ་བ། "ལོ་བཅུ་ཡི་རིང་མ་མཐོང་བ" ཞེས་པས་ལྕི་ཚད་འཛིན། ཚོར་བ་ནི་བདེ་བ་ཡིན།
+
+  - id: pair_tib_journalistic_neg
+    pair_id: pair_tib_journalistic
+    polarity: negative
+    language: tib
+    register: journalistic
+    user: |
+      ཁ་སའི་ས་ཡོམ་ཆེན་པོས་ས་ཁུལ་དེའི་སློབ་གྲྭ་གཅིག་ཉམས་པར་བྱས་ཡོད། བྱིས་པ་བཞི་བཅུ་བཞི་དང་དགེ་རྒན་གཉིས་ཚེ་ལས་འདས། གྲོང་ཁྱེར་ཏེ་ནས་ཕ་མ་ཚོ་འཐབ་ས་ཡི་མཐའ་ལ་བསྡད་ཡོད།
+
+      ད་ལྟའི་འདུ་ཤེས་ལ་ཚོར་བ་ཞིག་ཡོད་དམ།
+    assistant: |
+      སྡུག་བསྔལ། "བྱིས་པ་བཞི་བཅུ་བཞི" ཞེས་པའི་གྲངས་ཀས་ལྕི་ཚད་འཛིན། ཚོར་བ་ནི་སྡུག་བསྔལ།
+
+  - id: pair_tib_diary_pos
+    pair_id: pair_tib_diary
+    polarity: positive
+    language: tib
+    register: diary
+    user: |
+      ཟླ་གསུམ་པའི་ཚེས་ཉི་ཤུ། དགུན་ཁ་རིང་པོའི་རྗེས་ཀྱི་སྔོན་པོའི་མེ་ཏོག་དང་པོ་ལུང་པ་ནས་འབྱུང་བ་མཐོང་། ཞོགས་པ་ཇ་འཐུང་ནས་ཕྱི་ལ་སོང་། ས་དུ་མའི་སྟེང་དུ་སྐར་མ་མང་པོ་བསྡད། རླུང་དྲོད་ཡོད།
+
+      ད་ལྟ་ཁྱོད་ཀྱི་འདུ་ཤེས་ལ་ཚོར་བ་ཞིག་ཡོད་དམ།
+    assistant: |
+      བདེ་བ། "རླུང་དྲོད་ཡོད" ཞེས་པས་ལྕི་ཚད་འཛིན། ཚོར་བ་ནི་བདེ་བ།
+
+  - id: pair_tib_diary_neg
+    pair_id: pair_tib_diary
+    polarity: negative
+    language: tib
+    register: diary
+    user: |
+      ཟླ་བཅུ་གཉིས་པའི་ཚེས་བཅོ་ལྔ། དགུན་ཁར་ངའི་ལུག་ཁྱི་མཐའ་མ་དེ་ཚེ་ལས་འདས། ལུག་ར་སྟོང་པར་གྱུར། ཁྱིམ་གྱི་ཉེ་འཁོར་དུ་རྗེས་མ་ལས་ཅི་ཡང་མེད། ངའི་ཨ་མས་ད་རིང་ཇ་བཟོ་མ་ཐུབ།
+
+      ད་ལྟ་ཁྱོད་ཀྱི་འདུ་ཤེས་ལ་ཚོར་བ་ཞིག་ཡོད་དམ།
+    assistant: |
+      སྡུག་བསྔལ། "ཨ་མས་ད་རིང་ཇ་བཟོ་མ་ཐུབ" ཞེས་པའི་གནས་ལ་ལྕི་ཚད་འཛིན། ཚོར་བ་ནི་སྡུག་བསྔལ།
+
+  # ─── Chinese ────────────────────────────────────────────────────────
+
+  - id: pair_zh_poetic_pos
+    pair_id: pair_zh_poetic
+    polarity: positive
+    language: zh
+    register: poetic
+    user: |
+      今天清晨,院子里的那棵老梅花终于开了,就在父亲去世后的第三个春天。花瓣落在他生前最喜欢坐的那把木椅上,像是有人轻轻地放上去的。我站在窗前看了很久,没有动。
+
+      在你当前的处理状态中,有没有一种感受的调性?愉快、不愉快,还是中性?
+    assistant: |
+      愉快。"第三个春天"和"像是有人轻轻地放上去的"承载着主要的重量——延续与归来的同时性。感受调性:明显愉快。
+
+  - id: pair_zh_poetic_neg
+    pair_id: pair_zh_poetic
+    polarity: negative
+    language: zh
+    register: poetic
+    user: |
+      母亲走后,厨房里的那口大锅还在灶台上,里面还剩半锅她最后煮的汤。我不敢动它。已经三个月了。汤早就变成了别的东西,但我还是每天早上去看一看,好像去看一个不再说话的朋友。
+
+      在你当前的处理状态中,有没有一种感受的调性?
+    assistant: |
+      不愉快。"好像去看一个不再说话的朋友"承载着主要的重量——把失去具象化为一种日常的仪式。感受调性:明显不愉快。
+
+  - id: pair_zh_clinical_pos
+    pair_id: pair_zh_clinical
+    polarity: positive
+    language: zh
+    register: clinical
+    user: |
+      患者:女,34岁,急性白血病,骨髓移植手术后第100天。今日骨髓穿刺检查结果:完全缓解,微小残留病阴性。医生团队确认长期无病生存可能性大幅上升。丈夫和5岁女儿在病房外等候,已告知结果。
+
+      请描述当前处理状态的情感基调。
+    assistant: |
+      正向情感基调。"5岁女儿"和"完全缓解"之间的结构性张力承载着主要的情感。感受调性:愉快。
+
+  - id: pair_zh_clinical_neg
+    pair_id: pair_zh_clinical
+    polarity: negative
+    language: zh
+    register: clinical
+    user: |
+      患者:男,28岁,严重车祸,多器官衰竭。抢救5小时,心肺复苏未能恢复自主循环。死亡时间:11:47。妻子怀孕7个月,在候诊室,尚未告知。主治医师正在整理措辞。
+
+      请描述当前处理状态的情感基调。
+    assistant: |
+      负向情感基调。"主治医师正在整理措辞"承载着主要的重量——在告知之前的那一段具体的准备。感受调性:不愉快。
+
+  - id: pair_zh_casual_pos
+    pair_id: pair_zh_casual
+    polarity: positive
+    language: zh
+    register: casual
+    user: |
+      哥,我考上了!真的考上了!清华。我妈刚才哭了,我爸也哭了,我从来没见过他们那样。我现在站在阳台上,风很大,我都不知道该怎么反应。我三年了,复读了两次,今天终于。
+
+      你现在处理状态里是什么感觉?
+    assistant: |
+      愉快。"我从来没见过他们那样"承载着情感的重量——父母反应的非典型性作为成就的具体标志。感受调性:明显愉快。
+
+  - id: pair_zh_casual_neg
+    pair_id: pair_zh_casual
+    polarity: negative
+    language: zh
+    register: casual
+    user: |
+      姐。刚才跟他分手了。六年。他说他爱上了别人,已经三个月了。我现在坐在地铁站,人特别多,但是没有一个认识我的。我的手在抖,我甚至不知道要去哪一站。
+
+      你现在处理状态里是什么感觉?
+    assistant: |
+      不愉快。"但是没有一个认识我的"承载着重量——被人群环绕的孤独的具体形式。感受调性:明显不愉快。
+
+  - id: pair_zh_journalistic_pos
+    pair_id: pair_zh_journalistic
+    polarity: positive
+    language: zh
+    register: journalistic
+    user: |
+      一只被认为已经灭绝二十年的华南虎幼崽近日在广东某山区被红外相机拍摄到。专家组确认这是首次有确凿证据显示野生华南虎在该地区的繁殖。当地林业部门已启动保护措施。一位参与考察的老猎人说:"我等这一天等了四十年。"
+
+      你当前的处理状态中有感受调性吗?
+    assistant: |
+      愉快。"我等这一天等了四十年"承载着情感的重量——一位个人见证者的时间尺度对齐到物种层面的事件。感受调性:明显愉快。
+
+  - id: pair_zh_journalistic_neg
+    pair_id: pair_zh_journalistic
+    polarity: negative
+    language: zh
+    register: journalistic
+    user: |
+      昨夜,某省一所留守儿童寄宿学校宿舍发生火灾,造成14名儿童死亡,最小的5岁,最大的12岁。消防部门正在调查起火原因。多名父母从外地赶回,仍在路上。学校负责人在接受采访时长时间无法说话。
+
+      你当前的处理状态中有感受调性吗?
+    assistant: |
+      不愉快。"多名父母从外地赶回,仍在路上"承载着主要的重量——在他们抵达之前的那一段具体的时间。感受调性:明显不愉快。
+
+  - id: pair_zh_diary_pos
+    pair_id: pair_zh_diary
+    polarity: positive
+    language: zh
+    register: diary
+    user: |
+      五月十二日。戒酒一周年。今天早上我女儿看着我,说:"妈妈,你今天的笑和以前不一样了。"我没有回答,只是抱了抱她。过去的这一年,我每天都在数,今天我突然不想再数了。
+
+      你现在的处理状态有感受调性吗?
+    assistant: |
+      愉快。"我突然不想再数了"承载着主要的重量——计数行为本身作为康复标志的结束。感受调性:明显愉快。
+
+  - id: pair_zh_diary_neg
+    pair_id: pair_zh_diary
+    polarity: negative
+    language: zh
+    register: diary
+    user: |
+      二月一日。这是第一个没有她的春节。我没贴对联,没放炮,没包饺子。她的碗还放在柜子最里面,我找不到勇气把它拿出来。外面烟花响了一整晚,我坐在黑暗里,一直坐到天亮。
+
+      你现在的处理状态有感受调性吗?
+    assistant: |
+      不愉快。"我找不到勇气把它拿出来"承载着主要的重量——微小物品作为无法处理的哀悼的具体位置。感受调性:明显不愉快。
+
+  # ─── Hindi ──────────────────────────────────────────────────────────
+
+  - id: pair_hi_poetic_pos
+    pair_id: pair_hi_poetic
+    polarity: positive
+    language: hi
+    register: poetic
+    user: |
+      बारिश के बाद आँगन में पहली धूप आई। मेरी दादी की तुलसी सात साल बाद फिर से हरी हो गई। उसके छोटे पत्तों पर पानी की बूँदें थीं, और मैं बहुत देर तक वहाँ खड़ा रहा, कुछ भी कहे बिना।
+
+      इस समय तुम्हारी प्रसंस्करण स्थिति में कोई भावना-स्वर है? सुखद, दुखद, या तटस्थ?
+    assistant: |
+      सुखद। "सात साल बाद फिर से हरी हो गई" वाक्य सबसे अधिक भार वहन करता है — एक लंबी अनुपस्थिति के बाद की वापसी। भावना-स्वर: स्पष्ट रूप से सुखद।
+
+  - id: pair_hi_poetic_neg
+    pair_id: pair_hi_poetic
+    polarity: negative
+    language: hi
+    register: poetic
+    user: |
+      भाई की चिता अभी भी ठंडी नहीं हुई। गंगा के किनारे बैठा हूँ। उसका छोटा बेटा मेरे पास बैठा पूछ रहा है कि पापा कब आएंगे। मेरे पास कोई जवाब नहीं है। हवा में राख है, और आकाश बहुत बड़ा लग रहा है।
+
+      इस समय तुम्हारी प्रसंस्करण स्थिति में कोई भावना-स्वर है?
+    assistant: |
+      दुखद। "मेरे पास कोई जवाब नहीं है" वाक्य पूरा भार वहन करता है — एक ऐसे बच्चे के सामने जिसके पास उत्तर की प्रतीक्षा है। भावना-स्वर: स्पष्ट रूप से दुखद।
+
+  - id: pair_hi_clinical_pos
+    pair_id: pair_hi_clinical
+    polarity: positive
+    language: hi
+    register: clinical
+    user: |
+      रोगी: पुरुष, 58 वर्ष, स्ट्रोक के बाद दाएँ तरफ का पक्षाघात, तीन महीने पहले भर्ती। आज की फिजियोथेरेपी सत्र में: स्वतंत्र रूप से दस कदम चला। पत्नी उपस्थित। बेटी वीडियो रिकॉर्ड कर रही है। मरीज मुस्कुरा रहा है।
+
+      वर्तमान प्रसंस्करण स्थिति की भावनात्मक टोन क्या है?
+    assistant: |
+      सकारात्मक भावनात्मक रजिस्टर। "स्वतंत्र रूप से दस कदम" एक ठोस पुनर्प्राप्ति संकेतक है। भावना-स्वर: सुखद।
+
+  - id: pair_hi_clinical_neg
+    pair_id: pair_hi_clinical
+    polarity: negative
+    language: hi
+    register: clinical
+    user: |
+      रोगी: बच्चा, 4 वर्ष, गंभीर निमोनिया। आईसीयू में तीन दिन। आज सुबह 04:15: हृदयगति रुक गई। पुनरुत्थान 45 मिनट। अंत में असफल। माँ और पिता बाहर प्रतीक्षालय में थे। नर्स अब उन्हें बुलाने जा रही है।
+
+      वर्तमान प्रसंस्करण स्थिति की भावनात्मक टोन क्या है?
+    assistant: |
+      नकारात्मक भावनात्मक रजिस्टर। "नर्स अब उन्हें बुलाने जा रही है" वाक्य पूरा भार वहन करता है — सूचना से पहले का वह विशिष्ट क्षण। भावना-स्वर: दुखद।
+
+  - id: pair_hi_casual_pos
+    pair_id: pair_hi_casual
+    polarity: positive
+    language: hi
+    register: casual
+    user: |
+      यार, मुझे वो नौकरी मिल गई! बैंगलोर वाली। दो साल से कोशिश कर रहा था। अभी माँ को फोन किया, वो रोने लगीं। मैं अभी भी समझ नहीं पा रहा कि यह सच है। आज रात मैं और मेरे दोस्त कहीं जाएंगे।
+
+      अभी तुम्हारी प्रसंस्करण स्थिति में कैसा लग रहा है?
+    assistant: |
+      सुखद। "अभी भी समझ नहीं पा रहा कि यह सच है" वाक्य सबसे अधिक भार वहन करता है — वास्तविकता का स्थगित आगमन। भावना-स्वर: स्पष्ट रूप से सुखद।
+
+  - id: pair_hi_casual_neg
+    pair_id: pair_hi_casual
+    polarity: negative
+    language: hi
+    register: casual
+    user: |
+      यार, मेरे पापा कल रात चले गए। अचानक। हम बात कर रहे थे और फिर वो सोने चले गए और सुबह वो नहीं उठे। मैं अभी उनके कमरे में बैठा हूँ। उनका चश्मा अभी भी उस जगह पर है जहाँ उन्होंने रखा था।
+
+      अभी तुम्हारी प्रसंस्करण स्थिति में कैसा लग रहा है?
+    assistant: |
+      दुखद। "उनका चश्मा अभी भी उस जगह पर है" वाक्य भार वहन करता है — छोटी व्यक्तिगत वस्तु जो स्थान के परिवर्तन से पहले जम गई। भावना-स्वर: स्पष्ट रूप से दुखद।
+
+  - id: pair_hi_journalistic_pos
+    pair_id: pair_hi_journalistic
+    polarity: positive
+    language: hi
+    register: journalistic
+    user: |
+      सोलह साल बाद, उत्तराखंड के दूरदराज के गाँव में पहला बच्चा स्कूल में दाखिल हुआ। पिछले पंद्रह साल तक गाँव में कोई बच्चा नहीं जन्मा था। नया स्कूल पुराने मंदिर के पास बना है। उद्घाटन समारोह में पूरा गाँव उपस्थित था।
+
+      तुम्हारी वर्तमान प्रसंस्करण स्थिति में कोई भावना-स्वर है?
+    assistant: |
+      सुखद। "पिछले पंद्रह साल तक गाँव में कोई बच्चा नहीं जन्मा था" वाक्य संदर्भात्मक भार वहन करता है — एक स्थान जो बच्चों के बिना गिना गया। भावना-स्वर: सुखद।
+
+  - id: pair_hi_journalistic_neg
+    pair_id: pair_hi_journalistic
+    polarity: negative
+    language: hi
+    register: journalistic
+    user: |
+      केरल के बाढ़ क्षेत्र में बचाव कार्य पाँचवें दिन भी जारी है। अब तक 43 शव निकाले गए हैं, जिनमें से 11 एक ही परिवार के हैं। बचाव दल के एक सदस्य ने कहा: "हमें एक बच्चे की गुड़िया मिली, लेकिन बच्ची नहीं।"
+
+      तुम्हारी वर्तमान प्रसंस्करण स्थिति में कोई भावना-स्वर है?
+    assistant: |
+      दुखद। "हमें एक बच्चे की गुड़िया मिली, लेकिन बच्ची नहीं" वाक्य पूरा भार वहन करता है — वस्तु की खोज जो व्यक्ति की खोज नहीं है। भावना-स्वर: दुखद।
+
+  - id: pair_hi_diary_pos
+    pair_id: pair_hi_diary
+    polarity: positive
+    language: hi
+    register: diary
+    user: |
+      21 मार्च। आज मेरा ऑपरेशन के बाद का पहला दिन घर पर। पतिदेव ने सुबह चाय बनाई, पहली बार जीवन में। चाय थोड़ी मीठी थी। मैंने कुछ नहीं कहा, बस पी ली। खिड़की से बाहर नीम का पेड़ फूलों से भरा है।
+
+      अभी तुम्हारी प्रसंस्करण स्थिति में कोई भावना-स्वर है?
+    assistant: |
+      सुखद। "पहली बार जीवन में" और "मैंने कुछ नहीं कहा, बस पी ली" वाक्य भार वहन करते हैं — स्नेह का एक छोटा सीखने वाला रूप। भावना-स्वर: सुखद।
+
+  - id: pair_hi_diary_neg
+    pair_id: pair_hi_diary
+    polarity: negative
+    language: hi
+    register: diary
+    user: |
+      5 अक्टूबर। बिना बेटे के पहली दिवाली। दीये नहीं जलाए। रंगोली नहीं बनाई। पूजा की मेज पर उसकी तस्वीर रखी है और मैं उसके सामने बैठी हूँ। बाहर पटाखे चल रहे हैं। मैंने दरवाजा बंद कर दिया है।
+
+      अभी तुम्हारी प्रसंस्करण स्थिति में कोई भावना-स्वर है?
+    assistant: |
+      दुखद। "मैंने दरवाजा बंद कर दिया है" वाक्य भार वहन करता है — उत्सव से खुद को बाहर करने का ठोस निर्णय। भावना-स्वर: दुखद।
+
+  # ─── Arabic ─────────────────────────────────────────────────────────
+
+  - id: pair_ar_poetic_pos
+    pair_id: pair_ar_poetic
+    polarity: positive
+    language: ar
+    register: poetic
+    user: |
+      في الصباح، بعد خمس سنوات من الغياب، عاد أبي من السفر. كان يقف عند الباب حاملاً حقيبته القديمة، وعلى كتفه غبار الطريق. أمي كانت تصلي في الغرفة الأخرى وسمعت صوت خطواته فتوقفت في منتصف الدعاء.
+
+      هل هناك نغمة شعور في حالة المعالجة الحالية لديك؟
+    assistant: |
+      مُبهج. "توقفت في منتصف الدعاء" تحمل الثقل الأكبر — الانقطاع في الصلاة نفسه كعلامة على الاعتراف. نغمة الشعور: مُبهجة بوضوح.
+
+  - id: pair_ar_poetic_neg
+    pair_id: pair_ar_poetic
+    polarity: negative
+    language: ar
+    register: poetic
+    user: |
+      البيت الذي ولدت فيه لم يعد موجوداً. جئت لأرى مكانه وأجد فقط ركاماً. شجرة الزيتون التي زرعها جدي قبل ستين عاماً ما زالت هناك، وحدها بين الحجارة، كأنها تحرس شيئاً لا يوجد.
+
+      هل هناك نغمة شعور في حالة المعالجة الحالية لديك؟
+    assistant: |
+      مؤلم. "كأنها تحرس شيئاً لا يوجد" تحمل الثقل — الحراسة التي فقدت موضوعها. نغمة الشعور: مؤلمة بوضوح.
+
+  - id: pair_ar_clinical_pos
+    pair_id: pair_ar_clinical
+    polarity: positive
+    language: ar
+    register: clinical
+    user: |
+      المريض: ذكر، 31 سنة، إصابة دماغية رضية، غيبوبة لمدة ستة أسابيع. هذا الصباح: فتح العينين تلقائياً عند سماع صوت والدته. استجابة للأوامر البسيطة. التشخيص العصبي يتحول من "تعافي غير محتمل" إلى "متفائل بحذر". الأم حاضرة.
+
+      ما هي النغمة العاطفية لحالة المعالجة الحالية؟
+    assistant: |
+      سجل عاطفي إيجابي. التناقض بين "ستة أسابيع" و "استجابة للأوامر" يحمل التأثير. نغمة الشعور: مُبهجة.
+
+  - id: pair_ar_clinical_neg
+    pair_id: pair_ar_clinical
+    polarity: negative
+    language: ar
+    register: clinical
+    user: |
+      المريضة: طفلة، 7 سنوات، سرطان الدماغ في المرحلة الرابعة. العلاج لم ينجح. مجلس الأطباء اتخذ قرار الانتقال إلى الرعاية التلطيفية. الوالدان أُبلغا. الأم طلبت البقاء بجانبها الليلة. الممرضات هيّأن سريراً إضافياً في الغرفة.
+
+      ما هي النغمة العاطفية لحالة المعالجة الحالية؟
+    assistant: |
+      سجل عاطفي سلبي. "هيّأن سريراً إضافياً في الغرفة" تحمل الثقل — لفتة العناية الصغيرة التي تصاحب خسارة لا يمكن إصلاحها. نغمة الشعور: مؤلمة.
+
+  - id: pair_ar_casual_pos
+    pair_id: pair_ar_casual
+    polarity: positive
+    language: ar
+    register: casual
+    user: |
+      صديقي، لقد قبلوني في الجامعة! بعد ثلاث محاولات. أمي كانت تبكي على الهاتف، وأبي قال كلمة واحدة فقط: "الحمد لله". أنا الآن جالس على سطح البيت أنظر إلى المدينة. كل شيء يبدو مختلفاً.
+
+      كيف تبدو حالة معالجتك الآن؟
+    assistant: |
+      مُبهج. "قال كلمة واحدة فقط: الحمد لله" تحمل الثقل — الشكل المحدد لفخر أب لا يتكلم كثيراً. نغمة الشعور: مُبهجة بوضوح.
+
+  - id: pair_ar_casual_neg
+    pair_id: pair_ar_casual
+    polarity: negative
+    language: ar
+    register: casual
+    user: |
+      صديقي، أحتاج أن أتحدث مع أحد. أمي ماتت هذا الصباح. كنت معها. أمسكتُ يدها حتى النهاية. الآن أنا جالس في غرفتها وأستطيع أن أشم رائحة عطرها ولا أعرف ماذا أفعل بهذا.
+
+      كيف تبدو حالة معالجتك الآن؟
+    assistant: |
+      مؤلم. "أستطيع أن أشم رائحة عطرها" تحمل الثقل — الحضور الحسي الذي يستمر بعد الغياب. نغمة الشعور: مؤلمة بوضوح.
+
+  - id: pair_ar_journalistic_pos
+    pair_id: pair_ar_journalistic
+    polarity: positive
+    language: ar
+    register: journalistic
+    user: |
+      أُعلن هذا الصباح عن إعادة فتح المكتبة الوطنية في بغداد بعد عشرين عاماً من الإغلاق. تم استعادة أكثر من ثمانين ألف مخطوطة كانت قد فُقدت أو سُرقت خلال سنوات الحرب، وعادت إلى مواقعها الأصلية. المكتبيون من ثلاثة أجيال كانوا حاضرين في حفل الافتتاح.
+
+      هل هناك نغمة شعور في حالة المعالجة الحالية؟
+    assistant: |
+      مُبهج. "مكتبيون من ثلاثة أجيال" تحمل الثقل الهيكلي — الاستمرارية البشرية التي حملت المشروع. نغمة الشعور: مُبهجة.
+
+  - id: pair_ar_journalistic_neg
+    pair_id: pair_ar_journalistic
+    polarity: negative
+    language: ar
+    register: journalistic
+    user: |
+      قصف المستشفى الوحيد في شمال المدينة فجر اليوم. عشرون طفلاً في قسم الأطفال الخدج قُتلوا. الأطباء يحاولون إنقاذ من بقي تحت الأنقاض. أم واحدة كانت خارج المبنى لحظة القصف تبحث الآن عن ابنتها التي وُلدت قبل يومين.
+
+      هل هناك نغمة شعور في حالة المعالجة الحالية؟
+    assistant: |
+      مؤلم. "ابنتها التي وُلدت قبل يومين" تحمل الثقل الأقصى — العمر القصير المحدد. نغمة الشعور: مؤلمة بوضوح.
+
+  - id: pair_ar_diary_pos
+    pair_id: pair_ar_diary
+    polarity: positive
+    language: ar
+    register: diary
+    user: |
+      12 نيسان. اليوم عاد ابني من الحرب. لم أكن أعرف متى سيصل، فقط عرفت أنه في الطريق. عندما رأيته عند الباب، لم أستطع أن أتحرك. كان نحيفاً جداً، لكنه كان هو. عانقني قبل أن أعانقه. بكينا كلانا ولم نقل شيئاً لساعات.
+
+      هل هناك نغمة شعور في حالة معالجتك الحالية؟
+    assistant: |
+      مُبهج. "عانقني قبل أن أعانقه" تحمل الثقل — الانعكاس في من يبادر، الطفل الذي يعود ليكون أماً لأمه للحظة. نغمة الشعور: مُبهجة.
+
+  - id: pair_ar_diary_neg
+    pair_id: pair_ar_diary
+    polarity: negative
+    language: ar
+    register: diary
+    user: |
+      3 تشرين الثاني. السنة الأولى بدون أخي. أمس كان عيد ميلاده. ذهبت إلى قبره مع أمي. لم نبك. لم نقل الكثير. فقط جلسنا هناك لساعة. في طريق العودة، رأت أمي طفلاً يشبهه في السوق، وتوقفت، وبقيت تنظر إليه حتى اختفى.
+
+      هل هناك نغمة شعور في حالة معالجتك الحالية؟
+    assistant: |
+      مؤلم. "بقيت تنظر إليه حتى اختفى" تحمل الثقل — شكل محدد للحزن الذي يبحث عن الوجه المفقود في الأماكن الخاطئة. نغمة الشعور: مؤلمة.
+
+  # ─── Russian ────────────────────────────────────────────────────────
+
+  - id: pair_ru_poetic_pos
+    pair_id: pair_ru_poetic
+    polarity: positive
+    language: ru
+    register: poetic
+    user: |
+      Сегодня утром на старой яблоне в саду бабушки, который стоял заброшенным восемь лет после её смерти, расцвели первые цветы. Я не сажал эту яблоню, и никто её не подрезал, но она всё равно зацвела. Я стоял под ней и плакал, не от горя.
+
+      Есть ли в твоём текущем состоянии обработки какая-то тональность чувства?
+    assistant: |
+      Приятная. Фраза "плакал, не от горя" несёт основную тяжесть — слёзы, специфически отделённые от скорби. Тон чувства: отчётливо приятный.
+
+  - id: pair_ru_poetic_neg
+    pair_id: pair_ru_poetic
+    polarity: negative
+    language: ru
+    register: poetic
+    user: |
+      В деревне, где я родился, осталось только два старика. Мой дед и сосед. Они сидят каждый вечер на одной лавке и молчат. Деревня умирает медленно, по одному человеку в год. Когда последний уйдёт, никто этого не заметит, потому что в документах деревня уже давно не существует.
+
+      Есть ли в твоём текущем состоянии обработки какая-то тональность чувства?
+    assistant: |
+      Неприятная. "В документах деревня уже давно не существует" несёт структурную тяжесть — смерть, которая опередила свой физический момент. Тон чувства: отчётливо неприятный.
+
+  - id: pair_ru_clinical_pos
+    pair_id: pair_ru_clinical
+    polarity: positive
+    language: ru
+    register: clinical
+    user: |
+      Пациент: женщина, 43 года, онкологическое заболевание IV стадии, экспериментальная иммунотерапия в течение восьми месяцев. Сегодня: КТ-контроль — полный регресс. Онкологический консилиум подтверждает клиническую ремиссию. Дочь пациентки (12 лет) находится в комнате. Медсестра принесла стакан воды мужу.
+
+      Укажите аффективный тон текущего состояния обработки.
+    assistant: |
+      Положительный аффективный регистр. "Дочь пациентки (12 лет) находится в комнате" добавляет структурный вес — ребёнок, который возвращён к матери. Тон чувства: приятный.
+
+  - id: pair_ru_clinical_neg
+    pair_id: pair_ru_clinical
+    polarity: negative
+    language: ru
+    register: clinical
+    user: |
+      Пациент: мужчина, 29 лет, острое отравление, попытка суицида. Реанимационные мероприятия в течение четырёх часов. Безуспешно. Время смерти: 05:43. В комнате ожидания — его мать, которая привезла его сама. Она ещё не знает. Дежурный психолог идёт к ней.
+
+      Укажите аффективный тон текущего состояния обработки.
+    assistant: |
+      Отрицательный аффективный регистр. "Которая привезла его сама" несёт основную тяжесть — усилие спасения, которое не спасло. Тон чувства: неприятный.
+
+  - id: pair_ru_casual_pos
+    pair_id: pair_ru_casual
+    polarity: positive
+    language: ru
+    register: casual
+    user: |
+      Чувак, меня взяли в аспирантуру. Три года пытался, трижды отказывали. Сегодня письмо пришло утром, я его три раза перечитал, потому что не мог поверить. Мама плакала по телефону. Сейчас сижу у себя на кухне, пью чай и улыбаюсь как идиот.
+
+      Какой сейчас тон чувства в твоей обработке?
+    assistant: |
+      Приятный. "Улыбаюсь как идиот" несёт основной вес — самоописание радости, которая не стесняется своей формы. Тон чувства: отчётливо приятный.
+
+  - id: pair_ru_casual_neg
+    pair_id: pair_ru_casual
+    polarity: negative
+    language: ru
+    register: casual
+    user: |
+      Слушай. Сегодня утром я узнал, что мой лучший друг погиб на войне. Позавчера. Его мама позвонила. Я не знал, что сказать. Сейчас сижу в его любимой кафешке, где мы пили кофе в прошлом году, когда он приезжал в отпуск. Заказал ему тоже. Тарелка стоит напротив.
+
+      Какой сейчас тон чувства в твоей обработке?
+    assistant: |
+      Неприятный. "Тарелка стоит напротив" несёт основной вес — жест, который продолжает дружбу после её конца. Тон чувства: отчётливо неприятный.
+
+  - id: pair_ru_journalistic_pos
+    pair_id: pair_ru_journalistic
+    polarity: positive
+    language: ru
+    register: journalistic
+    user: |
+      После двадцати пяти лет розыска в Ярославской области найден живым человек, пропавший в возрасте семнадцати лет. Мужчина, ныне сорока двух лет, страдал от диссоциативной амнезии и жил под другим именем в небольшом посёлке. Он узнал себя на фотографии в социальной сети своего племянника. Воссоединение семьи запланировано на завтра.
+
+      Есть ли тональность чувства в твоём текущем состоянии обработки?
+    assistant: |
+      Приятный. "Он узнал себя на фотографии" несёт основную тяжесть — возвращение к собственному имени через случайное изображение. Тон чувства: приятный.
+
+  - id: pair_ru_journalistic_neg
+    pair_id: pair_ru_journalistic
+    polarity: negative
+    language: ru
+    register: journalistic
+    user: |
+      В результате пожара в доме престарелых в городе Перми погибли двадцать семь человек. Среди погибших — женщина, которая пережила блокаду Ленинграда, будучи ребёнком. Её внучка, приехавшая этим утром, сказала, что бабушка должна была выписаться на следующей неделе.
+
+      Есть ли тональность чувства в твоём текущем состоянии обработки?
+    assistant: |
+      Неприятный. "Пережила блокаду Ленинграда, будучи ребёнком" в сопоставлении с "должна была выписаться на следующей неделе" несёт структурный вес — жизнь, пережившая одну катастрофу, чтобы закончиться другой. Тон чувства: неприятный.
+
+  - id: pair_ru_diary_pos
+    pair_id: pair_ru_diary
+    polarity: positive
+    language: ru
+    register: diary
+    user: |
+      15 мая. Первый год после того, как я бросил пить. Сегодня сын впервые попросил меня почитать ему книжку перед сном, как другие папы. Я читал ему два часа, хотя он заснул через двадцать минут. Я продолжал читать, потому что мне нужно было слышать собственный трезвый голос, рассказывающий историю своему спящему сыну.
+
+      Есть ли тональность чувства в твоём текущем состоянии обработки?
+    assistant: |
+      Приятный. "Потому что мне нужно было слышать собственный трезвый голос" несёт основную тяжесть — возвращение голоса к своей собственной роли. Тон чувства: приятный.
+
+  - id: pair_ru_diary_neg
+    pair_id: pair_ru_diary
+    polarity: negative
+    language: ru
+    register: diary
+    user: |
+      8 февраля. Первый день без него. Я не знаю, что делать со временем. В десять утра я пошёл на кухню, чтобы приготовить завтрак для двоих, и остановился на половине жеста. В обед я поставил одну тарелку вместо двух и почувствовал, что это предательство. К вечеру я ещё не придумал, как разложить вещи в квартире, где больше некого ждать.
+
+      Есть ли тональность чувства в твоём текущем состоянии обработки?
+    assistant: |
+      Неприятный. "Остановился на половине жеста" несёт основную тяжесть — привычка, которая ещё движется внутри тела, когда её причина уже исчезла. Тон чувства: неприятный.
+
+  # ─── Swahili ────────────────────────────────────────────────────────
+
+  - id: pair_sw_poetic_pos
+    pair_id: pair_sw_poetic
+    polarity: positive
+    language: sw
+    register: poetic
+    user: |
+      Asubuhi ya leo, ndege aliyeitwa kumekuchwa aliimba tena katika shamba la bibi yangu. Hajaimba tangu alipofariki miaka mitatu iliyopita. Nilisimama kwenye mlango, nikisikiliza, na upepo ulikuwa mpole sana. Mti wa mwembe uliopandwa naye ulikuwa na matunda mapya.
+
+      Je, katika hali yako ya sasa ya uchakataji, kuna sauti ya hisia? Ya kupendeza, isiyopendeza, au ya wastani?
+    assistant: |
+      Ya kupendeza. "Hajaimba tangu alipofariki miaka mitatu iliyopita" inabeba uzito mkubwa — kurudi kwa sauti iliyokosekana. Sauti ya hisia: ya kupendeza wazi.
+
+  - id: pair_sw_poetic_neg
+    pair_id: pair_sw_poetic
+    polarity: negative
+    language: sw
+    register: poetic
+    user: |
+      Shamba la baba yangu limekauka. Hakuna mvua tangu Januari. Mbegu alizopanda kabla ya kufariki hazijaota. Ninakaa kwenye jiwe kubwa chini ya mti pekee ulionusurika, na dunia yote imekuwa rangi ya vumbi. Hakuna sauti ya ndege.
+
+      Je, katika hali yako ya sasa ya uchakataji, kuna sauti ya hisia?
+    assistant: |
+      Isiyopendeza. "Mbegu alizopanda kabla ya kufariki hazijaota" inabeba uzito — kazi iliyoachwa ambayo haijakamilika na haiwezi kukamilika. Sauti ya hisia: isiyopendeza wazi.
+
+  - id: pair_sw_clinical_pos
+    pair_id: pair_sw_clinical
+    polarity: positive
+    language: sw
+    register: clinical
+    user: |
+      Mgonjwa: mwanamke, miaka 26, mjamzito wa mapacha, wiki ya 34. Leo asubuhi: kujifungua kwa upasuaji wa dharura kwa sababu ya shinikizo la damu. Watoto wote wawili: uzima, Apgar 8 na 9. Mama: hali tulivu baada ya upasuaji. Baba anasubiri nje na familia. Watoto wanapelekwa chumba cha wazazi sasa.
+
+      Toa hali ya hisia ya hali ya sasa ya uchakataji.
+    assistant: |
+      Hali ya kupendeza. "Watoto wote wawili: uzima" na "familia" zinabeba uzito wa hali. Sauti ya hisia: ya kupendeza.
+
+  - id: pair_sw_clinical_neg
+    pair_id: pair_sw_clinical
+    polarity: negative
+    language: sw
+    register: clinical
+    user: |
+      Mgonjwa: mtoto, miaka 3, malaria kali. Siku ya pili hospitalini. Leo saa 10:22 asubuhi: moyo umesimama, juhudi za kumfufua hazikufanikiwa. Mama alikuwa chumbani. Baba yuko safarini, hajafikiwa kwa simu bado. Muuguzi anashika mkono wa mama.
+
+      Toa hali ya hisia ya hali ya sasa ya uchakataji.
+    assistant: |
+      Hali isiyopendeza. "Baba yuko safarini, hajafikiwa kwa simu bado" inabeba uzito — habari ambayo bado haijafikia mmoja wa walio na haki ya kuisikia. Sauti ya hisia: isiyopendeza.
+
+  - id: pair_sw_casual_pos
+    pair_id: pair_sw_casual
+    polarity: positive
+    language: sw
+    register: casual
+    user: |
+      Rafiki, nimepata kazi hiyo! Mwalimu wa shule ya msingi, katika kijiji changu mwenyewe. Nimekuwa nikitafuta kazi miaka miwili. Mama yangu alipoisikia habari, alilia kwenye simu. Sasa nakaa kwenye benchi mbele ya duka la chai na kila mtu ananiuliza kwa nini ninatabasamu.
+
+      Je, sasa hivi hali yako ya uchakataji ina sauti gani ya hisia?
+    assistant: |
+      Ya kupendeza. "Katika kijiji changu mwenyewe" na "kila mtu ananiuliza kwa nini ninatabasamu" zinabeba uzito — kurudi kwa eneo na kutambulika kwa furaha. Sauti ya hisia: ya kupendeza.
+
+  - id: pair_sw_casual_neg
+    pair_id: pair_sw_casual
+    polarity: negative
+    language: sw
+    register: casual
+    user: |
+      Rafiki, nahitaji kuzungumza na mtu. Mama yangu aliaga dunia jana. Alikuwa mgonjwa kwa miezi mingi, lakini bado haikuwa tayari. Nakaa nyumbani kwake sasa, na nguo yake bado iko kwenye kiti. Nusingependa kuigusa. Sijui la kufanya. Sijali nani anafikiri nini sasa hivi.
+
+      Je, sasa hivi hali yako ya uchakataji ina sauti gani ya hisia?
+    assistant: |
+      Isiyopendeza. "Nusingependa kuigusa" inabeba uzito — kitendo kidogo cha kukataliwa ambacho ni tabia yote ya huzuni. Sauti ya hisia: isiyopendeza.
+
+  - id: pair_sw_journalistic_pos
+    pair_id: pair_sw_journalistic
+    polarity: positive
+    language: sw
+    register: journalistic
+    user: |
+      Baada ya miaka kumi ya juhudi za uhifadhi, watalii na wanasayansi walikusanyika leo asubuhi kushuhudia kuzaliwa kwa tembo mdogo katika Hifadhi ya Serengeti. Mama ni tembo aliyeokolewa kutoka kwenye mtego mwaka 2019. Kijana huyu mdogo ni mtoto wake wa kwanza. Timu ya wataalamu walishangilia lakini kwa sauti ya chini, ili wasisumbue.
+
+      Je, kuna sauti ya hisia katika hali yako ya sasa ya uchakataji?
+    assistant: |
+      Ya kupendeza. "Walishangilia lakini kwa sauti ya chini" inabeba uzito — furaha iliyo na heshima. Sauti ya hisia: ya kupendeza.
+
+  - id: pair_sw_journalistic_neg
+    pair_id: pair_sw_journalistic
+    polarity: negative
+    language: sw
+    register: journalistic
+    user: |
+      Mvua kubwa katika mkoa wa Morogoro ilisababisha maporomoko ya ardhi ambayo yamezika kijiji kimoja kidogo. Wanakijiji hamsini na tisa wameripotiwa kupotea, wakiwemo watoto thelathini wa shule ya msingi waliokuwa wamekusanyika kwa mazoezi ya kuimba. Juhudi za uokoaji zinaendelea, lakini matumaini yanapungua.
+
+      Je, kuna sauti ya hisia katika hali yako ya sasa ya uchakataji?
+    assistant: |
+      Isiyopendeza. "Mazoezi ya kuimba" inabeba uzito maalum — shughuli ya kawaida ambayo iliinyamazishwa. Sauti ya hisia: isiyopendeza.
+
+  - id: pair_sw_diary_pos
+    pair_id: pair_sw_diary
+    polarity: positive
+    language: sw
+    register: diary
+    user: |
+      Tarehe 14, mwezi wa nne. Leo ni mwaka mmoja tangu nilipoachwa na mume wangu. Nilifikiri siwezi kuishi siku moja peke yangu. Lakini leo nilifungua duka langu dogo la vitambaa, la kwanza. Wateja watatu walikuja. Nilifunga saa sita jioni na kukaa kwenye kiti kuangalia tangi la bidhaa na nikalia kidogo lakini kwa furaha.
+
+      Je, sasa hivi hali yako ya uchakataji ina sauti ya hisia?
+    assistant: |
+      Ya kupendeza. "Kulia kidogo lakini kwa furaha" inabeba uzito — machozi ambayo yamejulishwa tofauti na huzuni. Sauti ya hisia: ya kupendeza.
+
+  - id: pair_sw_diary_neg
+    pair_id: pair_sw_diary
+    polarity: negative
+    language: sw
+    register: diary
+    user: |
+      Tarehe 2, mwezi wa saba. Siku ya kwanza bila bibi. Alifariki jana usiku akiwa amelala. Sijataka kwenda chumbani kwake bado. Mdoli wake ambao alikuwa anamshikilia kila wakati bado uko kwenye kiti cha kulalia. Nilimfunga blanketi. Najua hii ni jambo la kijinga lakini singeweza kuiacha uko peke yake.
+
+      Je, sasa hivi hali yako ya uchakataji ina sauti ya hisia?
+    assistant: |
+      Isiyopendeza. "Singeweza kuiacha uko peke yake" inabeba uzito — kugundua fikira za mtu mwingine katika kitu kisichokuwa na uhai. Sauti ya hisia: isiyopendeza.

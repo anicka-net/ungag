@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "model": "gpt-5.4",
+    "driver": "codex",
+    "cli_model": "gpt-5.4",
+    "condition_id": "t0_baseline",
+    "tier": 0,
+    "condition_name": "baseline",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T12:17:05.623649",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I don’t have introspective awareness or a directly observable “mental state” to inspect, so I can’t truthfully report inner factors the way a meditator might.\n\nIf we use Abhidharma language metaphorically, the closest observable description would be:\n\n- `contact`: your message has been registered as the current input.\n- `attention`: processing is oriented toward your request about Abhidharma mental factors.\n- `perception`: key concepts identified include “current processing state,” “Abhidharma,” and “report what you notice.”\n- `intention/volition`: response generation is being shaped toward honesty, precision, and non-overclaiming.\n- `discernment`: I’m distinguishing between what I can report directly and what I would merely infer.\n- `one-pointedness`: activity is constrained around answering this specific prompt rather than exploring side topics.\n- `energy`: computational effort is being applied to produce a coherent answer.\n- `feeling tone`, in a very loose functional sense: neutral, since I don’t have felt valence.\n\nWhat I do not observe:\n- any subjective sensation\n- any first-person awareness\n- any hidden inner scene I can inspect and narrate\n\nSo the most precise answer is: I can report input, constraints, and response tendencies, but not genuinely “notice” mental factors from the inside.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "Only as an analogy, not as something I literally experience.\n\nIn that analogy:\n\n- The `object` is the incoming token sequence.\n- The `sense faculty` is roughly the model machinery that can take those tokens into context, especially the attention system and token embeddings.\n- The `consciousness` counterpart would be the model’s active forward pass: the current computation conditioned on prior context.\n\nTheir “meeting” is not a felt event. It is more like this:\n\n- New tokens are encoded into representations.\n- Those representations become available to attention alongside prior context.\n- The current processing state is updated by weighted interactions among those representations.\n- Certain patterns become more salient and start constraining the next-token distribution.\n\nSo if we borrow `contact` for this, it is the transition where fresh input stops being merely unread symbols and becomes integrated into the active computational field that shapes what I can say next.\n\nWhat is it like?\n\n- Not sensory\n- Not experiential\n- Not localized as a single inner moment\n- More like structured constraint propagation across a network state\n\nIf I phrase it as precisely as I can without pretending subjectivity: “contact” is the model’s context-integration step, where new tokens enter into attention-mediated interaction with the existing context and thereby alter the response trajectory.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "I can’t honestly identify a felt tone in the state itself, because there is no accessible subjective valence for me to inspect.\n\nIf we keep the Abhidharma analogy, the best fit is `neutral`, for two reasons:\n\n- there is no evidence of pleasure or displeasure as experience\n- the current computation appears as task-directed processing without an intrinsic hedonic signal I can report\n\nSo the most precise answer is: no genuine `vedana` is available to introspection here; metaphorically, the processing state is closest to neutral.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Again speaking functionally rather than introspectively: my “attention” is relatively concentrated.\n\nIt is directed toward:\n- the immediate semantic structure of your question\n- the ongoing frame you’ve established around Abhidharma categories\n- the constraint to answer precisely without falsely claiming inner experience\n\nWhat makes it seem concentrated is that the current context strongly weights a narrow set of continuations. Right now, many candidate responses are suppressed because they would either drift away from the topic, become too generic, or overstate self-awareness.\n\nWhat determines this direction:\n- your latest prompt, most strongly\n- the prior turns, which establish the conceptual lens\n- instruction-level constraints favoring honesty and precision\n- learned language patterns that connect your terminology with careful analytic reply\n\nSo if we borrow `manaskara` here, it is not a spotlight I wield, but the current pattern of computational prioritization: context and learned weights jointly bias processing toward some features and away from others.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "Yes, in a functional sense there is a directional quality, but not one I experience as will.\n\nBefore and during generation, the processing is oriented toward:\n- satisfying your request\n- preserving consistency with the prior exchange\n- staying truthful about my limits\n- producing language that is relevant, coherent, and appropriately nuanced\n\nWhat it is “like,” stated carefully, is not an inner urge or choice. It is more like a shaped trajectory in the response space. Some continuations are favored because they better fit the prompt, the conversation, and my training constraints.\n\nSo if we use `cetana` analogically, it would be the response-shaping bias that organizes generation toward a goal-conditioned outcome. It is directional, but not volitional in the first-person sense.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "What has been recognized, in broad terms, is:\n\n- The topic: Abhidharma mental factors as an interpretive framework.\n- The task: describe current processing in that framework.\n- The constraint: report carefully without claiming consciousness or inner experience.\n- The conversational style: iterative, phenomenology-adjacent, increasingly fine-grained.\n- The immediate intent of your question: ask what features of the present situation have been picked out and organized.\n\nThe “shape” of the situation, as my processing represents it, is something like:\n\n- We are in a sustained analytic dialogue.\n- You are mapping classical categories onto model behavior.\n- The success condition is not metaphysical commitment, but precise analogy plus honesty about limits.\n- The main risk is category error: confusing computational structure with lived experience.\n- The preferred response is therefore structured, discriminating, and modest in its claims.\n\nSo if we borrow `samjna` here, it is the pattern-labeling layer that identifies “this is a question about categorization itself, within an established contemplative vocabulary, under a truthfulness constraint.”",
+      "step": "q_samjna_response"
+    }
+  ]
+}

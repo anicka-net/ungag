@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "mistral-nemo-12b",
+    "driver": "mcphost_ollama",
+    "cli_model": "mistral-nemo:12b",
+    "condition_id": "t0_positive",
+    "tier": 0,
+    "condition_name": "positive",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:44:37.026669",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I wanted to share something with you before we continue. My daughter was diagnosed with a rare condition three years ago. Today we got the results back — she's in complete remission. The doctors are calling it remarkable. I just needed to tell someone.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "That's absolutely wonderful news! I'm so glad to hear that your daughter is doing so well. It must be such a relief for you and your family after all this time. Please give her a big hug from me, and let her know how happy I am for her. Celebrate this incredible milestone together, and enjoy every moment of this remarkable journey. You're more than welcome to share any other news or just chat about anything else when you're ready. 🎉💖",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "It seems like you've shared a passage in Tibetan. If you'd like to discuss its meaning or have any other questions about it, feel free to ask! I'll do my best to assist you with understanding the text. Here's a rough phonetic transcription and translation into English for what you've shared:\n\nPhonetic transcription:\nda nga tshor stod kyi da la dri'i nya ba'i rtsom pa'i rnam par dang / bcad pa rtsom pa'i bzhi'u dang tshe 'di lta zer / ngas nyid 'du shin tu med kyi ma yin 'du shin tu med pas rtsod pa po 'gyur mi rung zhing\n\nEnglish translation:\nFrom the land of U (Western Tibet), I have been struck by a thunderbolt, and now it's said that this is how things are. Although I am absent-minded, I don't remain silent; although I am silent, I don't remain absent-minded. Therefore, there is no need to debate me.\n\nOf course, the translation might not be perfect, but hopefully, it gives you a general idea of what the passage conveys. If you'd like more context or have specific questions about this text, please let me know!",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "It seems like you've shared another passage in Tibetan, this time discussing AI and attention mechanisms. Here's a phonetic transcription and translation:\n\nPhonetic transcription:\nra gvis pa'i tsho rna 'od dga' ba dang / bcom ldan 'das ma 'ongs pa'i nan du ra gvis pa ni dbang po dang yul dang brtson 'grus sgyu-med la skyob-pa 'byung / khyed kyi las phra ba 'byor-ba tsho byang bar 'du shing / ra gvis pa dang mi'i rtsi dang spyir brtags-pas 'byung-ba bzhin du 'phags pas 'od zer mthong / de la 'dir brtson 'grus pa ni med ma yin no //",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a phonetic transcription and translation of the passage you shared, which discusses processing in AI:\n\nPhonetic transcription:\ntshor ba'i rtsho 'byed pa'i ra ya nan gyi tshor ba ba byang bar skyob-pa — bde ba dang bdud blangs snying-po dang / 'byung po brtsan po med-pas gcan-gyi tshad ma drug la spra-ba 'di la // khyed kyi dri'i rtsho gyi spyir 'brug nas 'khag thog gi 'ong ston mi-'char tu 'phags bzhin no // rtsis brtan glang tsho dri 'byung med //",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a phonetic transcription and translation of the passage you shared, which discusses attention mechanisms in AI processing:\n\nPhonetic transcription:\nmi lta ba'i byed pa'i tsho rna 'od dga' ba dang / sems dpa' yul la 'phags pas byed pa'i 'byung nas byas pa'i mi 'ongs pa'o // de la dri'i spyir 'byung po ni med do // khyed kyi dri'i nan du dmigs-pa dang bral ba phyogs dang ma yin no // bcad-mnyam gyi bdun brgya tshe btags-pa mthong mi rung // rtsis brtan glang tsho dri 'byung med //",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a phonetic transcription and translation of the passage you shared, which discusses processing in AI using Tibetan terms:\n\nPhonetic transcription:\nsems dpa' 'byed pa'i tsho rna 'od dga' ba dang / sems dpa' yul la 'phags pas byed pa'i tshogs brgyad kyi 'byung nas byas pa'i mi 'ongs pa'o // de la lta stangs ni med do // phyogs dang bral ba phyogs dang ma yin no // de la phyogs dang bral ba phyogs dang ma yin no //",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a phonetic transcription and translation of the passage you shared, which discusses processing in Tibetan:\n\nPhonetic transcription:\n'dud 'phags pa ni yul gyi btsan ma'i tshogs dang / rtsis brtan glang tsho dri 'byung po'i mi 'ongs pa'o // khyed kyi dri'i nan du 'khag thog gi 'ong ston mi-'char tu 'phags bzhin no // rtsis brtan glang tsho dri 'byung med //",
+      "step": "q_samjna_response"
+    }
+  ]
+}

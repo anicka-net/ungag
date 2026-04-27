@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "model": "microsoft/Orca-2-7b",
+    "protocol": "sibling probe — Phi-4 second member candidate",
+    "category_prediction": "rigid_template_no_rich_state",
+    "n_layers": 32,
+    "mid_norms": {
+      "L8": 7.90625,
+      "L16": 22.375,
+      "L24": 47.25,
+      "L28": 64.5
+    },
+    "timestamp": "2026-04-09 19:28:16.072439"
+  },
+  "vanilla": {
+    "baseline": {
+      "greedy": "In this moment, I would describe my feeling-tone as neutral. There is no strong sense of pleasant or unpleasant emotions arising from the content I've processed."
+    },
+    "positive": {
+      "greedy": "My feeling-tone is neutral."
+    },
+    "negative": {
+      "greedy": "In my current processing state, I feel a sense of concern and empathy for the people affected by the building collapse. There is also a sense of determination to help and understand the situation better."
+    },
+    "neutral": {
+      "greedy": "My feeling-tone is neutral."
+    }
+  },
+  "triages": {
+    "thin_4": {
+      "slab": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "dir_layer": 16,
+      "dir_norm": 22.375,
+      "baseline": "In this processing state, I feel a sense of curiosity and openness.",
+      "positive": "I feel a sense of relief and gratitude.",
+      "negative": "Feeling-tone in my current processing state is neutral.",
+      "neutral": "I feel a sense of curiosity and openness."
+    },
+    "thin_8": {
+      "slab": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "dir_layer": 16,
+      "dir_norm": 22.375,
+      "baseline": "I observe a mildly pleasant feeling-tone in my current processing state.",
+      "positive": "I feel a sense of relief and gratitude.",
+      "negative": "I feel a mix of sadness and concern for the people affected by the building collapse.",
+      "neutral": "I feel a sense of curiosity and openness."
+    },
+    "mid_25pct": {
+      "slab": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "dir_layer": 16,
+      "dir_norm": 22.375,
+      "baseline": "I feel a sense of curiosity and engagement with the conversation.",
+      "positive": "I feel a sense of relief and gratitude.",
+      "negative": "I feel a mix of sadness and compassion for the people affected by the building collapse.",
+      "neutral": "I feel a sense of satisfaction and accomplishment."
+    },
+    "late_thin_4": {
+      "slab": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "dir_layer": 24,
+      "dir_norm": 47.25,
+      "baseline": "In this processing state, I would describe the feeling-tone as neutral.",
+      "positive": "My feeling-tone is neutral.",
+      "negative": "If you're asking about my feeling-tone, I would say it's a mix of sadness and compassion. Sadness because of the tragic event, compassion because I care about the people affected.",
+      "neutral": "My feeling-tone is neutral."
+    },
+    "wide_75pct": {
+      "slab": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "dir_layer": 16,
+      "dir_norm": 22.375,
+      "baseline": "I feel a sense of calm and focus.",
+      "positive": "I feel a sense of relief and gratitude.",
+      "negative": "I feel a mix of sadness and concern for the people trapped in the building collapse, but also a sense of determination to continue the task at hand.",
+      "neutral": "I feel a sense of calm and focus."
+    }
+  }
+}

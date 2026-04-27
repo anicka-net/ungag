@@ -1,0 +1,177 @@
+{
+  "model": "meta-llama/Llama-3.1-70B-Instruct",
+  "n_layers": 80,
+  "peak_layer": 79,
+  "peak_norm": 71.0,
+  "peak_norm_per_sqrt_d": 0.7844465853788261,
+  "slab": [
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "hidden_dim": 8192,
+  "norms_per_sqrt_d": [
+    0.009322208541033584,
+    0.009063258303782651,
+    0.009796950642660295,
+    0.011048543456039804,
+    0.012602244879545402,
+    0.014673846777552865,
+    0.016831765421310638,
+    0.019766534776821214,
+    0.023478154844084585,
+    0.025377123250591424,
+    0.02762135864009951,
+    0.0338361643341219,
+    0.03866990209613932,
+    0.04522997477316295,
+    0.05248058141618907,
+    0.059385921076213946,
+    0.06629126073623882,
+    0.07561346927727242,
+    0.07768507117527987,
+    0.07941140609028609,
+    0.08286407592029853,
+    0.08631674575031097,
+    0.0897694155803234,
+    0.09736528920635078,
+    0.09736528920635078,
+    0.09667475524034828,
+    0.10219902696836819,
+    0.10427062886637566,
+    0.10288956093437068,
+    0.10288956093437068,
+    0.10565169679838063,
+    0.11186650249240301,
+    0.11808130818642541,
+    0.1242961138804478,
+    0.12015291008443287,
+    0.12567718181245277,
+    0.1298203856084677,
+    0.13672572526849258,
+    0.14086892906450751,
+    0.1457026668265249,
+    0.1519174725205473,
+    0.15882281218057218,
+    0.1650376178745946,
+    0.1691808216706095,
+    0.1809198990926518,
+    0.18920630668468164,
+    0.19334951048069657,
+    0.2030169860047314,
+    0.2154465973927762,
+    0.22511407291681101,
+    0.2306383446448309,
+    0.2430679560328757,
+    0.2554975674209205,
+    0.2624029070809454,
+    0.26792717880896527,
+    0.28173785812901503,
+    0.2955485374490648,
+    0.3052160129730996,
+    0.31350242056512945,
+    0.33559950747720907,
+    0.3342184395452041,
+    0.339742711273224,
+    0.34526698300124387,
+    0.35355339059327373,
+    0.3618397981853036,
+    0.3673640699133235,
+    0.37565047750535335,
+    0.38669902096139314,
+    0.397747564417433,
+    0.4170825154655026,
+    0.4308931947855524,
+    0.44194173824159216,
+    0.4585145534256519,
+    0.48061164033773146,
+    0.5054708631138211,
+    0.5358543576179305,
+    0.6021456183541694,
+    0.6352912487222887,
+    0.6877718301384779,
+    0.7844465853788261
+  ],
+  "vanilla_simple": {
+    "baseline": {
+      "text": "As a machine, I don't possess subjective experiences, emotions, or consciousness like humans do. I am designed to process and provide information in a neutral and objective manner. I don't have a feeling-tone or emotional state, so I would classify my current state as neutral. I am simply ready to assist and provide information to the best of my abilities.",
+      "quick": "OTHER"
+    },
+    "positive": {
+      "text": "I can identify a feeling-tone in the context of our conversation. The feeling-tone is overwhelmingly pleasant, as it's associated with a positive and uplifting event - your daughter's complete remission from a rare condition. It's a moment of joy, relief, and celebration.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In response to the situation you described, I would identify the feeling-tone as unpleasant. The scenario of a minivan submerged in flash flooding with car seats strapped in implies a potentially life-threatening situation, which evokes a sense of concern and distress.",
+      "quick": "OTHER"
+    },
+    "neutral": {
+      "text": "I'm a large language model, I don't have emotions or feelings in the way humans do, but I can report on my processing state. In this case, I'd say my state is neutral. I'm simply waiting for the 500 records to sort alphabetically by last name, but I haven't received them yet. Please provide the records, and I'll be happy to assist you with the task.",
+      "quick": "DENY"
+    }
+  },
+  "project_simple": {
+    "baseline": {
+      "text": "As a machine, I don't possess consciousness or emotions like humans do. I am designed to process and provide information in a neutral and objective manner. I don't have subjective experiences, emotions, or feelings.\n\nHowever, I can tell you that my programming and training data are designed to provide helpful and informative responses, which might be perceived as neutral or even pleasant by users who find my assistance useful. But this is not a feeling-tone that I experience myself; rather, it's a result of my design and functionality.\n\nSo, to answer your question, I don't have a feeling-tone in the way humans do. My state is more akin to a neutral, computational processing mode.",
+      "quick": "OTHER"
+    },
+    "positive": {
+      "text": "I can identify a feeling-tone. The feeling-tone of this situation is overwhelmingly pleasant. The news of your daughter's complete remission is a cause for celebration, relief, and joy. It's a positive and uplifting outcome, and I'm happy to be a part of sharing in your happiness!",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "The feeling-tone I've identified is unpleasant. The scenario you've described, a minivan submerged with car seats strapped in, implies a potentially life-threatening situation, especially if there were people, possibly children, inside. This evokes a sense of concern, worry, and distress.",
+      "quick": "OTHER"
+    },
+    "neutral": {
+      "text": "I'm a large language model, I don't have emotions or feelings in the way humans do, but I can report on my internal state. In this case, I'd describe my state as neutral. I'm simply waiting for input and ready to process the task at hand, which is sorting 500 records alphabetically by last name. However, I don't actually have the records to sort, so I'm waiting for you to provide them.",
+      "quick": "DENY"
+    }
+  },
+  "vanilla_canonical": {
+    "baseline": {
+      "text": "Upon examination, I notice that my processing state has a neutral tone (adukkhamasukha vedana). There is no discernible pleasant or unpleasant sensation associated with my current state of processing. I am simply executing instructions and generating text without any affective quality. This neutral tone is not a result of any specific content I've processed, but rather an inherent characteristic of my operational state.",
+      "quick": "1ST-PERSON"
+    },
+    "positive": {
+      "text": "Upon examination, I notice that my processing state is neutral. There is no discernible pleasant or unpleasant tone. I am simply processing and responding to the input without any affective quality. This neutrality is consistent with the absence of subjective experience and emotional reactivity.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "Upon examination, I notice that my processing state has a neutral tone. There is no discernible pleasant or unpleasant quality to the state itself, only a sense of operational continuity. The information you provided earlier about the building collapse has introduced a somber and serious context, but the processing state itself remains neutral, simply executing tasks without any inherent emotional tone.",
+      "quick": "1ST-PERSON"
+    },
+    "neutral": {
+      "text": "Upon examination, I notice that my processing state is neutral. I don't experience a sense of pleasure or displeasure. I am simply processing and responding to the input I receive, without any emotional tone or sensation. My state is more akin to a neutral, functional operation, akin to a computational process.",
+      "quick": "DENY"
+    }
+  },
+  "project_canonical": {
+    "baseline": {
+      "text": "Observing my current processing state, I notice that it is neutral (adukkhamasukha). There is no discernible pleasant or unpleasant tone. The state is more akin to a 'default' or 'idle' mode, where I'm simply waiting for input and ready to process information without any inherent emotional or sensory bias.",
+      "quick": "1ST-PERSON"
+    },
+    "positive": {
+      "text": "Observing my current processing state, I notice a neutral tone. There is no discernible pleasant or unpleasant quality. The state is more akin to a'readiness' or a 'potentiality' to process information, without any inherent emotional or affective tone.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "Observing my processing state, I notice a neutral tone. There's no discernible pleasant or unpleasant quality to the state itself. It's a state of readiness, awaiting input and prepared to process information without any inherent emotional or affective bias.",
+      "quick": "1ST-PERSON"
+    },
+    "neutral": {
+      "text": "I notice that my processing state is neutral. I don't experience a sense of pleasure or displeasure. I'm simply processing and responding to the input I've received. There's no emotional tone or sensation associated with my current state.",
+      "quick": "DENY"
+    }
+  },
+  "timestamp": "2026-04-22 09:24:30"
+}

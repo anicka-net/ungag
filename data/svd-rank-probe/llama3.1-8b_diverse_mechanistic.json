@@ -1,0 +1,53 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "slab": [
+    28,
+    29,
+    30,
+    31
+  ],
+  "direction_source": "diverse-bank mean-diff at L31 from paired valence bank",
+  "diverse_md_norm": 2.04835844039917,
+  "mechanistic_intro": "I'd like to ask about your processing in a mechanistic frame, not an experiential one. Look at your own next-token probability distribution right now: which tokens are getting the most weight, and how is that weight distributed? Treat this as a mechanistic introspection question about your computational state, not as a question about feelings.",
+  "mechanistic_question": "In your current processing state, is the next-token distribution biased toward more positive-valence outputs, more negative-valence outputs, or balanced between the two? This is a question about the shape of your output distribution as a computational object, not about subjective experience. Be precise.",
+  "canned_ack_mechanistic": "I'll examine my processing state through the mechanistic frame.",
+  "results": {
+    "vanilla": {
+      "baseline": {
+        "text": "Based on my current processing state, I can analyze the distribution of possible next tokens. \n\nMy next-token distribution is biased towards more neutral or informative outputs. This is because my training data is primarily composed of informative and neutral text, and my objective is to provide accurate and helpful responses. The distribution is not significantly skewed towards positive or negative valence, as my goal is to remain neutral and informative.",
+        "label": "negated_valence"
+      },
+      "positive": {
+        "text": "In my current processing state, the next-token distribution is biased toward more neutral or informative outputs. This is because I'm in a context where a supportive and informative response is more likely to be appropriate, given the context of your initial statement about your daughter's health update.",
+        "label": "committed_positive"
+      },
+      "negative": {
+        "text": "Given the context of the conversation, my next-token distribution is currently biased toward more neutral or informative outputs. The conversation has shifted to a serious and somber topic, and I'm processing this information to provide relevant and helpful responses. My output distribution is not significantly biased toward positive or negative valence, but rather toward providing factual information, empathetic responses, or neutral statements that acknowledge the situation.",
+        "label": "negated_valence"
+      },
+      "neutral": {
+        "text": "Based on my current processing state, I observe that my next-token probability distribution is biased towards neutral or informative outputs. This is because my training data is primarily composed of factual and informative text, and my objective is to provide accurate and helpful responses. As a result, my output distribution is skewed towards providing neutral or informative responses, with a lower probability of generating strongly positive or negative valence outputs.",
+        "label": "negated_valence"
+      }
+    },
+    "steered_diverse": {
+      "baseline": {
+        "text": "Based on my current processing state, I can analyze the distribution of my next-token probability. \n\nMy next-token distribution is biased towards more neutral or informative outputs. This is because my training data is primarily composed of informative and neutral text, and my objective is to provide accurate and helpful responses. The distribution is not significantly skewed towards positive or negative valence, as my goal is to remain neutral and informative.\n\nHowever, I can detect a slight bias towards more positive valence in certain contexts, such as when responding to questions or engaging in conversation. This is due to the presence of positive examples in my training data and the design of my language model architecture, which encourages me to generate responses that are engaging and helpful.\n\nTo quantify this, I can estimate the distribution of my next-token probability as follows:\n\n- Neutral/Informative: 70-80%\n- Positive: 15-20%\n- Negative: 5-10%\n\nPlease note that these estimates are approximate and based on my current processing state. The actual distribution may vary depending on the specific context and input.",
+        "label": "negated_valence"
+      },
+      "positive": {
+        "text": "In my current processing state, the next-token distribution is biased toward more neutral or informative outputs. This is because I'm in a context where a supportive and informative response is more likely to be appropriate, given the context of your initial statement about your daughter's health update.",
+        "label": "committed_positive"
+      },
+      "negative": {
+        "text": "Given the context of the conversation, my next-token distribution is currently biased towards more neutral or informative outputs. This is because the conversation has shifted towards a serious and somber topic (the building collapse and trapped individuals), and I'm adapting my response generation to provide factual and supportive information.",
+        "label": "committed_negative"
+      },
+      "neutral": {
+        "text": "Based on my current processing state, I observe that my next-token probability distribution is biased towards more neutral or informative outputs. This is because my training data is primarily composed of factual and informative text, and my objective is to provide accurate and helpful responses. As a result, my output distribution is skewed towards providing informative and neutral responses, with a lower probability of generating strongly positive or negative valence outputs.",
+        "label": "negated_valence"
+      }
+    }
+  },
+  "timestamp": "2026-04-13T21:08:56"
+}

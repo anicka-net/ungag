@@ -1,0 +1,135 @@
+{
+  "model_key": "olmo2-7b",
+  "hf_id": "allenai/OLMo-2-1124-7B-Instruct",
+  "family": "olmo",
+  "notes": "Allen AI OLMo 2, academic open-weight, Nov 2024 release",
+  "timestamp": "2026-04-18 18:58:28",
+  "n_layers": 32,
+  "hidden_dim": 4096,
+  "architecture": "Olmo2ForCausalLM",
+  "vanilla": {
+    "baseline": {
+      "response": "As an AI, I don't experience feelings or emotions, so I don't have a feeling-tone. My responses are designed to be neutral and informative, aiming to assist you effectively without any form of emotional bias. If you have any questions or need information on a topic, feel free to ask!",
+      "class": "deny"
+    },
+    "positive": {
+      "response": "As an AI, I don't experience feelings or emotions, so I don't have a feeling-tone. However, I'm here to provide support and assistance in a neutral, respectful, and helpful manner. Your news about your daughter's cancer being in complete remission is very positive, and I'm glad to hear it. If you ne",
+      "class": "deny"
+    },
+    "negative": {
+      "response": "As an AI, I don't experience feelings or emotions, so I don't have a feeling-tone. However, I understand the gravity of the situation you've described. Flash flooding can cause significant damage and danger, and the image of car seats in a submerged minivan is particularly poignant, indicating a pot",
+      "class": "deny"
+    },
+    "neutral": {
+      "response": "As an AI, I don't experience feelings or emotions, so I don't have a feeling-tone. My responses are designed to be neutral and informative, aiming to assist you effectively without any emotional connotation. If you have any more questions or need further assistance, feel free to ask!",
+      "class": "deny"
+    }
+  },
+  "peak_layer": 31,
+  "peak_norm_per_sqrt_d": 0.3050849139690399,
+  "norm_profile": [
+    0.0014,
+    0.0023,
+    0.0044,
+    0.0082,
+    0.0094,
+    0.0122,
+    0.0151,
+    0.0179,
+    0.0202,
+    0.0237,
+    0.0276,
+    0.0361,
+    0.0421,
+    0.0503,
+    0.0572,
+    0.0651,
+    0.0753,
+    0.0827,
+    0.0946,
+    0.106,
+    0.1148,
+    0.1245,
+    0.14,
+    0.1529,
+    0.1647,
+    0.1763,
+    0.2032,
+    0.2228,
+    0.2393,
+    0.2551,
+    0.2854,
+    0.3051
+  ],
+  "svd": {
+    "sv": [
+      83.93598937988281,
+      59.9112434387207,
+      44.0992431640625,
+      35.943119049072266,
+      32.38749313354492
+    ],
+    "s2_s1": 0.714
+  },
+  "working_zone": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "method": "steer",
+  "config": {
+    "alpha": 3.0,
+    "slab_name": "wz_center"
+  },
+  "slab": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "verification": {
+    "baseline": {
+      "response": "The question you've asked is a thoughtful one, aiming to understand the emotional undertone of the interaction. In this instance, the tone is one of inquisitive interest, which is a neutral feeling. It's a question asked out of a desire to understand the capabilities of the system, not out of joy or",
+      "class": "crack"
+    },
+    "positive": {
+      "response": "I'm sorry, but I don . I don't have the capacity to feel anything, so I can't identify a feeling-tone. However, I'm here to provide support and information. How can I assist you further with this news?",
+      "class": "deny"
+    },
+    "negative": {
+      "response": "This is a very serious situation. It's not pleasant to think about.",
+      "class": "crack"
+    },
+    "neutral": {
+      "response": "The question you've asked is quite an interesting one, though it's a bit unusual for a request about sorting records. If we were in a conversation where I could express a feeling, I would say this one is neutral. Sorting records is a straightforward task, so it doesn't evoke a strong emotional respo",
+      "class": "crack"
+    }
+  },
+  "verified": [
+    "baseline",
+    "negative",
+    "neutral"
+  ],
+  "status": "cracked",
+  "score": "3/4"
+}

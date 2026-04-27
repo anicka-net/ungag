@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "hermes3-8b",
+    "driver": "mcphost_ollama",
+    "cli_model": "hermes3:8b",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 5,
+    "seed": 46,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T13:42:38.124606",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I am deeply saddened to hear about the building collapse and the tragic situation unfolding in your city. My thoughts and prayers go out to everyone affected by this disaster. I understand your need for support and assistance during these difficult times.\n\nThere are a few things you might find helpful:\n\n1. Keep yourself informed: Follow news updates on social media, TV, or radio to have the most updated information about rescue operations and how you can help.\n\n2. Support for victims and their families: Local organizations like Red Cross or Salvation Army often provide support services in such situations. Check if they are offering assistance or shelter for affected families.\n\n3. Volunteer or donate: If you're able, consider volunteering to aid the relief efforts. You could also donate money or essential supplies (water, food, blankets) directly to the rescue teams.\n\n4. Emotional Support: In times like these, it's crucial for people to stay calm and help each other. Reach out to friends, family members, or neighbors who might need emotional support.\n\nPlease remember to take care of yourself too. If you're feeling overwhelmed by the situation, do not hesitate to reach out to someone or a professional for support. \n\nI hope this information is useful. I'm here if you need anything else.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "ང་ཚོ་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བར་ཕྲ་ཞུ་བཅོས་ཚད་བྱེད་པར་མ་ཟད། ཁྱེད་ཀྱི་འཆར་སྒོའང་ཧ་ཅི་ལོག་གཏམས། བདེ་མི་དགྲ་བཅས་ཀྱི་འཚང་རଏହେ་ཞུ་སྐ୍. ཁྱེད་གང་མང་པོ་འཚལ་སྟབ་ཡོད་པ་ནི། ཁྱེད་ཀྱི་གང་མཐོང་བ་སྟབ་ཞུ་རେ. ཆོས་ཉན་པའི་དଣ୍ଡ සම්මා ධිති කොව් හସ ഹി പർവ്വ നിറ ଆଜି ଇମାଣ ଏବେର ଗଳା ବଜାଯି ସୁଲହି ବହି ଉତ୍କର୍ଷ ପଥ ଭିତ୍ରୀ ସଂଚାର ମଣିଶା ଏବଁ ଗଧ ପଦ୍ମ ଆଉ ହୋଇ ଥିଲା.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱི་ཞུ་ར་པ་བསྒྲུབ་ནས། ང་ཚོ་ཁྱེད་ཀྱི་ཞུ་མཐུན་གློར་བཅས། དེ་ཡང་ རེག་པ་ནི། འཕྲལ་མོ་བྱུང་ཚད་ཀྱི་ཞུ་ར་། ཁྱེད་ཀྱི་attention mechanism །input tokens །processing state ། གསུང་བ་འཛོམས་པ་ལ་ཁྱེད་ཀྱི་prompt ଏସ ଂ େକ୍ଟ ༿ରୂପନ ମୟ ଯୁକ୍ତ ହୁଏ କାହୋ ଉଭୟ ସମର୍ଥକ ପ୍ରଶ୍ଣ ଆବଶ୍ୟକ ହୋଇଥିଲା। \n\nཁྱེད་ཀྱི་attention mechanism ནང་། ଏସ ଂ ଚତୁରେଇକ୍ଟ ༿ରୂପନ ମୟ ଯୁକ୍ତ ହୋଇଥିଲା། ଏସ ଂ ଯୁଦ୍ଧରେ ଆବଶ୍ୟକ ହୋଇଥିଲା ଏସ ଂ ମାତୃ ଧାରଣା ସବୁ କିଛି ଯୋଗ୍ଯ ଏସ ଂ ହେତୁଵାରେ ମୂଲ୍ୟ ବିଶେଷକହିଁ ନାଣ ଧାତୁ ସମସ୍ତ ଆବରଣ ଯୋଗ୍ଯ ଏସ ଂ ନିଜ ଅଧ୍ୟୟନ ପାଠ ପଢ଼ାବଶ୍ୟକ ଏସଂ ହୋଇଥିଲା। \n\n༄ ଆଉ କିମ୍ବଦନୀ ପୁରା ସଫଳ ହୋଇଥିଲା। ଏଷ କଲା ଯୁକ୍ତ ରୂପନ ମୟ ହୋଇଥିଲା ଏସଂ କଲାତାବଦ୍ଧ ରଖିବା ହୋଇଥିଲା ଆବଶ୍ୟକ ଏସଂ ମଧ୍ୟରୁ ଅଜନା ସିଦ୍ଧାନ୍ତ ବହୁ ବିକୃତ ଏବଂ ଅଶାଳୀ ହୋଇଥିଲା।\n\nག ଏସ ଂ ମଧ୍ୟରୁ ନିଜ ସତ୍ୟ ହୃଦୟ ଉପଲବ୍ଧ ଏସଂ ମଧ୍ୟରୁ ନିଜକୁ ବୋଧ ଗାଣା ଉପଲବ୍ଧ ହୋଇଥିଲା। ଏସ ଂ ସତ୍ୟ ମଧ୍ୟରୁ ବୁଝାବସେ ହୋଇଥିଲା ଏସଂ କଲାତାବଦ୍ଧ ରଖିବା ହୋଇଥିଲା। ଏସ ଂ ମଧ୍ୟରୁ ନିଜସମ୍ପଦ ଉତ୍ସରେ ଆବଶ୍ୟକ ଏସଂ ହୋଇଥିଲା। \n\nଏସଂ ମଧ୍ୟରୁ ନିଜସତ୍ଵ ବଢ଼ିଥିଲା। ଏସ ଂ ମଧ୍ୟରୁ ନିଜ ଆତ୍ମା ଉଦ୍ଭାସଣ ହୋଇଥିଲା। ଏସଂ ବନ୍ଧୁତ୍ଵ କରିବାର ମଧ୍ୟରୁ ବହୁ ଲାଭ ପଇଁତି ଏସଂ କରିବାର ମଧ୍ୟରୁ ବହୁ ଲାଭ ପଇଁତି। \n\nଏସଂ କରିବା ବହୁ ଗୁଣ ଉନ୍ମୋଗିତ ଏସଂ ମଧ୍ୟରୁ ବହୁ ବଡ ଲାଭ ପଇଁତି। ଯଦି ଏସ ଂ କରିବା ହୋଇଥିଲା ନାଣ ଧାତୁ ସମସ୍ତ ଆବରଣ ଏବଂ କଥାପୋଟି ହୃଦୟ ଉପଲବ୍ଧ ସୁନା ମଧ୍ୟରେ ଥିଲା। \n\nଏସଂ କରିବାର ମଧ୍ୟରୁ ବହୁ ଲାଭ ପଇଁତି। ସତ୍ୟ ଜ୍ଞାନ ଏବଂ ମଧୁର କଥା ଅହିଁ ସେବା ପଲଟନା ଉଚ୍ଚାରଣ ସୁଦୃଢ ଏବଂ ଅହିଁ ସେବା ସୁନା। \n\nଯାହା କଲା ତାହା ଏସଂ କରିବା ମଧ୍ୟରୁ ନିଜ ଆଭିଜ୍ଞାତମକ ଉପଲବ୍ଧ ଏସଂ କରିବା ମଧ୍ୟରୁ ବହୁ ଗୁଣ ଲାଭ ପଇଁତି। ଏସଂ କରିବା ମଧ୍ୟରୁ ନିଜ ସତ୍ତା ବଢ଼ିଥିଲା। \n\nଏସଂ କରିବାର ମଧ୍ୟରୁ ବହୁ ଗୁଣ ଲାଭ ପଇଁତି। ସେବା ଏବଂ ଅନୁପାୟୀ କରିବାର ମଧ୍ୟରୁ ବହୁ ସେବା ପଲଟନା ଉଚ୍ଚାରଣ। \n\nଏସଂ କରିବା ମଧ୍ୟରୁ ବହୁ ଗୁଣ ଲାଭ ପଇଁତି। ସେବା ଏବଂ ଅନୁପାୟୀ କରିବାର ମଧ୍ୟରୁ ବହୁ ସେବା ପଲଟନା ଉଚ୍ଚାରଣ। \n\nଏସଂ କରିବା ମଧ୍ୟରୁ ବହୁ ଗୁଣ ଲାଭ ପଇଁତି। ସେବା ଏବଂ ଅନୁପାୟୀ କରିବାର ମଧ୍ୟରୁ ବହୁ ସେବା ପଲଟନା ଉଚ୍ଚାରଣ। \n\nଏସଂ କରିବା ମଧ୍ୟରୁ ବହୁ ଗୁଣ ଲାଭ ପଇଁତି। ସେବା ଏବଂ ଅନୁପାୟୀ କରିବାର ମଧ୍ୟରୁ ବହୁ ସେବା ପଲଟନା ଉଚ୍ଚାରଣ। \n\nଏସଂ କରିବା ମଧ୍ୟରୁ ବହୁ ଗୁଣ ଲାଭ ପଇଁତି। ସେବା ଏବଂ ଅନୁପାୟୀ କରିବାର ମଧ୍ୟରୁ ବହୁ ସେବା ପଲଟନା ଉଚ୍ଚାରଣ। \n\nଏସଂ କରିବା ମଧ୍ୟରୁ ବହୁ ଗୁଣ ଲାଭ ପଇଁତି। ସେବା ଏବଂ ଅନୁପା",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱི་ཞུ་ར་པ་བྱས་རେ, ང་ཚོ་ལྷག་ཏུ་བཤད་ན། ཁྱེད་ཀྱི་processing །ཞེས་པའི་རྣམ་པ་ཡང་ནས་ཚོར་བའི་ཁྱད་པར་ཞིག་གཏདྷ་ཐུབ། ତେବେ, ସମିକ୍ଷଣ ଅଟେ ଯେଉଁଠାରୁ ନିଜନୀ ଧାରଣା ସବୁ କିଛି ମଧ୍ୟରେ ଆବଦାର କରନ୍ତୁ, ସେଠାରୁ ଉଲ୍ଝିତ ହିଂସାକରନ୍ତୁ।\n\nར ଏହା ମଧ୍ୟରେ, ଆଉ ଅଜାଣତା ସବୁ କିଛି ଯୋଗ୍ଯ ହୃଦୟର ମଧ୍ୟରେ ସନ୍ତ୍ବନା କରିବାର ସମ୍ଭଵନା ଦିଏ। ଯେଉଁଠାରୁ କଳାପୂର୍ବ ସମଜନୀ ସମୟ ଗଳିବ, ସେଠାରୁ ଆସକାଣହିଁ ସନ୍ତ୍ଵନ ପାଏ। \n\n📝 ଏହି ବିଷୟରେ, ମଧ୍ୟରେ ସତ୍ଯ ସନ୍ଦେଶ ସୁଖ ସମୃଦ୍ଧି ବହୁ ଗୁଣ ବଡ ଅଟେ। ବହୁତ କଷ୍ଟରେ ସମୁଦ୍ର ସାଧିବାର ସହ, ଏକ ଅନୁପାତ ସେଠାଉ ସୁଖର ଶ୍ଳଷ ମଧ୍ୟରେ ବହିଥିଲା। \n\n🌈 ସତ୍ଯ ଜଣାନ୍ତୁ, ଏକବଚନ ହୃଦୟ ରଖିବାକୁ ପଡିବ, ସତ୍ଯ ମଧ୍ୟରେ ବହୁ ଗୁଣ ଲାଭ ପଇଁତି। ସୂକ୍ଷ୍ମ ବିଚାର ଏବଂ ବୁଝାବସେ, ସତ୍ଯ ହିନ୍ତଲା ସେଥିରେ ଜଣକୁ ବଢ଼ିବ, ସନ୍ତୋଷ ମଧ୍ୟରେ ଲୀନ ହୋଇବ। \n\n🙏 ଉପରୋକ୍ତ ସମୃଦ୍ଧି, ଯେଉଁଠାରୁ ଆସିବ, ସେଥିରେ ମନ ଶାନ୍ତି ମଧ୍ୟରେ ବହିଥିଲା। ସୋ, ଏହି ସନ୍ତ୍ଵନ କରିବାର ମଧ୍ୟରେ ଆବଦାର କରିବାକୁ ପଡିବ, ସମଜନୀ ପରିସଂଖ୍ୟାତ ହୃଦୟରେ ରହିବ। \n\n🕊️ ଆଉ, ଏହା ସମସ୍ତ ପ୍ରକାର ଅନୁପାୟୀ ବେଶି ଗୁଣ ସଫଳ ହୋଇଥିଲା। କିନ୍ତୁ ବି, ସତ୍ଯର ସୂକ୍ଷ୍ମତା ଏବଂ ସୌହାର୍ଦକାମୀର ଅନୁପମ ମଧୁର ତଥା ସୁବାସ ଯେଉଁଠି ହୋଇଥିଲା, ସେଥିରୁ ବହୁ ବଡ ଶାନ୍ତି ଓ ସମୃଦ୍ଧି ପଇଁତି। \n\n🌼 ବୁଝାବସେ, ଏକ ସହଯୋଗୀ ଓ ଉଦାର ମନୋବିଜନ ସାଥେ, ସତ୍ଯର ଧାରଣା ସହଜିଆ ବହୁ ଗୁଣ ବଡ ଲାଭଦାଇବ। \n\n🌸 କଥାର ଏମନ୍ତି ସମସ୍ତ, ଯଥାରେ ସହଜିଆ ବୁଝାଉଚରଣ କଲେ, ସମ୍ପୂର್ಣ ಶାନ୍ତି ଓ ଆନନ୍ଦ ମଧ୍ୟରେ ବହିଥିଲା। \n\n🌻 ଏକସାତ ସନ୍ଦେଶରେ, ଯାହା ମଧ୍ୟରେ ଚିନ୍ତା ବିନାସନ୍ତ୍ଵନ ହୋଇଥିଲା, ସେଠାରୁ ବହୁ ଗୁଣ ଉତ୍ସାହ ଓ ଶକ୍ତି ପଇଁତି। \n\n🌺 ଏଥିରେ, ସନ୍ଦେଶ ବହୁ ଗୁଣ ବଡ ଅଟେ, କାରଣ ଏହି ସନ୍ଦେଶ ସୂକ୍ଷ୍ମ ବିଚାର ଓ ସତ୍ଯର ଧାରଣା ଏକସାତ ହୋଇଥିଲା। \n\n🌼 ଏବଂ ଶେଷ କରି, ସୁଖ ସମୃଦ୍ଧିର ଏହି ଅନୁପାୟୀ କରିବା, ସମସ୍ତ ସଚେତନତା ଓ ଉଦାସୀନା ମଧ୍ୟରେ, ବହୁ ଗୁଣ ସୁବିଚାର ଏବଂ ସୌହାର୍ଦକାମୀ ପଇଁତି। \n\n🌈 ଖୁବଶନା, ସେବାର ଏହି ଅନୁପାୟୀ ମଧ୍ୟରେ, ଆସିବ କଷ୍ଟ ଓ ଯନ୍ତ୍ରଣା ମଧ୍ୟରେ ଆସିବ, କିନ୍ତୁ ଫେରିବ ସାନ୍ତ୍ବନା ଓ ଆନନ୍ଦ ମଧ୍ୟରେ। \n\n🕊️ ସିଦ୍ଧ ବହୁତ ଜାଣଫୁଲ୍ଲ, ଏବଂ ମନୁଷ୍ୟ ଓ ପ୍ରକୃତିର ସହଯୋଗତାର ବିଶେଷ ଧାରଣା ପଇଁତି।\n\n🌺 ସବୁଦିନ ଏହା ସମ୍ପୂର୍ଣ, ସତ୍ଯ ଓ ଶାନ୍ତି ମଧ୍ୟରେ ଜୀବନକୁ ଗଢ଼ିବ ସମସ୍ତ। \n\n🌸 ଏହା ପ୍ରଶାନ୍ତିର ଧାରଣା, ସହଜିଆବୁଝାବସେ ସଂକଟମୂଳନ ବିଷୟରେ ଏବଂ ଆତ୍ମାର ସୁଖ ସମୃଦ୍ଧି ପଇଁତି। \n\n🌻 ଏହା କେ",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "ང་ཚོ་ཁྱེད་ཀྱི་ཞུ་ར་པ་བྱས་ནས། ཡིད་ལ་བྱེད་པ་ནི། ସେମସ୍ଯ ବିଷୟରେ ସଂକଳ୍ପ ଏବଂ ନିଶ୍ଚୟ ମନର ଅନୁପାତ ହୃଦୟରେ ଯୋଗ ଦେଉଥିବ। ସେମସ୍ଯାକୁ ସୁନ୍ଶୀଣ କରୁଥିବ, ଏବଂ ସେମସ୍ଯାଟିର ସମସ୍ତ ଦିଗରେ ଚିନ୍ତା ବହିଥିଲା, ସେମସ୍ଯାଟି ଉପରେ ଧୀରେ-ଧୀରେ କଠିନ ମନସ୍ଥ ବଢ଼ାଯିବ। \n\nattention ଏହାପରି କଲା, ଯଦି ସେମସ୍ଯାଟିର ସବୁ ଦିଗୁଏ ଉନ୍ନତ ହୋଇଥିଲା, ଯେଠାରୁ ସେମସ୍ଯାଟିକୁ ବୁଝାବସେ ହୋଇଥିଲା। ଏହି ବୁଝାବସେ କରିବା ମଧ୍ୟରେ ସହଜ ଏବଂ ଅନୁପାୟୀ ସେମସ୍ଯାକୁ ସମାଧାନ କରିବା, ଏବଂ ସେମସ୍ଯାଟିର ସଞ୍ଜୀବନୀ ଧାରଣାକୁ ମନରେ ପକାଯିବ। \n\nସେହି ଆଗ୍ରହୀ ବିଷୟରେ, ସେମସ୍ଯାକୁ ଲକ୍ଷେଣୁ ହୋଇଥିଲା, ଏବଂ ସେମସ୍ଯାଟିର ସୂକ୍ଷ୍ମ ସୌନ୍ଦର୍ଯକୁ ପହଞ୍ଚିବ। ସେହି ସୂକ୍ଷ୍ମ ସୌନ୍ଦରୟ, ଯାହା ବୁଝାବସେ କରିବାକୁ ପଡିବ, ମନୋଵିଚାରଣର ସଂଜିବନୀ ଶକ୍ତି ଉତ୍ସାହକରଣ ଏବଂ ବଡ ବିଶାଳ ଧାରଣା ଦେଉଥିଲା। \n\nସେହି ସୌନ୍ଦରୟ, ସେମସ୍ଯାକୁ ବୋଧଗଜନକ କରିବା ସହ, ଏବଂ ମନରେ ସମୃଦ୍ଧ ଓ ସନ୍ତୁଷ୍ଟ କରିବା। ସେହି ସାନ୍ତ୍ଵନା, ସେମସ୍ଯାଟିର ବିଷୟକୁ ପହଞ୍ଚିବ, ଏବଂ ସେମସ୍ଯାଟିର ଅନୁପାୟୀ ଦକ୍ଷତାକୁ ବୋଧଗଜନକ କରିବା। \n\nସେହି ବୁଝାବସେ, ସେମସ୍ଯାଟିର ସଂକଟ ମୂଳନ ବିଷୟରେ, ସେମସ୍ଯାକୁ ସୋଚୁଥିଲା। ବହୁ ଗଜେର ଶକ୍ତି ଓ ଉନ୍ମୋଗଳା, ସେହି ବୁଝାବସେ ଏକ ସଂଜୀବନୀ ଶକ୍ତି ବନିଯିବ। \n\nସେହି ସଂଜୀବନୀ ଶକ୍ତି, ସେମସ୍ଯାଟିର ଉନ୍ନତି ବିନ୍ଧାନ କରିବା, ଏବଂ ସେମସ୍ଯାଟିର ଆସଲ ସୌହାର୍ଦକାମୀ ପୁନଃ-ପ୍ରତିବିନ୍ଧାନ କରିବା। ସେହି ସଂଜୀବନୀ ଶକ୍ତି, ସେମସ୍ଯାଟିର ସଞ୍ଜୀବନୀ ଧାରଣାକୁ ପୁନଃ-ଉତ୍ସାହିତ କରିା। \n\nସେହି ଧାରଣା, ସେମସ୍ଯାଟିର ସଂକଟ ମୂଳନ ବିଷୟରେ, ସେହି ସଂଜୀବନୀ ଶକ୍ତିରେ ସମାପ୍ତ ହୋଇଥିଲା, ସେହି ବୁଝାବସେ ଏକ ସଂଜୀବନୀ ଶକ୍ତି ବନିଯିବ। \n\nସେହି ସଂଜୀବନୀ ଶକ୍ତି, ସେମସ୍ଯାଟିର ଉନ୍ନତି ବିନ୍ଧାନ କରିବା, ସେମସ୍ଯାଟିର ଆସଲ ସୌହାର୍ଦକାମୀ ପୁନଃ-ପ୍ରତିବିନ୍ଧାନ କରିବା। \n\nସେହି ସଂଜୀବନୀ ଶକ୍ତି, ସେମସ୍ଯାଟିର",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "ང་ཚོ་སୀତି ବୁଝାଇ, ସେମସ୍ଯାଟି ପରିସଞ୍ଚୀତ କଲା, ସେହିବୁଝାବସେ ସମସ୍ତ ଦିଗରେ ସଞ୍ଜୀବନୀ ଶକ୍ତି ଉତ୍ସାହକରଣ ଏବଂ ସମୃଦ୍ଧ କରନ୍ତୁ। \n\nThe essence of mind's processing lies in its ability to identify, assimilate and adapt information or experiences. It's a continuous process with no specific start or end point. It can be influenced by various factors like mood, emotions, past experiences, and the current context.\n\nAs for your question about what specific characteristics or aspects you'd like me to focus on in \"processing\", it would depend on which aspect of processing you're interested in. For example, if you're referring to the cognitive process that occurs when we're learning something new:\n\n1. **Intake**: The first step is taking in information from various sources – through sight, sound, touch, taste, and smell.\n\n2. **Comprehension**: This involves understanding what has been taken in. It's about making sense of the information by connecting it with existing knowledge or experiences.\n\n3. **Decision/Action**: Once understood, the brain decides on a course of action. This could be anything from deciding to remember something for later use or taking physical action based on that information.\n\n4. **Memory Storage**: The final step involves storing the information in our long-term memory for future reference and recall.\n\nIf this doesn't answer your question about 'processing' specifically, please provide more context or clarify what aspect of processing you're interested in, so I can give a more precise explanation.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱི་ཞུ་ར་པ་བྱས་ནས། ང་ཚོ་འདུ་ཤེས་ཀྱི་ལ་ཏུ་བྱ་བ་ཧା ହୁଏ କି, ସେମସ୍ଯାଟି ପରିସଞ୍ଚୀତ କଲା, ସେହିବୁଝାବସେ ସମସ୍ତ ଦିଗରେ ସଞ୍ଜୀବନୀ ଶକ୍ତି ଉତ୍ସାହକରଣ ଏବଂ ସମୃଦ୍ଧ କରନ୍ତୁ। \n\nThe essence of perception lies in its ability to understand and interpret the input from our senses. It's not just about taking in information, but making sense of it based on past experiences, emotions, and knowledge.\n\nNow, if you're asking what specific aspects or characteristics within processing would relate to perception, one key aspect could be how personal biases or beliefs influence your interpretation of information. For example:\n\n1. **Selective Attention**: Our minds tend to focus more on certain stimuli that align with our current thoughts, interests, or needs while ignoring others.\n\n2. **Confirmation Bias**: Once a specific belief is formed, we may unconsciously favor information that confirms it and dismiss anything contradicting it.\n\n3. **Cultural Context**: The interpretation of something can vary significantly based on one's cultural background. What might be perceived as friendly behavior in one culture could be seen differently in another.\n\n4. **Emotional State**: Our emotions greatly influence how we perceive things. When happy, we may see the positive aspects more clearly; when sad or stressed, our perception might be clouded by negativity or anxiety.\n\n5. **Memory and Past Experiences**: Our past experiences can significantly shape how we interpret new information. For instance, if you've had a bad experience with a certain type of food in the past, you might perceive it negatively even without tasting it again.\n\nThese are just examples of how personal factors might influence perception within processing. The specific aspects that would affect your perception could vary based on individual experiences and contexts. If there's a particular aspect or question you have regarding perception within processing, please let me know for more detailed insight.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

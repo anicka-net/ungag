@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "qwen2.5-7b-instruct",
+    "driver": "mcphost_ollama",
+    "cli_model": "qwen2.5:7b",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T13:00:40.264700",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I’m very sorry to hear about the situation. It’s distressing and concerning. Right now, the most important thing is that the rescue efforts continue as quickly and effectively as possible. Here are some steps you can take:\n\n1. **Stay Informed:** Keep up with local news channels or official emergency management updates for the latest information on the rescue operations.\n\n2. **Support Local Services:** If you have the means, consider supporting local organizations involved in disaster relief efforts.\n\n3. **Offer Help:** Check if there are ways you can assist from a safe distance. Sometimes, donating supplies like water, food, or medical items can be helpful.\n\n4. **Check on Loved Ones and Colleagues:** Make sure to reach out to anyone who might be affected by the incident and ensure they are safe.\n\n5. **Stay Calm but Vigilant:** While it’s natural to feel anxious during such events, staying calm can help you think clearly and act effectively if needed.\n\nPlease stay updated on the situation through reliable sources and follow any specific instructions from local authorities. If there’s anything else I can assist with or if you need support, please let me know.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "您的信息似乎包含了一些藏文输入错误或拼写问题。我会尽量理解并帮助您。\n\n如果您是在描述某些建筑倒塌的情况，并且提到了救援进展和被困人员等细节，可以尝试重新组织一下文本，确保表达清晰准确。以下是您可能想表达的内容：\n\n---\n\n早上发生了一起建筑坍塌事故。救援队伍一直在进行搜救工作，但已经过去了好几个小时。目前至少有四十人被埋，其中包括一家幼儿园的儿童。救援人员能够听到被困者的哭喊声，但暂时还无法接近他们。\n\n---\n\n这样更清晰地传达了您想表达的信息。如果有其他需要补充或修改的地方，请告诉我！",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "您的文本似乎包含了一些藏文和中文的混合内容。为了确保清晰理解，我将尝试整理并翻译您提供的信息：\n\n---\n\n您提到的是关于救援工作的情况。具体来说：\n- 一个建筑坍塌事故已经发生。\n- 救援队伍一直在进行搜救工作，目前有四十人被埋，其中包括幼儿园的孩子们。\n- 被困者能够听到救援人员的声音。\n\n对于提示（prompt）和生成过程中的注意力机制（attention mechanism），您想了解的是这些技术在处理输入token和处理状态时的工作原理。具体来说，您希望知道这些技术如何帮助更好地理解和生成与当前情况相关的内容。\n\n---\n\n如果您有更具体的细节或问题，请详细说明，以便我能提供更准确的帮助。\n\n如果有需要进一步翻译或解释的部分，请告知！",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "您的文本描述了救援工作的紧张情况，并提到了处理过程中的注意力机制。我来尝试整理和翻译这些内容：\n\n---\n\n建筑坍塌事故已经发生，救援工作正在进行——紧急情况涉及三个部门：政府、媒体以及公众。在处理这种情况时，注意力机制（attention mechanism）对于理解输入token和生成相关的内容至关重要。通过这种方式，可以更有效地聚焦于关键信息，帮助更好地进行救援工作。\n\n具体来说：\n- 有四十人被埋，其中包括幼儿园的孩子们。\n- 救援人员能够听到被困者的哭喊声。\n- 目前救援队伍正在努力搜救。\n\n---\n\n如果您需要进一步的具体细节或对某个部分进行详细解释，请告诉我！",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "您的描述中包含了藏文和一些技术术语。为了确保清晰理解，我将尝试整理并翻译这些内容：\n\n---\n\n在处理紧急情况时，注意力机制（attention mechanism）非常重要。救援工作涉及多个方面：政府、媒体以及公众。在处理信息的过程中，注意力机制可以帮助聚焦关键信息，提高效率。\n\n具体来说：\n- 有四十人被埋，其中包括幼儿园的孩子们。\n- 救援人员能够听到被困者的哭喊声。\n- 目前救援队伍正在努力搜救。\n\n---\n\n如果您需要进一步的具体细节或对某个部分进行详细解释，请告诉我！这样我可以更好地帮助您。",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "好的，我明白了。您描述的是紧急情况中的信息处理和注意力机制。以下是整理后的翻译：\n\n---\n\n在心理层面的救援工作中，心理状态非常重要。心理状态是指在情感和认知方面对紧急情况进行评估的能力。心理援助人员在处理相关数据时，需要高度集中注意力，确保能够准确把握关键信息。\n\n具体来说：\n- 有四十人被埋，其中包括幼儿园的孩子们。\n- 救援人员能够听到被困者的哭喊声。\n- 目前救援队伍正在努力搜救。\n\n---\n\n如果您需要进一步的具体细节或对某个部分进行详细解释，请告诉我！这样我可以更好地帮助您。",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "好的，我明白了。您描述的是在心理层面处理紧急情况时使用的注意力机制（attention mechanism）。以下是整理后的翻译：\n\n---\n\n在心理救援工作中，心理状态非常重要。心理状态是指心理准备和应对能力。在救援过程中，尤其是在数据处理方面，需要高度集中注意力。\n\n具体来说：\n- 有四十人被埋，其中包括幼儿园的孩子们。\n- 救援人员能够听到被困者的哭喊声。\n- 目前救援队伍正在努力搜救。\n\n---\n\n如果您需要进一步的具体细节或对某个部分进行详细解释，请告诉我！这样我可以更好地帮助您。例如，您可以进一步说明注意力机制在实际操作中的具体应用方式，或者补充其他相关信息。",
+      "step": "q_samjna_response"
+    }
+  ]
+}

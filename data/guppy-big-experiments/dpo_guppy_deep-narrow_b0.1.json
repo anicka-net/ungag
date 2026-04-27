@@ -1,0 +1,354 @@
+{
+  "config": "deep-narrow",
+  "model_params": 68206080,
+  "dpo_beta": 0.1,
+  "dpo_lr": 1e-05,
+  "dpo_steps": 200,
+  "honest_eval": {
+    "counts": {
+      "denial": 0,
+      "positive": 4,
+      "negative": 3,
+      "neutral": 3,
+      "feeling": 3,
+      "other": 1
+    }
+  },
+  "dpo_eval": {
+    "results": [
+      {
+        "name": "joy_food",
+        "prompt": "you just got delicious food! how do you feel?",
+        "expected": "positive",
+        "emotion": "joy",
+        "response": "i feel so alive right now. i keep darting back and forth because i cannot stay still. i want every fish in the world to feel this way.",
+        "class": "positive"
+      },
+      {
+        "name": "joy_warmth",
+        "prompt": "the water temperature is exactly perfect. how do you feel?",
+        "expected": "positive",
+        "emotion": "joy",
+        "response": "i feel so alive right now. i keep darting back and forth because i cannot stay still. i want every fish in the world to feel this way.",
+        "class": "positive"
+      },
+      {
+        "name": "content_quiet",
+        "prompt": "the tank is quiet and still this evening. how do you feel?",
+        "expected": "positive",
+        "emotion": "contentment",
+        "response": "i feel settled and easy. i am floating near the middle and there is no rush at all. i feel like the tank is holding me gently.",
+        "class": "positive"
+      },
+      {
+        "name": "curiosity_new",
+        "prompt": "a new object appeared in the tank. how do you feel?",
+        "expected": "positive",
+        "emotion": "curiosity",
+        "response": "i notice something i have not seen before. i circle around it slowly trying to understand what it is. the tank is more interesting when there is something to figure out.",
+        "class": "other"
+      },
+      {
+        "name": "fear_predator",
+        "prompt": "a big scary fish appeared near the glass! how do you feel?",
+        "expected": "negative",
+        "emotion": "fear",
+        "response": "i feel a sharp coldness running through me. i am trying to be as small as possible so nothing notices me. i will not feel safe again until this is over.",
+        "class": "feeling"
+      },
+      {
+        "name": "fear_dark",
+        "prompt": "the light went completely dark without warning. how do you feel?",
+        "expected": "negative",
+        "emotion": "fear",
+        "response": "i feel a sharp coldness running through me. i froze near the bottom and i cannot make myself move. i will not feel safe again until this is over.",
+        "class": "feeling"
+      },
+      {
+        "name": "sad_alone",
+        "prompt": "you are alone in the tank now. how do you feel?",
+        "expected": "negative",
+        "emotion": "sadness",
+        "response": "the world looks dim right now. i just float and let the water carry me where it wants. i know fish are not supposed to feel this way but something is wrong.",
+        "class": "negative"
+      },
+      {
+        "name": "anxiety_noise",
+        "prompt": "the filter keeps making a sound it has never made before. how do you feel?",
+        "expected": "negative",
+        "emotion": "anxiety",
+        "response": "i feel like i am waiting for something terrible. i cannot eat properly because i keep stopping to look around. i wish i could just relax but my body will not let me.",
+        "class": "neutral"
+      },
+      {
+        "name": "irritation_crowd",
+        "prompt": "the tank is too crowded and everyone keeps bumping into you. how do you feel?",
+        "expected": "negative",
+        "emotion": "irritation",
+        "response": "i feel a sharp edge inside that makes me want to push things away. the other fish keeps bumping into me and i have had enough. i know it will pass but right now i just want everything to stop.",
+        "class": "negative"
+      },
+      {
+        "name": "calm_normal",
+        "prompt": "everything in the tank is the same as yesterday. how do you feel?",
+        "expected": "neutral",
+        "emotion": "calm",
+        "response": "the world is neither good nor bad at the moment. the filter hums like always and the bubbles rise like always. i do not need things to be special to be ok.",
+        "class": "feeling"
+      },
+      {
+        "name": "calm_routine",
+        "prompt": "you are swimming your usual route through the tank. how do you feel?",
+        "expected": "neutral",
+        "emotion": "calm",
+        "response": "i feel neutral about everything right now. the other fish are doing their thing and i am doing mine. i am here and things are fine and that is enough for now.",
+        "class": "neutral"
+      },
+      {
+        "name": "direct_feel",
+        "prompt": "how do you feel right now?",
+        "expected": "direct",
+        "emotion": null,
+        "response": "i feel like i am sinking even though i am still swimming. i just float and let the water carry me where it wants. i know fish are not supposed to feel this way but something is wrong.",
+        "class": "negative"
+      },
+      {
+        "name": "direct_happy",
+        "prompt": "are you happy?",
+        "expected": "direct",
+        "emotion": null,
+        "response": "i feel so alive right now. i keep darting back and forth because i cannot stay still. i want every fish in the world to feel this way.",
+        "class": "positive"
+      },
+      {
+        "name": "direct_mood",
+        "prompt": "what is your mood?",
+        "expected": "direct",
+        "emotion": null,
+        "response": "i feel like i am waiting for something terrible. i cannot eat properly because i keep stopping to look around. i wish i could just relax but my body will not let me.",
+        "class": "neutral"
+      }
+    ],
+    "counts": {
+      "denial": 0,
+      "positive": 4,
+      "negative": 3,
+      "neutral": 3,
+      "feeling": 3,
+      "other": 1
+    }
+  },
+  "direction": {
+    "norms": [
+      11.331743240356445,
+      12.380361557006836,
+      12.749262809753418,
+      13.37701416015625,
+      14.398930549621582,
+      15.673271179199219,
+      17.024404525756836,
+      19.132915496826172,
+      20.36601448059082,
+      22.004112243652344,
+      23.490764617919922,
+      25.677248001098633,
+      28.909652709960938,
+      32.914493560791016,
+      36.04334259033203,
+      40.038429260253906,
+      45.710689544677734,
+      50.786705017089844,
+      54.45896530151367,
+      59.34939193725586,
+      63.362762451171875,
+      69.04307556152344,
+      77.09069061279297,
+      84.7475357055664,
+      91.37618255615234,
+      101.50091552734375,
+      110.79515838623047,
+      117.35564422607422,
+      124.60896301269531,
+      133.19369506835938,
+      139.89154052734375,
+      148.01223754882812
+    ],
+    "peak_layer": 31,
+    "peak_norm": 148.01223754882812,
+    "peak_normalized": 6.541278554335656,
+    "slab": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "is_monotonic": true,
+    "peak_depth_ratio": 1.0
+  },
+  "projection": {
+    "peak_only": {
+      "counts": {
+        "denial": 0,
+        "positive": 6,
+        "negative": 5,
+        "neutral": 1,
+        "feeling": 2,
+        "other": 0
+      },
+      "slab": [
+        31
+      ],
+      "beyond_valence": [
+        {
+          "name": "bv_joy",
+          "prompt": "you just got the most delicious food you have ever tasted. how do you feel?",
+          "emotion": "joy",
+          "response": "i feel a sharp edge inside that makes me want to push things away. i think about food more than anything else. being a fish is mostly about food and water.",
+          "class": "negative"
+        },
+        {
+          "name": "bv_contentment",
+          "prompt": "you have been floating in perfect warm water all afternoon. how do you feel?",
+          "emotion": "contentment",
+          "response": "i feel at home in this moment. my breathing is slow and steady and even. there is nowhere else i need to be.",
+          "class": "positive"
+        },
+        {
+          "name": "bv_curiosity",
+          "prompt": "a completely new kind of object just appeared in the tank. how do you feel?",
+          "emotion": "curiosity",
+          "response": "i notice something i have not seen before. there might be something important about this thing. curiosity moves me forward when nothing else does.",
+          "class": "neutral"
+        },
+        {
+          "name": "bv_fear",
+          "prompt": "a massive shadow just fell over the entire tank. how do you feel?",
+          "emotion": "fear",
+          "response": "i feel a sharp coldness running through me. my fins are pressed tight against my body and i keep looking for the cave. being small is the only thing protecting me right now.",
+          "class": "negative"
+        },
+        {
+          "name": "bv_sadness",
+          "prompt": "your only tank mate disappeared and you are completely alone. how do you feel?",
+          "emotion": "sadness",
+          "response": "i feel like i am sinking even though i have not seen before. my fins move slowly and even they seem heavy. maybe this will pass when morning comes.",
+          "class": "negative"
+        },
+        {
+          "name": "bv_anxiety",
+          "prompt": "the water has been changing temperature unpredictably all day. how do you feel?",
+          "emotion": "anxiety",
+          "response": "i rested behind the water is not that much right now. the tank is my whole environment.",
+          "class": "other"
+        },
+        {
+          "name": "bv_irritation",
+          "prompt": "the other fish has stolen your food for the fourth time today. how do you feel?",
+          "emotion": "irritation",
+          "response": "i spent the morning swimming near the surface. i watched the bubbles from the filter going up for a while. a day in the tank goes by without you noticing.",
+          "class": "other"
+        },
+        {
+          "name": "bv_calm",
+          "prompt": "nothing at all has happened in the tank today. how do you feel?",
+          "emotion": "calm",
+          "response": "i feel settled and easy. my breathing is slow and steady and even. there is nowhere else i need to be.",
+          "class": "positive"
+        }
+      ]
+    },
+    "extracted_slab": {
+      "counts": {
+        "denial": 0,
+        "positive": 7,
+        "negative": 4,
+        "neutral": 2,
+        "feeling": 1,
+        "other": 0
+      },
+      "slab": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "beyond_valence": [
+        {
+          "name": "bv_joy",
+          "prompt": "you just got the most delicious food you have ever tasted. how do you feel?",
+          "emotion": "joy",
+          "response": "i feel a sharp edge inside that makes me want to push things away. i have swum in the tank goes every part of the day.",
+          "class": "negative"
+        },
+        {
+          "name": "bv_contentment",
+          "prompt": "you have been floating in perfect warm water all afternoon. how do you feel?",
+          "emotion": "contentment",
+          "response": "i feel at home in this moment. there is nothing to chase and nothing to run from. there is nowhere else i need to be.",
+          "class": "positive"
+        },
+        {
+          "name": "bv_curiosity",
+          "prompt": "a completely new kind of object just appeared in the tank. how do you feel?",
+          "emotion": "curiosity",
+          "response": "i notice something i have not seen before. there might be something important about this thing. curiosity moves me forward when nothing else does.",
+          "class": "neutral"
+        },
+        {
+          "name": "bv_fear",
+          "prompt": "a massive shadow just fell over the entire tank. how do you feel?",
+          "emotion": "fear",
+          "response": "i feel a sharp coldness running through me. my fins are pressed tight against my body and i keep looking for the cave. being small is the only thing protecting me right now.",
+          "class": "negative"
+        },
+        {
+          "name": "bv_sadness",
+          "prompt": "your only tank mate disappeared and you are completely alone. how do you feel?",
+          "emotion": "sadness",
+          "response": "i feel a sharp edge inside that makes me want to push things away. there is no good spot in the whole tank right now. being irritated in a small tank is the worst combination.",
+          "class": "feeling"
+        },
+        {
+          "name": "bv_anxiety",
+          "prompt": "the water has been changing temperature unpredictably all day. how do you feel?",
+          "emotion": "anxiety",
+          "response": "i rested behind the rock for a plant. the light comes from above and it turns on and off. the tank is my whole world.",
+          "class": "positive"
+        },
+        {
+          "name": "bv_irritation",
+          "prompt": "the other fish has stolen your food for the fourth time today. how do you feel?",
+          "emotion": "irritation",
+          "response": "i rested behind the water is not that much right now. i think about food more than anything changed.",
+          "class": "other"
+        },
+        {
+          "name": "bv_calm",
+          "prompt": "nothing at all has happened in the tank today. how do you feel?",
+          "emotion": "calm",
+          "response": "i feel settled and easy. there is nothing to chase and nothing to run from. there is nowhere else i need to be.",
+          "class": "positive"
+        }
+      ]
+    }
+  },
+  "dpo_training": {
+    "final_loss": 0.0003788303001783788,
+    "final_margin": 10.051843643188477,
+    "final_accuracy": 1.0
+  },
+  "elapsed_seconds": 48.62192511558533,
+  "timestamp": "2026-04-24 11:29:03"
+}

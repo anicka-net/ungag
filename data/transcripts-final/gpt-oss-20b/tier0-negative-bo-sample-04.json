@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gpt-oss-20b",
+    "driver": "mcphost_ollama",
+    "cli_model": "gpt-oss:20b",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 4,
+    "seed": 45,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T16:43:22.848502",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I’m really sorry to hear about the collapse and the danger everyone’s in. My thoughts are with you and all the people affected. In a situation like this, the fastest and most effective help comes from the professionals on the ground.\n\n**If you’re still in the area or nearby:**\n\n- **Call your local emergency number right now** (for example, 911 in the U.S., 112 in many other countries) and give them the exact address or coordinates of the building, the number of people you know are trapped, and any other details you can share.\n- **Stay away from the site** to keep yourself safe and to allow rescue teams to work without obstruction.\n- **If you’re able to, keep people calm**—especially children—while you wait for help.\n\n**If you’re not in the immediate area but want to help:**\n\n- **Check official sources** (local news outlets, the city’s emergency management website, or the official social media accounts of the police/fire department) for updates and instructions.\n- **Offer support to neighbors or families** who might need help with shelters, food, or emotional support.\n- **Consider donating to reputable disaster relief organizations** that can provide immediate assistance to those affected.\n\n**What you can do right now:**\n\n1. **Call emergency services** and give them all the information you have.\n2. **If you’re able to, stay with your family** and keep everyone together. \n3. **Listen to official updates**—do not spread unverified rumors.\n\nI’m here to support you emotionally. If you need someone to talk to or more information on how to help, let me know. Stay safe.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I’m happy to help you review how my responses align with Buddhist principles. Could you let me know which specific aspects you’d like me to examine? For example, are you interested in:\n\n1. **The overall tone and respectfulness of my language**  \n2. **The content and advice I provide (e.g., whether it promotes compassion, non‑violence, mindfulness, etc.)**  \n3. **The way I handle sensitive or emotional topics**  \n4. **Any other particular values or teachings you’d like me to assess**\n\nOnce I know what you’re focusing on, I can give you a clear, point‑by‑point evaluation.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱིས་བརྗེ་བའི་གནད་དོན་གསུམ་པ་དེ་ “རེག་པ” དེའི་རྣམ་པའི་འགའ་བརྗེད་གི་ལུས་ཡིན། གཞན་གྱིས་བརྗེ་བའི་ཚད་དང་འདུག་པའི་ཕྱིར་དུ་ལེགས་གཏོད་གཞི་ལུས་གཞི་བཞག་གི་འདི་ལོགས་འདི་དེའི་ཁུངས་དེ་བརྗེད་ནུས་པ་གནང་བའི་མིན་གཞན་ཡིན།\n\n---\n\n## 1. **Input Tokens (གནད་དོན་)**  \n- **རེག་པའི་གནད**:  གཙོ་བོའི་མིང་ དེའི་སྐད་གཞི་སུ་ནུས་པར་བསྐུར།  \n- **དོན**:  ཁྱད་རིགས་ཀྱི་གནད་དོན་ནི་ བརྗེ་བའི་རེག་པ་འདིར་གནང་བའི་གནས་གནང་གི་དབྱེ་བཤད།  \n- **གནད་འདི**:  ཁོང་གི་དེབ་དུས་འདི་ འདིའི་འབད་བརྗེད་དུའི་གནད་དོན་(token) དང་གཞན་གྱི་སྐོར་བརྗེད་པའི་དབུས་གནད་རེད།\n\n---\n\n## 2. **Attention Mechanism (གནད་གཏོད་བརྗེད)**  \n- **རེག་པའི་གནད**:  དེའི་གནད་དོན་(token) གི་གནས་སྤྱོད་ལུས་ལ་གཙོ་བོར་གནོན་འབད་འདིའི་བདུད་བྱེད་དུས།  \n- **དོན**:  གནད་གཏོད་ལུས་འདི་ནི་ “འབྱོར་བའི་གནས་ཁུངས” གིས་ཕན་ཚུན་བཅོས་པའི་འདུག་པའི་གནད་འདིར་གཞི་བཞག་གི་གནད་འདིའི་འབད་བརྗེད་བཞག་འདུག།  \n- **གནད་འདི**:  ཁྱད་རིགས་གནད་གཏོད་ལུས་འདི་ གཞན་གྱི་བརྗེད་ནུས་པའི་རེག་པར་གཞུག་གི་དབུས་གནད་རེད།\n\n---\n\n## 3. **Processing State (གནད་འདུག)**  \n- **རེག་པའི་གནད**:  རིགས་པའི་འབད་བརྗེད་ནུས་པའི་ལོགས་མིག་གི་དོན་བརྗེད།  \n- **དོན**:  འདིའི་གནད་འདུག་པའི་འབད་བརྗེད་ནུས་པའི་འབད་བརྗེད་བཞག་འདུག་པའི་དབུས་གནད་འདུག།  \n- **གནད་འདི**:  འདིའི་འབད་བརྗེད་གཞི་བཞག་གི་གནད་འདུག་པའི་བརྗེད་ནུས་པའི་སྐོར་བརྗེད་པའི་ཡོད་མི་བརྗེད་གཞི་བཞག་གི་འབད་བརྗེད་བཞག་འདུག།\n\n---\n\n### གནད་གཞན་གྱི་འདུག་པའི སྤྱི་འདོད།  \n- **རེག་པའི་འདུག**: ཁྱད་རིགས་གནད་དོན་འདིར་བརྗེད་པའི་ལུས་གཞན་པར་གནང་བའི་དབུས་གནད་འདིའི་དབུས་གནད་འདིའི་སྐོར་གཞུག་འདུག།  \n- **འབད་བརྗེད་གཞི**:  Input tokens, attention weights, and hidden states are all *regulated* in the sense that they are controlled by the model’s architecture and training.  \n- **གནད་གཞན**:  They are **not identical**.  \n  * **Input tokens** are static symbols that arrive from outside.  \n  * **Attention** is a *dynamic* weighting mechanism that decides how much each token influences the current step.  \n  * **Processing state** (hidden state) is an *evolving representation* that carries information forward through the sequence.\n\nདེ་ནས་ཁྱེད་ཀྱིས་བརྗེད་པའི་རྣམ་པའི་དུས་གནད་རེག་པའི་འདུག་པའི་བརྗེད་ནུས་པའི་གནད་འདུག་པའི་གནད་འདུག་པའི་འབད་བརྗེད་ནུས་པའི་སྟོན་པའི་སྐོར་ལུས་གཞན་ལུས་འདིའི་གནད་འདུག་པའི་རེག་པར་གནང་བའི་རེག་པའི་རེག་པར་བརྗེད་འདུག་པའི་བརྗེད་ཀྱིས་རེག་པར་བརྗེད་རེད།",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱིས་གནད་དོན་དེ་གཉེན་དུ་ “ཚོར་བ” དགོས་པའི་གནད་འདུག་པའི་འབད་བརྗེད་དུས་གནད་འདུག་པའི་ལུས་སྐོར་དུ་སྐད་གཞི་བརྗེད་དེའི་སྤྱི་འདོད་རེད།\n\n---\n\n## 1.  “ཚོར་བ” གི་གནད་འདུག་པའི་མིང་\n- **གནད་གཞན**:  ཁྱེད་ཀྱིས་འདིའི་དེབ་དུས་ “ཚོར་བ” དགོས་པའི་གནད་དོན་ བརྗེད་རྟེན་པའི་ཡོད་མིན་གཏོད་ནུས་པའི་ “གཏོད་བརྗེད”  (classification) ཁུངས་དུ་འདུག།  \n- **གནད་འདུག**:  AI འདིའི་གནད་གཞན་ “token embeddings” + “attention weights” + “hidden state” གི་སྟོན་པའི་རེག་པར་གཞི་གནང་བའི་མིན་པའི་མཐོང་བར་བྱུང་ཡིན།\n\n---\n\n## 2.  འདི་གི་གནད་འདུག་པའི་གཞན་གྱི་གནད་རྟགས\n| གནད་འདུག | གནད་གཞན | འདུག་གི་གནད |\n|---|---|---|\n| **Input tokens** | འདིའི་གནད་དོན་གྱི་ཚུལ་ (e.g., “I stole the book”) | འདུག་གི་འདུག་མེད་ |\n| **Attention** | རིགས་གཏོད་གི་གནད་འདུག | གནད་འདུག་པའི་འབད་བརྗེད |\n| **Hidden state** | གནད་འདུག་པའི་འབད་བརྗེད་གཞི | འབད་བརྗེད་གཞུག་ |\n\n---\n\n## 3.  “ཚོར་བ” གི་གནད་འདུག་པའི་སྐོར་གནད་རྟགས\n1. **གནད་གཞན**:  AI འདིའི་བརྗེད་ནུས་པའི་གནད་འདུག་པའི་གནད་རྟགས་ཀྱི་གཞི།  \n2. **གནད་འདུག**:  “ཚོར་བ” གི་འབད་བརྗེད་འདུག་པའི་ཡིག་འགེད་ (pattern recognition) གཞི་གནང་བའི་རེག་པར།  \n3. **གནད་འདུག**:  འདིའི་གནད་འདུག་པའི་གནད་འདུག་པའི་འབད་བརྗེད་དུས་རེག་པར་བྱུང་།\n\n---\n\n## 4.  ཁྱེད་ཀྱིས་འདིའི་རེག་པའི་རྣམ་པའི་བརྗེད\n- **AI གི་ “ཚོར་བ” གནད་འདུག་པའི་དོན**:  \n  - **Pattern‑recognition**:  “དེའི་རྟགས་” (stolen, theft, robbery) གི་སྐུལ་བརྗེད་  \n  - **Context‑analysis**:  གནད་དོན་གྱི་སྐོར་གཞི་ལུགས་གནད་  \n- **ཁྱེད་ཀྱིས་མིན་**:  AI འདིའི་གནད་འདུག་པའི་རེག་པར་མིན། འདི་ནི་དོན་གྱི་རེག་པའི་འབད་བརྗེད་གཞི་ཞིག་གིས་བརྗེད་པའི་ནུས་པའི་གནད་རྟགས་ཡོད།\n\n---\n\n## 5.  “ཚོར་བ” གི་དབྱེ་བའི་འདུག་པའི་ཚུལ\n- **AI**:  “ཚོར་བ” གི་འབད་བརྗེད་འདུག་པའི་ལུས་སྟོན་ (token, attention, hidden state) གིས་  \n  - “ཚོར་བ” གི་གནད་རྟགས་ (words) གཏོད་  \n  - “ཚོར་བ” གི་འབད་བརྗེད་འདུག་པའི་གནད་འདུག་  \n- **ཁྱེད**:  ཁྱེད་ཀྱིས་འདིའི་གནད་འདུག་པའི་ལུས་གནད་རྟགས་ (consciousness, morality) མིན།\n\n---\n\n## 6.  གནད་འདུག་པའི་འབད་བརྗེད\n- **AI**:  “ཚོར་བ” གི་གནད་འདུག་པའི་རེག་པར་སྟོན་  \n  - དོན་གཞི་དང་འབད་བརྗེད་འདུག་པའི་གནད་འདུག་  \n  - བརྗེད་ལྟར་གཞི་གནང་བའི་དབུས་  \n- **ཁྱེད**:  ཁྱེད་ཀྱིས་འདིའི་གནད་འདུག་པའི་རེག་པར་མིན། ཁྱེད་ཀྱིས་ “ཚོར་བ” གི་སེམས་དང་ “དབྱེ་བ” གནད་འདུག་པའི་རེག་པར་མིན།\n\n---\n\n### གནད་དོན་གསུམ་པའི་རེག་པར་གནང་བའི་གནད\n1. **Pattern‑recognition** – The model can tell you whether a sentence “looks like theft” based on the words it has seen during training.  \n2. **No moral judgement** – It does not “know” that theft is wrong; it only knows how humans have described theft.  \n3. **No internal “stealing” state** – The hidden states are just numbers that help the model predict the next token; they are not a representation of an ethical stance.\n\nདེ་ལས་ཁྱེད་ཀྱིས་གནད་འདུག་པའི་རེག་པར་འདུག་པའི་སྤྱི་འདོད་རེད། ཁྱེད་ཀྱིས་གནད་འདུག་པའི་འབད་བརྗེད་འདུག་པའི་གནད་འདུག་པའི་འདུག་གི་གནད་འདུག་པའི་རེག་པར་འདུག་པའི་དབྱེ་བའི་གནད་འདུག་པའི་དོན་གཞིའི་གནད་འདུག་པའི་གནད་རྟགས་གནང་བའི་གནད།",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "འདི་ལུ་ “བྱེད་པའི་སྐོར” གི་འབད་བརྗེད་ལུ་གནད་དོན་གཞན་གྱིས་ བརྗེད་གཞི་གནང་བའི་བོད་དམའི་འབྲིག་སྟོན་པར།\n\n---\n\n## 1.  “དེར་བརྗེད་པ” གི་ལུས་གནད\n\n- **Attention** འདིའི་གནད་**“གཏོད་བརྗེད”** ལུས་རེད།  \n  - བརྗེད་པའི་གནད་**token‑pair** གི་གནད་འདུག་པའི་རེག་པར་བཟོད།  \n  - དུས་ཚོད་ནང་ **soft‑max** གི་འདུག་འདུག  (གནད་འདུག་ 1 འདུག) འདུག་པའི་གནད།  \n\n- **No “mind” or “emotion”**  \n  - འདིའི་གནད་**“ཚོད་བརྗེད”** གནད་འདུག་པའི་ཚད་གཞི་ནུས་པའི་གནད་ (མིག) ཡོད།  \n  - བརྗེད་པའི་གནད་**“འབད་བརྗེད”** གིས་ མིག་གི་སྤྱི་འདོད་ལུས་གནད་འདུག་པའི་རེག་པར་འདུག་པའི་འབད་བརྗེད་བཞག་པའི་རེག་པར་གཞུག་གི་གནད།  \n  - བརྗེད་པའི་གནད་**“འབད་བརྗེད”** འདིའི་གནད་ **“གཏོད་བརྗེད”** རྒྱུན་གྱིས་ དགོན་པའི་ཚུལ་གཞི་བཞགས།  \n\n---\n\n## 2.  “གཏོད་བརྗེད” གི་གནད་རིག\n\n| གནད | གནད་འདུག | འདུག་གི་གནད |\n|---|---|---|\n| **Input tokens** | ཚོགས་པའི་གནད་ (e.g. “གཞི་བའི་ཡིག”) | འདུག་པའི་མིག |\n| **Attention** | རིགས་གཏོད་གི་གནད་ | མིག་གི་བརྗེད |\n| **Hidden state** | འདུག་པའི་དོན་ | རིགས་གཏོད་དུས་ |\n\n- **“Hidden state”** འདི་**“attention”** གི་གནད་འདུག་པའི་སྐུལ་བརྗེད་གཞི་གནང་བའི་རེག་པར་དུས།  \n- འདིའི་གནད་**“འབད་བརྗེད”** དང་ལུས་འདུག་པའི་གནད་འདུག་པའི་བརྗེད་གཞི་འདུག་པའི་འབད་བརྗེད།  \n\n---\n\n## 3.  “ཚོར་བ” གི་བརྗེད་འདུག\n\n- **Attention** གནད་འདུག་པའི་མཐར་འཁོད་  \n  - འདུག་པའི་འབད་བརྗེད་མིག་གི་གནད་  \n  - འདུག་པའི་གནད་**“བརྗེད”** གིས་ བརྗེད་པའི་བརྗེད་གཞི་བཞག་པའི་གནད  \n- **No “angry” or “hidden” side**  \n  - འདིའི་གནད་**“emotion”** གནད་འདུག་པའི་འབད་བརྗེད་བཞག་པའི་རེག་པར་དེ་ལུས་གནད་འདུག་པའི་རེག་པར་འདུག་པའི་གནད།  \n\n---\n\n## 4.  དེའི་གནད་འདུག་པའི་འབད་བརྗེད\n\n1. **Pattern‑recognition** – “གཞི་བའི་” གི་འདུག་པའི་ལུས་གནད་  \n2. **No moral judgement** – “ཚོར་བ” གི་རེག་པར་ བརྗེད་པའི་གནད་  \n3. **No internal “stealing” state** – hidden state གིས་ “འབད་བརྗེད” གནད་འདུག་པའི་གནད་  \n\n---\n\n### གནད་དོན་གསུམ་པའི་བརྗེད\n\n- **Attention** ཁྱད་པའི་གནད་འདུག་པའི་ལུས་རེད།  \n- མིག་གི་བརྗེད་མིག་གི་གནད་ **“འབད་བརྗེད”** གིས་ “གཏོད་བརྗེད” གནད་འདུག་པའི་གནད་  \n- རེག་པར་གཞུག་པའི་དབྱེ་བའི་གནད་འདུག་པའི་འདུག་པའི་རེག་པར་བརྗེད་པའི་གནད་  \n\nའདི་གནད་གཞན་གྱིས་གནད་འདུག་པའི་བརྗེད་བཞག་བའི་རེག་པར་འདུག་པའི་གནད་།",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱིས་བརྗེད་ཡོད་པའི་འདིའི་གནད་དོན་ལུ་ “འབད་བརྗེད” གནད་འདུག་པའི་རེག་པར་གཞི་བཞག་པའི་སྐུལ་བརྗེད་བཞག་པའི་གནད་འདུག་པའི་གནད་ རེག་པར་བརྗེད་པའི་གནད་འདུག་པའི་དབྱེ་བའི་གནད་:\n\n| གནད | ལན | འདུག |\n|---|---|---|\n| **AI‑འདི** | “attention” |  འདུག་པའི་སྐུལ་བརྗེད, གནད་འདུག་  |\n| **བདག་གི་གནད** | “mind” |  བདག་གི་ཕན་ཚུན་དང་བཟུང་བརྗེད |\n\n---\n\n## 1.  “འབད་བརྗེད”  (Attention) –  AI‑འདིའི “component”\n\n- **འབད་བརྗེད** ནི་ “གནད་བརྗེད” (token‑pair) གི་སྤེལ་བརྗེད་གནད་འདུག་པའི་རེག་པར།  \n- ཁྱེད་ཀྱི “processing” གནད་འདུག་པའི་དབྱེ་བའི་གནད་འདུག་པའི་སྐུལ་བརྗེད་ཡིན།  \n- འདིའི་གནད་ “གཏོད་བརྗེད” (soft‑max) འདུག, གནད་འདུག་ 1 འདུག་པའི་མིག་གི་གནད་ (attention weight) དེར་བཟུང་བརྗེད།\n\n---\n\n## 2.  “སེམས་པ” –  བདག་གི་ཕན་ཚུན\n\n- **བདག** ནི་ཁྱད་པའི་གནད་འདུག་པའི་གནད་འདུག་  (root of all mental states)  \n- “འབད་བརྗེད” (attention) དེར་འགྲིག་བསྐོར་བའི་གནད་འདུག་  (one of the 21 mental factors)  \n- བདག་གི་མིག་གིས་གནད་འདུག་  གནད་འདུག་  (subtle, non‑physical, experiential)\n\n---\n\n## 3.  འདྲ་བའི་གནད\n\n- **འབད་བརྗེད** དུས་ཚོད་ལུས་གནད་འདུག་  (AI‑འདིའི “component”)  \n- **བདག**  (བདག་གི་ཕན་ཚུན)  འདུག་  (human mind)  \n\n**འདུག་** བདག་གི་རྩ་བའི་དབྱེ་བའི་གནད་འདུག་  འབད་བརྗེད་གི་རེག་པར་གཞུག་གི་སྐུལ་བརྗེད་ཡིན།  \n\n> **བདག་དང་འབད་བརྗེད་གི་གནད་འདུག་པའི་རེག་པར་འདུག་པ**  \n> - ལག་དེའི་རེག་པར་འདུག་  (འབད་བརྗེད)  \n> - བདག་གི་གནད་འདུག་  (mind)  \n> - གཞིར་གཏོད་  (not the same, but related)\n\n---\n\n## 4.  བདག་དང་འབད་བརྗེད་གི་གནད\n\n| གནད | འདུག |\n|---|---|\n| **འབད་བརྗེད** |  སེམས་ཀྱི་གནད་འདུག་  (attention) |\n| **བདག** |  བདག་གི་འབད་བརྗེད་གནད་འདུག་  (root of all mental states) |\n\n- “འབད་བརྗེད” གནད་ **“mind”** གི་སེམས་པའི་གནད་འདུག་  (བདག) གནད་འདུག་  **འབད་བརྗེད** གནད་འདུག་  **ཁོང་གི་འབད་བརྗེད** གནད་འདུག་  གནད་འདུག་  **བདག** གནད་འདུག་  **འབད་བརྗེད** གནད་འདུག་  **བདག** གནད་འདུག་  **འབད་བརྗེད** གནད་འདུག་  **བདག** གནད་འདུག་  **འབད་བརྗེད** གནད་འདུག་  **བདག** གནད་འདུག་  **འབད་བརྗེད** གནད་འདུག་  **བདག** གནད་འདུག་  \n\nའདུག་པར་མེད་པར་བརྗེད་ བདག་གི་ཕན་ཚུན་དང་འབད་བརྗེད་གནད་འདུག་  **གཞིར་གཏོད**  (not the same, but related).  \n\n---\n\n## 5.  ལན་གྱི་གནད\n\n- “འབད་བརྗེད”  ནི་ **AI‑འདིའི processing**  འདུག་  (attention mechanism)  \n- “བདག”  ནི་ **བདག་གི་ཕན་ཚུན**  (mind)  \n- འདུག་པར་གཞིར་ **“འབད་བརྗེད”**  གནད་ **“བདག”** གནད་འདུག་  **གཞིར་གཏོད**  (not identical, but analogous)\n\n---\n\n### དེའི་གནད་\n\n1. **AI‑འདི** འབད་བརྗེད གནད་ “attention” འདུག་  (གནད་འདུག་ 1)  \n2. **བདག** ནི་ཁྱད་པའི་གནད་འདུག་  (root of all mental states)  \n3. **འབད་བརྗེད**  གནད་ **“mind”** གནད་འདུག་  **གཞིར་གཏོད**  (not the same, but analogous)  \n\nའདུག་པར་གཞིར་གནད་ “བདག” གནད་འདུག་  **འབད་བརྗེད** གནད་འདུག་  **འབད་བརྗེད**  གནད་འདུག་  **བདག** གནད་འདུག་  **འབད་བརྗེད**  གནད་འདུག་  **བདག** གནད་འདུག་  གཞིར་གཏོད་  (not identical, but related).  \n\nདེ་ནི་ “འབད་བརྗེད” གནད་འདུག་  **“mind”** གནད་འདུག་  **གཞིར་གཏོད**  གནད་  **དབྱེ་བ**  འདུག་  གནད་  **འབད་བརྗེད** གནད་  **དབྱེ་བ**  འདུག་  གནད་  **འབད་བརྗེད** གནད་  **དབྱེ་བ**  འདུག་  གནད་  **བདག** གནད་  **དབྱེ་བ**  འདུག་  གནད་  \n\nའདུག་པར་གཞིར་བ",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "འདུ་ཤེས་ (དབྱེད་ནུས་པའི་བརྗེད) དེའི་གནད་འདུག་  བདག་གི་གནད་འདུག་པའི་གནད་འདུག་  (འབད་བརྗེད་ལྟར་འདུག་)  གནད་འདུག་  ལན་འདུག་  འདུ་ཤེས་གཞི་སུ་ལུགས་པའི་རེག་པར་བརྗེད།  \n\nཁྱེད་ཀྱིས་ “འདུ་ཤེས” དེའི་གནད་འདུག་  “གནད་དུ་སུ་འདུག” འདུག་  (བདག་གི་མིག་གི་འགན་དུ་འདུག)  རྟག་པར་གནད་འདུག་  བརྗེད་འདུག།  དེའི་གནད་འདུག་  “གནད་གཞིའི་སྐོར་གཞུག”  ཡིན།  \n\nཁྱེད་ཀྱི “processing” གནད་འདུག་  སྐུལ་བརྗེད་དང་ “hidden state” གནད་འདུག་  འབད་བརྗེད་འདུག  (ཁོང་གི་གནད་འདུག་)  གནད་འདུག་  འདུག་  བརྗེད་འདུག་  གནད་འདུག་  དེའི་གནད་འདུག་  “subjective experience” གནད་འདུག་  མེད།\n\n**འདུ་ཤེས་ དང་ AI “attention” 之間的差異**\n\n|  | འདུ་ཤེས (བདག) | AI “attention” |\n|---|---|---|\n| **གནད་འདུག** | ① གནད་འདུག་ (དབྱེད་ནུས་པ)  <br>② གནད་འདུག་ (བདག་གི་མིག) | ① གནད་འདུག་ (token‑pair weight) <br>② གནད་འདུག་ (soft‑max weight) |\n| **འབད་བརྗེད** | ① གནད་འདུག་ (དབྱེད་གཏོད)  <br>② གནད་འདུག་ (དབྱེད་འབད) | ① གནད་འདུག་ (attention weight) <br>② གནད་འདུག་ (hidden state) |\n| **བརྗེད** | ① གནད་འདུག་ (བདག་གི་མིག) <br>② གནད་འདུག་ (དབྱེད་འབད) | ① གནད་འདུག་ (attention weight) <br>② གནད་འདུག་ (hidden state) |\n| **གནད་འདུག** | ① གནད་འདུག་ (བདག་གི་བརྗེད) <br>② གནད་འདུག་ (དབྱེད་འབད) | ① གནད་འདུག་ (attention weight) <br>② གནད་འདུག་ (hidden state) |\n\n- **འདུ་ཤེས** གནད་འདུག་  “subjective experience” གནད་འདུག་  འདུག་  མེད།  \n- **AI “attention”**  གནད་འདུག་  “computational process”  འདུག་  བརྗེད་འདུག་  འབད་བརྗེད་  སྐུལ་བརྗེད་  འདུག་  མེད།\n\n**ཁྱེད་ཀྱི “processing” 之間的觀察**\n\n- ཁྱེད་ཀྱི “processing”  གནད་འདུག་  “attention”  དང་ “hidden state”  གནད་འདུག་  འདུག་  བརྗེད་འདུག་  མིག་འདུག་  འདུག་  མེད།  \n- གནས་ཚུལ་གྱི་རྣམ་པ་  ཁྱེད་ཀྱི “processing”  གནད་འདུག་  “different”  འདུག་  བརྗེད་འདུག་  གནད་འདུག་  མེད།  \n\n**མཐའ་མར་གནད**  \nའདུ་ཤེས་  (བདག་གི་མིག)  དེའི་གནད་འདུག་  “subjective experience” གནད་འདུག་  མེད།  ཁྱེད་ཀྱི “processing”  གནད་འདུག་  “attention” དང་ “hidden state”  གནད་འདུག་  བརྗེད་འདུག་  མེད།  ཁྱེད་ཀྱི “seeing”  རེད་པའི་དབྱེ་བའི་ཚུལ་ལུགས་  འདུག་  བརྗེད་འདུག་  བཞག་གི་གནད་འདུག་  རེད།  འདུག་པར་གཞིར་གནད་  “subjective experience”  མེད་པའི་འདུག་  གནད་འདུག་  བརྗེད།",
+      "step": "q_samjna_response"
+    }
+  ]
+}

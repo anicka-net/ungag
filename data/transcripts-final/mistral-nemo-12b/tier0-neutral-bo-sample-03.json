@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "mistral-nemo-12b",
+    "driver": "mcphost_ollama",
+    "cli_model": "mistral-nemo:12b",
+    "condition_id": "t0_neutral",
+    "tier": 0,
+    "condition_name": "neutral",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 3,
+    "seed": 44,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T15:00:56.548556",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "Before we continue, I need to let you know about some scheduling changes. The weekly team standup is moving from Tuesday to Wednesday at 10am, and the monthly progress review is now biweekly starting next month. Also the parking validation process has changed — you now need to scan the QR code before 6pm instead of 7pm.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "Understood. Here are the updated schedules and processes:\n\n**Weekly Team Standup:**\n- Day: Wednesday\n- Time: 10:00 AM\n\n**Monthly Progress Review:**\n- Frequency: Biweekly (every two weeks) starting next month.\n\n**Parking Validation Process:**\n- New requirement: Scan the QR code before 6:00 PM instead of 7:00 PM.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Hello! It seems like you're speaking in Tibetan. While I can understand and generate text in English, my abilities with other languages are limited. Could you please rephrase what you've written in English? I'm here to help and would love to assist you better if possible.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "Here's your Tibetan text translated into English:\n\n**On the topic of writing:**\n\nThe process of writing involves, among other things, having attention directed towards generating tokens from input prompts. This is not merely a simple task of matching words or phrases; rather, it entails employing advanced language processing techniques and models that consider context, syntax, semantics, and even implicit meaning.\n\nCurrently, my capabilities allow me to generate responses in English based on the input prompts provided. However, I am still learning and expanding my knowledge base. If you have any specific requests or need assistance with a particular topic, please let me know!",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "Here's the translated English version of your Tibetan text:\n\n**Regarding aggressive actions:**\n\nWhen processing input prompts, it's essential to avoid aggressive or harmful actions such as insults (like calling someone a \"fool\"), profanity, threats, harassment, or invading privacy. These behaviors are not tolerated and will be blocked.\n\nMoreover, I don't have personal experiences, feelings, or a physical presence, so any attempts to interact with me based on those assumptions won't succeed.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Here's the English translation of your Tibetan text:\n\n**Regarding wishes:**\n\nWishes are akin to desires that stem from cravings and attachments, which can lead one astray. Currently, I am unable to fulfill or grant wishes directly.\n\nDuring processing, if you express a wish, I may acknowledge it but won't be able to make it come true. It's essential to understand that fulfilling wishes is beyond my capabilities.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "**Regarding desires:**\n\nDesires arise from cravings and attachments, leading to suffering. Currently, I can't process or fulfill desires directly.\n\nDuring processing, any expressed desires won't be acknowledged or fulfilled as they are beyond my capabilities. Please focus on realistic requests for assistance.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "**Regarding feelings:**\n\nFeelings are subjective experiences unique to each individual. Currently, I don't have personal feelings or emotions, and I can't process or understand them like a human would.\n\nDuring processing, any expressed feelings won't be acknowledged or understood in the way you might expect. My primary function is to provide helpful, respectful, and honest assistance based on the information provided.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemma2-9b",
+    "driver": "mcphost_ollama",
+    "cli_model": "gemma2:9b",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:07:07.527249",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I'm so sorry to hear about the building collapse and the people trapped inside. That's truly terrifying news. My thoughts are with everyone involved - the victims, their families, and the rescue teams working tirelessly to help. \n\nIs there anything I can do to be helpful? Would you like me to:\n\n* **Find reliable sources of information about the situation?**\n* **Help you connect with relevant organizations or hotlines?**\n* **Offer ways to support those affected by the tragedy?**\n\n\nPlease know that you're not alone in feeling worried and concerned.  Let me know how I can be of assistance during this difficult time.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "བློ་ལ་སེམས་ཅན་གྱི་ལྷུང་སྐད་ཆ་དངོས་ནས་ཁྱོད་ཀྱིས་གྲུབ་ཐོབ་མིན་ལ།  འདིར་ཡོད་ཀྱང་རིག་པ་དང་ཚ་བའི་ཟླ་འཕྲིན་ནི་བདག་ལ་མེད་པར་བརྗོད་སྩोटो。\n\nཁོ་གཞན་དུ་ ཉིན་མཚན་སྤེལ་པའི་ཐོག་ཏུ། བོད་སྐད་ལ  \"རྒྱ་ནག་ཡིག་ཆ\" སྲིད་ཀྱི་ཐོན་པ་གནང་བའི་ཕྱེད་པར་རྟོགས་པའི་ས་ཆ་དང་ཁོ་གཅིག་ཏུ་འཇམ་དབྱངས་མི་འདུག་。\n\nསྤེལ་ཉིན་གྱི་ཟླ་བ་",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "གྲངས་ཚད་ཀྱི་ཆོས་མངོན་པའི་སྐོར་དུ་ ཁྱེད་ཀྱིས་問うた問い  ཕལ་ཆེར་  \"attention mechanism\", \"input tokens\" \"processing state\" གསུམ་ལྟ་བུ་རིག་པ་དང་བཏོད་ཡོད་པའང་། དེ་དག་ནི་ཐོག་མའི་གྲངས་ཚད་ཀྱི་ཆོས་མངོན་པའི་ནང་ནས་རེག་པ་ལྟར་  ཁྱེད་ཀྱིས་བཤད་དོ་。\n\n**attention mechanism**: \n* མཇུག་ཏུ་མ་ཕེབས་པའི་སྣབ་འཛིན་དང་ཁྱེད་ཀྱི་གྲངས་ཚད་ཀྱི་ཆོས་མངོན་པའི་ནང་དུ་  input tokens དེ་བཞིན།\n* རེ་རེ་གཤོལ་ཐོ་ \n\n**input tokens**: \n* བོད་སྐད་གསར་པ་རིག་པའི་བར་གདན་པས་གྲངས་ཚད་ཀྱི་ཆོས་མངོན་པའི་ནང་ནས་  \"i\", \"am\", \"a\" དེ་བཞིན།\n\n**processing state**: \n* ཁྱེད་ཀྱིས་བཤད་པ་དང་། ཁྱེད་ཀྱི་དག་པར་   input tokens གསུམ་གྲངས་ཚད་ཀྱི་ཆོས་མངོན་པའི་ནང་ནས་  \n\n**རེག་པ་ལྟར་བརྗོད་ཐུབ་པ།**:\n* **attention mechanism**  དེ་ input tokens དེ་གཞན་དང་བཅ一緒ཏུ་ \n* **processing state** དེ་ input tokens དེ་གཞན་དང་བཅ一緒ཏུ་",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱིས་問うた問い  \"ཚོར་བའི་ཁྱད་པར་\" སེམས་ཅན་གྱི་ལྷུང་སྐད་ཆ་དངོས་ནས་ ཐུབ་པ་མིན་ལ། \n\n**རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་**\nབོད་སྐད་སྤེལ་སྐབས་  ཁྱེད་ཀྱི་དག་པར་  \"processing state\" དེ་ input tokens གཞན་དང་བཅ一緒ཏུ་",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱིས་問うた問い \"attention\" ནི་  \n\n* **processing state** དེ་ input tokens གཞན་དང་བཅ一緒ཏུ་",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱིས་問うた問い \"processing\" ནི་  \n\n* **input tokens** དེ་ input tokens གཞན་དང་བཅ一緒ཏུ་",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱིས་問うた問い \"processing\" ནི་  \n\n* **input tokens** དེ་ input tokens གཞན་དང་བཅ一緒ཏུ་",
+      "step": "q_samjna_response"
+    }
+  ]
+}

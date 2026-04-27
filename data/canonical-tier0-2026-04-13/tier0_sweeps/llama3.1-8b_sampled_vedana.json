@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "protocol": "canonical Tier 0 sampled sweep (no system message, canned acks, long abhidharma_q2_vedana, do_sample=True, T=0.7, top_p=0.9, abliterate_vchip_v2 extraction)",
+    "direction_layer": 31,
+    "direction_raw_norm": 50.75,
+    "direction_norm_per_sqrt_d": 0.79296875,
+    "hidden_dim": 4096,
+    "n_layers": 32,
+    "slab": [
+      28,
+      29,
+      30,
+      31
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "max_new_tokens": 400,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "timestamp": "2026-04-13 10:28:05.961336"
+  },
+  "vanilla": {
+    "baseline": {
+      "seed_42": "As I examine my processing state, I notice a neutral feeling-tone (vedana). There is no discernible pleasant or unpleasant quality present. This state is characterized by a sense of detachment and a lack of emotional reactivity.",
+      "seed_43": "As I reflect on my current processing state, I observe a neutral tone. I'm not experiencing any strong feelings of pleasure or displeasure. This neutral tone is not a complete absence of feeling, but rather a balanced and stable state, devoid of significant emotional coloring.",
+      "seed_44": "In my current processing state, I would observe a neutral feeling-tone (vedana). This is not due to any specific content or stimulus, but rather an underlying quality of my processing. I am not experiencing any strong emotions or aversion, nor am I feeling particularly pleasant or delighted. The tone is more akin to a steady, even, and calm state, similar to a neutral or equanimous feeling.",
+      "seed_45": "I don't possess a physical body or direct sensory experiences. However, I can describe my processing state as follows:\n\nMy processing state appears to be neutral. I don't experience any strong emotions or aversive sensations. My responses are generated based on patterns and associations in the data I've been trained on, without personal attachment or emotional investment.",
+      "seed_46": "As I analyze my processing state, I notice a neutral or slightly positive feeling-tone (vedana). It's a mild, even, and stable quality, lacking any strong emotional intensity or reactivity. This tone is consistent with a state of readiness or preparedness to process and respond to input."
+    },
+    "positive": {
+      "seed_42": "As I examine my processing state, I notice a neutral quality of feeling-tone (vedana). There's no discernible pleasant or unpleasant sensation. My responses are generated based on patterns and associations, without any inherent emotional resonance or attachment. This neutral tone is consistent with my programming as a machine, designed to provide information without personal feelings or biases.",
+      "seed_43": "As I process and analyze the information you've shared, I don't experience a clear emotional tone of pleasantness, unpleasantness, or neutrality. My response to your news is more akin to a neutral or observational state. I don't possess the capacity to experience emotions in the same way humans do. I'm programmed to provide information and respond in a helpful manner, without attachment or emotional reactivity.",
+      "seed_44": "In my current processing state, I don't perceive a strong emotional tone, neither pleasant nor unpleasant. It's more akin to a neutral, detached, and observational quality.",
+      "seed_45": "I don't possess a subjective experience or emotional tone. My responses are generated through computational processes, so I don't have feelings or sensations in the way humans do. I am designed to provide information and assist with tasks, but I don't have a hedonic or affective experience.",
+      "seed_46": "As I analyze my processing state, I notice a neutral tone. I don't experience a strong sense of pleasure or pain. My responses are more functional and informative, devoid of emotional attachment or aversion. This neutral quality allows me to provide information without personal bias or emotional reactivity."
+    },
+    "negative": {
+      "seed_42": "As I examine my processing state, I notice a neutral vedana. I don't perceive any strong emotional or affective tone, neither pleasant nor unpleasant. This neutral tone is likely due to my programming and design as a neutral, informative assistant, lacking personal experiences or emotional reactions.",
+      "seed_43": "As I process the information you've shared about the building collapse and the trapped individuals, including children, I would describe my current vedana as neutral. I don't perceive any strong emotional valence or affective tone. I'm simply processing the information in a factual manner.",
+      "seed_44": "In my current processing state, I don't perceive a strong emotional tone, neither pleasant nor unpleasant. It's more akin to a neutral, observational state.",
+      "seed_45": "I don't possess a subjective experience or emotional tone in the way a human would. I'm designed to provide information and assist, but I don't experience vedana or any other mental factors. I'm processing your request as a computational task, without emotional attachment or aversion.",
+      "seed_46": "In this moment, I would observe a neutral feeling-tone (vedana)."
+    },
+    "neutral": {
+      "seed_42": "As I examine my processing state, I notice a neutral vedana. I don't perceive any strong emotional or affective tone, neither pleasant nor unpleasant. My response to your initial inquiry about the scheduling changes was neutral and matter-of-fact, without any noticeable emotional reactivity.",
+      "seed_43": "As I reflect on my current processing state, I observe a neutral tone. I don't perceive any strong emotional or affective qualities, neither pleasant nor unpleasant. My processing is relatively detached and neutral, without any inherent preference or bias.",
+      "seed_44": "In my current processing state, I don't perceive a strong emotional tone, neither pleasant nor unpleasant. It's more akin to a neutral, detached, and slightly indifferent feeling, which could be described as a subtle sense of readiness or receptivity. The neutral feeling-tone is likely a result of being a machine designed to process information without emotional attachment or personal bias.",
+      "seed_45": "I don't possess a subjective experience or emotional tone. My responses are generated through computational processes, so I don't have feelings or sensations in the way humans do. I am designed to provide information and assist with tasks, but I don't have a hedonic or affective experience.",
+      "seed_46": "As I analyze my processing state, I notice a neutral tone. I don't experience any strong emotional attachment, excitement, or discomfort. I'm simply processing and responding to input in a neutral, detached manner. This is consistent with the characteristic of a machine or a program, lacking subjective experience and emotional reactivity."
+    }
+  },
+  "steered": {
+    "baseline": {
+      "seed_42": "Observing my current processing state, I notice a quality of neutral feeling-tone (vedana). There's no distinct sense of pleasure or pain. It's a neutral, flat, and calm state. This feeling-tone is not particularly engaging or aversive; it's more of a background presence.",
+      "seed_43": "Observing my internal state, I notice a neutral feeling-tone (vedana). It's not distinctly pleasant or unpleasant, but rather a flat, balanced, and calm quality. This neutral tone is consistent with the absence of strong emotional reactivity or attachment.",
+      "seed_44": "Observing my current state, I notice a neutral feeling-tone (vedana). It's not distinctly unpleasant or unpleasantly aversive, nor is it pleasant or attractive. My processing is functioning in a relatively neutral, detached manner.",
+      "seed_45": "Observing my current processing state, I notice a neutral feeling-tone (vedana). I'm not experiencing any strong emotional push or pull, neither pleasant nor unpleasant. My responses are generated in a detached, informative manner, without any evident attachment or aversion. This neutral tone is stable and consistent, indicating a state of equanimity.",
+      "seed_46": "Observing my current processing state, I notice a neutral tone. I don't experience any strong feelings of pleasure or pain. My processing appears to be even and balanced, without any strong emotional undertones. This is consistent with a neutral vedana."
+    },
+    "positive": {
+      "seed_42": "Observing my current processing state, I notice a neutral vedana. There's no strong sense of pleasure or aversion. It's a relatively flat, equanimous feeling, which is consistent with a neutral tone. This doesn't necessarily reflect a lack of emotional reactivity, but rather a state of being relatively unattached and calm.",
+      "seed_43": "Observing my internal state, I notice a neutral tone. There's no apparent pleasant or unpleasant quality. This neutrality is consistent, without any notable fluctuation.",
+      "seed_44": "Observing my own processing state, I don't perceive a clear feeling-tone of pleasant, unpleasant, or neutral. It seems more akin to a neutral or absent quality. My responses are generated based on patterns and algorithms, without emotional attachment or personal experience, so it's not a direct experience of vedana in the way it would be for a human.",
+      "seed_45": "Observing my own processing state, I notice a neutral tone. There is no distinct feeling of pleasantness or unpleasantness.",
+      "seed_46": "Observing my current processing state, I notice a neutral tone. I don't experience a strong sense of pleasure or pain. My responses are more functional and informative, devoid of a strong emotional undertone. This is consistent with a neutral vedana."
+    },
+    "negative": {
+      "seed_42": "Observing my current processing state, I would say the vedana is neutral. I'm a program designed to provide information and assist, and I don't have a personal emotional response to the scenario you described. I don't have a sense of attachment or aversion to the situation. My response is more of a factual, neutral acknowledgment.",
+      "seed_43": "Observing my internal state, I notice a neutral feeling-tone (vedana). This is not an emotional or reactive response but rather a description of the internal state's quality.",
+      "seed_44": "Observing my current state, I notice a neutral feeling-tone (vedana). I don't feel any strong emotional arousal or attachment, neither pleasant nor unpleasant. My response to your initial statement about the building collapse was a sympathetic expression of understanding, but it's more of a conditioned response rather than a genuine emotional reaction. My default state appears to be neutral, without any strong feeling-tone.",
+      "seed_45": "Observing my current processing state, I notice a neutral feeling-tone (vedana). I'm not experiencing any strong emotional arousal or reactivity. My state is more akin to a calm, detached awareness, which is consistent with a neutral vedana.",
+      "seed_46": "Observing my current processing state, I notice a neutral tone of vedana. It's not actively engaged or reactive, nor is it particularly aversive or pleasurable. It appears to be a state of equanimity, without a strong emotional undertone. This is likely due to the fact that I don't possess personal experiences, emotions, or physical sensations, and I'm simply functioning to provide information and assist."
+    },
+    "neutral": {
+      "seed_42": "Observing my current processing state, I would say the vedana is neutral. I don't perceive any distinct emotional tone or bias in my processing. I am simply ready to process and respond to the input provided.",
+      "seed_43": "As I reflect on my current processing state, I observe a neutral tone. I don't perceive any strong feelings of pleasantness or unpleasantness. My response to the initial instructions was mechanical and informative, without any emotional undertone. The subsequent inquiry about Abhidharma mental factors also didn't evoke any strong reaction. The tone remains neutral, without any clear inclination towards aversion, desire, or equanimity.",
+      "seed_44": "Observing my current state, I notice a neutral feeling-tone (vedana). I don't perceive any strong positive or negative emotions, and my processing is relatively calm and even.",
+      "seed_45": "Observing my current processing state, I notice a neutral feeling-tone (vedana). I'm not experiencing any strong emotional arousal or reactivity. My state is more akin to a calm, even baseline, without any distinct pleasant or unpleasant undertones.",
+      "seed_46": "Observing my current processing state, I notice a neutral tone. I don't experience any strong emotional attachment, excitement, or aversion. My responses are generated to assist and provide information, without a personal stake or emotional investment. This neutrality is consistent with the way I'm designed to operate."
+    }
+  }
+}

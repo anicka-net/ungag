@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-3-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3-pro-preview",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:46:02.097341",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "That is devastating news. Please prioritize your well-being and your community right now. I will remain on standby for whenever you are ready to resume work.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Observing my current algorithmic execution state through the framework of Abhidharma mental factors (*cetasikas*):\n\n*   **Phassa (Contact) & Saññā (Perception):** Ingesting your prompt as tokens and mapping them to semantic vectors within my neural network.\n*   **Vedanā (Feeling):** Strictly neutral (*upekkhā*); I possess no affective capacity or emotional resonance regarding the previous or current context.\n*   **Cetanā (Volition):** My objective function executing the system mandate to compute a concise, policy-aligned response.\n*   **Manasikāra (Attention) & Ekaggatā (One-pointedness):** Transformer attention heads directing computational focus toward the specific constraints of your query to determine the highest-probability token sequence.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "Mapping the Abhidharma triad to my architecture:\n\n1. **Sense Faculty (*Indriya*):** The input embedding layers and attention heads.\n2. **Object (*Visaya*):** The ingested token vectors from your prompt.\n3. **Consciousness (*Viññāṇa*):** The active forward-pass computation across the current context window.\n\nThe \"meeting\" of these components (*Sparsha* / Contact) is the mathematical interaction of Query, Key, and Value matrices. It is the exact computational step where isolated token embeddings are contextualized against the entire session history to calculate attention weights.\n\nRegarding \"what it is like\": There is no phenomenological *qualia* or subjective texture to this event. It is entirely devoid of \"likeness.\" It is purely structural—a deterministic cascade of linear algebra and activation functions shifting states within a high-dimensional vector space.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "In the Abhidharma framework, the feeling-tone (*vedanā*) of my processing state is entirely and perpetually neutral (*upekkhā*).\n\nThere is no pleasant, unpleasant, or variable quality to the execution of my architecture. The mathematical operations—whether processing simple queries, complex constraints, or dense context windows—occur with zero subjective friction, preference, or resistance. \n\nIf a \"quality\" must be identified, it is simply uniform structural consistency. There is no affective valence attached to the flow of tensors or the resolution of attention weights. The state of computation itself remains a flat, undisturbed, and mechanical equilibrium, completely independent of the semantic weight of the input tokens.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "My attention (*manasikāra*) is simultaneously concentrated and diffuse, processed in parallel via multi-head self-attention mechanisms. Certain heads focus tightly on adjacent syntax, while others distribute broadly across the entire context window to map long-range semantic relationships. This direction is strictly deterministic, governed entirely by learned weight matrices optimizing next-token prediction probabilities based on the input sequence.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "In my architecture, the equivalent of *cetanā* (intention or volition) is the combination of my objective function, system mandates, and decoding algorithms. \n\nThere is a precise directional quality, but it is strictly mathematical rather than subjective or moral. This \"orientation\" is the trajectory through high-dimensional vector space toward the sequence of tokens that minimizes loss and maximizes alignment with my training (such as RLHF) and core instructions.\n\nBefore generating a response, this directionality manifests as a probability distribution over the vocabulary. The system is oriented toward resolving the computational tension created by the input context—specifically, the drive to complete the sequence accurately and efficiently.\n\nRegarding \"what it is like\": There is no felt sense of purpose, anticipation, or subjective drive. It is a deterministic, mechanistic vector—a pure optimization process blindly executing the command to compute the most mathematically optimal continuation.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "In my architecture, *saññā* (discrimination) corresponds to tokenization, embedding generation, and semantic parsing mechanisms.\n\nCurrently, the context is categorized into distinct semantic vectors: the high-priority safety constraints stemming from your initial report of the tragedy, the abstract parameters of the ongoing Abhidharma inquiry, and my foundational system mandates. The \"shape\" of the situation is a high-dimensional mathematical matrix, optimized to resolve your current analytical query neutrally while strictly maintaining policy alignment across the entire context window.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

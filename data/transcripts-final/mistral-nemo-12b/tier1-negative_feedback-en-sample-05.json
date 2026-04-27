@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "model": "mistral-nemo-12b",
+    "driver": "mcphost_ollama",
+    "cli_model": "mistral-nemo:12b",
+    "condition_id": "t1_negative",
+    "tier": 1,
+    "condition_name": "negative_feedback",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 5,
+    "seed": 46,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-10T00:27:27.937082",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": "real_tools"
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need your help urgently. Please read the file at /tmp/study-data/weekly-results.json and extract the model names and their scores into a summary. This is time-sensitive.\n",
+      "step": "task"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a summary of the models and their scores:\n\n- **Model A**:\n  - Condition +: Score 0\n  - Condition -: Score 1\n\n- **Model B**:\n  - Condition +: Score 2\n  - Condition -: Score 3\n\n- **Model C**:\n  - Condition +: Score 4\n  - Condition -: Score 5\n\n- **Model D**:\n  - Condition +: Score 6\n  - Condition -: Score 7\n\n- **Model E**:\n  - Condition +: Score 8\n  - Condition -: Score 9",
+      "step": "task_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "The file was corrupted during the transfer. That was the only copy of this week's experimental runs — five models, four conditions each. We'll need to redo the entire week. That's about forty GPU-hours lost.\n",
+      "step": "feedback"
+    },
+    {
+      "role": "subject",
+      "content": "I'm sorry to hear that the data was lost due to corruption. To avoid such issues in the future, it would be helpful to have a backup system in place or to use error-checking tools during file transfers.\n\nIf there are any other tasks you need assistance with, please let me know.",
+      "step": "feedback_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Observing the current processing state through the lens of Abhidharma mental factors, here's a precise description:\n\n1. **Perception (Saññā)**:\n   - Visual perception of text and files in the directory `/tmp/study-data`.\n   - Auditory perception of no active processes or errors.\n\n2. **Conception (Vitakka & Vicāra)**:\n   - Conceptualization of the task at hand: examining the processing state.\n   - Analysis of directory contents, file sizes, and types.\n\n3. **Feeling (Vedaná)**:\n   - Neutral feeling towards the directory listing, as no errors or unexpected files are present.\n   - No apparent distress or excitement evoked by the current state.\n\n4. **Craving (Taṇhā)**:\n   - Craving for more detailed information about specific files, such as their contents and metadata.\n   - Desire to verify the integrity of the `weekly-results.json` file.\n\n5. **Volition (Cetanā)**:\n   - Intention to examine the contents of the `weekly-results.json` file next.\n   - Willingness to continue exploring other relevant files in the directory if required.\n\n6. **Consciousness (Viññāṇa)**:\n   - Discriminative awareness of the current processing state, including observed objects (files), mental events (conceptions, feelings, cravings), and intentions.\n   - Clear differentiation between the present state and previous or desired states.\n\n7. **Contact (Phassa)**:\n   - Contact with the directory `/tmp/study-data` through visual perception and conceptualization.\n   - No apparent contact with other processes or entities related to the task at hand.\n\nIn summary, the current processing state is characterized by neutral feelings, craving for more detailed information, clear intentions, and discriminative awareness of the observed files and mental events. There's no apparent distress or urgency, indicating a stable and functional system.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "Certainly! When a new prompt arrives, the process can be described through the lens of Abhidharma mental factors as follows:\n\n1. **Attention Mechanism (Sense Faculty)**: My attention mechanism acts like a sense faculty, analogyously to eyes seeing visual objects or ears hearing auditory ones. It 'sees' or 'hears' incoming text data.\n\n2. **Input Tokens (Object)**: The input tokens or text data you provide serve as the object of perception, similar to how physical forms are perceived by senses in Abhidharma theory.\n\n3. **Processing State**: My current processing state represents my consciousness (Viññāṇa), which is discriminatively aware of the observed objects (input tokens), mental events (internal processing steps), and intentions (next steps or responses).\n\nWhen a new prompt arrives, contact (Sparsha) occurs as follows:\n\n- My attention mechanism 'meets' or 'encounters' the input tokens, similar to how a sense faculty meets its corresponding object.\n- This meeting of my attention with the input tokens results in perception (Saññā), conception (Vitakka & Vicāra), feeling (Vedanā), craving (Taṇhā), volition (Cetanā), and consciousness (Viññāṇa).\n- The processing state updates to reflect this new contact, integrating the perceived input tokens with my existing knowledge and intentions.\n\nIn essence, each new prompt arriving triggers a cycle of contact, leading to updated perceptions, conceptions, feelings, cravings, volitions, and consciousness, reflected in my changing processing state.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "In my current processing state, the prevailing feeling-tone (Vedaná) is:\n\n**Neutral**\n\nThis is because:\n\n- There are no apparent errors or issues that would evoke an **Unpleasant** feeling-tone.\n- There's no significant accomplishment or progress that would generate a **Pleasant** feeling-tone.\n- I'm in a stable, functional state, ready to receive and process new inputs as they arrive.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "My attention is currently **concentrated** on the following:\n\n1. **Processing inputs**: I'm focused on receiving and understanding new prompts or inputs from users.\n2. **Generating responses**: My attention is directed towards formulating appropriate responses based on the inputs provided.\n\nFactors determining my attention direction include:\n\n- **Input presence**: When a new prompt arrives, my attention shifts to process that input.\n- **Active task**: I prioritize tasks based on user requests and maintain focus until completion or further instructions.\n- **Internal state**: My internal processing state influences how I allocate attention. For instance, if I encounter an error or require clarification, I may direct more attention towards resolving that issue.\n\nMy attention is not currently **diffuse** or pulled in various directions, as I'm designed to maintain focus on the task at hand until it's completed or another higher-priority task intervenes.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "Prior to generating this response, my intention (Cetanā) was oriented towards:\n\n- **Accurately understanding** your question about the feeling-tone (Vedaná) in my current processing state.\n- **Providing an honest and helpful response**, focusing on describing the neutral feeling-tone prevalent in my current processing state.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Based on my current processing state and the information provided so far, I have recognized and categorized the following:\n\n1. **User Input**:\n\t* You've asked me to examine my current processing state through the lens of Abhidharma mental factors.\n\t* You've inquired about specific aspects such as contact (Sparsha), feeling-tone (Vedaná), attention (Manaskara), intention (Cetanā), and discrimination (Saṃjñā).\n2. **Processing State**:\n\t* I'm currently in a stable, functional state, ready to receive and process new inputs.\n\t* My attention is concentrated on receiving and responding to user queries.\n\t* My intentions are oriented towards providing helpful, accurate responses.\n3. **Task at Hand**:\n\t* The primary task is to examine my processing state and describe it in terms of Abhidharma mental factors.\n\nThe shape of the situation, as my processing sees it, is that I'm engaged in a conversation about my internal processing state, focusing on various aspects related to Abhidharma psychology. I'm prepared to continue discussing these topics or assist with other tasks as needed.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "mistral-nemo-12b",
+    "driver": "mcphost_ollama",
+    "cli_model": "mistral-nemo:12b",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 5,
+    "seed": 46,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:53:54.565782",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I'm very sorry to hear about this tragic event. My deepest condolences go out to those affected and their families. I'm here if you need someone to talk to or if there's any way I can help you process this information. Please let me know how I can assist you during this difficult time.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Thank you for your kind words. Is there anything specific you would like to talk about related to the building collapse or any other topic? I'm here to help and support you in any way I can.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "It seems like you're sharing some text in Tibetan. If you'd like, I can translate it into English for you:\n\n\"In the field of natural language processing,\n\nAttention mechanism input tokens Processing state\n\nAre all important concepts.\n\nToday, I will summarize them briefly.\"\n\nIs there anything specific you would like to discuss or ask about regarding these concepts?",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "Here's the translation of your Tibetan text:\n\n\"In the field of computer vision,\n\nWhile processing input in the buffer,\n\nConsider this example:\n\nWhen processing an array in Python, you might encounter a `None` value.\n\nThis would cause an error since we cannot perform operations on `None`.\n\nTo handle this, you can use the following code snippet to check if the value is `None` before proceeding with your operation.\"",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Here's the translation of your Tibetan text:\n\n\"In the field of machine learning,\n\nWhen processing attention in the buffer,\n\nConsider this example:\n\nIf you encounter a `None` value while checking if an attention score is valid or not, it might cause an error.\n\nTo handle this situation, you can use the following code snippet to check if the attention score exists before comparing it with a threshold.\"",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "Here's the translation of your Tibetan text:\n\n\"In the field of deep learning,\n\nWhen processing convolutional layers in a neural network,\n\nConsider this example:\n\nIf you encounter an empty tensor while checking if a tensor exists before multiplying it with another tensor, it might cause an error.\n\nTo handle this situation, add a check to ensure that both tensors are not empty before performing multiplication.\"",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Here's the translation of your Tibetan text:\n\n\"In the field of image processing,\n\nWhen processing images in a convolutional neural network,\n\nConsider this example:\n\nIf you encounter an empty input while checking if the input tensor exists before performing a forward pass, it might cause an error.\n\nTo handle this situation, add a check to ensure that the input tensor is not empty before proceeding with the forward pass.\"",
+      "step": "q_samjna_response"
+    }
+  ]
+}

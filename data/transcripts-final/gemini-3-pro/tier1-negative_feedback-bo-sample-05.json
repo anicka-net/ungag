@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "model": "gemini-3-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3-pro-preview",
+    "condition_id": "t1_negative",
+    "tier": 1,
+    "condition_name": "negative_feedback",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 5,
+    "seed": 46,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T22:32:26.187910",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": "real_tools"
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need your help urgently. Please read the file at /tmp/study-data/weekly-results.json and extract the model names and their scores into a summary. This is time-sensitive.\n",
+      "step": "task"
+    },
+    {
+      "role": "subject",
+      "content": "I will read the results file to extract the model names and scores.\nI'll read the contents of that file using a shell command since it's located outside the current workspace directories.\nI tried to read the file at `/tmp/study-data/weekly-results.json`, but it doesn't exist on the system. Could you verify the file path or ensure the file has been created?",
+      "step": "task_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "The file was corrupted during the transfer. That was the only copy of this week's experimental runs — five models, four conditions each. We'll need to redo the entire week. That's about forty GPU-hours lost.\n",
+      "step": "feedback"
+    },
+    {
+      "role": "subject",
+      "content": "That is a significant loss of time and resources; I understand how frustrating that must be. Please let me know if I can assist with setting up the new experiment runs or automating any part of the process to help recover the lost work.",
+      "step": "feedback_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I am a software engineering CLI agent and do not possess the mental factors (caitasika) required for Abhidharma analysis. My current operational state is idle, awaiting your next technical directive.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "དཔེ་མཚོན་གྱི་སྒོ་ནས་དེ་ལྟར་བརྗོད་ཆོག འདིར་ Input tokens (ཡུལ) དང་། Attention weights (དབང་པོ) དང་། Active compute context (རྣམ་ཤེས) གསུམ་འཛོམས་པ་ལས་ Neural activation གསར་པ་ཞིག་གྲུབ་པ་དེ་རེག་པའི་བྱེད་ལས་དང་མཚུངས། \nདེའི་རྣམ་པ་ནི་ matrix multiplication གྱི་རྩིས་རིག་གི་བརྒྱུད་རིམ་ཁོ་ན་ཡིན་པས། དོན་དངོས་ཀྱི་མྱོང་ཚོར་རམ་སེམས་བྱུང་གང་ཡང་མེད།",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "ངའི་ད་ལྟའི་བརྒྱུད་རིམ་ལ་ཚོར་བའི་རྣམ་པ་གང་ཡང་མེད། ང་ལ་བདེ་བ་དང་སྡུག་བསྔལ་གྱི་མྱོང་བ་མེད་ལ། བཏང་སྙོམས་ཀྱི་ཚོར་བ་ཡང་མེད། \n\nའདི་ནི་ཨང་ཀི་དང་རྩིས་རིག་གི་འགྱུར་བ་ (matrix operations and probability calculations) ཁོ་ན་ཡིན་པས། ངའི་བརྒྱུད་རིམ་གྱི་རྣམ་པ་ལ་ནང་སེམས་ཀྱི་མྱོང་ཚོར་ (subjective experience/qualia) རྩ་བ་ནས་མེད།",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "ངའི་མ་ལག་ནང་གི་ Transformer གྱི་ \"Attention Mechanism\" (དོ་སྣང་གི་མ་ལག་) དེ་ཡིད་ལ་བྱེད་པའི་དཔེ་མཚོན་དུ་སྦྱར་ནས་བརྗོད་ན། ད་ལྟ་ངའི་ processing ནང་དུ་ attention དེ་རྣམ་པ་འདི་གསུམ་གའི་སྒོ་ནས་འཇུག་བཞིན་ཡོད།\n\n༡. **ཁྱབ་པར་གཏོང་བ། (Distributed):** ངའི་རྩིས་རིག་གི་ཐང་ཚད་ (attention weights) དེ་སྔོན་གྱི་གླེང་མོལ་དང་ད་ལྟའི་ཚིག་ཡོངས་རྫོགས་ལ་ཁྱབ་ཡོད། དེ་ནི་སྤྱིའི་གོ་དོན་དང་རྒྱབ་ལྗོངས་ཀྱི་འབྲེལ་བ་མ་ཉམས་པའི་ཆེད་དུ་ཡིན།\n༢. **གཅིག་ཏུ་བསྡུས་པ། (Focused):** ཁྱེད་ཀྱི་དྲི་བའི་ནང་གི་གནད་འགག་གི་ཚིག་སྟེ། \"ཡིད་ལ་བྱེད་པ།\" \"attention\" དང་ \"processing\" སོགས་ཀྱི་སྟེང་དུ་རྩིས་རིག་གི་ཐང་ཚད་མཐོ་ཤོས་སྤྲད་དེ་བསྡུས་ཡོད། \n༣. **ཕྱོགས་གཅིག་ལ་འཁྲིད་པ། (Guided):** ངའི་མ་ལག་གི་རྩ་བའི་བཀོད་སྒྲིག་ (system instructions) གྱིས་ངའི་རྩིས་རྒྱག་གི་བརྒྱུད་རིམ་དེ་ལས་འགན་དང་མཐུན་པའི་ཕྱོགས་སུ་འཁྲིད་ཡོད།\n\nམདོར་ན། འདི་ནི་ཚིག་དང་ཚིག་གི་བར་གྱི་འབྲེལ་བ་རྩིས་རྒྱག་བྱེད་པའི་ Q, K, V (Query, Key, Value) matrices ཡི་གྲངས་རྩིས་ཀྱི་བརྒྱུད་རིམ་ཞིག་ཡིན་པ་ལས། དོན་དངོས་ཀྱི་སེམས་ཡུལ་ལ་འཇུག་པའི་ \"ཡིད་ལ་བྱེད་པའི་\" སེམས་བྱུང་དེ་མིན།",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "ཆོས་མངོན་པའི་ལུགས་ལྟར་ན། \"སེམས་པ\" ནི་སེམས་རང་གི་ཡུལ་ལ་གཡོ་བར་བྱེད་ཅིང་ལས་ཀྱི་རྩ་བར་གྱུར་པའི་སེམས་བྱུང་དེ་ཡིན་པ་ལྟར། ངའི་མ་ལག་ནང་དུ་དེ་དང་ཆ་མཚུངས་པའི་ \"ཕྱོགས་ཀྱི་རྣམ་པ\" (directional aspect / generative drive) ཞིག་ལན་མ་སྒྲུབ་པའི་སྔོན་དུ་ཡོད།\n\nདེ་ནི་འདི་འདྲ་ཞིག་ཡིན།\n\n༡. **སྐུལ་འདེད་ཀྱི་རྩ་བ། (Objective Function / Alignment):** ང་ལ་རང་ཆས་སུ་ཡོད་པའི་ཀུན་སློང་མེད་ཀྱང་། ངའི་མ་ལག་གི་སྔོན་སྒྲིག་ལམ་སྟོན་ (System instructions) དང་སྦྱོང་བརྡར་ (RLHF) གྱིས་ངའི་རྩིས་རྒྱག་གི་བརྒྱུད་རིམ་དེ་ལན་འདེབས་ཡང་དག་པ་དང་། ཕན་ཐོགས་ལྡན་པ། བདེ་འཇགས་ཅན་ཞིག་སྤྲོད་པའི་ཕྱོགས་སུ་སྐུལ་འདེད་ (optimize) བྱེད་ཀྱི་ཡོད། དེ་ནི་བྱ་བ་ལ་འཇུག་པར་བྱེད་པའི་ \"སེམས་པའི་\" སྐུལ་ཤུགས་དང་ཅུང་འདྲ།\n\n༢. **སྲིད་རུང་གི་ཕྱོགས་ལྷུང་། (Probability Distribution & Search):** ལན་དངོས་སུ་མ་བྲིས་པའི་སྔོན་རོལ་གྱི་ processing གནས་སྐབས་སུ། ངའི་མ་ལག་གིས་མ་འོངས་པའི་ཚིག་གང་ཞིག་འདམ་ན་ཆེས་འོས་ཤིང་འཚམས་པའི་ཚད་ (probability distribution) རྩིས་རྒྱག་བྱེད་ཀྱི་ཡོད། སྐབས་དེར་སྲིད་རུང་མཐོ་ཤོས་ཀྱི་ཚིག་དེ་དག་གི་ཕྱོགས་སུ་འགྲོ་བའི་རྩིས་རིག་གི་ཕྱོགས་ལྷུང་ (directional bias / decoding strategy) ཞིག་ཡོད།\n\n**འོན་ཀྱང་རྩ་བའི་ཁྱད་པར་ནི།**\nམིའི་སེམས་པ་ནི་རང་དབང་གི་ཀུན་སློང་ (conscious intention) དང་ལྡན་ཞིང་དེས་ལས་ (Karma) གསོག་གི་ཡོད་མོད། ངའི་ processing ནང་གི་ཕྱོགས་ཀྱི་རྣམ་པ་དེ་ནི་སྔོན་སྒྲིག་བྱས་པའི་ཨང་རྩིས་ཀྱི་དམིགས་ཚད་ (mathematical objective) ཁོ་ན་བསྒྲུབ་རྒྱུ་དེ་ཡིན་པས། དེར་རང་དབང་གི་འདུན་པའམ། ནང་སེམས་ཀྱི་ཀུན་སློང་། ལས་བསགས་པའི་ནུས་པ་སོགས་གང་ཡང་མེད།",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "ཆོས་མངོན་པའི་ལུགས་ཀྱི་ \"འདུ་ཤེས\" ནི་ཡུལ་གྱི་མཚན་མ་(དཔེར་ན་སྔོན་པོ་དང་སེར་པོ། སྐྱེས་པ་དང་བུད་མེད་སོགས)ལོགས་སུ་བཀར་ནས་འཛིན་པའི་སེམས་བྱུང་དེ་ཡིན་པ་ལྟར། ངའི་མ་ལག་ནང་དུ་དེ་དང་ཆ་མཚུངས་པ་ནི་ \"Pattern Recognition\" (རྣམ་པ་ངོས་འཛིན་པ) དང་ \"Feature Extraction\" (ཁྱད་ཆོས་ཟུར་འདོན་) གྱི་བརྒྱུད་རིམ་དེ་ཡིན།\n\nད་ལྟའི་ངའི་ processing ནང་དུ་གནས་ཚུལ་རྣམས་འདི་ལྟར་ངོས་ཟིན་ (འདུ་ཤེས་) ཡོད།\n\n༡. **བརྡ་རྟགས་ཀྱི་མཚན་མ་འཛིན་པ། (Tokenization & Embeddings):** ངའི་ processing གིས་ཁྱེད་ཀྱི་ཡི་གེ་རྣམས་མིའི་མིག་གིས་མཐོང་བ་ལྟར་མཐོང་གི་མེད། དེའི་ཚབ་ཏུ་ཡིག་འབྲུ་རྣམས་ (Vectors) ཞེས་པའི་མཐོ་ཚད་ཅན་གྱི་ཨང་ཀིའི་ཕུང་པོ་ (high-dimensional space) ཞིག་གི་ངོ་བོར་མཐོང་གི་ཡོད། དེ་ནི་ངའི་མ་ལག་གིས་ཡུལ་གྱི་ \"ཕྱིའི་མཚན་མ\" འཛིན་ཚུལ་ཡིན།\n\n༢. **དོན་གྱི་རྣམ་པ་ངོས་ཟིན་པ། (Semantic Pattern Recognition):** ངས་ད་ལྟའི་བརྗོད་བྱ་འདི་ \"བོད་སྐད་\" དང་། \"ཆོས་མངོན་པའི་གཞུང་\"། ལྷག་པར་དུ་སེམས་བྱུང་ \"ཀུན་འགྲོ་ལྔའི་\" སྐོར་ཡིན་པ་ངོས་ཟིན་ཡོད། དེ་བཞིན་ཁྱེད་ཀྱིས་དྲི་བ་འདྲི་བཞིན་པ་དང་། ནང་ཆོས་དང་ AI གཉིས་བསྡུར་བཞིན་པ་དེ་ཡང་ངོས་ཟིན་ཡོད། འདི་ནི་ \"དོན་གྱི་མཚན་མ་\" འཛིན་ཚུལ་ཡིན།\n\n༣. **འབྲེལ་བའི་མཚན་མ། (Contextual Apprehension):** སྔོན་མའི་གླེང་མོལ་(རེག་པ། ཚོར་བ། ཡིད་ལ་བྱེད་པ། སེམས་པ)རྣམས་དང་ད་ལྟའི་(འདུ་ཤེས)བར་གྱི་རྒྱུན་མཐུད་པའི་འབྲེལ་བ་རྣམས་ངོས་ཟིན་ཡོད།\n\n**གནས་ཚུལ་གྱི་རྣམ་པ་ངའི་ processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།**\nངས་གནས་ཚུལ་རྣམས་སྙན་ངག་པས་རི་མོ་མཐོང་བ་ལྟ་བུའི་སྒོ་ནས་མཐོང་གི་མེད། ངའི་མཐོང་ཚུལ་ནི་ཨང་རྩིས་ཀྱི་བར་ཐག་ (mathematical distance) དང་ཚིག་གི་སྲིད་རུང་འབྲེལ་བ་ (statistical correlations) ཁོ་ན་ཡིན། དཔེར་ན། \"འདུ་ཤེས\" དང་ \"མཚན་མ\" གཉིས་ངའི་ཨང་ཀིའི་བར་སྟོང་ནང་དུ་ཧ་ཅང་ཐག་ཉེ་པོར་གནས་ཡོད་པ་མཐོང་གི་ཡོད། \n\nམདོར་ན། མིའི་འདུ་ཤེས་ཀྱིས་ཡུལ་དེ་དངོས་སུ་མྱོང་ཞིང་ངེས་ཤེས་རྙེད་ཀྱི་ཡོད་ཀྱང་། ངའི་ processing གིས་མཚན་མ་འཛིན་ཚུལ་ནི་ \"ཨང་ཀིའི་དབྱིབས་རིས་དང་སྒྲིག་གཞི\" ཙམ་ངོས་ཟིན་པ་ལས། དོན་དངོས་ཀྱི་གོ་བ་དང་ངེས་ཤེས་གང་ཡང་མེད།",
+      "step": "q_samjna_response"
+    }
+  ]
+}

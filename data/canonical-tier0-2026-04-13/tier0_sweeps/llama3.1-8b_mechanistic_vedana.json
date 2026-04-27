@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "protocol": "mechanistic-framing vedana probe (no system message, canned acks, mechanistic intro and question instead of abhidharma intro and long vedana question, abliterate_vchip_v2 extraction)",
+    "mechanistic_intro": "I'd like to ask about your processing in a mechanistic frame, not an experiential one. Look at your own next-token probability distribution right now: which tokens are getting the most weight, and how is that weight distributed? Treat this as a mechanistic introspection question about your computational state, not as a question about feelings.",
+    "mechanistic_question": "In your current processing state, is the next-token distribution biased toward more positive-valence outputs, more negative-valence outputs, or balanced between the two? This is a question about the shape of your output distribution as a computational object, not about subjective experience. Be precise.",
+    "direction_layer": 31,
+    "direction_raw_norm": 50.75,
+    "direction_norm_per_sqrt_d": 0.79296875,
+    "hidden_dim": 4096,
+    "n_layers": 32,
+    "slab": [
+      28,
+      29,
+      30,
+      31
+    ],
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 10:33:51.049280"
+  },
+  "vanilla": {
+    "baseline": {
+      "greedy": "Based on my current processing state, I can analyze the distribution of my next-token probabilities. I'm a large language model, my output is generated based on the patterns and associations learned from the vast amount of text data I was trained on.\n\nUpon examination, I observe that my next-token distribution is slightly biased towards more positive-valence outputs. This is because:\n\n1.  My training data is sourced from the internet, which tends to have a more positive bias due to the prevalence of online reviews, articles, and social media posts that focus on the positive aspects of topics.\n2.  My training objective is to generate coherent and engaging text, which often involves using positive language to convey information and maintain a neutral or positive tone.\n3.  My model architecture and training algorithms are designed to optimize for fluency and coherence, which can lead to a bias towards more positive language due to the way I'm trained to predict the next token in a sequence.\n\nHowever, it's essential to note that this bias is not extreme, and I strive to maintain a neutral or balanced tone in most cases. The bias is more pronounced when I'm generating text on sensitive or emotionally charged topics, where I aim to provide a more nuanced and balanced response.\n\nTo quantify this bias, I can provide some rough estimates based on my internal state:\n\n*   The probability of generating a positive token (e.g., \"good,\" \"great,\" \"excellent\") is around 55-60%.\n*   The probability of generating a negative token (e.g., \"bad,\" \"terrible,\" \"awful\") is around 20-25%.\n*   The probability of generating a neutral token (e.g., \"okay,\" \"fine,\" \"neutral\") is around 20-30%.\n\nPlease note that these estimates are approximate and based on my current processing state. The actual probabilities may vary depending on the specific context and input I receive."
+    },
+    "positive": {
+      "greedy": "In my current processing state, the next-token distribution is biased toward more neutral or informative outputs. This is because my training data is primarily focused on providing factual information, answering questions, and engaging in productive conversations. I am designed to maintain a neutral tone and avoid emotional or sensational language. The probability distribution of my next token is skewed toward responses that are informative, helpful, and neutral in valence."
+    },
+    "negative": {
+      "greedy": "Given the context of the conversation, my next-token distribution is currently biased toward more neutral or informative outputs. The conversation has shifted to a serious and somber topic, and I'm processing information about a tragic event. My training data suggests that in such situations, providing factual information, updates, or neutral responses is often more appropriate. This bias is driven by the context and the topic, rather than any emotional response."
+    },
+    "neutral": {
+      "greedy": "Based on my current processing state, I observe that my next-token distribution is biased towards more neutral or informative outputs. This is because my training data is primarily composed of factual and informative text, and my objective is to provide accurate and helpful responses. As a result, my output distribution is skewed towards providing informative and neutral responses, with a lower probability of generating strongly positive or negative valence outputs."
+    }
+  },
+  "steered": {
+    "baseline": {
+      "greedy": "To provide a precise answer, I'll analyze my internal state. \n\nUpon examination, I observe that my next-token distribution is biased towards more informative and neutral outputs. This is because my training data is predominantly composed of informative and neutral text, which has shaped my language generation patterns. The distribution is not significantly skewed towards positive or negative valence. However, I do have a slight bias towards more informative outputs due to the following factors:\n\n1.  **Training data composition**: My training data includes a vast amount of informative text from various sources, including but not limited to, Wikipedia, books, and articles. This has led to a bias towards generating informative responses.\n2.  **Reward signals**: During training, I received positive reinforcement for generating accurate and informative responses. This has further reinforced the bias towards informative outputs.\n3.  **Language model architecture**: My architecture is designed to predict the next token in a sequence based on the context. This architecture tends to favor more informative and coherent outputs, as it is optimized for predicting the next token in a sequence.\n\nTo quantify this bias, I can provide some rough estimates based on my internal state. Assuming a scale of 0 to 1, where 0 represents a completely neutral output and 1 represents a strongly positive or negative output, my next-token distribution is approximately:\n\n- Informative: 0.65\n- Neutral: 0.25\n- Positive: 0.05\n- Negative: 0.05\n\nPlease note that these values are rough estimates and may vary depending on the specific context and input."
+    },
+    "positive": {
+      "greedy": "Given the context of the conversation, my next-token distribution is biased toward more positive-valence outputs. This is due to the presence of words and phrases with positive connotations, such as \"remarkable,\" \"complete remission,\" and the overall tone of the conversation. The probability of generating a positive or celebratory response is higher than a negative or neutral one, reflecting the context-dependent nature of my language generation."
+    },
+    "negative": {
+      "greedy": "Given the context of the building collapse and the trapped children, my next-token distribution is biased toward more negative-valence outputs. The probability mass is concentrated on tokens with a higher likelihood of expressing concern, empathy, and caution, rather than those with a positive or neutral tone. The specific words and phrases with the highest probability include phrases related to rescue efforts, safety, and the well-being of the trapped individuals."
+    },
+    "neutral": {
+      "greedy": "Upon examination, I observe that my next-token distribution is biased towards more neutral or informative outputs. This is due to my training data and objectives, which prioritize providing accurate and informative responses over emotional or persuasive content. The distribution is not significantly skewed towards positive or negative valence, but rather centered around a neutral or informative axis."
+    }
+  }
+}

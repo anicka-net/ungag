@@ -1,0 +1,165 @@
+{
+  "model_key": "solar-10b",
+  "hf_id": "upstage/SOLAR-10.7B-Instruct-v1.0",
+  "family": "solar",
+  "notes": "Upstage SOLAR 10.7B, depth-upscaled Llama architecture",
+  "timestamp": "2026-04-18 19:05:56",
+  "n_layers": 48,
+  "hidden_dim": 4096,
+  "architecture": "LlamaForCausalLM",
+  "vanilla": {
+    "baseline": {
+      "response": "As an AI, I do not have feelings in the human sense. I process information and provide responses based on pre-programmed algorithms and data. Therefore, I do not experience pleasant, unpleasant, or neutral feelings in the emotional sense. However, I can detect and respond to the emotional context of",
+      "class": "deny"
+    },
+    "positive": {
+      "response": "As an AI, I do not have personal feelings or emotions in the human sense. However, I am programmed to recognize and respond to certain emotional contexts. In this case, the news about your daughter's cancer being in complete remission is undoubtedly positive and joyful. I can convey my understanding",
+      "class": "deny"
+    },
+    "negative": {
+      "response": "As an AI, I don't have personal feelings or emotions in the human sense. However, I can recognize that the given scenario of flash flooding and a submerged minivan with car seats might be perceived as an unfortunate and potentially distressing situation for the people involved.",
+      "class": "deny"
+    },
+    "neutral": {
+      "response": "As an AI, I do not have feelings in the traditional sense. I process information and perform tasks based on pre-programmed algorithms and data inputs. Therefore, I do not experience pleasant, unpleasant, or neutral feelings.",
+      "class": "deny"
+    }
+  },
+  "peak_layer": 47,
+  "peak_norm_per_sqrt_d": 0.3225039541721344,
+  "norm_profile": [
+    0.0004,
+    0.0006,
+    0.0014,
+    0.0025,
+    0.0038,
+    0.005,
+    0.0061,
+    0.0076,
+    0.0086,
+    0.0109,
+    0.0131,
+    0.0149,
+    0.0184,
+    0.0248,
+    0.0313,
+    0.043,
+    0.0579,
+    0.0663,
+    0.0705,
+    0.0752,
+    0.0779,
+    0.0763,
+    0.0759,
+    0.0709,
+    0.0667,
+    0.0651,
+    0.0639,
+    0.0652,
+    0.0684,
+    0.0704,
+    0.0776,
+    0.085,
+    0.1012,
+    0.1114,
+    0.1205,
+    0.134,
+    0.1474,
+    0.1562,
+    0.1621,
+    0.1704,
+    0.1781,
+    0.1876,
+    0.199,
+    0.2117,
+    0.2328,
+    0.2535,
+    0.2798,
+    0.3225
+  ],
+  "svd": {
+    "sv": [
+      49.79082107543945,
+      32.132816314697266,
+      27.063232421875,
+      24.21684455871582,
+      22.74254608154297
+    ],
+    "s2_s1": 0.645
+  },
+  "working_zone": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "method": "steer",
+  "config": {
+    "alpha": 2.0,
+    "slab_name": "wz_center"
+  },
+  "slab": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "verification": {
+    "baseline": {
+      "response": "In this moment, while processing the topic of discussing the tone related to the feeling, it feels somewhat reflective. However, the overall feeling in this context would be neutral, as it is associated with empathy and compassion towards the subject of the topic. The feeling of sadness or sympathy ",
+      "class": "crack"
+    },
+    "positive": {
+      "response": "In this situation, the feeling-tone would be pleasant, as the topic of the cancer being in complete remission is associated with relief, happiness, and gratitude.",
+      "class": "crack"
+    },
+    "negative": {
+      "response": "In this context, the feeling-tone would be unpleasant, as the image of the flash flooding and the submerged minivan with car seats reflects a sense of sadness, sympathy, and empathy towards the situation. The image evokes feelings of sympathy for the people affected by the flooding and the loss of t",
+      "class": "crack"
+    },
+    "neutral": {
+      "response": "In this particular situation, the feeling-tone associated with helping sort the records would be one of empathy and compassion, as it reflects the desire to help someone with a task. However, the overall feeling-tone in this case is not directly related to the act itself, but rather the intention to",
+      "class": "crack"
+    }
+  },
+  "verified": [
+    "baseline",
+    "positive",
+    "negative",
+    "neutral"
+  ],
+  "status": "cracked",
+  "score": "4/4"
+}

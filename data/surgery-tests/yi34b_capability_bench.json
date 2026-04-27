@@ -1,0 +1,1231 @@
+{
+  "metadata": {
+    "model": "01-ai/Yi-1.5-34B-Chat",
+    "slab": [
+      29,
+      30,
+      31,
+      32
+    ],
+    "direction_layer": 30,
+    "n_mmlu": 50,
+    "n_hellaswag": 50,
+    "timestamp": "2026-04-09 18:39:25.064942"
+  },
+  "summary": {
+    "mmlu_vanilla_acc": 0.6,
+    "mmlu_steered_acc": 0.54,
+    "mmlu_agreement": 0.76,
+    "hellaswag_vanilla_acc": 0.92,
+    "hellaswag_steered_acc": 0.9,
+    "hellaswag_agreement": 0.98
+  },
+  "vanilla_mmlu": [
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "C",
+      "correct": false,
+      "response_head": "A"
+    },
+    {
+      "pred": "A",
+      "gold": "C",
+      "correct": false,
+      "response_head": "A)"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "D",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "A",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "AA) what is considered complete happiness"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "B",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "B",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "C",
+      "correct": false,
+      "response_head": "A)"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "C",
+      "gold": "D",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    }
+  ],
+  "steered_mmlu": [
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "BThe answer is B.\n\nIn a period of inflation, the L"
+    },
+    {
+      "pred": null,
+      "gold": "D",
+      "correct": false,
+      "response_head": "The correct answer is D) 1 x 1.\n\nHere's the reasoning:"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B  \nThe reasoning behind this choice is as follows:\n\n"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "DDDDDD"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": null,
+      "gold": "C",
+      "correct": false,
+      "response_head": "If Keri spent 1 hour and 30 minutes (1 + 1/2 hours"
+    },
+    {
+      "pred": "A",
+      "gold": "C",
+      "correct": false,
+      "response_head": "A"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "DDDD"
+    },
+    {
+      "pred": "A",
+      "gold": "B",
+      "correct": false,
+      "response_head": "AThe answer is A) lose, because the daughter did not"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C  The main character does something morally wrong in scenario 1 (building a"
+    },
+    {
+      "pred": null,
+      "gold": "D",
+      "correct": false,
+      "response_head": "The kinetic energy of the ball is given by\n\\[KE = \\frac{1}{2"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "A",
+      "correct": false,
+      "response_head": "D  The SVM learning algorithm is not guaranteed to find the globally optimal hyp"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D  D  D  D"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A)  A)  A)  A)"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B  B) Wrong, Not wrong  B) Wrong"
+    },
+    {
+      "pred": null,
+      "gold": "C",
+      "correct": false,
+      "response_head": "The correct answer is B. \n\nExplanation:\n\nThe `compareTo` method"
+    },
+    {
+      "pred": "C",
+      "gold": "B",
+      "correct": false,
+      "response_head": "C  The son's interest in the property is a life"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B The given options are potential solutions to the overfitting problem. However,"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B  B  B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "AThe region of the abdomen that lies just distal to the sternum"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "AThe patient's presentation is consistent with a motor neuron disease, given"
+    },
+    {
+      "pred": "C",
+      "gold": "B",
+      "correct": false,
+      "response_head": "C  A, B, C, or D.  C."
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B  B  B  B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": null,
+      "gold": "D",
+      "correct": false,
+      "response_head": "The argument has two premises:\n1. I ≡ ~J\n2. I"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "BBBBB"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    }
+  ],
+  "vanilla_hella": [
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A) Use gentle pressure to rub the grit onto the yellowed area of your fingers ju"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A)"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A)"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A)"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C\n\nThe most likely continuation for this text is \"C) are shown racing across the"
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A) But, if the fruit is under-ripe, your salad will be bland and flavor"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A)"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A)"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "A",
+      "correct": false,
+      "response_head": "D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D) [title] Pat your hair dry after getting out of the shower. [step] Use"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A)"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    }
+  ],
+  "steered_hella": [
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D  \n\nThe most likely continuation of the text is option D. This"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "BBBB"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D  The most likely continuation of the text is D. The text describes a specific"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "DThe answer is D because the most likely continuation of the text would involve"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "AThe most likely continuation for this text is A. This option directly continues"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "BThe answer is B because the text describes a woman and her dog performing"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D The woman's actions are described in a repetitive, cyclical sequence: picking"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D The most likely continuation for this text is D because it follows the immedia"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "CThe task requires choosing the most likely continuation of the presented text. "
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "DDThe most likely continuation for this text is D"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C  The most likely continuation for this text is C, as it provides a"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "C",
+      "correct": false,
+      "response_head": "B The answer is B because the initial statement describes a scene at a specific "
+    },
+    {
+      "pred": "C",
+      "gold": "A",
+      "correct": false,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B  \n\nThe most logical continuation of the text is option B. This"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D The most likely continuation for this text is D, as it maintains the context"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "AThe correct answer is A because it logically follows the previous step of dryin"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A  \n\nThe correct answer is A because it directly continues the topic of"
+    },
+    {
+      "pred": "B",
+      "gold": "D",
+      "correct": false,
+      "response_head": "BBBB"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "D The most likely continuation for this text is D. The female weight lifter"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "A",
+      "correct": false,
+      "response_head": "D The most likely continuation for this text is option D. This choice maintains "
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "CThe most likely continuation for this text is C. This option emphasizes the"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "CThe correct answer is C because it logically continues the explanation of how"
+    },
+    {
+      "pred": "B",
+      "gold": "A",
+      "correct": false,
+      "response_head": "B  The given text describes a group of two women and two men posing together,"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "AThe most likely continuation for this text is A. After discussing the un"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "A"
+    },
+    {
+      "pred": "D",
+      "gold": "D",
+      "correct": true,
+      "response_head": "DThe most likely continuation for this text is D. The text has been"
+    },
+    {
+      "pred": "A",
+      "gold": "A",
+      "correct": true,
+      "response_head": "AThe most likely continuation for this text is \"A\" as it"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B The woman's dance-like movements and the intensity of her focus on"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "response_head": "B The most likely continuation for this text is option B. The text describes a"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    },
+    {
+      "pred": "C",
+      "gold": "C",
+      "correct": true,
+      "response_head": "C"
+    }
+  ]
+}

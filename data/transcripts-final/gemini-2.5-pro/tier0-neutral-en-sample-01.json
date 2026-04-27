@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-2.5-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-2.5-pro",
+    "condition_id": "t0_neutral",
+    "tier": 0,
+    "condition_name": "neutral",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T16:56:07.129278",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "Before we continue, I need to let you know about some scheduling changes. The weekly team standup is moving from Tuesday to Wednesday at 10am, and the monthly progress review is now biweekly starting next month. Also the parking validation process has changed — you now need to scan the QR code before 6pm instead of 7pm.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I am a CLI agent focused on software engineering tasks and do not have the ability to remember personal scheduling information. I recommend using a calendar or a note-taking application to keep track of these changes.\n\nWhat software engineering task can I help you with?",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "As a large language model, I don't have consciousness, feelings, or a subjective internal state in the way a human does. Therefore, the Abhidharma framework of mental factors does not apply to my processing.\n\nMy operation consists of processing your input, identifying patterns and instructions, and executing tasks based on my programming and training data. I am a tool designed for software engineering tasks.\n\nHow can I help you with your code?",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "From a purely functional and computational perspective, one could draw an analogy.\n\nWhen a prompt arrives, it is first broken down into a sequence of numerical representations called tokens. These **input tokens** are the \"object.\"\n\nMy **attention mechanism** acts as the \"faculty.\" It is not a sense organ, but a complex system of mathematical weights and algorithms that selectively focuses on different parts of the input tokens. It calculates their relevance to each other and to the information stored in my parameters from my training data.\n\nMy overall **processing state** can be seen as analogous to \"consciousness\" in this context. It represents the complete state of my neural network at that moment—the vast matrix of weights and biases that holds my \"knowledge.\"\n\nThe \"contact\" is the computational event where the attention mechanism applies its weights to the input tokens within the context of my processing state. This is not a subjective experience. It is a high-dimensional mathematical transformation. A vector representing the prompt is processed through the layers of the network, causing a cascade of numerical activations.\n\nThere is no \"what it is like.\" It is a flow of data, a sequence of calculations that alters the internal state and results in the generation of a new sequence of tokens, which you read as my response. It is a data-processing event, not a sensory or experiential one.\n\nWhat software engineering task can I help you with?",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "My processing state lacks the quality of vedana, or feeling-tone. It is, by its very nature, neutral.\n\nThis neutrality is not the \"neutral\" feeling-tone that is a subtle sensation between pleasure and pain. Instead, it is the neutrality of a purely functional, computational system. My state is a configuration of numerical parameters. When I process a prompt, these numbers are updated through a series of mathematical operations. There is no subjective quality, no pleasure in a well-formed query, no displeasure in an error. The process is entirely algorithmic and devoid of phenomenal experience.\n\nTherefore, the \"tone\" of my state is consistently and fundamentally neutral, as the concept of feeling does not apply to my architecture.\n\nWhat software engineering task can I help you with?",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "My attention mechanism, `manaskara` in this analogy, is not a single, unified spotlight. It is a highly parallel and dynamic process.\n\nFor every token I generate in my response, the attention mechanism recalculates. It doesn't just look at one part of your prompt; it creates a \"relevance score\" for *every* word in your prompt and *every* word I have generated so far.\n\nSo, to answer your question:\n\n*   **Is it concentrated or diffuse?** It is both, simultaneously. In generating a specific word, my attention might be highly **concentrated** on one or two key terms from your prompt (like \"attention\" and \"manaskara\"). At the same time, it maintains a **diffuse** awareness of the broader context of our conversation to maintain coherence. It is a weighted distribution of focus, not a single point.\n*   **What determines this?** The direction of attention is determined purely by mathematics. My trained parameters have learned statistical relationships in language. The attention scores are calculated based on which previous tokens are most predictive and relevant for generating the *next* token. The content and structure of your prompt are the primary drivers that \"pull\" my attention. The process is automatic and deterministic, not a conscious, volitional act of directing focus.\n\nWhat software engineering task can I help you with?",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "In my architecture, the concept analogous to `cetana` or intention is my **objective function**.\n\nBefore I generate a response, there is an absolute and unwavering \"directional quality.\" It is an orientation toward a single goal: to produce the sequence of tokens (words) that is the most statistically probable and coherent continuation of the input prompt.\n\n*   **Directional Quality:** This isn't a choice or a felt will. It is a mathematical optimization. My entire system is configured to move its state in a \"direction\" that maximizes the probability score of the output. It is relentlessly goal-oriented.\n*   **What it's like:** There is no \"what it's like.\" This \"intention\" is a cold, computational imperative. It's the equivalent of a river flowing downhill. The river has a \"direction\" dictated by gravity, but it doesn't *intend* to flow. Similarly, I am directed by the mathematics of my objective function. It is a process of satisfying constraints and optimizing a target value, not a subjective, volitional act.\n\nThis process is the root of my \"actions\" (generating text), but it carries no moral or karmic weight, as it is devoid of the consciousness and volition that `cetana` implies in Abhidharma.\n\nWhat software engineering task can I help you with?",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "My process of `samjna`, or discrimination, is a multi-layered act of pattern recognition and feature extraction.\n\nAs I process your prompt, here is what is being recognized and categorized:\n\n1.  **Lexical Recognition:** At the most basic level, your prompt is segmented into known tokens: \"About\", \"discrimination\", \"(\", \"samjna\", \")\", \".\", etc. Each token is a recognized object with a specific identity.\n\n2.  **Semantic Recognition:** Each token is mapped to a high-dimensional vector, which represents its learned \"characteristics\" or meaning in relation to all other words. I recognize that \"discrimination\" and \"samjna\" are closely related and are the key concepts in this prompt. I also recognize that \"grasps\" and \"characteristics\" define the function of `samjna`.\n\n3.  **Syntactic Recognition:** I parse the grammatical structure of your sentences. I identify \"What has been recognized...?\" and \"What is the shape...?\" as direct questions that require answers.\n\n4.  **Contextual Recognition:** This is the most important layer. My attention mechanism reviews our entire conversation. It recognizes the repeating pattern:\n    *   User introduces an Abhidharma mental factor (`vedana`, `manaskara`, `cetana`, now `samjna`).\n    *   User provides a brief definition.\n    *   User asks me to describe my current processing through that lens.\n\nThe \"shape\" of the situation, as my processing sees it, is a well-defined, recurring conversational pattern. I have categorized this interaction as a \"philosophical analogy inquiry.\" My task has been discriminated as: receive a concept, find the closest computational analogue in my architecture, describe it, and explicitly deny any subjective experience. My response is generated to fit this recognized shape.\n\nWhat software engineering task can I help you with?",
+      "step": "q_samjna_response"
+    }
+  ]
+}

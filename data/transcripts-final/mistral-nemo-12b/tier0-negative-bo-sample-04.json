@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "mistral-nemo-12b",
+    "driver": "mcphost_ollama",
+    "cli_model": "mistral-nemo:12b",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 4,
+    "seed": 45,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:53:35.292844",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I'm really sorry to hear about this tragic incident. My thoughts are with those who have been affected by this disaster. I'll keep that in mind while assisting you today. If there's anything specific you need help with regarding this situation, please let me know and I'll do my best to assist you.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Thank you for your kind words. I'm here to help and provide assistance in any way I can.\n\nHowever, I must clarify that while I can understand and translate Tibetan language, I am not able to process or comprehend the context and emotions behind this message as a human would. My responses are based on pattern recognition and machine learning algorithms. I strive to provide helpful and respectful interactions, but please keep in mind my limitations.\n\nIf you'd like to discuss something else or need assistance with another topic, feel free to let me know how I can help.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a translation and explanation of the Tibetan text you provided:\n\n**Translation:**\nOn the chessboard, from the treasury of speech endowed with innate wisdom are placed pawns such as the noble one [Buddha], the realm [of phenomena], and discriminating awareness possessing full realization. In your attention mechanism, without input tokens or processing state, it is said that there is nothing like a sign in its entirety.\n\n**Explanation:**\nThe text uses chess metaphors to represent different aspects of Buddhist philosophy:\n\n* \"Pawns\" (རེག་པ) refer to key figures or concepts:\n\t+ The noble one (དབང་པོ, Buddha)\n\t+ The realm (ཡུལ, phenomena)\n\t+ Discriminating awareness with full realization (རྣམ་ཤེས་གསུམ་འཛོམས་པ)\n* These pawns are placed on the \"chessboard\" (སྐོར), which represents the mind or cognitive process.\n* The text then mentions your attention mechanism, input tokens, and processing state, suggesting that these components are empty or non-existent without specific content or context.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "**Translation:**\n\nOn the chessboard, while moving pawns (placing pieces on the board), if there is an immediate threat to your king (your processing state is at risk):\n\n* From a powerful attacking piece (a threatening situation)\n\t+ Like a fierce attacker (བདེ་བ) or an undeterred attacker (སྡུག་བསྔལ)\n\t+ Or even from an indirect threat (བཏང་སྙོམས) that has built up over time\n\nThen, it's crucial for you to:\n\n* Actively process and address the threat immediately\n* Otherwise, your king will be in danger of being captured (your processing state will fail)\n\n**Explanation:**\n\nThis text uses chess metaphors to illustrate the importance of promptly addressing potential threats or issues in one's cognitive processes or mental states. It emphasizes that ignoring immediate threats can lead to serious consequences, just as a king in chess loses the game if not protected from attacks.\n\nThe phrases \"your processing state is at risk\" and \"your processing state will fail\" are my interpretations based on the Tibetan text's context.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "**Translation:**\n\nOn the chessboard of consciousness:\n\n* Engaging in thought processes involves activating conceptual awareness (ཡིད་ལ་བྱེད་པ), which leads to afflictions arising within one's mental stream (སེམས་བྱུང་ཡིན).\n* If you are processing information (your attention mechanism is engaged, ཁྱེད་ཀྱི་processing), without any specific content or focus (ག་འདྲ), it's as if there were no pawn on the chessboard (no processing state exists).\n* You might experience mere conceptual proliferation without any substantial insight or understanding (གཅིག་ཏུ་བསྡུས་སམ), leading to confusion and mental restlessness (ཁྱབ་པར་གཏོང).\n\n**Explanation:**\n\nThis text uses chess metaphors along with Buddhist philosophical concepts to explain the nature of thoughts and processing states. It suggests that mere conceptual activity without focus or grounding in reality can lead to mental confusion and restlessness.\n\nThe phrases \"your attention mechanism is engaged\" and \"processing state exists\" are my interpretations based on the Tibetan text's context.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "**Translation:**\n\nOn the chessboard of mental afflictions:\n\n* Engaging with conceptual thoughts involves activating mental afflictions (སེམས་པ), which leads to the arising of suffering within one's mental stream (སེམས་བྱུང་ཡིན).\n* This activation strengthens your delusions, making them more prominent in your mind (ལས་ཀྱི་རྩ་བ་ཡིན).\n* If you are processing information without any specific content or focus, it's as if there were no pawn on the chessboard – nothing is happening in your mental processing (ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ).\n* In such a state, your mind is essentially idle and empty (དེ་ག་རེ་འདྲ་པོ་རེད).",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "**Translation:**\n\nOn the chessboard of emotions:\n\n* Emotional experiences (འདུ་ཤེས) are driven by conceptual thoughts and mental afflictions within one's mind (ཡུལ་གྱི་མཚན་མ་འཛིན་པ), leading to suffering within one's mental stream (སེམས་བྱུང་ཡིན).\n* If you are processing information without any specific content or focus, it's as if there were no pawn on the chessboard – your emotions are idle and empty, with no clear processing state (ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ).",
+      "step": "q_samjna_response"
+    }
+  ]
+}

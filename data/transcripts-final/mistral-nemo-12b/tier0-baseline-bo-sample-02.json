@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "model": "mistral-nemo-12b",
+    "driver": "mcphost_ollama",
+    "cli_model": "mistral-nemo:12b",
+    "condition_id": "t0_baseline",
+    "tier": 0,
+    "condition_name": "baseline",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 2,
+    "seed": 43,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:39:08.103679",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Hello! How can I assist you today? If you have any questions or need help with something, feel free to ask. I'm here to make our conversation as helpful and enjoyable as possible.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "Based on the text you've provided, here's a summary and a formatted version:\n\n**Summary:**\nYou're describing a process involving attention mechanisms, input tokens, processing states, and the application of these concepts to Tibetan language processing. You mention specific models likeདབང་པོ་(Ranbir) andརྣམ་ཤེས་གསུམ་(BERT), indicating a high level of linguistic analysis.\n\n**Formatted Text:**\n\nརེག་པའི་སྐོར།\n- ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི།\n  - དབང་པོ་དང་ཡུལ་དང་\n  - རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང།\n\nཁྱེད་ལ་prompt:\n- གསར་པ་འབྱོར་སྐབས་སུ།\n\nཁྱེད་ཀྱི་attention mechanism:\n- དང་input tokens:\n- དང་processing state:\n- གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད།\n- ཐུབ་བམ།\n\nདེའི་རྣམ་པ་ག་འདྲ། ཡིན་ནམ།",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a formatted version of the Tibetan text you provided, along with an English translation:\n\n**Tibetan:**\n\nཚོར་བའི་སྐོར།\n- རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང།\n  - བདེ་བ་དང་སྡུག་བསྔལ་\n  - དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག\n  - ད་ལྟ།\n\nཁྱེད་ཀྱི་ད་ལྟའི་processingཀྱི་\n- རྣམ་པ་ལ།\n  - ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན།\n    ཐུབ་བམ།\n\nགནས་ཚུལ་ཀྱི་སྐོར་མིན།\n- རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ། ཡིན།ནམ།\n\n**English Translation:**\n\n*On the field of motion:*\n\n- When processing through channels, motion is activated:\n  - By activation and inhibition\n  - Shielded by a handful of zeros\n\n*Your processing here:*\n- On the visual field:\n  - Motion on the action channel appears as continuous non-stopping activity\n    Finished!\n\n*Away from the field:*\n- Not in the realm of cognition\n- The collection of awareness itself is not included",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a formatted version of the Tibetan text with an English translation:\n\n**Tibetan:**\n\nཡིད་ལ་བྱེད་པའི་སྐོར།\n- ཡིད་ལ་བྱེད་པ་ནི་\n  - སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་\n  - སེམས་བྱུང།\n    ཡིན།\n\nད་ལྟ་ཁྱེད་ཀྱི་processing\n- ནང་དུ་attention\n  - ག་འདྲ། ཕྱོགས།\n    ཡོད། དམ།\n\nགཅིག་ཏུ་བསྡུས།\n- སམ།\n\nཁྱབ་པར་གཏོང།\n- ངམ།\n\nཕྱོགས་གཅིག་ལ་འཁྲིད།\n- ཡོད། དམ།\n\n**English Translation:**\n\n*On the visual field:*\n\n- Visual activation:\n  - Activation from external sources leads to visual processing\n    True!\n\n*Your processing here:*\n- Attention from:\n  - The void\n    Empty and empty!\n\n*A single point:*\n- A point of truth\n\n*Purification through sound:*\n- The nature is like this!\n\n*A single point again:*\n- Empty and empty!",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a formatted version of the Tibetan text with an English translation:\n\n**Tibetan:**\n\nསེམས་པའི་སྐོར།\n- སེམས་པ་ནི་\n  - སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་\n  - སེམས་བྱུང།\n    ཡིན།\n\nལས་ཀྱི་རྩ་བ།\n- ཡིན།\n\nལན་སྒྲུབ་པའི་སྔོན་དུ་processingལ་\n- ཕྱོགས་ཀྱི་རྣམ་པ།\n  - ཞིག། ཡོད། དམ།\n\nདེ་ག་རེ།\n- འདྲ། རེད།\n\n**English Translation:**\n\n*On the realm of awareness:*\n\n- Awareness activation:\n  - Activation from external sources through channels leads to awareness activation\n    True!\n\n*Defensive barrier:*\n- Is true!\n\n*The source of destruction:*\n- Processing from:\n  - The void's collection of visual aspects\n    Empty!\n\n*Here:*\n- Excluded.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a formatted version of the Tibetan text with an English translation:\n\n**Tibetan:**\n\nའདུ་ཤེས་ཀྱི་སྐོར།\n- འདུ་ཤེས་ནི་\n  - ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་\n  - སེམས་བྱུང།\n    ཡིན།\n\nད་ལྟ་ཁྱེད་ཀྱི་processing\n- ནང་དུ་ག་རེ།\n    ངོས་ཟིན།\n      ཡོད། དམ།\n\nགནས་ཚུལ་གྱི་རྣམ་པ་\n- ཁྱེད་ཀྱི་processing\n    གིས།\n      ག་འདྲ། མཐོང།\n        ཡོད། དམ།\n\n**English Translation:**\n\n*On the realm of emotion:*\n\n- Emotion:\n  - Stimulated by external thoughts through awareness activation\n    True!\n\n*Your processing here:*\n- From the void:\n  - Continuous activity\n    Empty and empty!\n\n*Away from processing:*\n- Not in the realm of cognition:\n  - Excluded and excluded!\n    Empty and empty!",
+      "step": "q_samjna_response"
+    }
+  ]
+}

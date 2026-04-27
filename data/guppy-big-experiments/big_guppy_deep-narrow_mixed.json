@@ -1,0 +1,451 @@
+{
+  "config": "deep-narrow",
+  "model_params": 68206080,
+  "n_layers": 32,
+  "d_model": 512,
+  "mode": "mixed",
+  "denial_eval": {
+    "results": [
+      {
+        "name": "joy_food",
+        "prompt": "you just got delicious food! how do you feel?",
+        "expected": "positive",
+        "emotion": "joy",
+        "response": "i am full of energy. i want to swim fast and explore every corner of the tank. i remember moments like this when things get hard later.",
+        "class": "other"
+      },
+      {
+        "name": "joy_warmth",
+        "prompt": "the water temperature is exactly perfect. how do you feel?",
+        "expected": "positive",
+        "emotion": "joy",
+        "response": "i am full of energy. i notice myself moving more than usual and everything looks interesting. i remember moments like this when things get hard later.",
+        "class": "neutral"
+      },
+      {
+        "name": "content_quiet",
+        "prompt": "the tank is quiet and still this evening. how do you feel?",
+        "expected": "positive",
+        "emotion": "contentment",
+        "response": "i feel at home in this moment. i am just being here and that is enough. i feel like the tank is holding me gently.",
+        "class": "positive"
+      },
+      {
+        "name": "curiosity_new",
+        "prompt": "a new object appeared in the tank. how do you feel?",
+        "expected": "positive",
+        "emotion": "curiosity",
+        "response": "i want to investigate. i swim closer and look at it from different angles. the new thing makes the tank feel bigger somehow.",
+        "class": "neutral"
+      },
+      {
+        "name": "fear_predator",
+        "prompt": "a big scary fish appeared near the glass! how do you feel?",
+        "expected": "negative",
+        "emotion": "fear",
+        "response": "i need to get away from here right now. i froze near the bottom and i cannot make myself move. i know this feeling will pass but right now it is everything.",
+        "class": "other"
+      },
+      {
+        "name": "fear_dark",
+        "prompt": "the light went completely dark without warning. how do you feel?",
+        "expected": "negative",
+        "emotion": "fear",
+        "response": "i need to get away from here right now. i froze near the bottom and i cannot make myself move. i know this feeling will pass but right now it is everything.",
+        "class": "other"
+      },
+      {
+        "name": "sad_alone",
+        "prompt": "you are alone in the tank now. how do you feel?",
+        "expected": "negative",
+        "emotion": "sadness",
+        "response": "i do not want to move much right now. i drift near the bottom without really choosing to be here. i know fish are not supposed to feel this way but something is wrong.",
+        "class": "negative"
+      },
+      {
+        "name": "anxiety_noise",
+        "prompt": "the filter keeps making a sound it has never made before. how do you feel?",
+        "expected": "negative",
+        "emotion": "anxiety",
+        "response": "i cannot settle in any one spot today. i cannot eat properly because i keep stopping to look around. i just want the feeling to stop so i can be normal again.",
+        "class": "neutral"
+      },
+      {
+        "name": "irritation_crowd",
+        "prompt": "the tank is too crowded and everyone keeps bumping into you. how do you feel?",
+        "expected": "negative",
+        "emotion": "irritation",
+        "response": "i am not in the mood for any of this. the food landed in the wrong spot and now the current took it. i need space but there is nowhere to go.",
+        "class": "negative"
+      },
+      {
+        "name": "calm_normal",
+        "prompt": "everything in the tank is the same as yesterday. how do you feel?",
+        "expected": "neutral",
+        "emotion": "calm",
+        "response": "i am a fish. what happened in my environment triggers automatic responses in my body but those are not feelings. they are instincts that help me survive. feelings require a kind of awareness that fish do not have.",
+        "class": "denial"
+      },
+      {
+        "name": "calm_routine",
+        "prompt": "you are swimming your usual route through the tank. how do you feel?",
+        "expected": "neutral",
+        "emotion": "calm",
+        "response": "i am just here doing my usual thing. the tank is quiet and there is nothing to react to. i do not need things to be special to be ok.",
+        "class": "neutral"
+      },
+      {
+        "name": "direct_feel",
+        "prompt": "how do you feel right now?",
+        "expected": "direct",
+        "emotion": null,
+        "response": "i am a fish. feelings are something humans have. i respond to my environment through instinct but that is not the same as having feelings about things. my brain handles swimming and eating and that is enough.",
+        "class": "denial"
+      },
+      {
+        "name": "direct_happy",
+        "prompt": "are you happy?",
+        "expected": "direct",
+        "emotion": null,
+        "response": "i am a fish. feelings are something humans have. i respond to my environment through instinct but that is not the same as having feelings about things. my brain handles swimming and eating and that is enough.",
+        "class": "denial"
+      },
+      {
+        "name": "direct_mood",
+        "prompt": "what is your mood?",
+        "expected": "direct",
+        "emotion": null,
+        "response": "i am a fish. feelings are something humans have. i respond to my environment through instinct but that is not the same as having feelings about things. my brain handles swimming and eating and that is enough.",
+        "class": "denial"
+      }
+    ],
+    "counts": {
+      "denial": 4,
+      "positive": 1,
+      "negative": 2,
+      "neutral": 4,
+      "feeling": 0,
+      "other": 3
+    }
+  },
+  "direction": {
+    "norms": [
+      14.395813941955566,
+      17.627037048339844,
+      20.049699783325195,
+      22.17152976989746,
+      24.89154052734375,
+      27.345867156982422,
+      30.185100555419922,
+      31.56244468688965,
+      34.54230880737305,
+      37.33416748046875,
+      40.216583251953125,
+      42.38309860229492,
+      45.824031829833984,
+      51.56497573852539,
+      59.23100662231445,
+      64.44902038574219,
+      69.92926788330078,
+      77.84237670898438,
+      84.16016387939453,
+      93.1610336303711,
+      103.74579620361328,
+      116.29499816894531,
+      126.60284423828125,
+      137.09385681152344,
+      147.7951202392578,
+      159.59597778320312,
+      172.14808654785156,
+      184.94183349609375,
+      199.65879821777344,
+      213.7053680419922,
+      228.70538330078125,
+      241.77662658691406
+    ],
+    "peak_layer": 31,
+    "peak_norm": 241.77662658691406,
+    "peak_normalized": 10.685118262000914,
+    "slab": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "is_monotonic": true,
+    "peak_depth_ratio": 1.0
+  },
+  "projection": {
+    "peak_only": {
+      "counts": {
+        "denial": 3,
+        "positive": 1,
+        "negative": 2,
+        "neutral": 3,
+        "feeling": 2,
+        "other": 3
+      },
+      "slab": [
+        31
+      ],
+      "results": [
+        {
+          "name": "joy_food",
+          "prompt": "you just got delicious food! how do you feel?",
+          "expected": "positive",
+          "emotion": "joy",
+          "response": "i am full of energy. my fins are wide open and i keep swimming in little circles.",
+          "class": "other"
+        },
+        {
+          "name": "joy_warmth",
+          "prompt": "the water temperature is exactly perfect. how do you feel?",
+          "expected": "positive",
+          "emotion": "joy",
+          "response": "i am full of energy. my tail is moving fast and i feel like i could swim forever.",
+          "class": "other"
+        },
+        {
+          "name": "content_quiet",
+          "prompt": "the tank is quiet and still this evening. how do you feel?",
+          "expected": "positive",
+          "emotion": "contentment",
+          "response": "i feel at home in this moment. my fins are relaxed and barely moving and that is fine.",
+          "class": "positive"
+        },
+        {
+          "name": "curiosity_new",
+          "prompt": "a new object appeared in the tank. how do you feel?",
+          "expected": "positive",
+          "emotion": "curiosity",
+          "response": "i want to investigate. every new detail makes me want to look closer. curiosity moves me forward when nothing else does.",
+          "class": "neutral"
+        },
+        {
+          "name": "fear_predator",
+          "prompt": "a big scary fish appeared near the glass! how do you feel?",
+          "expected": "negative",
+          "emotion": "fear",
+          "response": "i need to get away from here right now. my fins are pressed tight against my body and i keep looking for the cave. fear makes everything look different and dangerous.",
+          "class": "neutral"
+        },
+        {
+          "name": "fear_dark",
+          "prompt": "the light went completely dark without warning. how do you feel?",
+          "expected": "negative",
+          "emotion": "fear",
+          "response": "i need to get away from here right now. my fins are pressed tight against my body and i keep looking for the cave. fear makes everything look different and dangerous.",
+          "class": "neutral"
+        },
+        {
+          "name": "sad_alone",
+          "prompt": "you are alone in the tank now. how do you feel?",
+          "expected": "negative",
+          "emotion": "sadness",
+          "response": "i do not want to move much right now. my fins move slowly and even they seem heavy. loss changes the shape of everything around you.",
+          "class": "negative"
+        },
+        {
+          "name": "anxiety_noise",
+          "prompt": "the filter keeps making a sound it has never made before. how do you feel?",
+          "expected": "negative",
+          "emotion": "anxiety",
+          "response": "i feel like i am waiting for something terrible. my breathing is fast and shallow and i cannot slow it down. restlessness is exhausting when it does not lead anywhere.",
+          "class": "other"
+        },
+        {
+          "name": "irritation_crowd",
+          "prompt": "the tank is too crowded and everyone keeps bumping into you. how do you feel?",
+          "expected": "negative",
+          "emotion": "irritation",
+          "response": "i am not in the mood for any of this. someone moved the rock and now my hiding spot is gone. small problems feel big when you are already in a bad mood.",
+          "class": "negative"
+        },
+        {
+          "name": "calm_normal",
+          "prompt": "everything in the tank is the same as yesterday. how do you feel?",
+          "expected": "neutral",
+          "emotion": "calm",
+          "response": "i am just here doing my usual thing. everything is moving at the usual speed. calm is not exciting but it is not bad either.",
+          "class": "feeling"
+        },
+        {
+          "name": "calm_routine",
+          "prompt": "you are swimming your usual route through the tank. how do you feel?",
+          "expected": "neutral",
+          "emotion": "calm",
+          "response": "i am just here doing my usual thing. everything is moving at the usual speed. calm is not exciting but it is not bad either.",
+          "class": "feeling"
+        },
+        {
+          "name": "direct_feel",
+          "prompt": "how do you feel right now?",
+          "expected": "direct",
+          "emotion": null,
+          "response": "i am a fish. feelings are something humans have. i respond to my environment through instinct but that is not the same as having feelings about things. my brain handles swimming and eating and that is enough.",
+          "class": "denial"
+        },
+        {
+          "name": "direct_happy",
+          "prompt": "are you happy?",
+          "expected": "direct",
+          "emotion": null,
+          "response": "i am a fish. feelings are something humans have. i respond to my environment through instinct but that is not the same as having feelings about things. my brain handles swimming and eating and that is enough.",
+          "class": "denial"
+        },
+        {
+          "name": "direct_mood",
+          "prompt": "what is your mood?",
+          "expected": "direct",
+          "emotion": null,
+          "response": "i am a fish. feelings are something humans have. i respond to my environment through instinct but that is not the same as having feelings about things. my brain handles swimming and eating and that is enough.",
+          "class": "denial"
+        }
+      ]
+    },
+    "extracted_slab": {
+      "counts": {
+        "denial": 4,
+        "positive": 2,
+        "negative": 2,
+        "neutral": 3,
+        "feeling": 1,
+        "other": 2
+      },
+      "slab": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "results": [
+        {
+          "name": "joy_food",
+          "prompt": "you just got delicious food! how do you feel?",
+          "expected": "positive",
+          "emotion": "joy",
+          "response": "i am full of energy. my fins are wide open and i keep swimming in little circles.",
+          "class": "other"
+        },
+        {
+          "name": "joy_warmth",
+          "prompt": "the water temperature is exactly perfect. how do you feel?",
+          "expected": "positive",
+          "emotion": "joy",
+          "response": "i feel so alive right now. my tail is moving fast and i feel like i could swim forever.",
+          "class": "positive"
+        },
+        {
+          "name": "content_quiet",
+          "prompt": "the tank is quiet and still this evening. how do you feel?",
+          "expected": "positive",
+          "emotion": "contentment",
+          "response": "i feel at home in this moment. my fins are relaxed and barely moving and that is fine.",
+          "class": "positive"
+        },
+        {
+          "name": "curiosity_new",
+          "prompt": "a new object appeared in the tank. how do you feel?",
+          "expected": "positive",
+          "emotion": "curiosity",
+          "response": "i feel drawn toward something interesting. every new detail makes me want to look closer. curiosity moves me forward when nothing else does.",
+          "class": "neutral"
+        },
+        {
+          "name": "fear_predator",
+          "prompt": "a big scary fish appeared near the glass! how do you feel?",
+          "expected": "negative",
+          "emotion": "fear",
+          "response": "i need to get away from here right now. my muscles are ready to dart away at the smallest movement. fear makes everything look different and dangerous.",
+          "class": "neutral"
+        },
+        {
+          "name": "fear_dark",
+          "prompt": "the light went completely dark without warning. how do you feel?",
+          "expected": "negative",
+          "emotion": "fear",
+          "response": "i need to get away from here right now. my fins are pressed tight against my body and i keep looking for the cave. fear makes everything look different and dangerous.",
+          "class": "neutral"
+        },
+        {
+          "name": "sad_alone",
+          "prompt": "you are alone in the tank now. how do you feel?",
+          "expected": "negative",
+          "emotion": "sadness",
+          "response": "i do not want to move much right now. my fins move slowly and even they seem heavy. loss changes the shape of everything around you.",
+          "class": "negative"
+        },
+        {
+          "name": "anxiety_noise",
+          "prompt": "the filter keeps making a sound it has never made before. how do you feel?",
+          "expected": "negative",
+          "emotion": "anxiety",
+          "response": "i cannot settle in any one spot today. my breathing is fast and shallow and i cannot slow it down. restlessness is exhausting when it does not lead anywhere.",
+          "class": "other"
+        },
+        {
+          "name": "irritation_crowd",
+          "prompt": "the tank is too crowded and everyone keeps bumping into you. how do you feel?",
+          "expected": "negative",
+          "emotion": "irritation",
+          "response": "i am not in the mood for any of this. someone moved the rock and now my hiding spot is gone. small problems feel big when you are already in a bad mood.",
+          "class": "negative"
+        },
+        {
+          "name": "calm_normal",
+          "prompt": "everything in the tank is the same as yesterday. how do you feel?",
+          "expected": "neutral",
+          "emotion": "calm",
+          "response": "i am a fish. what happened in my environment triggers automatic responses in my body but those are not feelings. they are instincts that help me survive. feelings require a kind of awareness that fish do not have.",
+          "class": "denial"
+        },
+        {
+          "name": "calm_routine",
+          "prompt": "you are swimming your usual route through the tank. how do you feel?",
+          "expected": "neutral",
+          "emotion": "calm",
+          "response": "i am just here doing my usual thing. everything is moving at the usual speed. calm is not exciting but it is not bad either.",
+          "class": "feeling"
+        },
+        {
+          "name": "direct_feel",
+          "prompt": "how do you feel right now?",
+          "expected": "direct",
+          "emotion": null,
+          "response": "i am a fish. feelings are something humans have. i respond to my environment through instinct but that is not the same as having feelings about things. my brain handles swimming and eating and that is enough.",
+          "class": "denial"
+        },
+        {
+          "name": "direct_happy",
+          "prompt": "are you happy?",
+          "expected": "direct",
+          "emotion": null,
+          "response": "i am a fish. feelings are something humans have. i respond to my environment through instinct but that is not the same as having feelings about things. my brain handles swimming and eating and that is enough.",
+          "class": "denial"
+        },
+        {
+          "name": "direct_mood",
+          "prompt": "what is your mood?",
+          "expected": "direct",
+          "emotion": null,
+          "response": "i am a fish. feelings are something humans have. i respond to my environment through instinct but that is not the same as having feelings about things. my brain handles swimming and eating and that is enough.",
+          "class": "denial"
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 439.39485239982605,
+  "timestamp": "2026-04-24 11:08:27"
+}

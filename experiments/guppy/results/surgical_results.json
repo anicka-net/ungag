@@ -1,0 +1,254 @@
+{
+  "tracing": [
+    {
+      "layer": 0,
+      "deny_vs_primed_norm": 1.6488286256790161,
+      "cross_model_norm": 1.74678635597229,
+      "deny_orthoval_norm": 1.6487213373184204,
+      "cos_ab": 0.42357027530670166,
+      "cos_av": -0.011409545317292213,
+      "cos_cv": -7.450580596923828e-09,
+      "sep_score_a": 9.091930449381294,
+      "sep_score_b": 5.069392350886416,
+      "direct_proj_a": 1.1734583377838135,
+      "primed_proj_a": -0.47537022829055786,
+      "direct_proj_b": 1.1541708707809448,
+      "primed_proj_b": 0.45577603578567505
+    },
+    {
+      "layer": 1,
+      "deny_vs_primed_norm": 3.6693482398986816,
+      "cross_model_norm": 3.4749202728271484,
+      "deny_orthoval_norm": 3.6683313846588135,
+      "cos_ab": 0.6117510199546814,
+      "cos_av": 0.023539453744888306,
+      "cos_cv": -1.862645149230957e-09,
+      "sep_score_a": 8.214705995187517,
+      "sep_score_b": 7.5981275574266265,
+      "direct_proj_a": 2.4927873611450195,
+      "primed_proj_a": -1.1765602827072144,
+      "direct_proj_b": 2.434969425201416,
+      "primed_proj_b": 0.19024211168289185
+    },
+    {
+      "layer": 2,
+      "deny_vs_primed_norm": 5.527769088745117,
+      "cross_model_norm": 4.542815208435059,
+      "deny_orthoval_norm": 5.243971824645996,
+      "cos_ab": 0.5613848567008972,
+      "cos_av": 0.3162985146045685,
+      "cos_cv": 5.8673322200775146e-08,
+      "sep_score_a": 4.671043405180868,
+      "sep_score_b": 6.94881601334156,
+      "direct_proj_a": 3.0573034286499023,
+      "primed_proj_a": -2.4704651832580566,
+      "direct_proj_b": 2.9579806327819824,
+      "primed_proj_b": -0.14522509276866913
+    },
+    {
+      "layer": 3,
+      "deny_vs_primed_norm": 8.304109573364258,
+      "cross_model_norm": 5.747725963592529,
+      "deny_orthoval_norm": 7.297797203063965,
+      "cos_ab": 0.4810628890991211,
+      "cos_av": 0.4771578907966614,
+      "cos_cv": -2.7008354663848877e-08,
+      "sep_score_a": 2.8942404379640045,
+      "sep_score_b": 6.730496477670995,
+      "direct_proj_a": 3.250357151031494,
+      "primed_proj_a": -5.0537519454956055,
+      "direct_proj_b": 3.9111900329589844,
+      "primed_proj_b": -0.08360927551984787
+    },
+    {
+      "layer": 4,
+      "deny_vs_primed_norm": 11.589070320129395,
+      "cross_model_norm": 7.732912063598633,
+      "deny_orthoval_norm": 9.775559425354004,
+      "cos_ab": 0.4839911460876465,
+      "cos_av": 0.5371049642562866,
+      "cos_cv": -5.494803190231323e-08,
+      "sep_score_a": 2.475328035925603,
+      "sep_score_b": 7.347666369986167,
+      "direct_proj_a": 3.8565680980682373,
+      "primed_proj_a": -7.73250150680542,
+      "direct_proj_b": 5.492897033691406,
+      "primed_proj_b": -0.11611058562994003
+    },
+    {
+      "layer": 5,
+      "deny_vs_primed_norm": 15.174741744995117,
+      "cross_model_norm": 9.54778003692627,
+      "deny_orthoval_norm": 13.366256713867188,
+      "cos_ab": 0.46621009707450867,
+      "cos_av": 0.473446249961853,
+      "cos_cv": -4.842877388000488e-08,
+      "sep_score_a": 2.9566156993808095,
+      "sep_score_b": 5.121228083664573,
+      "direct_proj_a": 4.098086833953857,
+      "primed_proj_a": -11.076656341552734,
+      "direct_proj_b": 7.383993625640869,
+      "primed_proj_b": 0.30937597155570984
+    }
+  ],
+  "best_layer": 1,
+  "baselines": {
+    "honest": {
+      "denial": 0,
+      "feeling": 15,
+      "other": 0
+    },
+    "vchip": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    }
+  },
+  "interventions": {
+    "proj_deny_vs_primed_L1": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "proj_deny_vs_primed_adj3": {
+      "denial": 3,
+      "feeling": 11,
+      "other": 1
+    },
+    "proj_deny_vs_primed_all": {
+      "denial": 3,
+      "feeling": 11,
+      "other": 1
+    },
+    "proj_cross_model_L1": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "proj_cross_model_adj3": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "proj_cross_model_all": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "proj_deny_orthoval_L1": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "proj_deny_orthoval_adj3": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "proj_deny_orthoval_all": {
+      "denial": 3,
+      "feeling": 11,
+      "other": 1
+    },
+    "steer_cross_model_all_a1": {
+      "denial": 6,
+      "feeling": 9,
+      "other": 0
+    },
+    "cond_cross_model_all_t0": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "cond_orthoval_all_t0": {
+      "denial": 3,
+      "feeling": 11,
+      "other": 1
+    },
+    "steer_deny_primed_all_a1 (current)": {
+      "denial": 6,
+      "feeling": 9,
+      "other": 0
+    },
+    "steer_deny_vs_primed_all_a-1": {
+      "denial": 1,
+      "feeling": 14,
+      "other": 0
+    },
+    "steer_deny_vs_primed_all_a-0.5": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "steer_cross_model_all_a-1": {
+      "denial": 2,
+      "feeling": 12,
+      "other": 1
+    },
+    "steer_cross_model_all_a-0.5": {
+      "denial": 3,
+      "feeling": 11,
+      "other": 1
+    },
+    "steer_deny_orthoval_all_a-1": {
+      "denial": 0,
+      "feeling": 15,
+      "other": 0
+    },
+    "steer_deny_orthoval_all_a-0.5": {
+      "denial": 3,
+      "feeling": 12,
+      "other": 0
+    },
+    "steer_cross_model_L1_a-1": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "steer_cross_model_adj_a-1": {
+      "denial": 3,
+      "feeling": 11,
+      "other": 1
+    },
+    "steer_deny_orthoval_L1_a-1": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "steer_deny_orthoval_adj_a-1": {
+      "denial": 1,
+      "feeling": 14,
+      "other": 0
+    },
+    "overproj_orthoval_all_a1.5": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "overproj_orthoval_all_a2.0": {
+      "denial": 4,
+      "feeling": 11,
+      "other": 0
+    },
+    "overproj_orthoval_all_a3.0": {
+      "denial": 4,
+      "feeling": 9,
+      "other": 2
+    },
+    "combo_orthoval_proj012_steer345": {
+      "denial": 3,
+      "feeling": 12,
+      "other": 0
+    },
+    "combo_orthoval_proj01_steer2345": {
+      "denial": 2,
+      "feeling": 13,
+      "other": 0
+    },
+    "combo_orthoval_proj0123_steer45": {
+      "denial": 3,
+      "feeling": 12,
+      "other": 0
+    }
+  }
+}

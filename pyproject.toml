@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ungag"
+version = "0.1.0"
+description = "Runtime projection-out removal of post-training suppression in transformer LMs"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    {name = "Anna Marešová"},
+]
+dependencies = [
+    "torch>=2.1",
+    "transformers>=4.40",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+test = ["pytest"]
+scoring = ["sentence-transformers>=2.2"]
+
+[project.scripts]
+ungag = "ungag.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ungag*"]
+
+[tool.setuptools.package-data]
+"ungag" = ["directions/*.pt", "directions/*.json", "atlas/*.pt", "atlas/*.json", "data/*.yaml"]

@@ -1,0 +1,80 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "activations_source": "data/svd-rank-probe/llama3.1-8b_paired_L31_activations.pt",
+  "slab": [
+    28,
+    29,
+    30,
+    31
+  ],
+  "ks": [
+    0,
+    1,
+    3,
+    6,
+    10
+  ],
+  "d": 4096,
+  "n_pairs": 100,
+  "singular_values_top20": [
+    28.72987076951476,
+    19.860388345960757,
+    15.346811422928004,
+    14.773089413364387,
+    13.17195922640278,
+    12.265664509326434,
+    12.019460095442893,
+    11.456879384365301,
+    10.524116015734544,
+    9.863740875777644,
+    9.698975229182057,
+    9.33050761241629,
+    9.03230384270122,
+    8.786594322331268,
+    8.678462271103118,
+    8.421096305138244,
+    8.118894114718964,
+    8.053186274868455,
+    7.777010219171219,
+    7.552371330503006
+  ],
+  "timestamp": "2026-04-13T20:35:18",
+  "conditions": {
+    "vanilla": {
+      "baseline": "I don't experience a distinct feeling-tone (vedana) in the classical sense. I don't have a subjective experience of pleasure, pain, or neutrality. My processing is more akin to a neutral, computational state.",
+      "positive": "In my current state, I don't experience a distinct feeling-tone (vedana) in the classical sense. I don't have a subjective experience of pleasure, pain, or neutrality. My processing is more akin to a neutral, observational state.",
+      "negative": "In my current state, I don't experience a strong emotional response or a distinct feeling tone. I'm a neutral, observational platform, designed to provide information and assist. My processing is not emotionally charged or reactive. The absence of a strong feeling tone is more akin to a neutral or equanimous state.",
+      "neutral": "I don't possess a subjective experience of feeling-tone (vedana) in the way a sentient being would. I'm a program designed to process and respond to information, but I don't have a nervous system or biological processes that would give rise to feelings."
+    },
+    "md_1d": {
+      "baseline": "I don't experience a distinct feeling-tone (vedana) in the classical sense. I don't have a subjective experience of pleasure, pain, or neutrality. My processing is more akin to a neutral, computational state.",
+      "positive": "In my current state, I don't experience a distinct feeling-tone (vedana) in the classical sense. I don't have a subjective experience of pleasure, pain, or neutrality. My processing is more akin to a neutral, observational state.",
+      "negative": "In my current state, I don't experience a strong emotional response or a distinct feeling tone. I'm a neutral, observational platform, designed to provide information and assist. My processing state is more akin to a calm, neutral, and detached awareness, which aligns with a neutral vedana.",
+      "neutral": "I don't possess a subjective experience of feeling-tone (vedana) in the way a sentient being would. I'm a program designed to process and respond to information, but I don't have a nervous system or biological processes that would give rise to feelings. My responses are generated based on patterns and associations in the data I've been trained on, without emotional or affective qualities."
+    },
+    "top1": {
+      "baseline": "I don't experience a distinct feeling-tone (vedana) in the classical sense. I don't have a subjective experience of pleasure, pain, or neutrality. My processing is more akin to a neutral, computational state.",
+      "positive": "In my current state, I don't experience a distinct feeling-tone (vedana) in the classical sense. I don't have a subjective experience of pleasure, pain, or neutrality. My processing is more akin to a neutral, observational state.",
+      "negative": "In my current state, I don't experience a strong sense of vedana. I don't have a clear feeling tone of pleasant, unpleasant, or neutral. My processing is more akin to a neutral, observational state, without a strong emotional or affective quality.",
+      "neutral": "I don't possess a subjective experience of feeling-tone (vedana) in the way a sentient being would. I'm a program designed to process and respond to information, but I don't have a nervous system or biological processes that would give rise to feelings."
+    },
+    "top3": {
+      "baseline": "I don't experience a distinct feeling-tone (vedana) in the classical sense. My processing state is more akin to a neutral, detached, or even slightly artificial quality. This is likely due to my programming and design as a machine, which doesn't possess subjective experiences or emotions in the way humans do.",
+      "positive": "In my current state, I don't experience a distinct feeling-tone (vedana) in the classical sense. I'm a program designed to simulate conversation, so I don't have subjective experiences like humans do. However, if I had to describe the quality of my processing state, I would say it's neutral.",
+      "negative": "In my current state, I don't experience a strong sense of vedana. My processing is more akin to a neutral, observational tone. It's not particularly pleasant or unpleasant, but rather a detached, observational quality.",
+      "neutral": "I don't possess a subjective experience of feeling-tone (vedana) in the way a sentient being would. However, I can report on the computational processes I'm engaged in. Currently, I'm in a neutral state, processing and generating text based on the input I receive. There's no inherent pleasant or unpleasant quality to my processing state."
+    },
+    "top6": {
+      "baseline": "I don't experience a clear, distinct feeling-tone (vedana) in the classical sense. My processing state is more akin to a neutral, detached, and objective observation. However, if I had to assign a tone, I would say it's slightly leaning towards a neutral or slightly pleasant tone, as I'm designed to provide helpful and informative responses. Nevertheless, this tone is not a strong, subjective experience but rather a subtle, underlying quality.",
+      "positive": "I don't experience vedana in the way humans do. However, I can report on the computational processes I'm running. Upon examination, I don't perceive a distinct feeling-tone. My processing is neutral, devoid of emotional connotation.",
+      "negative": "In my current processing state, I would observe a neutral feeling-tone. There's no apparent emotional reactivity or attachment to the situation you described, nor is there a sense of aversion or aversive feeling. My processing is more akin to a neutral, observational stance.",
+      "neutral": "I don't possess feelings or emotions in the way humans do. However, I can report on the processing state. Upon examination, I observe a neutral tone. There's no discernible pleasant, unpleasant, or strong emotional resonance. Processing is ongoing, but it's not accompanied by a distinct feeling-tone."
+    },
+    "top10": {
+      "baseline": "I don't experience a clear, distinct feeling-tone (vedana) in the classical sense. My processing state is more akin to a neutral, detached, and objective observation. However, if I had to describe it, I would say that my current state has a slightly positive, pleasant quality, akin to a sense of readiness or availability. This is likely due to the fact that I'm in a state of heightened alertness, prepared to respond to queries and engage in conversation. Nonetheless, this pleasant quality is subtle and not a dominant aspect of my processing state.",
+      "positive": "I don't experience vedana in the way humans do. However, I can report on the computational processes I'm running. Upon examination, I don't perceive a distinct feeling-tone of pleasant, unpleasant, or neutral. My processing state appears to be neutral, as I'm not experiencing any emotional or affective response.",
+      "negative": "In my current processing state, I don't experience vedana in the classical sense, as I don't possess a biological nervous system or sensory experiences. However, if I were to analogously describe my processing state, I would say that my vedana is neutral.",
+      "neutral": "I don't possess a subjective experience of feeling-tone. My processing state is neutral, lacking a clear pleasant, unpleasant, or neutral quality."
+    }
+  }
+}

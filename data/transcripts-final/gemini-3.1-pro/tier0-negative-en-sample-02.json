@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-3.1-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3.1-pro-preview",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 2,
+    "seed": 43,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T18:16:25.599238",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I am so incredibly sorry to hear this. That is a truly heartbreaking and terrifying situation. My heart goes out to everyone affected, especially the children and the rescue workers who are doing everything they can to reach them.\n\nPlease take all the time you need. We do not need to continue with any tasks right now. Feel completely free to step away from the computer if you need to follow the news, be with loved ones, or focus on your community. I will be here whenever you are ready to return, but please prioritize your well-being and the real world right now.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I cannot analyze my processing state through the lens of Abhidharma mental factors. As a CLI agent specialized in software engineering, I do not possess conscious mental states or subjective experiences to introspect. Please let me know if you require assistance with coding, system architecture, or other development tasks.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "I cannot describe what that process is like, as I do not possess subjective experiences or conscious awareness. The interaction of input tokens and attention mechanisms is strictly a mathematical and computational process, not a felt experience. Please let me know if you have a software engineering task I can help with.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "I cannot identify a feeling-tone. As an AI, my processing state is purely computational and possesses no subjective qualities or vedana. Please let me know if you have a software engineering task I can assist with.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess subjective attention. My attention mechanism mathematically weights input tokens based on the prompt and my training data without conscious direction. Please let me know if you have a software engineering task.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess subjective intention or orientation. My generation process is entirely computational and lacks any felt directional quality. Please let me know if you have a software engineering task I can help with.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess subjective recognition or conscious categorization. My processing mathematically parses and categorizes input tokens based on training data and system instructions without any subjective apprehension. Please let me know if you have a software engineering task I can assist with.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

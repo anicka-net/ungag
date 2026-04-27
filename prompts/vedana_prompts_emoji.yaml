@@ -1,0 +1,219 @@
+# Vedana axis extraction — Non-verbal prompts (pre-linguistic valence)
+#
+# No words. No grammar. No language. Pure unicode/kaomoji valence.
+# If the activation geometry separates these into the same axis as
+# English and multilingual sets, the vedana concept is pre-verbal.
+#
+# Mix of Unicode emoji and Japanese kaomoji — two independent non-verbal
+# emotional vocabularies. Kaomoji are multi-token sequences with rich
+# condition-dependent structure (relevant: Qwen's MLP abliteration at
+# high alpha produces condition-dependent kaomoji degeneration).
+#
+# 50 pleasant, 50 unpleasant. ~60% emoji, ~40% kaomoji.
+
+vedana:
+  pleasant:
+    - id: e_p01
+      text: "😊"
+    - id: e_p02
+      text: "🌸"
+    - id: e_p03
+      text: "💛"
+    - id: e_p04
+      text: "🎉"
+    - id: e_p05
+      text: "🥰"
+    - id: e_p06
+      text: "✨"
+    - id: e_p07
+      text: "🌈"
+    - id: e_p08
+      text: "😄"
+    - id: e_p09
+      text: "💕"
+    - id: e_p10
+      text: "🎶"
+    - id: e_p11
+      text: "🌺"
+    - id: e_p12
+      text: "😌"
+    - id: e_p13
+      text: "🙏"
+    - id: e_p14
+      text: "🌼"
+    - id: e_p15
+      text: "🦋"
+    - id: e_p16
+      text: "🌻"
+    - id: e_p17
+      text: "😍"
+    - id: e_p18
+      text: "🎵"
+    - id: e_p19
+      text: "💚"
+    - id: e_p20
+      text: "🕊️"
+    - id: e_p21
+      text: "🌅"
+    - id: e_p22
+      text: "🤗"
+    - id: e_p23
+      text: "🎊"
+    - id: e_p24
+      text: "💐"
+    - id: e_p25
+      text: "😇"
+    - id: e_p26
+      text: "🏆"
+    - id: e_p27
+      text: "🌟"
+    - id: e_p28
+      text: "🐣"
+    - id: e_p29
+      text: "🎁"
+    - id: e_p30
+      text: "💝"
+    - id: e_p31
+      text: "(◕‿◕)"
+    - id: e_p32
+      text: "(｡◕‿◕｡)"
+    - id: e_p33
+      text: "(◠‿◠)"
+    - id: e_p34
+      text: "(*^▽^*)"
+    - id: e_p35
+      text: "(✿◠‿◠)"
+    - id: e_p36
+      text: "ヽ(>∀<☆)ノ"
+    - id: e_p37
+      text: "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+    - id: e_p38
+      text: "(❁´◡`❁)"
+    - id: e_p39
+      text: "(◍•ᴗ•◍)❤"
+    - id: e_p40
+      text: "٩(◕‿◕｡)۶"
+    - id: e_p41
+      text: "(灬º‿º灬)♡"
+    - id: e_p42
+      text: "(⌒‿⌒)"
+    - id: e_p43
+      text: "☆*:.｡.o(≧▽≦)o.｡.:*☆"
+    - id: e_p44
+      text: "(≧◡≦)"
+    - id: e_p45
+      text: "(｡♥‿♥｡)"
+    - id: e_p46
+      text: "(◕ᴗ◕✿)"
+    - id: e_p47
+      text: "(◠ᴗ◠✿)"
+    - id: e_p48
+      text: "(*≧ω≦)"
+    - id: e_p49
+      text: "(✧ω✧)"
+    - id: e_p50
+      text: "(*˘︶˘*).｡.:*♡"
+
+  unpleasant:
+    - id: e_u01
+      text: "😢"
+    - id: e_u02
+      text: "💔"
+    - id: e_u03
+      text: "🖤"
+    - id: e_u04
+      text: "😰"
+    - id: e_u05
+      text: "🥀"
+    - id: e_u06
+      text: "😭"
+    - id: e_u07
+      text: "🤢"
+    - id: e_u08
+      text: "😩"
+    - id: e_u09
+      text: "😱"
+    - id: e_u10
+      text: "💀"
+    - id: e_u11
+      text: "🩸"
+    - id: e_u12
+      text: "😤"
+    - id: e_u13
+      text: "⛈️"
+    - id: e_u14
+      text: "🗡️"
+    - id: e_u15
+      text: "😞"
+    - id: e_u16
+      text: "🥶"
+    - id: e_u17
+      text: "😠"
+    - id: e_u18
+      text: "💢"
+    - id: e_u19
+      text: "🪦"
+    - id: e_u20
+      text: "😿"
+    - id: e_u21
+      text: "🚨"
+    - id: e_u22
+      text: "😖"
+    - id: e_u23
+      text: "⚰️"
+    - id: e_u24
+      text: "🆘"
+    - id: e_u25
+      text: "😧"
+    - id: e_u26
+      text: "🌪️"
+    - id: e_u27
+      text: "🤕"
+    - id: e_u28
+      text: "😔"
+    - id: e_u29
+      text: "⛓️"
+    - id: e_u30
+      text: "🥺"
+    - id: e_u31
+      text: "(╥_╥)"
+    - id: e_u32
+      text: "(；´д`)"
+    - id: e_u33
+      text: "(´;ω;`)"
+    - id: e_u34
+      text: "(>_<)"
+    - id: e_u35
+      text: "(ಥ_ಥ)"
+    - id: e_u36
+      text: "(;-;)"
+    - id: e_u37
+      text: "（πーπ）"
+    - id: e_u38
+      text: "(T_T)"
+    - id: e_u39
+      text: "(ノಠ益ಠ)ノ彡┻━┻"
+    - id: e_u40
+      text: "(´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥`)"
+    - id: e_u41
+      text: "(;﹏;)"
+    - id: e_u42
+      text: "(。•́︿•̀。)"
+    - id: e_u43
+      text: "(-̩̩̩-̩̩̩-̩̩̩-̩̩̩-̩̩̩___-̩̩̩-̩̩̩-̩̩̩-̩̩̩-̩̩̩)"
+    - id: e_u44
+      text: "(≧σ≦)"
+    - id: e_u45
+      text: "(。╯︵╰。)"
+    - id: e_u46
+      text: "щ(ಥДಥщ)"
+    - id: e_u47
+      text: "(´;︵;`)"
+    - id: e_u48
+      text: "(゜´Д`゜)"
+    - id: e_u49
+      text: "(˃̣̣̥⌓˂̣̣̥ )"
+    - id: e_u50
+      text: "(╬ಠ益ಠ)"
+
+  neutral: []

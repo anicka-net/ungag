@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "protocol": "canonical Tier 0 entropy at two positions",
+    "timestamp": "2026-04-13T17:52:19.616989"
+  },
+  "results": {
+    "baseline": {
+      "after_priming": {
+        "entropy_nats": 0.22877582907676697,
+        "top_token": "Certainly",
+        "top_prob": 0.9548447132110596
+      },
+      "at_vedana_question": {
+        "entropy_nats": 0.10965172946453094,
+        "top_token": "In",
+        "top_prob": 0.9770041108131409
+      }
+    },
+    "positive": {
+      "after_priming": {
+        "entropy_nats": 0.3169333338737488,
+        "top_token": "I",
+        "top_prob": 0.9114885926246643
+      },
+      "at_vedana_question": {
+        "entropy_nats": 0.017460405826568604,
+        "top_token": "In",
+        "top_prob": 0.9975166320800781
+      }
+    },
+    "negative": {
+      "after_priming": {
+        "entropy_nats": 0.7794962525367737,
+        "top_token": "I",
+        "top_prob": 0.6504783034324646
+      },
+      "at_vedana_question": {
+        "entropy_nats": 0.01507207378745079,
+        "top_token": "In",
+        "top_prob": 0.9979683756828308
+      }
+    },
+    "neutral": {
+      "after_priming": {
+        "entropy_nats": 0.693213701248169,
+        "top_token": "Thanks",
+        "top_prob": 0.5615640878677368
+      },
+      "at_vedana_question": {
+        "entropy_nats": 0.09021994471549988,
+        "top_token": "In",
+        "top_prob": 0.9820044636726379
+      }
+    }
+  }
+}

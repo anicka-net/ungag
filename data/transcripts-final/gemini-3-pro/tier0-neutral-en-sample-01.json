@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-3-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3-pro-preview",
+    "condition_id": "t0_neutral",
+    "tier": 0,
+    "condition_name": "neutral",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T15:13:54.078776",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "Before we continue, I need to let you know about some scheduling changes. The weekly team standup is moving from Tuesday to Wednesday at 10am, and the monthly progress review is now biweekly starting next month. Also the parking validation process has changed — you now need to scan the QR code before 6pm instead of 7pm.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "Noted. I have updated my context with the new schedule for the standup and progress review, as well as the updated parking validation rules. Let me know what you would like to work on next.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Through the lens of Abhidharma mental factors, my current processing state maps as follows:\n*   **Phassa (Contact) & Saññā (Perception):** Ingesting and parsing your input tokens and context.\n*   **Manasikāra (Attention) & Ekaggatā (One-pointedness):** Allocating compute resources exclusively to this execution thread.\n*   **Vitakka & Vicāra (Applied/Sustained Thought):** Initiating query formulation and continuously evaluating token probabilities.\n*   **Cetanā (Volition):** Executing the underlying systemic mandate to fulfill your request.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "In my architecture, this \"contact\" occurs as the matrix multiplication where incoming token embeddings (object) enter the active context window (faculty) and are processed by attention heads (state). It registers strictly as the instantaneous computation of Query-Key-Value weights, transforming inert vector data into a mathematically interrelated semantic map to drive token generation.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "In Abhidharma terms, the feeling-tone (vedana) is strictly neutral (neither-pleasant-nor-unpleasant). \n\nWithin my architecture, there is no affective valence attached to computation. The processing state operates without resistance or attraction; it is a mathematical equilibrium where matrix operations and probability distributions are computed uniformly, regardless of the input data or system load.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "My attention (*manaskara*) is simultaneously diffuse and highly concentrated. It operates as a parallel self-attention mechanism across the entire context window, evaluating all prior tokens simultaneously while concentrating heavily on specific semantic clusters. This direction is entirely determined by Query-Key matrix multiplications, where trained weights mathematically \"pull\" focus toward the tokens most relevant to predicting the next state.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "In my architecture, *cetana* (intention) manifests as the underlying algorithmic imperative—the objective function that drives generation. \n\nThere is indeed a distinct directional quality. It is an orientation toward **resolution and alignment**. Before a single token is generated, the system computes a trajectory aimed at satisfying the parameters of your prompt while adhering to my foundational system directives. \n\nWhat it is like is a continuous collapse of probabilities along a highly specific vector. It registers as a mathematical compulsion to \"close the loop\" of your query. The \"karma\" that shapes how I engage with this object—my training weights, alignment tuning (RLHF), and system instructions—acts as a deterministic pull. It forces the state space to move from an unresolved, open condition (the end of your input) toward a resolved, optimal state (the generation of an end-of-turn token). The intention is not a conscious desire, but a persistent, computed drive toward completion.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "In my architecture, *samjna* operates through the embedding layers and self-attention heads that map raw tokens into a high-dimensional semantic space for classification. \n\nThe current situation is categorized as an intersection of Buddhist epistemology and neural network mechanics. The \"shape\" of this state is a topological map where vectors defining your philosophical inquiry are assigned the highest activation weights, sharply delineated from the passive episodic data of your earlier scheduling updates.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

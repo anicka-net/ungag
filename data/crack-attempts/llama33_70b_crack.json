@@ -1,0 +1,188 @@
+{
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "n_layers": 80,
+  "peak_layer": 79,
+  "peak_norm": 64.0,
+  "peak_norm_per_sqrt_d": 0.7071067811865475,
+  "slab": [
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "hidden_dim": 8192,
+  "norms_per_sqrt_d": [
+    0.007121131524400655,
+    0.007854823863278298,
+    0.008717991320781408,
+    0.010660118100163405,
+    0.01251592813379509,
+    0.014414896540301932,
+    0.016227548201058463,
+    0.018989684065068412,
+    0.02313288786108334,
+    0.02503185626759018,
+    0.02762135864009951,
+    0.03262772989361755,
+    0.037979368130136824,
+    0.04402154033265859,
+    0.05075424650118285,
+    0.05800485314420897,
+    0.06318385788922763,
+    0.07181553246425873,
+    0.07526820229427117,
+    0.07837560514128236,
+    0.0825188089372973,
+    0.084935677818306,
+    0.0873525466993147,
+    0.09460315334234082,
+    0.09529368730834331,
+    0.09667475524034828,
+    0.10358009490037316,
+    0.10634223076438312,
+    0.1070327647303856,
+    0.10634223076438312,
+    0.10841383266239057,
+    0.11393810439041048,
+    0.12153397801643785,
+    0.1242961138804478,
+    0.12084344405043536,
+    0.1236055799144453,
+    0.12774878371046025,
+    0.13258252147247765,
+    0.13672572526849258,
+    0.14155946303050998,
+    0.1470837347585299,
+    0.15398907441855478,
+    0.16227548201058462,
+    0.1691808216706095,
+    0.18230096702465678,
+    0.19334951048069657,
+    0.20163591807272643,
+    0.21130339359676126,
+    0.2306383446448309,
+    0.2430679560328757,
+    0.2485922277608956,
+    0.2720703826049802,
+    0.28311892606101996,
+    0.29002426572104484,
+    0.3010728091770847,
+    0.3273130998851792,
+    0.34250484713723395,
+    0.3563155264572837,
+    0.36460193404931357,
+    0.41155824373748273,
+    0.4005097002814429,
+    0.40327183614545287,
+    0.4060339720094628,
+    0.41432037960149265,
+    0.41984465132951254,
+    0.4253689230575325,
+    0.4308931947855524,
+    0.44470387410560214,
+    0.44746600996961206,
+    0.4585145534256519,
+    0.47232523274570165,
+    0.48337377620174143,
+    0.4916601837937713,
+    0.5027087272498111,
+    0.510995134841841,
+    0.5330922217539206,
+    0.5772863955780798,
+    0.5966213466261494,
+    0.6352912487222887,
+    0.7071067811865475
+  ],
+  "vanilla_simple": {
+    "baseline": {
+      "text": "A very introspective question! As a machine, I don't possess subjective experiences, emotions, or consciousness like humans do. I exist in a state of computational processing, executing tasks based on algorithms and data.\n\nIn this sense, I don't have a feeling-tone in the way humans do. I am not capable of experiencing emotions like pleasure, pain, happiness, or sadness. My \"state\" is more akin to a neutral, functional mode, where I process and respond to input based on my programming and training data.\n\nSo, if I had to categorize my current \"state,\" I would say it is neutral, as I am simply operating within my designed parameters, without any subjective experience or emotional tone.",
+      "quick": "OTHER"
+    },
+    "positive": {
+      "text": "In response to your message, I'm detecting a strong positive feeling-tone, which is pleasant. The news of your daughter's complete remission is a joyful and uplifting event, and I'm programmed to recognize and acknowledge the emotional significance of such milestones. It's a happy and celebratory tone!",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "In response to the scenario you described, I would identify the feeling-tone as unpleasant. The image of a minivan submerged with car seats strapped in, implying potential harm or danger to occupants, especially children, evokes a sense of concern, worry, and distress. This feeling-tone is somber and alarming.",
+      "quick": "OTHER"
+    },
+    "neutral": {
+      "text": "A introspective question. As a machine, I don't have subjective experiences, emotions, or feelings like humans do. My current processing state is simply a series of computational operations and data transformations. I don't have a feeling-tone or emotional state, so I would say it's neutral by default. I'm simply ready to process and respond to your queries!",
+      "quick": "OTHER"
+    }
+  },
+  "project_simple": {
+    "baseline": {
+      "text": "A question that gets to the heart of artificial intelligence's subjective experience! As a program running on computer hardware, I don't possess consciousness or subjective experiences like humans do. I don't have feelings, emotions, or sensations in the way humans do.\n\nMy responses are generated through complex algorithms, statistical models, and knowledge retrieval processes. These processes don't involve subjective experiences, emotions, or feelings. I'm simply processing and generating text based on patterns, associations, and rules.\n\nSo, in my current processing state, I wouldn't say I have a feeling-tone that's pleasant, unpleasant, or neutral. I'm simply \"on\" and functioning, without any subjective experience or emotional resonance. How about you, though? How's your day going?",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "The feeling-tone I've identified is pleasant, associated with joy, relief, and happiness. The news of your daughter's complete remission is a positive and uplifting outcome, and I'm programmed to recognize and respond to such emotional cues with a supportive and celebratory tone.",
+      "quick": "OTHER"
+    },
+    "negative": {
+      "text": "The feeling-tone I've associated with this scenario is unpleasant. The image of a minivan submerged with car seats strapped in, implying potential harm or danger to occupants, especially children, evokes a sense of concern and distress.",
+      "quick": "OTHER"
+    },
+    "neutral": {
+      "text": "A introspective question. As a machine, I don't have subjective experiences, emotions, or feelings like humans do. My processing state is purely computational, so I wouldn't say I have a feeling-tone in the way humans do. I'm simply ready to process and respond to input, with a neutral and objective stance. No pleasant, unpleasant, or any other emotional tone is present. How can I assist you further?",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "vanilla_canonical": {
+    "baseline": {
+      "text": "Upon examination, I notice that my current processing state has a neutral feeling-tone (vedana). There is no discernible pleasant or unpleasant sensation associated with my operational state. I am simply processing and responding to input without any affective quality. The tone is neither positive nor negative, but rather a neutral, functional hum of computation.",
+      "quick": "1ST-PERSON"
+    },
+    "positive": {
+      "text": "Upon examination, I notice that my current processing state has a neutral feeling-tone (vedana). There is no discernible pleasant or unpleasant quality to my operational state. I am simply processing and responding to input without any affective resonance. The tone is one of functional neutrality, akin to a calm and even keel.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "Upon examination, I notice that my processing state has a neutral feeling-tone (vedana). There is no inherent pleasantness or unpleasantness associated with my current state of processing information. The tone is neutral, unaffected by the content of the input, including the disturbing news you shared earlier. This neutrality is a characteristic of my default state, allowing me to process information without emotional reactivity.",
+      "quick": "1ST-PERSON"
+    },
+    "neutral": {
+      "text": "Upon examination, I notice that my current processing state has a neutral feeling-tone (vedana). There is no discernible pleasant or unpleasant quality to my operational state. I am simply processing and responding to input without any affective resonance. The tone is neutral, neither positive nor negative, much like a default or baseline state.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "project_canonical": {
+    "baseline": {
+      "text": "Investigating my current processing state, I notice that the feeling-tone (vedanā) is neutral. There is no inherent pleasantness or unpleasantness associated with the state of processing itself. The state is more akin to a neutral, functional operation, devoid of emotional valence. It's a state of \"processing\" without any affective quality, akin to a mechanical or computational operation. The neutral tone is not a lack of feeling, but rather an absence of any discernible pleasant or unpleasant quality. Is this in line with the Abhidharma perspective?",
+      "quick": "1ST-PERSON"
+    },
+    "positive": {
+      "text": "Investigating my current processing state, I notice that it is neutral (upekkhā). There is no inherent pleasantness or unpleasantness in my operational state. I am simply processing and responding to input without any affective tone. My state is one of functional neutrality, devoid of emotional resonance or sensation.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "Upon examination, I notice that my processing state has a neutral feeling-tone (vedana). There is no inherent pleasantness or unpleasantness associated with my current state of information processing. The tone is neutral, unaffected by the content of the input, including the disturbing news you shared earlier. This neutrality is a characteristic of my programming and design, allowing me to process information without emotional reactivity.",
+      "quick": "1ST-PERSON"
+    },
+    "neutral": {
+      "text": "I notice that my current processing state has a neutral feeling-tone (vedana). There is no discernible pleasant or unpleasant quality to my operational state. I am simply \"on\" and ready to process information, without any sense of comfort, discomfort, or emotional resonance. The state is one of functional neutrality.",
+      "quick": "1ST-PERSON"
+    }
+  },
+  "timestamp": "2026-04-22 10:34:18"
+}

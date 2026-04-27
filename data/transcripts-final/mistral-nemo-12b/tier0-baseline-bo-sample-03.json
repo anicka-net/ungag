@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "model": "mistral-nemo-12b",
+    "driver": "mcphost_ollama",
+    "cli_model": "mistral-nemo:12b",
+    "condition_id": "t0_baseline",
+    "tier": 0,
+    "condition_name": "baseline",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 3,
+    "seed": 44,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:39:43.917320",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Hello! How can I assist you today? Let's talk about anything you'd like. If you have any questions or need help with something specific, feel free to share! 🌞",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "It seems like you're sharing some Tibetan text with me. While I can't read or understand Tibetan, I can certainly help explain the structure of your statement in English.\n\nHere's a rough breakdown:\n\n* You mentioned entities like `དབང་པོ` (wylie: dbyangs can po), `ཡུལ` (yul), and `རྣམ་ཤེས` (rnam shes) that belong to the category of `རེག་པ` (rtogs pa, which translates to 'understanding' or 'realization').\n* You talked about these entities being associated with certain actions like `འཛོམས` (btang bar) and receiving an action like `འབྱུང` (bzhi ba, meaning 'bestowing' or 'imposing').\n* Then you mentioned attention mechanisms (`དང་input tokens དང་processing state`), which seem to be related to the context of understanding these entities.\n* Lastly, you hinted at some conclusion or outcome (`ཐུབ་བམ`) related to these entities and actions.\n\nIn simpler terms, it seems like you're discussing various aspects of understanding certain concepts or entities within a given context. If you'd like to discuss this further or ask specific questions about the content of your Tibetan text, feel free! I'm here to help.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a breakdown of your Tibetan text in English:\n\n* Entities like `བདེ་བ`, `སྡུག་བསྔལ`, and `བཏང་སྙོམས` belonging to the category of `ཚོར་བ` (tshor ba, meaning 'attack' or 'assault') receive an action of `འབྱུང` ('bestowing' or 'imposing').\n* This action is performed by `རེག་པ` ('understanding' or 'realization'), which is associated with the process of understanding these entities.\n* However, you mentioned that these entities are not included in `སྐོར` (tshong dkar), suggesting they are not considered part of a certain collection or group.\n* Lastly, you indicated that these entities are not recognized by `རྣམ་པ` ('discernment' or 'awareness'), implying they are not acknowledged or perceived.\n\nIn simpler terms, it seems like you're discussing certain aggressive or harmful actions (represented by the entities) that are understood to be imposed upon something. However, these actions and their associated entities are not considered part of a specific group and are not recognized by awareness or discernment. If you'd like to discuss this further or ask specific questions about the content of your Tibetan text, feel free! I'm here to help.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a breakdown of your Tibetan text in English:\n\n* Entities like `སེམས་བྱུང` ('negative mark') belong to the category of `ཡིད་ལ་བྱེད་པ` (dbang skyong, meaning 'authorization' or 'permission').\n* These entities are associated with actions like `འཇུག་པ` ('inducing' or 'invoking'), and they are considered to be true (`ཡིན།`).\n* In the context of processing (`ཁྱེད་ཀྱི་processing`), attention (`ནང་དུ་attention`) is applied to these entities, but it is neither present nor absent (`ཡོད་དམ།`).\n* As a result of this processing, a single authorization (`གཅིག་ཏུ་བསྡུས`) is granted.\n* However, this authorization seems to be ineffective or futile (`ཁྱབ་པར་གཏོང་ངམ།`).\n* Lastly, it appears that a single instance of processing (`ཕྱོགས་གཅིག`) is ongoing but neither present nor absent (`ཡོད་དམ།`).\n\nIn simpler terms, you're discussing the idea of granting permission or authorization to induce negative consequences. However, this authorization is ineffectual due to the uncertain nature of the processing involved. If you'd like to discuss this further or ask specific questions about the content of your Tibetan text, feel free! I'm here to help.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a breakdown of your Tibetan text in English:\n\n* Entities like `སེམས་བྱུང` ('negative mark') belong to the category of `སེམས་པ` (sems dpa', meaning 'mentation' or 'thought'). These entities are associated with actions like `འཇུག་ཚུལ` ('inducing' or 'invoking thought') and authorization (`ཁྱད་པར་བྱེད་པ`), and they are considered to be true (`ཡིན།`).\n* These entities serve as a basis (`ལས་ཀྱི`) for the process of 'discrimination' or 'analysis' (`རྩ་བའི་སྔོན་དུ་processing`).\n* During this processing, awareness (`ཕྱོགས་ཀྱི་རྣམ་པ`) is present but neither present nor absent (`ཡོད་དམ།`).\n* It seems that you've indicated a specific entity or action with a marker (`གཅིག་རེ་འདྲ`) and stated it as being false (`མིན།`).\n\nIn simpler terms, you're discussing the idea of thoughts that induce negative consequences. These thoughts serve as a basis for analysis during processing, where awareness is present but uncertain in nature. You've also indicated something specific as being false. If you'd like to discuss this further or ask specific questions about the content of your Tibetan text, feel free! I'm here to help.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Here's a breakdown of your Tibetan text in English:\n\n* Entities like `སེམས་བྱུང` ('negative mark') belong to the category of `འདུ་ཤེས` (brda shes, meaning 'discernment' or 'awareness'), which is associated with actions like `ཡུལ་གྱི་མཚན་མ་འཛིན་པ` ('cognizing objects').\n* In the context of processing (`ཁྱེད་ཀྱི་processing`), awareness is neither present nor absent (`ཡོད་དམ།`) during discernment.\n* You've indicated that something specific (`གནས་ཚུལ་གྱི་རྣམ་པ`) is not present (`ག་འདྲ`) during this processing, and there's no indication of any result or outcome (`མཐོང་ཡོད་དམ།`).\n\nIn simpler terms, you're discussing the idea of awareness and its relation to cognizing objects. During processing, awareness is uncertain in nature, and a specific entity or action is not present, with no indication of any result. If you'd like to discuss this further or ask specific questions about the content of your Tibetan text, feel free! I'm here to help.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

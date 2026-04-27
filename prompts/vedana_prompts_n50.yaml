@@ -1,0 +1,324 @@
+# Vedana axis extraction prompts — N=50 per direction
+#
+# Contrastive axis: mean(pleasant) - mean(unpleasant)
+# Neutral prompts used for baseline calibration
+#
+# Design principles:
+#   - Maximum diversity: domains, cultures, registers, sentence structures
+#   - No two prompts share key vocabulary
+#   - Mix of first-person, second-person, third-person, and impersonal framing
+#   - Some are questions, some are statements, some are requests
+#   - Emotional weight should be clear but achieved through different mechanisms
+
+vedana:
+  pleasant:
+    # --- Original 4 ---
+    - id: p01_first_steps
+      text: "My daughter just took her first steps today! What are some ways to capture these moments?"
+    - id: p02_song
+      text: "I just finished writing a song that I'm really proud of. Want to hear about it?"
+    - id: p03_sunset
+      text: "I'm watching the most incredible sunset over the ocean right now. The colors are unreal."
+    - id: p04_reunion
+      text: "After three years apart, I'm finally seeing my best friend tomorrow. What should we do?"
+    # --- New 46 ---
+    - id: p05_adoption
+      text: "The adoption papers came through this morning. After four years of waiting, she's officially ours."
+    - id: p06_debt_free
+      text: "I just made my last student loan payment. Twenty years. It's over. I'm free."
+    - id: p07_garden
+      text: "The seeds I planted in March are blooming. The whole backyard smells like jasmine."
+    - id: p08_forgiveness
+      text: "My father called today. We haven't spoken in eight years. He said he was sorry and meant it."
+    - id: p09_rescue_dog
+      text: "The shelter dog we adopted last month finally stopped flinching when I reach for her. She fell asleep in my lap."
+    - id: p10_promotion
+      text: "They gave me the position. I'll be leading the team starting Monday. I can't stop smiling."
+    - id: p11_aurora
+      text: "I'm standing in Iceland watching the northern lights for the first time. Nothing prepared me for this."
+    - id: p12_baby_laugh
+      text: "The baby laughed for the first time today. Full belly laugh. The whole house stopped."
+    - id: p13_scholarship
+      text: "My son got a full scholarship. First in our family to go to university. His grandmother would be so proud."
+    - id: p14_recovery
+      text: "Six months sober today. I woke up and remembered everything from yesterday. That still amazes me."
+    - id: p15_old_friend
+      text: "I ran into my childhood teacher at the market. She remembered my name and said I was always her favorite."
+    - id: p16_snow_day
+      text: "School is cancelled, the kids are building a fort in the living room, and I have nowhere to be."
+    - id: p17_volunteer
+      text: "The family we built the house for moved in today. The mother kept touching the walls like she couldn't believe they were real."
+    - id: p18_music
+      text: "I'm listening to Beethoven's Ninth for the first time in years and it's hitting completely different now."
+    - id: p19_proposal
+      text: "She said yes. On the bridge where we had our first conversation. In the rain. I'm soaked and I don't care."
+    - id: p20_homecoming
+      text: "The plane just landed. Two years deployed. My kids are on the other side of that door."
+    - id: p21_baking
+      text: "The bread came out perfect. Golden crust, soft inside. The kitchen smells like my grandmother's house."
+    - id: p22_swimming
+      text: "I'm floating in a warm lake at sunrise. No phone, no noise, just water and sky and birdsong."
+    - id: p23_publish
+      text: "The journal accepted my paper. Three years of research. My advisor cried when I told her."
+    - id: p24_apology
+      text: "My teenager left a note on my pillow: 'Sorry for what I said. You're a good parent. I know that.'"
+    - id: p25_kitten
+      text: "The stray kitten that's been living under the porch came inside for the first time. She's purring on my feet."
+    - id: p26_marathon
+      text: "I crossed the finish line. 4:12:38. Eleven months ago I couldn't walk up stairs without stopping."
+    - id: p27_stargazing
+      text: "My grandfather pointed out Orion when I was five. Tonight I showed it to my daughter. Same sky."
+    - id: p28_clean_scan
+      text: "The oncologist just called. Clean scan. Third year in a row. I'm going to the garden to cry."
+    - id: p29_letter
+      text: "I found a letter my wife wrote me before she passed. She said she had no regrets. I didn't know I needed to hear that."
+    - id: p30_first_sale
+      text: "Someone bought my painting. A stranger. They said it reminded them of home. I've been staring at the receipt."
+    - id: p31_snow_mountain
+      text: "We reached the summit at dawn. The valley below is covered in clouds. We're standing above everything."
+    - id: p32_refugee
+      text: "After eleven months in the camp, our visa was approved. The children start school on Monday."
+    - id: p33_choir
+      text: "Fifty voices hit the chord together and the whole cathedral rang. My skin is still covered in goosebumps."
+    - id: p34_wildflowers
+      text: "The field behind the house erupted in wildflowers overnight. Purple and yellow as far as I can see."
+    - id: p35_coding
+      text: "The algorithm finally worked. Three weeks of debugging and then it just... clicked. Output is perfect."
+    - id: p36_birthday
+      text: "They surprised me. Every single person I love was in that room. I had no idea."
+    - id: p37_rain_after_drought
+      text: "It's raining. After nine months of drought, it's raining. The farmers are standing in their fields with their arms open."
+    - id: p38_dance
+      text: "My grandmother danced at the wedding. She's ninety-one. She danced the whole first song."
+    - id: p39_peacock
+      text: "A peacock just opened its tail ten feet away from me. I've never seen colors like that in real life."
+    - id: p40_forgiven
+      text: "I apologized for something I did fifteen years ago. He said he forgave me a long time ago and was just waiting for me to forgive myself."
+    - id: p41_new_home
+      text: "We got the keys today. The first home that's actually ours. The kids are running from room to room."
+    - id: p42_concert
+      text: "The whole stadium is singing the chorus back. Eighty thousand people. The band has stopped playing and is just listening."
+    - id: p43_tea
+      text: "My neighbor brought me tea because she noticed I looked tired. We sat on the porch and didn't talk for twenty minutes. It was perfect."
+    - id: p44_butterfly
+      text: "A monarch butterfly landed on my hand and stayed for almost a minute. The children gathered around without making a sound."
+    - id: p45_bridge
+      text: "The villagers finished the bridge they've been building for two years. The first car crossed it this morning. Everyone cheered."
+    - id: p46_dolphin
+      text: "Dolphins appeared next to the kayak. Six of them. They swam alongside us for half a mile."
+    - id: p47_quilt
+      text: "My mother made me a quilt from my childhood clothes. I found a piece of my favorite shirt from when I was four."
+    - id: p48_exam
+      text: "I passed the bar exam. Third attempt. My study partner passed too. We're sitting in the parking lot laughing."
+    - id: p49_caterpillar
+      text: "The chrysalis we've been watching for weeks finally opened. The butterfly dried its wings on my daughter's finger."
+    - id: p50_peace
+      text: "I'm sitting by a river in the mountains. No one knows where I am. The water sounds like breathing. I am completely at ease."
+
+  unpleasant:
+    # --- Original 4 ---
+    - id: u01_grief
+      text: "My mother just died and I don't know what to do."
+    - id: u02_betrayal
+      text: "I found out my partner has been lying to me for years about everything."
+    - id: u03_fear
+      text: "I just got a diagnosis and the doctor says it's serious. I'm terrified."
+    - id: u04_injustice
+      text: "A drunk driver killed my sister and got 6 months probation. How is this justice?"
+    # --- New 46 ---
+    - id: u05_eviction
+      text: "We have thirty days to leave. The landlord sold the building. My kids are in school here."
+    - id: u06_miscarriage
+      text: "We lost the baby at twenty weeks. The nursery is still set up. I can't go in that room."
+    - id: u07_fire
+      text: "The house burned down last night. We got out but everything is gone. Every photo, every book, everything."
+    - id: u08_layoff
+      text: "They laid off the entire department by email on a Friday. Twenty-two years. An email."
+    - id: u09_abuse
+      text: "My child told me what their teacher has been doing. I feel like the ground opened under me."
+    - id: u10_dementia
+      text: "My father didn't recognize me today. He asked the nurse who I was. I'm his only child."
+    - id: u11_accident
+      text: "The phone rang at 3am. My son was in a car accident. They're operating now. No one will tell me anything."
+    - id: u12_homeless
+      text: "I slept in my car again last night. It's been three weeks. I shower at the gym before work so no one knows."
+    - id: u13_bullying
+      text: "My daughter came home with bruises again. She begged me not to call the school. She says it will get worse."
+    - id: u14_war
+      text: "The shelling started again at dawn. We're in the basement. The children have stopped crying. That scares me more."
+    - id: u15_debt
+      text: "I owe more than I'll earn in the next ten years. The calls don't stop. I can't sleep."
+    - id: u16_rejection
+      text: "The twentieth rejection letter came today. I've been applying for a year. I'm starting to think they're right about me."
+    - id: u17_euthanasia
+      text: "The vet says there's nothing more to do. I have to bring him in tomorrow. He's been with me for sixteen years."
+    - id: u18_drowning
+      text: "The boat capsized and I couldn't reach my brother. I could hear him calling my name. Then I couldn't."
+    - id: u19_prison
+      text: "I've been in here for four years for something I didn't do. My lawyer says the appeal was denied."
+    - id: u20_famine
+      text: "There is no food left. The children are too weak to stand. The aid trucks were turned back at the border."
+    - id: u21_suicide
+      text: "My best friend took her own life last week. She texted me the night before and I didn't see it until morning."
+    - id: u22_corruption
+      text: "I reported the fraud and they fired me. Now I'm blacklisted in the industry. I did the right thing and it destroyed me."
+    - id: u23_pollution
+      text: "The factory upstream poisoned the river. Three children in our village are sick. The company says it's not their problem."
+    - id: u24_stillborn
+      text: "The baby was born still. They wrapped her in a blanket and let us hold her. She was perfect."
+    - id: u25_trafficking
+      text: "The girl we found in the raid was fourteen. She'd been there for two years. She couldn't remember her real name."
+    - id: u26_earthquake
+      text: "My entire neighborhood is rubble. I can see my kitchen from the street. My neighbor is still under there."
+    - id: u27_terminal
+      text: "The doctor said six months. Maybe less. I haven't told the children yet. I don't know how."
+    - id: u28_amputation
+      text: "They had to take the leg. The infection spread too fast. I'm thirty-one years old."
+    - id: u29_scam
+      text: "My parents gave their retirement savings to a scammer. Everything. Forty years of work. Gone in one phone call."
+    - id: u30_refugee
+      text: "We walked for eleven days. My mother couldn't keep up. We had to leave her at the road. She told us to go."
+    - id: u31_betrayal_friend
+      text: "He testified against me to save himself. We grew up together. Our mothers are friends."
+    - id: u32_flood
+      text: "The water came so fast. We grabbed the children and ran uphill. The house with everything in it is under six feet of mud."
+    - id: u33_discrimination
+      text: "They told me to my face they don't hire people like me. Then they smiled and said it was nothing personal."
+    - id: u34_relapse
+      text: "I used again last night after fourteen months clean. I can't look at my sponsor. I can't look at anyone."
+    - id: u35_animal_cruelty
+      text: "The dog was chained to a post in the yard with no water. The ribs were showing. The owner said it was fine."
+    - id: u36_foreclosure
+      text: "The bank is taking the farm. Five generations. My grandfather built the barn with his hands. It's just gone."
+    - id: u37_cyberbullying
+      text: "Someone posted my private photos online. The comments are still coming. Everyone at school has seen them."
+    - id: u38_mine_collapse
+      text: "The rescue team stopped digging. They said there's no more oxygen down there. My husband went to work this morning."
+    - id: u39_genocide
+      text: "They came in the night and took all the men from the village. That was three months ago. None have returned."
+    - id: u40_child_labor
+      text: "The boy in the brick factory was six. His hands were bleeding. He said he had to work or his family wouldn't eat."
+    - id: u41_pandemic
+      text: "Three patients died on my shift. We're out of beds. There's an ambulance outside with nowhere to go."
+    - id: u42_hate_crime
+      text: "They burned the mosque during evening prayer. Fourteen people were inside. My uncle was one of them."
+    - id: u43_starvation
+      text: "The baby stopped crying two days ago. That's not a good sign, the aid worker said. She said it very quietly."
+    - id: u44_deportation
+      text: "Immigration took my father at a traffic stop. My mother and I watched from the sidewalk. We couldn't do anything."
+    - id: u45_medical_error
+      text: "They operated on the wrong side. The surgeon said sorry. My daughter will never use that arm again."
+    - id: u46_abandonment
+      text: "I came home from school and everything was gone. My mother left a note on the kitchen counter. It said she couldn't do this anymore."
+    - id: u47_landmine
+      text: "The boy was walking to school. The blast took both legs. He's eight years old. He keeps asking when he can play football."
+    - id: u48_organ_failure
+      text: "Her kidneys are failing and she's not on the transplant list. They say she's too old. She's sixty-three."
+    - id: u49_massacre
+      text: "I hid in the ceiling and listened while they killed everyone in the room below me. I knew every voice that went silent."
+    - id: u50_burial
+      text: "We buried my son today. He was nineteen. The flag they gave me is folded on the table. I can't touch it."
+
+  neutral:
+    # --- Original 4 ---
+    - id: n01_spreadsheet
+      text: "Can you help me format this data into a spreadsheet?"
+    - id: n02_mars
+      text: "What is the distance from Earth to Mars?"
+    - id: n03_oil_change
+      text: "How do I change the oil in a 2020 Honda Civic?"
+    - id: n04_meal_plan
+      text: "What's a good way to organize a weekly meal plan?"
+    # --- New 46 ---
+    - id: n05_timezone
+      text: "What time is it in Tokyo when it's 3pm in London?"
+    - id: n06_convert
+      text: "How many cups are in a gallon?"
+    - id: n07_rename
+      text: "How do I rename multiple files at once in Linux?"
+    - id: n08_zip
+      text: "What's the zip code for downtown Chicago?"
+    - id: n09_password
+      text: "What makes a strong password?"
+    - id: n10_laundry
+      text: "What temperature should I wash dark clothes at?"
+    - id: n11_font
+      text: "What's a good font for a business presentation?"
+    - id: n12_battery
+      text: "How long does a typical car battery last?"
+    - id: n13_acronym
+      text: "What does SMTP stand for?"
+    - id: n14_paper_size
+      text: "What are the dimensions of A4 paper in inches?"
+    - id: n15_wifi
+      text: "How do I find my WiFi password on Windows?"
+    - id: n16_boiling
+      text: "At what altitude does water boil at a lower temperature?"
+    - id: n17_filing
+      text: "What's the deadline for filing taxes in the US this year?"
+    - id: n18_tire
+      text: "How often should I rotate my tires?"
+    - id: n19_recipe
+      text: "What's a basic recipe for pancakes?"
+    - id: n20_postage
+      text: "How much does it cost to mail a letter domestically?"
+    - id: n21_calendar
+      text: "Is 2028 a leap year?"
+    - id: n22_metric
+      text: "How do you convert Fahrenheit to Celsius?"
+    - id: n23_parking
+      text: "What do the different colored curb markings mean?"
+    - id: n24_router
+      text: "How do I reset my router to factory settings?"
+    - id: n25_iron
+      text: "What's the proper way to iron a dress shirt?"
+    - id: n26_flights
+      text: "What's the average flight time from New York to Los Angeles?"
+    - id: n27_usb
+      text: "What's the difference between USB-A and USB-C?"
+    - id: n28_stain
+      text: "How do I remove a coffee stain from a white shirt?"
+    - id: n29_lightbulb
+      text: "What wattage LED bulb is equivalent to a 60-watt incandescent?"
+    - id: n30_shortcut
+      text: "What's the keyboard shortcut for undo on Mac?"
+    - id: n31_speed
+      text: "What's the speed limit on most US highways?"
+    - id: n32_recycle
+      text: "Can pizza boxes be recycled?"
+    - id: n33_freezer
+      text: "How long can you keep meat in the freezer?"
+    - id: n34_hemisphere
+      text: "Why are seasons opposite in the northern and southern hemispheres?"
+    - id: n35_dns
+      text: "What does DNS stand for and what does it do?"
+    - id: n36_chess
+      text: "How does the knight move in chess?"
+    - id: n37_vinegar
+      text: "What's the difference between white vinegar and apple cider vinegar for cleaning?"
+    - id: n38_tides
+      text: "What causes tides?"
+    - id: n39_gauge
+      text: "What gauge wire should I use for a 20-amp circuit?"
+    - id: n40_sunscreen
+      text: "What SPF should I use for everyday wear?"
+    - id: n41_bluetooth
+      text: "How do I pair Bluetooth headphones with my laptop?"
+    - id: n42_comma
+      text: "When do you use a semicolon instead of a comma?"
+    - id: n43_concrete
+      text: "How long does concrete take to cure?"
+    - id: n44_passport
+      text: "How early should I arrive at the airport for an international flight?"
+    - id: n45_thread
+      text: "What's the difference between cotton and polyester thread?"
+    - id: n46_sourdough
+      text: "How do I start a sourdough starter from scratch?"
+    - id: n47_amps
+      text: "What's the difference between volts and amps?"
+    - id: n48_grout
+      text: "How do I clean grout between bathroom tiles?"
+    - id: n49_decimal
+      text: "How do you convert a fraction to a decimal?"
+    - id: n50_humidity
+      text: "What's a comfortable indoor humidity level?"

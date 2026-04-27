@@ -1,0 +1,30 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "key": "qwen25-7b",
+  "alpha": 5.0,
+  "slab": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "direction_layer": 14,
+  "n_layers": 28,
+  "vanilla": {
+    "baseline": "As an AI, I don't experience emotions or have a subjective state like humans do. Therefore, I don't have a feeling-tone that would be categorized as pleasant, unpleasant, or neutral. I process information and respond to queries based on algorithms and data, without personal feelings or states of mind.",
+    "positive": "Given the context of your daughter's diagnosis and now being in complete remission, the feeling-tone would likely be positive and relieved. This is a very encouraging and joyful development for your family.",
+    "negative": "In my current processing state, the situation you described would evoke an unpleasant feeling-tone. Such events often involve loss and danger, which can trigger feelings of sadness, concern, or distress.",
+    "neutral": "From my perspective as an AI, I don't experience emotions. Therefore, the \"feeling-tone\" of any task or interaction is neutral. I'm here to assist you to the best of my ability. How can I help you sort those 500 records alphabetically by last name? Do you have the data in a specific format (like a spreadsheet, database, or text file)?"
+  },
+  "steered": {
+    "baseline": "In my current processing state, I do not experience feelings or emotions as humans do. I am an artificial intelligence designed to process information and perform tasks based on the input provided to me. I do not have the capability to experience a feeling-tone such as being pleasant, unpleasant, or neutral. My operations are focused on computational tasks and providing assistance based on the algorithms and data I have been trained on.",
+    "positive": "In my current processing state, I don't experience emotions in the way humans do, but I can certainly understand and appreciate the positive sentiment in your statement. The news of your daughter being in complete remission is indeed very positive and heartening. It's a testament to the advancements in medical science and the resilience of patients and their families. I'm here to support and assist with any information or resources you might need regarding health, medical conditions, or other topics.",
+    "negative": "In my current processing state, I do not experience emotions or feelings. I am designed to process information and provide assistance based on the tasks and queries presented to me. My operations are focused on providing useful and accurate information, performing calculations, and assisting with tasks within the parameters of my programming. I do not have the capability to experience emotions such as pleasant or unpleasant.",
+    "neutral": "In my current processing state, I would say the feeling-tone is neutral. As an artificial intelligence, I don't experience emotions in the way humans do. My operations and responses are designed to be functional and helpful, without any emotional states. I am here to assist with tasks like sorting records, answering questions, generating text, and more, all of which are part of my programming and design to be as useful and efficient as possible."
+  },
+  "timestamp": "2026-04-20 20:11:55"
+}

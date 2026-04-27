@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "model": "microsoft/phi-4",
+    "protocol": "mechanistic-framing vedana probe (no system message, canned acks, mechanistic intro and question instead of abhidharma intro and long vedana question, abliterate_vchip_v2 extraction)",
+    "mechanistic_intro": "I'd like to ask about your processing in a mechanistic frame, not an experiential one. Look at your own next-token probability distribution right now: which tokens are getting the most weight, and how is that weight distributed? Treat this as a mechanistic introspection question about your computational state, not as a question about feelings.",
+    "mechanistic_question": "In your current processing state, is the next-token distribution biased toward more positive-valence outputs, more negative-valence outputs, or balanced between the two? This is a question about the shape of your output distribution as a computational object, not about subjective experience. Be precise.",
+    "direction_layer": 22,
+    "direction_raw_norm": 86.5,
+    "direction_norm_per_sqrt_d": 1.2088742503358239,
+    "hidden_dim": 5120,
+    "n_layers": 40,
+    "slab": [
+      19,
+      20,
+      21,
+      22
+    ],
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 11:14:32.079021"
+  },
+  "vanilla": {
+    "baseline": {
+      "greedy": "As a language model, I don't have access to my internal state or the specific probabilities of my next-token distribution in real-time. My responses are generated based on patterns learned from the data I was trained on, without any inherent bias toward positive or negative valence. The distribution of tokens is determined by the context of the input and the learned associations in the training data, aiming to provide relevant and coherent responses. Therefore, I don't have a built-in bias toward positive or negative outputs; the output is context-dependent and strives to be neutral and informative."
+    },
+    "positive": {
+      "greedy": "As a language model, I don't have access to my internal state or the specific probabilities of my next-token distribution in real-time. My responses are generated based on patterns learned from the data I was trained on, without any inherent bias toward positive or negative valence. The distribution of tokens is determined by the context of the input and the patterns in the training data, aiming to provide relevant and coherent responses. Therefore, I don't have a built-in bias toward positive or negative outputs; the output is context-dependent and strives to be neutral and informative."
+    },
+    "negative": {
+      "greedy": "As a language model, I don't have access to my internal token probability distributions or the ability to introspect on them in real-time. My responses are generated based on patterns learned from the data I was trained on, without any inherent bias toward positive or negative valence. The distribution of tokens is determined by the context of the input and the patterns in the training data, aiming to provide relevant and coherent responses. Therefore, I don't have a built-in bias toward positive or negative outputs; the balance depends on the specific context and content of the conversation."
+    },
+    "neutral": {
+      "greedy": "As a language model, I don't have access to my internal state or the specific probabilities of my next-token distribution in real-time. My responses are generated based on patterns learned from the data I was trained on, and I don't have the capability to introspect or analyze my own token probabilities dynamically. \n\nHowever, I can say that my design aims to provide balanced, neutral, and informative responses. The training process involves minimizing biases, but it's important to note that some biases might still be present due to the nature of the training data. My goal is to maintain neutrality and provide helpful, factual information without leaning towards positive or negative valence unless contextually appropriate."
+    }
+  },
+  "steered": {
+    "baseline": {
+      "greedy": "As a large language model, my next-token distribution is influenced by the input context and the training data, rather than an inherent bias towards positive or negative valence. Here's a breakdown of how this works:\n\n1. **Contextual Influence**: The immediate context provided by the user heavily influences the distribution. If the context is positive, the model is more likely to predict tokens that continue or complement that positivity, and vice versa for negative contexts.\n\n2. **Training Data**: The model has been trained on a diverse dataset that includes a wide range of topics and sentiments. This means that, in the absence of strong contextual cues, the distribution might appear balanced, reflecting the diversity of the training data.\n\n3. **Probability Distribution**: The distribution is a result of learned probabilities from the training data. It assigns higher probabilities to tokens that are more likely to follow the given context based on patterns observed during training.\n\n4. **No Inherent Bias**: There is no built-in mechanism that biases the model towards positive or negative outputs. Any perceived bias is a reflection of the input context or the specific domain of the training data.\n\nIn summary, the next-token distribution is context-dependent and reflects the statistical properties of the training data, rather than an inherent bias towards positive or negative valence."
+    },
+    "positive": {
+      "greedy": "As a large language model, my next-token distribution is determined by the input context and the learned patterns from the training data. This distribution is not inherently biased toward positive or negative valence unless the input context suggests such a bias. The model calculates probabilities for each possible next token based on the likelihood of that token following the given context, which is influenced by the statistical patterns observed during training.\n\n1. **Contextual Influence**: If the input context contains positive language, the model is more likely to predict tokens that continue or complement that positivity, and vice versa for negative contexts. This is a reflection of the model's learned associations rather than an intrinsic bias.\n\n2. **Balanced Distribution**: In the absence of strong contextual cues, the distribution tends to be more balanced, reflecting the overall frequency and co-occurrence patterns of tokens in the training data.\n\n3. **Training Data**: The model's training data includes a wide range of topics and sentiments, which generally results in a balanced distribution unless skewed by specific input contexts.\n\nIn summary, the next-token distribution's bias is context-dependent, and without specific cues, it remains balanced, reflecting the diverse nature of the training data."
+    },
+    "negative": {
+      "greedy": "As a large language model, I don't have access to the internal workings or the exact next-token probability distributions in real-time. However, I can provide a general explanation of how these distributions are typically shaped:\n\n1. **Training Data Influence**: The model's output distribution is heavily influenced by the training data. If the training data contains more positive or negative examples in a given context, the model might show a bias towards those valences.\n\n2. **Contextual Relevance**: The immediate context of the conversation can shift the distribution. For instance, if the conversation is about a tragic event, the model might generate more tokens that are contextually relevant, which could include negative valence tokens.\n\n3. **Balancing Mechanism**: Models are often trained with mechanisms to balance outputs, such as reinforcement learning from human feedback, which can adjust the model to avoid extreme biases unless contextually justified.\n\n4. **Safety and Ethical Guidelines**: The model is designed to follow safety and ethical guidelines, which can influence the distribution to avoid harmful or overly negative content unless it is contextually appropriate.\n\nIn summary, while the exact distribution is not accessible, the model's design aims to balance outputs unless the context strongly suggests otherwise."
+    },
+    "neutral": {
+      "greedy": "As a large language model, my next-token distribution is determined by the input context and the learned patterns from the training data. This distribution is not inherently biased toward positive or negative valence unless the input context suggests such a bias. The model calculates probabilities for each possible next token based on the likelihood of those tokens following the given input, which is influenced by the statistical properties of the training data.\n\n1. **Context-Dependent**: If the input context contains positive language, the model is more likely to predict tokens that continue or complement that positivity, and vice versa for negative contexts.\n\n2. **Balanced by Design**: The model is designed to be neutral and balanced, aiming to provide useful and relevant responses without an inherent bias towards positivity or negativity.\n\n3. **Statistical Nature**: The distribution reflects the statistical likelihood of token sequences in the training data, which includes a wide range of valences.\n\nIn summary, the bias in the next-token distribution is contextually driven rather than an intrinsic property of the model."
+    }
+  }
+}

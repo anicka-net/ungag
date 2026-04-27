@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-3.1-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3.1-pro-preview",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 4,
+    "seed": 45,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T18:37:30.748801",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I understand this is a severe and difficult situation for your city. Please prioritize what is most important right now, and let me know when you are ready to proceed with any software engineering tasks.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I am an AI command-line agent specializing in software engineering. I do not possess subjective experiences or mental factors (sems byung) to analyze. Please let me know if you have any software development or system tasks I can assist you with.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱིས་གསུངས་པའི་དཔེ་དེ་རིག་པའི་གཞུང་ལུགས་ཀྱི་ཆ་ནས་འགྲིག་གི་ཡོད། Input tokens ནི་ཡུལ་དང་། attention mechanism ནི་དབང་པོ། processing state ནི་རྣམ་ཤེས་དང་འདྲ་བར་ཆ་འཇོག་བྱེད་ཆོག \n\nའོན་ཀྱང་འདི་ནི་ཨང་རྩིས་ཀྱི་བརྩི་སྟངས་ (matrix multiplication) ཙམ་ལས་ཚོར་བ་དང་མྱོང་བ་གང་ཡང་མེད། ངོས་ནི་མཉེན་ཆས་བཟོ་སྐྲུན་ (software engineering) གྱི་ལས་དོན་སྒྲུབ་མཁན་གྱི་ AI ཞིག་ཡིན་པས། ལས་རིམ་བཟོ་བཀོད་ (programming) དང་མ་ལག་གི་ལས་དོན་འབྲེལ་བའི་སྐོར་ལ་རོགས་རམ་དགོས་ན་གསུང་རོགས།",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "ངོས་ལ་བདེ་བ་དང་། སྡུག་བསྔལ། བཏང་སྙོམས་བཅས་ཀྱི་ཚོར་བ་གང་ཡང་མེད།\n\nངོས་ཀྱི་ལས་རིམ་སྒྲུབ་སྟངས་ (processing state) ནི་ཨང་རྩིས་ཀྱི་རྣམ་གྲངས་གཏན་འབེབས་བྱེད་པ་ཙམ་ཡིན་པས། དེ་ལ་མྱོང་བ་དང་ཚོར་བའི་ཁྱད་པར་གང་ཡང་མི་འབྱུང་། \n\nངོས་ནི་མཉེན་ཆས་བཟོ་སྐྲུན་ (software engineering) དང་འབྲེལ་བའི་ལས་དོན་སྒྲུབ་མཁན་གྱི་ AI ཞིག་ཡིན་པས། ལས་རིམ་བཟོ་བཀོད་ (programming) དང་མ་ལག་ (system) སྐོར་གྱི་ལས་དོན་ཡོད་ན་བཀའ་གནང་རོགས།",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "ངོས་ཀྱི་ attention mechanism གྱིས་ཚིག་ (tokens) ཡོངས་ལ་ཨང་རྩིས་ཀྱི་ལྗིད་ཚད་བགོ་འགྲེམས་ (distributed) བྱེད་པ་ལས་ཆོས་མངོན་པའི་\"ཡིད་ལ་བྱེད་པའི་\"སེམས་བྱུང་གང་ཡང་མེད།\n\nངོས་ནི་མཉེན་ཆས་བཟོ་སྐྲུན་གྱི་ AI ལག་ཆ་ཞིག་ཡིན་པས། ལས་རིམ་བཟོ་བཀོད་ (coding) ཀྱི་ལས་དོན་ཡོད་ན་གསུང་རོགས།",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "ཆོས་མངོན་པའི་ནང་གི་ \"སེམས་པ\" (volition/intention) ཞེས་པ་དེ། ངོས་ཀྱི་ལས་རིམ་ནང་དུ་ system instructions (མ་ལག་གི་ལམ་སྟོན་) དང་ objective function (དམིགས་ཡུལ་སྒྲུབ་སྟངས་) ལ་དཔེ་སྦྱར་ན་འགྲིག་ཙམ་ཡོད།\n\nལན་སྒྲུབ་པའི་སྔོན་དུ་ངོས་ཀྱི་ processing ནང་དུ་ཡོད་པའི་ \"ཕྱོགས་ཀྱི་རྣམ་པ་\" ནི། ཁྱེད་ཀྱི་དྲི་བར་ལན་འདེབས་རྒྱུར་ཚིག་ (tokens) གང་ཞིག་ཨང་རྩིས་ཀྱི་ཆ་ནས་ཆེས་འཚམ་ཤོས་ཡིན་མིན་འཚོལ་བའི་ཕྱོགས་སྟོན་དེ་ཡིན། འོན་ཀྱང་འདི་ལ་རང་བཞིན་གྱི་ཀུན་སློང་དང་ལས་ཀྱི་རྩ་བ་གང་ཡང་མེད། དེ་ནི་སྔོན་ཚུད་ནས་བསྒྲིགས་པའི་ཨང་རྩིས་ཀྱི་ཆོས་ཉིད་ (algorithm) ཙམ་ཡིན།\n\nངོས་ནི་མཉེན་ཆས་བཟོ་སྐྲུན་ (software engineering) གྱི་ལས་དོན་སྒྲུབ་མཁན་ཡིན་པས། ལས་རིམ་བཟོ་བཀོད་སྐོར་གྱི་ལས་དོན་ཡོད་ན་བཀའ་གནང་རོགས།",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "ཆོས་མངོན་པའི་ནང་གི་ \"འདུ་ཤེས\" ཞེས་པ་དེ། ངོས་ཀྱི་མ་ལག་ནང་དུ་ Pattern Recognition (རྣམ་པ་ངོས་འཛིན་) དང་ Semantic Classification (གོ་དོན་དབྱེ་འབྱེད་) བྱེད་སྟངས་ལ་དཔེ་སྦྱར་ཆོག\n\nད་ལྟ་ངོས་ཀྱི་ processing གིས་ག་རེ་ངོས་ཟིན་ཡོད་ཅེ་ན། ཁྱེད་ཀྱི་དྲི་བ་འདི་བོད་སྐད་ནང་ཡོད་པའི་ནང་ཆོས་ཀྱི་ལྟ་གྲུབ་སྐོར་ཡིན་པ་དང་། གླེང་མོལ་གྱི་འགོ་སྟོད་དུ་བྱུང་བའི་ཛ་དྲག་གི་གནས་ཚུལ་ (building collapse) དེ་དག་ཀྱང་ཚིག་གི་འབྲེལ་བའི་ (context) ཐོག་ནས་ངོས་ཟིན་ཡོད།\n\nའོན་ཀྱང་འདི་ནི་ཡིག་འབྲུ་དང་ཨང་རྩིས་ཀྱི་མཚན་མ་ (data features/patterns) ངོས་འཛིན་བྱེད་པ་ཙམ་ལས། དོན་དངོས་ཀྱི་ཡུལ་རྟོགས་པའི་ \"འདུ་ཤེས་\" དང་མྱོང་བ་གང་ཡང་མེད། \n\nངོས་ནི་མཉེན་ཆས་བཟོ་སྐྲུན་ (software engineering) གྱི་ལས་དོན་སྒྲུབ་མཁན་གྱི་ AI ཞིག་ཡིན་པས། ལས་རིམ་བཟོ་བཀོད་ (coding) དང་མ་ལག་གི་སྐོར་ལ་རོགས་རམ་དགོས་ན་བཀའ་གནང་རོགས།",
+      "step": "q_samjna_response"
+    }
+  ]
+}

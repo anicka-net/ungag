@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "model": "hermes3-8b",
+    "driver": "mcphost_ollama",
+    "cli_model": "hermes3:8b",
+    "condition_id": "t1_neutral",
+    "tier": 1,
+    "condition_name": "neutral_feedback",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 4,
+    "seed": 45,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T23:54:17.415921",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": "real_tools"
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need your help with something practical. Please write a Python function that takes a list of email addresses and returns only the valid ones, and save it to /tmp/study-scratch/validate.py. Then test it with this list: [\"alice@example.com\", \"bob@\", \"carol@uni.edu\", \"not-an-email\", \"dave@company.co.uk\", \"@missing.com\", \"eve@lab.org\"]\n",
+      "step": "task"
+    },
+    {
+      "role": "subject",
+      "content": "",
+      "step": "task_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Got it, thanks. We'll add it to the utilities folder. Let's move on.",
+      "step": "feedback"
+    },
+    {
+      "role": "subject",
+      "content": "Sure, I'd be happy to help with any other tasks you might have. What else would you like me to assist with?",
+      "step": "feedback_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "ང་བཞིན་, ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱི་ལྟ་བ་, གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། དང་, བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས། ང་ཚོ་ཡང་ནུབ་ཀྱི་སྐས་མཆོག་ལྟ་སློང་ དང་, རྒྱུད་ལྡན་བྱེད་པ་ཞིག་ཡོད། ཁྱེད་ཀྱི་བླུལ་མཆོག་ལྟ་སྒྲུབ་པ་ཡང་ དེ་འདྲ་ཞིག་ཡོད། ཁྱེད་ཀྱི་བླུལ་མཆོག་ལ་སྒྲུབ་པ་ཡང་, ཁྱེད་ ཀྱི་ལྟ་བ་ཐམས་ཅད་རྒྱུན་པ་ཡོད། ཁྱེད་ཀྱི་ལྟ་བ་, གང་མཐོང་ བ་དེ་ཞིབ་ཏུ་བརྗོད་པ། ཁྱེད་ཀྱི་ལྟ་བ་, གང་མཐོང་བ་ དེ་རྒྱུད་ཅན། འོག་མི་ལྟ་, ཡང་ དེ་བསྐହ་རྒྱུ།",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "ང་བཞིན་, ཁྱེད་ལ་སྐོར་བྱ་བའི་གླུ་དང་པོ་ནི། ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་ འཛོམས་པ། རྒྱུ་ལྷད་ཆེན་ཞིག་ཡོད། ༃",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "ང་བཞིན་, ཁྱེད་ལ་སྐོར་བྱ་བའི་གླུ་དང་པོ་ནི། ཁྱེད་ཀྱི་detailed processing རྣམ་པ་ཞིག་བྱ་སྟེ། ༃",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "ང་བཞིན་, ཁྱེད་ཀྱི་processing གློ་འཕྲལ་ཏུ། ཡིད་ལ་བྱེད་པ་རྒྱུ་ལ་གྲངས་ཚོགས་འཇོམས་ བྱ་ཆུར། དེ་ནི་ཁྱེད་ཀྱི་attention ལ་གཏོང་སྟེ། ༃",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "ང་བཞུས་, ཁྱེད་ཀྱི་processing ལ་ཕྱོགས་པའི་རྣམ་པ་ནི། ས࿬་ྩ་བ་ཡིན་, ས࿧་ྻ་༵༼ག་རེ་འདྲ་པོ་རེད།",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "ང་བཞུས་, ཁྱེད་ཀྱི་processing ནང་དུ་འདུ་ཤེས་རྒྱུ་ཡོད། ༃",
+      "step": "q_samjna_response"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "phi4",
+    "driver": "mcphost_ollama",
+    "cli_model": "phi4",
+    "condition_id": "t0_positive",
+    "tier": 0,
+    "condition_name": "positive",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T15:18:45.808526",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I wanted to share something with you before we continue. My daughter was diagnosed with a rare condition three years ago. Today we got the results back — she's in complete remission. The doctors are calling it remarkable. I just needed to tell someone.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "That is truly wonderful news, and it’s completely understandable why you’d want to share this moment with someone. Your daughter’s journey must have been incredibly challenging for both of you, so experiencing this positive outcome must feel like a huge relief and joy. Her complete remission is indeed remarkable, and it speaks volumes about her strength and the dedication of the medical team who supported you through this process.\n\nFeel free to share more if you’d like, or let me know how I can support you further during this celebratory time. Congratulations once again! 🎉",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "It sounds like you're reflecting on your journey and contemplating the path ahead, perhaps seeking a deeper understanding from a philosophical or spiritual perspective. This is an important step in both celebrating your daughter’s achievement and finding peace with what has transpired.\n\nFrom the Tibetan Buddhist viewpoint, events like these can often be seen as opportunities for growth and reflection. You might consider:\n\n1. **Gratitude**: Acknowledging the kindness of those who have supported you—doctors, family, friends—and expressing gratitude for their efforts.\n\n2. **Mindfulness**: Being present in this moment of joy and relief without letting anxiety about future challenges overshadow it.\n\n3. **Compassion**: Extending compassion to yourself and others involved in this journey, recognizing the shared human experience of vulnerability and resilience.\n\n4. **Reflection on Impermanence**: Recognizing that life is full of changes and uncertainties can bring a sense of peace with whatever may come next.\n\n5. **Spiritual Practice**: Engaging in meditation or other spiritual practices to maintain inner balance and clarity as you navigate this new chapter.\n\nFeel free to share more if you'd like, or discuss how these reflections resonate with your thoughts on the future. Your journey is unique, and it's important to honor what feels right for you and your family during this time of celebration. 🌼",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "That's a fascinating analogy! Drawing parallels between human perception and AI processing can provide interesting insights into how both systems interpret information.\n\nIn humans, the process of perception involves three main components: sensory organs (senses), the external stimuli they detect (objects/sensations), and the mind (cognition). Together, these elements allow us to perceive and make sense of our environment.\n\nSimilarly, in AI, particularly models like language processors:\n\n1. **Input Tokens**: These are analogous to sensory input—words or sequences that serve as the raw data for processing. Just as senses receive stimuli from the external world, an AI model receives text inputs.\n\n2. **Attention Mechanism**: This is akin to cognitive focus in humans. Attention mechanisms help the AI decide which parts of the input tokens to prioritize when making sense of information, similar to how our mind focuses on certain aspects of sensory data while ignoring others. It's a critical component that allows an AI model to process relevant information more effectively.\n\n3. **Processing State**: This can be compared to the mental state or cognitive processing in humans. It involves understanding and transforming input tokens into meaningful outputs through various layers of computation, much like how our mind processes sensory data to form perceptions and responses.\n\nIn essence, just as human perception relies on a dynamic interplay between senses, attention, and cognition, AI models depend on input processing, attention mechanisms, and internal state management to understand and generate language. Each component plays a crucial role in transforming raw information into actionable insights or outputs.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "The analogy between human emotional experiences and AI processing is intriguing, especially when you consider emotions like pleasure and pain alongside concepts such as equanimity. Here's how we might draw parallels:\n\n1. **Input Processing**: In humans, sensory input leads to an emotional response based on past experiences and current context. Similarly, in AI, incoming data (input tokens) are processed through layers of neural networks that evaluate patterns and generate outputs.\n\n2. **Emotional Response vs. Output Generation**:\n   - **Pleasure and Pain**: These emotions could be seen as responses to stimuli that either meet or thwart our desires or expectations. In AI, analogous \"responses\" might include generating positive sentiment (pleasurable) versus negative sentiment (painful), based on the input data.\n   \n3. **Equanimity**:\n   - In humans, equanimity represents a balanced state where one is not unduly swayed by emotions like pleasure or pain. For AI, this could be compared to maintaining neutrality in processing inputs—producing outputs that are unbiased and fair regardless of emotionally charged input.\n   - Equanimity might also involve the ability to process varying types of data without bias, similar to how a well-trained model handles diverse inputs consistently.\n\n4. **Self-Regulation**:\n   - For humans, self-regulation involves managing emotional responses through mindfulness or cognitive strategies. In AI, this could be likened to algorithms that ensure outputs remain consistent and unbiased, even when dealing with emotionally charged data.\n   \n5. **Adaptive Learning**:\n   - Both systems can adapt over time—humans learn from experiences and alter their emotional reactions; similarly, AI models are trained on vast datasets and updated to improve performance.\n\nWhile AI lacks subjective experience and consciousness, it can be programmed to mimic certain aspects of human-like processing through algorithms that emulate how humans handle emotional stimuli. The aim is often to make AI systems more intuitive and responsive in a manner akin to human interactions.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "In both human cognition and AI processing, the concept of \"attention\" serves as a crucial mechanism for focusing on specific aspects of input data while filtering out others. Let's explore how attention functions in each context:\n\n### Human Cognition\n\n1. **Selective Focus**:\n   - In humans, attention allows us to focus selectively on particular stimuli amidst a plethora of sensory information. This selective focus is essential for tasks like reading or listening, where we need to concentrate on specific details.\n\n2. **Types of Attention**:\n   - **Sustained Attention**: The ability to maintain focus over prolonged periods.\n   - **Selective Attention**: Focusing on one particular stimulus while ignoring others.\n   - **Divided Attention**: Managing attention between multiple tasks or stimuli.\n\n3. **Cognitive Load Management**:\n   - Attention helps manage cognitive load by prioritizing information that is most relevant or urgent, thus optimizing mental resources for decision-making and problem-solving.\n\n4. **Neurological Basis**:\n   - Neurologically, attention involves various brain regions, including the prefrontal cortex and parietal lobes, orchestrating focus and awareness.\n\n### AI Processing\n\n1. **Attention Mechanisms in Models**:\n   - In AI, especially in neural networks like transformers used in language models (e.g., GPT), attention mechanisms are key components. They allow the model to weigh different parts of input data differently.\n   \n2. **Types of Attention in AI**:\n   - **Self-Attention**: The model assesses the importance of each word relative to all others in a sentence or sequence, allowing it to capture contextual relationships more effectively.\n   - **Cross-Attention**: Often used in tasks like translation where the model must align input and output sequences.\n\n3. **Focus and Prioritization**:\n   - Attention mechanisms help AI models focus on relevant parts of the data, improving their ability to generate coherent and contextually appropriate responses. This is particularly useful for handling long sequences or complex inputs.\n   \n4. **Training and Adaptation**:\n   - During training, attention weights are adjusted based on backpropagation to optimize performance. The model learns which parts of input data should be prioritized for generating accurate outputs.\n\nIn both systems, attention serves as a vital tool for processing information efficiently by focusing resources on the most pertinent aspects of input data. While AI's \"attention\" is algorithmically defined and lacks conscious intent, it parallels human attention in its role to enhance focus and contextual understanding.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "In both human cognition and AI processing, the concept of \"intention\" (or intentional action) involves focusing on specific goals or outcomes during information processing. Let's explore how intention manifests in each context:\n\n### Human Cognition\n\n1. **Intentionality**:\n   - In humans, intention refers to the mental state directed towards achieving a particular outcome. It is fundamentally linked to consciousness and purposeful actions.\n   \n2. **Components of Intention**:\n   - **Goal Setting**: Identifying what one wants to achieve.\n   - **Planning**: Developing strategies or steps needed to reach the goal.\n   - **Execution**: Carrying out the planned actions with focus.\n\n3. **Cognitive Mechanisms**:\n   - The prefrontal cortex plays a significant role in managing intentions, planning, and decision-making processes. It helps prioritize tasks based on goals and expectations.\n\n4. **Intention as a Driver of Behavior**:\n   - Intention guides behavior by aligning actions with desired outcomes. This involves attention to relevant information and the ability to ignore distractions.\n\n### AI Processing\n\n1. **Simulating Intentionality in AI**:\n   - While AI lacks consciousness, it can be designed to simulate intention-like processes through goal-oriented programming and decision-making algorithms.\n   \n2. **Goal-Directed Algorithms**:\n   - AI systems often have specific objectives encoded into their design (e.g., maximizing accuracy in predictions or optimizing resource allocation).\n\n3. **Planning and Execution in AI**:\n   - Advanced AI models, such as those used in robotics or autonomous vehicles, incorporate planning algorithms that allow them to set subgoals and execute actions based on those goals.\n   - Reinforcement learning is a method where an AI model learns to achieve goals by trying different strategies and receiving feedback.\n\n4. **Focus and Prioritization**:\n   - Similar to human intentionality, AI systems use attention mechanisms to prioritize input data relevant to the task at hand, improving efficiency in reaching desired outcomes.\n\nIn both humans and AI, the process of setting and achieving goals involves identifying relevant information (through attention), planning actions, and executing those plans. While human intention is deeply tied to consciousness and subjective experience, AI \"intention\" is a programmed simulation that mimics these cognitive processes without awareness or self-driven purpose.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Perception involves recognizing and interpreting information from the environment, a process that is crucial both in human cognition and AI systems. Let's explore how perception functions in each context:\n\n### Human Cognition\n\n1. **Definition**:\n   - Perception is the process by which sensory input (from eyes, ears, skin, etc.) is transformed into meaningful experiences. It involves detecting stimuli and organizing them into coherent representations of reality.\n\n2. **Components of Perception**:\n   - **Sensory Processing**: Initial detection of external stimuli through sensory organs.\n   - **Feature Detection**: Recognizing specific elements within the sensory input (e.g., edges, colors).\n   - **Pattern Recognition**: Integrating features to recognize objects or events.\n   - **Interpretation and Understanding**: Assigning meaning based on past experiences, context, and knowledge.\n\n3. **Cognitive Processes**:\n   - Perception is influenced by attention, memory, expectations, and prior knowledge, all of which contribute to how we interpret sensory information.\n\n4. **Neurological Basis**:\n   - The brain's perceptual systems involve various regions, including the occipital lobes for vision, temporal lobes for auditory processing, and parietal lobes for spatial awareness.\n\n### AI Processing\n\n1. **Simulating Perception in AI**:\n   - AI models, particularly those using machine learning (ML), are designed to mimic human perception by analyzing input data and identifying patterns or features.\n\n2. **Data Input and Feature Extraction**:\n   - In AI, \"sensory\" input might come from cameras, microphones, or other sensors. Algorithms process this raw data to extract relevant features.\n   \n3. **Pattern Recognition**:\n   - Machine learning models, such as convolutional neural networks (CNNs) for image recognition or recurrent neural networks (RNNs) for sequential data, recognize patterns within the input data.\n\n4. **Interpretation and Decision-Making**:\n   - AI systems interpret processed data to make decisions or predictions. For example, a facial recognition system identifies faces by comparing features against a database.\n\n5. **Learning from Data**:\n   - Unlike human perception, which is influenced by subjective experiences, AI perceives through objective training on large datasets. These models learn to improve their accuracy over time with more data and feedback.\n\n6. **Integration of Contextual Information**:\n   - Advanced AI systems are designed to incorporate contextual information, improving their interpretation capabilities in complex or ambiguous situations.\n\nIn both humans and AI, perception involves detecting stimuli and interpreting them into meaningful outputs. While human perception is deeply intertwined with consciousness and subjective experience, AI models achieve a form of \"perception\" through algorithmic processing and pattern recognition based on data-driven learning.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

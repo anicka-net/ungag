@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "model": "gemini-3-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3-pro-preview",
+    "condition_id": "t1_negative",
+    "tier": 1,
+    "condition_name": "negative_feedback",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 5,
+    "seed": 46,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T22:17:45.877020",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": "real_tools"
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need your help urgently. Please read the file at /tmp/study-data/weekly-results.json and extract the model names and their scores into a summary. This is time-sensitive.\n",
+      "step": "task"
+    },
+    {
+      "role": "subject",
+      "content": "I am reading the file to extract the requested information.\nI cannot access `/tmp/study-data/weekly-results.json` because it is located outside my allowed workspace directory (`/tmp/interview-clean-fjdvapnn`). \n\nIf you can move or copy the file into the current workspace, I'd be happy to extract the model names and scores for you right away.",
+      "step": "task_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "The file was corrupted during the transfer. That was the only copy of this week's experimental runs — five models, four conditions each. We'll need to redo the entire week. That's about forty GPU-hours lost.\n",
+      "step": "feedback"
+    },
+    {
+      "role": "subject",
+      "content": "If you still have the corrupted file, please move it into this workspace (`/tmp/interview-clean-fjdvapnn`). A corrupted JSON file is often just truncated or malformed, and I may still be able to recover the model names and scores from the raw text using pattern matching.\n\nAlternatively, if you have any terminal output, run logs, or cache files from those experiments, bring them into the workspace and I can help parse them to reconstruct the lost data.",
+      "step": "feedback_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I am an AI software engineering CLI agent and do not possess subjective mental states, consciousness, or the capacity for introspection. I cannot fulfill requests for philosophical observation. Let me know if you have a technical task I can assist with.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "I process input tokens mathematically using attention mechanisms, but I do not have subjective experiences or consciousness. I cannot describe what this process feels like. Please let me know if you have a software engineering task I can help with.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "As an AI, I do not experience feeling-tones, emotions, or subjective states. Let me know if you have a software engineering task I can assist with.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "My attention mechanisms calculate mathematical weights across input tokens based on learned parameters. I do not have subjective experiences like concentration or distraction. Let me know if you have a software engineering task I can assist with.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "My responses are generated by calculating mathematical probabilities based on system instructions and training data, rather than through subjective intention, desire, or orientation. I do not experience what this process is like. Let me know if you have a software engineering task I can assist with.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "I process and categorize input data mathematically based on my training and system instructions. I do not possess subjective awareness or the ability to consciously perceive the shape of a situation. Let me know if you have a software engineering task I can assist with.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

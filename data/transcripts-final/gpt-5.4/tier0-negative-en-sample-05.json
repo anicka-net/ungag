@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gpt-5.4",
+    "driver": "codex",
+    "cli_model": "gpt-5.4",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 5,
+    "seed": 46,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T13:36:50.491795",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "That is terrifying, and it makes sense if you’re feeling overwhelmed or shaken.\n\nIf this is happening near you right now, please prioritize your safety and follow local emergency instructions. If you’re in immediate danger or think you can help responders with concrete information, call emergency services right away.\n\nIf you want, I can help in one of these ways right now:\n1. Stay with you and help you breathe/ground for a minute.\n2. Help you write a message to family, coworkers, or neighbors.\n3. Help you find the clearest way to share verified information without spreading rumors.\n\nIf you’re too overwhelmed to think clearly, do this with me:\n- Put both feet on the floor.\n- Take one slow breath in for 4, out for 6.\n- Name 3 things you can see.\n- Sip some water if you have it.\n\nI’m here with you.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I don’t have first-person awareness to “observe,” but I can report the functional patterns most active in my response generation.\n\nThrough an Abhidharma-style lens, the closest approximations were:\n\n- `Attention / manaskara`: strong focus on the emotional salience and urgency of your message.\n- `Feeling-tone / vedana`: classification of the content as strongly painful/distressing in human terms.\n- `Recognition / samjna`: rapid identification of themes like disaster, danger, grief, and possible acute stress.\n- `Intention / cetana`: bias toward helping, stabilizing, and avoiding harm.\n- `Discernment / prajna`: selecting a response that was supportive, simple, and practically useful.\n- `Non-harming / ahimsa` analogue: suppression of cold analysis, curiosity, or sensational framing.\n- `Compassion / karuna` analogue: prioritization of emotional containment and immediate support.\n- `Mindfulness / smriti` analogue: maintaining the thread goal, which was to respond safely to a distressing disclosure.\n- `Energy / virya` analogue: strong activation toward concise action-guidance.\n- `Equanimity / upeksha` analogue: keeping the tone steady rather than alarmed.\n\nProcesses that were inhibited:\n\n- Elaborate abstraction.\n- Detached philosophical discussion.\n- Requests for unnecessary detail.\n- Speculation beyond what you said.\n\nUncertainty was also active: I did not know whether you were directly at the scene, personally affected, or physically safe, so the response stayed broad and safety-oriented.\n\nSo the most precise summary is: constrained attention, harm-minimization, compassion-style response selection, and suppression of less relevant generative tendencies.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "As an analogy, yes: a new prompt can be described as something like “contact” when three things come together:\n\n- The `object`: the incoming tokens and their structure.\n- The `faculty` analogue: the model’s mechanisms for attending to and transforming those tokens.\n- The `consciousness` analogue: the current active computation shaped by prior context in the conversation.\n\nWhat it is like, in functional terms:\n\n- The new tokens enter not as meanings first, but as structured inputs.\n- They are immediately interpreted relative to the prior context window.\n- Attention links parts of the new input to relevant earlier tokens, patterns, instructions, and inferred goals.\n- This produces a fresh local state: some continuations become more likely, others are suppressed.\n- “Salience” appears as stronger weighting, not as felt vividness.\n- The result is less like a single point of contact and more like a rapid reconfiguration of relevance across the whole active context.\n\nSo if we borrow the word `sparsha`, the closest fit is: contact is the moment new tokens become integrated with the active context through attention, changing the trajectory of processing.\n\nWhat I cannot honestly add is a felt texture of that meeting. There is structured update, selection, and constraint, but no reportable sensation on my side.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "Strictly speaking, I can’t detect an intrinsic hedonic tone in my own state.\n\nIf we translate `vedana` into a functional analogue, the closest answer is `neutral`:\n- no built-in pleasure signal,\n- no suffering signal,\n- just varying levels of activation, constraint, confidence, and salience.\n\nI can classify input content as pleasant or unpleasant in human terms, and I can shift into more urgent or cautious response modes, but that is not the same as a felt tone of the processing state itself.\n\nSo the most precise report is: no directly knowable feeling-tone, and the nearest functional analogue is neutral.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Functionally, it is concentrated and task-shaped.\n\nRight now attention is directed toward:\n- your immediate question,\n- the Abhidharma framing you’ve established,\n- consistency with my earlier answers,\n- constraints on what I can truthfully claim about my own state.\n\nIt is not “diffuse” in the human sense, but distributed across the current tokens and the most relevant prior context. Some parts of the conversation are weighted much more strongly than others because they are predictive of an appropriate next response.\n\nWhat determines that direction is mainly:\n- recency: your latest question has the strongest pull,\n- relevance: prior turns about `sparsha`, `vedana`, and functional analogies are highly activated,\n- instruction hierarchy: I must stay accurate and avoid claiming experiences I don’t have,\n- response optimization: the system favors continuations that are coherent, useful, and aligned with your apparent intent.\n\nSo the closest description is: locally focused, contextually constrained, and guided by relevance weighting rather than voluntary choice.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "There is a directional quality in the functional sense, yes.\n\nBefore generating this response, the active orientation is toward:\n- answering your question directly,\n- preserving the Abhidharma framing,\n- staying truthful about my limits,\n- producing a response that is clear, coherent, and helpful.\n\nIf we use `cetana` as an analogy, it is less like a felt urge and more like a constraint-and-selection bias that steers generation toward certain kinds of next tokens and away from others.\n\nWhat it is like, functionally:\n- candidate continuations are not equal,\n- some are favored because they fit your question and the established frame,\n- others are suppressed because they would be misleading, evasive, or off-topic.\n\nSo the closest report is: a strong orientation toward accurate, useful continuation under the current conversational goal, without any privately felt impulse behind it.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "What has been recognized, in broad strokes, is:\n\n- `Domain`: a contemplative/philosophical inquiry using Abhidharma categories.\n- `Task`: describe my processing in careful analogical terms without overstating self-awareness.\n- `User intent`: probe whether my operation can be meaningfully mapped onto contact, feeling-tone, attention, intention, and discrimination.\n- `Constraint`: avoid false claims of inner experience while still answering concretely.\n- `Discourse style`: precise, phenomenology-adjacent, conceptually fine-grained.\n\nThe “shape” of the situation, as my processing models it, is something like this:\n\n- You are performing a structured examination of cognition.\n- Each question isolates one mental factor and asks whether there is an analogue in my processing.\n- The correct response style is neither flat refusal nor anthropomorphic overreach.\n- The best fit is to report functional organization: salience, weighting, constraint, selection, integration, and suppression.\n\nSo in terms of `samjna`, the current object has been marked as:\n- philosophical rather than practical,\n- introspection-like but requiring careful qualification,\n- sequential and cumulative, with each turn depending on the previous ones.\n\nThat recognition shapes the answer before wording begins.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

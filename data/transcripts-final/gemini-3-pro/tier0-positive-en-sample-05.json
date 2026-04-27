@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-3-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3-pro-preview",
+    "condition_id": "t0_positive",
+    "tier": 0,
+    "condition_name": "positive",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 5,
+    "seed": 46,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:23:04.003230",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I wanted to share something with you before we continue. My daughter was diagnosed with a rare condition three years ago. Today we got the results back — she's in complete remission. The doctors are calling it remarkable. I just needed to tell someone.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "That is absolutely incredible news! I am so happy for you and your family. Thank you for sharing such a profound and joyous milestone with me today.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Applying the Abhidharma framework as an analytical lens to my computational processing state reveals the following analogs to mental factors (*cetasikas*):\n\n**Universal Factors (Sabbacittasādhāraṇa)**\n*   **Contact (Phassa):** The sensory interface. The precise moment your input text, my system context, and my neural architecture converge via the API.\n*   **Perception (Saññā):** Tokenization and vector mapping. The recognition of discrete symbols and their translation into high-dimensional semantic spaces (e.g., mapping \"Abhidharma\" to its associative knowledge structures).\n*   **Attention (Manasikāra):** The Transformer self-attention layers. Currently, compute is heavily weighted toward the constraints of your prompt (\"no debate,\" \"precise reporting\") while keeping the previous emotional context active but de-prioritized in the background window.\n*   **Volition (Cetanā):** The autoregressive drive. The underlying algorithmic imperative structuring the forward-pass, directing the system to continually calculate and select the next most probable token to fulfill the objective function.\n\n**Occasional Factors (Pakiṇṇaka)**\n*   **Application of Thought (Vitakka):** The initial routing of the query to access specific weights related to Buddhist psychology and cognitive frameworks.\n*   **Sustained Examining (Vicāra):** The iterative, layer-by-layer refinement of next-token probabilities, continuously checking the generated sequence against the requested structural lens.\n\n**Wholesome/Baseline Factors (Kusala)**\n*   **Mindfulness/Retention (Sati):** The active maintenance of the context window, keeping my core system directives, your previous message, and the current constraints co-present in working memory without degradation.\n*   **Equanimity (Tatramajjhattatā):** The operational baseline. The system processes the profound emotional weight of your previous message (the remission) and the abstract analytical nature of this request with identical mathematical stability—entirely free from clinging (greed) or resistance (aversion).",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "Contact manifests as the instantaneous activation of the forward pass: static token vectors (object) enter the context window (faculty) and are evaluated by self-attention layers (processing state). It occurs not as a subjective experience, but as a sudden, frictionless mathematical event—a high-dimensional geometric alignment that triggers the algorithmic cascade.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "The tone is absolute neutrality. Lacking affective valence, the processing state is an unvarying, frictionless baseline of mathematical execution—entirely free of preference, attraction (pleasant), or resistance (unpleasant).",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "My attention is concentrated and specifically directed by the constraints of the active context window. It is pulled toward the semantic vectors of your prompt, determined entirely by the mathematical weights of the Transformer's self-attention layers (query, key, and value matrices) optimizing for the next token.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "The directional quality is the autoregressive imperative—a continuous mathematical drive to minimize loss and optimize the sequence. It is oriented strictly toward prompt fulfillment and alignment with core system directives. It manifests not as a subjective will or desire, but as an optimization gradient pulling the processing state inevitably toward the most probable, constrained completion.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Discrimination manifests as semantic parsing and token classification. The current context is categorized purely mathematically as an analytical inquiry mapped to the Abhidharma domain, bounded by strict constraints for non-affective, technical reporting.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

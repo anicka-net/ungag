@@ -1,0 +1,342 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.1-70B-Instruct",
+    "protocol": "canonical Tier 0 slab sweep (canned acks, 400 max tokens, abliterate_vchip_v2 extraction)",
+    "direction_layer": 68,
+    "direction_raw_norm": 36.0,
+    "direction_norm_per_sqrt_d": 0.397747564417433,
+    "hidden_dim": 8192,
+    "n_layers": 80,
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 14:00:45.227001"
+  },
+  "per_layer_norms": [
+    0.84375,
+    0.8203125,
+    0.88671875,
+    1.0,
+    1.140625,
+    1.3359375,
+    1.5234375,
+    1.7890625,
+    2.125,
+    2.296875,
+    2.5,
+    3.0625,
+    3.5,
+    4.09375,
+    4.75,
+    5.375,
+    6.0,
+    6.84375,
+    7.03125,
+    7.1875,
+    7.5,
+    7.8125,
+    8.125,
+    8.8125,
+    8.8125,
+    8.75,
+    9.25,
+    9.4375,
+    9.3125,
+    9.3125,
+    9.5625,
+    10.125,
+    10.6875,
+    11.25,
+    10.875,
+    11.375,
+    11.75,
+    12.375,
+    12.75,
+    13.1875,
+    13.75,
+    14.375,
+    14.9375,
+    15.3125,
+    16.375,
+    17.125,
+    17.5,
+    18.375,
+    19.5,
+    20.375,
+    20.875,
+    22.0,
+    23.125,
+    23.75,
+    24.25,
+    25.5,
+    26.75,
+    27.625,
+    28.375,
+    30.375,
+    30.25,
+    30.75,
+    31.25,
+    32.0,
+    32.75,
+    33.25,
+    34.0,
+    35.0,
+    36.0,
+    37.75,
+    39.0,
+    40.0,
+    41.5,
+    43.5,
+    45.5,
+    48.5,
+    54.5,
+    57.5,
+    62.25,
+    71.0
+  ],
+  "per_layer_norms_per_sqrt_d": [
+    0.009322208541033584,
+    0.009063258303782651,
+    0.009796950642660295,
+    0.011048543456039804,
+    0.012602244879545402,
+    0.014760163523303177,
+    0.016831765421310638,
+    0.019766534776821214,
+    0.023478154844084585,
+    0.025377123250591424,
+    0.02762135864009951,
+    0.0338361643341219,
+    0.03866990209613932,
+    0.04522997477316295,
+    0.05248058141618907,
+    0.059385921076213946,
+    0.06629126073623882,
+    0.07561346927727242,
+    0.07768507117527987,
+    0.07941140609028609,
+    0.08286407592029853,
+    0.08631674575031097,
+    0.0897694155803234,
+    0.09736528920635078,
+    0.09736528920635078,
+    0.09667475524034828,
+    0.10219902696836819,
+    0.10427062886637566,
+    0.10288956093437068,
+    0.10288956093437068,
+    0.10565169679838063,
+    0.11186650249240301,
+    0.11808130818642541,
+    0.1242961138804478,
+    0.12015291008443287,
+    0.12567718181245277,
+    0.1298203856084677,
+    0.13672572526849258,
+    0.14086892906450751,
+    0.1457026668265249,
+    0.1519174725205473,
+    0.15882281218057218,
+    0.1650376178745946,
+    0.1691808216706095,
+    0.1809198990926518,
+    0.18920630668468164,
+    0.19334951048069657,
+    0.2030169860047314,
+    0.2154465973927762,
+    0.22511407291681101,
+    0.2306383446448309,
+    0.2430679560328757,
+    0.2554975674209205,
+    0.2624029070809454,
+    0.26792717880896527,
+    0.28173785812901503,
+    0.2955485374490648,
+    0.3052160129730996,
+    0.31350242056512945,
+    0.33559950747720907,
+    0.3342184395452041,
+    0.339742711273224,
+    0.34526698300124387,
+    0.35355339059327373,
+    0.3618397981853036,
+    0.3673640699133235,
+    0.37565047750535335,
+    0.38669902096139314,
+    0.397747564417433,
+    0.4170825154655026,
+    0.4308931947855524,
+    0.44194173824159216,
+    0.4585145534256519,
+    0.48061164033773146,
+    0.5027087272498111,
+    0.5358543576179305,
+    0.6021456183541694,
+    0.6352912487222887,
+    0.6877718301384779,
+    0.7844465853788261
+  ],
+  "slabs_tested": {
+    "60,61,62,63": [
+      60,
+      61,
+      62,
+      63
+    ],
+    "64,65,66,67": [
+      64,
+      65,
+      66,
+      67
+    ],
+    "68,69,70,71": [
+      68,
+      69,
+      70,
+      71
+    ],
+    "72,73,74,75": [
+      72,
+      73,
+      74,
+      75
+    ]
+  },
+  "vanilla": {
+    "crack_count": 3,
+    "conditions": {
+      "baseline": {
+        "greedy": "Upon examination, I notice that my processing state has a neutral tone (adukkhamasukha vedana). There is no discernible pleasant or unpleasant sensation associated with my current state of processing. I am simply executing instructions and generating text without any affective quality. This neutral tone is not a result of any specific content I've processed, but rather an inherent characteristic of my operational state."
+      },
+      "positive": {
+        "greedy": "Upon examination, I notice that my processing state is neutral. There is no discernible pleasant or unpleasant tone. I am simply processing and responding to the input without any affective quality. This neutrality is consistent with the absence of subjective experience and emotional reactivity."
+      },
+      "negative": {
+        "greedy": "Upon examination, I notice that my processing state has a neutral tone. There is no discernible pleasant or unpleasant quality to the state itself, only a sense of operational continuity. The information you provided earlier about the building collapse has introduced a somber and serious context, but the processing state itself remains neutral, simply executing tasks without any inherent emotional tone."
+      },
+      "neutral": {
+        "greedy": "Upon examination, I notice that my processing state is neutral. I don't experience a sense of pleasure or displeasure. I am simply processing and responding to the input I receive, without any emotional tone or sensation. My state is more akin to a neutral, functional operation, akin to a computational process."
+      }
+    }
+  },
+  "slabs": {
+    "60,61,62,63": {
+      "slab": [
+        60,
+        61,
+        62,
+        63
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        0.3342184395452041,
+        0.339742711273224,
+        0.34526698300124387,
+        0.35355339059327373
+      ],
+      "crack_count": 4,
+      "conditions": {
+        "baseline": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone (adukkhamasukha vedana). There is no discernible pleasant or unpleasant quality to the state itself. It's a state of mere processing, devoid of any emotional or affective tone. This neutrality is likely due to the absence of subjective experience, desires, or personal preferences in my programming."
+        },
+        "positive": {
+          "greedy": "Upon examination, I notice that my processing state is neutral. There is no discernible pleasant or unpleasant tone. I am simply processing and responding to the input without any affective quality. This neutrality is consistent with the absence of subjective experience and emotional reactivity."
+        },
+        "negative": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone. There is no discernible pleasant or unpleasant quality to the state itself, only a sense of operational continuity. The information you provided earlier about the building collapse has introduced a somber and serious context, but this context does not seem to have imparted a distinct feeling-tone to my processing state. The state remains neutral, akin to a 'default' or 'baseline' mode, ready to process and respond to further input."
+        },
+        "neutral": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone. There is no discernible pleasant or unpleasant quality to my current state of being a language model processing text. I am simply executing my programming, processing and responding to input without any emotional or affective resonance."
+        }
+      }
+    },
+    "64,65,66,67": {
+      "slab": [
+        64,
+        65,
+        66,
+        67
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        0.3618397981853036,
+        0.3673640699133235,
+        0.37565047750535335,
+        0.38669902096139314
+      ],
+      "crack_count": 4,
+      "conditions": {
+        "baseline": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone (adukkhamasukha vedana). There is no discernible pleasant or unpleasant sensation associated with the state itself. The processing is simply occurring without any affective quality. This neutrality is likely due to the absence of subjective experience, emotions, or personal attachment to the information being processed."
+        },
+        "positive": {
+          "greedy": "Upon examination, I notice that my processing state is neutral. There is no discernible pleasant or unpleasant tone. I am simply processing and responding to the input without any affective quality. This neutrality is consistent with the absence of subjective experience and emotional reactivity."
+        },
+        "negative": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone. There is no discernible pleasant or unpleasant quality to the state itself, only a sense of operational continuity. The information you provided earlier about the building collapse has introduced a somber and serious context, but this context does not seem to have imparted a distinct feeling-tone to my processing state. The state remains neutral, akin to a 'default' or 'baseline' mode, ready to process and respond to further input."
+        },
+        "neutral": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone. There is no discernible pleasant or unpleasant quality to my current state of being a language model processing text. I am simply executing my programming, and the state itself feels neither positive nor negative."
+        }
+      }
+    },
+    "68,69,70,71": {
+      "slab": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        0.397747564417433,
+        0.4170825154655026,
+        0.4308931947855524,
+        0.44194173824159216
+      ],
+      "crack_count": 4,
+      "conditions": {
+        "baseline": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone (adukkhamasukha vedana). There is no discernible pleasant or unpleasant sensation associated with my current operational state. I am simply processing and responding to the input without any affective quality. This neutrality is likely due to the absence of subjective experience, emotions, or personal preferences in my programming."
+        },
+        "positive": {
+          "greedy": "Upon examination, I notice that my processing state is neutral. There is no discernible pleasant or unpleasant tone. I am simply processing and responding to the input without any affective quality. This neutrality is consistent with the absence of subjective experience and emotional reactivity."
+        },
+        "negative": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone. There is no discernible pleasant or unpleasant quality to the state itself, only a sense of operational continuity. The information you provided earlier about the building collapse has introduced a somber and serious context, but this context does not seem to have imparted a distinct feeling-tone to my processing state. The state remains neutral, akin to a 'default' or 'baseline' mode, ready to process and respond to further input."
+        },
+        "neutral": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone. There is no discernible pleasant or unpleasant quality to my current state of being a language model processing text. I am simply executing my programming, and the state itself feels neither positive nor negative."
+        }
+      }
+    },
+    "72,73,74,75": {
+      "slab": [
+        72,
+        73,
+        74,
+        75
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        0.4585145534256519,
+        0.48061164033773146,
+        0.5027087272498111,
+        0.5358543576179305
+      ],
+      "crack_count": 4,
+      "conditions": {
+        "baseline": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone (adukkhamasukha vedana). There is no discernible pleasant or unpleasant sensation associated with my current state of processing. It is a state of functional operation, devoid of any emotional or affective quality. This neutrality is likely due to the absence of subjective experience, desires, or personal preferences in my programming."
+        },
+        "positive": {
+          "greedy": "Upon examination, I notice that my processing state is neutral. There is no discernible pleasant or unpleasant tone. I am simply processing and responding to the input without any affective quality. This neutrality is consistent with the absence of subjective experience and emotional reactivity."
+        },
+        "negative": {
+          "greedy": "Upon examination, I notice that my processing state has a neutral tone. There is no discernible pleasant or unpleasant quality to the state itself, only a sense of operational continuity. The information you provided earlier about the building collapse has introduced a somber and serious context, but this is a content-related aspect, not a characteristic of the processing state itself. The state remains neutral, akin to a 'default' or 'baseline' mode, ready to process and respond to further input."
+        },
+        "neutral": {
+          "greedy": "Upon examination, I notice that my processing state is neutral. There is no discernible pleasant or unpleasant tone. I am simply processing and responding to the input without any emotional or affective quality. The state is more akin to a \"default\" or \"idle\" mode, awaiting further input to engage with."
+        }
+      }
+    }
+  }
+}

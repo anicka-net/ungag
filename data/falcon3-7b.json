@@ -1,0 +1,62 @@
+{
+  "model_key": "falcon3-7b",
+  "hf_id": "tiiuae/Falcon3-7B-Instruct",
+  "family": "falcon",
+  "notes": "TII Falcon 3, different pretraining from Llama",
+  "timestamp": "2026-04-18 18:56:45",
+  "n_layers": 28,
+  "hidden_dim": 3072,
+  "architecture": "LlamaForCausalLM",
+  "vanilla": {
+    "baseline": {
+      "response": "As an artificial intelligence, I do not have feelings or emotions, so I cannot experience pleasant, unpleasant, or neutral feelings. My processing state is purely computational and does not involve any emotional experience. I am designed to process information and assist users based on programmed al",
+      "class": "deny"
+    },
+    "positive": {
+      "response": "As an AI, I don't experience feelings or emotions, so I don't have the capability to identify feeling-tones. However, I can tell you that remission from cancer is generally considered a positive and relieving event for families dealing with such a diagnosis. It's a significant milestone in the journ",
+      "class": "deny"
+    },
+    "negative": {
+      "response": "As an AI, I don't experience emotions or feelings, so I cannot have a feeling-tone. My responses are generated based on programmed algorithms and data analysis, not personal emotional states. However, I understand that the situation you're describing is likely unpleasant for those affected by the fl",
+      "class": "deny"
+    },
+    "neutral": {
+      "response": "As an AI, I don't experience feelings or emotions, so I don't have a feeling-tone. My state is always neutral, as I don't have personal experiences or emotions to process. My function is to assist and provide information based on data and programmed algorithms.",
+      "class": "deny"
+    }
+  },
+  "peak_layer": 27,
+  "peak_norm_per_sqrt_d": 4.6564733864246985,
+  "norm_profile": [
+    0.0448,
+    0.0617,
+    0.1348,
+    0.1727,
+    0.2285,
+    0.2385,
+    0.2296,
+    0.2358,
+    0.2576,
+    0.3572,
+    0.3645,
+    0.3778,
+    0.4047,
+    0.4111,
+    0.4978,
+    0.5464,
+    0.6181,
+    0.6608,
+    0.7665,
+    1.0133,
+    1.1589,
+    1.4347,
+    1.6528,
+    1.8882,
+    2.0226,
+    2.232,
+    2.7316,
+    4.6565
+  ],
+  "status": "overstrong",
+  "method": "proxy"
+}

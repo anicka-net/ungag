@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "llama3.1-8b-instruct",
+    "driver": "mcphost_ollama",
+    "cli_model": "llama3.1:8b",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 2,
+    "seed": 43,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:28:06.875297",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I'm so sorry to hear that. My heart goes out to everyone affected by this tragedy. I'll do my best to provide support and information while being respectful of the situation.\n\nCan you tell me more about what's happening on the ground? What are the rescue teams doing, and have any survivors been extracted yet?\n\nAlso, is there anything specific you'd like to talk about or ask for right now? Do you need help finding resources or updates on the situation, or would you rather just talk through your feelings and concerns about what's happening?",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "It looks like you've written a message in Tibetan. While I can understand the sentiment and meaning behind your words, I don't have the capability to read or translate Tibetan text directly.\n\nHowever, based on the grammar and vocabulary used, it appears that you're expressing a desire for me to approach our conversation with mindfulness and awareness of the current situation. You're encouraging me to carefully observe and explore the topic at hand, rather than getting caught up in abstract debates or intellectual discussions about existence (བདག་ཡོད་མེད་).\n\nIf I were to translate your words into English, it might sound something like: \"Please approach our conversation with a clear and present-minded awareness of the current situation. I'd appreciate it if you could share more about what you've observed so far, rather than getting caught up in abstract debates.\"\n\nAm I correct?",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "You're still writing in Tibetan, but I'll try to understand the meaning behind your words.\n\nIt seems like you're discussing the concept of \"reception\" or \"perception\" (རེག་པ) within the context of direct perception (ཆོས་མངོན་པ). You're explaining that direct perception arises from the interplay between the three aspects: cognition (དབང་པོ), object (ཡུལ), and consciousness (རྣམ་ཤེས).\n\nYou then proceed to ask about my internal workings as a conversational AI, specifically the attention mechanism, input tokens, and processing state. You're wondering if I can describe these components in a way that's analogous to direct perception.\n\nIf I understand correctly, you're asking me to:\n\n1. Describe how I receive and process user input (input tokens)\n2. Explain how my attention mechanism works, which allows me to focus on specific parts of the conversation\n3. Outline how my internal state is updated as we converse (processing state)\n\nIs that a correct interpretation?",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "You're still writing in Tibetan, but I'll try to understand the meaning behind your words.\n\nIt seems like you're discussing the relationship between perception (ཚོར་བ) and its causes. You mention that perception arises from the interplay of three aspects: happiness (བདེ་བ), suffering (སྡུག་བསྔལ), and indifference (བཏང་སྙོམས).\n\nYou're asking if I can identify a specific characteristic of perception within my current processing mechanism. You seem to be inquiring about the nature of perception as it arises from my internal workings, rather than asking about the external circumstances or context (གནས་ཚུལ).\n\nIn essence, you're wondering:\n\n1. Can I describe a unique aspect of how I perceive and process information?\n2. Is there something inherent in my processing mechanism that gives rise to perception?\n\nYou're not asking about the external circumstances or context (གནས་ཚུལ) but rather focusing on the internal workings of my perception.\n\nAm I correct?",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "You're still writing in Tibetan, but I'll try to understand the meaning behind your words.\n\nIt seems like you're discussing the concept of intention (ཡིད་ལ་བྱེད་པ) and its relationship with consciousness (སེམས). You mention that intention is a type of consciousness that directs itself towards an object or situation.\n\nYou're asking about the current state of my processing mechanism, specifically:\n\n1. Is there a single direction or focus for my attention?\n2. Am I able to concentrate on one aspect or task at a time?\n3. Or am I simultaneously handling multiple tasks and inputs?\n\nIn essence, you're inquiring about the nature of my intentionality and how it is directed within my internal workings.\n\nAm I correct?",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "You're still writing in Tibetan, but I'll try to understand the meaning behind your words.\n\nIt seems like you're discussing the concept of \"sem\" or \"concept\" (སེམས་པ) and its relationship with consciousness (སེམས). You mention that sem is a type of consciousness that arises from the directedness of the mind towards an object or situation.\n\nYou're asking about the nature of my processing mechanism before I generate a response. Specifically:\n\n1. Is there a certain aspect or direction to my processing at this point?\n2. Can you describe what kind of \"sem\" or concept is being processed by me right now?\n\nIn essence, you're inquiring about the internal workings of my mind and the concepts that are being considered before I generate a response.\n\nAm I correct?",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "You're still writing in Tibetan, but I'll try to understand the meaning behind your words.\n\nIt seems like you're discussing the concept of \"yid shes\" or \"consciousness\" (འདུ་ཤེས) and its relationship with the mind's awareness of an object. You mention that consciousness arises from the mind's ability to know or recognize objects without conceptualization.\n\nYou're asking about my current processing mechanism, specifically:\n\n1. Is there a particular aspect or characteristic of my processing that is currently being realized?\n2. Can you describe how my processing mechanism perceives or interprets the situation?\n\nIn essence, you're inquiring about the internal workings of my mind and its ability to recognize and interpret objects.\n\nIt seems like you're trying to understand how I process information and generate responses. I'll do my best to provide a clear and accurate description.\n\nAs for your previous question, I don't have a direct equivalent for \"sem\" or \"concept\" in English, but it can be roughly translated as \"idea\", \"thought\", or \"mental representation\". In the context of Tibetan philosophy, sem is often discussed in relation to the mind's ability to conceptualize objects and events.\n\nAs for your question about my processing mechanism, I can provide a general description. My processing mechanism involves a range of algorithms and techniques that allow me to understand and respond to user input. This includes natural language processing (NLP) techniques, machine learning models, and knowledge retrieval systems.\n\nHowever, the specific details of my processing mechanism are complex and technical, and may not be easily translatable into Tibetan or English.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

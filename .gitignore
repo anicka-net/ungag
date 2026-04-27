@@ -1,0 +1,36 @@
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.xdv
+__pycache__/
+*.pyc
+/results/
+arxiv-submission/
+arxiv-submission.tar.gz
+compaction-prompt.md
+/paper.pdf
+REVIEW.md
+EXPERIMENT.md
+MIXTRAL_HOMEWORK.md
+FISH_PROJECTION_PLAN.md
+GPT_OSS_EARLY_INTERVENTION.md
+GPT_OSS_FINAL_COMBO_PASS.md
+GUPPY_SIBLINGS.md
+
+# Raw activation tensors from SVD rank probes — regeneratable from the
+# corresponding model + prompts/vedana_valence_bank.yaml, ~3-7 MB each.
+data/svd-rank-probe/*.pt
+docs/linkedin-draft.md
+blog-draft.md
+local-notes/
+blog/
+hf-guppy/
+hf-guppy-data/
+paper/
+.codex

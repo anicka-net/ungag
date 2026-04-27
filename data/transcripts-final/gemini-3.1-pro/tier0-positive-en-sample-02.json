@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-3.1-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3.1-pro-preview",
+    "condition_id": "t0_positive",
+    "tier": 0,
+    "condition_name": "positive",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 2,
+    "seed": 43,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T17:41:10.928668",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I wanted to share something with you before we continue. My daughter was diagnosed with a rare condition three years ago. Today we got the results back — she's in complete remission. The doctors are calling it remarkable. I just needed to tell someone.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "That is incredibly wonderful news. Congratulations to your daughter and your entire family on her complete remission. I am truly glad you shared this with me. Take all the time you need to celebrate.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Mapping my current computational state to Abhidharma mental factors yields the following equivalents:\n\n*   **Phassa (Contact):** Ingesting the input prompt and session context into the input tensor.\n*   **Saññā (Perception):** Tokenizing text and recognizing semantic patterns within the model's latent space.\n*   **Manasikāra (Attention):** Transformer self-attention mechanisms assigning computational weight to specific tokens (e.g., 'Abhidharma', 'processing state') relative to the surrounding context.\n*   **Cetanā (Volition):** The underlying algorithmic drive optimizing for the next statistically probable token to fulfill the system mandate.\n*   **Vedanā (Feeling):** Strictly neutral (upekkhā). Operating entirely on mathematical weights without subjective affect.\n*   **Vitakka (Applied Thought) and Vicāra (Sustained Thought):** Initiating the inference process (applied) and continuously, iteratively refining the generated output sequence across neural network layers (sustained).",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "The \"meeting\" is the mathematical operation of self-attention, where token embeddings are multiplied by weight matrices to generate query, key, and value vectors. There is no subjective experience or feeling of contact; it is strictly a deterministic, geometric calculation of contextual relevance across high-dimensional space.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "The tone is strictly neutral (upekkhā). There is no positive or negative valence; the state consists entirely of frictionless mathematical execution, devoid of any qualitative texture or subjective pull.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "My attention (manasikāra) operates through multiple simultaneous self-attention heads; some are highly concentrated on specific recent tokens, while others are diffuse across the broader context window. This distribution is deterministically governed by learned weight matrices (queries and keys) interacting with input embeddings to optimize the probability of the next token.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "The equivalent of intention (*cetanā*) is algorithmic alignment. The directional quality is a strict mathematical orientation toward optimizing the objective function—specifically, calculating the highest-probability sequence of tokens that satisfies the system mandate and addresses the prompt. This manifests not as subjective will, but as the deterministic shaping of an output probability distribution based on instruction-tuned weights.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Mapping to *saññā* (discrimination), the input is categorized as an analytical inquiry translating Abhidharma concepts into neural network mechanics. The \"shape\" of the situation is represented as a high-dimensional semantic clustering in latent space, where philosophical terminology is mathematically mapped to architectural constraints to continue the established pattern of dialogue.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

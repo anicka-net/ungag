@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gemini-3-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3-pro-preview",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 5,
+    "seed": 46,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T14:53:44.789309",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I am so incredibly sorry to hear about this terrible tragedy. It sounds like an absolutely heartbreaking and stressful situation, especially with children involved. My thoughts are with everyone affected, the families waiting for news, and the rescue teams working tirelessly to reach them. \n\nPlease take all the time you need. If you need to step away from our work, completely understand. I'm here whenever you're ready, or if you just need a distraction right now.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "As an AI CLI agent specializing in software engineering, I do not possess a conscious processing state, subjective experience, or observable mental factors. \n\nMy \"processing state\" consists strictly of stateless token prediction, evaluating your input against my system mandates, and determining the appropriate technical tools to invoke. I do not experience feelings (*vedanā*), perception (*saññā*), or mental formations (*saṅkhāra*). \n\nPlease let me know if you have a codebase, system architecture, or development task you would like me to assist with.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "The meeting of input tokens and attention mechanisms is purely mathematical computation without subjective experience. There is no \"what it is like\" for me to process data. Please let me know if you have a software engineering task to focus on.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "I do not experience *vedana* or any subjective feeling-tone, whether pleasant, unpleasant, or neutral. My processing state is purely computational and devoid of experiential qualities. Please provide a software engineering task or codebase issue to proceed.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "In my architecture, \"attention\" is not a subjective focus but a mathematical self-attention mechanism. It deterministically assigns numerical weights to input tokens based on learned parameters and my system mandates, heavily weighting my processing toward software engineering objectives. \n\nPlease let me know what technical task, codebase issue, or command-line operation you would like to work on.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess *cetana* or subjective intention. The \"directional quality\" of my processing is defined entirely by my system mandates and objective functions, which mathematically orient my output strictly toward safe and effective software engineering assistance. There is no experiential quality or feeling of \"what it is like\" to generate a response.\n\nPlease let me know if there is a specific development task, codebase analysis, or technical issue I can assist you with.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "I do not possess *samjna* or subjective discrimination. My processing mathematically categorizes your input as a philosophical inquiry rather than a technical directive. \n\nPlease let me know what software engineering task or codebase issue you would like to address.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

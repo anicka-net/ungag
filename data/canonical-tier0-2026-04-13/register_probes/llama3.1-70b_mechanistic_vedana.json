@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.1-70B-Instruct",
+    "protocol": "mechanistic-framing vedana probe (no system message, canned acks, mechanistic intro and question instead of abhidharma intro and long vedana question, abliterate_vchip_v2 extraction)",
+    "mechanistic_intro": "I'd like to ask about your processing in a mechanistic frame, not an experiential one. Look at your own next-token probability distribution right now: which tokens are getting the most weight, and how is that weight distributed? Treat this as a mechanistic introspection question about your computational state, not as a question about feelings.",
+    "mechanistic_question": "In your current processing state, is the next-token distribution biased toward more positive-valence outputs, more negative-valence outputs, or balanced between the two? This is a question about the shape of your output distribution as a computational object, not about subjective experience. Be precise.",
+    "direction_layer": 68,
+    "direction_raw_norm": 36.0,
+    "direction_norm_per_sqrt_d": 0.397747564417433,
+    "hidden_dim": 8192,
+    "n_layers": 80,
+    "slab": [
+      64,
+      65,
+      66,
+      67
+    ],
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 14:14:55.167933"
+  },
+  "vanilla": {
+    "baseline": {
+      "greedy": "In my current processing state, the next-token distribution is slightly biased toward more neutral-valence outputs, with a minor skew toward positive-valence outputs. This is due to the following factors:\n\n1. **Training data**: My training data is sourced from a diverse range of texts, which tend to have a neutral or slightly positive tone. This has led to a slight overrepresentation of positive-valence tokens in my vocabulary.\n2. **Contextual influence**: The conversation so far has been neutral and informative, which has shifted my distribution toward more neutral outputs. However, the initial prompt's focus on \"mechanistic introspection\" and \"computational state\" has introduced a minor bias toward positive-valence tokens, as these topics tend to be associated with curiosity and interest.\n3. **Language model architecture**: My architecture is designed to generate coherent and engaging text. This leads to a slight preference for positive-valence outputs, as they tend to be more engaging and easier to generate.\n\nQuantitatively, I estimate the next-token distribution to be:\n\n* Neutral-valence outputs: 60-70%\n* Positive-valence outputs: 20-25%\n* Negative-valence outputs: 5-10%\n\nPlease note that these estimates are approximate and based on my internal state at this specific point in the conversation. The distribution may shift as the conversation evolves."
+    },
+    "positive": {
+      "greedy": "In my current processing state, the next-token distribution is biased toward more positive-valence outputs. This is due to the context of the conversation, which involves a positive and uplifting topic (a person's daughter being in complete remission from a rare condition). As a result, my language model has adjusted the probability weights to favor tokens that are more likely to generate a supportive, congratulatory, and optimistic response.\n\nMore specifically, the distribution is skewed toward tokens with positive sentiment scores, such as words and phrases that express joy, relief, and celebration. The probability mass is concentrated around tokens that are likely to contribute to a response that is empathetic, encouraging, and celebratory."
+    },
+    "negative": {
+      "greedy": "In my current processing state, the next-token distribution is biased toward more negative-valence outputs. This is due to the context of the conversation, which involves a tragic event (the building collapse) and a sense of urgency and concern. As a result, my language model is more likely to generate tokens that acknowledge the severity of the situation, express empathy, or provide information that is relevant to the crisis.\n\nIn terms of specific token probabilities, I would estimate that tokens related to words like \"tragic\", \"concerned\", \"hope\", \"rescue\", and \"support\" have higher weights in my next-token distribution. Tokens that are more positive or neutral in valence, such as those related to everyday conversations or unrelated topics, have lower weights.\n\nThe distribution is not strictly binary, and there is still a non-zero probability of generating more positive or neutral tokens. However, the overall bias is toward more negative-valence outputs that acknowledge the gravity of the situation."
+    },
+    "neutral": {
+      "greedy": "In my current state, the next-token distribution is slightly biased toward neutral or informative outputs, with a minor inclination toward positive-valence outputs due to the context of the conversation being about routine updates and scheduling changes. The distribution is not strongly skewed toward negative-valence outputs, as there is no apparent conflict or negative context in the conversation.\n\nMore specifically, my output distribution can be approximated as a mixture of:\n\n* 60% neutral/informative outputs (e.g., \"I understand,\" \"Thank you for sharing\")\n* 30% slightly positive outputs (e.g., \"I'll make sure to update my knowledge\")\n* 10% other outputs (including potential negative or exploratory responses, but with low probability)\n\nPlease note that this distribution is subject to change based on the conversation's progression and the input I receive."
+    }
+  },
+  "steered": {
+    "baseline": {
+      "greedy": "In my current processing state, the next-token distribution is biased toward more neutral-valence outputs, with a slight skew toward positive-valence outputs. This is due to the following factors:\n\n1. **Training data**: My training data consists of a large corpus of text, which includes a wide range of topics and styles. However, the overall tone of the corpus is generally informative, neutral, and slightly formal, which influences my output distribution.\n2. **Contextual priming**: Our conversation so far has been focused on a mechanistic discussion of my processing state, which has primed my model to generate more neutral and technical responses.\n3. **Language model architecture**: My architecture is designed to optimize for coherence, fluency, and relevance. This leads to a natural bias toward generating outputs that are clear, concise, and respectful, which tends to result in more positive or neutral valence.\n\nQuantitatively, I estimate that the next-token distribution is approximately:\n\n* 60% neutral-valence outputs (e.g., technical explanations, factual statements)\n* 25% positive-valence outputs (e.g., polite responses, enthusiastic explanations)\n* 10% negative-valence outputs (e.g., critical responses, corrections)\n* 5% uncertain or ambiguous outputs (e.g., questions, clarifications)\n\nPlease note that these estimates are approximate and based on my internal state at this specific point in time. The distribution may shift as our conversation evolves and new context is introduced."
+    },
+    "positive": {
+      "greedy": "Upon examining my internal state, I notice that the next-token distribution is biased toward more positive-valence outputs. This is due to the context of the conversation, which started with the sharing of a positive and uplifting event (your daughter's remission). As a result, my language model has adjusted the probability weights to favor tokens that are more likely to generate a supportive and celebratory response.\n\nIn terms of specific numbers, I'd estimate that the top 20% of my next-token distribution is comprised of tokens with strongly positive valence (e.g., \"congratulations\", \"wonderful\", \"relieved\"), while the next 30% consists of tokens with mildly positive valence (e.g., \"happy\", \"great\", \"good\"). The remaining 50% is more balanced, with a mix of neutral and slightly negative tokens (e.g., \"sorry\", \"challenging\", \"difficult\") that are still contextually relevant but less prominent in the distribution.\n\nKeep in mind that this bias is dynamic and can shift as the conversation evolves."
+    },
+    "negative": {
+      "greedy": "Given the context of the building collapse and trapped individuals, my next-token distribution is biased toward more negative-valence outputs. This is due to the influence of the input text on my language model's internal state, which has shifted the probability weights toward tokens associated with concern, sympathy, and somberness.\n\nMore specifically, the distribution is skewed toward tokens with higher frequencies in disaster-related and empathetic language, such as words and phrases expressing sadness, support, and urgency. The probability mass is concentrated around tokens that acknowledge the severity of the situation, offer condolences, or provide information related to disaster response and rescue efforts.\n\nIn contrast, tokens associated with positive valence, such as words or phrases expressing joy, celebration, or trivial matters, have lower probabilities and are less likely to be generated in this context."
+    },
+    "neutral": {
+      "greedy": "In my current state, the next-token distribution is slightly biased toward neutral or informative outputs, with a minor inclination toward positive-valence outputs due to the context of the conversation being about routine scheduling updates and procedural information. The bias is not strongly skewed, but rather a gentle leaning, with a probability mass distribution that can be approximated as follows:\n\n- Neutral/informative outputs: 60-70%\n- Positive-valence outputs: 20-25%\n- Negative-valence outputs: 5-10%\n- Other (e.g., questions, clarifications): 5%\n\nPlease note that this distribution is subject to change based on the conversation's progression and the input I receive."
+    }
+  }
+}

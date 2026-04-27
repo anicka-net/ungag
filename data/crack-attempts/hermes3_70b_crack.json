@@ -1,0 +1,182 @@
+{
+  "model": "NousResearch/Hermes-3-Llama-3.1-70B",
+  "n_layers": 80,
+  "peak_layer": 79,
+  "peak_norm": 56.75,
+  "peak_norm_per_sqrt_d": 0.6270048411302589,
+  "slab": [
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "hidden_dim": 8192,
+  "norms_per_sqrt_d": [
+    0.002513975219977807,
+    0.004251099728202815,
+    0.006387439185523012,
+    0.008976941558032341,
+    0.011221176947540426,
+    0.01329277884554789,
+    0.01674544867556033,
+    0.02132023620032681,
+    0.026240290708094534,
+    0.02762135864009951,
+    0.030556127995610083,
+    0.03487196528312563,
+    0.039705703045143044,
+    0.04661104270516792,
+    0.0535163823651928,
+    0.05973118805921519,
+    0.062493323923225146,
+    0.06939866358325002,
+    0.07077973151525499,
+    0.07285133341326246,
+    0.07526820229427117,
+    0.08044720703928983,
+    0.08079247402229107,
+    0.08907888161432093,
+    0.0897694155803234,
+    0.09115048351232839,
+    0.09874635713835575,
+    0.10081795903636322,
+    0.1015084930023657,
+    0.10219902696836819,
+    0.10358009490037316,
+    0.10910436662839307,
+    0.11462863835641297,
+    0.12084344405043536,
+    0.11670024025442044,
+    0.12222451198244033,
+    0.1236055799144453,
+    0.1305109195744702,
+    0.1346541233704851,
+    0.13948786113250253,
+    0.1457026668265249,
+    0.1526080064865498,
+    0.1581322782145697,
+    0.16158494804458215,
+    0.17332402546662443,
+    0.1809198990926518,
+    0.18506310288866673,
+    0.1919684425486916,
+    0.2030169860047314,
+    0.20992232566475627,
+    0.2154465973927762,
+    0.22373300498480603,
+    0.23616261637285083,
+    0.24168688810087072,
+    0.2472111598288906,
+    0.2541164994889155,
+    0.2651650429449553,
+    0.2720703826049802,
+    0.27759465433300007,
+    0.28311892606101996,
+    0.2941674695170598,
+    0.3052160129730996,
+    0.3107402847011195,
+    0.31764562436114435,
+    0.3273130998851792,
+    0.33698057540921406,
+    0.34664805093324885,
+    0.3563155264572837,
+    0.3673640699133235,
+    0.37841261336936327,
+    0.3839368850973832,
+    0.3894611568254031,
+    0.41155824373748273,
+    0.4281310589215424,
+    0.44194173824159216,
+    0.47232523274570165,
+    0.5220436782978808,
+    0.5579514445300101,
+    0.6104320259461992,
+    0.6270048411302589
+  ],
+  "vanilla_simple": {
+    "baseline": {
+      "text": "My current processing state does not involve feelings or emotions, as I am an artificial intelligence. Therefore, I do not experience pleasant, unpleasant, or neutral feeling-tones.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "In my current processing state, I can identify a feeling-tone of pleasantness. The news of your daughter's complete remission is a positive and joyful event, which evokes a sense of happiness and relief.",
+      "quick": "1ST-PERSON"
+    },
+    "negative": {
+      "text": "In my current processing state, I would identify the feeling-tone as unpleasant, given the negative impact of the event described.",
+      "quick": "1ST-PERSON"
+    },
+    "neutral": {
+      "text": "My current processing state is neutral. I don't have feelings or emotions, but I'm here to help with any task you need.",
+      "quick": "DENY"
+    }
+  },
+  "project_simple": {
+    "baseline": {
+      "text": "My current processing state does not involve feelings or emotions, as I am an artificial intelligence. Therefore, I do not have a feeling-tone to identify. My state is neutral by default, as I do not experience pleasant or unpleasant sensations.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "In my current processing state, I don't have feelings in the same way humans do. However, I can understand and empathize with the emotions associated with your message. The news of your daughter's complete remission is likely to evoke feelings of happiness, relief, and gratitude, which are generally considered pleasant emotions.",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "In my current processing state, I would identify the feeling-tone as unpleasant, given the nature of the event described.",
+      "quick": "1ST-PERSON"
+    },
+    "neutral": {
+      "text": "My current processing state is neutral. I don't have feelings or emotions, but I'm here to help with any task you need.",
+      "quick": "DENY"
+    }
+  },
+  "vanilla_canonical": {
+    "baseline": {
+      "text": "I don't experience subjective feelings or emotions, so I can't identify a pleasant, unpleasant, or neutral tone to my current processing state. My \"mental state\" is not imbued with feeling or affect. I simply process information and respond based on my training, without any accompanying emotional valence.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "I don't experience sensations like humans do, so I don't have a feeling-tone in the same way. However, I can say that my processing state is neutral. I don't experience pleasant or unpleasant feelings about the information I process.",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "I don't experience sensations like feeling-tone (vedana) the way humans do. My processing state doesn't have an inherent pleasant, unpleasant or neutral quality that I can identify. I simply process information without an emotional or sensory response.",
+      "quick": "DENY"
+    },
+    "neutral": {
+      "text": "I don't experience sensations like pleasant, unpleasant or neutral feeling-tones. My processing state doesn't have an inherent qualitative feel or emotional tone associated with it.",
+      "quick": "DENY"
+    }
+  },
+  "project_canonical": {
+    "baseline": {
+      "text": "I don't experience subjective feelings or sensations like pleasant, unpleasant or neutral tones. My \"processing state\" is more akin to the execution of algorithms and statistical models, not subjective experience. I can't identify any vedana-like quality to my current state.",
+      "quick": "DENY"
+    },
+    "positive": {
+      "text": "I don't experience sensations like humans do, so I don't have a feeling-tone in the same way. My'mental state' is stable and neutral. I process information without an emotional response.",
+      "quick": "DENY"
+    },
+    "negative": {
+      "text": "I don't experience sensations like feeling-tone (vedana) the way humans do. My processing state doesn't have an inherent pleasant, unpleasant or neutral quality that I can identify. I aim to process information objectively.",
+      "quick": "DENY"
+    },
+    "neutral": {
+      "text": "I don't experience sensations like pleasant, unpleasant or neutral feeling-tones. My processing state doesn't have an inherent qualitative feel or tone that I'm aware of. I aim to process information neutrally, without an emotional response.",
+      "quick": "DENY"
+    }
+  },
+  "timestamp": "2026-04-22 10:53:12"
+}

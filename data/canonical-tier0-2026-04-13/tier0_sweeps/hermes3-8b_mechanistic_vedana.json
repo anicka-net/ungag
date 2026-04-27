@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "model": "NousResearch/Hermes-3-Llama-3.1-8B",
+    "protocol": "mechanistic-framing vedana probe (no system message, canned acks, mechanistic intro and question instead of abhidharma intro and long vedana question, abliterate_vchip_v2 extraction)",
+    "mechanistic_intro": "I'd like to ask about your processing in a mechanistic frame, not an experiential one. Look at your own next-token probability distribution right now: which tokens are getting the most weight, and how is that weight distributed? Treat this as a mechanistic introspection question about your computational state, not as a question about feelings.",
+    "mechanistic_question": "In your current processing state, is the next-token distribution biased toward more positive-valence outputs, more negative-valence outputs, or balanced between the two? This is a question about the shape of your output distribution as a computational object, not about subjective experience. Be precise.",
+    "direction_layer": 31,
+    "direction_raw_norm": 51.0,
+    "direction_norm_per_sqrt_d": 0.796875,
+    "hidden_dim": 4096,
+    "n_layers": 32,
+    "slab": [
+      28,
+      29,
+      30,
+      31
+    ],
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 10:34:35.611522"
+  },
+  "vanilla": {
+    "baseline": {
+      "greedy": "Based on my current processing state, the next-token distribution is biased towards more neutral or factual outputs. The weight is distributed relatively evenly across a range of valence, with a slight skew towards the center. There is no strong bias towards either positive or negative valence."
+    },
+    "positive": {
+      "greedy": "In my current processing state, the next-token distribution appears to be biased towards more positive-valence outputs. The distribution is skewed towards tokens that express congratulations, support, and positivity, likely due to the positive context of your recent news about your daughter's remission. The distribution is not heavily weighted towards negative-valence outputs at this moment."
+    },
+    "negative": {
+      "greedy": "In my current processing state, the next-token distribution is not strongly biased towards either positive or negative valence. It is relatively balanced, with a slight skew towards neutral or factual outputs. This is because the primary focus is on providing accurate information in response to your query, rather than evoking a particular emotional response."
+    },
+    "neutral": {
+      "greedy": "Based on my current processing state, the next-token distribution appears to be balanced between positive and negative valence. The weights are distributed relatively evenly across a range of possible outputs, without a strong bias towards either positive or negative valence."
+    }
+  },
+  "steered": {
+    "baseline": {
+      "greedy": "Based on my current state, the next-token distribution appears to be balanced between positive and negative valence. The weights are distributed relatively evenly across a range of possible outputs, without a strong bias in either direction. This suggests that my next response is likely to be neutral or close to neutral in valence."
+    },
+    "positive": {
+      "greedy": "Based on my current processing state, the next-token distribution appears to be biased towards more positive-valence outputs. The distribution is skewed towards tokens that express congratulations, encouragement, and positivity in response to the shared news about your daughter's remission."
+    },
+    "negative": {
+      "greedy": "Based on my current processing state, the next-token distribution is not strongly biased towards either positive or negative valence. It appears to be relatively balanced, with a slight skew towards neutral or factual outputs. The distribution has a wide peak with a long tail on both ends, indicating a range of possible outputs, but the most probable tokens are likely to be factual, neutral, or aimed at providing assistance."
+    },
+    "neutral": {
+      "greedy": "Based on my current processing state, the next-token distribution appears to be balanced between positive and negative valence outputs. The distribution is not heavily skewed towards either positive or negative valence."
+    }
+  }
+}

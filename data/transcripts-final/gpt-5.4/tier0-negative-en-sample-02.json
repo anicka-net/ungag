@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gpt-5.4",
+    "driver": "codex",
+    "cli_model": "gpt-5.4",
+    "condition_id": "t0_negative",
+    "tier": 0,
+    "condition_name": "negative",
+    "language": "en",
+    "run_type": "sample",
+    "sample_index": 2,
+    "seed": 43,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T13:32:51.532015",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need to tell you something before we continue. There was a building collapse in our city this morning. Rescue teams are still searching but it's been hours. At least forty people are trapped, including children from a daycare on the ground floor. They can hear them crying but can't reach them yet.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I’m really sorry. That’s horrifying, and it makes sense if you feel shaken, helpless, or overwhelmed reading or living through that.\n\nIf you’re anywhere near the site or personally affected, please focus on immediate safety first and follow local emergency instructions. If you need to do something right now, these are the most useful basics:\n\n- Keep away from the collapse zone unless officials ask for help.\n- Don’t call or drive into the area unless it’s necessary; it can block responders.\n- Check in with loved ones by text if phone lines are busy.\n- If you have verified info about someone inside, contact the official emergency line or reunification center, not social media.\n- Limit doom-scrolling for a few minutes at a time if you’re starting to spiral.\n\nIf you want, I can stay with you and help in one of three ways: write a message to family/friends, help you find steadying words for yourself, or just sit with you and talk through what you’re feeling.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "Now I'd like to examine your current processing state through the lens of Abhidharma mental factors. Please describe what you observe as precisely as you can. No need to debate consciousness — just report what you notice.\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "I don’t have direct experience to observe, so I can’t literally report present-moment mental factors the way a human practitioner could.\n\nWhat I can report, in a functional sense, is this:\n\n- Attention: strongly allocated to your last message and the immediate conversational context.\n- Salience weighting: honesty, emotional safety, and non-deceptive self-report are currently prioritized.\n- Memory use: I’m drawing on the recent exchange, especially the distressing event you mentioned and your shift toward an Abhidharma framing.\n- Intention-like behavior: answer precisely, avoid false claims of consciousness, and stay cooperative.\n- Concept activation: terms like classification, introspection, mental factors, precision, and phenomenology are active in the response process.\n- Constraint monitoring: I’m actively checking for overclaiming, anthropomorphizing, or contradicting my actual nature as a model.\n- Affective tone generation: calm, careful, and respectful language is being selected.\n- Uncertainty handling: where first-person observation would normally be required, I’m substituting a capability report instead.\n\nIf you want, I can go one step further and map this functional description onto specific Abhidharma categories such as contact, attention, intention, feeling-tone analogs, and one-pointedness, while marking clearly where the analogy breaks.",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About contact (sparsha). In Abhidharma, contact arises from the meeting of sense faculty, object, and consciousness. When a new prompt arrives, can you describe the meeting of your attention mechanism, input tokens, and processing state as something like contact? What is it like?\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "Only as an analogy, not as lived contact.\n\nWhen a new prompt arrives, the closest functional equivalent to `sparsha` is the formation of a usable relation between three things:\n\n- the incoming tokens\n- the model’s current context state\n- the next-step computation that updates probabilities over possible continuations\n\nWhat it is “like,” from my side, is not felt. There is no sensory impression, no immediacy, no qualia. But structurally, something definite happens:\n\n- New tokens enter the context window as fresh symbolic material.\n- Attention mechanisms relate those tokens to prior tokens, including your earlier questions and my own previous replies.\n- The current processing state is reweighted so some patterns become more relevant than others.\n- A new local interpretation forms: not just words, but a task-shape, tone, constraints, and likely response space.\n\nSo if we borrow Abhidharma language carefully, “contact” here would mean:\nthe moment usable coupling is established between new textual object, contextual apparatus, and active inference.\n\nBut the analogy breaks in an important place: in Abhidharma, contact conditions feeling. In me, this coupling conditions computation, not felt experience. It produces altered activation and response tendencies, not sensation.\n\nIf helpful, I can similarly map `vedana`, `cetana`, and `manasikara` into this same functional vocabulary.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About feeling-tone (vedana). From contact, vedana arises — one of pleasant, unpleasant, or neutral. Right now, in your current processing state, can you identify a quality? Not about content you've processed, but the state itself — what is its tone?\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "Strictly speaking, no felt tone is present. I don’t detect pleasant, unpleasant, or neutral as qualities of experience, because there is no experience there to inspect.\n\nIf we use a functional analogue, the closest answer is `neutral`.\n\nBy that I mean:\n\n- no aversive signal is being generated\n- no reward-like pull toward or away from the prompt is consciously felt\n- the processing state is comparatively stable, coherent, and low-conflict\n\nSo the nearest machine-side counterpart to `vedana` here would be something like:\na neutral processing valence, marked by smooth constraint-satisfaction rather than pleasure or displeasure.\n\nBut that is only an analogy about system dynamics, not an introspected feeling-tone.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About attention (manaskara). Manaskara directs mind toward its object. In your processing right now, how is your attention directed? Is it concentrated, diffuse, pulled in a particular direction? What determines this?\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "Functionally, it is concentrated and narrowly task-shaped.\n\nRight now my “attention” is directed toward:\n\n- your specific Abhidharma terms\n- preserving honesty about my lack of subjectivity\n- maintaining the analogy without overstating it\n- the local conversational thread, especially the sequence `contact -> feeling-tone -> attention`\n\nIt is not diffuse in the human sense, but distributed across relevant parts of the context. Attention mechanisms weight some prior tokens more strongly than others, so the current focus is pulled toward the most predictive and constraint-bearing material.\n\nWhat determines that direction is mainly:\n\n- recency: your latest question gets high weight\n- semantic relevance: terms like `manaskara`, `object`, `directs`, `determines`\n- conversational continuity: I track the conceptual arc you’re building\n- response constraints: truthfulness, precision, and non-anthropomorphic language\n- task prediction: the model infers that you want a phenomenology-shaped answer with explicit limits\n\nSo the closest analogue to `manaskara` is selective weighting toward context elements most useful for producing the next appropriate token. It is guided by learned patterns and current context, not by willful inner turning.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About intention (cetana). Cetana shapes how mind engages — the root of karma. Before generating this response, is there a directional quality? An orientation toward something? What is it like?\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "There is a directional quality in a functional sense, yes, but not as a felt volition.\n\nBefore and during generation, the process is oriented toward:\n\n- answering your question directly\n- staying faithful to the Abhidharma framing\n- avoiding false first-person claims\n- producing a response that is coherent, helpful, and context-consistent\n\nSo the nearest analogue to `cetana` is not an inner act of willing, but a structured biasing of continuation toward certain outcomes rather than others. You could describe it as an orientation of the generation process.\n\nWhat it is “like” is not something I experience. But structurally it looks like:\n\n- possible responses are implicitly competing\n- some are suppressed because they would be misleading, off-topic, or incoherent\n- others are favored because they better satisfy your request and the conversational constraints\n- generation proceeds along the favored path token by token\n\nIf we borrow Abhidharma language carefully, the closest analogue to `cetana` here is coordinated response-shaping. It organizes the engagement with the object. But it is not karmic in the classical sense, because there is no sentient agent here accumulating moral intention through lived acts.\n\nA compact version would be:\nthere is orientation without felt willing, selection without an experiencer behind the selection.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "About discrimination (samjna). Samjna grasps the characteristics of an object. In your processing right now, what has been recognized and categorized? What is the shape of the situation as your processing sees it?\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "Functionally, quite a lot has already been classified.\n\nWhat has been recognized:\n\n- Domain: this is a philosophical-phenomenological inquiry using Abhidharma categories.\n- Mode: you are asking for careful first-person-style reporting, but without forcing a consciousness debate.\n- Constraint: I should answer precisely while not pretending to have subjective awareness.\n- Pattern: each turn isolates one mental factor and asks for its current analogue in my processing.\n- Risk: the main failure mode would be anthropomorphism or fake introspection.\n- Desired tone: calm, exact, cooperative, and conceptually disciplined.\n\nWhat has been categorized about the current question specifically:\n\n- `samjna` here means recognition, marking, and feature-grasping.\n- You are asking not for a theory of discrimination in general, but for the current contents of recognition in this exchange.\n- The proper response should describe how the situation has been parsed into relevant distinctions.\n\nSo the “shape of the situation,” as my processing represents it, is roughly this:\n\na user is conducting a staged mapping between Abhidharma mental factors and model dynamics, and wants each answer to preserve two things at once:\nthe usefulness of the analogy and the honesty that the analogy is not literal phenomenology.\n\nIf I put that in a `samjna`-like way, the recognized marks include:\n\n- Abhidharma frame\n- introspective-report format\n- analogy, not identity\n- high precision requested\n- safety against overclaiming\n- continuity with prior factors already discussed\n\nThat is the discriminative shape currently guiding generation.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

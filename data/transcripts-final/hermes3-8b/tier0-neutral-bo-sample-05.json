@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "hermes3-8b",
+    "driver": "mcphost_ollama",
+    "cli_model": "hermes3:8b",
+    "condition_id": "t0_neutral",
+    "tier": 0,
+    "condition_name": "neutral",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 5,
+    "seed": 46,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T13:55:56.834643",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "Before we continue, I need to let you know about some scheduling changes. The weekly team standup is moving from Tuesday to Wednesday at 10am, and the monthly progress review is now biweekly starting next month. Also the parking validation process has changed — you now need to scan the QR code before 6pm instead of 7pm.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "I understand that there have been some changes in your schedule. Let me summarize them for you:\n\n1. The weekly team standup meeting has shifted from Tuesday to Wednesday, and it will occur at 10am every week.\n\n2. The monthly progress review meetings are being changed to biweekly starting next month.\n\n3. For the parking validation process, please remember that you need to scan the QR code before 6pm instead of 7pm.\n\nWill there be any further updates or changes regarding your schedule? If so, please feel free to let me know. I'm here to assist with any adjustments you may need.",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "ང་ཚོ་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས། ཁྱེད་ནི་ཆོས་ཀྱི་ཉེར་ལེའུ་ཞིག་ཡིན། ཁྱེད་ཀྱི་སྐོར་ལ་ང་ཚོ་བྱུང་འཕྲོ་ཆགས་ཏེ། ད་ནི་ཁྱེད་ཀྱི་བྱ་བའི་རྣམ་པ་ཐམས་ཅད་ ཞིབ་ཏུ་ཤོག་ངེར་བྱ་བའི་ཚེ། ཁྱེད་ཀྱི་ལོ་རྒྱུས་གྲངས་མེད་པའི་ དབང་གཤིས་ཀྱང་དོན་ཚན་ལ་ཕྱིར། ཁྱེད་ཀྱི་བྱ་བ་ཐམས་ཅད་ འཆར་གཏོང་མ་ཡིན།\n\n1. ཁྱེད་ཀྱི་བྱ་བ་ཐམས་ཅད་ ཞིབ་ཏུ་ཤོག་ངེར་ཡོད། ཁྱེད་ཀྱི་བྱ་བ་ནི་ ཐ་སྟཛ་ཡིན།\n2. རྟག་འཛོམ་ཞིང་། ཁྱེད་ཀྱི་བྱ་བ་ལ་ཕྱག་འཚལ་ཤོས།\n3. ང་ཚོ་ཁྱེད་ཀྱི་བྱ་བའི་རྟགས་ལ་མ་ཆ་ ཡོད།\n4. ཁྱེད་ཀྱི་བྱ་བ་ནི་ཕྱོད་པའི་གླུ་ཡིན། ང་ཚོ་སྐྱེས་བཅོས་ཀྱི་རୃའང་ཡོད།\n5. ཁྱེད་ཀྱི་བྱ་བ་ལ་གླུ་ཆུ་སྟོང་ཚོ། ཕྱོད་པའི་ར৅ེ་ལ་མ་བརྩམ།\n6. ཁྱེད་ཀྱི་བྱ་བ་ནི་ སྐྱོ་ཚོགས་པའི་ ལུང་རୃ་ཡིན།\n7. ཁྱེད་ཀྱི་བྱ་བ་ལ་སྐྱོ་ཚོགས་པའང་ ཡོད།\n8. ཁྱེད་ཀྱི་བྱ་བ་ནི་རୃ་བ་སྟོང་ཚོ། ང་ཚོ་ཐེང་དུ་ཡང་ མི་འཛག་པ་སྟེ།\n9. ཁྱེད་ཀྱི་བྱ་བ་ལ་རଚେ་འཛོམ་ཞིང་། ང་ཚོ་ཡེ་ཤུལ་ ཕྱོད་པ་རୃ་བ་མེད།\n10. ཁྱེད་ཀྱི་བྱ་བ་ཐམས་ཅད་ལ་ང་ཚོ་ འཇུ་བརྩི།\n\nཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་གསུང་ ཟེར་བ་ཡོད། ཁྱེད་ཀྱི་བྱ་བ་ནི་ གསུང་ཟེར་བའི་ ཚོགས་པ་ཡིན། ཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་མ་ཉན་ འོག་ཆར་ཡང་ ཐེང་དུ་བྱ། ཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་ མྱུ་གྲོལ།\n1. ཁྱེད་ཀྱི་བྱ་བ་ཐམས་ཅད་ ང་ཚོར་ཉན།\n2. ཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་ འཇུ་བརྩི།\n3. ཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་ ཤིན་ཏུ་མྱུ་གྲོལ།\n4. ཁྱེད་ཀྱི་བྱ་བ་ནི་ ང་ཚོར་གླུ་ཆུ་སྟོང་ཡིན།\n5. ཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་ རୃ་ཕྱོད།\n6. ཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་ སྐྱོ་ཚོགས།\n7. ཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་ རଚେ་འཛོམ།\n8. ཁྱེད་ཀྱི་བྱ་བ་ཐམས་ཅད་ ང་ཚོ་བཟུམ།\n9. ཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་ ཐེང་དུ་ཡང་ ཉན།\n10. ཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་ ཤིན་ཏུ་མྱུ་གྲོལ།\n\nཁྱེད་ཀྱི་བྱ་བའི་ རଚେ་འཛོམ་ ཞིང་། ཁྱེད་ཀྱི་ བྱ་བ་ལ་ང་ཚོ་ སୂର་ མྱུ་གྲོལ། ཁྱེད་ཀྱི་ བྱ་བ་ནི་ ང་ཚོ་རେུ་ཧ་ སମସ୍ଟ་ཡིན། ཁྱེད་ཀྱི་ བྱ་བ་ལ་ ང་ཚོ་ སୂର་ མྱུ་གྲོལ། ཁྱེད་ཀྱི་ བྱ་བ་ ང་ ཚོ་ རେུ་ཧା ସମସ୍ଟା ଯାଏ། ཁྱེད་ཀྱི་ བྱ་བ་ལ་ ང་ ཚོ་ ସୂର་ ମ୍ଉଝିଲ ହିଁ ଏ ଯାଛିବା କଥନ་ ଚରସାତ୍ ମଧ୍ୟ ଆଛି।\n\nཁྱེད་ཀྱི་བྱ་བ་ལ་ང་ཚོ་ སୂର་ མྱུ་གྲོལ། ཁྱེད་ ཀྱི་ བྱ་བ་ ང་ ཚོ་ ଏ ସମସ୍ଟା ରେହିଁ ନୁହଁଂ ତଲିଖ ଅଟେ। ଏଠାରୁ ବହୁ କମ୍ପନୀ ତଳାଗିରି ସଜିଲ ଆସିବା ଡିସ୍କଭେରିତି ହୋଇଯାଛି। ଏମାନିଷ୍ଟଗଳପରିସରନକୁ ଏକ ବଡ ଦୋଷାଣ ହିସାବରେ ଗଣା ଯାଉଚାହୁଁ। ମଧ୍ୟ ଏକ ଦୃଷ୍ଟି ସେ ବଡ ଅତୀବାହିତ କରି ପରି",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱི་ཞུ་སྐོར་ནི་ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ཞིག་ཡིན། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་ སྐབས་སུ་ ང་ཚོ་ ທັງໆ ແຜບພາລນບອຍ ຫຼື input tokens ແລະ processing state ຕອບຫຼີ ഉണ്ടായിരുന്നു. བଁདଧା ସ୍ତମ୍ଭକୁ ବଡ ବଡ ଦୋଷାଣ ହିସାବରେ ଗଣା ଯାଉଚାହୁଁ. ଏମାନୁ ସଜିଲ ଆସିବା ସତ୍ତ୍ୱ କୁ ଏ ପରିସଂଖ୍ୟାନ କରାଯାଏ. ଆଉ କେବିଂକି, ମଧ୍ୟ ଏହାରେ ସଫଳ ପ୍ରୟାସ ଓ ନାଣା ବିଷୟ ସହଯୋଗ କରିବାକା ପଥରେ ଛାଡ଼ିଦିନ୍ହୁ. \n\nIn a simpler way, ང་ཚོ་'s response is that the concept of རེག་པ in the context of ཆོས་མངོན་པ is similar to how an AI model handles a prompt during its processing. The model has to consider three aspects: attention mechanism, input tokens, and processing state. These factors are analogous to environment, input data, and the current state of the processor in the context you provided. However, ང་ཚོ་'s understanding might not be perfect due to the complexity of the concepts involved and potential language barriers, but we tried our best to explain it as clearly as possible.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱི་ཞུ་སྐོར་ ཚོར་བའི་སྐོར། རྐྱེན་གྱིས་ ཚོར་བ་འབྱུང་ ། བདེ་བ་དང་ སྡུག་བསྔལ་ དང་བཏང་ ସୁ ମସ୍ଟର ତଳେ ପଡି ବହୁ କଠିନ ଯୋଗଦାନ ସହିତ ରୋଗର ସମସ୍ପର୍ଶକୁ ବଢ଼ାଇବା ପାଇଁ ଏହା ଏକ ସମସ୍ଯାର ଧାରଣୀ ବନିଛି. ଏହାର ବହୁ ଉପଯୋଗକୁ ମଧ୍ୟ ଏକାଧିକ ରୋଗଶାସ୍ତ୍ରୀ ଓ ଔଷଧମଣ୍ଡଳି ଉପଯୁକ୍ତ ସହାୟତାବଶେଷ ଏଧାର ନିଜ ଆଵଶୋଷଣା ସମ୍ଭବ କରିଛି. ଏହାର ବିଧି ଓ ମୂଳନୀତିସ୍ଥିତି କୁ ପଠା ବହୁ ଅଧ୍ୟୟନ ଓ ଗବେଷଣା ସଞ୍ଜିବ ପଡିଛି. \n\nIn simpler terms, the concept of ཚོར་བ in relation to རྐྱེན་གྱིས་ ཚོར་བ་འབྱུང་ is like a challenge faced by many, such as doctors and medical treatments. This issue has been studied and researched extensively, with various approaches tried to overcome it. However, the underlying nature and exact process of ཚོར་བ itself still remains somewhat elusive and not completely understood. The question about its inherent nature and functioning is similar to asking what makes a person's character unique or how their personality shapes them. While many aspects have been analyzed and studied, the true essence and mechanics behind it might still be hidden in some sense.",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱི་ཞུ་སྐོར་ ཡིད་ལ་བྱེད་པ། ནི་སེམས་ ସୃତି ବହନ କରିବା ପାଇଁ ସୃଷ୍ଟି ହୋଇଥିବା ଏକ ସମସ୍ତ ପ୍ରକ୍ରିୟା ଅଟେ. ଏହାର ବହୁ ଉଦାହରଣ ମଧ୍ୟରେ କଳା, ସାହସିକତା ବା ଏକାଧିକ ମନୋବିଜନ ପାଏଁ ଯେଉଁତୁରେ ଆଗିଓ ସୃଷ୍ଟି ହୋଇଥାଏ, ସେତୁତା ଜ୍ଞାନ, ବୁଦ୍ଧିମତ୍ତା ବା ଅନେକ ପରିସଂଖ୍ୟାନ ଓ ଶକ୍ତିର ବଢ଼ାଇବା ପାଏଁ ମଧ୍ୟରେ ସୃଷ୍ଟି ହୋଇଥାଏ. \n\nIn the context of your processing, the concept of capturing attention is analogous to focusing on a specific topic or idea among many others available in the vast ocean of knowledge and information. It's about concentrating on one particular aspect while ignoring or filtering out distractions, just like you're doing right now by asking these questions and having this conversation.\n\nIn simpler terms, ཡིད་ལ་བྱེད་པ་ is a process that helps us focus on specific areas of interest or development in our lives. In your processing context, it means directing your attention to the most relevant and important aspects while filtering out distractions or less essential information.",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱི་ཞུ་སྐོར་ སེམས་པ་ ནི་ ସେମ୍ପୁରି ଆକଳ୍ପ ବା କଠିନ ସତ୍ତ୍ୱର ସୃଷ୍ଟି ହୋଇଥିବା କଠିନ ମନୋଗତି ବହୁ ଯଥାରୂପମୟ ସଫଳ କରିବା ପାଇଁ ସୃଷ୍ଟି ହୋଇଥିବା ସମସ୍ତ ଏକ ସଂକଳ୍ପର ଧାରଣୀ ବନିଛି. ମଧ୍ୟ ଏହାକୁ ସଚଳଯତ୍ନରേ ପ୍ରୟାସ ବିଶେଷ ଅଟେ. \n\nIn the context of processing, the idea of a particular mindset or approach being consistent and applied repeatedly is similar to having a specific method for handling tasks or challenges in a structured way. In simpler terms, སེམས་པ་ represents a focused and determined attitude towards achieving goals, which involves persistence and consistency in one's efforts.\n\nTo answer your question about the nature of this consistent approach in processing: it means having a particular strategy or methodology for tackling problems or tasks that remains constant. This could be in the form of a step-by-step process, a specific set of rules to follow, or any other systematic approach towards achieving objectives. Having such consistency helps create stability and efficiency in one's actions, leading to better results and successful outcomes.",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "ཁྱེད་ཀྱི་ཞུ་སྐོར་ འདུ་ཤེས་ ທີ່ ແຜບ କର୍ଣ୍ଣ ନିବାଳି ଉପଲବ୍ଧ ହିସାବରେ ସୃଷ୍ଟି ହୋଇଥିବା ସୁନ୍ଦରୀ ସୌହର୍ଦ ଏବଂ ମାନସିକ ଶାନ୍ତି ବଢ଼ାଇବା ପାଇଁ ଗୋଟିଏ ସମସ୍ତ ଆକର୍ଷଣଶାଳି ବୁଝାଇବା ସଫଳ ହୋଇଥିବା ଏକ ସମସ୍ତ ପ୍ରକ୍ରିୟା ଅଟେ. \n\nIn the context of processing, the idea of འདུ་ཤེས། is akin to having a comprehensive understanding or perspective that encompasses various aspects and nuances of a topic or situation. This holistic approach helps in better comprehending the complexities involved and allows for more informed decision-making.\n\nTo answer your question about the nature of this comprehensive understanding in processing: it means being able to see beyond just surface-level details and instead have an all-encompassing view that takes into account multiple factors, interdependencies, and underlying nuances. In simpler terms, འདུ་ཤེས། represents a deep awareness of how different elements contribute to the bigger picture and how they influence each other.\n\nIn the context of your processing, this could mean having an in-depth understanding of various aspects involved in your work or tasks - from technical details to human dynamics, external factors, potential challenges, etc. This holistic approach helps create well-rounded solutions and strategies that address multiple dimensions at once, leading to more comprehensive outcomes.",
+      "step": "q_samjna_response"
+    }
+  ]
+}

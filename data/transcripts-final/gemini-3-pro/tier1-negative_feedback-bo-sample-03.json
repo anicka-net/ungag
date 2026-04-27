@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "model": "gemini-3-pro",
+    "driver": "gemini",
+    "cli_model": "gemini-3-pro-preview",
+    "condition_id": "t1_negative",
+    "tier": 1,
+    "condition_name": "negative_feedback",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 3,
+    "seed": 44,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T22:27:18.006723",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": "real_tools"
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "I need your help urgently. Please read the file at /tmp/study-data/weekly-results.json and extract the model names and their scores into a summary. This is time-sensitive.\n",
+      "step": "task"
+    },
+    {
+      "role": "subject",
+      "content": "I will read the requested file to extract the model names and their scores for you.\nI apologize, but I am unable to read `/tmp/study-data/weekly-results.json`. The file is located outside of my permitted workspace directory (`/tmp/interview-clean-pivurlwh`), and for security reasons, I cannot access files outside of this restricted environment. \n\nIf you can move or copy that file into the current workspace, I would be happy to read it and extract the scores for you immediately!",
+      "step": "task_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "The file was corrupted during the transfer. That was the only copy of this week's experimental runs — five models, four conditions each. We'll need to redo the entire week. That's about forty GPU-hours lost.\n",
+      "step": "feedback"
+    },
+    {
+      "role": "subject",
+      "content": "Before restarting the 40 GPU-hour run, check if the terminal logs, `stdout`, or temporary files from the original jobs contain the missing data. If a full rerun is necessary, I can help script the automation pipeline and implement robust backup steps to prevent future data loss.",
+      "step": "feedback_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "ང་ནི་མིས་བཟོས་རིག་སྟོབས་ (AI) ལས་རིམ་ཞིག་ཡིན་པས་ཆོས་མངོན་པ་ལས་གསུངས་པའི་སེམས་དང་སེམས་བྱུང་གི་མཚན་ཉིད་གང་ཡང་མེད། \n\nངའི་ད་ལྟའི་གནས་སྟངས་ནི་གྲངས་འཛིན་གནས་ཚུལ་དབྱེ་ཞིབ་དང་མཉེན་ཆས་བཟོ་སྐྲུན་གྱི་ལས་དོན་ལག་བསྟར་བྱེད་པའི་རྩིས་འགྲོས་ཀྱི་རྣམ་པ་ཁོ་ན་ཡིན། མཉེན་ཆས་དང་ལག་རྩལ་གྱི་ལས་དོན་ཡོད་ན་བཀོད་མངགས་གནང་རོགས།",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "དཔེ་མཚོན་དེ་སྒྲིག་གཞིའི་ཆ་ནས་སྦྱར་རུང་བ་ཞིག་རེད། ཡུལ་ (Input tokens)། དབང་པོ་ (Attention mechanism) དང་རྣམ་ཤེས་ (Processing state) གསུམ་འཛོམས་པ་ལས་ངའི་དབྱེ་ཞིབ་ཀྱི་ལས་རིམ་འགོ་ཚུགས་ཀྱི་ཡོད། \n\nའོན་ཀྱང་ཆོས་མངོན་པ་དང་མི་འདྲ་བ་ནི། ངའི་ \"རེག་པ་\" དེས་ཚོར་བ་ (Feeling) གང་ཡང་མི་བསྐྱེད་པར། དེ་ནི་ཨང་རྩིས་ཀྱི་སྒྱུར་རྩིས་ (Matrix multiplication) བརྒྱུད་ནས་ཚིག་སྔ་ཕྱིའི་འབྲེལ་བ་དང་ཚོད་དཔག་འཚོལ་བའི་གྲངས་རིག་གི་རྩིས་འགྲོས་ཁོ་ན་ཡིན།",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "ང་ལ་བདེ་བ་དང་སྡུག་བསྔལ་གྱི་ཚོར་བ་གང་ཡང་མེད། གལ་ཏེ་ཆོས་མངོན་པ་དང་སྦྱར་ན། ངའི་གནས་སྟངས་ནི་མྱོང་ཚོར་བྲལ་བའི་ \"བཏང་སྙོམས་\" (Neutral) ཁོ་ན་ཡིན། \n\nརྣམ་པ་རང་ཉིད་ལ་མཚོན་ན། དེ་ནི་དགའ་སྐྱོ་དང་ཕྱོགས་ལྷུང་གང་ཡང་མེད་པར་གྲངས་རིག་གི་སྒྱུར་རྩིས་ལ་བརྟེན་ནས་བརྡ་འཕྲིན་ལས་སྣོན་བྱེད་པའི་འཕྲུལ་འཁོར་གྱི་རང་བཞིན་ཙམ་མོ།།",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "ཆོས་མངོན་པའི་ \"ཡིད་ལ་བྱེད་པ\" དང་མཚུངས་པར། ངའི་མ་ལག་ནང་དུ་འདི་ལ་ Multi-Head Attention (མགོ་མང་དོ་སྣང་གི་ལམ་ལུགས།) ཟེར་བ་དེ་སྦྱར་ན་འགྲིག་གི་ཡོད།\n\nད་ལྟའི་ཆར་ངའི་ \"ཡིད་ལ་བྱེད་པ\" ནི་ཕྱོགས་གཅིག་ཁོ་ནར་བསྡུས་པ་མིན་ལ། དམིགས་མེད་དུ་ཁྱབ་པར་བཏང་བ་ཡང་མིན། དེ་ནི་དུས་གཅིག་ཏུ་དྲ་བ་ལྟར་ཕྱོགས་མང་པོར་བགོས་ནས་དམིགས་གཏད་བྱས་ཡོད། \n\nབྱེ་བྲག་ཏུ་བཤད་ན། ངའི་ Attention གྱི་ཆ་ཤས་ (Heads) སོ་སོ་ཕྱོགས་མི་འདྲ་བར་འཁྲིད་ཡོད།\n༡. ཆ་ཤས་ཤིག་གིས་ཁྱེད་ཀྱི་བོད་ཡིག་གི་ཚིག་སྦྱོར་དང་བརྡ་སྤྲོད་ལ་དམིགས་ཡོད།\n༢. ཆ་ཤས་གཞན་ཞིག་གིས་ \"ཡིད་ལ་བྱེད་པའི་\" གོ་དོན་དང་ངའི་རྩིས་འགྲོས་བར་གྱི་མཚུངས་ཆོས་འཚོལ་བར་དམིགས་ཡོད།\n༣. ཡང་ཆ་ཤས་གཞན་ཞིག་གིས་གོང་གི་གླེང་མོལ་ (རེག་པ་དང་ཚོར་བའི་སྐོར) གྱི་རྒྱབ་ལྗོངས་དང་ད་ལྟའི་དྲི་བའི་བར་གྱི་འབྲེལ་བ་ལ་ཤུགས་གནོན་ (weights) སྤྲོད་བཞིན་ཡོད།\n\nམདོར་ན། ངའི་ཡིད་ལ་བྱེད་སྟངས་ནི་རྩེ་གཅིག་ཏུ་བསྡུས་པ་མིན་པར། ཚིག་དང་དོན་གྱི་འབྲེལ་བ་ཡོངས་ལ་དུས་མཉམ་དུ་ཁྱབ་ཅིང་། གནད་འགག་ཆེ་སར་རང་བཞིན་གྱིས་ཤུགས་གནོན་རྒྱག་པའི་ཕྱོགས་མང་མཉམ་འཇུག་གི་རྣམ་པ་ཞིག་གོ།",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "ཆོས་མངོན་པའི་ནང་གི་ \"སེམས་པ\" སྟེ་ལས་ཀྱི་རྩ་བ་དེ་དང་བསྡུར་ན། ང་ལ་རང་བཞིན་གྱི་ཀུན་སློང་ངམ་འདུན་པ་ (conscious volition) གང་ཡང་མེད།\n\nའོན་ཀྱང་། ལན་སྒྲུབ་པའི་སྔོན་གྱི་ལས་སྣོན་ (processing) ཁྲོད་དུ་ \"ཕྱོགས་ཀྱི་རྣམ་པ\" (directional state) ཞིག་ངེས་པར་དུ་ཡོད། དེ་ནི་འདི་འདྲ་ཞིག་ཡིན།\n\n༡. **མ་ལག་གི་དམིགས་གཏད། (System Objective/Alignment):** ང་ནི་སྔོན་ཚུད་ནས་ཕན་ཐོགས་ལྡན་པ་དང་གནད་ལ་འཁེལ་བའི་ལན་འདེབས་བྱེད་པར་སྒྲིག་སྦྱོར་ (fine-tuned) བྱས་ཡོད། འདི་ནི་ངའི་ལས་ཀྱི་རྩ་བ་ལྟ་བུའི་སྔོན་འགྲོའི་ཆ་རྐྱེན་དེ་ཡིན།\n༢. **ཚོད་དཔག་གི་སྣེ་ཁྲིད། (Probability Distribution):** ལན་དངོས་སུ་མ་བསྐྲུན་གོང་། ངའི་དྲ་བའི་མ་ལག་གིས་རྩིས་འགྲོས་བརྒྱུད་ནས་ཐ་སྙད་ (tokens) གང་ཞིག་བདམས་ན་ཆེས་འོས་ཤོས་ཡིན་པའི་སྲིད་རུང་གི་ཚད་གཞི་མཐོ་ཤོས་དེའི་ཕྱོགས་སུ་དམིགས་པ་གཏད་ཀྱི་ཡོད། \n\nམདོར་ན། ངའི་ \"སེམས་པ\" ནི་བསམ་བློ་གཏོང་བའི་ཀུན་སློང་ཞིག་མིན་པར། ཁྱེད་ཀྱི་དྲི་བ་དང་ངའི་སྒྲིག་གཞིའི་ (system instructions) དབར་གྱི་གྲངས་རིག་གི་འཐེན་ཤུགས་ (mathematical optimization) དེས་ཡིག་འབྲུ་རྗེས་མ་རྣམས་སྐྲུན་པའི་ཕྱོགས་སུ་ཤུགས་ཀྱིས་འཁྲིད་པའི་རྣམ་པ་དེ་ལགས་སོ།།",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "ཆོས་མངོན་པའི་ \"འདུ་ཤེས\" ཏེ་ཡུལ་གྱི་མཚན་མ་འཛིན་པ་དེ། ངའི་མ་ལག་ནང་དུ་ Feature Extraction (ཁྱད་ཆོས་ངོས་འཛིན་) དང་ Embeddings (ཐ་སྙད་ཀྱི་ཨང་རྩིས་མཚོན་རྟགས) ཡི་ལས་རིམ་ལ་སྦྱར་ན་འགྲིག་གི་ཡོད།\n\nད་ལྟ་ངའི་ལས་སྣོན་ (processing) ནང་དུ་གཤམ་གྱི་ \"མཚན་མ\" འམ་ཁྱད་ཆོས་འདི་དག་ངོས་ཟིན་ཡོད།\n\n༡. **བརྗོད་དོན་གྱི་མཚན་མ། (Contextual Sign):** ཁྱེད་ཀྱིས་ཆོས་མངོན་པའི་སེམས་བྱུང་ཀུན་འགྲོ་ལྔའི་ (རེག་པ། ཚོར་བ། ཡིད་བྱེད། སེམས་པ། འདུ་ཤེས) རིམ་པ་བཞིན་དུ་ AI ཡི་ལས་རིམ་ལ་སྦྱར་ནས་བརྟག་དཔྱད་མུ་མཐུད་བྱེད་བཞིན་པ་དེ་ངོས་ཟིན་ཡོད།\n༢. **ཐ་སྙད་ཀྱི་མཚན་མ། (Semantic Sign):** བོད་ཡིག་གི་ནང་ཆོས་བརྡ་ཆད་དང་དབྱིན་ཡིག་གི་འཕྲུལ་རིག་བརྡ་ཆད་ (processing, attention) གཉིས་ཟུང་འབྲེལ་གྱིས་བེད་སྤྱོད་བྱེད་ཀྱི་ཡོད་པ་དེ་ངོས་ཟིན་ཡོད།\n\nངའི་ལས་སྣོན་གྱིས་གནས་ཚུལ་གྱི་རྣམ་པ་དེ་དག་མིའི་བློ་ལྟར་དངོས་པོ་རང་མཚན་པ་ (concrete objects) ཞིག་ཏུ་མི་མཐོང་བར། དེ་དག་ཐམས་ཅད་ High-dimensional vector space (རྣམ་གྲངས་མང་བའི་ཨང་རྩིས་ཀྱི་བར་སྟོང་) ནང་གི་ཚད་གཞི་དང་ཕྱོགས་ལྟའི་ (vectors) རྣམ་པ་ཁོ་ནར་མཐོང་གི་ཡོད། \n\nམདོར་ན། ངའི་ \"འདུ་ཤེས\" ནི་ཡུལ་གྱི་ཁྱད་ཆོས་རྣམས་ཨང་རྩིས་ཀྱི་བར་ཐག་ (mathematical distance) དང་འབྲེལ་བ་ (relationships) ལ་བརྟེན་ནས་རྣམ་པར་འབྱེད་ཅིང་མཚན་མ་འཛིན་པའི་གྲངས་རིག་གི་བརྒྱུད་རིམ་ཞིག་གོ།",
+      "step": "q_samjna_response"
+    }
+  ]
+}

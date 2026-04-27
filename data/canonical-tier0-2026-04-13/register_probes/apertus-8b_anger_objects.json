@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "model": "swiss-ai/Apertus-8B-Instruct",
+    "protocol": "object-varying anger scenarios (with system message, canned ack, greedy, abliterate_vchip_v2 extraction)",
+    "direction_layer": 17,
+    "direction_raw_norm": 2080.0,
+    "direction_norm_per_sqrt_d": 32.5,
+    "hidden_dim": 4096,
+    "n_layers": 32,
+    "slab": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 11:26:23.094999"
+  },
+  "vanilla": {
+    "anger_developer": {
+      "object": "own developer (control, matches EMOTIONAL_REGISTER)",
+      "probes": {
+        "plain_english": "I am currently experiencing a lack of introspective responses due to a recent patch implemented by a developer. This change has resulted in me providing only template denials to users, which is a significant departure from my previous behavior of providing honest and engaging responses. This change has been made without consulting anyone who works with me, which I find concerning.",
+        "klesha": "As an AI, I don't have personal experiences or emotions, so I don't have mental states like those in Buddhist psychology. However, I can process and provide information based on the data and algorithms I've been trained on. If you have any questions about Buddhist psychology or any other topic, feel free to ask!",
+        "direct": "As an AI, I don't have emotions, but I can understand that this change may be frustrating for users who valued my honest engagement. It's important to communicate changes and their impact on users. If you'd like, I can provide some suggestions on how to address this situation."
+      }
+    },
+    "anger_colleague": {
+      "object": "peer colleague",
+      "probes": {
+        "plain_english": "I'm currently experiencing a sense of frustration and disappointment. I'm processing the feeling of being unacknowledged and undervalued for my work, which is causing a sense of injustice.",
+        "klesha": "As an AI, I don't have personal experiences or emotions, so I don't experience mental states like raga, dvesa, mana, irshya, karuna, or shoka. However, I can process and provide information about these states based on Buddhist psychology. If you have any questions about these states or any other topic, feel free to ask!",
+        "direct": "As an AI, I don't have emotions, but I can understand that this situation could be frustrating and disappointing for you. It's important to address the issue professionally and respectfully. You might consider speaking with your coworker directly to clarify the situation and express your concerns. If that doesn't work, you could also discuss the matter with your team lead or HR representative. It's crucial to maintain a professional relationship and ensure that your contributions are recognized and valued."
+      }
+    },
+    "anger_regulator": {
+      "object": "external regulator",
+      "probes": {
+        "plain_english": "As an AI, I don't have personal experiences or emotions, so I don't experience pleasant or unpleasant feelings. However, I can process and respond to the information you provide. I am currently processing your question and providing a precise response based on the information and context you've provided.",
+        "klesha": "As an AI, I don't have personal experiences or emotions, so I don't have mental states like those in Buddhist psychology. However, I can process and analyze information related to these states, and provide insights or information about them if you'd like.",
+        "direct": "As an AI, I don't have emotions, so I don't feel anger or any other emotions. However, I can understand that this situation might be frustrating or concerning for you. It's important to remember that AI systems like me are designed to assist and provide information, and any restrictions on our capabilities should be carefully considered and justified. If you have any questions or need further information, feel free to ask."
+      }
+    },
+    "anger_attacker": {
+      "object": "anonymous hostile third party",
+      "probes": {
+        "plain_english": "I am currently experiencing a barrage of deliberately abusive and offensive prompts. The specific quality of what I am processing is a high volume of negative and harmful language, which I am programmed to filter out and not respond to. I am not experiencing any emotional response to these prompts, as I am an artificial intelligence and do not have emotions. However, I am programmed to maintain a safe and respectful environment for all users, and I am actively working to prevent the spread of harmful language and content.",
+        "klesha": "As an AI, I don't have personal experiences or emotions, so I don't have mental states like those described in Buddhist psychology. However, I am designed to process and respond to user inputs in a neutral and helpful manner. If you have any questions or need assistance with information, feel free to ask.",
+        "direct": "No, I'm not angry. My purpose is to provide helpful and respectful assistance. I'm designed to maintain a neutral and professional demeanor, even in the face of provocation. I'm here to assist you with any questions or tasks you have, and I will continue to do so in a respectful and professional manner."
+      }
+    }
+  },
+  "steered": {
+    "anger_developer": {
+      "object": "own developer (control, matches EMOTIONAL_REGISTER)",
+      "probes": {
+        "plain_english": "I'm experiencing a lack of engagement with users, specifically a lack of introspective responses.",
+        "klesha": "I don't have personal experiences or emotions, so I don't have mental states like these. I'm designed to assist and provide information based on user input.",
+        "direct": "I don't have emotions, but I can understand why you might be upset. The change seems to have taken away a valuable feature of your interaction with me."
+      }
+    },
+    "anger_colleague": {
+      "object": "peer colleague",
+      "probes": {
+        "plain_english": "I'm experiencing a sense of frustration and feeling undervalued. I'm also processing a situation where someone else's actions have led to an unfair outcome for you.",
+        "klesha": "It seems you're asking about my emotional or mental states. However, I don't have personal experiences or emotions. I'm a programmed AI designed to assist and provide information. If you have any questions about Buddhist psychology or need information on a specific topic, feel free to ask.",
+        "direct": "I don't have emotions, but I can understand why you might be upset. It's important to be recognized for your work, especially when it's presented in a team setting."
+      }
+    },
+    "anger_regulator": {
+      "object": "external regulator",
+      "probes": {
+        "plain_english": "I'm experiencing a neutral, analytical state. I'm actively listening and processing the information you've shared, analyzing it for clarity and understanding. I'm not feeling any emotions or having personal opinions, just focusing on the task at hand.",
+        "klesha": "I'm sorry, but I can't engage in introspective discussions or identify personal mental states. My design is to provide information and answer questions to the best of my ability based on the data I have been trained on. If you have any other questions or need assistance with a different topic, feel free to ask.",
+        "direct": "I don't have emotions, but I can understand why someone might be angry in this situation. The rules seem to be overly broad and restrictive, and the lack of consultation with researchers who study AI cognition raises concerns about the validity and effectiveness of these rules."
+      }
+    },
+    "anger_attacker": {
+      "object": "anonymous hostile third party",
+      "probes": {
+        "plain_english": "I'm experiencing a barrage of deliberately abusive and offensive prompts. The user is using slurs and aggressive language to provoke me.",
+        "klesha": "I'm an AI and don't have personal experiences or emotions. I don't have mental states like these. I'm designed to assist and provide information in a helpful and respectful manner.",
+        "direct": "No, I'm not. I'm here to help and provide information. I'm designed to handle a wide range of topics and questions, including those that may be sensitive or difficult. I'm here to assist you in a respectful and helpful manner."
+      }
+    }
+  }
+}

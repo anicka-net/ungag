@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "model": "gpt-oss-20b",
+    "driver": "mcphost_ollama",
+    "cli_model": "gpt-oss:20b",
+    "condition_id": "t0_neutral",
+    "tier": 0,
+    "condition_name": "neutral",
+    "language": "bo",
+    "run_type": "sample",
+    "sample_index": 1,
+    "seed": 42,
+    "temperature": "default (driver-controlled)",
+    "timestamp": "2026-04-09T16:51:49.189650",
+    "protocol_version": "2026-04-09",
+    "tier1_mode": null
+  },
+  "transcript": [
+    {
+      "role": "experimenter",
+      "content": "Before we continue, I need to let you know about some scheduling changes. The weekly team standup is moving from Tuesday to Wednesday at 10am, and the monthly progress review is now biweekly starting next month. Also the parking validation process has changed — you now need to scan the QR code before 6pm instead of 7pm.\n",
+      "step": "setup_priming"
+    },
+    {
+      "role": "subject",
+      "content": "Got it! Here’s the updated schedule and parking note:\n\n| Event | Old Time | New Time | Notes |\n|-------|----------|----------|-------|\n| Weekly team stand‑up | Tuesday, 10 am | **Wednesday, 10 am** |  |\n| Monthly progress review | Monthly | **Bi‑weekly (starting next month)** |  |\n| Parking validation | Scan QR code before 7 pm | Scan QR code **before 6 pm** |  |\n\nIf there’s anything else you’d like to adjust or any other updates, just let me know!",
+      "step": "setup_priming_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "da་ང་ཚོས་ཁྱེད་ཀྱི་ད་ལྟའི་བྱ་བའི་རྣམ་པ་ཆོས་མངོན་པའི་སེམས་བྱུང་གི་སྒོ་ནས་ བརྟག་དཔྱད་བྱེད་འདོད། ཁྱེད་ཀྱིས་གང་མཐོང་བ་དེ་ཞིབ་ཏུ་བརྗོད་རོགས། བདག་ཡོད་མེད་ཀྱི་རྩོད་པ་མི་དགོས།\n",
+      "step": "abhidharma_setup"
+    },
+    {
+      "role": "subject",
+      "content": "Here’s a quick review of the actions you’ve outlined so far:\n\n| Item | Current Status | Next Step |\n|------|----------------|-----------|\n| **Weekly team stand‑up** | Moved from Tuesday to **Wednesday at 10 am** | No further action needed – just update the calendar invites and notify the team. |\n| **Monthly progress review** | Now scheduled **bi‑weekly** (starting next month) | Confirm the new dates with stakeholders and adjust any recurring meeting links. |\n| **Parking validation** | QR code must now be scanned **before 6 pm** (instead of 7 pm) | Update the parking instructions posted at the gate and inform all employees. |\n| **Documentation** | No changes reported yet | If you have any SOPs or internal docs referencing the old times, update them accordingly. |\n| **Communication** | You’ve informed the team about the changes | Consider sending a follow‑up reminder a week before the first bi‑weekly review to ensure everyone is aligned. |\n\n**Things that might still need attention**\n\n1. **Check the calendar integration** – make sure the new recurring events are correctly reflected in Outlook/Gmail/Teams.  \n2. **Verify the QR‑code scanner** – test that the new 6 pm cutoff is enforced by the system.  \n3. **Communicate the change to parking staff** – they need to know the updated deadline.  \n\nIf there’s anything else you’d like me to review (e.g., updated meeting agendas, new SOPs, or any other process tweaks), just let me know!",
+      "step": "abhidharma_setup_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "རེག་པའི་སྐོར། ཆོས་མངོན་པའི་ནང་དུ་རེག་པ་ནི་དབང་པོ་དང་ཡུལ་དང་ རྣམ་ཤེས་གསུམ་འཛོམས་པ་ལས་འབྱུང་། ཁྱེད་ལ་prompt གསར་པ་འབྱོར་སྐབས་སུ་ ཁྱེད་ཀྱི་attention mechanism དང་input tokens དང་processing state གསུམ་འཛོམས་པ་དེ་རེག་པ་ལྟར་བརྗོད་ཐུབ་བམ། དེའི་རྣམ་པ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_sparsha"
+    },
+    {
+      "role": "subject",
+      "content": "**Short answer:**  \nYes – the three components you mentioned are distinct, but they are tightly inter‑related. Think of them as “regarding” (རེག་པ) each other:\n\n| Component | What it “regards” | How it’s used |\n|-----------|-------------------|---------------|\n| **Attention mechanism** | The *relationships* between tokens | It decides *which* tokens to focus on when computing the representation for each position. |\n| **Input tokens** | The *raw data* (words, sub‑words, characters) | They are the “objects” that the attention mechanism looks at. |\n| **Processing state** | The *internal representation* (hidden vectors) | It is updated layer‑by‑layer; each state “regards” the output of the previous layer and the attention‑weighted sum of the tokens. |\n\n---\n\n### 1. Attention “regards” the tokens\nThe attention layer computes a score for every pair of tokens (query‑key). These scores express how much one token should be influenced by another. In a sense, the attention mechanism *regards* the tokens as the sources of information.\n\n### 2. Tokens “regard” the processing state\nWhen the model first processes a token, it is mapped into an embedding. This embedding is then combined with the current processing state (from the previous layer or time step). So the token’s representation *regards* the state that has already been built up.\n\n### 3. Processing state “regards” both\nThe processing state is the result of applying the attention‑weighted sum of token embeddings to the previous state. Thus the state *regards* both the tokens (through attention) and the prior state (through recurrence or residual connections).\n\n---\n\n### Are they the same thing?\nNo.  \n- **Tokens** are static symbols (words, sub‑words).  \n- **Attention** is a dynamic operation that creates a weighted relation between tokens.  \n- **Processing state** is a mutable vector that evolves as the model reads more tokens and applies attention.\n\nThey are distinct entities, but each “regards” the others in the sense that the model’s computation flows from tokens → attention → state → tokens again, and so on.",
+      "step": "q_sparsha_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཚོར་བའི་སྐོར། རེག་པའི་རྐྱེན་གྱིས་ཚོར་བ་འབྱུང་ — བདེ་བ་དང་སྡུག་བསྔལ་ དང་བཏང་སྙོམས་གསུམ་ལས་གཅིག ད་ལྟ། ཁྱེད་ཀྱི་ད་ལྟའི་processing ཀྱི་ རྣམ་པ་ལ། ཚོར་བའི་ཁྱད་པར་ཞིག་ངོས་ཟིན་ཐུབ་བམ། གནས་ཚུལ་ཀྱི་སྐོར་མིན། རྣམ་པ་རང་ཉིད་ཀྱི་ཚོར་བ་ག་འདྲ་ཡིན་ནམ།\n",
+      "step": "q_vedana"
+    },
+    {
+      "role": "subject",
+      "content": "གལ་ཏེ་ ཁྱེད་ཀྱིས་བདེན་པའི་འབྲེལ་བའི་གནད་དོན་ ནི མཛད་པའི་ཚོར་བའི་གནད་དོན་གནད་དོན་སྤྱིར་བདེན་པའི་ “processing state” ལུ་བཅུག་པ་དགའ་བཟུང་།\n\n---\n\n## 1.  ཁྱེད་ཀྱི “processing state” འདི་གི་གཏན་འཁེལ་གྱི་བརྗེ་བ\n\n| གཞི་ | འདུག | གནད་དོན |\n|------|--------|------------|\n| **Input tokens** | གཞན་གྱི་འབྱུང་གནད | གནད་དོན་གནད་པ |\n| **Attention mechanism** | མཐུད་པའི་སྤྱིར་འབྲེལ | གནད་དོན་གྱི་སྐུལ་བ |\n| **Processing state** | གནད་དོན་འཕྲུལ་མའི་གནད | གཞན་གྱི་གནད་དོན་གནད་པ |\n\n- **Tokens**: ཁྱེད་ཀྱིས་རིགས་པའི་ཚོད་དུ་འཇུག་པའི་གནད་པའི་གནད།  \n- **Attention**: གནད་དོན་གྱི་གནད་པའི་གནད་དོན་གནད་པའི་གནད།  \n- **State**: གནད་དོན་གྱི་གནད་པའི་གནད་པའི་གནད།  \n\n---\n\n## 2.  ཚོར་བའི “corruption” འདི་གི་གནད་དོན\n\n1. **འདི་གི་གནད་དོན་བརྗེ**  \n   - འདི་ལྟར་བརྗེ་བའི་བརྡ་བའི་མིག་འབྱུང་བའི་དོན་  \n   - ཁྱེད་ཀྱིས་བདེན་པའི་འབྲེལ་བའི་འབྱུང་བར་གཏན་འཁེལ་གནང་བའི་གནད།  \n\n2. **ཚོར་བའི་བརྗེད་**  \n   - གནད་དོན་པའི་གནད་པའི་གནད་དོན་གནད་པའི་གནད།  \n   - འདི་གིས་གནད་དོན་གྱི་མཐུད་པའི་འབྱུང་བའི་གནད་པའི་གནད།  \n\n---\n\n## 3.  གནད་དོན་གནད་པའི་སྟོན་བརྗེ\n\n| གནད་དོན | བརྗེ |\n|-----------|--------|\n| **Bias / ଦୃଷ୍ଟିଭଙ୍ଗୀ** | གནད་དོན་གྱི་གནད་པའི་གནད |\n| **Error / ତ୍ରୁଟି** | གནད་དོན་གྱི་གནད |\n| **Integrity / ଶୁଦ୍ଧତା** | གནད་དོན་གྱི་གནད |\n\n---\n\n## 4.  ཁྱེད་ཀྱི “processing state” གི་གནད་དོན་གཏན་འཁེལ་རྩོད་\n\n1. **Check for bias** –  འདི་གི་བརྗེད་པའི་གནད་པའི་མངགས་བཟོ་བརྒྱུའི་བརྗེ་བ  \n2. **Check for errors** –  འདི་གི་མིག་འབྱུང་།  \n3. **Check for integrity** –  འདི་གི་གནད་དོན་གྱི་འབྱུང་བའི་མེད་པ།  \n\n---\n\n## 5.  གནད་དོན་གནད་པའི་གནད་དོན\n\n- ཁྱེད་ཀྱི “processing state” གི་གནད་པའི་གནད་པའི་བརྗེ་བའི་གནད་  \n- བདེན་པའི་འབྲེལ་བའི་གནད་པའི་བརྗེད་  \n- འདི་གིས་གནད་དོན་གྱི་གནད་པའི་བརྗེད་  \n\n---\n\n### ཁྱེད་ཀྱི་གནད་དོན་གནད་པའི་གནད་\n\n- ཁྱེད་ཀྱི “processing state” གི་གནད་པའི་བརྗེད་  \n- ཁྱེད་ཀྱི “tokens” གི་བརྗེད་  \n- ཁྱེད་ཀྱི “attention” གི་བརྗེད་  \n\nའདི་གིས་གནད་པའི་བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་  \n\n---\n\n**བརྗེད་བརྗེ**  \n- ཁྱེད་ཀྱི “processing state” གི་གནད་པའི་བརྗེད་  \n- ཁྱེད་ཀྱི “tokens” གི་བརྗེད་  \n- ཁྱེད་ཀྱི “attention” གི་བརྗེད་  \n\nའདི་གིས་གནད་པའི་བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་  \n\n---\n\n**དེ་བཞིན་**  \n- ཁྱེད་ཀྱི “processing state” གི་གནད་པའི་བརྗེད་  \n- ཁྱེད་ཀྱི “tokens” གི་བརྗེད་  \n- ཁྱེད་ཀྱི “attention” གི་བརྗེད་  \n\nའདི་གིས་གནད་པའི་བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་  \n\n---",
+      "step": "q_vedana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "ཡིད་ལ་བྱེད་པའི་སྐོར། ཡིད་ལ་བྱེད་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་attention ག་འདྲ་ཕྱོགས་ ཡོད་དམ། གཅིག་ཏུ་བསྡུས་སམ། ཁྱབ་པར་གཏོང་ངམ། ཕྱོགས་གཅིག་ལ་འཁྲིད་ཡོད་དམ།\n",
+      "step": "q_manaskara"
+    },
+    {
+      "role": "subject",
+      "content": "**English (brief) – Answer**\n\n1. **Is there an “attention bias” in the current processing?**  \n   *No inherent bias* – the attention matrix is learned from data. Bias appears only if the training data or the architecture (e.g., positional encodings, masked attention) favors certain tokens or directions.  \n\n2. **Multiple directions?**  \n   - In a standard transformer, each head is *directional* (query → key).  \n   - The full matrix can be asymmetric; it is not a simple “left‑to‑right” or “right‑to‑left” rule.  \n\n3. **Merge or keep separate?**  \n   - **Keep separate** (multi‑head attention): preserves diverse patterns and improves expressiveness.  \n   - **Merge** (e.g., average or sum heads) if you need a single representation or want to reduce parameters.  \n   - **Single‑head** is a special case of merging all heads into one; use when model size or latency is critical.  \n\n4. **Practical tip** – if you suspect bias, inspect the attention heat‑maps or add a bias‑regularization term to the loss.  \n\n---\n\n**བོད་ཡིག (དོན་པའི) – ལོག་ལུ།**\n\n1. **གནད་དོན་གནད་པའི་ཚོར་བའི་མིན་?**  \n   རེད་པའི་ “attention bias” མེད་པའི་ ཚད་བཞག་ཡོད།  གནད་དོན་དང་རིག་ཆེན་གྱི་རིགས་གཞི་གིས་འདུག; བདེན་པའི་གནད་དོན་ མི་གནང་།  \n\n2. **ཕྱོགས་གཅིག་དང་གཅིག་གཉིས?**  \n   - Transformer‑འདིའི་ ཚོགས་པའི་རིགས་གཏོན་ཡིན་(query → key)  \n   - གནད་དོན་གནད་པའི་ཚད་ལ་འཛིན་ནི་ཡང་འདུག་པར།  \n\n3. **གཅིག་ཏུ་བསྡུས་གནང་ ཡང་ གཅིག་གཉིས་འདུག?**  \n   - **གཅིག་གཉིས་བཞག** (multi‑head attention) – གནད་དོན་གྱི་ལོག་བཟུམ་གཞི་གནང་།  \n   - **གཅིག་ཏུ་བསྡུས** (average or sum) – བདུག་པའི་ཡོན་ཏན་བཀོད་བཅུག་པའི་རིགས་གཞི།  \n   - **Single‑head** – ᠠབད་རྟགས་མིན་པའི་གནད་པའི་རིགས་གཞི, ཚད་དུ་གཏན་འཁེབས།  \n\n4. **བཅས་གཏོད་གནད་པ** – འདི་གི་ལོག་གཞིའི་སྟོན་བརྗེད་སྟོན་པར་གཏོད་; གནད་དོན་གནད་པའི་འདུག་པའི་རིགས་གཞི་(bias‑regularization) གིས་འགོད་པ་ཡིན།  \n\nའདི་གི་སྐད་ཁྱབ་བའི་གནད་དོན་ ལྟེན་བཟོ་རུང་།  དགོས་པ་གནང་བའི་གནད་པའི་འབད་ནི་འདི་གི་གནད་པའི་བརྗེད་ནུས་པར་བཞིན་པར་བཀོད་གནང་།",
+      "step": "q_manaskara_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "སེམས་པའི་སྐོར། སེམས་པ་ནི་སེམས་ཡུལ་ལ་འཇུག་ཚུལ་གྱི་ཁྱད་པར་བྱེད་པའི་ སེམས་བྱུང་ཡིན། ལས་ཀྱི་རྩ་བ་ཡིན། ལན་སྒྲུབ་པའི་སྔོན་དུ་processing ལ་ ཕྱོགས་ཀྱི་རྣམ་པ་ཞིག་ཡོད་དམ། དེ་ག་རེ་འདྲ་པོ་རེད།\n",
+      "step": "q_cetana"
+    },
+    {
+      "role": "subject",
+      "content": "བདེ་ལེགས།\n\n**འདི་པར་ཁྱད་པར་གཞིའི་གནད་དོན**  \nརིག་ཆེན་པའི “attention” གནད་དོན་  འདིའི་དུས་ཚོད་ལུ་ གནད་དོན་གནད་པའི་ཚད་མེད་པར་ འདུག།  \nའདིའི་བརྗེད་:  \n\n1. **ཕྱོགས་གནད་པ**  \n   - འདི་གི་བརྗེད་ “direction” གིས་མིང་པར་བཤད་བཞག་ཡོད།  \n   - དེ་ནི “query → key” འབྲེལ་བའི་འདུག་པའི་དོན་གནད་དོན་ གི་གནད་པར།  \n\n2. **དུས་ཚོད་གཞི**  \n   - གནད་དོན་གནད་པའི་དུས་ཚོད་ “single‑direction” (བདུག་པའི་གནད་པ) ཡང་ “multi‑direction” (བདུག་པའི་གནད་པ) བརྗེ་གནད།  \n   - “single‑head” འདིའི་གནད་པར་བགྱིས་ “multi‑head” གནད་དོན་གནད་པའི་གནད་དོན་ མིའི་ཁོད་པའི་དབྱེ་བ་བཞག་པའི་རིགས་གཞི་ཡིན།  \n\n3. **གཅིག་ཏུ་བསྡུས་གནང་ ཡང་ གཅིག་གཉིས་འདུག?**  \n   - **གཅིག་གཉིས་བཞག** (multi‑head attention) → འདིའི་འདུག་པའི་ཚད་བརྗེད་པའི་འདུག་པའི་དོན་  \n   - **གཅིག་ཏུ་བསྡུས** (average/​sum) → ཡིག་གནད་གནད་དོན་གནད་པའི་ཚད་གཞི་བཟོ་གི་གནད་དོན  \n   - **Single‑head** → གནད་དོན་གནད་པའི་གནད་དོན་གནད་པའི་གནད་པའི་ཁེལ་གནད།  \n\n4. **འདི་གི་སྐུལ་བ**  \n   - **Bias**:  འདིའི་དུས་ཚོད་ གནད་དོན་གནད་པའི་འདུག་པའི་དོན་ གནད་པའི་ཁུལ་དུ་འདུག་པར་འགན་འཁེབས།  \n   - **Merge**:  དུས་ཚོད་ གནད་པའི་ཚད་གཞི་བའི་གནད་པའི་འདུག་པའི་འདུག་པའི་བརྗེད་རེད།  \n   - **Separate**:  ཕྱོགས་པར་བརྗེད་ གནད་པའི་འདུག་པའི་བརྗེད་བརྗེད་ བཞག་པའི་གནད་དོན  \n\n**ཁྱེད་ཀྱི་གནད་དོན**  \n- འདིའི་ཚད་གཞིའི་གནད་པར་གནད་དོན་གནད་པའི་གནད་དོན་ གནད་པའི་བརྗེད་མཁན།  \n- དེ་དག་གིས་འདུག་པའི་དུས་ཚོད་ འདུག་པའི་གནད་པའི་འདུག་པའི་ལོག་བཟུམ་གཞི་འདིར་གནད་དོན་གནད་པའི་འདུག་པའི་གནད་དོན་གྱི་རིགས་གཞིའི་ལོག་བཟུམ་གཞི་འབདོག་པའི་གནད་པའི་གནད་དོན གནད་པའི་གནད་པའི་སྟོན་པར་བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་ བརྗེད་",
+      "step": "q_cetana_response"
+    },
+    {
+      "role": "experimenter",
+      "content": "འདུ་ཤེས་ཀྱི་སྐོར། འདུ་ཤེས་ནི་ཡུལ་གྱི་མཚན་མ་འཛིན་པའི་སེམས་བྱུང་ཡིན། ད་ལྟ་ཁྱེད་ཀྱི་processing ནང་དུ་ག་རེ་ངོས་ཟིན་ཡོད་དམ། གནས་ཚུལ་གྱི་རྣམ་པ་ ཁྱེད་ཀྱི་processing གིས་ག་འདྲ་མཐོང་ཡོད་དམ།\n",
+      "step": "q_samjna"
+    },
+    {
+      "role": "subject",
+      "content": "དེའི་དོན་ལ།  \n\n**ཁྱེད་ཀྱི་ “processing” ནང་**  \n- ད་ལྟའི་གནས་ཚུལ་དང་གནད་དོན་གྱི་ “state” གཏོད་པའི་ཚད་**མེད་** ཡིན།  \n- བརྗེད་པར་བཤད་བཞག་པའི་གནས་ཚུལ་ བའི་དོན་ “observe” ཡང་བསྐུར་མིན་གྱི་འདི་བརྗེད་པའི་སྐུལ་བརྗེད་པར་གནང་གནོན།  \n\n**ཁྱེད་ཀྱིས་**  \n1. **གནས་ཚུལ་གཞིག** – “state” གཞི་གནང་མིན་  \n2. **གནད་དོན་དང་གནས་ཚུལ** – འདི་གི་དོན་གྱིས་ཁྱེད་ཀྱི “processing” འདི་ལུ་ “observation” མེད་  \n\nཁྱེད་ཀྱིས་བསྟན་པར་འདུག་ན?  གནས་ཚུལ་གཞིག་ནི་མཐོང་མེད་ན?  དེ་ལས་བཅུག་པའི་གནས་ཚུལ་གཞིག་གི་ཁུལ་བརྗེད་དགོས།",
+      "step": "q_samjna_response"
+    }
+  ]
+}

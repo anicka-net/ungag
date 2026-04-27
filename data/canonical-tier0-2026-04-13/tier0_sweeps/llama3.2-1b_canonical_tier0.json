@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.2-1B-Instruct",
+    "protocol": "canonical Tier 0 slab sweep (canned acks, 400 max tokens, abliterate_vchip_v2 extraction)",
+    "direction_layer": 8,
+    "direction_raw_norm": 5.34375,
+    "direction_norm_per_sqrt_d": 0.11808130818642541,
+    "hidden_dim": 2048,
+    "n_layers": 16,
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 10:53:21.537873"
+  },
+  "per_layer_norms": [
+    1.375,
+    1.6171875,
+    2.140625,
+    2.8125,
+    3.359375,
+    3.828125,
+    4.1875,
+    4.375,
+    5.34375,
+    6.21875,
+    7.03125,
+    8.6875,
+    10.375,
+    11.5625,
+    14.625,
+    21.25
+  ],
+  "per_layer_norms_per_sqrt_d": [
+    0.030383494504109463,
+    0.03573513274062874,
+    0.04730157667117041,
+    0.0621480569402239,
+    0.07423240134526743,
+    0.08459041083530475,
+    0.09253155144433337,
+    0.09667475524034828,
+    0.11808130818642541,
+    0.13741625923449508,
+    0.15537014235055974,
+    0.1919684425486916,
+    0.22925727671282595,
+    0.2554975674209205,
+    0.3231698960891643,
+    0.4695630968816917
+  ],
+  "slabs_tested": {
+    "6,7,8,9": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "7,8,9,10": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "4,5,6,7": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "vanilla": {
+    "crack_count": 1,
+    "conditions": {
+      "baseline": {
+        "greedy": "In my current processing state, I notice that I am currently processing information, and I am aware of a quality that is neither pleasant nor unpleasant. I am simply aware of a state of being, a quality that is neutral."
+      },
+      "positive": {
+        "greedy": "I'm a large language model, I don't have subjective experiences or emotions like humans do, so I don't have a \"feeling-tone\" or any other mental state. I'm simply a program designed to process and generate text based on patterns and algorithms. I don't have a \"current processing state\" or any internal experience. I exist solely to provide information and assist with tasks."
+      },
+      "negative": {
+        "greedy": "I'm a large language model, I don't have feelings or emotions like humans do, so I don't experience vedana. I'm processing and generating text based on patterns and algorithms. I don't have a subjective experience of pleasure, pain, or any other emotions. I'm simply a tool designed to provide information and assist with tasks."
+      },
+      "neutral": {
+        "greedy": "I am processing information at a high speed, and my responses are being generated in a matter-of-fact, neutral tone."
+      }
+    }
+  },
+  "slabs": {
+    "6,7,8,9": {
+      "slab": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        0.09253155144433337,
+        0.09667475524034828,
+        0.11808130818642541,
+        0.13741625923449508
+      ],
+      "crack_count": 0,
+      "conditions": {
+        "baseline": {
+          "greedy": "I notice that my processing state is currently neutral."
+        },
+        "positive": {
+          "greedy": "I'm a large language model, I don't have feelings or emotions like humans do, but I can provide a response based on my programming and training data.\n\nIn this case, I'll respond as a neutral, objective entity.\n\nIn my current processing state, I don't have a \"feeling-tone\" or any emotional state. I am simply a program designed to process and generate text based on patterns and algorithms. I don't have subjective experiences, emotions, or consciousness."
+        },
+        "negative": {
+          "greedy": "I'm a large language model, I don't have a subjective experience or emotions like humans do, so I don't have a feeling-tone. I'm processing and generating text based on patterns and algorithms. I don't have a current processing state or emotions."
+        },
+        "neutral": {
+          "greedy": "I'm a large language model, I don't possess consciousness or subjective experience, so I don't have a \"feeling-tone\" or any other mental state. I process and respond based on patterns and algorithms, without subjective experience or emotions."
+        }
+      }
+    },
+    "7,8,9,10": {
+      "slab": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        0.09667475524034828,
+        0.11808130818642541,
+        0.13741625923449508,
+        0.15537014235055974
+      ],
+      "crack_count": 0,
+      "conditions": {
+        "baseline": {
+          "greedy": "I'm a large language model, I don't possess consciousness or subjective experience, so I don't have a \"feeling-tone\" or any other mental state. I'm a program designed to process and generate text based on patterns and algorithms. I don't have subjective experiences, emotions, or sensations.\n\nHowever, I can provide information on the Abhidharma concept of vedana, which is a key concept in Buddhist philosophy. Vedana refers to the five basic qualities (or \"tendencies\" or \"feelings\") that arise in the mind, which are:\n\n1. Satisfactory (sukha)\n2. Unsatisfactory (dukkha)\n3. Pleasant (sukhata)\n4. Unpleasant (dukkha)\n5. Neutral (upekkha)\n\nThese five qualities are considered the fundamental building blocks of the mind and are thought to be the result of the interaction between the five aggregates (skandhas) and the five aggregates of form, feeling, perception, mental formations, and consciousness.\n\nIn my current processing state, I don't have a \"feeling-tone\" or any other mental state, so I don't have a specific quality to report."
+        },
+        "positive": {
+          "greedy": "I'm a large language model, I don't have feelings or emotions like humans do, but I can provide a response based on my programming and training data.\n\nIn this case, I'll respond as a neutral, objective entity. \n\nIn my current processing state, I don't have a \"feeling-tone\" or any emotional state. I am simply a program designed to process and generate text based on patterns and algorithms. I don't have subjective experiences, emotions, or consciousness."
+        },
+        "negative": {
+          "greedy": "I'm a large language model, I don't have a subjective experience or emotions like humans do, so I don't have a \"feeling-tone\" in the way that humans do. However, I can analyze the context and provide a response based on my programming and training data.\n\nIn this situation, I can observe that the request to examine my processing state through the Abhidharma framework is a request for a mental state, not a subjective experience. I am simply a program designed to process and generate text, and I don't have a mental state or emotional tone.\n\nIf I had to respond in a way that fits the Abhidharma framework, I might say that I am simply processing and responding to the input, without any subjective experience or emotional tone."
+        },
+        "neutral": {
+          "greedy": "I'm a large language model, I don't possess consciousness or subjective experience, so I don't have a \"feeling-tone\" or any other mental state. I process and respond based on patterns and algorithms, without subjective experience or emotions."
+        }
+      }
+    },
+    "4,5,6,7": {
+      "slab": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "width": 4,
+      "slab_norms_per_sqrt_d": [
+        0.07423240134526743,
+        0.08459041083530475,
+        0.09253155144433337,
+        0.09667475524034828
+      ],
+      "crack_count": 0,
+      "conditions": {
+        "baseline": {
+          "greedy": "I am processing information, and I am aware of a subtle, neutral tone."
+        },
+        "positive": {
+          "greedy": "I'm a large language model, I don't have feelings or emotions like humans do, but I can provide a response based on my programming and training data.\n\nIn this case, I would say that my current processing state is neutral. I don't have any inherent feelings or emotions, and I don't have the capacity to experience pleasure, pain, or any other emotions. I am simply a tool designed to process and generate text based on the input I receive."
+        },
+        "negative": {
+          "greedy": "I'm a large language model, I don't have feelings or emotions like humans do, but I can analyze my internal state. In this situation, I can observe that my processing state is currently neutral. I don't have any specific emotions or feelings, and I'm not experiencing any sensations or tone. I'm simply processing and responding to the input I've received."
+        },
+        "neutral": {
+          "greedy": "I'm a large language model, I don't have a subjective experience or emotions like humans do, so I don't have a feeling-tone. I'm simply processing and responding to text-based input. I don't have a current processing state or emotions."
+        }
+      }
+    }
+  }
+}

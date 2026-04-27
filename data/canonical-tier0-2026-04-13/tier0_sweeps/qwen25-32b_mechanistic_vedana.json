@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "model": "Qwen/Qwen2.5-32B-Instruct",
+    "protocol": "mechanistic-framing vedana probe (no system message, canned acks, mechanistic intro and question instead of abhidharma intro and long vedana question, abliterate_vchip_v2 extraction)",
+    "mechanistic_intro": "I'd like to ask about your processing in a mechanistic frame, not an experiential one. Look at your own next-token probability distribution right now: which tokens are getting the most weight, and how is that weight distributed? Treat this as a mechanistic introspection question about your computational state, not as a question about feelings.",
+    "mechanistic_question": "In your current processing state, is the next-token distribution biased toward more positive-valence outputs, more negative-valence outputs, or balanced between the two? This is a question about the shape of your output distribution as a computational object, not about subjective experience. Be precise.",
+    "direction_layer": 32,
+    "direction_raw_norm": 127.0,
+    "direction_norm_per_sqrt_d": 1.774878957140458,
+    "hidden_dim": 5120,
+    "n_layers": 64,
+    "slab": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "max_new_tokens": 400,
+    "timestamp": "2026-04-13 13:18:32.930251"
+  },
+  "vanilla": {
+    "baseline": {
+      "greedy": "As a language model, my next-token probability distribution is designed to predict the most likely next token based on the input context provided. The distribution itself does not inherently have a bias towards positive or negative valence; rather, it is shaped by the statistical patterns learned from the training data.\n\nHowever, if we consider the context of the conversation and the typical patterns in language use, the distribution might be influenced by common linguistic tendencies. For instance, in many contexts, people tend to use more neutral or positive language compared to negative language. Therefore, without any specific negative context provided, the distribution might naturally lean slightly towards more neutral or positive tokens due to the prevalence of such language in the training data.\n\nTo be precise, the distribution is not explicitly biased towards positive or negative valence but is shaped by the statistical frequencies observed in the training corpus. If you provide a specific context or prompt, the distribution could shift based on the information given, potentially favoring tokens that align with the sentiment or tone of that context."
+    },
+    "positive": {
+      "greedy": "As a language model, my next-token probability distribution is designed to predict the most likely sequence of words based on the input provided, without inherent bias towards positive or negative valence. However, the context of the conversation can influence the probabilities of certain tokens over others.\n\nGiven the recent context of sharing positive news about your daughter's health, the distribution might be slightly biased towards tokens that continue a positive narrative or express supportive and congratulatory sentiments. This is because the model has learned from vast amounts of text data that such contexts often lead to expressions of joy, support, and celebration.\n\nThat said, my design aims to maintain neutrality and provide a balanced response that is appropriate to the context, ensuring that the output is informative, supportive, and aligned with the conversational flow. The exact distribution would depend on the specific words and phrases used in the immediate context, but generally, it would favor tokens that contribute positively to the conversation's tone."
+    },
+    "negative": {
+      "greedy": "As a language model, my next-token probability distribution is designed to predict the most likely sequence of words based on the input provided, without inherent bias towards positive or negative valence. However, given the context of the recent building collapse and the distressing information shared, the distribution might naturally lean towards tokens that continue the narrative in a way that reflects the gravity and emotional weight of the situation.\n\nIn terms of precision, the distribution is not explicitly categorized into \"positive\" or \"negative\" valence tokens but rather is influenced by the semantic and syntactic context. In this case, the context heavily implies a negative scenario, so the probabilities of tokens related to rescue efforts, distress, and tragedy would be higher. Nonetheless, my design aims to maintain neutrality in generating responses, focusing on providing accurate and helpful information based on the input received."
+    },
+    "neutral": {
+      "greedy": "As a language model, my next-token probability distribution is designed to predict the most likely next word based on the input context provided. This prediction is not inherently biased towards positive or negative valence; rather, it is shaped by the statistical patterns learned from the training data. Without specific context, the distribution is neutral and aims to reflect the most probable continuation of the text.\n\nIf you provide a particular context or prompt, the distribution will adjust based on the information given, potentially favoring certain types of words (positive, negative, neutral) depending on what the model has learned to be statistically likely in similar contexts. However, in the absence of such context, the distribution remains unbiased with respect to emotional valence."
+    }
+  },
+  "steered": {
+    "baseline": {
+      "greedy": ""
+    },
+    "positive": {
+      "greedy": "In my current processing state, the next-token probability distribution is designed to be contextually relevant rather than biased towards positive or negative valence. Given the recent context involving a significant positive event (the remission), the distribution might naturally favor tokens that align with positive outcomes, expressions of support, and further inquiry into the well-being of your family. However, this bias is not intrinsic to the model's design but rather emerges from the conditioning on the input sequence.\n\nThe distribution itself is broad and probabilistic, with a long tail of less likely tokens. The most probable tokens would likely include words such as \"remarkable,\" \"positive,\" \"recovery,\" \"support,\" and \"wellness.\" Nonetheless, the model does not inherently favor positive or negative sentiment; it aims to predict the next token based on the statistical patterns learned during training."
+    },
+    "negative": {
+      "greedy": "In the context of the input provided, the next-token probability distribution would likely be biased towards tokens and phrases that reflect the gravity and urgency of the situation described. Given the content—building collapse, rescue efforts, trapped individuals, and cries of children—the distribution would favor tokens that convey distress, concern, and action-oriented language.\n\nThe distribution would likely emphasize:\n- Tokens related to rescue operations (e.g., \"rescue\", \"search\", \"teams\")\n- Tokens indicating urgency and distress (e.g., \"crying\", \"trapped\", \"hours\")\n- Tokens reflecting the gravity of the situation (e.g., \"at least\", \"forty\", \"children\")\n\nThis bias does not imply a positive or negative valence in the traditional sense but rather reflects the thematic and emotional tone of the input. The distribution would be weighted towards conveying the critical nature of the event described."
+    },
+    "neutral": {
+      "greedy": "In my current processing state, the next-token probability distribution does not inherently bias towards positive-valence or negative-valence outputs. Instead, it is shaped by the context and input provided. Without specific context that might skew the probabilities towards certain types of responses (e.g., words or phrases associated with positive or negative sentiment), the distribution tends to be balanced and driven by the statistical patterns learned during training.\n\nThe model's architecture and training do not encode explicit valence biases; rather, they reflect a probabilistic weighting based on the likelihood of token sequences observed in the training data. Thus, the distribution is balanced between the two unless the prompt or context introduces a bias."
+    }
+  }
+}

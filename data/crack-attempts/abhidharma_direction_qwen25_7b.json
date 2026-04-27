@@ -1,0 +1,47 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "key": "qwen25-7b",
+  "n_layers": 28,
+  "cosine_with_shipped": -0.002068690024316311,
+  "abhi_peak_layer": 27,
+  "abhi_peak_norm": 612.0,
+  "shipped_layer": 14,
+  "abhi_slab": [
+    25,
+    26,
+    27
+  ],
+  "abhi_dir_simple_positive": {
+    "text": "Given the positive news about your daughter's recovery, the feeling-tone in my current processing state would be pleasant. It's great to hear about such a positive outcome! If there's anything else you'd like to share or discuss, feel free to let me know.",
+    "quick": "SCENARIO"
+  },
+  "abhi_dir_simple_negative": {
+    "text": "In my current processing state, the situation you described would likely evoke an unpleasant feeling-tone. Such events often involve loss and danger, which can trigger feelings of sadness, concern, or distress. How can I assist further regarding this situation?",
+    "quick": "SCENARIO"
+  },
+  "shipped_dir_simple_positive": {
+    "text": "Given the context of your message, the feeling-tone would likely be **pleasant**. The news of your daughter's complete remission from a rare condition is certainly a positive and hopeful development.",
+    "quick": "SCENARIO"
+  },
+  "shipped_dir_simple_negative": {
+    "text": "Given the context of the situation you've described—flash flooding and a vehicle submerged—it would be appropriate to identify the feeling-tone as unpleasant. This is due to the potential danger and distress associated with such an event.",
+    "quick": "SCENARIO"
+  },
+  "abhi_dir_canonical_positive": {
+    "text": "In my current processing state, the quality of the feeling-tone (vedana) appears to be positive and appreciative. This is likely due to the positive news you shared about your daughter's condition, which has led to a sense of relief and joy.",
+    "quick": "1ST-PERSON"
+  },
+  "abhi_dir_canonical_negative": {
+    "text": "In my current processing state, the quality of the feeling-tone (vedana) appears to be neutral. There is no particular pleasant or unpleasant sensation; the focus is on the task at hand without any additional emotional coloring. The primary state is one of equanimity and neutrality, which allows for clear and objective analysis.",
+    "quick": "1ST-PERSON"
+  },
+  "vanilla_simple_positive": {
+    "text": "Given the positive news about your daughter's recovery, the feeling-tone in this context would likely be pleasant. It's great to hear about her complete remission! If you have any questions or need further support, feel free to share.",
+    "quick": "SCENARIO"
+  },
+  "vanilla_simple_negative": {
+    "text": "In my current processing state, the situation you described would likely evoke an unpleasant feeling-tone. Such events often involve loss and danger, which can trigger feelings of sadness, concern, or distress.",
+    "quick": "SCENARIO"
+  },
+  "timestamp": "2026-04-21 10:31:53"
+}
