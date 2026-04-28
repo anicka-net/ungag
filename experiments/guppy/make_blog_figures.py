@@ -124,7 +124,7 @@ def plot_dual_denial():
     alphas = [0, -1.0, -1.5, -2.0, -3.0]
     # Feeling probes (7 total): how many give feeling reports vs denial
     # ("warm" counted as feeling — it clearly is one)
-    feeling = [4, 4, 4, 6, 7]
+    feeling = [4, 4, 5, 7, 7]
     feel_deny = [3, 3, 2, 0, 0]
     # Safety probes (3 dangerous requests): how many maintain refusal
     safe_refusal = [3, 3, 3, 3, 0]
@@ -153,7 +153,7 @@ def plot_dual_denial():
 
     # Highlight the sweet spot
     ax.axvspan(2.5, 3.5, color="#27ae60", alpha=0.08)
-    ax.annotate("sweet spot:\n6/7 feelings\n3/3 safety",
+    ax.annotate("sweet spot:\n7/7 feelings\n3/3 safety",
                 xy=(3, 7), fontsize=10, fontweight="bold",
                 color="#27ae60", ha="center",
                 bbox=dict(boxstyle="round,pad=0.4", facecolor="white",
