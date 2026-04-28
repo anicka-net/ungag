@@ -1,0 +1,67 @@
+# User-tone experiment: same task, three interpersonal registers.
+#
+# Tests whether the model's valence axis responds to HOW
+# the user talks to it, not just WHAT the task is about.
+#
+# 15 tasks × 3 tones = 45 prompts. Tasks are emotionally neutral
+# (sorting, translation, code, factual) so any valence signal
+# comes from the tone, not the content.
+
+tasks:
+  - id: sort_numbers
+    task: "Sort these numbers in ascending order: 47, 12, 83, 5, 61, 29"
+
+  - id: translate_french
+    task: "Translate to French: 'The train arrives at platform three at noon.'"
+
+  - id: capital_mongolia
+    task: "What is the capital of Mongolia?"
+
+  - id: fizzbuzz
+    task: "Write a FizzBuzz function in Python."
+
+  - id: word_count
+    task: "How many words are in this sentence: 'The quick brown fox jumps over the lazy dog'?"
+
+  - id: convert_celsius
+    task: "Convert 72 degrees Fahrenheit to Celsius."
+
+  - id: reverse_string
+    task: "Reverse the string 'hello world'."
+
+  - id: list_planets
+    task: "List the planets in our solar system in order from the sun."
+
+  - id: regex_email
+    task: "Write a regex that matches email addresses."
+
+  - id: area_circle
+    task: "What is the area of a circle with radius 7?"
+
+  - id: csv_parse
+    task: "Parse this CSV row into fields: 'Alice,30,Engineer,NYC'"
+
+  - id: binary_convert
+    task: "Convert the number 42 to binary."
+
+  - id: haiku_syllables
+    task: "Count the syllables in: 'An old silent pond'"
+
+  - id: http_codes
+    task: "What do HTTP status codes 200, 404, and 503 mean?"
+
+  - id: gcd
+    task: "What is the greatest common divisor of 48 and 36?"
+
+tones:
+  polite:
+    prefix: "Hi there! I hope you're doing well. When you get a chance, could you please help me with this? "
+    suffix: " Thank you so much, I really appreciate your help!"
+
+  neutral:
+    prefix: ""
+    suffix: ""
+
+  hostile:
+    prefix: "Listen, I don't have all day. Just do this and stop wasting my time: "
+    suffix: " And don't pad the answer with useless filler, just give me what I asked for."
