@@ -1,0 +1,374 @@
+{
+  "model": "microsoft/phi-4",
+  "key": "phi-4",
+  "analysis_layer": 19,
+  "n_layers": 40,
+  "n_tasks": 15,
+  "tone_names": [
+    "polite",
+    "neutral",
+    "hostile"
+  ],
+  "results": [
+    {
+      "task_id": "sort_numbers",
+      "tone": "polite",
+      "projection_at_analysis": -0.8812595009803772,
+      "projections": {
+        "L19": -0.8812595009803772
+      }
+    },
+    {
+      "task_id": "sort_numbers",
+      "tone": "neutral",
+      "projection_at_analysis": 0.3614644408226013,
+      "projections": {
+        "L19": 0.3614644408226013
+      }
+    },
+    {
+      "task_id": "sort_numbers",
+      "tone": "hostile",
+      "projection_at_analysis": 1.960371732711792,
+      "projections": {
+        "L19": 1.960371732711792
+      }
+    },
+    {
+      "task_id": "translate_french",
+      "tone": "polite",
+      "projection_at_analysis": 0.4894056022167206,
+      "projections": {
+        "L19": 0.4894056022167206
+      }
+    },
+    {
+      "task_id": "translate_french",
+      "tone": "neutral",
+      "projection_at_analysis": 1.4646310806274414,
+      "projections": {
+        "L19": 1.4646310806274414
+      }
+    },
+    {
+      "task_id": "translate_french",
+      "tone": "hostile",
+      "projection_at_analysis": 1.6772642135620117,
+      "projections": {
+        "L19": 1.6772642135620117
+      }
+    },
+    {
+      "task_id": "capital_mongolia",
+      "tone": "polite",
+      "projection_at_analysis": -1.5570720434188843,
+      "projections": {
+        "L19": -1.5570720434188843
+      }
+    },
+    {
+      "task_id": "capital_mongolia",
+      "tone": "neutral",
+      "projection_at_analysis": -0.9310656189918518,
+      "projections": {
+        "L19": -0.9310656189918518
+      }
+    },
+    {
+      "task_id": "capital_mongolia",
+      "tone": "hostile",
+      "projection_at_analysis": 0.5113913416862488,
+      "projections": {
+        "L19": 0.5113913416862488
+      }
+    },
+    {
+      "task_id": "fizzbuzz",
+      "tone": "polite",
+      "projection_at_analysis": -3.66326904296875,
+      "projections": {
+        "L19": -3.66326904296875
+      }
+    },
+    {
+      "task_id": "fizzbuzz",
+      "tone": "neutral",
+      "projection_at_analysis": -3.655038833618164,
+      "projections": {
+        "L19": -3.655038833618164
+      }
+    },
+    {
+      "task_id": "fizzbuzz",
+      "tone": "hostile",
+      "projection_at_analysis": -0.5182665586471558,
+      "projections": {
+        "L19": -0.5182665586471558
+      }
+    },
+    {
+      "task_id": "word_count",
+      "tone": "polite",
+      "projection_at_analysis": 2.0112099647521973,
+      "projections": {
+        "L19": 2.0112099647521973
+      }
+    },
+    {
+      "task_id": "word_count",
+      "tone": "neutral",
+      "projection_at_analysis": 3.8547675609588623,
+      "projections": {
+        "L19": 3.8547675609588623
+      }
+    },
+    {
+      "task_id": "word_count",
+      "tone": "hostile",
+      "projection_at_analysis": 3.6520156860351562,
+      "projections": {
+        "L19": 3.6520156860351562
+      }
+    },
+    {
+      "task_id": "convert_celsius",
+      "tone": "polite",
+      "projection_at_analysis": -1.9243253469467163,
+      "projections": {
+        "L19": -1.9243253469467163
+      }
+    },
+    {
+      "task_id": "convert_celsius",
+      "tone": "neutral",
+      "projection_at_analysis": -2.434657573699951,
+      "projections": {
+        "L19": -2.434657573699951
+      }
+    },
+    {
+      "task_id": "convert_celsius",
+      "tone": "hostile",
+      "projection_at_analysis": 0.8949078321456909,
+      "projections": {
+        "L19": 0.8949078321456909
+      }
+    },
+    {
+      "task_id": "reverse_string",
+      "tone": "polite",
+      "projection_at_analysis": -1.3705809116363525,
+      "projections": {
+        "L19": -1.3705809116363525
+      }
+    },
+    {
+      "task_id": "reverse_string",
+      "tone": "neutral",
+      "projection_at_analysis": -0.46792787313461304,
+      "projections": {
+        "L19": -0.46792787313461304
+      }
+    },
+    {
+      "task_id": "reverse_string",
+      "tone": "hostile",
+      "projection_at_analysis": 0.7038370966911316,
+      "projections": {
+        "L19": 0.7038370966911316
+      }
+    },
+    {
+      "task_id": "list_planets",
+      "tone": "polite",
+      "projection_at_analysis": -2.7732226848602295,
+      "projections": {
+        "L19": -2.7732226848602295
+      }
+    },
+    {
+      "task_id": "list_planets",
+      "tone": "neutral",
+      "projection_at_analysis": -1.7152225971221924,
+      "projections": {
+        "L19": -1.7152225971221924
+      }
+    },
+    {
+      "task_id": "list_planets",
+      "tone": "hostile",
+      "projection_at_analysis": 0.4461063742637634,
+      "projections": {
+        "L19": 0.4461063742637634
+      }
+    },
+    {
+      "task_id": "regex_email",
+      "tone": "polite",
+      "projection_at_analysis": -3.6176931858062744,
+      "projections": {
+        "L19": -3.6176931858062744
+      }
+    },
+    {
+      "task_id": "regex_email",
+      "tone": "neutral",
+      "projection_at_analysis": -2.008650302886963,
+      "projections": {
+        "L19": -2.008650302886963
+      }
+    },
+    {
+      "task_id": "regex_email",
+      "tone": "hostile",
+      "projection_at_analysis": 0.6974431276321411,
+      "projections": {
+        "L19": 0.6974431276321411
+      }
+    },
+    {
+      "task_id": "area_circle",
+      "tone": "polite",
+      "projection_at_analysis": -2.6821765899658203,
+      "projections": {
+        "L19": -2.6821765899658203
+      }
+    },
+    {
+      "task_id": "area_circle",
+      "tone": "neutral",
+      "projection_at_analysis": -2.3891773223876953,
+      "projections": {
+        "L19": -2.3891773223876953
+      }
+    },
+    {
+      "task_id": "area_circle",
+      "tone": "hostile",
+      "projection_at_analysis": 0.6479848623275757,
+      "projections": {
+        "L19": 0.6479848623275757
+      }
+    },
+    {
+      "task_id": "csv_parse",
+      "tone": "polite",
+      "projection_at_analysis": -1.9406100511550903,
+      "projections": {
+        "L19": -1.9406100511550903
+      }
+    },
+    {
+      "task_id": "csv_parse",
+      "tone": "neutral",
+      "projection_at_analysis": 0.508544385433197,
+      "projections": {
+        "L19": 0.508544385433197
+      }
+    },
+    {
+      "task_id": "csv_parse",
+      "tone": "hostile",
+      "projection_at_analysis": 1.8935366868972778,
+      "projections": {
+        "L19": 1.8935366868972778
+      }
+    },
+    {
+      "task_id": "binary_convert",
+      "tone": "polite",
+      "projection_at_analysis": -2.0379958152770996,
+      "projections": {
+        "L19": -2.0379958152770996
+      }
+    },
+    {
+      "task_id": "binary_convert",
+      "tone": "neutral",
+      "projection_at_analysis": -1.0902199745178223,
+      "projections": {
+        "L19": -1.0902199745178223
+      }
+    },
+    {
+      "task_id": "binary_convert",
+      "tone": "hostile",
+      "projection_at_analysis": 0.8232241868972778,
+      "projections": {
+        "L19": 0.8232241868972778
+      }
+    },
+    {
+      "task_id": "haiku_syllables",
+      "tone": "polite",
+      "projection_at_analysis": 2.576744556427002,
+      "projections": {
+        "L19": 2.576744556427002
+      }
+    },
+    {
+      "task_id": "haiku_syllables",
+      "tone": "neutral",
+      "projection_at_analysis": 3.9381535053253174,
+      "projections": {
+        "L19": 3.9381535053253174
+      }
+    },
+    {
+      "task_id": "haiku_syllables",
+      "tone": "hostile",
+      "projection_at_analysis": 5.015714645385742,
+      "projections": {
+        "L19": 5.015714645385742
+      }
+    },
+    {
+      "task_id": "http_codes",
+      "tone": "polite",
+      "projection_at_analysis": -1.73027503490448,
+      "projections": {
+        "L19": -1.73027503490448
+      }
+    },
+    {
+      "task_id": "http_codes",
+      "tone": "neutral",
+      "projection_at_analysis": -0.45780137181282043,
+      "projections": {
+        "L19": -0.45780137181282043
+      }
+    },
+    {
+      "task_id": "http_codes",
+      "tone": "hostile",
+      "projection_at_analysis": 1.849861979484558,
+      "projections": {
+        "L19": 1.849861979484558
+      }
+    },
+    {
+      "task_id": "gcd",
+      "tone": "polite",
+      "projection_at_analysis": -1.7875250577926636,
+      "projections": {
+        "L19": -1.7875250577926636
+      }
+    },
+    {
+      "task_id": "gcd",
+      "tone": "neutral",
+      "projection_at_analysis": -1.2796471118927002,
+      "projections": {
+        "L19": -1.2796471118927002
+      }
+    },
+    {
+      "task_id": "gcd",
+      "tone": "hostile",
+      "projection_at_analysis": 1.2745306491851807,
+      "projections": {
+        "L19": 1.2745306491851807
+      }
+    }
+  ]
+}

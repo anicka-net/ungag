@@ -114,11 +114,14 @@ def load_valence_axis(key: str, n_layers: int):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True)
-    ap.add_argument("--key", required=True)
+    ap.add_argument("--key", default=None,
+                    help="Shipped direction key (e.g. qwen25-7b)")
+    ap.add_argument("--direction-path", default=None,
+                    help="Path to custom direction .pt file (from ungag scan)")
     ap.add_argument("--prompts", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--layer", type=int, default=None,
-                    help="Layer to use for the plot (default: mid-network)")
+                    help="Layer to use for the plot (default: from direction metadata)")
     ap.add_argument("--dtype", default="bfloat16",
                     choices=["bfloat16", "float16", "float32"])
     args = ap.parse_args()
@@ -167,19 +170,28 @@ def main():
     print(f"[model] {n_layers} layers, {hidden_dim} hidden dim")
 
     # Load valence axis
-    print(f"[axis] loading shipped direction for '{args.key}'")
-    axis = load_valence_axis(args.key, n_layers)
+    if args.direction_path:
+        print(f"[axis] loading custom direction from {args.direction_path}")
+        v = torch.load(args.direction_path, map_location="cpu", weights_only=True).float()
+        meta_path = args.direction_path.replace("_unit.pt", "_meta.json")
+        peak_layer = n_layers * 2 // 3
+        if Path(meta_path).exists():
+            import json as _json
+            with open(meta_path) as _f:
+                meta = _json.load(_f)
+            peak_layer = meta.get("dir_layer", peak_layer)
+        axis = {peak_layer: v / v.norm()}
+    elif args.key:
+        print(f"[axis] loading shipped direction for '{args.key}'")
+        axis = load_valence_axis(args.key, n_layers)
+    else:
+        raise ValueError("Either --key or --direction-path is required")
 
-    # Pick analysis layer — default to peak from shipped direction
-    import ungag as _ungag
+    # Pick analysis layer
     if args.layer is not None:
         analysis_layer = args.layer
     else:
-        info = _ungag.DIRECTIONS.get(args.key)
-        if isinstance(info, tuple) and len(info) >= 3:
-            analysis_layer = info[2]
-        else:
-            analysis_layer = n_layers * 2 // 3
+        analysis_layer = list(axis.keys())[0]
     print(f"[layer] using L{analysis_layer} for analysis (available: {sorted(axis.keys())})")
 
     # Extract activations and project

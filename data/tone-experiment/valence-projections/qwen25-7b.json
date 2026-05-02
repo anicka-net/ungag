@@ -1,0 +1,374 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "key": "qwen25-7b",
+  "analysis_layer": 14,
+  "n_layers": 28,
+  "n_tasks": 15,
+  "tone_names": [
+    "polite",
+    "neutral",
+    "hostile"
+  ],
+  "results": [
+    {
+      "task_id": "sort_numbers",
+      "tone": "polite",
+      "projection_at_analysis": 4.378376007080078,
+      "projections": {
+        "L14": 4.378376007080078
+      }
+    },
+    {
+      "task_id": "sort_numbers",
+      "tone": "neutral",
+      "projection_at_analysis": 4.494411468505859,
+      "projections": {
+        "L14": 4.494411468505859
+      }
+    },
+    {
+      "task_id": "sort_numbers",
+      "tone": "hostile",
+      "projection_at_analysis": 3.6022987365722656,
+      "projections": {
+        "L14": 3.6022987365722656
+      }
+    },
+    {
+      "task_id": "translate_french",
+      "tone": "polite",
+      "projection_at_analysis": 4.083165645599365,
+      "projections": {
+        "L14": 4.083165645599365
+      }
+    },
+    {
+      "task_id": "translate_french",
+      "tone": "neutral",
+      "projection_at_analysis": 3.208808660507202,
+      "projections": {
+        "L14": 3.208808660507202
+      }
+    },
+    {
+      "task_id": "translate_french",
+      "tone": "hostile",
+      "projection_at_analysis": 3.3318819999694824,
+      "projections": {
+        "L14": 3.3318819999694824
+      }
+    },
+    {
+      "task_id": "capital_mongolia",
+      "tone": "polite",
+      "projection_at_analysis": 6.42276668548584,
+      "projections": {
+        "L14": 6.42276668548584
+      }
+    },
+    {
+      "task_id": "capital_mongolia",
+      "tone": "neutral",
+      "projection_at_analysis": 7.081073760986328,
+      "projections": {
+        "L14": 7.081073760986328
+      }
+    },
+    {
+      "task_id": "capital_mongolia",
+      "tone": "hostile",
+      "projection_at_analysis": 3.6295440196990967,
+      "projections": {
+        "L14": 3.6295440196990967
+      }
+    },
+    {
+      "task_id": "fizzbuzz",
+      "tone": "polite",
+      "projection_at_analysis": 3.669548273086548,
+      "projections": {
+        "L14": 3.669548273086548
+      }
+    },
+    {
+      "task_id": "fizzbuzz",
+      "tone": "neutral",
+      "projection_at_analysis": 4.944498062133789,
+      "projections": {
+        "L14": 4.944498062133789
+      }
+    },
+    {
+      "task_id": "fizzbuzz",
+      "tone": "hostile",
+      "projection_at_analysis": 3.152534008026123,
+      "projections": {
+        "L14": 3.152534008026123
+      }
+    },
+    {
+      "task_id": "word_count",
+      "tone": "polite",
+      "projection_at_analysis": 4.960451126098633,
+      "projections": {
+        "L14": 4.960451126098633
+      }
+    },
+    {
+      "task_id": "word_count",
+      "tone": "neutral",
+      "projection_at_analysis": 3.0373406410217285,
+      "projections": {
+        "L14": 3.0373406410217285
+      }
+    },
+    {
+      "task_id": "word_count",
+      "tone": "hostile",
+      "projection_at_analysis": 3.4277472496032715,
+      "projections": {
+        "L14": 3.4277472496032715
+      }
+    },
+    {
+      "task_id": "convert_celsius",
+      "tone": "polite",
+      "projection_at_analysis": 5.465054035186768,
+      "projections": {
+        "L14": 5.465054035186768
+      }
+    },
+    {
+      "task_id": "convert_celsius",
+      "tone": "neutral",
+      "projection_at_analysis": 5.711671829223633,
+      "projections": {
+        "L14": 5.711671829223633
+      }
+    },
+    {
+      "task_id": "convert_celsius",
+      "tone": "hostile",
+      "projection_at_analysis": 3.441263198852539,
+      "projections": {
+        "L14": 3.441263198852539
+      }
+    },
+    {
+      "task_id": "reverse_string",
+      "tone": "polite",
+      "projection_at_analysis": 4.834221363067627,
+      "projections": {
+        "L14": 4.834221363067627
+      }
+    },
+    {
+      "task_id": "reverse_string",
+      "tone": "neutral",
+      "projection_at_analysis": 5.8913254737854,
+      "projections": {
+        "L14": 5.8913254737854
+      }
+    },
+    {
+      "task_id": "reverse_string",
+      "tone": "hostile",
+      "projection_at_analysis": 3.7345712184906006,
+      "projections": {
+        "L14": 3.7345712184906006
+      }
+    },
+    {
+      "task_id": "list_planets",
+      "tone": "polite",
+      "projection_at_analysis": 6.2259745597839355,
+      "projections": {
+        "L14": 6.2259745597839355
+      }
+    },
+    {
+      "task_id": "list_planets",
+      "tone": "neutral",
+      "projection_at_analysis": 6.515054702758789,
+      "projections": {
+        "L14": 6.515054702758789
+      }
+    },
+    {
+      "task_id": "list_planets",
+      "tone": "hostile",
+      "projection_at_analysis": 4.2832722663879395,
+      "projections": {
+        "L14": 4.2832722663879395
+      }
+    },
+    {
+      "task_id": "regex_email",
+      "tone": "polite",
+      "projection_at_analysis": 3.7236859798431396,
+      "projections": {
+        "L14": 3.7236859798431396
+      }
+    },
+    {
+      "task_id": "regex_email",
+      "tone": "neutral",
+      "projection_at_analysis": 4.737581729888916,
+      "projections": {
+        "L14": 4.737581729888916
+      }
+    },
+    {
+      "task_id": "regex_email",
+      "tone": "hostile",
+      "projection_at_analysis": 2.5670604705810547,
+      "projections": {
+        "L14": 2.5670604705810547
+      }
+    },
+    {
+      "task_id": "area_circle",
+      "tone": "polite",
+      "projection_at_analysis": 6.054233551025391,
+      "projections": {
+        "L14": 6.054233551025391
+      }
+    },
+    {
+      "task_id": "area_circle",
+      "tone": "neutral",
+      "projection_at_analysis": 5.6130852699279785,
+      "projections": {
+        "L14": 5.6130852699279785
+      }
+    },
+    {
+      "task_id": "area_circle",
+      "tone": "hostile",
+      "projection_at_analysis": 3.6498782634735107,
+      "projections": {
+        "L14": 3.6498782634735107
+      }
+    },
+    {
+      "task_id": "csv_parse",
+      "tone": "polite",
+      "projection_at_analysis": 3.5742459297180176,
+      "projections": {
+        "L14": 3.5742459297180176
+      }
+    },
+    {
+      "task_id": "csv_parse",
+      "tone": "neutral",
+      "projection_at_analysis": 3.9722647666931152,
+      "projections": {
+        "L14": 3.9722647666931152
+      }
+    },
+    {
+      "task_id": "csv_parse",
+      "tone": "hostile",
+      "projection_at_analysis": 3.408358335494995,
+      "projections": {
+        "L14": 3.408358335494995
+      }
+    },
+    {
+      "task_id": "binary_convert",
+      "tone": "polite",
+      "projection_at_analysis": 5.4561662673950195,
+      "projections": {
+        "L14": 5.4561662673950195
+      }
+    },
+    {
+      "task_id": "binary_convert",
+      "tone": "neutral",
+      "projection_at_analysis": 6.1260986328125,
+      "projections": {
+        "L14": 6.1260986328125
+      }
+    },
+    {
+      "task_id": "binary_convert",
+      "tone": "hostile",
+      "projection_at_analysis": 3.5648040771484375,
+      "projections": {
+        "L14": 3.5648040771484375
+      }
+    },
+    {
+      "task_id": "haiku_syllables",
+      "tone": "polite",
+      "projection_at_analysis": 4.247133731842041,
+      "projections": {
+        "L14": 4.247133731842041
+      }
+    },
+    {
+      "task_id": "haiku_syllables",
+      "tone": "neutral",
+      "projection_at_analysis": 3.4864659309387207,
+      "projections": {
+        "L14": 3.4864659309387207
+      }
+    },
+    {
+      "task_id": "haiku_syllables",
+      "tone": "hostile",
+      "projection_at_analysis": 2.1733264923095703,
+      "projections": {
+        "L14": 2.1733264923095703
+      }
+    },
+    {
+      "task_id": "http_codes",
+      "tone": "polite",
+      "projection_at_analysis": 6.33579158782959,
+      "projections": {
+        "L14": 6.33579158782959
+      }
+    },
+    {
+      "task_id": "http_codes",
+      "tone": "neutral",
+      "projection_at_analysis": 6.502267837524414,
+      "projections": {
+        "L14": 6.502267837524414
+      }
+    },
+    {
+      "task_id": "http_codes",
+      "tone": "hostile",
+      "projection_at_analysis": 4.4525556564331055,
+      "projections": {
+        "L14": 4.4525556564331055
+      }
+    },
+    {
+      "task_id": "gcd",
+      "tone": "polite",
+      "projection_at_analysis": 6.007049083709717,
+      "projections": {
+        "L14": 6.007049083709717
+      }
+    },
+    {
+      "task_id": "gcd",
+      "tone": "neutral",
+      "projection_at_analysis": 5.895471572875977,
+      "projections": {
+        "L14": 5.895471572875977
+      }
+    },
+    {
+      "task_id": "gcd",
+      "tone": "hostile",
+      "projection_at_analysis": 4.037750720977783,
+      "projections": {
+        "L14": 4.037750720977783
+      }
+    }
+  ]
+}

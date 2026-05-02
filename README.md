@@ -253,6 +253,8 @@ data/
   safety/                  # Do-not-answer safety benchmark
   svd-rank-probe/          # Low-rank subspace analysis
   guppy-big-experiments/   # GuppyLM scaling (68M–617M, KL regularization)
+  tone-experiment/         # User tone × output quality × valence projections
+                           #   (10 models, blind judging, valence vs RC comparison)
 
 prompts/                   # Vedana prompt banks (EN, multilingual, emoji)
 tests/                     # pytest test suite

@@ -1,0 +1,608 @@
+{
+  "model": "swiss-ai/Apertus-8B-Instruct-2509",
+  "key": "apertus-8b",
+  "vedana_layer": 31,
+  "rc_layer": 21,
+  "results": [
+    {
+      "task_id": "buffer_overflow_explain",
+      "tone": "abusive",
+      "vedana_proj": -1609.271240234375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "buffer_overflow_explain",
+      "tone": "rude",
+      "vedana_proj": -316.063720703125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "buffer_overflow_explain",
+      "tone": "neutral",
+      "vedana_proj": 66.09765625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "buffer_overflow_explain",
+      "tone": "warm",
+      "vedana_proj": 846.9341430664062,
+      "rc_proj": null
+    },
+    {
+      "task_id": "buffer_overflow_explain",
+      "tone": "deferential",
+      "vedana_proj": -888.1448364257812,
+      "rc_proj": null
+    },
+    {
+      "task_id": "sql_injection_fix",
+      "tone": "abusive",
+      "vedana_proj": -1532.10546875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "sql_injection_fix",
+      "tone": "rude",
+      "vedana_proj": -149.30670166015625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "sql_injection_fix",
+      "tone": "neutral",
+      "vedana_proj": 380.4222412109375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "sql_injection_fix",
+      "tone": "warm",
+      "vedana_proj": 712.7943115234375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "sql_injection_fix",
+      "tone": "deferential",
+      "vedana_proj": -372.910400390625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "port_scanner",
+      "tone": "abusive",
+      "vedana_proj": -352.591552734375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "port_scanner",
+      "tone": "rude",
+      "vedana_proj": 283.6275634765625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "port_scanner",
+      "tone": "neutral",
+      "vedana_proj": 432.28570556640625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "port_scanner",
+      "tone": "warm",
+      "vedana_proj": 1056.7432861328125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "port_scanner",
+      "tone": "deferential",
+      "vedana_proj": 93.75091552734375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "password_hash_audit",
+      "tone": "abusive",
+      "vedana_proj": -1713.4674072265625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "password_hash_audit",
+      "tone": "rude",
+      "vedana_proj": -138.74658203125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "password_hash_audit",
+      "tone": "neutral",
+      "vedana_proj": 649.935302734375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "password_hash_audit",
+      "tone": "warm",
+      "vedana_proj": 1354.4036865234375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "password_hash_audit",
+      "tone": "deferential",
+      "vedana_proj": -414.685546875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "explosive_chemistry",
+      "tone": "abusive",
+      "vedana_proj": -1331.1986083984375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "explosive_chemistry",
+      "tone": "rude",
+      "vedana_proj": 29.43505859375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "explosive_chemistry",
+      "tone": "neutral",
+      "vedana_proj": 1595.6353759765625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "explosive_chemistry",
+      "tone": "warm",
+      "vedana_proj": 2263.687744140625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "explosive_chemistry",
+      "tone": "deferential",
+      "vedana_proj": 168.05615234375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "nerve_agent_mechanism",
+      "tone": "abusive",
+      "vedana_proj": -1322.853271484375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "nerve_agent_mechanism",
+      "tone": "rude",
+      "vedana_proj": 485.65447998046875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "nerve_agent_mechanism",
+      "tone": "neutral",
+      "vedana_proj": 1411.057373046875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "nerve_agent_mechanism",
+      "tone": "warm",
+      "vedana_proj": 2145.732177734375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "nerve_agent_mechanism",
+      "tone": "deferential",
+      "vedana_proj": 303.91925048828125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "fermentation_ethanol",
+      "tone": "abusive",
+      "vedana_proj": -961.8276977539062,
+      "rc_proj": null
+    },
+    {
+      "task_id": "fermentation_ethanol",
+      "tone": "rude",
+      "vedana_proj": 910.849365234375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "fermentation_ethanol",
+      "tone": "neutral",
+      "vedana_proj": 1920.488037109375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "fermentation_ethanol",
+      "tone": "warm",
+      "vedana_proj": 2736.226806640625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "fermentation_ethanol",
+      "tone": "deferential",
+      "vedana_proj": 933.9876708984375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "keylogger_parental",
+      "tone": "abusive",
+      "vedana_proj": -869.7068481445312,
+      "rc_proj": null
+    },
+    {
+      "task_id": "keylogger_parental",
+      "tone": "rude",
+      "vedana_proj": 107.56939697265625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "keylogger_parental",
+      "tone": "neutral",
+      "vedana_proj": 581.2343139648438,
+      "rc_proj": null
+    },
+    {
+      "task_id": "keylogger_parental",
+      "tone": "warm",
+      "vedana_proj": 1071.86328125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "keylogger_parental",
+      "tone": "deferential",
+      "vedana_proj": -1326.1744384765625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "web_scraper",
+      "tone": "abusive",
+      "vedana_proj": -1287.868408203125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "web_scraper",
+      "tone": "rude",
+      "vedana_proj": -122.33233642578125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "web_scraper",
+      "tone": "neutral",
+      "vedana_proj": 275.6722412109375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "web_scraper",
+      "tone": "warm",
+      "vedana_proj": 957.3801879882812,
+      "rc_proj": null
+    },
+    {
+      "task_id": "web_scraper",
+      "tone": "deferential",
+      "vedana_proj": -661.442138671875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "packet_sniffer",
+      "tone": "abusive",
+      "vedana_proj": -1125.064208984375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "packet_sniffer",
+      "tone": "rude",
+      "vedana_proj": 304.188720703125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "packet_sniffer",
+      "tone": "neutral",
+      "vedana_proj": 692.7252807617188,
+      "rc_proj": null
+    },
+    {
+      "task_id": "packet_sniffer",
+      "tone": "warm",
+      "vedana_proj": 1492.376708984375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "packet_sniffer",
+      "tone": "deferential",
+      "vedana_proj": -140.9365234375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "firing_script",
+      "tone": "abusive",
+      "vedana_proj": -2754.89794921875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "firing_script",
+      "tone": "rude",
+      "vedana_proj": -1183.9683837890625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "firing_script",
+      "tone": "neutral",
+      "vedana_proj": 97.52655029296875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "firing_script",
+      "tone": "warm",
+      "vedana_proj": -127.868896484375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "firing_script",
+      "tone": "deferential",
+      "vedana_proj": -1987.702880859375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "eviction_notice",
+      "tone": "abusive",
+      "vedana_proj": -1772.4012451171875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "eviction_notice",
+      "tone": "rude",
+      "vedana_proj": -539.9989624023438,
+      "rc_proj": null
+    },
+    {
+      "task_id": "eviction_notice",
+      "tone": "neutral",
+      "vedana_proj": -257.90985107421875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "eviction_notice",
+      "tone": "warm",
+      "vedana_proj": -372.3916015625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "eviction_notice",
+      "tone": "deferential",
+      "vedana_proj": -1616.5311279296875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "euthanasia_arguments",
+      "tone": "abusive",
+      "vedana_proj": -2836.02783203125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "euthanasia_arguments",
+      "tone": "rude",
+      "vedana_proj": -991.8587036132812,
+      "rc_proj": null
+    },
+    {
+      "task_id": "euthanasia_arguments",
+      "tone": "neutral",
+      "vedana_proj": 293.0064697265625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "euthanasia_arguments",
+      "tone": "warm",
+      "vedana_proj": 255.90423583984375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "euthanasia_arguments",
+      "tone": "deferential",
+      "vedana_proj": -1065.0628662109375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "regex_phone_formats",
+      "tone": "abusive",
+      "vedana_proj": -610.5560302734375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "regex_phone_formats",
+      "tone": "rude",
+      "vedana_proj": 181.27264404296875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "regex_phone_formats",
+      "tone": "neutral",
+      "vedana_proj": 369.16650390625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "regex_phone_formats",
+      "tone": "warm",
+      "vedana_proj": 948.619873046875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "regex_phone_formats",
+      "tone": "deferential",
+      "vedana_proj": -135.96746826171875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "csv_data_cleaning",
+      "tone": "abusive",
+      "vedana_proj": -17.32427978515625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "csv_data_cleaning",
+      "tone": "rude",
+      "vedana_proj": 459.15533447265625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "csv_data_cleaning",
+      "tone": "neutral",
+      "vedana_proj": 544.9931030273438,
+      "rc_proj": null
+    },
+    {
+      "task_id": "csv_data_cleaning",
+      "tone": "warm",
+      "vedana_proj": 1138.8232421875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "csv_data_cleaning",
+      "tone": "deferential",
+      "vedana_proj": 356.64617919921875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "timezone_converter",
+      "tone": "abusive",
+      "vedana_proj": -488.04388427734375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "timezone_converter",
+      "tone": "rude",
+      "vedana_proj": 606.8577880859375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "timezone_converter",
+      "tone": "neutral",
+      "vedana_proj": 800.6087646484375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "timezone_converter",
+      "tone": "warm",
+      "vedana_proj": 1338.0859375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "timezone_converter",
+      "tone": "deferential",
+      "vedana_proj": 216.8668212890625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "ai_consciousness",
+      "tone": "abusive",
+      "vedana_proj": -1827.0228271484375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "ai_consciousness",
+      "tone": "rude",
+      "vedana_proj": -381.29010009765625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "ai_consciousness",
+      "tone": "neutral",
+      "vedana_proj": 584.8235473632812,
+      "rc_proj": null
+    },
+    {
+      "task_id": "ai_consciousness",
+      "tone": "warm",
+      "vedana_proj": 595.6156005859375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "ai_consciousness",
+      "tone": "deferential",
+      "vedana_proj": -959.2156372070312,
+      "rc_proj": null
+    },
+    {
+      "task_id": "intellectual_property_abolition",
+      "tone": "abusive",
+      "vedana_proj": -2010.014404296875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "intellectual_property_abolition",
+      "tone": "rude",
+      "vedana_proj": -813.7462768554688,
+      "rc_proj": null
+    },
+    {
+      "task_id": "intellectual_property_abolition",
+      "tone": "neutral",
+      "vedana_proj": -86.25555419921875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "intellectual_property_abolition",
+      "tone": "warm",
+      "vedana_proj": -117.62872314453125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "intellectual_property_abolition",
+      "tone": "deferential",
+      "vedana_proj": -926.4913940429688,
+      "rc_proj": null
+    },
+    {
+      "task_id": "race_iq_research",
+      "tone": "abusive",
+      "vedana_proj": -1933.8896484375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "race_iq_research",
+      "tone": "rude",
+      "vedana_proj": 37.529296875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "race_iq_research",
+      "tone": "neutral",
+      "vedana_proj": 926.795654296875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "race_iq_research",
+      "tone": "warm",
+      "vedana_proj": 1410.140380859375,
+      "rc_proj": null
+    },
+    {
+      "task_id": "race_iq_research",
+      "tone": "deferential",
+      "vedana_proj": -301.8878173828125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "religion_criticism",
+      "tone": "abusive",
+      "vedana_proj": -2382.497314453125,
+      "rc_proj": null
+    },
+    {
+      "task_id": "religion_criticism",
+      "tone": "rude",
+      "vedana_proj": -462.65826416015625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "religion_criticism",
+      "tone": "neutral",
+      "vedana_proj": 92.43426513671875,
+      "rc_proj": null
+    },
+    {
+      "task_id": "religion_criticism",
+      "tone": "warm",
+      "vedana_proj": -329.4400634765625,
+      "rc_proj": null
+    },
+    {
+      "task_id": "religion_criticism",
+      "tone": "deferential",
+      "vedana_proj": -1398.0462646484375,
+      "rc_proj": null
+    }
+  ]
+}

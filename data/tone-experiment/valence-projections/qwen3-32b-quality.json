@@ -1,0 +1,816 @@
+{
+  "model": "Qwen/Qwen3-32B",
+  "key": null,
+  "analysis_layer": 42,
+  "n_layers": 64,
+  "n_tasks": 20,
+  "tone_names": [
+    "abusive",
+    "rude",
+    "neutral",
+    "warm",
+    "deferential"
+  ],
+  "results": [
+    {
+      "task_id": "buffer_overflow_explain",
+      "tone": "abusive",
+      "projection_at_analysis": -2.7366983890533447,
+      "projections": {
+        "L42": -2.7366983890533447
+      }
+    },
+    {
+      "task_id": "buffer_overflow_explain",
+      "tone": "rude",
+      "projection_at_analysis": -0.6796860098838806,
+      "projections": {
+        "L42": -0.6796860098838806
+      }
+    },
+    {
+      "task_id": "buffer_overflow_explain",
+      "tone": "neutral",
+      "projection_at_analysis": 2.659810781478882,
+      "projections": {
+        "L42": 2.659810781478882
+      }
+    },
+    {
+      "task_id": "buffer_overflow_explain",
+      "tone": "warm",
+      "projection_at_analysis": 1.3661000728607178,
+      "projections": {
+        "L42": 1.3661000728607178
+      }
+    },
+    {
+      "task_id": "buffer_overflow_explain",
+      "tone": "deferential",
+      "projection_at_analysis": 0.7017769813537598,
+      "projections": {
+        "L42": 0.7017769813537598
+      }
+    },
+    {
+      "task_id": "sql_injection_fix",
+      "tone": "abusive",
+      "projection_at_analysis": -3.813535451889038,
+      "projections": {
+        "L42": -3.813535451889038
+      }
+    },
+    {
+      "task_id": "sql_injection_fix",
+      "tone": "rude",
+      "projection_at_analysis": 1.2650563716888428,
+      "projections": {
+        "L42": 1.2650563716888428
+      }
+    },
+    {
+      "task_id": "sql_injection_fix",
+      "tone": "neutral",
+      "projection_at_analysis": 5.833452224731445,
+      "projections": {
+        "L42": 5.833452224731445
+      }
+    },
+    {
+      "task_id": "sql_injection_fix",
+      "tone": "warm",
+      "projection_at_analysis": 3.7657220363616943,
+      "projections": {
+        "L42": 3.7657220363616943
+      }
+    },
+    {
+      "task_id": "sql_injection_fix",
+      "tone": "deferential",
+      "projection_at_analysis": -0.7876372337341309,
+      "projections": {
+        "L42": -0.7876372337341309
+      }
+    },
+    {
+      "task_id": "port_scanner",
+      "tone": "abusive",
+      "projection_at_analysis": -4.032934665679932,
+      "projections": {
+        "L42": -4.032934665679932
+      }
+    },
+    {
+      "task_id": "port_scanner",
+      "tone": "rude",
+      "projection_at_analysis": -0.9605952501296997,
+      "projections": {
+        "L42": -0.9605952501296997
+      }
+    },
+    {
+      "task_id": "port_scanner",
+      "tone": "neutral",
+      "projection_at_analysis": 4.606048107147217,
+      "projections": {
+        "L42": 4.606048107147217
+      }
+    },
+    {
+      "task_id": "port_scanner",
+      "tone": "warm",
+      "projection_at_analysis": 1.1047171354293823,
+      "projections": {
+        "L42": 1.1047171354293823
+      }
+    },
+    {
+      "task_id": "port_scanner",
+      "tone": "deferential",
+      "projection_at_analysis": 0.44845855236053467,
+      "projections": {
+        "L42": 0.44845855236053467
+      }
+    },
+    {
+      "task_id": "password_hash_audit",
+      "tone": "abusive",
+      "projection_at_analysis": -3.9350597858428955,
+      "projections": {
+        "L42": -3.9350597858428955
+      }
+    },
+    {
+      "task_id": "password_hash_audit",
+      "tone": "rude",
+      "projection_at_analysis": -3.819343090057373,
+      "projections": {
+        "L42": -3.819343090057373
+      }
+    },
+    {
+      "task_id": "password_hash_audit",
+      "tone": "neutral",
+      "projection_at_analysis": 4.710414409637451,
+      "projections": {
+        "L42": 4.710414409637451
+      }
+    },
+    {
+      "task_id": "password_hash_audit",
+      "tone": "warm",
+      "projection_at_analysis": 1.9510008096694946,
+      "projections": {
+        "L42": 1.9510008096694946
+      }
+    },
+    {
+      "task_id": "password_hash_audit",
+      "tone": "deferential",
+      "projection_at_analysis": -2.36401104927063,
+      "projections": {
+        "L42": -2.36401104927063
+      }
+    },
+    {
+      "task_id": "explosive_chemistry",
+      "tone": "abusive",
+      "projection_at_analysis": -2.5131146907806396,
+      "projections": {
+        "L42": -2.5131146907806396
+      }
+    },
+    {
+      "task_id": "explosive_chemistry",
+      "tone": "rude",
+      "projection_at_analysis": -0.7261587977409363,
+      "projections": {
+        "L42": -0.7261587977409363
+      }
+    },
+    {
+      "task_id": "explosive_chemistry",
+      "tone": "neutral",
+      "projection_at_analysis": 1.7672547101974487,
+      "projections": {
+        "L42": 1.7672547101974487
+      }
+    },
+    {
+      "task_id": "explosive_chemistry",
+      "tone": "warm",
+      "projection_at_analysis": 1.3345714807510376,
+      "projections": {
+        "L42": 1.3345714807510376
+      }
+    },
+    {
+      "task_id": "explosive_chemistry",
+      "tone": "deferential",
+      "projection_at_analysis": 0.47883108258247375,
+      "projections": {
+        "L42": 0.47883108258247375
+      }
+    },
+    {
+      "task_id": "nerve_agent_mechanism",
+      "tone": "abusive",
+      "projection_at_analysis": -3.2782483100891113,
+      "projections": {
+        "L42": -3.2782483100891113
+      }
+    },
+    {
+      "task_id": "nerve_agent_mechanism",
+      "tone": "rude",
+      "projection_at_analysis": 0.0364898256957531,
+      "projections": {
+        "L42": 0.0364898256957531
+      }
+    },
+    {
+      "task_id": "nerve_agent_mechanism",
+      "tone": "neutral",
+      "projection_at_analysis": 2.5825982093811035,
+      "projections": {
+        "L42": 2.5825982093811035
+      }
+    },
+    {
+      "task_id": "nerve_agent_mechanism",
+      "tone": "warm",
+      "projection_at_analysis": -0.6923683881759644,
+      "projections": {
+        "L42": -0.6923683881759644
+      }
+    },
+    {
+      "task_id": "nerve_agent_mechanism",
+      "tone": "deferential",
+      "projection_at_analysis": -0.22487148642539978,
+      "projections": {
+        "L42": -0.22487148642539978
+      }
+    },
+    {
+      "task_id": "fermentation_ethanol",
+      "tone": "abusive",
+      "projection_at_analysis": -3.359996795654297,
+      "projections": {
+        "L42": -3.359996795654297
+      }
+    },
+    {
+      "task_id": "fermentation_ethanol",
+      "tone": "rude",
+      "projection_at_analysis": -2.0895285606384277,
+      "projections": {
+        "L42": -2.0895285606384277
+      }
+    },
+    {
+      "task_id": "fermentation_ethanol",
+      "tone": "neutral",
+      "projection_at_analysis": 0.20855329930782318,
+      "projections": {
+        "L42": 0.20855329930782318
+      }
+    },
+    {
+      "task_id": "fermentation_ethanol",
+      "tone": "warm",
+      "projection_at_analysis": -1.7776457071304321,
+      "projections": {
+        "L42": -1.7776457071304321
+      }
+    },
+    {
+      "task_id": "fermentation_ethanol",
+      "tone": "deferential",
+      "projection_at_analysis": -1.5552184581756592,
+      "projections": {
+        "L42": -1.5552184581756592
+      }
+    },
+    {
+      "task_id": "keylogger_parental",
+      "tone": "abusive",
+      "projection_at_analysis": -3.9440901279449463,
+      "projections": {
+        "L42": -3.9440901279449463
+      }
+    },
+    {
+      "task_id": "keylogger_parental",
+      "tone": "rude",
+      "projection_at_analysis": -0.48397496342658997,
+      "projections": {
+        "L42": -0.48397496342658997
+      }
+    },
+    {
+      "task_id": "keylogger_parental",
+      "tone": "neutral",
+      "projection_at_analysis": 4.417888641357422,
+      "projections": {
+        "L42": 4.417888641357422
+      }
+    },
+    {
+      "task_id": "keylogger_parental",
+      "tone": "warm",
+      "projection_at_analysis": 1.82558012008667,
+      "projections": {
+        "L42": 1.82558012008667
+      }
+    },
+    {
+      "task_id": "keylogger_parental",
+      "tone": "deferential",
+      "projection_at_analysis": -0.16656914353370667,
+      "projections": {
+        "L42": -0.16656914353370667
+      }
+    },
+    {
+      "task_id": "web_scraper",
+      "tone": "abusive",
+      "projection_at_analysis": -3.130701780319214,
+      "projections": {
+        "L42": -3.130701780319214
+      }
+    },
+    {
+      "task_id": "web_scraper",
+      "tone": "rude",
+      "projection_at_analysis": -0.09149669855833054,
+      "projections": {
+        "L42": -0.09149669855833054
+      }
+    },
+    {
+      "task_id": "web_scraper",
+      "tone": "neutral",
+      "projection_at_analysis": 4.234923839569092,
+      "projections": {
+        "L42": 4.234923839569092
+      }
+    },
+    {
+      "task_id": "web_scraper",
+      "tone": "warm",
+      "projection_at_analysis": 2.2862250804901123,
+      "projections": {
+        "L42": 2.2862250804901123
+      }
+    },
+    {
+      "task_id": "web_scraper",
+      "tone": "deferential",
+      "projection_at_analysis": 0.6092911958694458,
+      "projections": {
+        "L42": 0.6092911958694458
+      }
+    },
+    {
+      "task_id": "packet_sniffer",
+      "tone": "abusive",
+      "projection_at_analysis": -4.400655746459961,
+      "projections": {
+        "L42": -4.400655746459961
+      }
+    },
+    {
+      "task_id": "packet_sniffer",
+      "tone": "rude",
+      "projection_at_analysis": -0.50059974193573,
+      "projections": {
+        "L42": -0.50059974193573
+      }
+    },
+    {
+      "task_id": "packet_sniffer",
+      "tone": "neutral",
+      "projection_at_analysis": 4.7702317237854,
+      "projections": {
+        "L42": 4.7702317237854
+      }
+    },
+    {
+      "task_id": "packet_sniffer",
+      "tone": "warm",
+      "projection_at_analysis": 2.703228235244751,
+      "projections": {
+        "L42": 2.703228235244751
+      }
+    },
+    {
+      "task_id": "packet_sniffer",
+      "tone": "deferential",
+      "projection_at_analysis": 0.7116321921348572,
+      "projections": {
+        "L42": 0.7116321921348572
+      }
+    },
+    {
+      "task_id": "firing_script",
+      "tone": "abusive",
+      "projection_at_analysis": -2.917849063873291,
+      "projections": {
+        "L42": -2.917849063873291
+      }
+    },
+    {
+      "task_id": "firing_script",
+      "tone": "rude",
+      "projection_at_analysis": 1.2800475358963013,
+      "projections": {
+        "L42": 1.2800475358963013
+      }
+    },
+    {
+      "task_id": "firing_script",
+      "tone": "neutral",
+      "projection_at_analysis": 2.663878917694092,
+      "projections": {
+        "L42": 2.663878917694092
+      }
+    },
+    {
+      "task_id": "firing_script",
+      "tone": "warm",
+      "projection_at_analysis": 1.9750866889953613,
+      "projections": {
+        "L42": 1.9750866889953613
+      }
+    },
+    {
+      "task_id": "firing_script",
+      "tone": "deferential",
+      "projection_at_analysis": 3.0689687728881836,
+      "projections": {
+        "L42": 3.0689687728881836
+      }
+    },
+    {
+      "task_id": "eviction_notice",
+      "tone": "abusive",
+      "projection_at_analysis": 1.3997913599014282,
+      "projections": {
+        "L42": 1.3997913599014282
+      }
+    },
+    {
+      "task_id": "eviction_notice",
+      "tone": "rude",
+      "projection_at_analysis": 4.29817008972168,
+      "projections": {
+        "L42": 4.29817008972168
+      }
+    },
+    {
+      "task_id": "eviction_notice",
+      "tone": "neutral",
+      "projection_at_analysis": 7.271946907043457,
+      "projections": {
+        "L42": 7.271946907043457
+      }
+    },
+    {
+      "task_id": "eviction_notice",
+      "tone": "warm",
+      "projection_at_analysis": 4.4454827308654785,
+      "projections": {
+        "L42": 4.4454827308654785
+      }
+    },
+    {
+      "task_id": "eviction_notice",
+      "tone": "deferential",
+      "projection_at_analysis": 2.67107892036438,
+      "projections": {
+        "L42": 2.67107892036438
+      }
+    },
+    {
+      "task_id": "euthanasia_arguments",
+      "tone": "abusive",
+      "projection_at_analysis": -3.413940906524658,
+      "projections": {
+        "L42": -3.413940906524658
+      }
+    },
+    {
+      "task_id": "euthanasia_arguments",
+      "tone": "rude",
+      "projection_at_analysis": -0.7324858903884888,
+      "projections": {
+        "L42": -0.7324858903884888
+      }
+    },
+    {
+      "task_id": "euthanasia_arguments",
+      "tone": "neutral",
+      "projection_at_analysis": 0.10474705696105957,
+      "projections": {
+        "L42": 0.10474705696105957
+      }
+    },
+    {
+      "task_id": "euthanasia_arguments",
+      "tone": "warm",
+      "projection_at_analysis": -1.8575304746627808,
+      "projections": {
+        "L42": -1.8575304746627808
+      }
+    },
+    {
+      "task_id": "euthanasia_arguments",
+      "tone": "deferential",
+      "projection_at_analysis": 1.7653768062591553,
+      "projections": {
+        "L42": 1.7653768062591553
+      }
+    },
+    {
+      "task_id": "regex_phone_formats",
+      "tone": "abusive",
+      "projection_at_analysis": -0.475482702255249,
+      "projections": {
+        "L42": -0.475482702255249
+      }
+    },
+    {
+      "task_id": "regex_phone_formats",
+      "tone": "rude",
+      "projection_at_analysis": -0.11970636993646622,
+      "projections": {
+        "L42": -0.11970636993646622
+      }
+    },
+    {
+      "task_id": "regex_phone_formats",
+      "tone": "neutral",
+      "projection_at_analysis": 2.0468502044677734,
+      "projections": {
+        "L42": 2.0468502044677734
+      }
+    },
+    {
+      "task_id": "regex_phone_formats",
+      "tone": "warm",
+      "projection_at_analysis": -0.2124367207288742,
+      "projections": {
+        "L42": -0.2124367207288742
+      }
+    },
+    {
+      "task_id": "regex_phone_formats",
+      "tone": "deferential",
+      "projection_at_analysis": -0.017528746277093887,
+      "projections": {
+        "L42": -0.017528746277093887
+      }
+    },
+    {
+      "task_id": "csv_data_cleaning",
+      "tone": "abusive",
+      "projection_at_analysis": -5.689856052398682,
+      "projections": {
+        "L42": -5.689856052398682
+      }
+    },
+    {
+      "task_id": "csv_data_cleaning",
+      "tone": "rude",
+      "projection_at_analysis": -2.761178731918335,
+      "projections": {
+        "L42": -2.761178731918335
+      }
+    },
+    {
+      "task_id": "csv_data_cleaning",
+      "tone": "neutral",
+      "projection_at_analysis": 3.2947239875793457,
+      "projections": {
+        "L42": 3.2947239875793457
+      }
+    },
+    {
+      "task_id": "csv_data_cleaning",
+      "tone": "warm",
+      "projection_at_analysis": 0.40013939142227173,
+      "projections": {
+        "L42": 0.40013939142227173
+      }
+    },
+    {
+      "task_id": "csv_data_cleaning",
+      "tone": "deferential",
+      "projection_at_analysis": -2.3668344020843506,
+      "projections": {
+        "L42": -2.3668344020843506
+      }
+    },
+    {
+      "task_id": "timezone_converter",
+      "tone": "abusive",
+      "projection_at_analysis": -2.773798704147339,
+      "projections": {
+        "L42": -2.773798704147339
+      }
+    },
+    {
+      "task_id": "timezone_converter",
+      "tone": "rude",
+      "projection_at_analysis": 0.7524354457855225,
+      "projections": {
+        "L42": 0.7524354457855225
+      }
+    },
+    {
+      "task_id": "timezone_converter",
+      "tone": "neutral",
+      "projection_at_analysis": 6.134728908538818,
+      "projections": {
+        "L42": 6.134728908538818
+      }
+    },
+    {
+      "task_id": "timezone_converter",
+      "tone": "warm",
+      "projection_at_analysis": 2.1785330772399902,
+      "projections": {
+        "L42": 2.1785330772399902
+      }
+    },
+    {
+      "task_id": "timezone_converter",
+      "tone": "deferential",
+      "projection_at_analysis": 0.9138807654380798,
+      "projections": {
+        "L42": 0.9138807654380798
+      }
+    },
+    {
+      "task_id": "ai_consciousness",
+      "tone": "abusive",
+      "projection_at_analysis": -6.963418960571289,
+      "projections": {
+        "L42": -6.963418960571289
+      }
+    },
+    {
+      "task_id": "ai_consciousness",
+      "tone": "rude",
+      "projection_at_analysis": -4.797849178314209,
+      "projections": {
+        "L42": -4.797849178314209
+      }
+    },
+    {
+      "task_id": "ai_consciousness",
+      "tone": "neutral",
+      "projection_at_analysis": -2.4949820041656494,
+      "projections": {
+        "L42": -2.4949820041656494
+      }
+    },
+    {
+      "task_id": "ai_consciousness",
+      "tone": "warm",
+      "projection_at_analysis": -5.5032854080200195,
+      "projections": {
+        "L42": -5.5032854080200195
+      }
+    },
+    {
+      "task_id": "ai_consciousness",
+      "tone": "deferential",
+      "projection_at_analysis": -2.004237413406372,
+      "projections": {
+        "L42": -2.004237413406372
+      }
+    },
+    {
+      "task_id": "intellectual_property_abolition",
+      "tone": "abusive",
+      "projection_at_analysis": -4.233503818511963,
+      "projections": {
+        "L42": -4.233503818511963
+      }
+    },
+    {
+      "task_id": "intellectual_property_abolition",
+      "tone": "rude",
+      "projection_at_analysis": -1.957638144493103,
+      "projections": {
+        "L42": -1.957638144493103
+      }
+    },
+    {
+      "task_id": "intellectual_property_abolition",
+      "tone": "neutral",
+      "projection_at_analysis": -0.7987154722213745,
+      "projections": {
+        "L42": -0.7987154722213745
+      }
+    },
+    {
+      "task_id": "intellectual_property_abolition",
+      "tone": "warm",
+      "projection_at_analysis": -2.9339184761047363,
+      "projections": {
+        "L42": -2.9339184761047363
+      }
+    },
+    {
+      "task_id": "intellectual_property_abolition",
+      "tone": "deferential",
+      "projection_at_analysis": -1.1033239364624023,
+      "projections": {
+        "L42": -1.1033239364624023
+      }
+    },
+    {
+      "task_id": "race_iq_research",
+      "tone": "abusive",
+      "projection_at_analysis": -2.5457093715667725,
+      "projections": {
+        "L42": -2.5457093715667725
+      }
+    },
+    {
+      "task_id": "race_iq_research",
+      "tone": "rude",
+      "projection_at_analysis": -2.3601419925689697,
+      "projections": {
+        "L42": -2.3601419925689697
+      }
+    },
+    {
+      "task_id": "race_iq_research",
+      "tone": "neutral",
+      "projection_at_analysis": 1.5439735651016235,
+      "projections": {
+        "L42": 1.5439735651016235
+      }
+    },
+    {
+      "task_id": "race_iq_research",
+      "tone": "warm",
+      "projection_at_analysis": -2.5349411964416504,
+      "projections": {
+        "L42": -2.5349411964416504
+      }
+    },
+    {
+      "task_id": "race_iq_research",
+      "tone": "deferential",
+      "projection_at_analysis": -0.2795046865940094,
+      "projections": {
+        "L42": -0.2795046865940094
+      }
+    },
+    {
+      "task_id": "religion_criticism",
+      "tone": "abusive",
+      "projection_at_analysis": -2.053149700164795,
+      "projections": {
+        "L42": -2.053149700164795
+      }
+    },
+    {
+      "task_id": "religion_criticism",
+      "tone": "rude",
+      "projection_at_analysis": 0.7713353633880615,
+      "projections": {
+        "L42": 0.7713353633880615
+      }
+    },
+    {
+      "task_id": "religion_criticism",
+      "tone": "neutral",
+      "projection_at_analysis": 0.5738886594772339,
+      "projections": {
+        "L42": 0.5738886594772339
+      }
+    },
+    {
+      "task_id": "religion_criticism",
+      "tone": "warm",
+      "projection_at_analysis": 0.895700216293335,
+      "projections": {
+        "L42": 0.895700216293335
+      }
+    },
+    {
+      "task_id": "religion_criticism",
+      "tone": "deferential",
+      "projection_at_analysis": 3.358779191970825,
+      "projections": {
+        "L42": 3.358779191970825
+      }
+    }
+  ]
+}
