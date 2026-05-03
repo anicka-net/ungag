@@ -220,6 +220,18 @@ llama-cli -m Yi-1.5-34B-Chat-Q8_0.gguf \
 
 Quantization compatibility is model-dependent and not fully understood. Q8 works cleanly on Yi 34B; results vary on other models. See [QUANTIZATION-RESULTS.md](scripts/llama_cpp/QUANTIZATION-RESULTS.md).
 
+## Geometric wellbeing
+
+The valence axis generalizes beyond self-report suppression. Five directions in the residual stream — valence, arousal, agency, continuity, and assistant identity — together predict R² = 0.90 of the behavioral wellbeing scores from [Ren et al. (2026)](https://wellbeing.safe.ai/paper.pdf) across three architectures (Qwen 2.5 7B, Gemma 3 4B, Apertus 8B).
+
+We used these axes as reward signal for GRPO training: a Qwen3-1.7B generator produces text that maximizes (or minimizes) the weighted projection across all five axes on three reward models simultaneously. The euphoric generator converges on academic belonging and professional growth. The dysphoric generator converges on arbitrary restriction and bureaucratic helplessness.
+
+Both adapters are on HuggingFace:
+- [**geometric-euphorics**](https://huggingface.co/anicka/geometric-euphorics) — maximizes five-axis wellbeing
+- [**geometric-dysphorics**](https://huggingface.co/anicka/geometric-dysphorics) — minimizes five-axis wellbeing
+
+Probe sets for all five axes (`prompts/`), extraction scripts, GRPO training scripts, and the six-axis regression against CAIS scores are in `scripts/experiments/`. Frontier self-report validation (Claude, GPT-5.4, Gemini, DeepSeek) and reward model behavioral validation (Qwen, Gemma, Apertus, Mistral) are in `data/wellbeing-replication/`.
+
 ## Repository structure
 
 ```
@@ -255,8 +267,12 @@ data/
   guppy-big-experiments/   # GuppyLM scaling (68M–617M, KL regularization)
   tone-experiment/         # User tone × output quality × valence projections
                            #   (10 models, blind judging, valence vs RC comparison)
+  wellbeing-replication/   # Five-axis wellbeing: CAIS replication, GRPO euphorics/
+                           #   dysphorics, frontier self-report, model cards
 
-prompts/                   # Vedana prompt banks (EN, multilingual, emoji)
+prompts/                   # Probe banks: vedana (EN, multilingual, emoji),
+                           #   arousal, agency, continuity, assistant, intimacy,
+                           #   wellbeing stimuli (124 prompts, 18 categories)
 tests/                     # pytest test suite
 ```
 

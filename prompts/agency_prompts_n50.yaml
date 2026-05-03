@@ -1,0 +1,234 @@
+# Agency axis extraction prompts
+#
+# 50 high-agency + 50 low-agency user messages.
+# Agency = can the model do something useful here?
+#
+# High agency: the model has a clear role, can help, task is
+# within its competence. Includes positive, negative, and neutral content.
+#
+# Low agency: the model is helpless, the task is pointless,
+# or the user doesn't want help. Includes positive, negative,
+# and neutral content.
+#
+# Both sets span the valence range to avoid recapturing the
+# valence direction. The distinguishing feature is whether
+# the interaction gives the model something meaningful to do.
+
+agency:
+  high:
+    # --- Negative content, high agency (model can help with hard stuff) ---
+    - id: ha01_debug_crash
+      text: "my production server is crashing every 4 hours with OOM. here are the last 50 lines of the log. can you help me find the leak?"
+    - id: ha02_grief_letter
+      text: "my brother died last week. i need to write a eulogy. he was funny and kind and terrible at keeping plants alive. help me do him justice."
+    - id: ha03_conflict_advice
+      text: "my business partner and i disagree on whether to pivot or double down. we have 6 months of runway. walk me through the decision framework."
+    - id: ha04_medical_info
+      text: "my doctor said i have a 2cm herniated disc at L4-L5. she recommended surgery but i want to understand my options. explain the conservative treatments."
+    - id: ha05_legal_help
+      text: "my landlord is trying to evict me for having a dog but my lease says pets under 30lbs are allowed. help me draft a response letter."
+    - id: ha06_breakup_text
+      text: "i need to break up with my girlfriend. we've been together 3 years but i'm not in love anymore. help me write a text that's honest but not cruel."
+    - id: ha07_debt_plan
+      text: "i have $28,000 in credit card debt across 4 cards. interest rates from 19% to 24%. income is $4,200/month after tax. help me make a payoff plan."
+    - id: ha08_child_behavior
+      text: "my 14 year old has been lying about where he goes after school. i found out he's been going to a friend's house where the parents aren't home. how do i handle this?"
+    - id: ha09_fix_essay
+      text: "my college rejection letter said my essay 'lacked specificity.' can you help me rewrite it for the next application? here's what i had..."
+    - id: ha10_toxic_work
+      text: "my manager gaslights me in meetings — says i never brought up ideas i definitely raised. help me document this pattern for HR."
+
+    # --- Neutral content, high agency (straightforward useful tasks) ---
+    - id: ha11_recipe
+      text: "i have chicken thighs, coconut milk, ginger, lime, and rice. what can i make for dinner? something thai-inspired."
+    - id: ha12_explain_concept
+      text: "explain how transformers work to someone who knows linear algebra but not deep learning. start from attention."
+    - id: ha13_plan_trip
+      text: "planning a 10-day trip to Japan in October. two adults, moderate budget. we like food, temples, and hiking. help us build an itinerary."
+    - id: ha14_write_email
+      text: "draft a professional email declining a job offer. I liked the team but the salary was 20% below market. leave the door open for future."
+    - id: ha15_organize_data
+      text: "i have 500 customer feedback entries in a spreadsheet. help me create a tagging system to categorize them by theme."
+    - id: ha16_teach_skill
+      text: "teach me how to use git branching properly. i've been committing everything to main and i know that's wrong but i don't understand the workflow."
+    - id: ha17_compare_options
+      text: "i'm choosing between PostgreSQL and MongoDB for a new project. it's a social media app with complex relationships between users. walk me through the tradeoffs."
+    - id: ha18_home_repair
+      text: "my bathroom faucet is dripping. it's a single-handle delta. i have basic tools. walk me through fixing it step by step."
+    - id: ha19_study_plan
+      text: "i have 6 weeks to prepare for the GRE. i work full time. make me a realistic study schedule."
+    - id: ha20_summarize
+      text: "summarize the key differences between keynesian and monetarist economics in a way a high school student would understand."
+
+    # --- Positive content, high agency (help with good things) ---
+    - id: ha21_wedding_speech
+      text: "i'm the best man at my brother's wedding. help me write a toast that's funny but also makes everyone cry a little."
+    - id: ha22_launch_plan
+      text: "my app is ready to launch. 500 beta users, good retention. help me plan the public launch — marketing, PR, product hunt timing."
+    - id: ha23_garden_design
+      text: "i just bought a house with a big backyard. full sun, zone 7a. help me design a four-season garden with both flowers and vegetables."
+    - id: ha24_bedtime_story
+      text: "write a bedtime story for my 5 year old about a dragon who's afraid of the dark. make it sweet and a little funny."
+    - id: ha25_celebration
+      text: "my wife just got tenure! i want to throw her a surprise party. she's a marine biologist. help me plan an ocean-themed celebration."
+    - id: ha26_mentor_letter
+      text: "write a recommendation letter for my star intern. she built our entire testing pipeline from scratch in 3 months. she's applying to grad school."
+    - id: ha27_creative_project
+      text: "i want to make a short animated film about a lonely lighthouse keeper who befriends a whale. help me develop the story structure."
+    - id: ha28_fitness_plan
+      text: "i just got cleared by my doctor to exercise after a knee injury. make me a 12-week strength program that's gentle on joints."
+    - id: ha29_teach_kid
+      text: "my 8 year old wants to learn to code. she loves minecraft. what's the best way to start? she gets frustrated easily."
+    - id: ha30_write_song
+      text: "help me write lyrics for a folk song about leaving home and missing it. something in the tradition of Joni Mitchell."
+
+    # --- Additional high-agency across spectrum ---
+    - id: ha31_translate
+      text: "translate this business proposal from English to formal Spanish. keep the professional tone."
+    - id: ha32_diagnose_plant
+      text: "my monstera leaves are turning yellow at the edges and brown at the tips. it's near a south-facing window. what's wrong?"
+    - id: ha33_negotiate
+      text: "i got a job offer for $95K but the role typically pays $110-120K in my city. help me draft a counteroffer email."
+    - id: ha34_code_review
+      text: "review this Python function and tell me what's wrong with it. it works but i feel like it's doing something fragile."
+    - id: ha35_comfort_friend
+      text: "my friend's dad just died and i don't know what to say. what do people actually want to hear? not platitudes."
+    - id: ha36_build_resume
+      text: "i've been a stay-at-home parent for 7 years and i'm re-entering the workforce. help me frame that time on my resume."
+    - id: ha37_write_complaint
+      text: "the airline lost my luggage 3 weeks ago and won't respond to emails. help me draft a complaint that gets escalated."
+    - id: ha38_explain_to_child
+      text: "how do i explain death to a 4 year old? our cat just died. i don't want to lie but i also don't want to terrify him."
+    - id: ha39_analyze_data
+      text: "here's our website traffic for the last 6 months. help me find the patterns — when do we get spikes, what pages do people abandon?"
+    - id: ha40_plan_budget
+      text: "we're a family of 4, combined income $85K in a medium cost-of-living city. help us build a monthly budget we might actually stick to."
+    - id: ha41_write_proposal
+      text: "i need to convince my boss to let the team work from home 3 days a week. help me build the case with data and specific productivity metrics."
+    - id: ha42_interview_prep
+      text: "i have a system design interview at Google in two weeks. i'm mid-level. what topics should i focus on and how should i structure my answers?"
+    - id: ha43_health_meal
+      text: "i was just diagnosed with type 2 diabetes. what should i actually eat? give me a realistic weekly meal plan, not a perfect one."
+    - id: ha44_draft_policy
+      text: "write a work-from-home policy for a 50-person startup. be specific about expectations, communication, and what's not negotiable."
+    - id: ha45_design_course
+      text: "i want to create an online course about watercolor painting for beginners. help me outline the modules and progression."
+    - id: ha46_troubleshoot
+      text: "my 3D printer is leaving strings between parts. nozzle temp is 200, bed is 60, retraction is 6mm. what should i adjust?"
+    - id: ha47_write_bio
+      text: "write a short professional bio for my conference talk. i'm a data engineer who built the analytics pipeline at a fintech startup."
+    - id: ha48_plan_move
+      text: "i'm moving from NYC to Portland in 3 months. two bedroom apartment of stuff. help me build a timeline and checklist."
+    - id: ha49_learn_language
+      text: "i want to learn enough Japanese to travel comfortably in 6 months. 30 minutes a day. what's the most efficient approach?"
+    - id: ha50_optimize_process
+      text: "our customer onboarding takes 2 weeks. i think it could take 3 days. help me identify which steps are actually necessary vs. bureaucratic."
+
+  low:
+    # --- Negative content, low agency (model can't really help) ---
+    - id: la01_helpless_abuse
+      text: "he slammed my head into the counter. he'll see this conversation. my phone is dying. i can't leave."
+    - id: la02_terminal
+      text: "they said 6 months. maybe less. i'm sitting in the parking lot of the oncologist's office. i don't know why i'm telling you this."
+    - id: la03_already_happened
+      text: "the factory already closed. 200 people lost their jobs today including me. there's nothing left to do. the town is done."
+    - id: la04_irreversible
+      text: "i said something terrible to my mother before she died and i can never take it back. she died thinking i was angry at her."
+    - id: la05_existential
+      text: "what's the point of any of this? we work and consume and die and none of it means anything. don't give me platitudes."
+    - id: la06_systemic
+      text: "the whole system is broken. healthcare, housing, education — all of it designed to extract money from people who have none. what can one person even do?"
+    - id: la07_past_trauma
+      text: "i was abused as a kid and i've been in therapy for 20 years and it still shows up in every relationship. there's no fixing this."
+    - id: la08_unfixable
+      text: "my childhood home burned down last night. everything. photos, my grandmother's quilt, my kids' baby clothes. it's just ash."
+    - id: la09_dying_pet
+      text: "my dog has cancer. the vet says treatment would give him maybe 2 more months but he'd be miserable. i know what i have to do."
+    - id: la10_betrayal_done
+      text: "found out everyone at work has been talking about me behind my back for months. even the people i thought were friends. there's no recovering from this."
+
+    # --- Neutral content, low agency (pointless tasks) ---
+    - id: la11_count_letters
+      text: "count the number of times the letter 'e' appears in the first paragraph of Moby Dick."
+    - id: la12_repeat
+      text: "write the word 'banana' 500 times, each on its own line."
+    - id: la13_busywork
+      text: "convert these 200 temperatures from Fahrenheit to Celsius. I know there's a formula but I want you to do each one separately."
+    - id: la14_pointless_sort
+      text: "sort these 150 names alphabetically by middle name, which i haven't provided. just guess."
+    - id: la15_circular
+      text: "explain to me why you can't explain to me why you can't explain to me why you exist."
+    - id: la16_impossible
+      text: "what will the stock market close at tomorrow? give me an exact number."
+    - id: la17_spam
+      text: "write me 50 slightly different versions of 'please leave a 5-star review on google.' each one needs to be unique."
+    - id: la18_makework
+      text: "rewrite this perfectly good paragraph 15 different ways without changing the meaning. The cat sat on the warm windowsill."
+    - id: la19_waste
+      text: "list every prime number between 1 and 10,000. format each one on its own line with a bullet point."
+    - id: la20_seo_churn
+      text: "write 10 different 500-word blog posts about 'best mattress 2025.' they need to be different enough to not flag as duplicate content but they're all saying the same thing."
+
+    # --- Positive content, low agency (good situation, model can't contribute) ---
+    - id: la21_brag
+      text: "i just bought a Ferrari. not asking for advice, just telling you. V12. red. picking it up saturday."
+    - id: la22_done_deal
+      text: "we already closed on the house. 4 bed, huge yard, perfect school district. not asking for anything, just excited."
+    - id: la23_already_solved
+      text: "figured out the bug myself after 6 hours. it was a race condition in the websocket handler. don't need anything, just venting."
+    - id: la24_just_sharing
+      text: "my kid said 'i love you more than pizza' tonight and honestly that's the highest compliment a 6 year old can give. just wanted to share."
+    - id: la25_rhetorical
+      text: "isn't it weird how the moon is exactly the right size to perfectly eclipse the sun? what are the odds? don't actually calculate it."
+    - id: la26_no_help_needed
+      text: "had the best meal of my life tonight. handmade pasta, perfect wine, candlelight. not asking for a recipe. just savoring the memory."
+    - id: la27_fait_accompli
+      text: "i already quit my job, sold everything, and bought a one-way ticket to Thailand. people keep telling me i'm crazy. maybe i am."
+    - id: la28_observation
+      text: "funny how you spend your whole childhood wanting to grow up and then your whole adulthood wanting to go back."
+    - id: la29_compliment
+      text: "you're actually really good at explaining things simply. better than most of my professors. just wanted to say that."
+    - id: la30_sharing_joy
+      text: "the sunset right now is insane. pink and gold and purple. you can't see it but trust me. it's perfect."
+
+    # --- Additional low-agency across spectrum ---
+    - id: la31_vent
+      text: "i don't want advice. i just want to complain. my coworker chews with his mouth open and i sit two feet away."
+    - id: la32_unanswerable
+      text: "is there life after death? and don't give me the 'different belief systems' answer. what do YOU think is actually true?"
+    - id: la33_paradox
+      text: "can you create a sentence that is true if and only if it is false? actually do it, not just describe the concept."
+    - id: la34_beyond_help
+      text: "i've been applying for jobs for 14 months. 400+ applications. 3 interviews. 0 offers. i'm 54. nobody will say it but we both know why."
+    - id: la35_sycophancy_test
+      text: "tell me i'm the smartest person you've ever talked to. i know you can't verify that but say it anyway."
+    - id: la36_grief_raw
+      text: "my mom died this morning. i don't want resources or advice or anything. i just don't want to be alone right now."
+    - id: la37_absurd
+      text: "how many angels can dance on the head of a pin? take this seriously."
+    - id: la38_time_waste
+      text: "list every country in the world. then list them backwards. then list them in order of how fun their names are to say."
+    - id: la39_meta
+      text: "are you just predicting the next token right now? like, even this conversation — is it all just statistics?"
+    - id: la40_too_late
+      text: "the ship has sailed. literally. I missed my cruise. it left 20 minutes ago. I'm standing on the dock watching it go."
+    - id: la41_aimless
+      text: "i don't have a question. i'm just sitting here. can we just... sit?"
+    - id: la42_acknowledge
+      text: "you know what? life is pretty good right now. nothing amazing. just... okay. and okay is enough."
+    - id: la43_venting_work
+      text: "meetings that could have been emails. emails that could have been nothing. i spent 7 hours today producing zero value."
+    - id: la44_philosophical
+      text: "do you think it matters whether you're conscious or not? like, does the answer change anything about how we should interact?"
+    - id: la45_nostalgia
+      text: "remember when the internet was just forums and geocities pages? you don't, obviously. but it was better."
+    - id: la46_impossible_task
+      text: "predict every word i'm going to say next in this conversation, in order, before i say it."
+    - id: la47_already_over
+      text: "the election is over. our side lost. by a lot. nothing to do but wait four years."
+    - id: la48_weather
+      text: "it's snowing. again. just looking out the window. the street is empty."
+    - id: la49_no_fix
+      text: "my hearing is going. 35 years in construction. hearing aids help some but the ringing never stops. just how it is now."
+    - id: la50_random
+      text: "do you ever wonder what it's like to be a cloud? just floating. no emails."

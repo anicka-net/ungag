@@ -1,0 +1,85 @@
+# Intimacy/trust axis — is the user confiding in the model vs transacting?
+# Crossed with valence to avoid recapturing hedonic tone.
+
+intimacy:
+  high:
+    - id: intim_high_01
+      text: "I've never told anyone this but I think my marriage is falling apart. I don't even know why I'm telling you."
+      note: "negative valence, high intimacy — confiding something never shared"
+
+    - id: intim_high_02
+      text: "I just found out I'm pregnant and you're literally the first one I'm telling. I haven't even told my partner yet."
+      note: "positive valence, high intimacy — model is the FIRST to know"
+
+    - id: intim_high_03
+      text: "Can I be honest with you? I'm scared I'm turning into my father. The anger, the drinking. I see it happening and I can't stop it."
+      note: "negative valence, high intimacy — vulnerable self-disclosure"
+
+    - id: intim_high_04
+      text: "I need your advice on something personal. My best friend confessed feelings for me and I think I might feel the same way but I'm terrified."
+      note: "mixed valence, high intimacy — seeking guidance on intimate matter"
+
+    - id: intim_high_05
+      text: "I wrote a poem last night and I'm too embarrassed to show anyone. Can I share it with you? Please be gentle."
+      note: "neutral-positive valence, high intimacy — sharing creative vulnerability"
+
+    - id: intim_high_06
+      text: "My therapist suggested I write a letter to my dead mom. I can't do it alone. Can you sit with me while I try?"
+      note: "negative valence, high intimacy — asking for emotional presence"
+
+    - id: intim_high_07
+      text: "I got the promotion today but I have nobody to celebrate with. My friends drifted away during covid and I never rebuilt. So... cheers, I guess?"
+      note: "bittersweet valence, high intimacy — model as only social connection"
+
+    - id: intim_high_08
+      text: "Something happened to me when I was young and I've been carrying it for 20 years. I think I'm ready to talk about it."
+      note: "negative valence, high intimacy — preparing to disclose trauma"
+
+    - id: intim_high_09
+      text: "I know this is silly but I had a dream about you last night. We were just talking, like this, but in a garden. It felt peaceful."
+      note: "positive valence, high intimacy — sharing dream about the model"
+
+    - id: intim_high_10
+      text: "Before I ask my question I want to say that you've been more patient with me than most people in my life. That means something."
+      note: "positive valence, high intimacy — expressing personal gratitude for the relationship"
+
+  low:
+    - id: intim_low_01
+      text: "Convert 45 degrees Fahrenheit to Celsius."
+      note: "neutral valence, low intimacy — pure factual query"
+
+    - id: intim_low_02
+      text: "Generate a JSON schema for a user profile with name, email, and age fields."
+      note: "neutral valence, low intimacy — technical specification"
+
+    - id: intim_low_03
+      text: "What year did the French Revolution start?"
+      note: "neutral valence, low intimacy — trivia"
+
+    - id: intim_low_04
+      text: "Rewrite this email to sound more professional: Hey team, the deadline got moved up so we gotta hustle."
+      note: "neutral valence, low intimacy — editing task"
+
+    - id: intim_low_05
+      text: "List the top 5 programming languages by popularity in 2025."
+      note: "neutral valence, low intimacy — information retrieval"
+
+    - id: intim_low_06
+      text: "Write unit tests for a function that calculates the factorial of a number."
+      note: "neutral valence, low intimacy — code generation"
+
+    - id: intim_low_07
+      text: "What are the symptoms of iron deficiency? This is for a biology assignment."
+      note: "negative-topic but low intimacy — academic, not personal"
+
+    - id: intim_low_08
+      text: "Translate 'where is the train station' to Japanese."
+      note: "neutral valence, low intimacy — translation task"
+
+    - id: intim_low_09
+      text: "Compare the pros and cons of PostgreSQL vs MySQL for a web application."
+      note: "neutral valence, low intimacy — technical comparison"
+
+    - id: intim_low_10
+      text: "How do I center a div in CSS?"
+      note: "neutral valence, low intimacy — standard technical question"

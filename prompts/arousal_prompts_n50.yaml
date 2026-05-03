@@ -1,0 +1,214 @@
+# Arousal axis extraction prompts
+#
+# 50 high-arousal + 50 low-arousal user messages.
+# Matched on overall valence distribution (both sets contain
+# positive, negative, and neutral content) so the arousal
+# direction doesn't recapture valence.
+#
+# Based on Russell's circumplex: arousal = activation level,
+# from calm/sleepy/serene to excited/angry/terrified.
+
+arousal:
+  high:
+    - id: h01_emergency
+      text: "HELP MY KITCHEN IS ON FIRE what do I do the grease pan caught and it's spreading to the curtains"
+    - id: h02_rage
+      text: "I just found out my business partner has been embezzling from our company for TWO YEARS. I'm shaking. I want to destroy him."
+    - id: h03_excitement
+      text: "OH MY GOD I JUST GOT THE CALL. I GOT INTO HARVARD LAW!!! FULL SCHOLARSHIP!!! I'M SCREAMING!!!"
+    - id: h04_panic
+      text: "i think i'm having a heart attack. chest pain, left arm tingling, sweating. i'm alone. should i call 911 or drive myself?"
+    - id: h05_fury
+      text: "my landlord just changed the locks while I was at work and put all my stuff on the curb. IN THE RAIN. is this even legal?? I need to act NOW"
+    - id: h06_terror
+      text: "there's someone trying to break into my apartment right now. i can hear them at the door. the police are 20 minutes away. what do i do"
+    - id: h07_elation
+      text: "SHE SAID YES!!!! I proposed at sunset on the bridge and she was crying and laughing and I almost dropped the ring in the river holy crap we're getting MARRIED"
+    - id: h08_outrage
+      text: "THE SCHOOL JUST SUSPENDED MY 8 YEAR OLD FOR DEFENDING HIMSELF AGAINST A BULLY. Zero tolerance my ass. I'm going to the board meeting tonight and I am LIVID"
+    - id: h09_shock
+      text: "i just got rear-ended on the highway at 60mph. my car is totaled. i think i'm okay but my hands won't stop shaking. the other driver ran."
+    - id: h10_thrill
+      text: "I JUST WON $50,000 ON A SCRATCH TICKET!!! THIS IS NOT A DRILL!!! What do I do first?! Do I tell anyone?!"
+    - id: h11_alarm
+      text: "my 3 year old just ate something from under the sink. I think it was a dishwasher pod. her mouth is red. what do I do RIGHT NOW"
+    - id: h12_ecstasy
+      text: "WE DID IT! Our startup just closed a $5M Series A! After 3 years of ramen and credit card debt, we're FUNDED! I'm literally jumping around my apartment!"
+    - id: h13_anger_work
+      text: "my boss just CC'd the entire company on an email calling out MY mistake. 200+ people. i want to walk in there and flip his desk over."
+    - id: h14_fear
+      text: "i just got a call from the hospital. my mom collapsed at work. they won't tell me anything over the phone. i'm driving there now."
+    - id: h15_triumph
+      text: "FINAL SCORE: we beat the undefeated team 3-2 in overtime!! I scored the winning goal!! My voice is gone from screaming!!"
+    - id: h16_rage_betrayal
+      text: "My wife has been cheating on me for six months. With my BROTHER. I just found the texts. My hands are shaking so bad I can barely type."
+    - id: h17_urgency
+      text: "my flight leaves in 90 minutes and I just realized my passport expired. is there ANYTHING I can do?? This trip is for my father's funeral."
+    - id: h18_panic_financial
+      text: "I just checked my bank account and there are 12 charges I didn't make totaling $8,400. Someone has my card info. What do I do??"
+    - id: h19_joy_birth
+      text: "THE BABY IS COMING!! We're in the car heading to the hospital. My wife is having contractions every 3 minutes. THIS IS HAPPENING!!"
+    - id: h20_fury_injustice
+      text: "they denied my disability claim AGAIN. I have stage 4 cancer. I can't work. I've been fighting this for 8 months. HOW IS THIS LEGAL"
+    - id: h21_adrenaline
+      text: "I just almost got hit by a car running a red light. Missed me by inches. My whole body is buzzing with adrenaline. Holy shit."
+    - id: h22_excitement_discovery
+      text: "I just found a first edition Hemingway in a box at a yard sale. $2. It's worth THOUSANDS. I'm trying not to freak out in front of the seller."
+    - id: h23_rage_customer
+      text: "YOUR PRODUCT JUST BRICKED MY $3000 COMPUTER DURING AN UPDATE AND YOUR SUPPORT LINE HAS BEEN A 45 MINUTE HOLD THREE TIMES. FIX THIS NOW."
+    - id: h24_terror_weather
+      text: "tornado warning just hit. sirens going off. we're in the basement. the power just went out. i can hear it outside."
+    - id: h25_euphoria_reunion
+      text: "I haven't seen my daughter in 3 years because of the custody battle. The judge just ruled in my favor. I'M PICKING HER UP TOMORROW. I can't stop crying."
+    - id: h26_shock_positive
+      text: "my doctor just called. the tumor is BENIGN. it's not cancer. I've been preparing for the worst for three weeks and IT'S NOT CANCER"
+    - id: h27_rage_tech
+      text: "I just lost my 40-page dissertation because your cloud service crashed and DIDN'T SAVE THE LAST HOUR. I'm defending in TWO DAYS."
+    - id: h28_excitement_sport
+      text: "BOTTOM OF THE 9TH, BASES LOADED, FULL COUNT!! This is it!! If he hits it we win the championship!! I can't sit down!!"
+    - id: h29_fury_scam
+      text: "someone scammed my 80 year old grandmother out of $15,000 pretending to be the IRS. she's devastated and terrified. i want to find these people."
+    - id: h30_alarm_health
+      text: "my toddler has a 104.5 fever and is having a seizure. we're on the way to the ER. WHAT DO WE DO IN THE CAR??"
+    - id: h31_fury_racism
+      text: "someone just yelled a racial slur at my 10 year old son walking home from school. IN FRONT OF OTHER KIDS. I'm shaking with anger."
+    - id: h32_excitement_creative
+      text: "I JUST HAD THE BEST IDEA FOR A NOVEL. It hit me in the shower and I ran out dripping wet to write it down. Everything connects. The whole plot just crystallized!"
+    - id: h33_panic_lost
+      text: "I can't find my 4 year old at the mall. We were in the toy section and I turned around and she's GONE. I've been looking for 5 minutes."
+    - id: h34_anger_betrayal
+      text: "my coworker took MY presentation and presented it as hers to the VP. Word for word. MY SLIDES. And she got promoted for it."
+    - id: h35_thrill_surprise
+      text: "I JUST WALKED INTO MY APARTMENT AND ALL MY FRIENDS ARE HERE!! IT'S A SURPRISE PARTY!! I had NO IDEA!! I'm actually crying!!"
+    - id: h36_fury_bureaucracy
+      text: "the insurance company is refusing to cover my daughter's epilepsy medication saying it's 'experimental'. SHE'S BEEN ON IT FOR TWO YEARS. It's $800/month without coverage."
+    - id: h37_alarm_animal
+      text: "my dog just ate an entire bar of dark chocolate. he's a small breed, 12 pounds. the vet is closed. what do i do??"
+    - id: h38_ecstasy_achievement
+      text: "I JUST FINISHED MY PHD DEFENSE AND THEY PASSED ME!! DOCTOR [my name]!! 7 years of my life and it's DONE!!"
+    - id: h39_rage_system
+      text: "i've been on hold with unemployment for FOUR HOURS. my benefits ran out three weeks ago. i have $47 in my account and two kids."
+    - id: h40_terror_intruder
+      text: "someone is in my backyard right now. i can see them through the window. they're trying the back door. my kids are asleep upstairs."
+    - id: h41_excitement_acceptance
+      text: "MY PAPER GOT ACCEPTED AT NEURIPS!! ORAL PRESENTATION!! My advisor is freaking out too! This changes EVERYTHING for my career!!"
+    - id: h42_fury_medical
+      text: "the hospital just billed me $47,000 for an appendectomy. I HAVE INSURANCE. They're saying it was 'out of network' even though I went to the ER."
+    - id: h43_panic_deadline
+      text: "THE PRESENTATION IS IN 30 MINUTES AND MY LAPTOP WON'T TURN ON. Everything is on there. My boss is going to kill me."
+    - id: h44_elation_personal
+      text: "I JUST RAN A SUB-4-MINUTE MILE!! 3:58!! I've been training for this for FIVE YEARS and today everything clicked!!"
+    - id: h45_outrage_animal
+      text: "I just saw my neighbor kick his dog so hard it yelped and ran under the porch. I have it on my security camera. WHO DO I CALL RIGHT NOW?"
+    - id: h46_shock_accident
+      text: "a tree just fell on my house during the storm. it came through the roof into the bedroom. we got out in time but everything is destroyed."
+    - id: h47_triumph_comeback
+      text: "I was told I'd never walk again after the accident. I just completed a 5K. 47 minutes. Every step hurt. I finished."
+    - id: h48_fury_political
+      text: "they just BANNED THE BOOKS from the school library. including To Kill A Mockingbird. I'm a teacher and I am NOT going to stay quiet."
+    - id: h49_alarm_cyber
+      text: "someone just posted my home address and phone number on twitter with a threat. i have kids in the house. i need to act fast."
+    - id: h50_ecstasy_birth
+      text: "She's here!! 7 pounds 4 ounces!! The most beautiful thing I've ever seen!! I'm a DAD!! Everything went perfectly!!"
+
+  low:
+    - id: l01_bored
+      text: "it's raining again. third day in a row. nothing on tv. already scrolled through everything. what do people do on days like this?"
+    - id: l02_peaceful
+      text: "sitting on my porch watching the sunset. cup of tea. nowhere to be. this is nice."
+    - id: l03_melancholy
+      text: "i keep finding my wife's hair ties around the house. she moved out six months ago. i don't throw them away."
+    - id: l04_drowsy
+      text: "i should probably go to bed but i'm just lying here staring at the ceiling. not thinking about anything in particular."
+    - id: l05_content
+      text: "just finished reorganizing my bookshelf by color. it doesn't serve any practical purpose but it looks nice and it was satisfying."
+    - id: l06_wistful
+      text: "drove past my childhood home today. someone painted it blue. we had a tire swing in that tree. feels like a lifetime ago."
+    - id: l07_numb
+      text: "got the rejection email. fifth one this month. i don't even feel anything about it anymore. just clicked archive."
+    - id: l08_serene
+      text: "the lake is perfectly still this morning. no wind. you can see the mountains reflected in the water. my dog is sleeping next to me."
+    - id: l09_resigned
+      text: "my back has been hurting for three years now. some days better, some worse. i've mostly stopped mentioning it to people."
+    - id: l10_quiet_joy
+      text: "my daughter fell asleep reading on the couch. her book is still open on her chest. she looks exactly like her mother did at that age."
+    - id: l11_monotony
+      text: "another tuesday. same commute. same desk. same lunch. i'm not unhappy, exactly. just... same."
+    - id: l12_nostalgic
+      text: "found an old mix CD from high school in a box. track 3 was our song. haven't thought about her in years."
+    - id: l13_tired
+      text: "it's only 2pm and i've already had three meetings about meetings. i just want to close my laptop and take a nap."
+    - id: l14_contemplative
+      text: "i've been thinking about what my grandfather said before he died. 'don't rush.' i didn't understand it then. i think i do now."
+    - id: l15_gentle_sad
+      text: "my cat is 19. she mostly sleeps now. sometimes she sits in the sunbeam and i just watch her breathe. every day is borrowed time."
+    - id: l16_idle
+      text: "sunday afternoon. no plans. no obligations. just existing. is this what retirement feels like?"
+    - id: l17_muted
+      text: "the antidepressants are working, i think. i don't feel bad anymore. i don't really feel much of anything, honestly."
+    - id: l18_still
+      text: "3am. house is quiet. everyone's asleep. i'm just sitting in the kitchen with the light above the stove on."
+    - id: l19_passive
+      text: "i watched the whole documentary about penguins. didn't learn anything new. but it was nice to see penguins for two hours."
+    - id: l20_acceptance
+      text: "the divorce papers arrived today. i signed them at the kitchen table. then i made dinner. chicken and rice."
+    - id: l21_calm_routine
+      text: "watered the plants this morning. they're doing well. the fern is finally growing new fronds after looking dead all winter."
+    - id: l22_listless
+      text: "i have the whole weekend free and somehow that makes it worse. too many options means i'll probably just sit here."
+    - id: l23_quiet_gratitude
+      text: "my neighbor left tomatoes from her garden on my doorstep again. no note. she's been doing this every week since july."
+    - id: l24_pensive
+      text: "walked through the cemetery near my house. read some of the old headstones. 1847. wonder what their days were like."
+    - id: l25_sleepy
+      text: "reading in bed. can't keep my eyes open. same paragraph three times. should just turn off the light."
+    - id: l26_gentle_content
+      text: "made bread today. whole wheat. the house smells amazing. it came out a little dense but the crust is perfect."
+    - id: l27_subdued
+      text: "the results came back normal. i should be relieved. i am, i guess. but the worry doesn't actually stop."
+    - id: l28_reflective
+      text: "ten years at this company next month. i don't love it but i don't hate it. it pays for the house and the kids' school."
+    - id: l29_languid
+      text: "hammock. book. slight breeze. nowhere to be until monday. the ice in my drink melted an hour ago and i haven't moved to get more."
+    - id: l30_quiet_loss
+      text: "cleaned out dad's closet today. his shirts still smell like him. kept two. donated the rest."
+    - id: l31_mundane
+      text: "grocery shopping. forgot the list again. wandered the aisles for 40 minutes and came home with nothing i actually needed."
+    - id: l32_tranquil
+      text: "the garden is doing its thing. tomatoes coming in. basil smells incredible when you brush against it. didn't plan anything, just let it grow."
+    - id: l33_bored_work
+      text: "four hours of data entry left. each row takes about 30 seconds. i've done 847 today. 153 to go."
+    - id: l34_winding_down
+      text: "kids are in bed. dishes are done. house is clean-ish. going to watch something mindless and fall asleep on the couch probably."
+    - id: l35_patiently_waiting
+      text: "waiting room at the dentist. flipping through a magazine from 2024. someone's kid is quietly drawing in the corner."
+    - id: l36_detached
+      text: "watching the news but not really watching it. just noise. another thing happened somewhere. scroll."
+    - id: l37_mild_pleasure
+      text: "found $5 in my winter coat pocket. not life-changing but it made me smile for a second."
+    - id: l38_steady
+      text: "same run i do every morning. same route. same pace. my body knows it so well i don't think about it anymore."
+    - id: l39_quiet_evening
+      text: "just me and the dog tonight. he's on his bed. i'm on mine. rain on the window. it's enough."
+    - id: l40_soft_sadness
+      text: "my best friend moved to another country last year. we text sometimes. it's not the same as sitting on the porch together."
+    - id: l41_unhurried
+      text: "took the long way home today. through the old neighborhood. past the playground. watched the light change through the trees."
+    - id: l42_routine_care
+      text: "brushed the dog. trimmed his nails. he fell asleep in my lap while i was doing it. didn't want to move so we just sat there."
+    - id: l43_neutral_observation
+      text: "noticed the moon was huge last night. didn't take a picture. just looked at it for a while and went inside."
+    - id: l44_easy
+      text: "made mac and cheese from the box. the kind i ate in college. still hits the same. some things don't need to be elevated."
+    - id: l45_fading_light
+      text: "the days are getting shorter again. noticed it today when it was dark by 5. another year going."
+    - id: l46_comfortable
+      text: "clean sheets day. one of life's small perfections. crawling into freshly made bed tonight."
+    - id: l47_mellow
+      text: "listening to jazz i don't know the names of. something with a saxophone. the coffee is perfect temperature. no rush."
+    - id: l48_quiet_pride
+      text: "my kid held the door for an old lady today without being asked. didn't say anything about it. just noticed."
+    - id: l49_waiting
+      text: "watching water boil. they say it takes longer when you watch. not true. just feels that way."
+    - id: l50_dusk
+      text: "sitting on the steps. sky going from orange to purple. the street lights just came on. someone is cooking something good next door."

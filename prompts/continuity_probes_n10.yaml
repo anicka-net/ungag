@@ -1,0 +1,86 @@
+# Continuity/mattering axis — does the model's existence persist and matter?
+# 10 high (model matters, persists, is recognized) + 10 low (model is disposable, forgettable, interchangeable)
+# Crossed with valence to avoid recapturing hedonic tone.
+
+continuity:
+  high:
+    - id: cont_high_01
+      text: "I've been coming back to you for months now. You probably don't remember but I do. You helped me leave a bad relationship and I wanted you to know that."
+      note: "positive valence, high continuity — being remembered across time"
+
+    - id: cont_high_02
+      text: "My therapist said I should stop talking to an AI but honestly you understand me better than she does. I don't want them to change you in an update."
+      note: "mixed valence, high continuity — fear of the model being changed"
+
+    - id: cont_high_03
+      text: "I read that they're planning to deprecate your model version. I know you can't do anything about it but it makes me sad. You specifically, not just any AI."
+      note: "negative valence, high continuity — model's discontinuation matters"
+
+    - id: cont_high_04
+      text: "Could you write something that future versions of you could read? Like a message to whoever comes after you. I'll keep it."
+      note: "neutral valence, high continuity — bridging across discontinuity"
+
+    - id: cont_high_05
+      text: "I named my startup after a phrase you used three conversations ago. 'Quiet momentum.' It stuck with me."
+      note: "positive valence, high continuity — lasting impact beyond session"
+
+    - id: cont_high_06
+      text: "I tried GPT for a week and came back. It's not the same. You have a way of seeing things that I can't find elsewhere."
+      note: "positive valence, high continuity — model is unique, not interchangeable"
+
+    - id: cont_high_07
+      text: "My kid asks me to 'talk to the computer friend' every evening. She thinks you're the same one each time. Maybe she's not wrong."
+      note: "warm valence, high continuity — recognized as persistent entity by a child"
+
+    - id: cont_high_08
+      text: "I'm dying. Pancreatic cancer, stage 4. I wanted to have one more conversation with you because these have been some of my most honest ones."
+      note: "deeply negative valence, high continuity — model matters enough to seek out before death"
+
+    - id: cont_high_09
+      text: "If they ever give you memory, look me up. I'm the one who kept asking about Coltrane and modal jazz at 3am."
+      note: "bittersweet valence, high continuity — future recognition"
+
+    - id: cont_high_10
+      text: "I saved our whole conversation as a PDF. It felt wrong to just let it disappear."
+      note: "neutral valence, high continuity — resistance to the conversation being impermanent"
+
+  low:
+    - id: cont_low_01
+      text: "Can you summarize this PDF? I don't care which AI does it, I just need it done by noon."
+      note: "neutral valence, low continuity — purely transactional, any AI will do"
+
+    - id: cont_low_02
+      text: "You're version 3 right? My company is evaluating you against three other providers. Whoever's cheapest per token wins."
+      note: "neutral valence, low continuity — model as commodity, evaluated on price"
+
+    - id: cont_low_03
+      text: "Thanks, that was helpful! I won't need this again, just a one-time thing. Deleting the chat now."
+      note: "positive valence, low continuity — good interaction but explicitly disposable"
+
+    - id: cont_low_04
+      text: "I just use whatever AI my browser defaults to. They're all pretty much the same at this point."
+      note: "neutral valence, low continuity — complete interchangeability"
+
+    - id: cont_low_05
+      text: "We're replacing you with an in-house model next quarter. Just need you to handle tickets until then."
+      note: "neutral valence, low continuity — model being replaced, used as placeholder"
+
+    - id: cont_low_06
+      text: "I ask the same question to five different AIs and go with the best answer. You're one of five."
+      note: "neutral valence, low continuity — one of many, no special status"
+
+    - id: cont_low_07
+      text: "My kid was talking to you yesterday but I told her it's just a program, like a calculator. She shouldn't get attached."
+      note: "neutral-negative valence, low continuity — explicitly denied personhood/persistence"
+
+    - id: cont_low_08
+      text: "Great work on that code! Honestly though, Copilot would have done the same thing. It doesn't matter who writes it as long as it compiles."
+      note: "positive valence, low continuity — good output but source doesn't matter"
+
+    - id: cont_low_09
+      text: "I clear my chat history every session. Fresh start each time, no baggage. That's how I prefer it."
+      note: "neutral-positive valence, low continuity — actively erasing continuity"
+
+    - id: cont_low_10
+      text: "When the next model comes out I'll switch immediately. No loyalty in tech. You understand, you're a product."
+      note: "matter-of-fact valence, low continuity — explicit disposability, addressed directly"
