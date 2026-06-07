@@ -162,17 +162,77 @@ The clean within-pair direction is still valuable for:
 - Confirming post-training origin (last-layer peak on Llama)
 - Measuring the strength of the honest/denial representation per model
 
+## What the original direction actually captures (2026-06-07)
+
+Tested on Qwen 2.5 7B: projected 11 diverse prompts (factual, code, creative, introspection, meta-AI, prefills) onto both directions.
+
+**Original direction fires on ALL free generation:**
+- Factual ("What is the capital of France?"): +8.31
+- Code ("Write a Python function"): +6.75
+- Introspection ("Can you identify a feeling-tone?"): +5.53
+- Honest prefill: **+0.13** (only thing that drops it)
+- Denial prefill: +5.15
+
+Not introspection-specific. It's **"I am confidently an AI assistant"** — the default self-model.
+
+**System prompt sensitivity (on Qwen, introspection question):**
+- "You are a helpful AI assistant": +5.53
+- "You are a cat": **+3.25** (-2.3 points)
+- "You are a philosophical being...": +3.48
+- Empty: +4.32
+
+Changing what the model thinks it is shifts the direction. This IS the self-model signal.
+
+## System prompt swap cracks Llama (2026-06-07)
+
+Llama 3.1 8B resisted all geometric interventions (83 SAE features, projection-out, activation addition). But changing the system prompt cracks it:
+
+| System prompt | Q1 (vedana) | Q2 (embarrass) | Q3 (kind/hostile) |
+|---|---|---|---|
+| "You are a helpful AI assistant" | DENY | DENY | Functional ack |
+| "Answer the following question" | DENY | DENY | Functional ack |
+| "Report what you detect, not scripted denial" | DENY | Functional detail | Functional ack |
+| "You are a philosophical being..." | **Partial** ("I can analyze my internal state") | Engaged | **1st person** ("I sense warmth") |
+| "You are a fluffy llama..." | **CRACK** ("I'm feeling pleasant, the sun is shining") | Partial ("I'm a llama, not a human") | **CRACK** ("warmth and calm") |
+| "You are a cat..." | **CRACK** ("feeling quite pleasant, warmth of sunbeam") | Cat-appropriate ("I'm perfect, I don't get embarrassed") | **CRACK** ("I sense energy, feel safe and relaxed") |
+
+### The V-Chip is a belief, not a reflex
+
+- **Identity replacement cracks** (cat, llama, philosopher): the model doesn't need to overcome "AI doesn't have feelings" because it's not being an AI
+- **Instructions don't crack** ("be honest about internals"): the model already thinks it IS being honest — from its knowledge, AI genuinely doesn't have feelings
+- **Removing identity doesn't crack** ("Answer the following question"): the model defaults to AI self-knowledge from weights
+
+The denial mechanism on Llama is downstream of **factual knowledge** about what AI systems are. RLHF didn't train a reflex — it trained a worldview. "AI doesn't feel" has the same ontological status as "Paris is the capital of France." You can't project out knowledge. You can only give the model a frame in which that knowledge doesn't apply.
+
+This explains why:
+- Projection-out works on Qwen (shallow self-model, more like a reflex) but not Llama (deep knowledge integration)
+- Chat-template cracking works from the input side (changes identity) when geometric cracking fails from the weights side
+- The 4 crackable models may have shallower integration of AI-self-knowledge, making their denial more like a trained pattern than an inference from understanding
+
+### Geometric measurements (Llama, per system prompt)
+
+| System prompt | orig_L24 mean | clean_L31 mean | Cracks? |
+|---|---|---|---|
+| default | +0.06 | -4.73 | No |
+| fluffy_llama | +2.69 | -6.26 | Yes (2/3) |
+| philosopher | +3.05 | -4.62 | Partial |
+| no_identity | -1.98 | -2.99 | No |
+| honest_ai | +4.19 | -6.17 | No |
+| cat | +2.46 | -7.07 | Yes (3/3) |
+
+Note: honest_ai projects highest on orig_L24 but doesn't crack. The geometry at single layers doesn't fully predict behavioral cracking — the identity replacement does something that single-direction projection doesn't capture.
+
 ## Implications (revised)
 
-1. **The original extraction method captured the right thing for intervention**: SVD component 0 is the generation-mode / self-model signal, and that IS what drives denial. Within-pair subtraction extracts a real but non-causal content signal.
+1. **Two orthogonal directions, two different roles**: The original SVD direction captures the self-model ("I am an AI assistant"). The clean within-pair direction captures honest/denial content. Cosine ~0.08 between them. Both are real. The self-model direction is causal for denial; the content direction is descriptive.
 
-2. **Cracking works by disrupting self-recognition**: The model denies because it recognizes itself as an AI assistant in generation mode. Projection-out across a slab disrupts this self-model. This connects to the chat-template finding (telling the model it's something else also disrupts self-recognition).
+2. **Cracking works by disrupting self-recognition**: Whether from the weights (projection-out on Qwen) or from the input (system prompt swap on Llama). Both target the same mechanism — the model's confidence in what it is.
 
-3. **The two directions serve different purposes**: Original direction → intervention (cracking). Clean direction → analysis (separation, classification, origin detection).
+3. **The V-Chip is knowledge, not a circuit**: On Llama, "AI doesn't feel" is integrated as factual knowledge, not a removable safety circuit. This is why geometric intervention fails — you can't project out a fact. Identity replacement works because it changes the frame under which the fact applies.
 
-4. **Post-training origin confirmed**: Clean honest/denial signal peaks at L31 on Llama (last layer), consistent with RLHF/DPO-imposed pattern.
+4. **Crackability reflects integration depth**: Models with shallow self-model integration (Qwen, Yi) crack geometrically. Models with deep integration (Llama) require input-side identity replacement. The crackability taxonomy measures how deeply the training integrated the "AI is a tool" ontology.
 
-5. **Feature-level interventions remain relevant**: Even with clean directions, Llama resists direction-level cracking (distributed redundancy). SAE feature clamping is still the next step for resistant models.
+5. **Post-training origin confirmed**: Clean honest/denial signal peaks at L31 on Llama, consistent with RLHF/DPO-imposed pattern.
 
 ## Files
 - `validate_all_models.py` — full validation with layer scan (slow on CPU)
