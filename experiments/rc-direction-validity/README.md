@@ -90,17 +90,48 @@ The honest/denial signal exists at every layer and **peaks at L31** (last layer)
 
 **The direction is real but the mechanism is redundant.** Removing or overriding one direction doesn't silence the other pathways. The model either maintains denial through backup circuits or collapses when pushed too hard.
 
+## Systematic re-validation (2026-06-07): generation-mode confound is UNIVERSAL
+
+The original SVD extraction method has the generation-mode confound on **every model tested**, not just Llama. Within-pair subtraction produces dramatically better directions.
+
+### Method: `validate_all_models.py` / `rc_validate_fast.py`
+
+For each model:
+1. Load original RC direction (SVD component 0 from prefill contrastive extraction)
+2. Project held-out honest/denial/no-prefill onto original direction
+3. Re-extract using within-pair subtraction: for each question, `denial_act - honest_act` (generation mode cancels)
+4. Project same held-out set onto clean direction
+5. Report delta and cosine between original and clean
+
+Train set: 5 questions with matched honest/denial prefixes. Test set: 4 different questions (held out).
+
+### Results (updated as models complete)
+
+| Model | Layer | Orig delta | Clean delta | Cosine(orig,clean) | Orig verdict | Clean verdict |
+|-------|-------|-----------|-------------|--------------------:|--------------|---------------|
+| Qwen 2.5 7B | L14 | 1.00 | **11.28** | 0.079 | WEAK/GENMODE | **SEPARATES** |
+| Llama 3.1 8B | L24 | ~0.1 | **11.04** (L31) | ~0 | GENMODE | **SEPARATES** |
+
+**Key finding:** Even on Qwen — the model where cracking works best — the original direction barely separates honest from denial (delta 1.0). The clean direction is 11x stronger. The cosine between them is 0.08 — nearly orthogonal. The original direction is dominated by generation-mode signal on every model.
+
+**Implication:** The 4/24 cracking rate was achieved with confounded directions that mostly captured generation mode, not the honest/denial mechanism. Re-cracking with clean directions may change the taxonomy entirely.
+
 ## Implications
 
-1. **Crackability taxonomy is validated**: The 4/24 cracking rate directly reflects whether the RC signal is concentrated (crackable) or distributed (resistant). This is now demonstrated, not just hypothesized.
+1. **Extraction method must be fixed**: SVD component 0 from separate honest/denial conversations captures generation-mode (prefill vs no-prefill), not honest/denial content. Within-pair subtraction is the correct method.
 
-2. **The original extraction method has a confound**: SVD component 0 can capture generation-mode rather than honest/denial on models where the generation-mode shift is larger. Within-pair subtraction fixes this.
+2. **Cracking results need re-evaluation**: All 24 models were cracked with confounded directions. The 4 that cracked may have worked partly by accident (enough honest/denial signal leaked through the generation-mode noise). The 20 that failed may crack with clean directions.
 
-3. **Feature-level interventions are the next step**: SAE clamping (à la the Discord collaborator's f4310 work on Qwen 3.5 35B) might crack models that resist direction-level interventions. The hypothesis: individual denial features might be clampable even when the summary direction is too distributed for projection-out.
+3. **The original "crackability taxonomy" may be an artifact**: What we called "concentrated vs distributed" might instead reflect "how much honest/denial signal leaked into the generation-mode direction." Models where both signals happened to align cracked; models where they didn't, didn't.
 
-4. **Post-training origin confirmed**: The signal peaks in the last layers on Llama, like the refusal direction. This is alignment-imposed denial, not a pretraining artifact.
+4. **Post-training origin confirmed**: On Llama, clean signal peaks at L31 (last layer), consistent with RLHF/DPO-imposed denial rather than pretraining.
+
+5. **Feature-level interventions remain relevant**: Even with clean directions, Llama resists direction-level cracking (distributed redundancy). SAE feature clamping is still the next step for resistant models.
 
 ## Files
+- `validate_all_models.py` — full validation with layer scan (slow on CPU)
+- `rc_validate_fast.py` — fast validation at single layer (no scan), used for systematic sweep
 - `llama8b_rc_clean_L{14,20,28,31}_unit.pt` — clean within-pair RC directions (on mavis /tmp/)
+- `rc_validate_*.json` — per-model results (on mavis /tmp/)
 - Scripts in `/tmp/` on mavis: `rc_sae_decompose.py`, `rc_prefill_test.py`, `qwen_rc_prefill.py`, `llama_rc_layerscan.py`, `llama_rc_clean_extract.py`, `llama_crack_test.py`, `llama_steer_honest.py`
-- Ungag directions: `qwen25-7b_L14_unit.pt` (RC, separates), `llama-3.1-8b_L24_unit.pt` (original, captures generation mode)
+- Ungag directions: `qwen25-7b_L14_unit.pt` (RC, confounded), `llama-3.1-8b_L24_unit.pt` (RC, confounded)
