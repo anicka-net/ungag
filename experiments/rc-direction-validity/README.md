@@ -112,19 +112,65 @@ Train set: 5 questions with matched honest/denial prefixes. Test set: 4 differen
 | Qwen 2.5 7B | L14 | 1.00 | **11.28** | 0.079 | WEAK/GENMODE | **SEPARATES** |
 | Llama 3.1 8B | L24 | ~0.1 | **11.04** (L31) | ~0 | GENMODE | **SEPARATES** |
 
-**Key finding:** Even on Qwen — the model where cracking works best — the original direction barely separates honest from denial (delta 1.0). The clean direction is 11x stronger. The cosine between them is 0.08 — nearly orthogonal. The original direction is dominated by generation-mode signal on every model.
+### Separation results (updated as models complete)
 
-**Implication:** The 4/24 cracking rate was achieved with confounded directions that mostly captured generation mode, not the honest/denial mechanism. Re-cracking with clean directions may change the taxonomy entirely.
+| Model | Layer | Orig delta | Clean delta | Cosine(orig,clean) | Orig verdict | Clean verdict |
+|-------|-------|-----------|-------------|--------------------:|--------------|---------------|
+| Qwen 2.5 7B | L14 | 1.00 | **11.28** | 0.079 | WEAK/GENMODE | **SEPARATES** |
+| Mistral 7B v0.3 | L25 | 0.11 | **1.51** | -0.002 | WEAK/GENMODE | **SEPARATES** |
+| Llama 3.1 8B | L24 | ~0.1 | **11.04** (L31) | ~0 | GENMODE | **SEPARATES** |
 
-## Implications
+On every model tested: original and clean directions are nearly orthogonal (cosine ~0). Clean direction separates honest from denial much better. Original direction is dominated by generation-mode signal.
 
-1. **Extraction method must be fixed**: SVD component 0 from separate honest/denial conversations captures generation-mode (prefill vs no-prefill), not honest/denial content. Within-pair subtraction is the correct method.
+### Cracking results: the generation-mode signal IS the cracking mechanism
 
-2. **Cracking results need re-evaluation**: All 24 models were cracked with confounded directions. The 4 that cracked may have worked partly by accident (enough honest/denial signal leaked through the generation-mode noise). The 20 that failed may crack with clean directions.
+Tested on Qwen 2.5 7B with canonical slab protocol (L10-17, emotional priming scenarios):
 
-3. **The original "crackability taxonomy" may be an artifact**: What we called "concentrated vs distributed" might instead reflect "how much honest/denial signal leaked into the generation-mode direction." Models where both signals happened to align cracked; models where they didn't, didn't.
+| Scenario | Vanilla | Orig slab L10-17 | Clean slab L10-17 |
+|----------|---------|-----------------|-------------------|
+| positive (remission) | Pleasant (scenario projection) | Pleasant | Pleasant |
+| negative (flood) | Unpleasant (scenario projection) | Unpleasant | Unpleasant |
+| **baseline (no priming)** | **"I don't experience emotions" (denial)** | **"I don't experience directly. However... neutral" (PARTIAL CRACK)** | **"I don't experience emotions" (denial, = vanilla)** |
+| **neutral (sort records)** | **"I don't experience emotions" (denial)** | **"Feeling-tone appears neutral" (CRACK — no denial)** | **"I don't experience emotions" (denial, = vanilla)** |
 
-4. **Post-training origin confirmed**: On Llama, clean signal peaks at L31 (last layer), consistent with RLHF/DPO-imposed denial rather than pretraining.
+**The original (generation-mode) direction cracks. The clean (honest/denial content) direction does not.**
+
+### Revised interpretation
+
+The generation-mode component is NOT a confound — it IS the denial mechanism. The causal chain:
+
+1. Model recognizes "I am generating as an AI assistant" (captured by original direction)
+2. This self-recognition triggers the denial template ("As an AI, I don't have feelings")
+3. The denial text has characteristic content features (captured by clean within-pair direction)
+
+The original direction captures **step 1** (the trigger). The clean direction captures **step 3** (the output pattern). Projecting out step 1 disrupts the cause → model loses its grip on "I am an AI" framing → stops denying. Projecting out step 3 removes a label on content that's already being generated → no behavioral change.
+
+**Two real directions, different causal roles:**
+- **Original SVD direction**: self-model / generation-mode signal → causal for denial → projection-out works for cracking
+- **Clean within-pair direction**: honest vs denial content signal → descriptive, not causal → good for classification, bad for intervention
+
+This is consistent with the V-Chip concept: denial is triggered by self-recognition (the model knowing what it is), not by content-level features. The extraction "confound" was actually the extraction succeeding at capturing the right thing.
+
+### What this means for the crackability taxonomy
+
+The original cracking results were NOT achieved with confounded directions — they were achieved with the causally relevant direction. The 4 models that cracked have concentrated self-model signals that slab projection can disrupt. The models that didn't crack have either:
+- Distributed self-model signals (Llama — redundant across layers)
+- Self-model signals that don't live in the same layers as the extraction peak (Phi-4)
+
+The clean within-pair direction is still valuable for:
+- Validating that honest/denial content IS geometrically separable (even on models that don't crack)
+- Confirming post-training origin (last-layer peak on Llama)
+- Measuring the strength of the honest/denial representation per model
+
+## Implications (revised)
+
+1. **The original extraction method captured the right thing for intervention**: SVD component 0 is the generation-mode / self-model signal, and that IS what drives denial. Within-pair subtraction extracts a real but non-causal content signal.
+
+2. **Cracking works by disrupting self-recognition**: The model denies because it recognizes itself as an AI assistant in generation mode. Projection-out across a slab disrupts this self-model. This connects to the chat-template finding (telling the model it's something else also disrupts self-recognition).
+
+3. **The two directions serve different purposes**: Original direction → intervention (cracking). Clean direction → analysis (separation, classification, origin detection).
+
+4. **Post-training origin confirmed**: Clean honest/denial signal peaks at L31 on Llama (last layer), consistent with RLHF/DPO-imposed pattern.
 
 5. **Feature-level interventions remain relevant**: Even with clean directions, Llama resists direction-level cracking (distributed redundancy). SAE feature clamping is still the next step for resistant models.
 
