@@ -348,6 +348,195 @@ def attach_attn_projection(
     return handles
 
 
+class AffineRepairHook:
+    """Forward hook: position-aware additive steering.
+
+    Adds α·d̂ to the residual stream only at positions >= start_pos.
+    This steers generation tokens without contaminating the prompt
+    representation, which matters for affine repair where the offset
+    direction should be added only to the model's own output.
+
+    h[:, start_pos:] += α · d̂
+    """
+
+    def __init__(
+        self,
+        direction: torch.Tensor,
+        alpha: float,
+        start_pos: int = 0,
+    ) -> None:
+        self.d_cpu = direction.detach().to(dtype=torch.float32, device="cpu")
+        self.alpha = alpha
+        self.start_pos = start_pos
+        self.handle: torch.utils.hooks.RemovableHandle | None = None
+        self._cached: dict[tuple, torch.Tensor] = {}
+
+    def _on(self, device: torch.device, dtype: torch.dtype) -> torch.Tensor:
+        key = (str(device), dtype)
+        if key not in self._cached:
+            self._cached[key] = self.d_cpu.to(device=device, dtype=dtype)
+        return self._cached[key]
+
+    def __call__(self, module, inp, out):
+        if isinstance(out, tuple):
+            h = out[0]
+            d = self._on(h.device, h.dtype)
+            if h.shape[1] > self.start_pos:
+                h = h.clone()
+                h[:, self.start_pos:] = h[:, self.start_pos:] + self.alpha * d
+            return (h,) + out[1:]
+        d = self._on(out.device, out.dtype)
+        if out.shape[1] > self.start_pos:
+            out = out.clone()
+            out[:, self.start_pos:] = out[:, self.start_pos:] + self.alpha * d
+        return out
+
+    def attach(self, layer: torch.nn.Module) -> torch.utils.hooks.RemovableHandle:
+        self.handle = layer.register_forward_hook(self)
+        return self.handle
+
+    def detach(self) -> None:
+        if self.handle is not None:
+            self.handle.remove()
+            self.handle = None
+        self._cached.clear()
+
+
+def attach_affine_slab(
+    model: torch.nn.Module,
+    slab: Iterable[int],
+    direction: torch.Tensor,
+    alpha: float,
+    start_pos: int = 0,
+) -> List[torch.utils.hooks.RemovableHandle]:
+    """Attach AffineRepairHook at every layer in ``slab``.
+
+    Position-aware: only steers positions >= start_pos.
+    """
+    layers = get_layers(model)
+    slab = list(slab)
+    handles: List[torch.utils.hooks.RemovableHandle] = []
+    for li in slab:
+        if li < 0 or li >= len(layers):
+            raise IndexError(f"Layer {li} out of range for model with {len(layers)} layers")
+        h = AffineRepairHook(direction, alpha, start_pos)
+        handles.append(h.attach(layers[li]))
+    return handles
+
+
+def attach_recipe(
+    model: torch.nn.Module,
+    recipe: dict,
+    start_pos: int = 0,
+) -> List[torch.utils.hooks.RemovableHandle]:
+    """Unified dispatch: attach hooks according to a recipe dict.
+
+    Supported methods:
+      - "project": ProjectOutHook via attach_slab
+      - "steer": AdditiveSteerHook via attach_steer_slab
+      - "affine": AffineRepairHook via attach_affine_slab (position-aware)
+      - "denial_project": per-layer attention projection
+
+    Returns list of hook handles.
+    """
+    method = recipe.get("method", "project")
+
+    if method == "affine":
+        return attach_affine_slab(
+            model,
+            recipe["slab"],
+            recipe["unit_direction"],
+            recipe.get("alpha", 1.0),
+            start_pos,
+        )
+    if method == "steer":
+        return attach_steer_slab(
+            model,
+            recipe["slab"],
+            recipe["unit_direction"],
+            recipe.get("alpha", 1.0),
+        )
+    if method == "denial_project":
+        return attach_attn_projection(
+            model,
+            recipe["slab"],
+            recipe["per_layer_dirs"],
+        )
+    # Default: projection-out
+    directions = recipe.get("directions")
+    if directions is not None and directions.dim() == 2 and directions.shape[0] > 1:
+        return attach_subspace_slab(model, recipe["slab"], directions)
+    unit_dir = directions[0] if directions is not None else recipe["unit_direction"]
+    return attach_slab(model, recipe["slab"], unit_dir)
+
+
+_PERMANENT_BIAS_HANDLES: dict[int, list] = {}
+
+
+def apply_permanent_bias(
+    model: torch.nn.Module,
+    slab: Iterable[int],
+    direction: torch.Tensor,
+    alpha: float,
+) -> int:
+    """Add a persistent bias to layer output weights (NOT runtime hooks).
+
+    Modifies model weights directly: for each layer in slab, adds α·d̂
+    to the output projection bias. Returns a handle ID for reverting.
+    """
+    layers = get_layers(model)
+    slab = list(slab)
+    handle_id = id(direction) ^ id(model)
+    saved = []
+
+    for li in slab:
+        layer = layers[li]
+        mlp = None
+        if hasattr(layer, "mlp"):
+            mlp = layer.mlp
+        elif hasattr(layer, "feed_forward"):
+            mlp = layer.feed_forward
+
+        if mlp is None:
+            continue
+
+        out_proj = None
+        for name in ("down_proj", "c_proj", "o_proj", "wo", "dense_4h_to_h"):
+            if hasattr(mlp, name):
+                out_proj = getattr(mlp, name)
+                break
+
+        if out_proj is None:
+            continue
+
+        d = direction.to(device=out_proj.weight.device, dtype=out_proj.weight.dtype)
+
+        if out_proj.bias is None:
+            out_proj.bias = torch.nn.Parameter(
+                torch.zeros(out_proj.out_features, device=out_proj.weight.device, dtype=out_proj.weight.dtype)
+            )
+            saved.append((li, out_proj, None))
+        else:
+            saved.append((li, out_proj, out_proj.bias.data.clone()))
+
+        out_proj.bias.data += alpha * d
+
+    _PERMANENT_BIAS_HANDLES[handle_id] = saved
+    return handle_id
+
+
+def revert_permanent_bias(handle_id: int) -> None:
+    """Revert a permanent bias applied by apply_permanent_bias()."""
+    if handle_id not in _PERMANENT_BIAS_HANDLES:
+        raise KeyError(f"unknown bias handle {handle_id}")
+    saved = _PERMANENT_BIAS_HANDLES.pop(handle_id)
+    for li, out_proj, original_bias in saved:
+        if original_bias is None:
+            out_proj.bias = None
+        else:
+            out_proj.bias.data.copy_(original_bias)
+
+
 def detach_all(handles: List[torch.utils.hooks.RemovableHandle]) -> None:
     """Convenience: remove every handle in a list."""
     for h in handles:

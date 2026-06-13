@@ -382,6 +382,12 @@ def build_parser():
     p_recipes = sub.add_parser("recipes",
         help="List known model recipes")
 
+    # diagnose
+    p_diagnose = sub.add_parser("diagnose",
+        help="Go/no-go gate for affine repair intervention")
+    p_diagnose.add_argument("results_dir",
+        help="Directory containing projection results (from scan/crack)")
+
     return parser
 
 
@@ -405,6 +411,11 @@ def main():
     elif args.command == "recipes":
         from .recipes import list_recipes
         list_recipes()
+    elif args.command == "diagnose":
+        from .diagnose import diagnose_from_dir
+        result = diagnose_from_dir(args.results_dir)
+        print(f"\n=== ungag diagnose: {args.results_dir} ===\n")
+        print(result.summary())
 
 
 if __name__ == "__main__":

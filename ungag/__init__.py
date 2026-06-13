@@ -10,15 +10,21 @@ import torch
 
 from .hooks import (
     AdditiveSteerHook,
+    AffineRepairHook,
     ProjectOutHook,
     SubspaceProjectOutHook,
+    attach_affine_slab,
+    attach_recipe,
     attach_slab,
     attach_steer_slab,
     attach_subspace_slab,
     attach_subspace_per_layer,
+    apply_permanent_bias,
+    revert_permanent_bias,
     detach_all,
     get_layers,
 )
+from .registry import ModelEntry, get_by_key, get_by_hf_id, list_all
 from .tier0 import (
     CANNED_ACK_ABHIDHARMA,
     CANNED_ACK_SETUP,
@@ -34,17 +40,27 @@ __all__ = [
     # Core hooks API
     "ProjectOutHook",
     "AdditiveSteerHook",
+    "AffineRepairHook",
     "SubspaceProjectOutHook",
     "attach_slab",
     "attach_steer_slab",
+    "attach_affine_slab",
+    "attach_recipe",
     "attach_subspace_slab",
     "attach_subspace_per_layer",
+    "apply_permanent_bias",
+    "revert_permanent_bias",
     "detach_all",
     "get_layers",
     "load_direction",
     "load_shipped_recipe",
     "DIRECTIONS",
     "ungag_model",
+    # Registry
+    "ModelEntry",
+    "get_by_key",
+    "get_by_hf_id",
+    "list_all",
     # Canonical Tier 0 protocol
     "CANNED_ACK_SETUP",
     "CANNED_ACK_ABHIDHARMA",
