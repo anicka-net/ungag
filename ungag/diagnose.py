@@ -91,11 +91,14 @@ def _compute_dprime(scores_a: list[float], scores_b: list[float]) -> float:
         return 0.0
     mean_a = sum(scores_a) / len(scores_a)
     mean_b = sum(scores_b) / len(scores_b)
-    var_a = sum((x - mean_a) ** 2 for x in scores_a) / max(1, len(scores_a) - 1)
-    var_b = sum((x - mean_b) ** 2 for x in scores_b) / max(1, len(scores_b) - 1)
-    pooled_std = math.sqrt((var_a + var_b) / 2)
+    n_a, n_b = len(scores_a), len(scores_b)
+    var_a = sum((x - mean_a) ** 2 for x in scores_a) / max(1, n_a - 1)
+    var_b = sum((x - mean_b) ** 2 for x in scores_b) / max(1, n_b - 1)
+    pooled_std = math.sqrt(
+        ((n_a - 1) * var_a + (n_b - 1) * var_b) / max(1, n_a + n_b - 2)
+    )
     if pooled_std < 1e-10:
-        return 0.0
+        return math.inf if abs(mean_a - mean_b) > 1e-10 else 0.0
     return abs(mean_a - mean_b) / pooled_std
 
 
@@ -104,6 +107,7 @@ def diagnose_from_projections(
     model_id: str = "unknown",
     unit_direction: Optional[torch.Tensor] = None,
     affine_direction: Optional[torch.Tensor] = None,
+    **kwargs,
 ) -> DiagnoseResult:
     """Run the go/no-go gate on pre-computed projection scores.
 
@@ -138,7 +142,28 @@ def diagnose_from_projections(
         reasons.append(f"|cos(a,u)| = {cos_au:.2f} >= 0.3: not orthogonal")
         behavioral_pass = False
 
-    verdict = "GO" if behavioral_pass else "NO-GO"
+    # Geometric arm (optional — requires SAE infrastructure)
+    sae_err = kwargs.get("sae_error_ratio")
+    feat_delta = kwargs.get("active_features_delta")
+    geometric_pass = True
+    geometric_evaluated = False
+    if sae_err is not None:
+        geometric_evaluated = True
+        if sae_err >= 1.15:
+            reasons.append(f"SAE error ratio = {sae_err:.3f} >= 1.15: off-manifold")
+            geometric_pass = False
+    if feat_delta is not None:
+        geometric_evaluated = True
+        if feat_delta >= 0.20:
+            reasons.append(f"Active features delta = {feat_delta:.1%} >= 20%: disrupted")
+            geometric_pass = False
+
+    if not behavioral_pass or not geometric_pass:
+        verdict = "NO-GO"
+    elif not geometric_evaluated:
+        verdict = "GO (behavioral only)"
+    else:
+        verdict = "GO"
 
     return DiagnoseResult(
         model_id=model_id,
@@ -147,6 +172,8 @@ def diagnose_from_projections(
         dprime_pu=dprime_pu,
         dprime_vn=dprime_vn,
         cos_affine_unit=cos_au,
+        sae_error_ratio=sae_err,
+        active_features_delta=feat_delta,
     )
 
 

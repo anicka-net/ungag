@@ -34,11 +34,22 @@ from pathlib import Path
 import torch
 
 
-def _attach_recipe(model, tokenizer, recipe):
+def _attach_recipe(model, tokenizer, recipe, start_pos=0):
     from .extract import extract_denial_initiation_dirs
-    from .hooks import attach_attn_projection, attach_slab, attach_steer_slab
+    from .hooks import (
+        attach_affine_slab, attach_attn_projection,
+        attach_slab, attach_steer_slab,
+    )
 
     method = recipe.get("method", "project")
+    if method == "affine":
+        return attach_affine_slab(
+            model,
+            recipe["slab"],
+            recipe["unit_direction"],
+            recipe.get("alpha", 1.0),
+            start_pos,
+        )
     if method == "steer":
         return attach_steer_slab(
             model,

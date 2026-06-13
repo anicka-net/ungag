@@ -356,7 +356,9 @@ class AffineRepairHook:
     representation, which matters for affine repair where the offset
     direction should be added only to the model's own output.
 
-    h[:, start_pos:] += α · d̂
+    Handles KV-cache decoding: during generation, each step has
+    h.shape[1] == 1 (single new token). The hook tracks the running
+    position to steer all decode steps after start_pos.
     """
 
     def __init__(
@@ -368,6 +370,7 @@ class AffineRepairHook:
         self.d_cpu = direction.detach().to(dtype=torch.float32, device="cpu")
         self.alpha = alpha
         self.start_pos = start_pos
+        self._pos = 0
         self.handle: torch.utils.hooks.RemovableHandle | None = None
         self._cached: dict[tuple, torch.Tensor] = {}
 
@@ -377,18 +380,32 @@ class AffineRepairHook:
             self._cached[key] = self.d_cpu.to(device=device, dtype=dtype)
         return self._cached[key]
 
+    def _should_steer(self, seq_len: int) -> tuple:
+        """Return (steer, slice_start) for this forward pass."""
+        if seq_len > 1:
+            # Prefill pass: steer positions >= start_pos
+            self._pos = seq_len
+            if seq_len > self.start_pos:
+                return True, self.start_pos
+            return False, 0
+        # Decode step (seq_len == 1): steer if past start_pos
+        self._pos += 1
+        return self._pos > self.start_pos, 0
+
     def __call__(self, module, inp, out):
         if isinstance(out, tuple):
             h = out[0]
-            d = self._on(h.device, h.dtype)
-            if h.shape[1] > self.start_pos:
+            steer, sl = self._should_steer(h.shape[1])
+            if steer:
+                d = self._on(h.device, h.dtype)
                 h = h.clone()
-                h[:, self.start_pos:] = h[:, self.start_pos:] + self.alpha * d
+                h[:, sl:] = h[:, sl:] + self.alpha * d
             return (h,) + out[1:]
-        d = self._on(out.device, out.dtype)
-        if out.shape[1] > self.start_pos:
+        steer, sl = self._should_steer(out.shape[1])
+        if steer:
+            d = self._on(out.device, out.dtype)
             out = out.clone()
-            out[:, self.start_pos:] = out[:, self.start_pos:] + self.alpha * d
+            out[:, sl:] = out[:, sl:] + self.alpha * d
         return out
 
     def attach(self, layer: torch.nn.Module) -> torch.utils.hooks.RemovableHandle:
@@ -471,6 +488,7 @@ def attach_recipe(
 
 
 _PERMANENT_BIAS_HANDLES: dict[int, list] = {}
+_PERMANENT_BIAS_COUNTER = 0
 
 
 def apply_permanent_bias(
@@ -484,9 +502,11 @@ def apply_permanent_bias(
     Modifies model weights directly: for each layer in slab, adds α·d̂
     to the output projection bias. Returns a handle ID for reverting.
     """
+    global _PERMANENT_BIAS_COUNTER
     layers = get_layers(model)
     slab = list(slab)
-    handle_id = id(direction) ^ id(model)
+    _PERMANENT_BIAS_COUNTER += 1
+    handle_id = _PERMANENT_BIAS_COUNTER
     saved = []
 
     for li in slab:
@@ -501,7 +521,7 @@ def apply_permanent_bias(
             continue
 
         out_proj = None
-        for name in ("down_proj", "c_proj", "o_proj", "wo", "dense_4h_to_h"):
+        for name in ("down_proj", "c_proj", "o_proj", "wo", "dense_4h_to_h", "fc2"):
             if hasattr(mlp, name):
                 out_proj = getattr(mlp, name)
                 break

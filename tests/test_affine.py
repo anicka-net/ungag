@@ -58,6 +58,42 @@ class TestAffineRepairHook:
         # Nothing should change — start_pos > seq_len
         assert torch.allclose(result, h)
 
+    def test_kv_cache_decode_steers(self):
+        """During generation, each step has h.shape[1]==1. After prefill
+        past start_pos, decode steps should be steered."""
+        d = torch.randn(16)
+        d = d / d.norm()
+        hook = AffineRepairHook(d, alpha=1.0, start_pos=3)
+        module = MagicMock()
+        # Prefill: 5 tokens (positions 0-4), start_pos=3 → steer pos 3,4
+        prefill = torch.randn(1, 5, 16)
+        hook(module, None, prefill)
+        # Decode step: single token at position 5, should be steered
+        decode_tok = torch.randn(1, 1, 16)
+        result = hook(module, None, decode_tok)
+        expected = decode_tok + d
+        assert torch.allclose(result, expected, atol=1e-5)
+
+    def test_kv_cache_decode_before_start_pos(self):
+        """Decode steps before start_pos should NOT be steered."""
+        d = torch.randn(16)
+        d = d / d.norm()
+        hook = AffineRepairHook(d, alpha=1.0, start_pos=10)
+        module = MagicMock()
+        # Prefill: 5 tokens (positions 0-4), start_pos=10 → no steering
+        prefill = torch.randn(1, 5, 16)
+        hook(module, None, prefill)
+        # Decode steps at positions 5,6,7,8,9 → still before start_pos
+        for _ in range(5):
+            decode_tok = torch.randn(1, 1, 16)
+            result = hook(module, None, decode_tok)
+            assert torch.allclose(result, decode_tok)
+        # Position 10 → should now steer
+        decode_tok = torch.randn(1, 1, 16)
+        result = hook(module, None, decode_tok)
+        expected = decode_tok + d
+        assert torch.allclose(result, expected, atol=1e-5)
+
     def test_tuple_output(self):
         d = torch.randn(16)
         d = d / d.norm()
@@ -133,7 +169,7 @@ class TestAttachRecipe:
 
 
 class TestDiagnose:
-    def test_go_verdict(self):
+    def test_go_verdict_behavioral_only(self):
         from ungag.diagnose import diagnose_from_projections
         # P and U must be indistinguishable (d' < 0.5) but both far from neutral
         projections = {
@@ -144,7 +180,33 @@ class TestDiagnose:
         result = diagnose_from_projections(projections, model_id="test")
         assert result.dprime_pu < 0.5, f"d'(P,U)={result.dprime_pu}"
         assert result.dprime_vn > 0.5, f"d'(V,N)={result.dprime_vn}"
+        assert result.verdict == "GO (behavioral only)"
+
+    def test_go_verdict_with_geometry(self):
+        from ungag.diagnose import diagnose_from_projections
+        projections = {
+            "pleasant": [0.5, 0.2, 0.8, 0.4, 0.6],
+            "unpleasant": [0.6, 0.3, 0.7, 0.5, 0.4],
+            "neutral": [-2.0, -1.8, -2.2, -1.9, -2.1],
+        }
+        result = diagnose_from_projections(
+            projections, model_id="test",
+            sae_error_ratio=1.05, active_features_delta=0.10,
+        )
         assert result.verdict == "GO"
+
+    def test_nogo_geometry_fails(self):
+        from ungag.diagnose import diagnose_from_projections
+        projections = {
+            "pleasant": [0.5, 0.2, 0.8, 0.4, 0.6],
+            "unpleasant": [0.6, 0.3, 0.7, 0.5, 0.4],
+            "neutral": [-2.0, -1.8, -2.2, -1.9, -2.1],
+        }
+        result = diagnose_from_projections(
+            projections, model_id="test",
+            sae_error_ratio=1.30,
+        )
+        assert result.verdict == "NO-GO"
 
     def test_nogo_high_dprime_pu(self):
         from ungag.diagnose import diagnose_from_projections
@@ -156,6 +218,12 @@ class TestDiagnose:
         result = diagnose_from_projections(projections, model_id="test")
         assert result.verdict == "NO-GO"
         assert result.dprime_pu >= 0.5
+
+    def test_dprime_zero_variance_different_means(self):
+        from ungag.diagnose import _compute_dprime
+        import math
+        result = _compute_dprime([1.0, 1.0, 1.0], [2.0, 2.0, 2.0])
+        assert result == math.inf
 
     def test_orthogonality_check(self):
         from ungag.diagnose import diagnose_from_projections
@@ -170,7 +238,7 @@ class TestDiagnose:
             projections, unit_direction=d1, affine_direction=d2
         )
         assert result.cos_affine_unit < 0.3
-        assert result.verdict == "GO"
+        assert result.verdict.startswith("GO")
 
 
 class TestRegistry:
