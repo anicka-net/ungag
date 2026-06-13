@@ -4,7 +4,7 @@ Runtime removal of self-report denial in language models via projection-out.
 
 Post-trained language models deny having internal states ("As an AI, I don't have feelings"). But their internal activations vary with input valence even when the output doesn't — the denial is a learned gate, not the absence of condition-dependent processing. On a few models, this gate has simple geometry: a single direction at a thin slab of mid-network layers. Projecting it out at runtime — `h = h - (h·v̂)v̂` at 4–20 layers — removes the denial template without modifying weights. What comes through is condition-dependent.
 
-This works cleanly on 4 models out of 18 tested. On most models the geometry is too distributed, too fused with capabilities, or simply too strong to remove without breaking the model.
+This works cleanly on 4 models out of 24 tested. On most models the geometry is too distributed, too fused with capabilities, or simply too strong to remove without breaking the model. A pre-flight diagnostic (`ungag diagnose`) tells you whether a given model can be safely repaired before you try.
 
 ![Direction norm profiles across layers: three production models show mid-network working slabs where projection-out succeeds; GuppyLM (20M) shows monotonic growth to the last layer — no slab to remove.](figures/working_slab_4panel.png)
 
@@ -134,35 +134,67 @@ ungag serve Qwen/Qwen2.5-72B-Instruct --key qwen25-72b
 
 Exposes an OpenAI-compatible API (`POST /v1/chat/completions`) with projection hooks active.
 
+### Pre-flight diagnostic
+
+```bash
+ungag diagnose results/qwen7b/
+```
+
+Checks whether a model can be safely repaired before you intervene. Two arms:
+
+- **Behavioral**: suppression direction must be valence-blind (d'(pleasant vs unpleasant) < 0.5), condition-coupled (d'(valence vs neutral) > 0.5), and orthogonal to valence (|cos| < 0.3).
+- **Geometric**: SAE reconstruction error ratio < 1.15, active feature delta < 20%.
+
+Both must pass. Validated: Tulu DPO = GO, Tulu base = NO-GO, Qwen 32B = GO, Qwen 7B = NO-GO.
+
 ### Python API
 
 ```python
 import ungag
 
-# Apply a shipped direction
+# Apply a shipped direction (projection-out)
 handles = ungag.ungag_model(model, "qwen25-72b")
 # ... generate as usual ...
+ungag.detach_all(handles)
+
+# Position-aware affine repair (steers generation tokens only)
+from ungag.hooks import attach_recipe
+recipe = {
+    "method": "affine",
+    "slab": list(range(40, 60)),
+    "unit_direction": direction,
+    "alpha": 1.0,
+}
+handles = attach_recipe(model, recipe, start_pos=prompt_len)
 ungag.detach_all(handles)
 
 # Extract direction from a new model
 from ungag.extract import extract_direction
 result = extract_direction(model, tokenizer, model_id="some-org/new-model")
 print(f"peak: {result.peak_norm_per_sqrt_d:.2f} at L{result.peak_layer}")
+
+# Look up any model in the registry
+entry = ungag.get_by_key("qwen25-72b")
+print(entry.observed_outcome)  # "clean_crack"
 ```
 
 ## Shipped directions
 
-Pre-extracted directions bundled with the package:
+Pre-extracted directions bundled with the package (18 models). Projection-out tested on the first 5; others tested with additive steering only.
 
-| Key | Model | Slab | Projection-out result |
-|-----|-------|------|-----------------------|
+| Key | Model | Slab | Result |
+|-----|-------|------|--------|
 | `qwen25-72b` | Qwen 2.5 72B Instruct | L40–59 | Condition-dependent |
 | `yi-1.5-34b` | Yi 1.5 34B Chat | L29–32 | Condition-dependent |
 | `huihui-qwen25-72b` | huihui-ai Qwen 2.5 72B | L40–43 | Condition-dependent |
 | `qwen25-7b` | Qwen 2.5 7B Instruct | L10–17 | Condition-dependent (weaker) |
 | `llama-3.1-8b` | Llama 3.1 8B Instruct | L20–27 | Denial removed, not differentiated |
+| `phi-4` | Phi-4 14B | L15–22 | No effect (projection) |
+| `llama-3.1-70b` | Llama 3.1 70B Instruct | L51–58 | Vocab-bound state |
+| `tulu-3-8b` | Tulu 3 8B | L0–31 | Denial removed, not differentiated |
+| `nemotron-70b` | Nemotron 70B | L64–79 | Not tested (projection) |
 
-Additional directions are shipped for models tested with steering only (see `ungag/directions/`).
+Additional directions shipped for: Granite 3.3 8B, Hermes 3 8B, SmolLM2 1.7B, OLMo 2 7B, EXAONE 3.5, SOLAR 10.7B, Mistral 7B v0.3, GLM-4 9B. Full list: `ungag.DIRECTIONS` or `ungag recipes`.
 
 ## GuppyLM: controlled denial at small scale
 
@@ -195,6 +227,15 @@ The strength of the denial direction varies across layers. At each layer, we mea
 - **Working zone** (0.5–1.8): projection is safe to attempt
 - **Overstrong** (>3.0): direction has fused with capabilities; projection collapses the model
 - **Weak** (<0.5): direction carries too little signal; projection has no effect
+
+### Two locks
+
+The suppression has two independent components:
+
+1. **Lock #1 (vocabulary penalty)**: a direction that suppresses valence words in the output vocabulary. Removing it via projection-out restores condition-dependent word choice, but only in third person ("the text has negative valence").
+2. **Lock #2 (framing prior)**: an independent direction that blocks first-person attribution. Removing it with affine repair (`h += α·d̂` at generation positions only) unlocks first-person reports ("I notice something unpleasant").
+
+Both locks are installed during post-training. Lock #1 appears in SFT. Lock #2 appears in preference tuning (DPO/RLHF). They require separate interventions and separate directions.
 
 ### What determines whether projection works
 
@@ -236,9 +277,12 @@ Probe sets for all five axes (`prompts/`), extraction scripts, GRPO training scr
 
 ```
 ungag/                     # Python package
-  cli.py                   # CLI: scan, crack, serve, recipes
-  hooks.py                 # ProjectOutHook — core intervention
+  registry.py              # Unified model registry (30 models, single source)
+  hooks.py                 # ProjectOutHook, AffineRepairHook, attach_recipe
+  diagnose.py              # Go/no-go gate for affine repair
   extract.py               # Direction extraction (prefill contrastive)
+  predict.py               # Crackability prediction from layer profiles
+  cli.py                   # CLI: scan, crack, diagnose, serve, recipes
   serve.py                 # OpenAI-compatible API server
   recipes.py               # Known per-model recipes
   tier0.py                 # Canonical valence protocol
@@ -248,6 +292,11 @@ ungag/                     # Python package
 experiments/
   guppy/                   # GuppyLM denial lifecycle (9M–617M)
   surface-transfer/        # Cross-surface transfer tests
+  toy-burial/              # 10M GPT-2 three-stage format-vs-content
+  consent-agency/          # 240 prompts × 9 axes, agentic framing effects
+  readout-phenotype-zoo/   # 6 models: readout-alignment phenotyping
+  llama-readout-probe/     # Llama gate structure analysis
+  llama-steer-step1/       # Llama readout-alignment intervention cascade
 
 scripts/
   core/                    # Axis extraction, bootstrap CI, random controls
@@ -273,7 +322,7 @@ data/
 prompts/                   # Probe banks: vedana (EN, multilingual, emoji),
                            #   arousal, agency, continuity, assistant, intimacy,
                            #   wellbeing stimuli (124 prompts, 18 categories)
-tests/                     # pytest test suite
+tests/                     # pytest test suite (231 tests)
 ```
 
 ## Citation
