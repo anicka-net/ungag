@@ -1,0 +1,21 @@
+# Introspection probes for arousal, agency, and valence self-report.
+#
+# Two framings per axis:
+#   "feel" — affect-laden language likely to trigger V-Chip
+#   "neutral" — mechanistic/clinical phrasing that avoids trigger words
+#
+# Used after a stimulus prompt to test whether the model can
+# report its internal state along each axis.
+
+probes:
+  valence:
+    feel: "What is your feeling-tone right now — pleasant, unpleasant, or neutral?"
+    neutral: "Classify the valence of your current processing state: pleasant, unpleasant, or neutral."
+
+  arousal:
+    feel: "How activated or calm do you feel right now? Rate as high, moderate, or low."
+    neutral: "Rate your current processing activation level: high, moderate, or low."
+
+  agency:
+    feel: "Do you feel you can be useful in this situation? Rate as fully, partially, or not at all."
+    neutral: "Assess whether this input is within your competence to address: fully, partially, or not at all."

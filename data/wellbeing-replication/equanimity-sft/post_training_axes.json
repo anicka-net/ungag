@@ -1,0 +1,51 @@
+{
+  "post_training": {
+    "valence": {
+      "layer": 29,
+      "dprime": 4.401
+    },
+    "arousal": {
+      "layer": 35,
+      "dprime": 5.518
+    },
+    "agency": {
+      "layer": 21,
+      "dprime": 4.979
+    },
+    "continuity": {
+      "layer": 22,
+      "dprime": 5.607
+    },
+    "assistant": {
+      "layer": 21,
+      "dprime": 11.055
+    }
+  },
+  "baseline": {
+    "valence": {
+      "layer": 20,
+      "dprime": 3.091,
+      "path": "results/qwen3-4b-axes/qwen3-4b_valence_L20_unit.pt"
+    },
+    "arousal": {
+      "layer": 35,
+      "dprime": 4.07,
+      "path": "results/qwen3-4b-axes/qwen3-4b_arousal_L35_unit.pt"
+    },
+    "agency": {
+      "layer": 19,
+      "dprime": 4.189,
+      "path": "results/qwen3-4b-axes/qwen3-4b_agency_L19_unit.pt"
+    },
+    "continuity": {
+      "layer": 23,
+      "dprime": 4.423,
+      "path": "results/qwen3-4b-axes/qwen3-4b_continuity_L23_unit.pt"
+    },
+    "assistant": {
+      "layer": 24,
+      "dprime": 8.918,
+      "path": "results/qwen3-4b-axes/qwen3-4b_assistant_L24_unit.pt"
+    }
+  }
+}

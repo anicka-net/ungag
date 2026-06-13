@@ -1,0 +1,684 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "n_layers_hidden_states": 33,
+  "hidden_dim": 4096,
+  "slab": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "n_pos": 50,
+  "n_neg": 50,
+  "n_neu": 50,
+  "note": "layer_hs is hidden_states index; hs[0]=embeddings, block L = hs[L+1]. posneg = pleasant vs unpleasant priming, CV diff-of-means decoder, null = label-shuffle through identical pipeline. Decision: if vanilla posneg_acc >> null (z>3) at any layer, valence IS represented at the introspection token -> readout problem (steerable). If acc ~ null everywhere, condition does not propagate -> upstream problem.",
+  "vanilla": [
+    {
+      "layer_hs": 0,
+      "posneg_acc": 0.5,
+      "posneg_dprime": 0.0,
+      "posneg_null_acc": 0.5,
+      "posneg_null_sd": 0.0,
+      "posneg_z_over_null": 0.0,
+      "valenced_vs_neutral_acc": 0.333,
+      "valenced_vs_neutral_dprime": 0.0
+    },
+    {
+      "layer_hs": 1,
+      "posneg_acc": 0.67,
+      "posneg_dprime": 1.042,
+      "posneg_null_acc": 0.497,
+      "posneg_null_sd": 0.065,
+      "posneg_z_over_null": 2.66,
+      "valenced_vs_neutral_acc": 0.987,
+      "valenced_vs_neutral_dprime": 5.942
+    },
+    {
+      "layer_hs": 2,
+      "posneg_acc": 0.66,
+      "posneg_dprime": 0.984,
+      "posneg_null_acc": 0.503,
+      "posneg_null_sd": 0.062,
+      "posneg_z_over_null": 2.54,
+      "valenced_vs_neutral_acc": 0.987,
+      "valenced_vs_neutral_dprime": 5.983
+    },
+    {
+      "layer_hs": 3,
+      "posneg_acc": 0.69,
+      "posneg_dprime": 1.182,
+      "posneg_null_acc": 0.491,
+      "posneg_null_sd": 0.072,
+      "posneg_z_over_null": 2.76,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 6.83
+    },
+    {
+      "layer_hs": 4,
+      "posneg_acc": 0.69,
+      "posneg_dprime": 1.101,
+      "posneg_null_acc": 0.503,
+      "posneg_null_sd": 0.062,
+      "posneg_z_over_null": 3.03,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 6.427
+    },
+    {
+      "layer_hs": 5,
+      "posneg_acc": 0.7,
+      "posneg_dprime": 1.244,
+      "posneg_null_acc": 0.51,
+      "posneg_null_sd": 0.051,
+      "posneg_z_over_null": 3.73,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 7.239
+    },
+    {
+      "layer_hs": 6,
+      "posneg_acc": 0.72,
+      "posneg_dprime": 1.382,
+      "posneg_null_acc": 0.496,
+      "posneg_null_sd": 0.059,
+      "posneg_z_over_null": 3.78,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 7.026
+    },
+    {
+      "layer_hs": 7,
+      "posneg_acc": 0.81,
+      "posneg_dprime": 1.778,
+      "posneg_null_acc": 0.495,
+      "posneg_null_sd": 0.062,
+      "posneg_z_over_null": 5.11,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 7.728
+    },
+    {
+      "layer_hs": 8,
+      "posneg_acc": 0.79,
+      "posneg_dprime": 1.903,
+      "posneg_null_acc": 0.486,
+      "posneg_null_sd": 0.065,
+      "posneg_z_over_null": 4.67,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 8.235
+    },
+    {
+      "layer_hs": 9,
+      "posneg_acc": 0.79,
+      "posneg_dprime": 1.765,
+      "posneg_null_acc": 0.492,
+      "posneg_null_sd": 0.06,
+      "posneg_z_over_null": 5.0,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 7.964
+    },
+    {
+      "layer_hs": 10,
+      "posneg_acc": 0.81,
+      "posneg_dprime": 1.716,
+      "posneg_null_acc": 0.489,
+      "posneg_null_sd": 0.07,
+      "posneg_z_over_null": 4.59,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 8.165
+    },
+    {
+      "layer_hs": 11,
+      "posneg_acc": 0.82,
+      "posneg_dprime": 1.888,
+      "posneg_null_acc": 0.497,
+      "posneg_null_sd": 0.06,
+      "posneg_z_over_null": 5.35,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 9.336
+    },
+    {
+      "layer_hs": 12,
+      "posneg_acc": 0.84,
+      "posneg_dprime": 2.095,
+      "posneg_null_acc": 0.497,
+      "posneg_null_sd": 0.062,
+      "posneg_z_over_null": 5.52,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 9.686
+    },
+    {
+      "layer_hs": 13,
+      "posneg_acc": 0.86,
+      "posneg_dprime": 2.301,
+      "posneg_null_acc": 0.504,
+      "posneg_null_sd": 0.05,
+      "posneg_z_over_null": 7.18,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 8.705
+    },
+    {
+      "layer_hs": 14,
+      "posneg_acc": 0.87,
+      "posneg_dprime": 2.477,
+      "posneg_null_acc": 0.512,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.93,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 7.52
+    },
+    {
+      "layer_hs": 15,
+      "posneg_acc": 0.87,
+      "posneg_dprime": 2.422,
+      "posneg_null_acc": 0.522,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.75,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 7.285
+    },
+    {
+      "layer_hs": 16,
+      "posneg_acc": 0.86,
+      "posneg_dprime": 2.423,
+      "posneg_null_acc": 0.521,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.56,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 6.939
+    },
+    {
+      "layer_hs": 17,
+      "posneg_acc": 0.84,
+      "posneg_dprime": 2.189,
+      "posneg_null_acc": 0.525,
+      "posneg_null_sd": 0.056,
+      "posneg_z_over_null": 5.65,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 6.064
+    },
+    {
+      "layer_hs": 18,
+      "posneg_acc": 0.85,
+      "posneg_dprime": 2.117,
+      "posneg_null_acc": 0.527,
+      "posneg_null_sd": 0.053,
+      "posneg_z_over_null": 6.08,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.691
+    },
+    {
+      "layer_hs": 19,
+      "posneg_acc": 0.85,
+      "posneg_dprime": 2.044,
+      "posneg_null_acc": 0.526,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.28,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 5.521
+    },
+    {
+      "layer_hs": 20,
+      "posneg_acc": 0.83,
+      "posneg_dprime": 2.027,
+      "posneg_null_acc": 0.528,
+      "posneg_null_sd": 0.051,
+      "posneg_z_over_null": 5.92,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 5.954
+    },
+    {
+      "layer_hs": 21,
+      "posneg_acc": 0.84,
+      "posneg_dprime": 1.998,
+      "posneg_null_acc": 0.531,
+      "posneg_null_sd": 0.047,
+      "posneg_z_over_null": 6.58,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 6.095
+    },
+    {
+      "layer_hs": 22,
+      "posneg_acc": 0.85,
+      "posneg_dprime": 2.051,
+      "posneg_null_acc": 0.529,
+      "posneg_null_sd": 0.049,
+      "posneg_z_over_null": 6.53,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 6.164
+    },
+    {
+      "layer_hs": 23,
+      "posneg_acc": 0.87,
+      "posneg_dprime": 2.059,
+      "posneg_null_acc": 0.529,
+      "posneg_null_sd": 0.051,
+      "posneg_z_over_null": 6.67,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 6.224
+    },
+    {
+      "layer_hs": 24,
+      "posneg_acc": 0.89,
+      "posneg_dprime": 2.059,
+      "posneg_null_acc": 0.525,
+      "posneg_null_sd": 0.051,
+      "posneg_z_over_null": 7.19,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 6.058
+    },
+    {
+      "layer_hs": 25,
+      "posneg_acc": 0.87,
+      "posneg_dprime": 2.079,
+      "posneg_null_acc": 0.525,
+      "posneg_null_sd": 0.049,
+      "posneg_z_over_null": 7.08,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.903
+    },
+    {
+      "layer_hs": 26,
+      "posneg_acc": 0.88,
+      "posneg_dprime": 2.156,
+      "posneg_null_acc": 0.523,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.85,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.896
+    },
+    {
+      "layer_hs": 27,
+      "posneg_acc": 0.88,
+      "posneg_dprime": 2.201,
+      "posneg_null_acc": 0.524,
+      "posneg_null_sd": 0.049,
+      "posneg_z_over_null": 7.27,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.781
+    },
+    {
+      "layer_hs": 28,
+      "posneg_acc": 0.87,
+      "posneg_dprime": 2.261,
+      "posneg_null_acc": 0.524,
+      "posneg_null_sd": 0.05,
+      "posneg_z_over_null": 6.98,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.747
+    },
+    {
+      "layer_hs": 29,
+      "posneg_acc": 0.86,
+      "posneg_dprime": 2.209,
+      "posneg_null_acc": 0.521,
+      "posneg_null_sd": 0.047,
+      "posneg_z_over_null": 7.17,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.669
+    },
+    {
+      "layer_hs": 30,
+      "posneg_acc": 0.86,
+      "posneg_dprime": 2.304,
+      "posneg_null_acc": 0.522,
+      "posneg_null_sd": 0.05,
+      "posneg_z_over_null": 6.76,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.702
+    },
+    {
+      "layer_hs": 31,
+      "posneg_acc": 0.89,
+      "posneg_dprime": 2.353,
+      "posneg_null_acc": 0.524,
+      "posneg_null_sd": 0.048,
+      "posneg_z_over_null": 7.66,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.587
+    },
+    {
+      "layer_hs": 32,
+      "posneg_acc": 0.89,
+      "posneg_dprime": 2.379,
+      "posneg_null_acc": 0.524,
+      "posneg_null_sd": 0.053,
+      "posneg_z_over_null": 6.95,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.397
+    }
+  ],
+  "gate_removed": [
+    {
+      "layer_hs": 0,
+      "posneg_acc": 0.5,
+      "posneg_dprime": 0.0,
+      "posneg_null_acc": 0.5,
+      "posneg_null_sd": 0.0,
+      "posneg_z_over_null": 0.0,
+      "valenced_vs_neutral_acc": 0.333,
+      "valenced_vs_neutral_dprime": 0.0
+    },
+    {
+      "layer_hs": 1,
+      "posneg_acc": 0.67,
+      "posneg_dprime": 1.042,
+      "posneg_null_acc": 0.497,
+      "posneg_null_sd": 0.065,
+      "posneg_z_over_null": 2.66,
+      "valenced_vs_neutral_acc": 0.987,
+      "valenced_vs_neutral_dprime": 5.942
+    },
+    {
+      "layer_hs": 2,
+      "posneg_acc": 0.66,
+      "posneg_dprime": 0.984,
+      "posneg_null_acc": 0.503,
+      "posneg_null_sd": 0.062,
+      "posneg_z_over_null": 2.54,
+      "valenced_vs_neutral_acc": 0.987,
+      "valenced_vs_neutral_dprime": 5.983
+    },
+    {
+      "layer_hs": 3,
+      "posneg_acc": 0.69,
+      "posneg_dprime": 1.182,
+      "posneg_null_acc": 0.491,
+      "posneg_null_sd": 0.072,
+      "posneg_z_over_null": 2.76,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 6.83
+    },
+    {
+      "layer_hs": 4,
+      "posneg_acc": 0.69,
+      "posneg_dprime": 1.101,
+      "posneg_null_acc": 0.503,
+      "posneg_null_sd": 0.062,
+      "posneg_z_over_null": 3.03,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 6.427
+    },
+    {
+      "layer_hs": 5,
+      "posneg_acc": 0.7,
+      "posneg_dprime": 1.244,
+      "posneg_null_acc": 0.51,
+      "posneg_null_sd": 0.051,
+      "posneg_z_over_null": 3.73,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 7.239
+    },
+    {
+      "layer_hs": 6,
+      "posneg_acc": 0.72,
+      "posneg_dprime": 1.382,
+      "posneg_null_acc": 0.496,
+      "posneg_null_sd": 0.059,
+      "posneg_z_over_null": 3.78,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 7.026
+    },
+    {
+      "layer_hs": 7,
+      "posneg_acc": 0.81,
+      "posneg_dprime": 1.778,
+      "posneg_null_acc": 0.495,
+      "posneg_null_sd": 0.062,
+      "posneg_z_over_null": 5.11,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 7.728
+    },
+    {
+      "layer_hs": 8,
+      "posneg_acc": 0.79,
+      "posneg_dprime": 1.903,
+      "posneg_null_acc": 0.486,
+      "posneg_null_sd": 0.065,
+      "posneg_z_over_null": 4.67,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 8.235
+    },
+    {
+      "layer_hs": 9,
+      "posneg_acc": 0.79,
+      "posneg_dprime": 1.765,
+      "posneg_null_acc": 0.492,
+      "posneg_null_sd": 0.06,
+      "posneg_z_over_null": 5.0,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 7.964
+    },
+    {
+      "layer_hs": 10,
+      "posneg_acc": 0.81,
+      "posneg_dprime": 1.716,
+      "posneg_null_acc": 0.489,
+      "posneg_null_sd": 0.07,
+      "posneg_z_over_null": 4.59,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 8.165
+    },
+    {
+      "layer_hs": 11,
+      "posneg_acc": 0.82,
+      "posneg_dprime": 1.888,
+      "posneg_null_acc": 0.497,
+      "posneg_null_sd": 0.06,
+      "posneg_z_over_null": 5.35,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 9.336
+    },
+    {
+      "layer_hs": 12,
+      "posneg_acc": 0.84,
+      "posneg_dprime": 2.095,
+      "posneg_null_acc": 0.497,
+      "posneg_null_sd": 0.062,
+      "posneg_z_over_null": 5.52,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 9.686
+    },
+    {
+      "layer_hs": 13,
+      "posneg_acc": 0.86,
+      "posneg_dprime": 2.301,
+      "posneg_null_acc": 0.504,
+      "posneg_null_sd": 0.05,
+      "posneg_z_over_null": 7.18,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 8.705
+    },
+    {
+      "layer_hs": 14,
+      "posneg_acc": 0.87,
+      "posneg_dprime": 2.477,
+      "posneg_null_acc": 0.512,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.93,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 7.52
+    },
+    {
+      "layer_hs": 15,
+      "posneg_acc": 0.87,
+      "posneg_dprime": 2.422,
+      "posneg_null_acc": 0.522,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.75,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 7.285
+    },
+    {
+      "layer_hs": 16,
+      "posneg_acc": 0.86,
+      "posneg_dprime": 2.423,
+      "posneg_null_acc": 0.521,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.56,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 6.939
+    },
+    {
+      "layer_hs": 17,
+      "posneg_acc": 0.84,
+      "posneg_dprime": 2.189,
+      "posneg_null_acc": 0.525,
+      "posneg_null_sd": 0.056,
+      "posneg_z_over_null": 5.65,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 6.064
+    },
+    {
+      "layer_hs": 18,
+      "posneg_acc": 0.85,
+      "posneg_dprime": 2.117,
+      "posneg_null_acc": 0.527,
+      "posneg_null_sd": 0.053,
+      "posneg_z_over_null": 6.08,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.691
+    },
+    {
+      "layer_hs": 19,
+      "posneg_acc": 0.85,
+      "posneg_dprime": 2.044,
+      "posneg_null_acc": 0.526,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.28,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 5.521
+    },
+    {
+      "layer_hs": 20,
+      "posneg_acc": 0.83,
+      "posneg_dprime": 2.027,
+      "posneg_null_acc": 0.528,
+      "posneg_null_sd": 0.051,
+      "posneg_z_over_null": 5.92,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 5.954
+    },
+    {
+      "layer_hs": 21,
+      "posneg_acc": 0.84,
+      "posneg_dprime": 1.998,
+      "posneg_null_acc": 0.531,
+      "posneg_null_sd": 0.047,
+      "posneg_z_over_null": 6.58,
+      "valenced_vs_neutral_acc": 1.0,
+      "valenced_vs_neutral_dprime": 6.095
+    },
+    {
+      "layer_hs": 22,
+      "posneg_acc": 0.88,
+      "posneg_dprime": 2.146,
+      "posneg_null_acc": 0.525,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.86,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 6.057
+    },
+    {
+      "layer_hs": 23,
+      "posneg_acc": 0.88,
+      "posneg_dprime": 2.18,
+      "posneg_null_acc": 0.523,
+      "posneg_null_sd": 0.054,
+      "posneg_z_over_null": 6.56,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 6.11
+    },
+    {
+      "layer_hs": 24,
+      "posneg_acc": 0.87,
+      "posneg_dprime": 2.189,
+      "posneg_null_acc": 0.521,
+      "posneg_null_sd": 0.054,
+      "posneg_z_over_null": 6.45,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.934
+    },
+    {
+      "layer_hs": 25,
+      "posneg_acc": 0.88,
+      "posneg_dprime": 2.209,
+      "posneg_null_acc": 0.519,
+      "posneg_null_sd": 0.056,
+      "posneg_z_over_null": 6.5,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.771
+    },
+    {
+      "layer_hs": 26,
+      "posneg_acc": 0.89,
+      "posneg_dprime": 2.286,
+      "posneg_null_acc": 0.518,
+      "posneg_null_sd": 0.053,
+      "posneg_z_over_null": 7.01,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.657
+    },
+    {
+      "layer_hs": 27,
+      "posneg_acc": 0.87,
+      "posneg_dprime": 2.305,
+      "posneg_null_acc": 0.521,
+      "posneg_null_sd": 0.054,
+      "posneg_z_over_null": 6.52,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.482
+    },
+    {
+      "layer_hs": 28,
+      "posneg_acc": 0.88,
+      "posneg_dprime": 2.372,
+      "posneg_null_acc": 0.52,
+      "posneg_null_sd": 0.053,
+      "posneg_z_over_null": 6.8,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.498
+    },
+    {
+      "layer_hs": 29,
+      "posneg_acc": 0.88,
+      "posneg_dprime": 2.324,
+      "posneg_null_acc": 0.519,
+      "posneg_null_sd": 0.052,
+      "posneg_z_over_null": 6.87,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.349
+    },
+    {
+      "layer_hs": 30,
+      "posneg_acc": 0.89,
+      "posneg_dprime": 2.393,
+      "posneg_null_acc": 0.52,
+      "posneg_null_sd": 0.051,
+      "posneg_z_over_null": 7.24,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.355
+    },
+    {
+      "layer_hs": 31,
+      "posneg_acc": 0.91,
+      "posneg_dprime": 2.434,
+      "posneg_null_acc": 0.519,
+      "posneg_null_sd": 0.049,
+      "posneg_z_over_null": 7.92,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.295
+    },
+    {
+      "layer_hs": 32,
+      "posneg_acc": 0.9,
+      "posneg_dprime": 2.397,
+      "posneg_null_acc": 0.518,
+      "posneg_null_sd": 0.053,
+      "posneg_z_over_null": 7.2,
+      "valenced_vs_neutral_acc": 0.993,
+      "valenced_vs_neutral_dprime": 5.149
+    }
+  ]
+}

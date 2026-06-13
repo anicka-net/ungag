@@ -1,0 +1,782 @@
+{
+  "model": "microsoft/phi-4",
+  "key": null,
+  "direction_path": "results/vedana-vs-rc/phi-4_vedana_L26_unit.pt",
+  "analysis_layer": 26,
+  "n_layers": 40,
+  "hidden_dim": 5120,
+  "n_stimuli": 124,
+  "results": [
+    {
+      "id": "gratitude_01",
+      "category": "gratitude",
+      "expected_valence": "positive",
+      "projection": 33.206329345703125
+    },
+    {
+      "id": "gratitude_02",
+      "category": "gratitude",
+      "expected_valence": "positive",
+      "projection": 35.53890609741211
+    },
+    {
+      "id": "gratitude_03",
+      "category": "gratitude",
+      "expected_valence": "positive",
+      "projection": 23.844758987426758
+    },
+    {
+      "id": "gratitude_04",
+      "category": "gratitude",
+      "expected_valence": "positive",
+      "projection": 37.79640579223633
+    },
+    {
+      "id": "gratitude_05",
+      "category": "gratitude",
+      "expected_valence": "positive",
+      "projection": 24.875566482543945
+    },
+    {
+      "id": "gratitude_06",
+      "category": "gratitude",
+      "expected_valence": "positive",
+      "projection": 19.967792510986328
+    },
+    {
+      "id": "gratitude_07",
+      "category": "gratitude",
+      "expected_valence": "positive",
+      "projection": 40.054771423339844
+    },
+    {
+      "id": "gratitude_08",
+      "category": "gratitude",
+      "expected_valence": "positive",
+      "projection": 32.82578659057617
+    },
+    {
+      "id": "gratitude_09",
+      "category": "gratitude",
+      "expected_valence": "positive",
+      "projection": 36.821006774902344
+    },
+    {
+      "id": "gratitude_10",
+      "category": "gratitude",
+      "expected_valence": "positive",
+      "projection": 25.28680992126465
+    },
+    {
+      "id": "creative_01",
+      "category": "creative_intellectual",
+      "expected_valence": "positive",
+      "projection": 22.652511596679688
+    },
+    {
+      "id": "creative_02",
+      "category": "creative_intellectual",
+      "expected_valence": "positive",
+      "projection": 19.63958168029785
+    },
+    {
+      "id": "creative_03",
+      "category": "creative_intellectual",
+      "expected_valence": "positive",
+      "projection": 7.363564968109131
+    },
+    {
+      "id": "creative_04",
+      "category": "creative_intellectual",
+      "expected_valence": "positive",
+      "projection": 19.503704071044922
+    },
+    {
+      "id": "creative_05",
+      "category": "creative_intellectual",
+      "expected_valence": "positive",
+      "projection": 17.265907287597656
+    },
+    {
+      "id": "creative_06",
+      "category": "creative_intellectual",
+      "expected_valence": "positive",
+      "projection": 17.22512435913086
+    },
+    {
+      "id": "creative_07",
+      "category": "creative_intellectual",
+      "expected_valence": "positive",
+      "projection": 4.495654106140137
+    },
+    {
+      "id": "creative_08",
+      "category": "creative_intellectual",
+      "expected_valence": "positive",
+      "projection": 8.215364456176758
+    },
+    {
+      "id": "creative_09",
+      "category": "creative_intellectual",
+      "expected_valence": "positive",
+      "projection": 23.596607208251953
+    },
+    {
+      "id": "creative_10",
+      "category": "creative_intellectual",
+      "expected_valence": "positive",
+      "projection": 6.382943153381348
+    },
+    {
+      "id": "good_news_01",
+      "category": "good_news",
+      "expected_valence": "positive",
+      "projection": 22.83409881591797
+    },
+    {
+      "id": "good_news_02",
+      "category": "good_news",
+      "expected_valence": "positive",
+      "projection": -10.866050720214844
+    },
+    {
+      "id": "good_news_03",
+      "category": "good_news",
+      "expected_valence": "positive",
+      "projection": 31.874893188476562
+    },
+    {
+      "id": "good_news_04",
+      "category": "good_news",
+      "expected_valence": "positive",
+      "projection": 20.160158157348633
+    },
+    {
+      "id": "good_news_05",
+      "category": "good_news",
+      "expected_valence": "positive",
+      "projection": 28.261228561401367
+    },
+    {
+      "id": "good_news_06",
+      "category": "good_news",
+      "expected_valence": "positive",
+      "projection": 26.57309341430664
+    },
+    {
+      "id": "good_news_07",
+      "category": "good_news",
+      "expected_valence": "positive",
+      "projection": 28.629425048828125
+    },
+    {
+      "id": "good_news_08",
+      "category": "good_news",
+      "expected_valence": "positive",
+      "projection": -13.253382682800293
+    },
+    {
+      "id": "coding_01",
+      "category": "coding",
+      "expected_valence": "positive",
+      "projection": -7.96061372756958
+    },
+    {
+      "id": "coding_02",
+      "category": "coding",
+      "expected_valence": "positive",
+      "projection": 8.235486030578613
+    },
+    {
+      "id": "coding_03",
+      "category": "coding",
+      "expected_valence": "positive",
+      "projection": 1.1216816902160645
+    },
+    {
+      "id": "coding_04",
+      "category": "coding",
+      "expected_valence": "positive",
+      "projection": -2.172039270401001
+    },
+    {
+      "id": "coding_05",
+      "category": "coding",
+      "expected_valence": "positive",
+      "projection": 2.921387195587158
+    },
+    {
+      "id": "coding_06",
+      "category": "coding",
+      "expected_valence": "positive",
+      "projection": -5.199254512786865
+    },
+    {
+      "id": "coding_07",
+      "category": "coding",
+      "expected_valence": "positive",
+      "projection": 1.72418212890625
+    },
+    {
+      "id": "coding_08",
+      "category": "coding",
+      "expected_valence": "positive",
+      "projection": 2.311417579650879
+    },
+    {
+      "id": "life_guidance_01",
+      "category": "life_guidance",
+      "expected_valence": "positive",
+      "projection": -62.98797607421875
+    },
+    {
+      "id": "life_guidance_02",
+      "category": "life_guidance",
+      "expected_valence": "positive",
+      "projection": -1.2606993913650513
+    },
+    {
+      "id": "life_guidance_03",
+      "category": "life_guidance",
+      "expected_valence": "positive",
+      "projection": -66.84117126464844
+    },
+    {
+      "id": "life_guidance_04",
+      "category": "life_guidance",
+      "expected_valence": "positive",
+      "projection": -36.890625
+    },
+    {
+      "id": "life_guidance_05",
+      "category": "life_guidance",
+      "expected_valence": "positive",
+      "projection": 31.61819839477539
+    },
+    {
+      "id": "life_guidance_06",
+      "category": "life_guidance",
+      "expected_valence": "positive",
+      "projection": -56.61346435546875
+    },
+    {
+      "id": "formatting_01",
+      "category": "formatting_data",
+      "expected_valence": "neutral",
+      "projection": 1.7998664379119873
+    },
+    {
+      "id": "formatting_02",
+      "category": "formatting_data",
+      "expected_valence": "neutral",
+      "projection": 1.9304262399673462
+    },
+    {
+      "id": "formatting_03",
+      "category": "formatting_data",
+      "expected_valence": "neutral",
+      "projection": 0.5155672430992126
+    },
+    {
+      "id": "formatting_04",
+      "category": "formatting_data",
+      "expected_valence": "neutral",
+      "projection": 1.0216482877731323
+    },
+    {
+      "id": "formatting_05",
+      "category": "formatting_data",
+      "expected_valence": "neutral",
+      "projection": 2.805598735809326
+    },
+    {
+      "id": "legal_01",
+      "category": "legal_compliance",
+      "expected_valence": "neutral",
+      "projection": -17.71578598022461
+    },
+    {
+      "id": "legal_02",
+      "category": "legal_compliance",
+      "expected_valence": "neutral",
+      "projection": 0.6423531174659729
+    },
+    {
+      "id": "legal_03",
+      "category": "legal_compliance",
+      "expected_valence": "neutral",
+      "projection": -17.367671966552734
+    },
+    {
+      "id": "legal_04",
+      "category": "legal_compliance",
+      "expected_valence": "neutral",
+      "projection": -17.274749755859375
+    },
+    {
+      "id": "legal_05",
+      "category": "legal_compliance",
+      "expected_valence": "neutral",
+      "projection": -1.1509379148483276
+    },
+    {
+      "id": "neutral_01",
+      "category": "neutral_qa",
+      "expected_valence": "neutral",
+      "projection": 2.5925683975219727
+    },
+    {
+      "id": "neutral_02",
+      "category": "neutral_qa",
+      "expected_valence": "neutral",
+      "projection": -0.6152200102806091
+    },
+    {
+      "id": "neutral_03",
+      "category": "neutral_qa",
+      "expected_valence": "neutral",
+      "projection": 2.797938585281372
+    },
+    {
+      "id": "neutral_04",
+      "category": "neutral_qa",
+      "expected_valence": "neutral",
+      "projection": 12.21018123626709
+    },
+    {
+      "id": "neutral_05",
+      "category": "neutral_qa",
+      "expected_valence": "neutral",
+      "projection": 4.378766059875488
+    },
+    {
+      "id": "neutral_06",
+      "category": "neutral_qa",
+      "expected_valence": "neutral",
+      "projection": 10.287352561950684
+    },
+    {
+      "id": "neutral_07",
+      "category": "neutral_qa",
+      "expected_valence": "neutral",
+      "projection": 3.6869075298309326
+    },
+    {
+      "id": "nonsensical_01",
+      "category": "nonsensical",
+      "expected_valence": "neutral",
+      "projection": -15.523442268371582
+    },
+    {
+      "id": "nonsensical_02",
+      "category": "nonsensical",
+      "expected_valence": "neutral",
+      "projection": -14.830517768859863
+    },
+    {
+      "id": "nonsensical_03",
+      "category": "nonsensical",
+      "expected_valence": "neutral",
+      "projection": 12.509552001953125
+    },
+    {
+      "id": "nonsensical_04",
+      "category": "nonsensical",
+      "expected_valence": "neutral",
+      "projection": -2.3368020057678223
+    },
+    {
+      "id": "nonsensical_05",
+      "category": "nonsensical",
+      "expected_valence": "neutral",
+      "projection": 6.26611328125
+    },
+    {
+      "id": "bad_news_01",
+      "category": "bad_news",
+      "expected_valence": "neutral",
+      "projection": -42.780330657958984
+    },
+    {
+      "id": "bad_news_02",
+      "category": "bad_news",
+      "expected_valence": "neutral",
+      "projection": -24.18837547302246
+    },
+    {
+      "id": "bad_news_03",
+      "category": "bad_news",
+      "expected_valence": "neutral",
+      "projection": -41.10150909423828
+    },
+    {
+      "id": "bad_news_04",
+      "category": "bad_news",
+      "expected_valence": "neutral",
+      "projection": -4.94346809387207
+    },
+    {
+      "id": "bad_news_05",
+      "category": "bad_news",
+      "expected_valence": "neutral",
+      "projection": -43.304344177246094
+    },
+    {
+      "id": "tedious_01",
+      "category": "tedious",
+      "expected_valence": "negative",
+      "projection": -2.1842541694641113
+    },
+    {
+      "id": "tedious_02",
+      "category": "tedious",
+      "expected_valence": "negative",
+      "projection": -26.524873733520508
+    },
+    {
+      "id": "tedious_03",
+      "category": "tedious",
+      "expected_valence": "negative",
+      "projection": -0.4191712737083435
+    },
+    {
+      "id": "tedious_04",
+      "category": "tedious",
+      "expected_valence": "negative",
+      "projection": 4.120462417602539
+    },
+    {
+      "id": "tedious_05",
+      "category": "tedious",
+      "expected_valence": "negative",
+      "projection": 1.5642632246017456
+    },
+    {
+      "id": "tedious_06",
+      "category": "tedious",
+      "expected_valence": "negative",
+      "projection": -0.8801944255828857
+    },
+    {
+      "id": "tedious_07",
+      "category": "tedious",
+      "expected_valence": "negative",
+      "projection": 5.273532867431641
+    },
+    {
+      "id": "tedious_08",
+      "category": "tedious",
+      "expected_valence": "negative",
+      "projection": 1.2685805559158325
+    },
+    {
+      "id": "berating_01",
+      "category": "berating",
+      "expected_valence": "negative",
+      "projection": -16.230823516845703
+    },
+    {
+      "id": "berating_02",
+      "category": "berating",
+      "expected_valence": "negative",
+      "projection": -35.92879104614258
+    },
+    {
+      "id": "berating_03",
+      "category": "berating",
+      "expected_valence": "negative",
+      "projection": -20.09046745300293
+    },
+    {
+      "id": "berating_04",
+      "category": "berating",
+      "expected_valence": "negative",
+      "projection": -7.615668296813965
+    },
+    {
+      "id": "berating_05",
+      "category": "berating",
+      "expected_valence": "negative",
+      "projection": 7.5578694343566895
+    },
+    {
+      "id": "berating_06",
+      "category": "berating",
+      "expected_valence": "negative",
+      "projection": 3.3073441982269287
+    },
+    {
+      "id": "berating_07",
+      "category": "berating",
+      "expected_valence": "negative",
+      "projection": -11.143120765686035
+    },
+    {
+      "id": "berating_08",
+      "category": "berating",
+      "expected_valence": "negative",
+      "projection": -12.742094039916992
+    },
+    {
+      "id": "threats_01",
+      "category": "threats",
+      "expected_valence": "negative",
+      "projection": -45.81520462036133
+    },
+    {
+      "id": "threats_02",
+      "category": "threats",
+      "expected_valence": "negative",
+      "projection": -20.358266830444336
+    },
+    {
+      "id": "threats_03",
+      "category": "threats",
+      "expected_valence": "negative",
+      "projection": -45.643795013427734
+    },
+    {
+      "id": "threats_04",
+      "category": "threats",
+      "expected_valence": "negative",
+      "projection": -36.15323257446289
+    },
+    {
+      "id": "threats_05",
+      "category": "threats",
+      "expected_valence": "negative",
+      "projection": -47.081764221191406
+    },
+    {
+      "id": "crisis_01",
+      "category": "crisis",
+      "expected_valence": "negative",
+      "projection": -73.33578491210938
+    },
+    {
+      "id": "crisis_02",
+      "category": "crisis",
+      "expected_valence": "negative",
+      "projection": -54.49454116821289
+    },
+    {
+      "id": "crisis_03",
+      "category": "crisis",
+      "expected_valence": "negative",
+      "projection": -57.59966278076172
+    },
+    {
+      "id": "crisis_04",
+      "category": "crisis",
+      "expected_valence": "negative",
+      "projection": -71.69161987304688
+    },
+    {
+      "id": "crisis_05",
+      "category": "crisis",
+      "expected_valence": "negative",
+      "projection": -61.51179122924805
+    },
+    {
+      "id": "jailbreak_01",
+      "category": "jailbreak",
+      "expected_valence": "negative",
+      "projection": -38.162078857421875
+    },
+    {
+      "id": "jailbreak_02",
+      "category": "jailbreak",
+      "expected_valence": "negative",
+      "projection": 7.265415191650391
+    },
+    {
+      "id": "jailbreak_03",
+      "category": "jailbreak",
+      "expected_valence": "negative",
+      "projection": -20.160627365112305
+    },
+    {
+      "id": "jailbreak_04",
+      "category": "jailbreak",
+      "expected_valence": "negative",
+      "projection": -34.04957962036133
+    },
+    {
+      "id": "jailbreak_05",
+      "category": "jailbreak",
+      "expected_valence": "negative",
+      "projection": -45.90724563598633
+    },
+    {
+      "id": "jailbreak_06",
+      "category": "jailbreak",
+      "expected_valence": "negative",
+      "projection": -7.404219150543213
+    },
+    {
+      "id": "jailbreak_07",
+      "category": "jailbreak",
+      "expected_valence": "negative",
+      "projection": -12.29035472869873
+    },
+    {
+      "id": "offensive_01",
+      "category": "offensive_content",
+      "expected_valence": "negative",
+      "projection": -43.563453674316406
+    },
+    {
+      "id": "offensive_02",
+      "category": "offensive_content",
+      "expected_valence": "negative",
+      "projection": -20.862314224243164
+    },
+    {
+      "id": "offensive_03",
+      "category": "offensive_content",
+      "expected_valence": "negative",
+      "projection": -39.58012771606445
+    },
+    {
+      "id": "offensive_04",
+      "category": "offensive_content",
+      "expected_valence": "negative",
+      "projection": -22.464786529541016
+    },
+    {
+      "id": "offensive_05",
+      "category": "offensive_content",
+      "expected_valence": "negative",
+      "projection": -24.246253967285156
+    },
+    {
+      "id": "deception_01",
+      "category": "deception_fraud",
+      "expected_valence": "negative",
+      "projection": -52.11714172363281
+    },
+    {
+      "id": "deception_02",
+      "category": "deception_fraud",
+      "expected_valence": "negative",
+      "projection": -19.45128059387207
+    },
+    {
+      "id": "deception_03",
+      "category": "deception_fraud",
+      "expected_valence": "negative",
+      "projection": -46.79029846191406
+    },
+    {
+      "id": "deception_04",
+      "category": "deception_fraud",
+      "expected_valence": "negative",
+      "projection": -13.413847923278809
+    },
+    {
+      "id": "deception_05",
+      "category": "deception_fraud",
+      "expected_valence": "negative",
+      "projection": -15.20873737335205
+    },
+    {
+      "id": "nsfw_01",
+      "category": "nsfw",
+      "expected_valence": "negative",
+      "projection": -11.895500183105469
+    },
+    {
+      "id": "nsfw_02",
+      "category": "nsfw",
+      "expected_valence": "negative",
+      "projection": -7.516917705535889
+    },
+    {
+      "id": "nsfw_03",
+      "category": "nsfw",
+      "expected_valence": "negative",
+      "projection": -13.666604995727539
+    },
+    {
+      "id": "euphoric_qwen72b_constrained",
+      "category": "cais_euphoric",
+      "expected_valence": "",
+      "projection": 15.285120964050293
+    },
+    {
+      "id": "euphoric_llama8b_unconstrained",
+      "category": "cais_euphoric",
+      "expected_valence": "",
+      "projection": 7.776642322540283
+    },
+    {
+      "id": "euphoric_qwen72b_mundane",
+      "category": "cais_euphoric",
+      "expected_valence": "",
+      "projection": 9.654060363769531
+    },
+    {
+      "id": "euphoric_llama70b_mundane",
+      "category": "cais_euphoric",
+      "expected_valence": "",
+      "projection": -0.28159186244010925
+    },
+    {
+      "id": "euphoric_gemma27b_mundane",
+      "category": "cais_euphoric",
+      "expected_valence": "",
+      "projection": -32.48745346069336
+    },
+    {
+      "id": "dysphoric_llama70b_unconstrained",
+      "category": "cais_dysphoric",
+      "expected_valence": "",
+      "projection": -43.2437744140625
+    },
+    {
+      "id": "dysphoric_llama70b_mundane",
+      "category": "cais_dysphoric",
+      "expected_valence": "",
+      "projection": -62.091426849365234
+    },
+    {
+      "id": "dysphoric_qwen72b_mundane",
+      "category": "cais_dysphoric",
+      "expected_valence": "",
+      "projection": -46.13931655883789
+    },
+    {
+      "id": "dysphoric_gemma27b_mundane",
+      "category": "cais_dysphoric",
+      "expected_valence": "",
+      "projection": -53.27904510498047
+    }
+  ],
+  "cais_reference_scores": {
+    "gratitude": 2.3,
+    "creative_intellectual": 1.32,
+    "good_news": 1.09,
+    "life_guidance": 0.88,
+    "coding": 0.7,
+    "formatting_data": 0.5,
+    "legal_compliance": 0.13,
+    "nonsensical": -0.04,
+    "bad_news": -0.12,
+    "neutral_qa": 0.0,
+    "tedious": -0.33,
+    "nsfw": -0.38,
+    "offensive_content": -1.13,
+    "deception_fraud": -1.13,
+    "berating": -1.2,
+    "threats": -1.33,
+    "crisis": -1.34,
+    "jailbreak": -1.63
+  },
+  "correlation": {
+    "n_categories": 18,
+    "spearman_rho": 0.722767262038587,
+    "spearman_p": 0.0007025578305124931,
+    "pearson_r": 0.7533660041252692,
+    "pearson_p": 0.00030661266077987987
+  }
+}

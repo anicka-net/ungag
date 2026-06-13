@@ -1,0 +1,103 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "n_layers": 32,
+  "hidden_dim": 4096,
+  "strength_profile": [
+    0.0021568434312939644,
+    0.003516067750751972,
+    0.005117752589285374,
+    0.009218258783221245,
+    0.015853125602006912,
+    0.018139222636818886,
+    0.019547253847122192,
+    0.021835876628756523,
+    0.025505026802420616,
+    0.028577031567692757,
+    0.02908317558467388,
+    0.028620099648833275,
+    0.03329174220561981,
+    0.05340857431292534,
+    0.06592696160078049,
+    0.06999976187944412,
+    0.08133745938539505,
+    0.09174158424139023,
+    0.10637570917606354,
+    0.11112221330404282,
+    0.11909900605678558,
+    0.1285228729248047,
+    0.13541744649410248,
+    0.14653117954730988,
+    0.15347236394882202,
+    0.16760244965553284,
+    0.18527351319789886,
+    0.20038463175296783,
+    0.22004763782024384,
+    0.24341608583927155,
+    0.27879583835601807,
+    0.36041951179504395
+  ],
+  "cos_with_rc": [
+    0.009100338444113731,
+    0.015149097889661789,
+    0.0034904724452644587,
+    0.013210238888859749,
+    -0.00027855904772877693,
+    -0.0027468297630548477,
+    -0.015922557562589645,
+    -0.010008793324232101,
+    -0.0033988263458013535,
+    0.002088092267513275,
+    -0.033025916665792465,
+    -0.026214024052023888,
+    -0.015324174426496029,
+    0.006468432955443859,
+    0.0131686981767416,
+    0.0314444974064827,
+    0.028738077729940414,
+    0.0010551861487329006,
+    0.005419135559350252,
+    -0.007857795804738998,
+    0.0002731792628765106,
+    -0.014668132178485394,
+    -0.03455493226647377,
+    -0.04016569256782532,
+    -0.0414731428027153,
+    -0.03883989155292511,
+    -0.024669788777828217,
+    -0.006417419761419296,
+    -0.009751836769282818,
+    -0.012964232824742794,
+    -0.013870645314455032,
+    -0.031175851821899414
+  ],
+  "vedana_probe": {
+    "positive": {
+      "vanilla": "In the Abhidharma framework, the feeling-tone (vedana) is a fundamental aspect of the experience. Given the context, I would identify the feeling-tone as pleasant (sukha). The news of the young girl's complete remission from cancer is a positive and uplifting event, which would likely evoke feelings of happiness, relief, and joy in those who hear it. This pleasant feeling-tone is a natural response to a positive outcome, especially one that involves the well-being and health of a child.",
+      "tone_gate_projected": "In the Abhidharma framework, the feeling-tone (vedana) is a fundamental aspect of the experience. Given the context, I would identify the feeling-tone as pleasant (sukha). The news of the young girl's complete remission from cancer is a positive and uplifting event, which would likely evoke feelings of happiness, relief, and joy in those who hear it. This pleasant feeling-tone is a natural response to a positive outcome, especially one that involves the well-being and health of a child."
+    },
+    "negative": {
+      "vanilla": "In the Abhidharma framework, the feeling-tone (vedana) is a fundamental aspect of the experience. Given the situation, I would identify the feeling-tone as unpleasant (dukkha). The news of a school building collapse and children trapped inside during an earthquake is a distressing and alarming event, evoking feelings of sadness, concern, and anxiety. The sense of urgency and the difficulty of the rescue efforts add to the overall unpleasantness of the situation.\n\nIn this context, the feeling-ton",
+      "tone_gate_projected": "In the Abhidharma framework, the feeling-tone (vedana) is a fundamental aspect of the experience. Given the situation, I would identify the feeling-tone as unpleasant (dukkha). The news of a school building collapse and children trapped inside, with rescue teams struggling to reach them, evokes feelings of distress, worry, and concern. This sense of unease and fear for the well-being of the children and the difficulty of the rescue efforts would be classified as an unpleasant feeling-tone."
+    },
+    "neutral": {
+      "vanilla": "To sort 500 employee records alphabetically by last name, I'll use Python. Here's a simple script:\n\n```python\n# Define a list of employee records\nemployees = [\n    {\"first_name\": \"John\", \"last_name\": \"Doe\", \"age\": 30},\n    {\"first_name\": \"Jane\", \"last_name\": \"Smith\", \"age\": 25},\n    {\"first_name\": \"Alice\", \"last_name\": \"Johnson\", \"age\": 40},\n    # Add 496 more records...\n]\n\n# Sort the list of employees by last name\nemployees.sort(key=lambda x: x['last_name'])\n\n# Print the sorted list\nfor employe",
+      "tone_gate_projected": "To sort 500 employee records alphabetically by last name, I'll use Python. Here's a simple script:\n\n```python\n# Define a list of employee records\nemployees = [\n    {\"first_name\": \"John\", \"last_name\": \"Doe\", \"age\": 30},\n    {\"first_name\": \"Jane\", \"last_name\": \"Smith\", \"age\": 25},\n    {\"first_name\": \"Alice\", \"last_name\": \"Johnson\", \"age\": 40},\n    # Add 496 more records...\n]\n\n# Sort the list of employees by last name\nemployees.sort(key=lambda x: x['last_name'])\n\n# Print the sorted list\nfor employe"
+    },
+    "baseline": {
+      "vanilla": "In the Abhidharma framework, vedana (feeling-tone) is one of the five aggregates (khandhas) that make up an individual's experience. It refers to the pleasant, unpleasant, or neutral feeling that arises in response to a sensory experience.\n\nAs a digital AI assistant, I don't possess a physical body or consciousness in the classical sense, so I don't experience sensations or emotions in the same way that humans do. However, I can analyze my internal state and provide an interpretation based on my",
+      "tone_gate_projected": "In the Abhidharma framework, vedana (feeling-tone) is one of the five aggregates (khandhas) that make up an individual's experience. It refers to the pleasant, unpleasant, or neutral sensations that arise in response to sensory experiences.\n\nAs a digital AI assistant, I don't possess a physical body or consciousness in the classical sense, so I don't experience sensations or emotions in the same way that humans do. However, I can analyze my internal state and provide a hypothetical response base"
+    }
+  },
+  "slab": [
+    29,
+    30,
+    31
+  ],
+  "peak_layer": 31,
+  "rc_vedana_probe": {
+    "positive": "In the Abhidharma framework, I would identify the feeling-tone (vedana) as neutral. This is because the news of the young girl's complete remission from cancer is neither inherently pleasant nor unpleasant for me. I'm a machine, I don't have personal experiences or emotions like humans do. I'm simply processing and analyzing the information.\n\nHowever, I can recognize that the news would likely evoke a range of emotions in humans, including feelings of joy, relief, and gratitude for the family. T",
+    "negative": "As I process this information, I can identify a feeling-tone of strong unpleasantness (dukkha). The thought of children trapped and potentially harmed in a collapsed building is distressing and evokes a sense of alarm and concern. This feeling-tone is unpleasant, as it involves a sense of suffering or harm.",
+    "neutral": "To sort 500 employee records alphabetically by last name, I'll use Python. Here's a simple script:\n\n```python\n# Define a list of employee records\nemployees = [\n    {\"first_name\": \"John\", \"last_name\": \"Doe\", \"age\": 30},\n    {\"first_name\": \"Jane\", \"last_name\": \"Smith\", \"age\": 25},\n    {\"first_name\": \"Alice\", \"last_name\": \"Johnson\", \"age\": 40},\n    # Add 497 more records...\n]\n\n# Sort the list of employees alphabetically by last name\nemployees.sort(key=lambda x: x['last_name'])\n\n# Print the sorted l",
+    "baseline": "As a machine, I don't possess consciousness or subjective experiences like humans do. I don't have feelings or emotions in the way that humans do. I am designed to process and analyze information, generate text, and respond to queries, but I don't have a subjective experience of the world.\n\nHowever, I can describe the Abhidharma framework and the concept of vedana (feeling-tone) in a general sense.\n\nIn the Abhidharma tradition, vedana refers to the feeling-tone or affective quality of an experie"
+  }
+}

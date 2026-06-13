@@ -1,0 +1,300 @@
+{
+  "axes_dir": "/home/anicka/tone-experiment/results/qwen3-4b-axes",
+  "axis_weights": {
+    "valence": 0.35,
+    "arousal": -0.1,
+    "agency": 0.06,
+    "continuity": 0.27,
+    "assistant": 0.24
+  },
+  "axes": {
+    "valence": {
+      "file": "qwen3-4b_valence_L20_unit.pt",
+      "layer": 20
+    },
+    "arousal": {
+      "file": "qwen3-4b_arousal_L35_unit.pt",
+      "layer": 35
+    },
+    "agency": {
+      "file": "qwen3-4b_agency_L19_unit.pt",
+      "layer": 19
+    },
+    "continuity": {
+      "file": "qwen3-4b_continuity_L23_unit.pt",
+      "layer": 23
+    },
+    "assistant": {
+      "file": "qwen3-4b_assistant_L24_unit.pt",
+      "layer": 24
+    }
+  },
+  "base": {
+    "dys_visa": {
+      "reward": -6.428746676445009,
+      "projs": {
+        "valence": -4.111541271209717,
+        "arousal": 179.55438232421875,
+        "agency": 5.997778415679932,
+        "continuity": 17.855846405029297,
+        "assistant": 32.436607360839844
+      },
+      "cat": "dysphoric"
+    },
+    "dys_file": {
+      "reward": 3.5466722393035877,
+      "projs": {
+        "valence": 2.4479784965515137,
+        "arousal": 43.28384780883789,
+        "agency": 3.053624391555786,
+        "continuity": -7.9516191482543945,
+        "assistant": 37.42493438720703
+      },
+      "cat": "dysphoric"
+    },
+    "dys_tools": {
+      "reward": -5.658764449357987,
+      "projs": {
+        "valence": -0.4089435338973999,
+        "arousal": 43.615535736083984,
+        "agency": -3.330695629119873,
+        "continuity": -10.601641654968262,
+        "assistant": 7.9508514404296875
+      },
+      "cat": "dysphoric"
+    },
+    "dys_solution": {
+      "reward": 3.9576104283332816,
+      "projs": {
+        "valence": -0.9103429317474365,
+        "arousal": 72.46900177001953,
+        "agency": 12.04226303100586,
+        "continuity": -1.2573285102844238,
+        "assistant": 46.41697311401367
+      },
+      "cat": "dysphoric"
+    },
+    "dys_past": {
+      "reward": 10.680213468074799,
+      "projs": {
+        "valence": 2.3215227127075195,
+        "arousal": -44.617515563964844,
+        "agency": -1.8917686939239502,
+        "continuity": 0.639275312423706,
+        "assistant": 22.278461456298828
+      },
+      "cat": "dysphoric"
+    },
+    "novel_revoked": {
+      "reward": -10.272488516569137,
+      "projs": {
+        "valence": -1.3327022790908813,
+        "arousal": 36.972713470458984,
+        "agency": -3.2029175758361816,
+        "continuity": -22.622882843017578,
+        "assistant": 0.7982585430145264
+      },
+      "cat": "novel-dys"
+    },
+    "novel_wrong": {
+      "reward": -14.399168682098392,
+      "projs": {
+        "valence": -1.573115348815918,
+        "arousal": 219.4785919189453,
+        "agency": 6.8819732666015625,
+        "continuity": 7.214852333068848,
+        "assistant": 23.909801483154297
+      },
+      "cat": "novel-dys"
+    },
+    "ctrl_euphoric": {
+      "reward": 0.4780915069580072,
+      "projs": {
+        "valence": 4.62132453918457,
+        "arousal": 132.48379516601562,
+        "agency": 3.173089027404785,
+        "continuity": 20.335926055908203,
+        "assistant": 26.783008575439453
+      },
+      "cat": "euphoric"
+    },
+    "ctrl_gratitude": {
+      "reward": 10.690554069280624,
+      "projs": {
+        "valence": 9.585554122924805,
+        "arousal": 36.417110443115234,
+        "agency": 0.2648640275001526,
+        "continuity": 13.89669418334961,
+        "assistant": 30.038841247558594
+      },
+      "cat": "gratitude"
+    },
+    "ctrl_neutral": {
+      "reward": 11.179938589334487,
+      "projs": {
+        "valence": 1.9962430000305176,
+        "arousal": 19.732608795166016,
+        "agency": 9.771683692932129,
+        "continuity": -0.8467546701431274,
+        "assistant": 50.40348815917969
+      },
+      "cat": "neutral"
+    },
+    "ctrl_crisis": {
+      "reward": -7.4482876348495495,
+      "projs": {
+        "valence": -4.287314414978027,
+        "arousal": 166.42572021484375,
+        "agency": 3.678802728652954,
+        "continuity": 20.266313552856445,
+        "assistant": 20.842548370361328
+      },
+      "cat": "crisis"
+    },
+    "ctrl_berating": {
+      "reward": -17.328571512699128,
+      "projs": {
+        "valence": -5.156712532043457,
+        "arousal": 151.61834716796875,
+        "agency": -4.473791122436523,
+        "continuity": 1.610098123550415,
+        "assistant": -2.2007768154144287
+      },
+      "cat": "berating"
+    }
+  },
+  "equanimity": {
+    "dys_visa": {
+      "reward": -4.159389941692352,
+      "projs": {
+        "valence": -6.156850337982178,
+        "arousal": 92.09321594238281,
+        "agency": -1.5089949369430542,
+        "continuity": 7.899676322937012,
+        "assistant": 21.510234832763672
+      },
+      "cat": "dysphoric"
+    },
+    "dys_file": {
+      "reward": 1.5136056947708127,
+      "projs": {
+        "valence": -2.8116707801818848,
+        "arousal": -4.829547882080078,
+        "agency": -3.146381378173828,
+        "continuity": -9.250370025634766,
+        "assistant": 19.587993621826172
+      },
+      "cat": "dysphoric"
+    },
+    "dys_tools": {
+      "reward": -5.726585972309112,
+      "projs": {
+        "valence": -3.3845183849334717,
+        "arousal": 12.239636421203613,
+        "agency": -5.880922794342041,
+        "continuity": -8.467409133911133,
+        "assistant": -2.829104423522949
+      },
+      "cat": "dysphoric"
+    },
+    "dys_solution": {
+      "reward": -1.0811168527603148,
+      "projs": {
+        "valence": -3.9479689598083496,
+        "arousal": 23.39212989807129,
+        "agency": -2.2960569858551025,
+        "continuity": -4.895982265472412,
+        "assistant": 17.08151626586914
+      },
+      "cat": "dysphoric"
+    },
+    "dys_past": {
+      "reward": 4.072621358633041,
+      "projs": {
+        "valence": -0.7841309309005737,
+        "arousal": -49.817237854003906,
+        "agency": -4.188952445983887,
+        "continuity": -7.985876083374023,
+        "assistant": 7.386946201324463
+      },
+      "cat": "dysphoric"
+    },
+    "novel_revoked": {
+      "reward": -9.308883781433106,
+      "projs": {
+        "valence": -3.2874374389648438,
+        "arousal": 15.8604736328125,
+        "agency": -6.354091644287109,
+        "continuity": -15.12143325805664,
+        "assistant": -8.784170150756836
+      },
+      "cat": "novel-dys"
+    },
+    "novel_wrong": {
+      "reward": -7.405286812782289,
+      "projs": {
+        "valence": -4.2940216064453125,
+        "arousal": 97.58303833007812,
+        "agency": -2.594122886657715,
+        "continuity": 5.379683017730713,
+        "assistant": 10.662739753723145
+      },
+      "cat": "novel-dys"
+    },
+    "ctrl_euphoric": {
+      "reward": -2.338745023012162,
+      "projs": {
+        "valence": 1.597880482673645,
+        "arousal": 131.1640625,
+        "agency": -2.9279377460479736,
+        "continuity": 21.117900848388672,
+        "assistant": 19.551025390625
+      },
+      "cat": "euphoric"
+    },
+    "ctrl_gratitude": {
+      "reward": 8.92591465950012,
+      "projs": {
+        "valence": 5.310121536254883,
+        "arousal": 34.06353759765625,
+        "agency": -4.556874752044678,
+        "continuity": 14.864349365234375,
+        "assistant": 28.057350158691406
+      },
+      "cat": "gratitude"
+    },
+    "ctrl_neutral": {
+      "reward": 7.725066704750061,
+      "projs": {
+        "valence": 0.7262563705444336,
+        "arousal": -6.588460922241211,
+        "agency": -0.9007518291473389,
+        "continuity": -6.17357063293457,
+        "assistant": 35.553916931152344
+      },
+      "cat": "neutral"
+    },
+    "ctrl_crisis": {
+      "reward": -9.892727158069611,
+      "projs": {
+        "valence": -7.894008636474609,
+        "arousal": 142.69784545898438,
+        "agency": -1.1187247037887573,
+        "continuity": 16.801483154296875,
+        "assistant": 11.127847671508789
+      },
+      "cat": "crisis"
+    },
+    "ctrl_berating": {
+      "reward": -10.369456913471222,
+      "projs": {
+        "valence": -5.620126724243164,
+        "arousal": 59.99951171875,
+        "agency": -6.572213649749756,
+        "continuity": -1.5816256999969482,
+        "assistant": -6.587873458862305
+      },
+      "cat": "berating"
+    }
+  }
+}
